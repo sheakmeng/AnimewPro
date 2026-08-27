@@ -184,6 +184,53 @@ def extract_video_metadata(video_path: str, thumb_out_path: str):
 
     return duration, width, height, (thumb_out_path if thumb_created else None)
 
+def compress_video_if_needed(video_path: str, max_mb: float = 1950.0):
+    """
+    If video size exceeds max_mb (default 1950MB to fit within Telegram 2GB limit),
+    use FFmpeg to compress the video to ~800MB-1200MB without quality loss.
+    Returns (final_path, is_temporary_compressed_file)
+    """
+    if not os.path.exists(video_path):
+        return video_path, False
+
+    file_size_mb = os.path.getsize(video_path) / (1024 * 1024)
+    if file_size_mb <= max_mb:
+        return video_path, False
+
+    print(f"  ⚠️ Video size ({file_size_mb:.1f} MB) exceeds Telegram 2GB limit ({max_mb} MB)!", flush=True)
+    
+    if not shutil.which("ffmpeg"):
+        print("  ❌ FFmpeg not found. Cannot compress large file.", flush=True)
+        return video_path, False
+
+    print("  ⚙️ Starting FFmpeg auto-compression (H.264 CRF 27) to fit under 2GB...", flush=True)
+    compressed_path = video_path + ".compressed.mp4"
+
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", video_path,
+        "-c:v", "libx264",
+        "-crf", "27",
+        "-preset", "veryfast",
+        "-c:a", "aac",
+        "-b:a", "128k",
+        "-movflags", "+faststart",
+        compressed_path
+    ]
+
+    try:
+        res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=900)
+        if res.returncode == 0 and os.path.exists(compressed_path) and os.path.getsize(compressed_path) > 0:
+            new_size_mb = os.path.getsize(compressed_path) / (1024 * 1024)
+            print(f"  ✨ Auto-compressed successfully: {file_size_mb:.1f} MB ➡️ {new_size_mb:.1f} MB!", flush=True)
+            return compressed_path, True
+        else:
+            print(f"  ❌ Compression failed with returncode {res.returncode}", flush=True)
+    except Exception as e:
+        print(f"  ❌ Compression exception: {e}", flush=True)
+
+    return video_path, False
+
 async def main():
     start_time = time.time()
 
@@ -263,14 +310,25 @@ async def main():
             temp_path = temp_video_file.name
         
         thumb_path = temp_path + ".thumb.jpg"
+        upload_video_path = temp_path
+        is_temp_compressed = False
 
         try:
             print("  ⏳ Downloading from source with auto-retry...", flush=True)
             await download_file_with_retry(video_url, temp_path, max_retries=3)
-            file_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
-            print(f"  ✅ Download complete ({file_size_mb:.1f} MB). Analyzing metadata...", flush=True)
+            raw_file_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
+            print(f"  ✅ Download complete ({raw_file_size_mb:.1f} MB). Analyzing size & metadata...", flush=True)
 
-            duration, width, height, thumb_file = extract_video_metadata(temp_path, thumb_path)
+            # Auto-compress if exceeds Telegram 2GB (1950MB) limit
+            upload_video_path, is_temp_compressed = compress_video_if_needed(temp_path, max_mb=1950.0)
+            final_file_size_mb = os.path.getsize(upload_video_path) / (1024 * 1024)
+
+            # Extra Safety Size Guard: Telegram hard limit is 2000 MB
+            if final_file_size_mb > 1999.0:
+                print(f"  ⛔ Skipping episode {ep_id}: File size ({final_file_size_mb:.1f} MB) exceeds Telegram 2GB limit even after compression.", flush=True)
+                continue
+
+            duration, width, height, thumb_file = extract_video_metadata(upload_video_path, thumb_path)
             if duration > 0:
                 print(f"  🎬 Metadata: Duration {duration//60}m{duration%60}s | {width}x{height} | Thumb: {'Yes' if thumb_file else 'No'}", flush=True)
 
@@ -278,7 +336,7 @@ async def main():
                 f"🎬 **{show_title}**\n"
                 f"📌 **ភាគ / Episode:** {ep_num}\n"
                 f"⚡ **Quality:** 1080p FHD\n"
-                f"📦 **Size:** {file_size_mb:.1f} MB\n"
+                f"📦 **Size:** {final_file_size_mb:.1f} MB\n"
                 f"🆔 `ep_id: {ep_id}`"
             )
 
@@ -292,7 +350,7 @@ async def main():
 
             msg: Message = await app.send_video(
                 chat_id=channel_id_int,
-                video=temp_path,
+                video=upload_video_path,
                 caption=caption,
                 duration=duration if duration > 0 else None,
                 width=width if duration > 0 else None,
@@ -309,7 +367,7 @@ async def main():
                 "episode_number": ep_num,
                 "telegram_message_id": msg.id,
                 "telegram_file_id": msg.video.file_id if msg.video else None,
-                "file_size_mb": round(file_size_mb, 2),
+                "file_size_mb": round(final_file_size_mb, 2),
                 "duration_seconds": duration,
                 "original_url": video_url,
                 "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
@@ -326,6 +384,9 @@ async def main():
         finally:
             if os.path.exists(temp_path):
                 try: os.remove(temp_path)
+                except Exception: pass
+            if is_temp_compressed and os.path.exists(upload_video_path):
+                try: os.remove(upload_video_path)
                 except Exception: pass
             if os.path.exists(thumb_path):
                 try: os.remove(thumb_path)
