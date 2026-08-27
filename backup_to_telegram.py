@@ -7,19 +7,25 @@ import os
 import sys
 import json
 import asyncio
+import logging
 import tempfile
 import httpx
-from pyrogram import Client
-from pyrogram.types import Message
 
-# Ensure UTF-8 output on Windows
+# Ensure unbuffered UTF-8 output
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
+# Mute noisy internal Pyrogram MTProto ping warnings
+logging.getLogger("pyrogram.session.session").setLevel(logging.ERROR)
+logging.getLogger("pyrogram.connection.connection").setLevel(logging.ERROR)
+
 import pyrogram.utils
 pyrogram.utils.MIN_CHANNEL_ID = -100999999999999
 pyrogram.utils.MAX_CHANNEL_ID = -1000000000000
+
+from pyrogram import Client
+from pyrogram.types import Message
 
 # Configuration
 SUPABASE_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co"
@@ -67,36 +73,41 @@ async def download_file(url: str, output_path: str):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
-    async with httpx.AsyncClient(timeout=httpx.Timeout(300.0, connect=30.0), follow_redirects=True) as client:
+    async with httpx.AsyncClient(timeout=httpx.Timeout(600.0, connect=60.0), follow_redirects=True) as client:
         async with client.stream("GET", url, headers=headers) as response:
             if response.status_code != 200:
                 raise Exception(f"Failed to download: HTTP {response.status_code}")
+            
+            total_downloaded = 0
             with open(output_path, "wb") as f:
-                async for chunk in response.aiter_bytes(chunk_size=1024 * 1024): # 1MB chunk
+                async for chunk in response.aiter_bytes(chunk_size=2 * 1024 * 1024): # 2MB chunk
                     f.write(chunk)
+                    total_downloaded += len(chunk)
+                    if total_downloaded % (10 * 1024 * 1024) < (2 * 1024 * 1024): # Log every ~10MB
+                        print(f"  📥 Downloading... {total_downloaded / (1024 * 1024):.1f} MB", flush=True)
 
 async def main():
     if not all([API_ID, API_HASH, BOT_TOKEN, CHANNEL_ID]):
-        print("⚠️ Missing Telegram environment variables. Found:")
-        print(f"  TG_API_ID: {'SET' if API_ID else 'MISSING'}")
-        print(f"  TG_API_HASH: {'SET' if API_HASH else 'MISSING'}")
-        print(f"  TG_BOT_TOKEN: {'SET' if BOT_TOKEN else 'MISSING'}")
-        print(f"  TG_CHANNEL_ID: {'SET' if CHANNEL_ID else 'MISSING'}")
+        print("⚠️ Missing Telegram environment variables. Found:", flush=True)
+        print(f"  TG_API_ID: {'SET' if API_ID else 'MISSING'}", flush=True)
+        print(f"  TG_API_HASH: {'SET' if API_HASH else 'MISSING'}", flush=True)
+        print(f"  TG_BOT_TOKEN: {'SET' if BOT_TOKEN else 'MISSING'}", flush=True)
+        print(f"  TG_CHANNEL_ID: {'SET' if CHANNEL_ID else 'MISSING'}", flush=True)
         return
 
     try:
         api_id_int = int(API_ID)
         channel_id_int = int(CHANNEL_ID)
     except ValueError as e:
-        print(f"❌ Error parsing numeric environment variables: {e}")
+        print(f"❌ Error parsing numeric environment variables: {e}", flush=True)
         return
 
     manifest = load_manifest()
 
-    print("🔍 Fetching shows & episodes from database...")
+    print("🔍 Fetching shows & episodes from database...", flush=True)
     shows_map = await fetch_shows()
     episodes = await fetch_episodes()
-    print(f"✅ Found {len(shows_map)} shows and {len(episodes)} available video episodes.")
+    print(f"✅ Found {len(shows_map)} shows and {len(episodes)} available video episodes.", flush=True)
 
     # Filter out already backed-up episodes
     pending = []
@@ -105,9 +116,9 @@ async def main():
         if ep_id not in manifest:
             pending.append(ep)
 
-    print(f"📦 Total pending for backup: {len(pending)} episodes.")
+    print(f"📦 Total pending for backup: {len(pending)} episodes.", flush=True)
     if not pending:
-        print("🎉 All episodes are up to date! Nothing to backup.")
+        print("🎉 All episodes are up to date! Nothing to backup.", flush=True)
         return
 
     print("🤖 Connecting to Telegram Bot...", flush=True)
@@ -120,10 +131,10 @@ async def main():
         ipv6=False
     )
     await app.start()
-    print("✅ Telegram Bot connected successfully.", flush=True)
+    print("✅ Telegram Bot connected successfully!", flush=True)
 
     success_count = 0
-    max_batch = 25  # Limit per run to avoid GitHub Actions timeout (runs next batch next time)
+    max_batch = 15  # Limit to 15 per run to ensure fast and stable execution
 
     for i, ep in enumerate(pending[:max_batch], 1):
         ep_id = ep["id"]
@@ -132,29 +143,40 @@ async def main():
         ep_num = ep.get("episode_number") or 1
         video_url = ep["video_url"]
 
-        print(f"\n[{i}/{min(len(pending), max_batch)}] Backing up: {show_title} - Episode {ep_num}")
+        print(f"\n[{i}/{min(len(pending), max_batch)}] 🚀 Starting: {show_title} - Episode {ep_num}", flush=True)
+        print(f"  🔗 URL: {video_url}", flush=True)
 
         with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as temp_file:
             temp_path = temp_file.name
 
         try:
-            print("  ⏳ Downloading from source...")
+            print("  ⏳ Downloading from source...", flush=True)
             await download_file(video_url, temp_path)
             file_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
-            print(f"  📥 Download complete ({file_size_mb:.1f} MB). Uploading to Telegram...")
+            print(f"  ✅ Download complete ({file_size_mb:.1f} MB). Uploading to Telegram...", flush=True)
 
             caption = (
                 f"🎬 **{show_title}**\n"
                 f"📌 **ភាគ / Episode:** {ep_num}\n"
                 f"⚡ **Quality:** 1080p FHD\n"
+                f"📦 **Size:** {file_size_mb:.1f} MB\n"
                 f"🆔 `ep_id: {ep_id}`"
             )
+
+            last_logged_pct = -1
+            def progress(current, total):
+                nonlocal last_logged_pct
+                pct = int((current / total) * 100)
+                if pct % 20 == 0 and pct != last_logged_pct:
+                    last_logged_pct = pct
+                    print(f"  📤 Uploading: {pct}% ({current / (1024*1024):.1f} MB / {total / (1024*1024):.1f} MB)", flush=True)
 
             msg: Message = await app.send_video(
                 chat_id=channel_id_int,
                 video=temp_path,
                 caption=caption,
-                supports_streaming=True
+                supports_streaming=True,
+                progress=progress
             )
 
             # Store in manifest
@@ -168,20 +190,20 @@ async def main():
                 "original_url": video_url
             }
             save_manifest(manifest)
-            print(f"  ✅ Uploaded successfully (Msg ID: {msg.id})")
+            print(f"  🎉 Uploaded successfully! (Telegram Message ID: {msg.id})", flush=True)
             success_count += 1
 
             # Brief pause to respect Telegram rate limits
-            await asyncio.sleep(3)
+            await asyncio.sleep(2)
 
         except Exception as err:
-            print(f"  ❌ Error processing episode {ep_id}: {err}")
+            print(f"  ❌ Error processing episode {ep_id}: {err}", flush=True)
         finally:
             if os.path.exists(temp_path):
                 os.remove(temp_path)
 
     await app.stop()
-    print(f"\n🎉 Backup run finished! Successfully backed up {success_count} episodes.")
+    print(f"\n🏁 Backup run finished! Successfully backed up {success_count} episodes.", flush=True)
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -29,6 +29,7 @@ jobs:
 
       - name: Run Backup Script
         env:
+          PYTHONUNBUFFERED: "1"
           TG_API_ID: ${{ secrets.TG_API_ID }}
           TG_API_HASH: ${{ secrets.TG_API_HASH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
