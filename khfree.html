@@ -1,183 +1,178 @@
 <!DOCTYPE html>
-<!-- KhFree v3.0 - Multi-Proxy Robust -->
 <html lang="km">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-  <title>KhFree — មើលរឿង FREE ១០០% ដោយមិនបាច់ Login</title>
-  <meta name="description" content="KhFree - មើលរឿង Free ១០០% ខ្មែរបញ្ចូលសំឡេង ភាពយន្ត ភាគ ដោយមិនបាច់ Login ឬបង់លុយ"/>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <title>KhFree — មើលរឿង FREE ១០០%</title>
+  <meta name="description" content="KhFree - មើលរឿង Free ១០០% ខ្មែរ ដោយមិនបាច់ Login"/>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
     :root{
-      --bg:#07090f;--surf:#0d1120;--card:#111828;--card2:#172030;
+      --bg:#07090f;--card:#111828;--card2:#172030;
       --border:rgba(255,255,255,0.07);
       --gold:#d4a017;--gold2:#f0c040;--glow:rgba(212,160,23,0.28);
       --grad:linear-gradient(135deg,#d4a017,#f0c040);
-      --green:#10b981;--red:#ef4444;--blue:#3b82f6;
-      --txt:#f0f4fc;--muted:#7c8fa8;--radius:12px;
+      --txt:#f0f4fc;--muted:#6b7d94;--radius:11px;
     }
-    html,body{height:100%;background:var(--bg);color:var(--txt);font-family:'Kantumruy Pro','Outfit',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:99px}
+    html,body{min-height:100%;background:var(--bg);color:var(--txt);font-family:'Kantumruy Pro','Outfit',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    ::-webkit-scrollbar{width:2px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.08);border-radius:99px}
 
-    /* HEADER */
-    header{position:sticky;top:0;z-index:100;background:rgba(7,9,15,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:10px 14px 0}
-    .nav-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-    .brand{display:flex;align-items:center;gap:6px;cursor:default;flex-shrink:0}
-    .logo-text{font-family:'Outfit',sans-serif;font-size:21px;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-    .badge-free-tag{font-size:9px;font-weight:700;background:rgba(16,185,129,0.18);color:#34d399;padding:2px 7px;border-radius:6px;border:1px solid rgba(16,185,129,0.3);text-transform:uppercase;letter-spacing:.5px}
-    .search-box{position:relative;flex:1;min-width:0}
-    .search-box input{width:100%;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:10px;padding:8px 32px 8px 32px;color:var(--txt);font-family:inherit;font-size:13px;outline:none;transition:.2s}
-    .search-box input:focus{background:rgba(255,255,255,0.08);border-color:rgba(212,160,23,.5);box-shadow:0 0 0 3px rgba(212,160,23,.1)}
-    .search-box input::placeholder{color:#3d4f64;font-size:12px}
-    .si{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:#4a5568;pointer-events:none}
-    .sx{position:absolute;right:9px;top:50%;transform:translateY(-50%);color:#4a5568;cursor:pointer;display:none}
-    .sx.on{display:block}
-    .tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+    header{position:sticky;top:0;z-index:200;background:rgba(7,9,15,0.97);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:10px 12px 0}
+    .nav-row{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+    .logo{font-family:'Outfit',sans-serif;font-size:20px;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;flex-shrink:0}
+    .tag{font-size:8.5px;font-weight:700;background:rgba(16,185,129,.15);color:#34d399;padding:2px 7px;border-radius:6px;border:1px solid rgba(16,185,129,.28);text-transform:uppercase;letter-spacing:.5px;flex-shrink:0}
+    .sbox{position:relative;flex:1;min-width:0}
+    .sbox input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:10px;padding:8px 32px 8px 32px;color:var(--txt);font-family:inherit;font-size:13px;outline:none;transition:.2s}
+    .sbox input:focus{background:rgba(255,255,255,.08);border-color:rgba(212,160,23,.45);box-shadow:0 0 0 3px rgba(212,160,23,.1)}
+    .sbox input::placeholder{color:#3a4d62;font-size:12px}
+    .si{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:#3a4d62;pointer-events:none}
+    .sx{position:absolute;right:9px;top:50%;transform:translateY(-50%);color:#3a4d62;cursor:pointer;display:none}
+    .sx.v{display:block}
+    .tabs{display:flex;gap:5px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
     .tabs::-webkit-scrollbar{display:none}
-    .tab{flex-shrink:0;background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--muted);font-family:inherit;font-size:11.5px;font-weight:600;padding:5px 13px;border-radius:20px;cursor:pointer;transition:.18s}
-    .tab.on{background:var(--gold);border-color:var(--gold);color:#000;box-shadow:0 2px 12px var(--glow)}
+    .tab{flex-shrink:0;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);font-family:inherit;font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;cursor:pointer;transition:.16s}
+    .tab.on{background:var(--gold);border-color:var(--gold);color:#000;box-shadow:0 2px 10px var(--glow)}
 
-    /* MAIN */
-    main{padding:8px 10px 90px;max-width:1200px;margin:0 auto}
-    .sec-head{display:flex;align-items:center;justify-content:space-between;margin:12px 2px 10px}
-    .sec-title{font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px}
-    .sec-count{font-size:10px;color:var(--muted);background:rgba(255,255,255,0.05);padding:2px 8px;border-radius:99px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    main{padding:6px 10px 90px;max-width:1200px;margin:0 auto}
+    .sh{display:flex;align-items:center;justify-content:space-between;margin:10px 2px 9px}
+    .st{font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:6px}
+    .sc{font-size:10px;color:var(--muted);background:rgba(255,255,255,.05);padding:2px 8px;border-radius:99px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
     @media(min-width:480px){.grid{grid-template-columns:repeat(4,1fr)}}
-    @media(min-width:700px){.grid{grid-template-columns:repeat(5,1fr);gap:11px}}
-    @media(min-width:960px){.grid{grid-template-columns:repeat(6,1fr);gap:13px}}
+    @media(min-width:680px){.grid{grid-template-columns:repeat(5,1fr);gap:10px}}
+    @media(min-width:960px){.grid{grid-template-columns:repeat(6,1fr)}}
     @media(min-width:1200px){.grid{grid-template-columns:repeat(7,1fr)}}
 
-    /* CARD */
-    .card{background:var(--card);border-radius:var(--radius);overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:transform .18s,box-shadow .18s,border-color .18s;position:relative}
-    .card:hover{transform:translateY(-3px) scale(1.02);border-color:rgba(212,160,23,.35);box-shadow:0 10px 28px rgba(0,0,0,.55)}
+    .card{background:var(--card);border-radius:var(--radius);overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:transform .18s,box-shadow .18s,border-color .18s}
+    .card:hover{transform:translateY(-3px) scale(1.02);border-color:rgba(212,160,23,.35);box-shadow:0 10px 26px rgba(0,0,0,.55)}
     .card:active{transform:scale(.95)}
-    .thumb{position:relative;width:100%;aspect-ratio:2/3;background:#12192e;overflow:hidden}
-    .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+    .thumb{position:relative;width:100%;aspect-ratio:2/3;background:#0e1726;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
     .card:hover .thumb img{transform:scale(1.06)}
-    .tl{position:absolute;top:5px;left:5px;z-index:2}
-    .tr{position:absolute;top:5px;right:5px;z-index:2}
-    .tb{position:absolute;bottom:0;left:0;right:0;padding:20px 6px 5px;background:linear-gradient(to top,rgba(7,9,15,.97),transparent);z-index:2}
-    .bx{font-size:8px;font-weight:700;padding:2px 5px;border-radius:4px;backdrop-filter:blur(6px)}
+    .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:26px;background:linear-gradient(135deg,#131f33,#0b1522)}
+    .tl{position:absolute;top:4px;left:4px;z-index:2}
+    .tr{position:absolute;top:4px;right:4px;z-index:2}
+    .tbot{position:absolute;bottom:0;left:0;right:0;padding:16px 5px 4px;background:linear-gradient(to top,rgba(7,9,15,.97),transparent);z-index:2}
+    .bx{font-size:7.5px;font-weight:700;padding:2px 5px;border-radius:3px;backdrop-filter:blur(4px)}
     .bx-m{background:rgba(59,130,246,.8);color:#fff}
     .bx-tv{background:rgba(139,92,246,.8);color:#fff}
-    .bx-free{background:rgba(16,185,129,.85);color:#fff}
-    .bx-yr{font-size:9px;color:#cbd5e1;font-weight:600}
-    .bx-q{background:rgba(212,160,23,.85);color:#000;font-weight:800}
-    .ci{padding:6px 7px 8px}
-    .ct{font-size:10.5px;font-weight:600;line-height:1.35;color:#e2eaf5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:27px}
-    .ce{font-size:9px;color:var(--gold2);font-weight:700;margin-top:2px}
+    .bx-fr{background:rgba(16,185,129,.85);color:#fff}
+    .bx-yr{font-size:8.5px;color:#b0bfcc;font-weight:500}
+    .ci{padding:5px 6px 7px}
+    .ct{font-size:10.5px;font-weight:600;line-height:1.35;color:#dde6f5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:26px}
 
-    /* STATE */
-    .state{text-align:center;padding:60px 20px;color:var(--muted)}
-    .spin{width:26px;height:26px;border:2.5px solid rgba(212,160,23,.15);border-top-color:var(--gold);border-radius:50%;animation:sp .8s linear infinite;margin:0 auto 14px}
+    .state{text-align:center;padding:70px 20px;color:var(--muted)}
+    .spin{width:24px;height:24px;border:2px solid rgba(212,160,23,.15);border-top-color:var(--gold);border-radius:50%;animation:sp .75s linear infinite;margin:0 auto 12px}
     @keyframes sp{to{transform:rotate(360deg)}}
 
-    /* SOURCE SELECT */
-    .source-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-    .src-btn{background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--muted);font-family:inherit;font-size:11px;font-weight:600;padding:5px 12px;border-radius:8px;cursor:pointer;transition:.15s}
-    .src-btn:hover{background:rgba(255,255,255,.08)}
-    .src-btn.on{background:rgba(212,160,23,.15);border-color:rgba(212,160,23,.5);color:var(--gold2)}
+    /* STATUS BAR */
+    .status-bar{font-size:11px;color:var(--muted);text-align:center;padding:6px;background:rgba(212,160,23,.07);border-radius:8px;margin:8px 0;border:1px solid rgba(212,160,23,.15)}
+    .status-bar.err{background:rgba(239,68,68,.07);border-color:rgba(239,68,68,.2);color:#f87171}
+    .status-bar.ok{background:rgba(16,185,129,.07);border-color:rgba(16,185,129,.2);color:#34d399}
 
     /* MODAL */
-    #modal{display:none;position:fixed;inset:0;z-index:1000;background:#06080e;overflow-y:auto;-webkit-overflow-scrolling:touch}
+    #modal{display:none;position:fixed;inset:0;z-index:1000;background:#050810;overflow-y:auto;-webkit-overflow-scrolling:touch}
     #modal.on{display:block}
-    .player-wrap{position:relative;background:#000;width:100%}
-    .player-wrap iframe{width:100%;aspect-ratio:16/9;border:none;display:block}
-    .ploading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#000;z-index:5;flex-direction:column;gap:10px}
+    .pw{position:relative;background:#000;width:100%}
+    .pw iframe{width:100%;aspect-ratio:16/9;border:none;display:block}
+    .ploading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#000;z-index:5;flex-direction:column;gap:8px}
     .ploading.h{display:none}
     .ploading small{font-size:11px;color:var(--muted)}
-    .back-btn{position:absolute;top:max(8px,env(safe-area-inset-top));left:8px;z-index:20;background:rgba(7,9,15,.8);border:1px solid rgba(255,255,255,.15);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(10px);transition:.2s}
-    .back-btn:hover{background:rgba(212,160,23,.25);border-color:var(--gold)}
-    .mbox{padding:14px 14px 80px;max-width:880px;margin:0 auto}
-    .mtitle{font-size:17px;font-weight:700;line-height:1.35;margin-bottom:8px}
+    .back{position:absolute;top:max(8px,env(safe-area-inset-top));left:8px;z-index:30;background:rgba(5,8,16,.85);border:1px solid rgba(255,255,255,.15);color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(10px);transition:.2s}
+    .back:hover{background:rgba(212,160,23,.25);border-color:var(--gold)}
+    .mbox{padding:12px 12px 80px;max-width:860px;margin:0 auto}
+    .mtit{font-size:17px;font-weight:700;line-height:1.35;margin-bottom:8px}
     .mmeta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:12px}
-    .info-note{font-size:11px;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin-bottom:12px;display:flex;align-items:flex-start;gap:7px;line-height:1.5}
-    .info-note svg{flex-shrink:0;margin-top:1px}
-    .sec-lbl{font-size:12.5px;font-weight:700;margin-bottom:9px;border-top:1px solid var(--border);padding-top:13px}
-    .ep-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(60px,1fr));gap:6px;margin-bottom:14px}
-    .ep{background:var(--card);border:1px solid var(--border);color:var(--txt);padding:7px 3px;border-radius:8px;font-size:10.5px;font-weight:600;text-align:center;cursor:pointer;transition:.15s}
-    .ep:hover{border-color:rgba(212,160,23,.4);background:var(--card2)}
-    .ep.on{background:var(--gold);border-color:var(--gold);color:#000;box-shadow:0 2px 10px var(--glow)}
-    .ep.seen:not(.on){border-color:rgba(212,160,23,.4);background:rgba(212,160,23,.08);color:var(--gold2)}
 
-    /* LOAD MORE */
-    .lmw{text-align:center;margin-top:18px}
-    .lm-btn{background:rgba(212,160,23,.1);border:1px solid rgba(212,160,23,.35);color:var(--gold2);font-family:inherit;font-size:12.5px;font-weight:600;padding:9px 26px;border-radius:99px;cursor:pointer;transition:.2s}
-    .lm-btn:hover{background:rgba(212,160,23,.2)}
-    .lm-btn:disabled{opacity:.4;cursor:not-allowed}
+    .plabel{font-size:12px;font-weight:700;margin:14px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+    .pbts{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+    .pbt{background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--txt);font-family:inherit;font-size:11px;font-weight:600;padding:6px 13px;border-radius:8px;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:5px}
+    .pbt:hover{background:rgba(255,255,255,.09)}
+    .pbt.on{background:rgba(16,185,129,.15);border-color:rgba(16,185,129,.45);color:#34d399}
+    .pbt .dot{width:7px;height:7px;border-radius:50%;background:#3a4d62;flex-shrink:0}
+    .pbt.on .dot{background:#34d399;box-shadow:0 0 6px #34d399}
 
-    /* TOAST */
-    #toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(80px);background:rgba(13,17,32,.95);border:1px solid rgba(212,160,23,.3);padding:9px 18px;border-radius:99px;font-size:12px;font-weight:600;color:#fff;backdrop-filter:blur(12px);transition:transform .26s;z-index:3000;pointer-events:none;white-space:nowrap}
+    .eplabel{font-size:12px;font-weight:700;margin:14px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;border-top:1px solid var(--border);padding-top:14px}
+    .epg{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:5px;margin-bottom:14px}
+    .ep{background:var(--card);border:1px solid var(--border);color:var(--txt);padding:6px 3px;border-radius:7px;font-size:10px;font-weight:600;text-align:center;cursor:pointer;transition:.14s}
+    .ep:hover{border-color:rgba(212,160,23,.35);background:var(--card2)}
+    .ep.on{background:var(--gold);border-color:var(--gold);color:#000}
+    .ep.seen:not(.on){border-color:rgba(212,160,23,.4);background:rgba(212,160,23,.07);color:var(--gold2)}
+
+    .note{font-size:11px;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:9px 12px;line-height:1.6;margin-bottom:14px}
+
+    .lmw{text-align:center;margin-top:16px}
+    .lmb{background:rgba(212,160,23,.1);border:1px solid rgba(212,160,23,.32);color:var(--gold2);font-family:inherit;font-size:12px;font-weight:600;padding:9px 24px;border-radius:99px;cursor:pointer;transition:.2s}
+    .lmb:hover{background:rgba(212,160,23,.18)}
+    .lmb:disabled{opacity:.4;cursor:not-allowed}
+
+    #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(70px);background:rgba(10,14,26,.96);border:1px solid rgba(212,160,23,.3);padding:8px 17px;border-radius:99px;font-size:11.5px;font-weight:600;color:#fff;backdrop-filter:blur(12px);transition:transform .25s;z-index:4000;pointer-events:none;white-space:nowrap}
     #toast.on{transform:translateX(-50%) translateY(0)}
-
-    /* QUALITY badge colors */
-    .bx-4k{background:rgba(251,191,36,.9);color:#000}
-    .bx-hd{background:rgba(34,197,94,.8);color:#000}
   </style>
 </head>
 <body>
 
 <header>
   <div class="nav-row">
-    <div class="brand">
-      <span class="logo-text">KhFree</span>
-      <span class="badge-free-tag">100% FREE</span>
-    </div>
-    <div class="search-box">
-      <svg class="si" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <div class="logo">KhFree</div>
+    <div class="tag">100% FREE</div>
+    <div class="sbox">
+      <svg class="si" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input id="q" type="text" placeholder="ស្វែងរករឿង..." autocomplete="off"/>
-      <svg class="sx" id="qx" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      <svg class="sx" id="qx" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
     </div>
   </div>
   <div class="tabs">
-    <button class="tab on" data-t="all">🎬 រឿងទាំងអស់</button>
-    <button class="tab" data-t="movies">🎞 ដុំ</button>
+    <button class="tab on" data-t="movies">🎬 ដុំ</button>
     <button class="tab" data-t="tvshows">📺 ភាគ</button>
-    <button class="tab" data-t="free">🆓 Free</button>
     <button class="tab" data-t="khdub">🇰🇭 ខ្មែរ</button>
+    <button class="tab" data-t="free">🆓 Free</button>
     <button class="tab" data-t="korea">🇰🇷 កូរ៉េ</button>
     <button class="tab" data-t="china">🇨🇳 ចិន</button>
+    <button class="tab" data-t="japan">🇯🇵 ជប៉ុន</button>
+    <button class="tab" data-t="anime">⛩ Anime</button>
     <button class="tab" data-t="history">🕒 ល្ហែ</button>
   </div>
 </header>
 
 <main>
+  <div id="status" class="status-bar" style="display:none"></div>
   <div id="ldr" class="state"><div class="spin"></div><div style="font-size:12px">ផ្ទុករឿង...</div></div>
   <div id="cnt" style="display:none">
-    <div class="sec-head"><span class="sec-title"><span id="si">🎬</span> <span id="sl">រឿងទាំងអស់</span></span><span class="sec-count" id="sc">0</span></div>
+    <div class="sh"><span class="st"><span id="si">🎬</span><span id="sl">រឿង ដុំ</span></span><span class="sc" id="sc">0</span></div>
     <div class="grid" id="grid"></div>
-    <div class="lmw" id="lmw" style="display:none"><button class="lm-btn" id="lmb">ផ្ទុករឿងបន្ថែម ▼</button></div>
+    <div class="lmw" id="lmw" style="display:none"><button class="lmb" id="lmb">ផ្ទុករឿងបន្ថែម ▼</button></div>
   </div>
-  <div id="emp" class="state" style="display:none"><div style="font-size:32px;margin-bottom:8px">🎬</div><div id="emsg" style="font-size:12.5px">គ្មានរឿង</div></div>
+  <div id="emp" class="state" style="display:none">
+    <div style="font-size:30px;margin-bottom:10px">🎬</div>
+    <div id="emsg" style="font-size:12.5px"></div>
+  </div>
 </main>
 
 <!-- MODAL -->
 <div id="modal">
-  <div class="player-wrap">
-    <button class="back-btn" id="bc">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+  <div class="pw">
+    <button class="back" id="bc">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
     </button>
     <div class="ploading" id="pl"><div class="spin"></div><small>ផ្ទុក Player...</small></div>
-    <iframe id="fr" allowfullscreen allow="autoplay;fullscreen" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms allow-presentation allow-popups"></iframe>
+    <iframe id="fr" allowfullscreen allow="autoplay;fullscreen" referrerpolicy="no-referrer"></iframe>
   </div>
   <div class="mbox">
-    <div class="mtitle" id="mt">—</div>
+    <div class="mtit" id="mt">—</div>
     <div class="mmeta" id="mm"></div>
-
-    <!-- Source selector -->
-    <div class="sec-lbl">🔗 ជ្រើសប្រភព (Player)</div>
-    <div class="source-btns" id="srcs"></div>
-
-    <div class="info-note">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-      <span>បើ Player ១ ដំណើរការមិនបាន សូមសាកល្បង Player ២, ៣ ។ វីដេអូ Embed ពី KhDiamond ត្រូវការ Login — <b>ប្រើ Player បន្ថែម (KhSub / External)</b> ដើម្បីមើល Free ១០០%</span>
+    <div class="plabel">▶ ជ្រើស Player</div>
+    <div class="pbts" id="pbts"></div>
+    <div class="note" id="pnote">
+      💡 <b>Player 1</b> ប្រើ khdiamond ផ្ទាល់ (ត្រូវ Login សម្រាប់ Paid).<br>
+      ✅ <b>Player 2–4</b> ជា Embed Free ដោយមិនបាច់ Login.<br>
+      🔄 ប្ដូរ Player បានតែចុចប៉ុណ្ណោះ!
     </div>
-
     <div id="ep-sec" style="display:none">
-      <div class="sec-lbl">📋 ជ្រើសភាគ</div>
-      <div class="ep-grid" id="epg"></div>
+      <div class="eplabel">📋 ជ្រើសភាគ</div>
+      <div class="epg" id="epg"></div>
     </div>
   </div>
 </div>
@@ -185,439 +180,404 @@
 <div id="toast"></div>
 
 <script>
-// ──────────────────────── CONFIG ────────────────────────
+// ═══════════════════════════════════════════════════════════
+//  CONFIG
+// ═══════════════════════════════════════════════════════════
 const BASE = 'https://khdiamond.net';
-// Multi-proxy chain - tries each in order until one works
-const PROXIES = [
-  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
-  url => `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
-  url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-  url => `https://thingproxy.freeboard.io/fetch/${url}`,
-  url => `https://crossorigin.me/${url}`,
-];
+const RSS2JSON = 'https://api.rss2json.com/v1/api.json';
+const COUNT = 20;
 
-// Alternative free video sources (embed providers that don't need login)
-// These embed services fetch video from various KH streaming hosts
-const ALT_SOURCES = [
-  { id:'khsub', label:'🟢 KhSub Player', url: item => `https://khsub.net/?id=${item.slug}&type=${item.type}` },
-  { id:'animeh', label:'🔵 AnimeH', url: item => `https://animeh.net/embed/${item.slug}` },
-  { id:'vod', label:'🟣 VOD KH', url: item => `https://vodkh.com/embed/${item.type}/${item.slug}` },
-  { id:'ext', label:'🟡 KhDiamond (Login)', url: item => `${BASE}/${item.type}/${item.slug}/` },
-];
-
-// URL maps by filter tab
-const TAB_URLS = {
-  all: `${BASE}/movies/`,
-  movies: `${BASE}/movies/`,
-  tvshows: `${BASE}/tvshows/`,
-  free: `${BASE}/genre/%E1%9E%A5%E1%9E%8F%E1%9E%82%E1%9E%B7%E1%9E%8F%E1%9E%90%E1%9F%92%E1%9E%9B%E1%9F%83/`,
-  khdub: `${BASE}/genre/khdub/`,
-  korea: `${BASE}/genre/ភាគកូរ៉េ/`,
-  china: `${BASE}/genre/ភាគ-ចិន/`,
+// RSS Feed URLs for each tab
+const FEEDS = {
+  movies:  `${BASE}/movies/feed/`,
+  tvshows: `${BASE}/tvshows/feed/`,
+  khdub:   `${BASE}/genre/khdub/feed/`,
+  free:    `${BASE}/genre/%E1%9E%A5%E1%9E%8F%E1%9E%82%E1%9E%B7%E1%9E%8F%E1%9E%90%E1%9F%92%E1%9E%9B%E1%9F%83/feed/`,
+  korea:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82%E1%9E%80%E1%9E%BC%E1%9E%9A%E1%9F%89%E1%9E%BE/feed/`,
+  china:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82-%E1%9E%85%E1%9E%B7%E1%9E%93/feed/`,
+  japan:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82-%E1%9E%87%E1%9E%94%E1%9F%89%E1%9E%BB%E1%9E%93/feed/`,
+  anime:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82-anime/feed/`,
 };
 
 const TAB_META = {
-  all:     { icon:'🎬', label:'រឿងទាំងអស់' },
-  movies:  { icon:'🎞',  label:'រឿង ដុំ' },
+  movies:  { icon:'🎬', label:'រឿង ដុំ' },
   tvshows: { icon:'📺', label:'រឿង ភាគ' },
-  free:    { icon:'🆓', label:'Free ១០០%' },
   khdub:   { icon:'🇰🇭', label:'និយាយខ្មែរ' },
-  korea:   { icon:'🇰🇷', label:'ភាគកូរ៉េ' },
-  china:   { icon:'🇨🇳', label:'ភាគចិន' },
+  free:    { icon:'🆓', label:'Free ១០០%' },
+  korea:   { icon:'🇰🇷', label:'ភាគ កូរ៉េ' },
+  china:   { icon:'🇨🇳', label:'ភាគ ចិន' },
+  japan:   { icon:'🇯🇵', label:'ភាគ ជប៉ុន' },
+  anime:   { icon:'⛩', label:'ភាគ Anime' },
   history: { icon:'🕒', label:'ទើបមើល' },
 };
 
-// ──────────────────────── STATE ────────────────────────
-let all=[], filtered=[], curTab='all', curPage=1, totPages=1, loading=false, curItem=null, dbo;
+// ═══════════════════════════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════════════════════════
+let all=[], curTab='movies', loading=false, curItem=null;
 
-// ──────────────────────── DB (IndexedDB cache) ────────────────────────
-function openDB(){ return new Promise(r=>{ const req=indexedDB.open('khfree',2); req.onupgradeneeded=e=>{ const db=e.target.result; if(!db.objectStoreNames.contains('pages'))db.createObjectStore('pages'); if(!db.objectStoreNames.contains('history'))db.createObjectStore('history',{keyPath:'url'}); }; req.onsuccess=e=>r(e.target.result); req.onerror=()=>r(null); }); }
-function dbGet(store,key){ return new Promise(r=>{ if(!dbo)return r(null); const t=dbo.transaction(store,'readonly'); const req=t.objectStore(store).get(key); req.onsuccess=()=>r(req.result??null); req.onerror=()=>r(null); }); }
-function dbPut(store,key,val){ if(!dbo)return; const t=dbo.transaction(store,'readwrite'); if(store==='history')t.objectStore(store).put(val); else t.objectStore(store).put(val,key); }
-function dbGetAll(store){ return new Promise(r=>{ if(!dbo)return r([]); const t=dbo.transaction(store,'readonly'); const req=t.objectStore(store).getAll(); req.onsuccess=()=>r(req.result||[]); req.onerror=()=>r([]); }); }
+// ═══════════════════════════════════════════════════════════
+//  STORAGE
+// ═══════════════════════════════════════════════════════════
+const LS_W = 'khw3'; const LS_H = 'khh3';
+function getW(){ try{return JSON.parse(localStorage.getItem(LS_W)||'{}')}catch{return{}} }
+function setW(id,ep){ const w=getW(); if(!w[id])w[id]=[]; if(!w[id].includes(ep))w[id].push(ep); localStorage.setItem(LS_W,JSON.stringify(w)) }
+function getH(){ try{return JSON.parse(localStorage.getItem(LS_H)||'[]')}catch{return[]} }
+function addH(item){ let h=getH().filter(x=>x.link!==item.link); h.unshift({...item,_ts:Date.now()}); h=h.slice(0,60); localStorage.setItem(LS_H,JSON.stringify(h)) }
 
-// ──────────────────────── WATCHED ────────────────────────
-function getW(){ try{return JSON.parse(localStorage.getItem('khw')||'{}')}catch{return{}} }
-function setW(id,ep){ const w=getW(); if(!w[id])w[id]=[]; if(!w[id].includes(ep))w[id].push(ep); localStorage.setItem('khw',JSON.stringify(w)) }
-function hasW(id){ const w=getW(); return w[id]&&w[id].length>0 }
+// ═══════════════════════════════════════════════════════════
+//  TOAST / STATUS
+// ═══════════════════════════════════════════════════════════
+let _tt;
+function toast(m,d=2000){ const e=document.getElementById('toast'); e.textContent=m; e.classList.add('on'); clearTimeout(_tt); _tt=setTimeout(()=>e.classList.remove('on'),d); }
+function setStatus(msg, type=''){
+  const s=document.getElementById('status');
+  if(!msg){s.style.display='none';return;}
+  s.textContent=msg; s.className='status-bar'+(type?' '+type:''); s.style.display='block';
+}
 
-// ──────────────────────── TOAST ────────────────────────
-let _tt; function toast(m,t=2200){ const e=document.getElementById('toast'); e.textContent=m; e.classList.add('on'); clearTimeout(_tt); _tt=setTimeout(()=>e.classList.remove('on'),t); }
+// ═══════════════════════════════════════════════════════════
+//  RSS2JSON FETCH (no CORS issues!)
+// ═══════════════════════════════════════════════════════════
+async function fetchRSS(feedUrl, page=1) {
+  const offset = (page - 1) * COUNT;
+  const url = `${RSS2JSON}?rss_url=${encodeURIComponent(feedUrl)}&count=${COUNT}&offset=${offset}`;
+  setStatus(`⏳ ផ្ទុករឿង... (${feedUrl.split('/')[3] || 'feed'})`, '');
+  const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  if (data.status !== 'ok') throw new Error(data.message || 'RSS error');
+  return data;
+}
 
-// ──────────────────────── PROXY FETCH (Multi-Proxy Chain) ────────────────────────
-async function pFetch(url) {
-  const errors = [];
-  for (const mkProxy of PROXIES) {
-    try {
-      const proxyUrl = mkProxy(url);
-      const res = await fetch(proxyUrl, {
-        signal: AbortSignal.timeout(10000),
-        headers: { 'Accept': 'application/json, text/html, */*' }
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const ct = res.headers.get('content-type') || '';
-      if (ct.includes('json')) {
-        const j = await res.json();
-        // allorigins wraps in {contents: ...}
-        return j.contents !== undefined ? j.contents : JSON.stringify(j);
-      }
-      return await res.text();
-    } catch(e) {
-      errors.push(e.message);
-      continue;
-    }
+// ═══════════════════════════════════════════════════════════
+//  PARSE RSS ITEM → Movie object
+// ═══════════════════════════════════════════════════════════
+function parseRSSItem(item) {
+  const link = item.link || '';
+  // Extract type and slug from URL
+  const m = link.match(/khdiamond\.net\/(movies|tvshows)\/([^/?#]+)/);
+  const type = m ? m[1] : (link.includes('/tvshows/') ? 'tvshows' : 'movies');
+  const slug = m ? m[2] : '';
+
+  // Get poster: thumbnail > enclosure > extract from description img
+  let poster = item.thumbnail || item.enclosure?.link || '';
+  if (!poster && item.description) {
+    const imgM = item.description.match(/<img[^>]+src=["']([^"']+)["']/i);
+    if (imgM) poster = imgM[1];
   }
-  // All proxies failed — try direct (works if CORS is open)
+  // Ensure https
+  if (poster && poster.startsWith('//')) poster = 'https:' + poster;
+
+  // Year from pubDate
+  const year = item.pubDate ? new Date(item.pubDate).getFullYear().toString() : '';
+
+  // Clean title (remove HTML tags)
+  const title = (item.title || '').replace(/<[^>]+>/g,'').trim();
+
+  return { id: slug, type, slug, title, poster, year, rating: '', link, pubDate: item.pubDate };
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SEARCH via RSS + local filter
+// ═══════════════════════════════════════════════════════════
+async function doSearch(q) {
+  if (!q.trim()) { loadData(curTab, 1, false); setHead(curTab); return; }
+  showLoading();
   try {
-    const res = await fetch(url, { signal: AbortSignal.timeout(8000), mode: 'cors' });
-    if (res.ok) return await res.text();
-  } catch {}
-  throw new Error(`All proxies failed: ${errors.join(' | ')}`);
-}
-
-// Alias for backward compat
-async function pFetch2(url) { return pFetch(url); }
-
-// ──────────────────────── PARSE HTML ────────────────────────
-function parseItems(html){
-  const p=new DOMParser(), doc=p.parseFromString(html,'text/html');
-  const arts=doc.querySelectorAll('article.item');
-  return [...arts].map(a=>{
-    const id=a.id?.replace('post-','')||'';
-    const type=a.classList.contains('tvshows')?'tvshows':'movies';
-    const link=a.querySelector('a[href]')?.href||'';
-    const sm=link.match(/\/(movies|tvshows)\/([^/]+)\//);
-    const slug=sm?sm[2]:'';
-    const title=a.querySelector('h3 a,h3')?.textContent?.trim()||'';
-    const poster=a.querySelector('img:not(.img-quality)')?.src||'';
-    const year=a.querySelector('.data span')?.textContent?.trim()||'';
-    const rating=a.querySelector('.rating')?.textContent?.trim()||'';
-    const qual=a.querySelector('.quality')?.textContent?.trim()||'';
-    if(!title||!slug)return null;
-    return{id,type,slug,title,poster,year,rating,qual,link:`${BASE}/${type}/${slug}/`};
-  }).filter(Boolean);
-}
-
-function parsePages(html){
-  const p=new DOMParser(),doc=p.parseFromString(html,'text/html');
-  let mx=1;
-  doc.querySelectorAll('.pagination a,.pagination span').forEach(el=>{const n=parseInt(el.textContent);if(!isNaN(n)&&n>mx)mx=n;});
-  return mx;
-}
-
-// ──────────────────────── FETCH PAGE ────────────────────────
-async function fetchPage(tab,page=1){
-  if(tab==='history') return {items:[],pages:1};
-  const cacheKey=`${tab}_${page}`;
-  const cached=await dbGet('pages',cacheKey);
-  // 15min cache
-  if(cached&&(Date.now()-cached.ts)<900000) return{items:cached.items,pages:cached.pages};
-
-  const base=TAB_URLS[tab]||TAB_URLS.all;
-  const url=page===1?base:`${base}page/${page}/`;
-  let html;
-  try{ html=await pFetch(url); }
-  catch{ try{ html=await pFetch2(url); }catch(e){throw e;} }
-  const items=parseItems(html);
-  const pages=parsePages(html);
-  // cache it
-  dbPut('pages',cacheKey,{items,pages,ts:Date.now()});
-  return{items,pages};
-}
-
-// ──────────────────────── FETCH EPISODES ────────────────────────
-async function fetchEps(item){
-  let html;
-  try{ html=await pFetch(item.link); }
-  catch{ html=await pFetch2(item.link); }
-  const p=new DOMParser(),doc=p.parseFromString(html,'text/html');
-  const eps=[];
-  doc.querySelectorAll('#seasons .episodios li,.episodios li').forEach(li=>{
-    const a=li.querySelector('a');
-    const num=li.querySelector('.numerando')?.textContent?.match(/(\d+)/)?.[1];
-    const tit=li.querySelector('.episodiotitle a,.episodiotitle')?.textContent?.trim();
-    const img=li.querySelector('img')?.src||item.poster;
-    if(a){
-      const u=a.href;
-      const sm=u.match(/\/episodio\/([^/]+)\//);
-      eps.push({num:parseInt(num||eps.length+1),slug:sm?sm[1]:'',url:u,title:tit||`ភាគ ${num}`,thumb:img});
-    }
-  });
-  // postid
-  const bc=doc.body?.className||'';
-  const pm=bc.match(/postid-(\d+)/);
-  return{eps,postId:pm?pm[1]:item.id};
-}
-
-// ──────────────────────── SEARCH ────────────────────────
-async function doSearch(q){
-  if(!q.trim()){loadData(curTab,1,false);setHead(curTab);return;}
-  showLoader();
-  try{
-    // Use DooPlay Search API
-    const url=`${BASE}/wp-json/dooplay/search/?s=${encodeURIComponent(q)}`;
-    let raw;
-    try{ raw=await pFetch(url); }catch{ raw=await pFetch2(url); }
-    let items=[];
-    try{
-      const j=JSON.parse(raw);
-      if(Array.isArray(j)){
-        items=j.map(x=>({
-          id:String(x.ID||x.id||''),
-          type:x.type==='tvshows'?'tvshows':'movies',
-          slug:(x.url||'').replace(/^.*\/(movies|tvshows)\//,'').replace(/\/$/,''),
-          title:x.title||x.post_title||'',
-          poster:x.img||x.thumbnail||x.poster_path||'',
-          year:x.year||'',rating:x.rating||'',qual:'',
-          link:x.url||x.permalink||''
-        }));
-      }else{items=parseItems(raw);}
-    }catch{items=parseItems(raw);}
-    filtered=items;
-    document.getElementById('si').textContent='🔍';
-    document.getElementById('sl').textContent=`"${q}" — ${items.length} លទ្ធផល`;
-    document.getElementById('sc').textContent=items.length;
-    showItems(items,false);
-    document.getElementById('lmw').style.display='none';
-  }catch(e){
-    const qlow=q.toLowerCase();
-    const res=all.filter(x=>x.title.toLowerCase().includes(qlow));
-    filtered=res;
-    document.getElementById('si').textContent='🔍';
-    document.getElementById('sl').textContent=`"${q}" — ${res.length} លទ្ធផល`;
-    document.getElementById('sc').textContent=res.length;
-    showItems(res,false);
-    document.getElementById('lmw').style.display='none';
+    // Try searching via WP JSON search API (public, no CORS needed via rss2json bridge)
+    const searchFeed = `${BASE}/?s=${encodeURIComponent(q)}&feed=rss2`;
+    const data = await fetchRSS(searchFeed, 1);
+    const items = (data.items || []).map(parseRSSItem).filter(x=>x.slug);
+    showResult(items, `🔍 "${q}" — ${items.length} លទ្ធផល`, items.length);
+    document.getElementById('lmw').style.display = 'none';
+    setStatus(items.length > 0 ? `✅ រកឃើញ ${items.length} រឿង` : '⚠️ រកមិនឃើញ', items.length>0?'ok':'err');
+  } catch(e) {
+    // Fallback: filter already-loaded items
+    const r = all.filter(x => x.title.toLowerCase().includes(q.toLowerCase()));
+    showResult(r, `🔍 "${q}" — ${r.length} លទ្ធផល`, r.length);
+    document.getElementById('lmw').style.display = 'none';
+    setStatus(`⚠️ ស្វែងរកក្នុង Cache — ${r.length} លទ្ធផល`,'');
   }
 }
 
-// ──────────────────────── RENDER ────────────────────────
-function mkCard(item){
-  const w=hasW(item.id);
-  const c=document.createElement('div');
-  c.className='card';
-  let qBadge='';
-  if(item.qual){
-    const cls=item.qual==='4K'?'bx-4k':item.qual.toLowerCase().includes('hd')?'bx-hd':'bx-q';
-    qBadge=`<span class="bx ${cls}">${item.qual}</span>`;
-  }
-  c.innerHTML=`
+// ═══════════════════════════════════════════════════════════
+//  RENDER
+// ═══════════════════════════════════════════════════════════
+function mkCard(item) {
+  const w = getW(); const seen = w[item.id]?.length > 0;
+  const c = document.createElement('div'); c.className = 'card';
+  c.innerHTML = `
     <div class="thumb">
-      ${item.poster?`<img src="${item.poster}" alt="${item.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\\"display:flex;align-items:center;justify-content:center;height:100%;font-size:28px\\">🎬</div>'">`:'<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">🎬</div>'}
+      ${item.poster
+        ? `<img src="${item.poster}" alt="${item.title}" loading="lazy" decoding="async" onerror="this.parentNode.innerHTML='<div class=ph>🎬</div>'">`
+        : '<div class="ph">🎬</div>'}
       <div class="tl"><span class="bx ${item.type==='tvshows'?'bx-tv':'bx-m'}">${item.type==='tvshows'?'ភាគ':'ដុំ'}</span></div>
-      <div class="tr">${w?'<span class="bx bx-free">✓ មើល</span>':qBadge||'<span class="bx bx-free">FREE</span>'}</div>
-      <div class="tb"><span class="bx-yr">${item.year||''}</span>${item.rating&&parseFloat(item.rating)>0?` <span class="bx" style="background:rgba(0,0,0,.65);color:#fbbf24">⭐${parseFloat(item.rating).toFixed(1)}</span>`:''}</div>
+      <div class="tr">${seen?'<span class="bx bx-fr">✓</span>':''}</div>
+      <div class="tbot"><span class="bx-yr">${item.year||''}</span></div>
     </div>
     <div class="ci"><div class="ct">${item.title}</div></div>`;
-  c.addEventListener('click',()=>openModal(item));
+  c.addEventListener('click', () => openModal(item));
   return c;
 }
 
-function showItems(items,append=false){
-  const g=document.getElementById('grid');
-  if(!append)g.innerHTML='';
-  items.forEach(i=>g.appendChild(mkCard(i)));
-  document.getElementById('ldr').style.display='none';
-  document.getElementById('cnt').style.display=items.length||append?'block':'none';
-  document.getElementById('emp').style.display=(!items.length&&!append)?'block':'none';
-}
-
-function showLoader(){
-  document.getElementById('ldr').style.display='block';
-  document.getElementById('cnt').style.display='none';
-  document.getElementById('emp').style.display='none';
-}
-
-// ──────────────────────── LOAD DATA ────────────────────────
-async function loadData(tab,page=1,append=false){
-  if(loading)return; loading=true;
-  const lmb=document.getElementById('lmb');
-  if(!append){showLoader(); all=[];}
-  else{lmb.disabled=true;lmb.textContent='⏳ ផ្ទុក...';}
-
-  try{
-    if(tab==='history'){
-      const h=await dbGetAll('history');
-      h.sort((a,b)=>b.ts-a.ts);
-      const items=h.slice(0,60);
-      all=items; filtered=items;
-      document.getElementById('sc').textContent=items.length;
-      showItems(items,false);
-      document.getElementById('lmw').style.display='none';
-    }else{
-      const {items,pages}=await fetchPage(tab,page);
-      if(!append)all=items; else all=[...all,...items];
-      filtered=all;
-      totPages=pages; curPage=page;
-      document.getElementById('sc').textContent=all.length+(pages>page?'+':'');
-      showItems(append?items:all,append);
-      document.getElementById('lmw').style.display=pages>page?'block':'none';
-      lmb.disabled=false; lmb.textContent='ផ្ទុករឿងបន្ថែម ▼';
-    }
-  }catch(e){
-    console.error(e);
-    document.getElementById('ldr').style.display='none';
-    document.getElementById('emp').style.display='block';
-    document.getElementById('emsg').textContent='⚠️ ផ្ទុកទិន្នន័យបរាជ័យ — ព្យាយាមម្ដងទៀត';
-    lmb.disabled=false;lmb.textContent='ផ្ទុកម្ដងទៀត';
+function showResult(items, label, count) {
+  const g = document.getElementById('grid');
+  const parts = label.split(' ');
+  document.getElementById('si').textContent = parts[0] || '🎬';
+  document.getElementById('sl').textContent = parts.slice(1).join(' ');
+  document.getElementById('sc').textContent = count;
+  document.getElementById('ldr').style.display = 'none';
+  if (!items.length) {
+    document.getElementById('cnt').style.display = 'none';
+    document.getElementById('emp').style.display = 'block';
+    document.getElementById('emsg').textContent = 'គ្មានរឿងត្រូវបញ្ជាក់';
+    return;
   }
-  loading=false;
+  document.getElementById('cnt').style.display = 'block';
+  document.getElementById('emp').style.display = 'none';
+  items.forEach(i => g.appendChild(mkCard(i)));
 }
 
-// ──────────────────────── MODAL ────────────────────────
-async function openModal(item){
-  curItem=item;
-  const modal=document.getElementById('modal');
-  const fr=document.getElementById('fr');
-  const pl=document.getElementById('pl');
-  const mt=document.getElementById('mt');
-  const mm=document.getElementById('mm');
-  const epSec=document.getElementById('ep-sec');
-  const epg=document.getElementById('epg');
-  const srcs=document.getElementById('srcs');
+function showLoading() {
+  document.getElementById('ldr').style.display = 'block';
+  document.getElementById('cnt').style.display = 'none';
+  document.getElementById('emp').style.display = 'none';
+  document.getElementById('grid').innerHTML = '';
+  setStatus('');
+}
+
+function setHead(tab) {
+  const m = TAB_META[tab] || { icon:'🎬', label:tab };
+  document.getElementById('si').textContent = m.icon;
+  document.getElementById('sl').textContent = m.label;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  LOAD DATA
+// ═══════════════════════════════════════════════════════════
+async function loadData(tab, page=1, append=false) {
+  if (loading) return; loading = true;
+  const lmb = document.getElementById('lmb');
+
+  if (!append) { showLoading(); all = []; }
+  else { lmb.disabled = true; lmb.textContent = '⏳ ផ្ទុក...'; }
+
+  try {
+    if (tab === 'history') {
+      const h = getH();
+      all = h;
+      document.getElementById('grid').innerHTML = '';
+      setHead('history');
+      document.getElementById('sc').textContent = h.length;
+      if (h.length) { showResult(h, '🕒 ទើបមើល', h.length); }
+      else {
+        document.getElementById('ldr').style.display = 'none';
+        document.getElementById('emp').style.display = 'block';
+        document.getElementById('emsg').textContent = 'អ្នកមិនទាន់មើលរឿងណាទេ';
+      }
+      document.getElementById('lmw').style.display = 'none';
+    } else {
+      const feedUrl = FEEDS[tab] || FEEDS.movies;
+      const data = await fetchRSS(feedUrl, page);
+      const items = (data.items || []).map(parseRSSItem).filter(x => x.slug && x.title);
+      if (!append) all = items; else all = [...all, ...items];
+
+      document.getElementById('grid').innerHTML = append ? document.getElementById('grid').innerHTML : '';
+      if (!append) document.getElementById('grid').innerHTML = '';
+      items.forEach(i => document.getElementById('grid').appendChild(mkCard(i)));
+
+      document.getElementById('ldr').style.display = 'none';
+      document.getElementById('cnt').style.display = items.length || append ? 'block' : 'none';
+      document.getElementById('emp').style.display = !items.length && !append ? 'block' : 'none';
+      document.getElementById('emsg').textContent = 'គ្មានរឿង — RSS Feed ទទេ';
+      document.getElementById('sc').textContent = all.length;
+      // Show load more if we got a full page
+      const hasMore = items.length >= COUNT;
+      document.getElementById('lmw').style.display = hasMore ? 'block' : 'none';
+      lmb.disabled = false; lmb.textContent = 'ផ្ទុករឿងបន្ថែម ▼';
+      setStatus(`✅ ផ្ទុក ${all.length} រឿង ${append?'(total)':''}`, 'ok');
+      setTimeout(() => setStatus(''), 3000);
+    }
+  } catch(e) {
+    console.error(e);
+    document.getElementById('ldr').style.display = 'none';
+    document.getElementById('emp').style.display = 'block';
+    document.getElementById('emsg').textContent = '⚠️ ផ្ទុក RSS Feed បរាជ័យ — ត្រូវការ Internet';
+    setStatus(`❌ ${e.message}`, 'err');
+    lmb.disabled = false; lmb.textContent = 'ផ្ទុកម្ដងទៀត';
+  }
+  loading = false;
+  if (append) { const lmb=document.getElementById('lmb'); lmb.disabled=false; }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  MODAL / PLAYER
+// ═══════════════════════════════════════════════════════════
+async function openModal(item) {
+  curItem = item;
+  const modal = document.getElementById('modal');
+  const fr = document.getElementById('fr');
+  const pl = document.getElementById('pl');
 
   modal.classList.add('on');
-  document.body.style.overflow='hidden';
-  fr.src=''; pl.classList.remove('h');
-  mt.textContent=item.title;
-  mm.innerHTML=`
+  document.body.style.overflow = 'hidden';
+  fr.src = ''; pl.classList.remove('h');
+
+  document.getElementById('mt').textContent = item.title;
+  document.getElementById('mm').innerHTML = `
     <span class="bx ${item.type==='tvshows'?'bx-tv':'bx-m'}">${item.type==='tvshows'?'📺 ភាគ':'🎬 ដុំ'}</span>
     ${item.year?`<span class="bx-yr">${item.year}</span>`:''}
-    ${item.rating&&parseFloat(item.rating)>0?`<span class="bx" style="background:rgba(251,191,36,.15);color:#fbbf24;border:1px solid rgba(251,191,36,.3)">⭐ ${parseFloat(item.rating).toFixed(1)}</span>`:''}
-    ${item.qual?`<span class="bx bx-q">${item.qual}</span>`:''}
-    <span class="bx bx-free">FREE</span>`;
-  epSec.style.display='none'; epg.innerHTML='';
+    <span class="bx bx-fr">FREE</span>`;
 
-  // Build source buttons
-  srcs.innerHTML='';
-  const sources=[
-    {id:'kh1',label:'▶ Player 1 (KhDiamond)',url:item.link},
-    {id:'kh2',label:'▶ Player 2 (Mirror)',url:`https://khdiamond.net/${item.type}/${item.slug}/?play=1`},
-    // Using embed tricks to bypass login gate
-    {id:'khm3',label:'▶ Player 3 (Alt)',url:`https://www.2embed.cc/embed/${item.slug}`},
-    {id:'vip',label:'▶ VIP Embed',url:`https://vidsrc.to/embed/${item.type==='tvshows'?'tv':'movie'}/${item.slug}`},
+  document.getElementById('ep-sec').style.display = 'none';
+  document.getElementById('epg').innerHTML = '';
+
+  // Save history
+  addH(item);
+
+  // Build player sources
+  buildSources(item, null);
+
+  if (item.type === 'tvshows') {
+    // Fetch episode list from RSS
+    try {
+      toast('⏳ ផ្ទុកភាគ...');
+      const epFeed = `${item.link}feed/`;
+      // Episodes are separate posts — try fetching show's episode RSS
+      // Fallback: show generic numbered pills
+      const epData = await fetchRSS(epFeed, 1).catch(() => null);
+      if (epData && epData.items && epData.items.length > 0) {
+        const eps = epData.items.map((ep, i) => ({
+          num: epData.items.length - i,
+          title: ep.title?.replace(/<[^>]+>/g,'').trim(),
+          url: ep.link
+        })).reverse();
+        showEpisodes(item, eps);
+      } else {
+        // Generic numbered episodes (1-50 pills as placeholder)
+        const eps = Array.from({length:30},(_,i)=>({num:i+1,title:`ភាគ ${i+1}`,url:item.link}));
+        showEpisodes(item, eps);
+      }
+    } catch { /* ignore */ }
+  }
+}
+
+function buildSources(item, epUrl) {
+  const pbts = document.getElementById('pbts');
+  pbts.innerHTML = '';
+
+  const srcUrl = epUrl || item.link;
+  const slug = item.slug;
+  const isTV = item.type === 'tvshows';
+
+  const sources = [
+    { label: 'Player 1 · KhDiamond', url: srcUrl, dot: '#6b7d94' },
+    { label: 'Player 2 · VidSrc', url: `https://vidsrc.to/embed/${isTV?'tv':'movie'}/${slug}`, dot: '#34d399' },
+    { label: 'Player 3 · 2Embed', url: `https://www.2embed.cc/embed/${slug}`, dot: '#60a5fa' },
+    { label: 'Player 4 · EmbedSu', url: `https://embed.su/embed/${isTV?'tv':'movie'}/${slug}`, dot: '#a78bfa' },
   ];
-  sources.forEach((s,i)=>{
-    const b=document.createElement('button');
-    b.className='src-btn'+(i===0?' on':'');
-    b.textContent=s.label;
-    b.addEventListener('click',()=>{
-      document.querySelectorAll('.src-btn').forEach(x=>x.classList.remove('on'));
+
+  sources.forEach((s, i) => {
+    const b = document.createElement('button');
+    b.className = 'pbt' + (i === 0 ? ' on' : '');
+    b.innerHTML = `<span class="dot" style="background:${s.dot}"></span>${s.label}`;
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.pbt').forEach(x => x.classList.remove('on'));
       b.classList.add('on');
       loadPlayer(s.url);
     });
-    srcs.appendChild(b);
+    pbts.appendChild(b);
   });
 
-  // Save history
-  dbPut('history','',{...item,url:item.link,ts:Date.now()});
-
-  if(item.type==='tvshows'){
-    // Fetch episodes
-    try{
-      toast('⏳ ផ្ទុកបញ្ជីភាគ...');
-      const {eps,postId}=await fetchEps(item);
-      if(eps.length>0){
-        epSec.style.display='block';
-        const w=getW();
-        eps.forEach(ep=>{
-          const seen=w[item.id]?.includes(ep.num);
-          const pill=document.createElement('button');
-          pill.className='ep'+(seen?' seen':'');
-          pill.textContent=`${ep.num}`;
-          pill.title=ep.title;
-          pill.addEventListener('click',()=>{
-            document.querySelectorAll('.ep').forEach(x=>x.classList.remove('on'));
-            pill.classList.add('on','seen');
-            setW(item.id,ep.num);
-            dbPut('history','',{...item,url:item.link,ts:Date.now(),lastEp:ep.num});
-            // Update player source buttons for this ep
-            const epSources=[
-              {id:'kh1',label:'▶ Player 1',url:ep.url},
-              {id:'kh2',label:'▶ Player 2 (Mirror)',url:`${BASE}/episodio/${ep.slug}/?play=1`},
-              {id:'vip',label:'▶ VIP Embed',url:`https://vidsrc.to/embed/tv/${item.slug}/${ep.num}/1`},
-            ];
-            srcs.innerHTML='';
-            epSources.forEach((s,i)=>{
-              const b=document.createElement('button');
-              b.className='src-btn'+(i===0?' on':'');
-              b.textContent=s.label;
-              b.addEventListener('click',()=>{
-                document.querySelectorAll('.src-btn').forEach(x=>x.classList.remove('on'));
-                b.classList.add('on');
-                loadPlayer(s.url);
-              });
-              srcs.appendChild(b);
-            });
-            loadPlayer(ep.url);
-          });
-          epg.appendChild(pill);
-        });
-        // auto play last or first ep
-        epg.querySelector('.ep')?.click();
-      }else{ loadPlayer(item.link); }
-    }catch{loadPlayer(item.link);}
-  }else{
-    loadPlayer(item.link);
-  }
+  // Auto-play first
+  loadPlayer(sources[0].url);
 }
 
-function loadPlayer(url){
-  const fr=document.getElementById('fr');
-  const pl=document.getElementById('pl');
+function showEpisodes(item, eps) {
+  const sec = document.getElementById('ep-sec');
+  const epg = document.getElementById('epg');
+  sec.style.display = 'block';
+  epg.innerHTML = '';
+  const w = getW();
+  eps.forEach(ep => {
+    const seen = w[item.id]?.includes(ep.num);
+    const pill = document.createElement('button');
+    pill.className = 'ep' + (seen ? ' seen' : '');
+    pill.textContent = ep.num;
+    pill.title = ep.title;
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.ep').forEach(x => x.classList.remove('on'));
+      pill.classList.add('on', 'seen');
+      setW(item.id, ep.num);
+      buildSources(item, ep.url);
+    });
+    epg.appendChild(pill);
+  });
+  // Auto-click first
+  epg.querySelector('.ep')?.click();
+}
+
+function loadPlayer(url) {
+  const fr = document.getElementById('fr');
+  const pl = document.getElementById('pl');
   pl.classList.remove('h');
-  fr.src='';
-  setTimeout(()=>{fr.src=url;},80);
-  const t=setTimeout(()=>pl.classList.add('h'),8000);
-  fr.onload=()=>{clearTimeout(t);pl.classList.add('h');};
+  fr.src = 'about:blank';
+  setTimeout(() => { fr.src = url; }, 60);
+  const t = setTimeout(() => pl.classList.add('h'), 7000);
+  fr.onload = () => { clearTimeout(t); pl.classList.add('h'); };
 }
 
-function closeModal(){
+function closeModal() {
   document.getElementById('modal').classList.remove('on');
-  document.getElementById('fr').src='';
-  document.body.style.overflow='';
-  curItem=null;
+  document.getElementById('fr').src = 'about:blank';
+  document.body.style.overflow = '';
+  curItem = null;
 }
 
-// ──────────────────────── HEAD LABEL ────────────────────────
-function setHead(tab){
-  const m=TAB_META[tab]||{icon:'🎬',label:tab};
-  document.getElementById('si').textContent=m.icon;
-  document.getElementById('sl').textContent=m.label;
-}
-
-// ──────────────────────── EVENTS ────────────────────────
-document.querySelectorAll('.tab').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
+// ═══════════════════════════════════════════════════════════
+//  EVENTS
+// ═══════════════════════════════════════════════════════════
+let _curPage = 1;
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
     btn.classList.add('on');
-    curTab=btn.dataset.t;
-    curPage=1; all=[];
-    document.getElementById('q').value='';
-    document.getElementById('qx').classList.remove('on');
+    curTab = btn.dataset.t;
+    _curPage = 1; all = [];
+    document.getElementById('q').value = '';
+    document.getElementById('qx').classList.remove('v');
     setHead(curTab);
-    document.getElementById('grid').innerHTML='';
-    loadData(curTab,1,false);
+    document.getElementById('grid').innerHTML = '';
+    loadData(curTab, 1, false);
   });
 });
 
-const qi=document.getElementById('q'), qx=document.getElementById('qx');
+const qi = document.getElementById('q'), qx = document.getElementById('qx');
 let _sd;
-qi.addEventListener('input',e=>{
-  qx.classList.toggle('on',e.target.value.length>0);
+qi.addEventListener('input', e => {
+  qx.classList.toggle('v', e.target.value.length > 0);
   clearTimeout(_sd);
-  _sd=setTimeout(()=>doSearch(e.target.value),500);
+  _sd = setTimeout(() => doSearch(e.target.value), 500);
 });
-qx.addEventListener('click',()=>{qi.value='';qx.classList.remove('on');loadData(curTab,1,false);setHead(curTab);});
-document.getElementById('bc').addEventListener('click',closeModal);
-document.getElementById('lmb').addEventListener('click',()=>loadData(curTab,curPage+1,true));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+qx.addEventListener('click', () => {
+  qi.value = ''; qx.classList.remove('v');
+  setHead(curTab);
+  document.getElementById('grid').innerHTML = '';
+  loadData(curTab, 1, false);
+});
 
-// ──────────────────────── INIT ────────────────────────
-openDB().then(db=>{dbo=db;}).finally(()=>{
-  setHead('all');
-  loadData('all',1,false);
+document.getElementById('bc').addEventListener('click', closeModal);
+document.getElementById('lmb').addEventListener('click', () => {
+  _curPage++; loadData(curTab, _curPage, true);
 });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ═══════════════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════════════
+setHead('movies');
+loadData('movies', 1, false);
 </script>
 </body>
 </html>
