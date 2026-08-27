@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27T16:10:00.744254Z",
+  "updated": "2026-08-27T16:10:34.624017Z",
   "tabs": {
     "movies": [
       {
@@ -125,16 +125,6 @@
         "link": "https://khdiamond.net/tvshows/iiw2wlyuw3sr9pf/"
       },
       {
-        "id": "likalwsvej0b3gm",
-        "type": "tvshows",
-        "slug": "likalwsvej0b3gm",
-        "title": "តាក់ស៊ីសងសឹក",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/likalwsvej0b3gm/"
-      },
-      {
         "id": "0le5smgs9ocnj9i",
         "type": "tvshows",
         "slug": "0le5smgs9ocnj9i",
@@ -143,16 +133,6 @@
         "year": "2026",
         "rating": "",
         "link": "https://khdiamond.net/tvshows/0le5smgs9ocnj9i/"
-      },
-      {
-        "id": "7j4iytsespmjhg5",
-        "type": "tvshows",
-        "slug": "7j4iytsespmjhg5",
-        "title": "ជូនទៅកាន់  X",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/7j4iytsespmjhg5/"
       },
       {
         "id": "dsmxbqyk82bmfxx",
@@ -165,36 +145,6 @@
         "link": "https://khdiamond.net/tvshows/dsmxbqyk82bmfxx/"
       },
       {
-        "id": "rzd1jvjq1fttjao",
-        "type": "tvshows",
-        "slug": "rzd1jvjq1fttjao",
-        "title": "អ្នកប្រមាញ់បិសាច",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/rzd1jvjq1fttjao/"
-      },
-      {
-        "id": "vasudtnw1urqggk",
-        "type": "tvshows",
-        "slug": "vasudtnw1urqggk",
-        "title": "គ្រូធ្មប់",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/vasudtnw1urqggk/"
-      },
-      {
-        "id": "otxnytobqrn5gmr",
-        "type": "tvshows",
-        "slug": "otxnytobqrn5gmr",
-        "title": "បិសាចត្លុក : ស្វាគមន៍មកកាន់ឌើរី",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/otxnytobqrn5gmr/"
-      },
-      {
         "id": "n2moocwlis5wcel",
         "type": "tvshows",
         "slug": "n2moocwlis5wcel",
@@ -203,6 +153,56 @@
         "year": "2026",
         "rating": "",
         "link": "https://khdiamond.net/tvshows/n2moocwlis5wcel/"
+      },
+      {
+        "id": "m62fiewqltlmngp",
+        "type": "tvshows",
+        "slug": "m62fiewqltlmngp",
+        "title": "កំណត់ត្រាមហាសង្គ្រាម រ៉ាក់ណារ៉ក់",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/m62fiewqltlmngp/"
+      },
+      {
+        "id": "kdmopsejqi3zii7",
+        "type": "tvshows",
+        "slug": "kdmopsejqi3zii7",
+        "title": "ស្នេហ៍នេះបកប្រែបានទេ?",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/kdmopsejqi3zii7/"
+      },
+      {
+        "id": "rt5yme4jcqeisxw",
+        "type": "tvshows",
+        "slug": "rt5yme4jcqeisxw",
+        "title": "អ្នកម្នាងសតវត្សរ៍ទី២១",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/rt5yme4jcqeisxw/"
+      },
+      {
+        "id": "xn97dd0pu92folr",
+        "type": "tvshows",
+        "slug": "xn97dd0pu92folr",
+        "title": "ខ្សែជីវិតសារ៉ា",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/xn97dd0pu92folr/"
+      },
+      {
+        "id": "ashqthltdjsk8va",
+        "type": "tvshows",
+        "slug": "ashqthltdjsk8va",
+        "title": "បញ្ជីមរណៈ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/ashqthltdjsk8va/"
       }
     ],
     "khdub": [
@@ -543,26 +543,6 @@
         "link": "https://khdiamond.net/movies/the-lychee-road/"
       },
       {
-        "id": "dsdvwtg35pffmrc",
-        "type": "movies",
-        "slug": "dsdvwtg35pffmrc",
-        "title": "ភ្លើងកំហឹង",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/dsdvwtg35pffmrc/"
-      },
-      {
-        "id": "hzu6dk87hrvoiko",
-        "type": "movies",
-        "slug": "hzu6dk87hrvoiko",
-        "title": "ស្តេចកំប្លែងថ្មី",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/hzu6dk87hrvoiko/"
-      },
-      {
         "id": "mfigpzta5c8fjxe",
         "type": "movies",
         "slug": "mfigpzta5c8fjxe",
@@ -611,6 +591,26 @@
         "year": "2026",
         "rating": "",
         "link": "https://khdiamond.net/movies/bjk2ob67miuwb3s/"
+      },
+      {
+        "id": "ggxwpaq755yncys",
+        "type": "movies",
+        "slug": "ggxwpaq755yncys",
+        "title": "កំពូលគុនដាវពិកាភ្នែក ២",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/ggxwpaq755yncys/"
+      },
+      {
+        "id": "gqlyzay17trak0z",
+        "type": "movies",
+        "slug": "gqlyzay17trak0z",
+        "title": "អ្នកលេងគុនដាវពិការភ្នែក",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/gqlyzay17trak0z/"
       }
     ],
     "japan": [
@@ -655,26 +655,6 @@
         "link": "https://khdiamond.net/movies/ppxhkh6eusqdh17/"
       },
       {
-        "id": "5i6bj22xpgyw56o",
-        "type": "movies",
-        "slug": "5i6bj22xpgyw56o",
-        "title": "មនុស្សក្បាលរណារ : នារីបំផ្ទុះបេះដូង",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/5i6bj22xpgyw56o/"
-      },
-      {
-        "id": "ytmroiw0f2e36jw",
-        "type": "movies",
-        "slug": "ytmroiw0f2e36jw",
-        "title": "អ្នកប្រមាញ់បិសាច : សង្គ្រាមស្លាប់រស់ក្នុងប្រាសាទបិសាច",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/ytmroiw0f2e36jw/"
-      },
-      {
         "id": "bb3zisfansb6u0s",
         "type": "movies",
         "slug": "bb3zisfansb6u0s",
@@ -713,6 +693,26 @@
         "year": "2025",
         "rating": "",
         "link": "https://khdiamond.net/movies/x20btep3dkbwjff/"
+      },
+      {
+        "id": "8syruwuz8weecld",
+        "type": "movies",
+        "slug": "8syruwuz8weecld",
+        "title": "មច្ចុរាជទីក្រុង",
+        "poster": "",
+        "year": "2025",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/8syruwuz8weecld/"
+      },
+      {
+        "id": "qunnid6zkc4qrd2",
+        "type": "movies",
+        "slug": "qunnid6zkc4qrd2",
+        "title": "ថាមពលមនុស្សចម្លែក",
+        "poster": "",
+        "year": "2024",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/qunnid6zkc4qrd2/"
       }
     ],
     "anime": [
@@ -735,16 +735,6 @@
         "year": "2026",
         "rating": "",
         "link": "https://khdiamond.net/tvshows/0le5smgs9ocnj9i/"
-      },
-      {
-        "id": "rzd1jvjq1fttjao",
-        "type": "tvshows",
-        "slug": "rzd1jvjq1fttjao",
-        "title": "អ្នកប្រមាញ់បិសាច",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/rzd1jvjq1fttjao/"
       },
       {
         "id": "n2moocwlis5wcel",
@@ -777,16 +767,6 @@
         "link": "https://khdiamond.net/tvshows/ashqthltdjsk8va/"
       },
       {
-        "id": "igbsq2pvqqkwdwq",
-        "type": "tvshows",
-        "slug": "igbsq2pvqqkwdwq",
-        "title": "សាមូរ៉ៃភ្នែកខៀវ",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/igbsq2pvqqkwdwq/"
-      },
-      {
         "id": "2d6cen28cpdnbwz",
         "type": "tvshows",
         "slug": "2d6cen28cpdnbwz",
@@ -815,6 +795,26 @@
         "year": "2025",
         "rating": "",
         "link": "https://khdiamond.net/tvshows/wwstqetgr1dpzax/"
+      },
+      {
+        "id": "zvu1zym7phd3c8t",
+        "type": "tvshows",
+        "slug": "zvu1zym7phd3c8t",
+        "title": "អ្នកប្រមាញ់​ច្រកទ្វានរក",
+        "poster": "",
+        "year": "2025",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/zvu1zym7phd3c8t/"
+      },
+      {
+        "id": "bjzlg0dzs4frnsd",
+        "type": "tvshows",
+        "slug": "bjzlg0dzs4frnsd",
+        "title": "កែវភ្នែកឃើញខ្មោច",
+        "poster": "",
+        "year": "2025",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/bjzlg0dzs4frnsd/"
       }
     ],
     "action": [
@@ -909,14 +909,14 @@
         "link": "https://khdiamond.net/movies/li8lz89jl2kovmc/"
       },
       {
-        "id": "xyeohrxsumixanf",
+        "id": "a7oxncgatv8awaq",
         "type": "movies",
-        "slug": "xyeohrxsumixanf",
-        "title": "( ទី20 ) ហ្សរ៍ : សង្គ្រាមអាទិទេព",
+        "slug": "a7oxncgatv8awaq",
+        "title": "( ទី19 ) ដុកទ័រស្ត្រេង",
         "poster": "",
         "year": "2026",
         "rating": "",
-        "link": "https://khdiamond.net/movies/xyeohrxsumixanf/"
+        "link": "https://khdiamond.net/movies/a7oxncgatv8awaq/"
       }
     ],
     "horror": [
@@ -971,26 +971,6 @@
         "link": "https://khdiamond.net/movies/hwcdv7f2rxmdbi9/"
       },
       {
-        "id": "pzfnaloxmx5uieg",
-        "type": "movies",
-        "slug": "pzfnaloxmx5uieg",
-        "title": "ល្បែងប្រមាញ់កូនប្រសារ វគ្គ២",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/pzfnaloxmx5uieg/"
-      },
-      {
-        "id": "qvq1zyxfv1osjc3",
-        "type": "movies",
-        "slug": "qvq1zyxfv1osjc3",
-        "title": "វិញ្ញាណអបលក្សណ៍ ងើបឡើងវិញ",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/qvq1zyxfv1osjc3/"
-      },
-      {
         "id": "li8lz89jl2kovmc",
         "type": "movies",
         "slug": "li8lz89jl2kovmc",
@@ -1011,14 +991,34 @@
         "link": "https://khdiamond.net/movies/2shvh9xx6u1caew/"
       },
       {
-        "id": "vabnt9axtrplgaw",
+        "id": "nbnxfhfqxsqhcjb",
         "type": "movies",
-        "slug": "vabnt9axtrplgaw",
-        "title": "ខ្មោចឆៅណាហ្ស៊ី",
+        "slug": "nbnxfhfqxsqhcjb",
+        "title": "វិញ្ញាណធ្មប់សណ្ឋិត វគ្គ២",
         "poster": "",
         "year": "2026",
         "rating": "",
-        "link": "https://khdiamond.net/movies/vabnt9axtrplgaw/"
+        "link": "https://khdiamond.net/movies/nbnxfhfqxsqhcjb/"
+      },
+      {
+        "id": "neyp3jadus0ldb9",
+        "type": "movies",
+        "slug": "neyp3jadus0ldb9",
+        "title": "រាជនីអាគមងងឹត",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/neyp3jadus0ldb9/"
+      },
+      {
+        "id": "kcbcyox6k5kjlg2",
+        "type": "movies",
+        "slug": "kcbcyox6k5kjlg2",
+        "title": "ឡាយស្ទ្រីមមរណៈ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/kcbcyox6k5kjlg2/"
       }
     ],
     "khsub": [
@@ -1095,16 +1095,6 @@
         "link": "https://khdiamond.net/movies/z8df0gl79wbthld/"
       },
       {
-        "id": "g843dhjupr3v0u5",
-        "type": "movies",
-        "slug": "g843dhjupr3v0u5",
-        "title": "កូនក្រម៉ំសាកសព",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/g843dhjupr3v0u5/"
-      },
-      {
         "id": "o8osrgfwzasecnj",
         "type": "movies",
         "slug": "o8osrgfwzasecnj",
@@ -1135,26 +1125,6 @@
         "link": "https://khdiamond.net/movies/iayubj9m9fhj5vu/"
       },
       {
-        "id": "5i6bj22xpgyw56o",
-        "type": "movies",
-        "slug": "5i6bj22xpgyw56o",
-        "title": "មនុស្សក្បាលរណារ : នារីបំផ្ទុះបេះដូង",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/5i6bj22xpgyw56o/"
-      },
-      {
-        "id": "8gpkdipupcqsxrn",
-        "type": "movies",
-        "slug": "8gpkdipupcqsxrn",
-        "title": "ស្រីធ្មប់បៃតង : កំហឹងធ្មប់",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/movies/8gpkdipupcqsxrn/"
-      },
-      {
         "id": "slcidc71b8im51e",
         "type": "movies",
         "slug": "slcidc71b8im51e",
@@ -1163,6 +1133,36 @@
         "year": "2025",
         "rating": "",
         "link": "https://khdiamond.net/movies/slcidc71b8im51e/"
+      },
+      {
+        "id": "go8elwcy0vynfnk",
+        "type": "movies",
+        "slug": "go8elwcy0vynfnk",
+        "title": "ចំណងស្នេហ៍ក្នុងការចងចាំ",
+        "poster": "",
+        "year": "2025",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/go8elwcy0vynfnk/"
+      },
+      {
+        "id": "mxk8fzcgsxywj1m",
+        "type": "movies",
+        "slug": "mxk8fzcgsxywj1m",
+        "title": "ដំណើរស្នេហ៍គ្មានទីបញ្ចប់",
+        "poster": "",
+        "year": "2025",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/mxk8fzcgsxywj1m/"
+      },
+      {
+        "id": "32wiyioimyqdw1k",
+        "type": "movies",
+        "slug": "32wiyioimyqdw1k",
+        "title": "ចាំអូនទុកក្នុងបេះដូងផង",
+        "poster": "",
+        "year": "2025",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/32wiyioimyqdw1k/"
       }
     ],
     "all": [
@@ -1287,16 +1287,6 @@
         "link": "https://khdiamond.net/tvshows/iiw2wlyuw3sr9pf/"
       },
       {
-        "id": "likalwsvej0b3gm",
-        "type": "tvshows",
-        "slug": "likalwsvej0b3gm",
-        "title": "តាក់ស៊ីសងសឹក",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/likalwsvej0b3gm/"
-      },
-      {
         "id": "0le5smgs9ocnj9i",
         "type": "tvshows",
         "slug": "0le5smgs9ocnj9i",
@@ -1305,16 +1295,6 @@
         "year": "2026",
         "rating": "",
         "link": "https://khdiamond.net/tvshows/0le5smgs9ocnj9i/"
-      },
-      {
-        "id": "7j4iytsespmjhg5",
-        "type": "tvshows",
-        "slug": "7j4iytsespmjhg5",
-        "title": "ជូនទៅកាន់  X",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/7j4iytsespmjhg5/"
       },
       {
         "id": "dsmxbqyk82bmfxx",
@@ -1327,36 +1307,6 @@
         "link": "https://khdiamond.net/tvshows/dsmxbqyk82bmfxx/"
       },
       {
-        "id": "rzd1jvjq1fttjao",
-        "type": "tvshows",
-        "slug": "rzd1jvjq1fttjao",
-        "title": "អ្នកប្រមាញ់បិសាច",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/rzd1jvjq1fttjao/"
-      },
-      {
-        "id": "vasudtnw1urqggk",
-        "type": "tvshows",
-        "slug": "vasudtnw1urqggk",
-        "title": "គ្រូធ្មប់",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/vasudtnw1urqggk/"
-      },
-      {
-        "id": "otxnytobqrn5gmr",
-        "type": "tvshows",
-        "slug": "otxnytobqrn5gmr",
-        "title": "បិសាចត្លុក : ស្វាគមន៍មកកាន់ឌើរី",
-        "poster": "",
-        "year": "2026",
-        "rating": "",
-        "link": "https://khdiamond.net/tvshows/otxnytobqrn5gmr/"
-      },
-      {
         "id": "n2moocwlis5wcel",
         "type": "tvshows",
         "slug": "n2moocwlis5wcel",
@@ -1365,6 +1315,56 @@
         "year": "2026",
         "rating": "",
         "link": "https://khdiamond.net/tvshows/n2moocwlis5wcel/"
+      },
+      {
+        "id": "m62fiewqltlmngp",
+        "type": "tvshows",
+        "slug": "m62fiewqltlmngp",
+        "title": "កំណត់ត្រាមហាសង្គ្រាម រ៉ាក់ណារ៉ក់",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/m62fiewqltlmngp/"
+      },
+      {
+        "id": "kdmopsejqi3zii7",
+        "type": "tvshows",
+        "slug": "kdmopsejqi3zii7",
+        "title": "ស្នេហ៍នេះបកប្រែបានទេ?",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/kdmopsejqi3zii7/"
+      },
+      {
+        "id": "rt5yme4jcqeisxw",
+        "type": "tvshows",
+        "slug": "rt5yme4jcqeisxw",
+        "title": "អ្នកម្នាងសតវត្សរ៍ទី២១",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/rt5yme4jcqeisxw/"
+      },
+      {
+        "id": "xn97dd0pu92folr",
+        "type": "tvshows",
+        "slug": "xn97dd0pu92folr",
+        "title": "ខ្សែជីវិតសារ៉ា",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/xn97dd0pu92folr/"
+      },
+      {
+        "id": "ashqthltdjsk8va",
+        "type": "tvshows",
+        "slug": "ashqthltdjsk8va",
+        "title": "បញ្ជីមរណៈ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/tvshows/ashqthltdjsk8va/"
       }
     ]
   }
