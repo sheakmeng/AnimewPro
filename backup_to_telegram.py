@@ -1,14 +1,22 @@
 """
 Animew Pro - Automated Video Backup to Telegram Channel
 Runs via GitHub Actions or Local PC
+Features:
+- Time-Based Auto Stop (maximizes throughput within GitHub Actions timeout)
+- Auto Retry with backoff for network resilience
+- FFmpeg Video Metadata & Thumbnail Extraction (duration, width, height, poster)
+- Telegram Manifest generation for App Fallback
 """
 
 import os
 import sys
 import json
+import time
 import asyncio
 import logging
 import tempfile
+import subprocess
+import shutil
 import httpx
 
 # Ensure unbuffered UTF-8 output
@@ -36,6 +44,12 @@ API_ID = (os.getenv("TG_API_ID") or "").strip().strip('"').strip("'")
 API_HASH = (os.getenv("TG_API_HASH") or "").strip().strip('"').strip("'")
 BOT_TOKEN = (os.getenv("TG_BOT_TOKEN") or "").strip().strip('"').strip("'")
 CHANNEL_ID = (os.getenv("TG_CHANNEL_ID") or "").strip().strip('"').strip("'")
+
+# Performance & Time Guard Configuration
+# On GitHub Actions, max execution time before safe exit (in seconds)
+# Default: 3000s = 50 minutes (well before 60-90min workflow timeout)
+MAX_RUN_SECONDS = int(os.getenv("MAX_RUN_SECONDS", "3000"))
+MAX_BATCH = int(os.getenv("MAX_BATCH", "60"))
 
 MANIFEST_FILE = "backup_manifest.json"
 
@@ -69,24 +83,110 @@ async def fetch_episodes():
         r.raise_for_status()
         return r.json()
 
-async def download_file(url: str, output_path: str):
+async def download_file_with_retry(url: str, output_path: str, max_retries: int = 3):
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
     }
-    async with httpx.AsyncClient(timeout=httpx.Timeout(600.0, connect=60.0), follow_redirects=True) as client:
-        async with client.stream("GET", url, headers=headers) as response:
-            if response.status_code != 200:
-                raise Exception(f"Failed to download: HTTP {response.status_code}")
+    
+    for attempt in range(1, max_retries + 1):
+        if os.path.exists(output_path):
+            try:
+                os.remove(output_path)
+            except Exception:
+                pass
+                
+        try:
+            if attempt > 1:
+                print(f"  🔄 Retry attempt {attempt}/{max_retries}...", flush=True)
+                await asyncio.sleep(attempt * 2)
+
+            async with httpx.AsyncClient(timeout=httpx.Timeout(900.0, connect=60.0), follow_redirects=True) as client:
+                async with client.stream("GET", url, headers=headers) as response:
+                    if response.status_code != 200:
+                        raise Exception(f"HTTP {response.status_code}")
+                    
+                    total_downloaded = 0
+                    with open(output_path, "wb") as f:
+                        async for chunk in response.aiter_bytes(chunk_size=2 * 1024 * 1024): # 2MB chunk
+                            f.write(chunk)
+                            total_downloaded += len(chunk)
+                            if total_downloaded % (15 * 1024 * 1024) < (2 * 1024 * 1024): # Log every ~15MB
+                                print(f"  📥 Downloading... {total_downloaded / (1024 * 1024):.1f} MB", flush=True)
             
-            total_downloaded = 0
-            with open(output_path, "wb") as f:
-                async for chunk in response.aiter_bytes(chunk_size=2 * 1024 * 1024): # 2MB chunk
-                    f.write(chunk)
-                    total_downloaded += len(chunk)
-                    if total_downloaded % (10 * 1024 * 1024) < (2 * 1024 * 1024): # Log every ~10MB
-                        print(f"  📥 Downloading... {total_downloaded / (1024 * 1024):.1f} MB", flush=True)
+            # If successfully downloaded and file is not empty
+            if os.path.exists(output_path) and os.path.getsize(output_path) > 1024:
+                return True
+            else:
+                raise Exception("Downloaded file is empty or corrupted")
+
+        except Exception as e:
+            print(f"  ⚠️ Download warning (Attempt {attempt}/{max_retries}): {e}", flush=True)
+            if attempt == max_retries:
+                raise e
+
+def extract_video_metadata(video_path: str, thumb_out_path: str):
+    """
+    Extract video duration, width, height, and generate a thumbnail image using ffmpeg/ffprobe.
+    Returns (duration_seconds, width, height, thumb_path_or_none)
+    """
+    duration = 0
+    width = 1280
+    height = 720
+    thumb_created = False
+
+    # Check if ffprobe and ffmpeg are available
+    has_ffprobe = shutil.which("ffprobe") is not None
+    has_ffmpeg = shutil.which("ffmpeg") is not None
+
+    if has_ffprobe:
+        try:
+            cmd = [
+                "ffprobe", "-v", "error",
+                "-select_streams", "v:0",
+                "-show_entries", "stream=width,height,duration:format=duration",
+                "-of", "json",
+                video_path
+            ]
+            res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=20)
+            if res.returncode == 0:
+                data = json.loads(res.stdout)
+                streams = data.get("streams", [])
+                format_info = data.get("format", {})
+                
+                if streams:
+                    width = int(streams[0].get("width", 1280))
+                    height = int(streams[0].get("height", 720))
+                    dur_str = streams[0].get("duration") or format_info.get("duration")
+                    if dur_str:
+                        duration = int(float(dur_str))
+                elif format_info.get("duration"):
+                    duration = int(float(format_info["duration"]))
+        except Exception as err:
+            print(f"  ℹ️ ffprobe notice: {err}", flush=True)
+
+    if has_ffmpeg and duration > 0:
+        try:
+            # Capture thumbnail at 10% of duration or at 5 seconds
+            seek_pos = min(max(5, int(duration * 0.1)), 60)
+            cmd = [
+                "ffmpeg", "-y", "-ss", str(seek_pos),
+                "-i", video_path,
+                "-vframes", "1",
+                "-q:v", "3",
+                "-vf", "scale=640:-1",
+                thumb_out_path
+            ]
+            res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=25)
+            if res.returncode == 0 and os.path.exists(thumb_out_path) and os.path.getsize(thumb_out_path) > 0:
+                thumb_created = True
+        except Exception as err:
+            print(f"  ℹ️ ffmpeg thumb notice: {err}", flush=True)
+
+    return duration, width, height, (thumb_out_path if thumb_created else None)
 
 async def main():
+    start_time = time.time()
+
     if not all([API_ID, API_HASH, BOT_TOKEN, CHANNEL_ID]):
         print("⚠️ Missing Telegram environment variables. Found:", flush=True)
         print(f"  TG_API_ID: {'SET' if API_ID else 'MISSING'}", flush=True)
@@ -109,7 +209,7 @@ async def main():
     episodes = await fetch_episodes()
     print(f"✅ Found {len(shows_map)} shows and {len(episodes)} available video episodes in database.", flush=True)
 
-    # Filter out already backed-up episodes (ensure string comparison)
+    # Filter out already backed-up episodes
     pending = []
     for ep in episodes:
         ep_id = str(ep["id"]).strip()
@@ -119,6 +219,7 @@ async def main():
     print(f"📊 ស្ថានភាពទិន្នន័យ Backup:", flush=True)
     print(f"  • បាន Backup រួចរាល់: {len(manifest)} ភាគ", flush=True)
     print(f"  • នៅសល់ត្រូវ Backup: {len(pending)} ភាគ", flush=True)
+    print(f"  • ដែនកំណត់ម៉ោង (Time Limit): {MAX_RUN_SECONDS // 60} នាទី ({MAX_RUN_SECONDS}s)", flush=True)
 
     if not pending:
         print("🎉 គ្រប់ភាគទាំងអស់ត្រូវបាន Backup ចូល Telegram រួចរាល់អស់ហើយ! (All up to date)", flush=True)
@@ -137,26 +238,41 @@ async def main():
     print("✅ Telegram Bot connected successfully!", flush=True)
 
     success_count = 0
-    max_batch = 15  # Limit to 15 per run to ensure fast and stable execution
+    target_list = pending[:MAX_BATCH]
 
-    for i, ep in enumerate(pending[:max_batch], 1):
+    for i, ep in enumerate(target_list, 1):
+        elapsed = time.time() - start_time
+        remaining_time = MAX_RUN_SECONDS - elapsed
+
+        # Time-based stop guard: If less than 4 minutes remain, exit gracefully
+        if remaining_time < 240 and i > 1:
+            print(f"\n⏰ Time limit threshold reached ({elapsed/60:.1f}m elapsed). Gracefully pausing to save progress.", flush=True)
+            print(f"   Next batch will seamlessly continue on the next scheduled run!", flush=True)
+            break
+
         ep_id = ep["id"]
         show = shows_map.get(ep["show_id"], {})
         show_title = show.get("title", "Unknown Show")
         ep_num = ep.get("episode_number") or 1
         video_url = ep["video_url"]
 
-        print(f"\n[{i}/{min(len(pending), max_batch)}] 🚀 Starting: {show_title} - Episode {ep_num}", flush=True)
+        print(f"\n[{i}/{len(target_list)}] 🚀 Starting: {show_title} - Episode {ep_num} ({elapsed/60:.1f}m running)", flush=True)
         print(f"  🔗 URL: {video_url}", flush=True)
 
-        with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as temp_file:
-            temp_path = temp_file.name
+        with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as temp_video_file:
+            temp_path = temp_video_file.name
+        
+        thumb_path = temp_path + ".thumb.jpg"
 
         try:
-            print("  ⏳ Downloading from source...", flush=True)
-            await download_file(video_url, temp_path)
+            print("  ⏳ Downloading from source with auto-retry...", flush=True)
+            await download_file_with_retry(video_url, temp_path, max_retries=3)
             file_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
-            print(f"  ✅ Download complete ({file_size_mb:.1f} MB). Uploading to Telegram...", flush=True)
+            print(f"  ✅ Download complete ({file_size_mb:.1f} MB). Analyzing metadata...", flush=True)
+
+            duration, width, height, thumb_file = extract_video_metadata(temp_path, thumb_path)
+            if duration > 0:
+                print(f"  🎬 Metadata: Duration {duration//60}m{duration%60}s | {width}x{height} | Thumb: {'Yes' if thumb_file else 'No'}", flush=True)
 
             caption = (
                 f"🎬 **{show_title}**\n"
@@ -178,6 +294,10 @@ async def main():
                 chat_id=channel_id_int,
                 video=temp_path,
                 caption=caption,
+                duration=duration if duration > 0 else None,
+                width=width if duration > 0 else None,
+                height=height if duration > 0 else None,
+                thumb=thumb_file,
                 supports_streaming=True,
                 progress=progress
             )
@@ -190,7 +310,9 @@ async def main():
                 "telegram_message_id": msg.id,
                 "telegram_file_id": msg.video.file_id if msg.video else None,
                 "file_size_mb": round(file_size_mb, 2),
-                "original_url": video_url
+                "duration_seconds": duration,
+                "original_url": video_url,
+                "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
             }
             save_manifest(manifest)
             print(f"  🎉 Uploaded successfully! (Telegram Message ID: {msg.id})", flush=True)
@@ -203,10 +325,34 @@ async def main():
             print(f"  ❌ Error processing episode {ep_id}: {err}", flush=True)
         finally:
             if os.path.exists(temp_path):
-                os.remove(temp_path)
+                try: os.remove(temp_path)
+                except Exception: pass
+            if os.path.exists(thumb_path):
+                try: os.remove(thumb_path)
+                except Exception: pass
+
+    # Optional final Telegram channel summary message
+    if success_count > 0:
+        try:
+            total_backed = len(manifest)
+            total_size_mb = sum(m.get("file_size_mb", 0) for m in manifest.values())
+            summary_text = (
+                f"📊 **Auto Backup Report**\n"
+                f"━━━━━━━━━━━━━━━━━━━\n"
+                f"✅ **ទើប Backup ថ្មី:** +{success_count} ភាគ\n"
+                f"📁 **សរុបទាំងអស់ក្នុង Archive:** {total_backed} ភាគ\n"
+                f"💾 **ទំហំសរុប (Total Size):** {total_size_mb / 1024:.2f} GB\n"
+                f"⏱️ **រយៈពេលរត់:** {(time.time() - start_time)/60:.1f} នាទី\n"
+                f"🚀 **ស្ថានភាព:** ជោគជ័យ (Completed)"
+            )
+            await app.send_message(chat_id=channel_id_int, text=summary_text)
+            print("📢 Sent summary report to Telegram channel.", flush=True)
+        except Exception as e:
+            print(f"ℹ️ Could not send summary notification: {e}", flush=True)
 
     await app.stop()
-    print(f"\n🏁 Backup run finished! Successfully backed up {success_count} episodes.", flush=True)
+    print(f"\n🏁 Backup run finished! Successfully backed up {success_count} episodes in {(time.time() - start_time)/60:.1f} minutes.", flush=True)
 
 if __name__ == "__main__":
     asyncio.run(main())
+

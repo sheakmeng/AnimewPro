@@ -893,6 +893,17 @@ async function init() {
     // 1. Fetch shows
     allItems = await fetchAPI("shows?select=id,title,synopsis,poster_url,banner_url,release_year,status,type,featured,is_free,created_at&order=featured.desc,created_at.desc&limit=300");
 
+    // Load Backup Manifest (if available)
+    try {
+      const mfRes = await fetch('./backup_manifest.json?t=' + Date.now());
+      if (mfRes.ok) {
+        backupManifest = await mfRes.json();
+        console.log(`📦 Loaded ${Object.keys(backupManifest).length} backed up episodes from Telegram Archive`);
+      }
+    } catch (e) {
+      console.log("No local backup manifest found:", e);
+    }
+
     // 2. Fetch episodes overview
     try {
       const recentEps = await fetchAPI("episodes?select=id,show_id,title,episode_number,created_at,video_url&video_url=not.is.null&order=created_at.desc&limit=600");
@@ -1141,10 +1152,14 @@ playerEl.addEventListener("error", function(e) {
   if (!hasTriedFallback && currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
     hasTriedFallback = true;
     const ep = currentEpisodes[currentEpIdx];
+    const backupItem = backupManifest[ep.id];
     
-    // Check if we have an alternate mirror or backup format
     fallbackBanner.classList.add("show");
-    document.getElementById("fallback-msg").textContent = "⚠️ Server ដើមគាំង - កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
+    if (backupItem) {
+      document.getElementById("fallback-msg").innerHTML = `⚡ Server ដើមគាំង — មាន Cloud Backup រួចរាល់ (${backupItem.file_size_mb} MB)`;
+    } else {
+      document.getElementById("fallback-msg").textContent = "⚠️ Server ដើមគាំង — កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
+    }
     showToast("🔄 កំពុងប្តូរទៅកាន់ Server បម្រុង...");
 
     setTimeout(() => {
@@ -1160,7 +1175,7 @@ playerEl.addEventListener("error", function(e) {
       playerEl.src = fallbackUrl;
       playerEl.load();
       playerEl.play().catch(() => {
-        document.getElementById("fallback-msg").textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម - សូមសាកល្បងម្តងទៀត";
+        document.getElementById("fallback-msg").textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម — សូមសាកល្បងម្តងទៀត";
       });
     }, 800);
   }
@@ -1225,9 +1240,13 @@ async function openModal(show) {
       const hasUrl = !!ep.video_url;
       const epNum = ep.episode_number || (idx + 1);
       const isEpWatched = !!watchedEpMap[show.id + "_" + epNum];
+      const isBackedUp = !!backupManifest[ep.id];
 
       btn.className = `ep-pill ${hasUrl ? '' : 'no-video'} ${isEpWatched ? 'ep-watched' : ''}`;
       btn.textContent = isMovie ? "ទស្សនា (Play)" : (isEpWatched ? `x${epNum} ✓` : `x${epNum}`);
+      if (isBackedUp) {
+        btn.title = "⚡ Cloud Backup Ready";
+      }
       btn.dataset.idx = idx;
 
       if (hasUrl) {
