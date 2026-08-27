@@ -25,7 +25,7 @@ ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI
 
 async def main():
     print("🚀 [Step 1/4] កំពុងតភ្ជាប់ទៅកាន់ Telegram Bot...", flush=True)
-    app = Client("test_session", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+    app = Client("test_session", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, in_memory=True, ipv6=False)
     await app.start()
     print("✅ [Step 1/4] Bot បានតភ្ជាប់ជោគជ័យ!", flush=True)
 

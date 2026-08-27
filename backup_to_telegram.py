@@ -26,10 +26,10 @@ SUPABASE_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co"
 ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvd2p4aGtpanRsc2R2aHl1ZGR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMjE3MTIsImV4cCI6MjEwMTc5NzcxMn0.ulxBnNG6fc6muqPrAxzEGw0VPyZpR5ug8bY713PyWGg"
 
 # Telegram Secrets (From Environment Variables)
-API_ID = os.getenv("TG_API_ID")
-API_HASH = os.getenv("TG_API_HASH")
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
-CHANNEL_ID = os.getenv("TG_CHANNEL_ID") # e.g. -1001234567890
+API_ID = (os.getenv("TG_API_ID") or "").strip().strip('"').strip("'")
+API_HASH = (os.getenv("TG_API_HASH") or "").strip().strip('"').strip("'")
+BOT_TOKEN = (os.getenv("TG_BOT_TOKEN") or "").strip().strip('"').strip("'")
+CHANNEL_ID = (os.getenv("TG_CHANNEL_ID") or "").strip().strip('"').strip("'")
 
 MANIFEST_FILE = "backup_manifest.json"
 
@@ -77,10 +77,20 @@ async def download_file(url: str, output_path: str):
 
 async def main():
     if not all([API_ID, API_HASH, BOT_TOKEN, CHANNEL_ID]):
-        print("⚠️ Missing Telegram environment variables (TG_API_ID, TG_API_HASH, TG_BOT_TOKEN, TG_CHANNEL_ID)")
+        print("⚠️ Missing Telegram environment variables. Found:")
+        print(f"  TG_API_ID: {'SET' if API_ID else 'MISSING'}")
+        print(f"  TG_API_HASH: {'SET' if API_HASH else 'MISSING'}")
+        print(f"  TG_BOT_TOKEN: {'SET' if BOT_TOKEN else 'MISSING'}")
+        print(f"  TG_CHANNEL_ID: {'SET' if CHANNEL_ID else 'MISSING'}")
         return
 
-    channel_id_int = int(CHANNEL_ID)
+    try:
+        api_id_int = int(API_ID)
+        channel_id_int = int(CHANNEL_ID)
+    except ValueError as e:
+        print(f"❌ Error parsing numeric environment variables: {e}")
+        return
+
     manifest = load_manifest()
 
     print("🔍 Fetching shows & episodes from database...")
@@ -100,9 +110,17 @@ async def main():
         print("🎉 All episodes are up to date! Nothing to backup.")
         return
 
-    app = Client("backup_session", api_id=int(API_ID), api_hash=API_HASH, bot_token=BOT_TOKEN)
+    print("🤖 Connecting to Telegram Bot...", flush=True)
+    app = Client(
+        "backup_session",
+        api_id=api_id_int,
+        api_hash=API_HASH,
+        bot_token=BOT_TOKEN,
+        in_memory=True,
+        ipv6=False
+    )
     await app.start()
-    print("🤖 Telegram Bot connected successfully.")
+    print("✅ Telegram Bot connected successfully.", flush=True)
 
     success_count = 0
     max_batch = 25  # Limit per run to avoid GitHub Actions timeout (runs next batch next time)
