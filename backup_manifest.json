@@ -124,5 +124,41 @@
     "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMYapBmI4BkafMScAkM5tNNlqx8iGoAAiAkAAI9K4hUxARN2Y3nONUeBA",
     "file_size_mb": 554.78,
     "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-006/1784834573620--.mp4"
+  },
+  "29519d38-c5db-4c57-ae13-65dfd8900022": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 7,
+    "telegram_message_id": 25,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMZapDMHwFjZnm29i8yQkF7wk_Dub8AAoEkAAI9K4hUzyUrTE8X-6QeBA",
+    "file_size_mb": 582.7,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-007/1784834588627--.mp4"
+  },
+  "3738b25a-aafc-4182-8591-6cea895639d2": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 8,
+    "telegram_message_id": 26,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMaapDM5ze2AcUHbKDG_pGwxWuNKbAAAoIkAAI9K4hUXc00aZyuoWUeBA",
+    "file_size_mb": 568.43,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-008/1784834601454--.mp4"
+  },
+  "d833bc62-3d69-4b72-9930-b4027034c7a2": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 9,
+    "telegram_message_id": 27,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMbapDN43OIqarOKBhfGOPF2-rbvJAAAoMkAAI9K4hUMGFrMgABLjYlHgQ",
+    "file_size_mb": 558.32,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-009/1784834617301--.mp4"
+  },
+  "af3e24c6-2e95-4c52-9bb5-0d8ff823bd8e": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 10,
+    "telegram_message_id": 28,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMcapDO5oygEIz5ObZYS8qe2uUDgHsAAoQkAAI9K4hUOMz7IevADkceBA",
+    "file_size_mb": 562.69,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-010/1784834630240--.mp4"
   }
 }
