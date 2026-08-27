@@ -1,0 +1,11 @@
+{
+  "appId": "com.nint.stream",
+  "appName": "Animew Pro",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

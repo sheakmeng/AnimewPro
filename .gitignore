@@ -1,0 +1,13 @@
+node_modules/
+android/app/build/
+android/.gradle/
+android/build/
+android/captures/
+.gradle/
+build/
+*.session
+*.session-journal
+*.apk
+.temp/
+.DS_Store
+Thumbs.db
