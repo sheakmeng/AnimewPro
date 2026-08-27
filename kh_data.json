@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "updated": "2026-08-27T16:08:13.613868Z",
-=======
-  "updated": "2026-08-27T16:08:41.590061Z",
->>>>>>> 0003ce33bb0de7f409958f4a5df40db69de93e85
+  "updated": "2026-08-27T16:10:00.744254Z",
   "tabs": {
     "movies": [
       {
@@ -413,8 +409,210 @@
         "link": "https://khdiamond.net/movies/edgk1sz04wpf1zw/"
       }
     ],
-    "korea": [],
-    "china": [],
+    "korea": [
+      {
+        "id": "pbgfqatw946uwlo",
+        "type": "movies",
+        "slug": "pbgfqatw946uwlo",
+        "title": "ប៉ូលីសញានពិសេស",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/pbgfqatw946uwlo/"
+      },
+      {
+        "id": "tzevcvehk4nksoj",
+        "type": "movies",
+        "slug": "tzevcvehk4nksoj",
+        "title": "លោកពូជិតផ្ទះ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/tzevcvehk4nksoj/"
+      },
+      {
+        "id": "li8lz89jl2kovmc",
+        "type": "movies",
+        "slug": "li8lz89jl2kovmc",
+        "title": "ខ្មោចឆៅជំនាន់ថ្មី",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/li8lz89jl2kovmc/"
+      },
+      {
+        "id": "oabf8gyixzrsmbh",
+        "type": "movies",
+        "slug": "oabf8gyixzrsmbh",
+        "title": "ជីវិតថ្មីនៅកូរ៉េ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/oabf8gyixzrsmbh/"
+      },
+      {
+        "id": "d0bpivblbtw1lsv",
+        "type": "movies",
+        "slug": "d0bpivblbtw1lsv",
+        "title": "ខ្ទប់ទ្វាឱ្យជាប់",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/d0bpivblbtw1lsv/"
+      },
+      {
+        "id": "1du8dhqcgugz33t",
+        "type": "movies",
+        "slug": "1du8dhqcgugz33t",
+        "title": "អ្នកមើលថែស្តេច",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/1du8dhqcgugz33t/"
+      },
+      {
+        "id": "yzz1lkmualderm4",
+        "type": "movies",
+        "slug": "yzz1lkmualderm4",
+        "title": "១៩៨៧ : ថ្ងៃនៃការផ្លាស់ប្តូរ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/yzz1lkmualderm4/"
+      },
+      {
+        "id": "pp4xiow7gv6t9qu",
+        "type": "movies",
+        "slug": "pp4xiow7gv6t9qu",
+        "title": "ស្តេចអុក",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/pp4xiow7gv6t9qu/"
+      },
+      {
+        "id": "zo94w6ajmb9hpt4",
+        "type": "movies",
+        "slug": "zo94w6ajmb9hpt4",
+        "title": "អធិរាជអាវខៀវ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/zo94w6ajmb9hpt4/"
+      },
+      {
+        "id": "slcwla9bvc6nvwj",
+        "type": "movies",
+        "slug": "slcwla9bvc6nvwj",
+        "title": "ដល់ពេលចេញប្រយុទ្ធ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/slcwla9bvc6nvwj/"
+      }
+    ],
+    "china": [
+      {
+        "id": "rtdjtvml4jqd8xd",
+        "type": "movies",
+        "slug": "rtdjtvml4jqd8xd",
+        "title": "របួសស្នេហ៍យើងទាំងពីរ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/rtdjtvml4jqd8xd/"
+      },
+      {
+        "id": "gtcev5efldi9und",
+        "type": "movies",
+        "slug": "gtcev5efldi9und",
+        "title": "96 នាទីលើរថភ្លើង",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/gtcev5efldi9und/"
+      },
+      {
+        "id": "the-lychee-road",
+        "type": "movies",
+        "slug": "the-lychee-road",
+        "title": "ដំណើរផ្លូវលីឈី",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/the-lychee-road/"
+      },
+      {
+        "id": "dsdvwtg35pffmrc",
+        "type": "movies",
+        "slug": "dsdvwtg35pffmrc",
+        "title": "ភ្លើងកំហឹង",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/dsdvwtg35pffmrc/"
+      },
+      {
+        "id": "hzu6dk87hrvoiko",
+        "type": "movies",
+        "slug": "hzu6dk87hrvoiko",
+        "title": "ស្តេចកំប្លែងថ្មី",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/hzu6dk87hrvoiko/"
+      },
+      {
+        "id": "mfigpzta5c8fjxe",
+        "type": "movies",
+        "slug": "mfigpzta5c8fjxe",
+        "title": "បំបែកបេសកកម្មសម្ងាត់",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/mfigpzta5c8fjxe/"
+      },
+      {
+        "id": "zwlaqffjzfngzaz",
+        "type": "movies",
+        "slug": "zwlaqffjzfngzaz",
+        "title": "ភស្តុតាងត្រូវបានលាតត្រដាង",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/zwlaqffjzfngzaz/"
+      },
+      {
+        "id": "z8df0gl79wbthld",
+        "type": "movies",
+        "slug": "z8df0gl79wbthld",
+        "title": "កុំបែកគ្នាអី",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/z8df0gl79wbthld/"
+      },
+      {
+        "id": "tywxxdfagoyafcb",
+        "type": "movies",
+        "slug": "tywxxdfagoyafcb",
+        "title": "បេសកកម្មបង្វែរគន្លងផែនដី វគ្គ២",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/tywxxdfagoyafcb/"
+      },
+      {
+        "id": "bjk2ob67miuwb3s",
+        "type": "movies",
+        "slug": "bjk2ob67miuwb3s",
+        "title": "សន្ធឹកផ្លែដាវឆ្មាំពេជ្ឍឃាដ",
+        "poster": "",
+        "year": "2026",
+        "rating": "",
+        "link": "https://khdiamond.net/movies/bjk2ob67miuwb3s/"
+      }
+    ],
     "japan": [
       {
         "id": "fqvv0njryavcis0",
