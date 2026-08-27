@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- KhFree v3.0 - Multi-Proxy Robust -->
 <html lang="km">
 <head>
   <meta charset="UTF-8"/>
@@ -186,8 +187,14 @@
 <script>
 // ──────────────────────── CONFIG ────────────────────────
 const BASE = 'https://khdiamond.net';
-const PROXY = 'https://api.allorigins.win/get?url=';
-const PROXY2 = 'https://corsproxy.io/?url=';
+// Multi-proxy chain - tries each in order until one works
+const PROXIES = [
+  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+  url => `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
+  url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+  url => `https://thingproxy.freeboard.io/fetch/${url}`,
+  url => `https://crossorigin.me/${url}`,
+];
 
 // Alternative free video sources (embed providers that don't need login)
 // These embed services fetch video from various KH streaming hosts
@@ -237,25 +244,39 @@ function hasW(id){ const w=getW(); return w[id]&&w[id].length>0 }
 // ──────────────────────── TOAST ────────────────────────
 let _tt; function toast(m,t=2200){ const e=document.getElementById('toast'); e.textContent=m; e.classList.add('on'); clearTimeout(_tt); _tt=setTimeout(()=>e.classList.remove('on'),t); }
 
-// ──────────────────────── PROXY FETCH ────────────────────────
-async function pFetch(url, p=PROXY){
-  try{
-    const res=await fetch(p+encodeURIComponent(url),{signal:AbortSignal.timeout(12000)});
-    if(!res.ok)throw new Error(res.status);
-    const d=await res.json();
-    return d.contents||d;
-  }catch(e){
-    if(p===PROXY)return pFetch(url,PROXY2+'');
-    throw e;
+// ──────────────────────── PROXY FETCH (Multi-Proxy Chain) ────────────────────────
+async function pFetch(url) {
+  const errors = [];
+  for (const mkProxy of PROXIES) {
+    try {
+      const proxyUrl = mkProxy(url);
+      const res = await fetch(proxyUrl, {
+        signal: AbortSignal.timeout(10000),
+        headers: { 'Accept': 'application/json, text/html, */*' }
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('json')) {
+        const j = await res.json();
+        // allorigins wraps in {contents: ...}
+        return j.contents !== undefined ? j.contents : JSON.stringify(j);
+      }
+      return await res.text();
+    } catch(e) {
+      errors.push(e.message);
+      continue;
+    }
   }
+  // All proxies failed — try direct (works if CORS is open)
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000), mode: 'cors' });
+    if (res.ok) return await res.text();
+  } catch {}
+  throw new Error(`All proxies failed: ${errors.join(' | ')}`);
 }
 
-// corsproxy.io variant
-async function pFetch2(url){
-  const res=await fetch('https://corsproxy.io/?'+encodeURIComponent(url),{signal:AbortSignal.timeout(12000)});
-  if(!res.ok)throw new Error(res.status);
-  return await res.text();
-}
+// Alias for backward compat
+async function pFetch2(url) { return pFetch(url); }
 
 // ──────────────────────── PARSE HTML ────────────────────────
 function parseItems(html){
