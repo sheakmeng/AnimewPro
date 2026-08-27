@@ -45,7 +45,7 @@
     @media(min-width:960px){.grid{grid-template-columns:repeat(6,1fr)}}
     @media(min-width:1200px){.grid{grid-template-columns:repeat(7,1fr)}}
 
-    .card{background:var(--card);border-radius:var(--radius);overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:transform .18s,box-shadow .18s,border-color .18s}
+    .card{background:var(--card);border-radius:var(--radius);overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:transform .18s,box-shadow .18s,border-color .18s;position:relative}
     .card:hover{transform:translateY(-3px) scale(1.02);border-color:rgba(212,160,23,.35);box-shadow:0 10px 26px rgba(0,0,0,.55)}
     .card:active{transform:scale(.95)}
     .thumb{position:relative;width:100%;aspect-ratio:2/3;background:#0e1726;overflow:hidden}
@@ -63,14 +63,12 @@
     .ci{padding:5px 6px 7px}
     .ct{font-size:10.5px;font-weight:600;line-height:1.35;color:#dde6f5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:26px}
 
+    /* Updated indicator */
+    .upd-bar{font-size:10px;color:var(--muted);text-align:center;padding:5px;background:rgba(255,255,255,.03);border-radius:8px;margin:6px 0;border:1px solid var(--border)}
+
     .state{text-align:center;padding:70px 20px;color:var(--muted)}
     .spin{width:24px;height:24px;border:2px solid rgba(212,160,23,.15);border-top-color:var(--gold);border-radius:50%;animation:sp .75s linear infinite;margin:0 auto 12px}
     @keyframes sp{to{transform:rotate(360deg)}}
-
-    /* STATUS BAR */
-    .status-bar{font-size:11px;color:var(--muted);text-align:center;padding:6px;background:rgba(212,160,23,.07);border-radius:8px;margin:8px 0;border:1px solid rgba(212,160,23,.15)}
-    .status-bar.err{background:rgba(239,68,68,.07);border-color:rgba(239,68,68,.2);color:#f87171}
-    .status-bar.ok{background:rgba(16,185,129,.07);border-color:rgba(16,185,129,.2);color:#34d399}
 
     /* MODAL */
     #modal{display:none;position:fixed;inset:0;z-index:1000;background:#050810;overflow-y:auto;-webkit-overflow-scrolling:touch}
@@ -86,16 +84,16 @@
     .mtit{font-size:17px;font-weight:700;line-height:1.35;margin-bottom:8px}
     .mmeta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:12px}
 
-    .plabel{font-size:12px;font-weight:700;margin:14px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+    .plabel{font-size:11px;font-weight:700;margin:14px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
     .pbts{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
     .pbt{background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--txt);font-family:inherit;font-size:11px;font-weight:600;padding:6px 13px;border-radius:8px;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:5px}
     .pbt:hover{background:rgba(255,255,255,.09)}
     .pbt.on{background:rgba(16,185,129,.15);border-color:rgba(16,185,129,.45);color:#34d399}
-    .pbt .dot{width:7px;height:7px;border-radius:50%;background:#3a4d62;flex-shrink:0}
+    .dot{width:7px;height:7px;border-radius:50%;background:#3a4d62;flex-shrink:0}
     .pbt.on .dot{background:#34d399;box-shadow:0 0 6px #34d399}
 
-    .eplabel{font-size:12px;font-weight:700;margin:14px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;border-top:1px solid var(--border);padding-top:14px}
-    .epg{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:5px;margin-bottom:14px}
+    .eplabel{font-size:11px;font-weight:700;margin:14px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;border-top:1px solid var(--border);padding-top:13px}
+    .epg{display:grid;grid-template-columns:repeat(auto-fill,minmax(50px,1fr));gap:5px;margin-bottom:14px}
     .ep{background:var(--card);border:1px solid var(--border);color:var(--txt);padding:6px 3px;border-radius:7px;font-size:10px;font-weight:600;text-align:center;cursor:pointer;transition:.14s}
     .ep:hover{border-color:rgba(212,160,23,.35);background:var(--card2)}
     .ep.on{background:var(--gold);border-color:var(--gold);color:#000}
@@ -103,13 +101,11 @@
 
     .note{font-size:11px;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:9px 12px;line-height:1.6;margin-bottom:14px}
 
-    .lmw{text-align:center;margin-top:16px}
-    .lmb{background:rgba(212,160,23,.1);border:1px solid rgba(212,160,23,.32);color:var(--gold2);font-family:inherit;font-size:12px;font-weight:600;padding:9px 24px;border-radius:99px;cursor:pointer;transition:.2s}
-    .lmb:hover{background:rgba(212,160,23,.18)}
-    .lmb:disabled{opacity:.4;cursor:not-allowed}
-
     #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(70px);background:rgba(10,14,26,.96);border:1px solid rgba(212,160,23,.3);padding:8px 17px;border-radius:99px;font-size:11.5px;font-weight:600;color:#fff;backdrop-filter:blur(12px);transition:transform .25s;z-index:4000;pointer-events:none;white-space:nowrap}
     #toast.on{transform:translateX(-50%) translateY(0)}
+
+    /* search highlight */
+    .card.hl{border-color:rgba(212,160,23,.4)}
   </style>
 </head>
 <body>
@@ -133,17 +129,18 @@
     <button class="tab" data-t="china">🇨🇳 ចិន</button>
     <button class="tab" data-t="japan">🇯🇵 ជប៉ុន</button>
     <button class="tab" data-t="anime">⛩ Anime</button>
+    <button class="tab" data-t="action">⚔️ Action</button>
+    <button class="tab" data-t="horror">👻 Horror</button>
     <button class="tab" data-t="history">🕒 ល្ហែ</button>
   </div>
 </header>
 
 <main>
-  <div id="status" class="status-bar" style="display:none"></div>
+  <div id="upd" class="upd-bar" style="display:none"></div>
   <div id="ldr" class="state"><div class="spin"></div><div style="font-size:12px">ផ្ទុករឿង...</div></div>
   <div id="cnt" style="display:none">
     <div class="sh"><span class="st"><span id="si">🎬</span><span id="sl">រឿង ដុំ</span></span><span class="sc" id="sc">0</span></div>
     <div class="grid" id="grid"></div>
-    <div class="lmw" id="lmw" style="display:none"><button class="lmb" id="lmb">ផ្ទុករឿងបន្ថែម ▼</button></div>
   </div>
   <div id="emp" class="state" style="display:none">
     <div style="font-size:30px;margin-bottom:10px">🎬</div>
@@ -165,10 +162,9 @@
     <div class="mmeta" id="mm"></div>
     <div class="plabel">▶ ជ្រើស Player</div>
     <div class="pbts" id="pbts"></div>
-    <div class="note" id="pnote">
-      💡 <b>Player 1</b> ប្រើ khdiamond ផ្ទាល់ (ត្រូវ Login សម្រាប់ Paid).<br>
-      ✅ <b>Player 2–4</b> ជា Embed Free ដោយមិនបាច់ Login.<br>
-      🔄 ប្ដូរ Player បានតែចុចប៉ុណ្ណោះ!
+    <div class="note">
+      💡 <b>Player 1</b> = KhDiamond ផ្ទាល់ (Free content ✅ | Paid ត្រូវ Login)<br>
+      ✅ <b>Player 2-4</b> = Embed Free ដោយមិនបាច់ Login — ចុចប្ដូរ!
     </div>
     <div id="ep-sec" style="display:none">
       <div class="eplabel">📋 ជ្រើសភាគ</div>
@@ -176,28 +172,13 @@
     </div>
   </div>
 </div>
-
 <div id="toast"></div>
 
 <script>
 // ═══════════════════════════════════════════════════════════
-//  CONFIG
+//  CONFIG - reads from kh_data.json (generated by scrape_kh.py)
 // ═══════════════════════════════════════════════════════════
-const BASE = 'https://khdiamond.net';
-const RSS2JSON = 'https://api.rss2json.com/v1/api.json';
-const COUNT = 20;
-
-// RSS Feed URLs for each tab
-const FEEDS = {
-  movies:  `${BASE}/movies/feed/`,
-  tvshows: `${BASE}/tvshows/feed/`,
-  khdub:   `${BASE}/genre/khdub/feed/`,
-  free:    `${BASE}/genre/%E1%9E%A5%E1%9E%8F%E1%9E%82%E1%9E%B7%E1%9E%8F%E1%9E%90%E1%9F%92%E1%9E%9B%E1%9F%83/feed/`,
-  korea:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82%E1%9E%80%E1%9E%BC%E1%9E%9A%E1%9F%89%E1%9E%BE/feed/`,
-  china:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82-%E1%9E%85%E1%9E%B7%E1%9E%93/feed/`,
-  japan:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82-%E1%9E%87%E1%9E%94%E1%9F%89%E1%9E%BB%E1%9E%93/feed/`,
-  anime:   `${BASE}/genre/%E1%9E%97%E1%9E%B6%E1%9E%82-anime/feed/`,
-};
+const DATA_URL = './kh_data.json';
 
 const TAB_META = {
   movies:  { icon:'🎬', label:'រឿង ដុំ' },
@@ -207,97 +188,46 @@ const TAB_META = {
   korea:   { icon:'🇰🇷', label:'ភាគ កូរ៉េ' },
   china:   { icon:'🇨🇳', label:'ភាគ ចិន' },
   japan:   { icon:'🇯🇵', label:'ភាគ ជប៉ុន' },
-  anime:   { icon:'⛩', label:'ភាគ Anime' },
+  anime:   { icon:'⛩',  label:'ភាគ Anime' },
+  action:  { icon:'⚔️', label:'Action' },
+  horror:  { icon:'👻', label:'Horror' },
   history: { icon:'🕒', label:'ទើបមើល' },
 };
 
 // ═══════════════════════════════════════════════════════════
 //  STATE
 // ═══════════════════════════════════════════════════════════
-let all=[], curTab='movies', loading=false, curItem=null;
+let DB = null;    // loaded kh_data.json
+let curTab = 'movies', curItem = null;
+let pageSize = 30, pageStart = 0;
+let curItems = []; // items for current view
 
 // ═══════════════════════════════════════════════════════════
 //  STORAGE
 // ═══════════════════════════════════════════════════════════
-const LS_W = 'khw3'; const LS_H = 'khh3';
-function getW(){ try{return JSON.parse(localStorage.getItem(LS_W)||'{}')}catch{return{}} }
-function setW(id,ep){ const w=getW(); if(!w[id])w[id]=[]; if(!w[id].includes(ep))w[id].push(ep); localStorage.setItem(LS_W,JSON.stringify(w)) }
-function getH(){ try{return JSON.parse(localStorage.getItem(LS_H)||'[]')}catch{return[]} }
-function addH(item){ let h=getH().filter(x=>x.link!==item.link); h.unshift({...item,_ts:Date.now()}); h=h.slice(0,60); localStorage.setItem(LS_H,JSON.stringify(h)) }
+function getW(){ try{return JSON.parse(localStorage.getItem('khw3')||'{}')}catch{return{}} }
+function setW(id,ep){ const w=getW(); if(!w[id])w[id]=[]; if(!w[id].includes(ep))w[id].push(ep); localStorage.setItem('khw3',JSON.stringify(w)) }
+function getH(){ try{return JSON.parse(localStorage.getItem('khh3')||'[]')}catch{return[]} }
+function addH(item){ let h=getH().filter(x=>x.link!==item.link); h.unshift({...item,_ts:Date.now()}); h=h.slice(0,60); localStorage.setItem('khh3',JSON.stringify(h)) }
 
 // ═══════════════════════════════════════════════════════════
-//  TOAST / STATUS
+//  TOAST
 // ═══════════════════════════════════════════════════════════
 let _tt;
 function toast(m,d=2000){ const e=document.getElementById('toast'); e.textContent=m; e.classList.add('on'); clearTimeout(_tt); _tt=setTimeout(()=>e.classList.remove('on'),d); }
-function setStatus(msg, type=''){
-  const s=document.getElementById('status');
-  if(!msg){s.style.display='none';return;}
-  s.textContent=msg; s.className='status-bar'+(type?' '+type:''); s.style.display='block';
-}
 
 // ═══════════════════════════════════════════════════════════
-//  RSS2JSON FETCH (no CORS issues!)
+//  LOAD kh_data.json
 // ═══════════════════════════════════════════════════════════
-async function fetchRSS(feedUrl, page=1) {
-  const offset = (page - 1) * COUNT;
-  const url = `${RSS2JSON}?rss_url=${encodeURIComponent(feedUrl)}&count=${COUNT}&offset=${offset}`;
-  setStatus(`⏳ ផ្ទុករឿង... (${feedUrl.split('/')[3] || 'feed'})`, '');
-  const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const data = await res.json();
-  if (data.status !== 'ok') throw new Error(data.message || 'RSS error');
-  return data;
-}
-
-// ═══════════════════════════════════════════════════════════
-//  PARSE RSS ITEM → Movie object
-// ═══════════════════════════════════════════════════════════
-function parseRSSItem(item) {
-  const link = item.link || '';
-  // Extract type and slug from URL
-  const m = link.match(/khdiamond\.net\/(movies|tvshows)\/([^/?#]+)/);
-  const type = m ? m[1] : (link.includes('/tvshows/') ? 'tvshows' : 'movies');
-  const slug = m ? m[2] : '';
-
-  // Get poster: thumbnail > enclosure > extract from description img
-  let poster = item.thumbnail || item.enclosure?.link || '';
-  if (!poster && item.description) {
-    const imgM = item.description.match(/<img[^>]+src=["']([^"']+)["']/i);
-    if (imgM) poster = imgM[1];
-  }
-  // Ensure https
-  if (poster && poster.startsWith('//')) poster = 'https:' + poster;
-
-  // Year from pubDate
-  const year = item.pubDate ? new Date(item.pubDate).getFullYear().toString() : '';
-
-  // Clean title (remove HTML tags)
-  const title = (item.title || '').replace(/<[^>]+>/g,'').trim();
-
-  return { id: slug, type, slug, title, poster, year, rating: '', link, pubDate: item.pubDate };
-}
-
-// ═══════════════════════════════════════════════════════════
-//  SEARCH via RSS + local filter
-// ═══════════════════════════════════════════════════════════
-async function doSearch(q) {
-  if (!q.trim()) { loadData(curTab, 1, false); setHead(curTab); return; }
-  showLoading();
-  try {
-    // Try searching via WP JSON search API (public, no CORS needed via rss2json bridge)
-    const searchFeed = `${BASE}/?s=${encodeURIComponent(q)}&feed=rss2`;
-    const data = await fetchRSS(searchFeed, 1);
-    const items = (data.items || []).map(parseRSSItem).filter(x=>x.slug);
-    showResult(items, `🔍 "${q}" — ${items.length} លទ្ធផល`, items.length);
-    document.getElementById('lmw').style.display = 'none';
-    setStatus(items.length > 0 ? `✅ រកឃើញ ${items.length} រឿង` : '⚠️ រកមិនឃើញ', items.length>0?'ok':'err');
-  } catch(e) {
-    // Fallback: filter already-loaded items
-    const r = all.filter(x => x.title.toLowerCase().includes(q.toLowerCase()));
-    showResult(r, `🔍 "${q}" — ${r.length} លទ្ធផល`, r.length);
-    document.getElementById('lmw').style.display = 'none';
-    setStatus(`⚠️ ស្វែងរកក្នុង Cache — ${r.length} លទ្ធផល`,'');
+async function loadDB() {
+  const res = await fetch(DATA_URL + '?t=' + Date.now());
+  if (!res.ok) throw new Error(`kh_data.json: HTTP ${res.status}`);
+  DB = await res.json();
+  // Show updated time
+  if (DB.updated) {
+    const d = new Date(DB.updated);
+    document.getElementById('upd').textContent = `🕐 Data Updated: ${d.toLocaleString('km-KH')}`;
+    document.getElementById('upd').style.display = 'block';
   }
 }
 
@@ -306,7 +236,8 @@ async function doSearch(q) {
 // ═══════════════════════════════════════════════════════════
 function mkCard(item) {
   const w = getW(); const seen = w[item.id]?.length > 0;
-  const c = document.createElement('div'); c.className = 'card';
+  const c = document.createElement('div');
+  c.className = 'card';
   c.innerHTML = `
     <div class="thumb">
       ${item.poster
@@ -321,108 +252,105 @@ function mkCard(item) {
   return c;
 }
 
-function showResult(items, label, count) {
+function renderItems(items, append=false) {
   const g = document.getElementById('grid');
-  const parts = label.split(' ');
-  document.getElementById('si').textContent = parts[0] || '🎬';
-  document.getElementById('sl').textContent = parts.slice(1).join(' ');
-  document.getElementById('sc').textContent = count;
+  if (!append) g.innerHTML = '';
+  items.forEach(i => g.appendChild(mkCard(i)));
+}
+
+function showState(tab, items, searchMode=false) {
+  const meta = TAB_META[tab] || { icon:'🎬', label: tab };
+  document.getElementById('si').textContent = meta.icon;
+  document.getElementById('sl').textContent = meta.label;
+  document.getElementById('sc').textContent = items.length;
   document.getElementById('ldr').style.display = 'none';
   if (!items.length) {
     document.getElementById('cnt').style.display = 'none';
     document.getElementById('emp').style.display = 'block';
-    document.getElementById('emsg').textContent = 'គ្មានរឿងត្រូវបញ្ជាក់';
-    return;
+    document.getElementById('emsg').textContent = searchMode ? 'រកមិនឃើញ' : 'គ្មានទិន្នន័យ — ចុចជ្រើស Tab ផ្សេង';
+  } else {
+    document.getElementById('cnt').style.display = 'block';
+    document.getElementById('emp').style.display = 'none';
   }
-  document.getElementById('cnt').style.display = 'block';
-  document.getElementById('emp').style.display = 'none';
-  items.forEach(i => g.appendChild(mkCard(i)));
 }
 
-function showLoading() {
-  document.getElementById('ldr').style.display = 'block';
-  document.getElementById('cnt').style.display = 'none';
-  document.getElementById('emp').style.display = 'none';
+// ═══════════════════════════════════════════════════════════
+//  TAB SWITCH
+// ═══════════════════════════════════════════════════════════
+function switchTab(tab) {
+  curTab = tab;
+  const meta = TAB_META[tab] || { icon:'🎬', label: tab };
+  document.getElementById('si').textContent = meta.icon;
+  document.getElementById('sl').textContent = meta.label;
+
+  document.getElementById('ldr').style.display = 'none';
   document.getElementById('grid').innerHTML = '';
-  setStatus('');
-}
 
-function setHead(tab) {
-  const m = TAB_META[tab] || { icon:'🎬', label:tab };
-  document.getElementById('si').textContent = m.icon;
-  document.getElementById('sl').textContent = m.label;
-}
-
-// ═══════════════════════════════════════════════════════════
-//  LOAD DATA
-// ═══════════════════════════════════════════════════════════
-async function loadData(tab, page=1, append=false) {
-  if (loading) return; loading = true;
-  const lmb = document.getElementById('lmb');
-
-  if (!append) { showLoading(); all = []; }
-  else { lmb.disabled = true; lmb.textContent = '⏳ ផ្ទុក...'; }
-
-  try {
-    if (tab === 'history') {
-      const h = getH();
-      all = h;
-      document.getElementById('grid').innerHTML = '';
-      setHead('history');
-      document.getElementById('sc').textContent = h.length;
-      if (h.length) { showResult(h, '🕒 ទើបមើល', h.length); }
-      else {
-        document.getElementById('ldr').style.display = 'none';
-        document.getElementById('emp').style.display = 'block';
-        document.getElementById('emsg').textContent = 'អ្នកមិនទាន់មើលរឿងណាទេ';
-      }
-      document.getElementById('lmw').style.display = 'none';
-    } else {
-      const feedUrl = FEEDS[tab] || FEEDS.movies;
-      const data = await fetchRSS(feedUrl, page);
-      const items = (data.items || []).map(parseRSSItem).filter(x => x.slug && x.title);
-      if (!append) all = items; else all = [...all, ...items];
-
-      document.getElementById('grid').innerHTML = append ? document.getElementById('grid').innerHTML : '';
-      if (!append) document.getElementById('grid').innerHTML = '';
-      items.forEach(i => document.getElementById('grid').appendChild(mkCard(i)));
-
-      document.getElementById('ldr').style.display = 'none';
-      document.getElementById('cnt').style.display = items.length || append ? 'block' : 'none';
-      document.getElementById('emp').style.display = !items.length && !append ? 'block' : 'none';
-      document.getElementById('emsg').textContent = 'គ្មានរឿង — RSS Feed ទទេ';
-      document.getElementById('sc').textContent = all.length;
-      // Show load more if we got a full page
-      const hasMore = items.length >= COUNT;
-      document.getElementById('lmw').style.display = hasMore ? 'block' : 'none';
-      lmb.disabled = false; lmb.textContent = 'ផ្ទុករឿងបន្ថែម ▼';
-      setStatus(`✅ ផ្ទុក ${all.length} រឿង ${append?'(total)':''}`, 'ok');
-      setTimeout(() => setStatus(''), 3000);
-    }
-  } catch(e) {
-    console.error(e);
-    document.getElementById('ldr').style.display = 'none';
-    document.getElementById('emp').style.display = 'block';
-    document.getElementById('emsg').textContent = '⚠️ ផ្ទុក RSS Feed បរាជ័យ — ត្រូវការ Internet';
-    setStatus(`❌ ${e.message}`, 'err');
-    lmb.disabled = false; lmb.textContent = 'ផ្ទុកម្ដងទៀត';
+  if (tab === 'history') {
+    curItems = getH();
+  } else if (DB && DB.tabs && DB.tabs[tab]) {
+    curItems = DB.tabs[tab];
+  } else {
+    curItems = [];
   }
-  loading = false;
-  if (append) { const lmb=document.getElementById('lmb'); lmb.disabled=false; }
+
+  document.getElementById('sc').textContent = curItems.length;
+  if (!curItems.length) {
+    document.getElementById('cnt').style.display = 'none';
+    document.getElementById('emp').style.display = 'block';
+    document.getElementById('emsg').textContent = tab === 'history' ? 'មិនទាន់មើលរឿងណាទេ' : 'គ្មានទិន្នន័យ';
+  } else {
+    document.getElementById('cnt').style.display = 'block';
+    document.getElementById('emp').style.display = 'none';
+    renderItems(curItems);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+//  SEARCH (local - instant, no network needed)
+// ═══════════════════════════════════════════════════════════
+function doSearch(q) {
+  if (!q.trim()) { switchTab(curTab); return; }
+  if (!DB) return;
+
+  // Search across ALL tabs
+  const seen = new Set();
+  const results = [];
+  for (const tab of Object.keys(DB.tabs)) {
+    for (const item of DB.tabs[tab]) {
+      if (!seen.has(item.slug) && item.title.toLowerCase().includes(q.toLowerCase())) {
+        seen.add(item.slug);
+        results.push(item);
+      }
+    }
+  }
+
+  document.getElementById('si').textContent = '🔍';
+  document.getElementById('sl').textContent = `"${q}" — ${results.length} លទ្ធផល`;
+  document.getElementById('sc').textContent = results.length;
+  document.getElementById('grid').innerHTML = '';
+  document.getElementById('ldr').style.display = 'none';
+
+  if (!results.length) {
+    document.getElementById('cnt').style.display = 'none';
+    document.getElementById('emp').style.display = 'block';
+    document.getElementById('emsg').textContent = `រកមិនឃើញ "${q}"`;
+  } else {
+    document.getElementById('cnt').style.display = 'block';
+    document.getElementById('emp').style.display = 'none';
+    renderItems(results);
+  }
 }
 
 // ═══════════════════════════════════════════════════════════
 //  MODAL / PLAYER
 // ═══════════════════════════════════════════════════════════
-async function openModal(item) {
+function openModal(item) {
   curItem = item;
-  const modal = document.getElementById('modal');
-  const fr = document.getElementById('fr');
-  const pl = document.getElementById('pl');
-
-  modal.classList.add('on');
+  document.getElementById('modal').classList.add('on');
   document.body.style.overflow = 'hidden';
-  fr.src = ''; pl.classList.remove('h');
+  document.getElementById('fr').src = 'about:blank';
+  document.getElementById('pl').classList.remove('h');
 
   document.getElementById('mt').textContent = item.title;
   document.getElementById('mm').innerHTML = `
@@ -433,55 +361,32 @@ async function openModal(item) {
   document.getElementById('ep-sec').style.display = 'none';
   document.getElementById('epg').innerHTML = '';
 
-  // Save history
   addH(item);
-
-  // Build player sources
   buildSources(item, null);
 
   if (item.type === 'tvshows') {
-    // Fetch episode list from RSS
-    try {
-      toast('⏳ ផ្ទុកភាគ...');
-      const epFeed = `${item.link}feed/`;
-      // Episodes are separate posts — try fetching show's episode RSS
-      // Fallback: show generic numbered pills
-      const epData = await fetchRSS(epFeed, 1).catch(() => null);
-      if (epData && epData.items && epData.items.length > 0) {
-        const eps = epData.items.map((ep, i) => ({
-          num: epData.items.length - i,
-          title: ep.title?.replace(/<[^>]+>/g,'').trim(),
-          url: ep.link
-        })).reverse();
-        showEpisodes(item, eps);
-      } else {
-        // Generic numbered episodes (1-50 pills as placeholder)
-        const eps = Array.from({length:30},(_,i)=>({num:i+1,title:`ភាគ ${i+1}`,url:item.link}));
-        showEpisodes(item, eps);
-      }
-    } catch { /* ignore */ }
+    // Create numbered episode pills (1-50 default for TV shows)
+    showEpPills(item, 50);
   }
 }
 
-function buildSources(item, epUrl) {
+function buildSources(item, epOverrideUrl) {
   const pbts = document.getElementById('pbts');
   pbts.innerHTML = '';
-
-  const srcUrl = epUrl || item.link;
-  const slug = item.slug;
   const isTV = item.type === 'tvshows';
+  const url = epOverrideUrl || item.link;
 
   const sources = [
-    { label: 'Player 1 · KhDiamond', url: srcUrl, dot: '#6b7d94' },
-    { label: 'Player 2 · VidSrc', url: `https://vidsrc.to/embed/${isTV?'tv':'movie'}/${slug}`, dot: '#34d399' },
-    { label: 'Player 3 · 2Embed', url: `https://www.2embed.cc/embed/${slug}`, dot: '#60a5fa' },
-    { label: 'Player 4 · EmbedSu', url: `https://embed.su/embed/${isTV?'tv':'movie'}/${slug}`, dot: '#a78bfa' },
+    { label: 'Player 1 · KhDiamond', url: url, color: '#6b7d94' },
+    { label: 'Player 2 · VidSrc',    url: `https://vidsrc.to/embed/${isTV?'tv':'movie'}/${item.slug}`, color: '#34d399' },
+    { label: 'Player 3 · 2Embed',    url: `https://www.2embed.cc/embed/${item.slug}`, color: '#60a5fa' },
+    { label: 'Player 4 · EmbedSu',   url: `https://embed.su/embed/${isTV?'tv':'movie'}/${item.slug}`, color: '#a78bfa' },
   ];
 
   sources.forEach((s, i) => {
     const b = document.createElement('button');
-    b.className = 'pbt' + (i === 0 ? ' on' : '');
-    b.innerHTML = `<span class="dot" style="background:${s.dot}"></span>${s.label}`;
+    b.className = 'pbt' + (i===0?' on':'');
+    b.innerHTML = `<span class="dot" style="background:${s.color}"></span>${s.label}`;
     b.addEventListener('click', () => {
       document.querySelectorAll('.pbt').forEach(x => x.classList.remove('on'));
       b.classList.add('on');
@@ -490,32 +395,47 @@ function buildSources(item, epUrl) {
     pbts.appendChild(b);
   });
 
-  // Auto-play first
   loadPlayer(sources[0].url);
 }
 
-function showEpisodes(item, eps) {
+function showEpPills(item, count) {
   const sec = document.getElementById('ep-sec');
   const epg = document.getElementById('epg');
   sec.style.display = 'block';
   epg.innerHTML = '';
   const w = getW();
-  eps.forEach(ep => {
-    const seen = w[item.id]?.includes(ep.num);
+
+  for (let i = 1; i <= count; i++) {
+    const seen = w[item.id]?.includes(i);
     const pill = document.createElement('button');
-    pill.className = 'ep' + (seen ? ' seen' : '');
-    pill.textContent = ep.num;
-    pill.title = ep.title;
+    pill.className = 'ep' + (seen?' seen':'');
+    pill.textContent = i;
+    const epNum = i;
     pill.addEventListener('click', () => {
       document.querySelectorAll('.ep').forEach(x => x.classList.remove('on'));
       pill.classList.add('on', 'seen');
-      setW(item.id, ep.num);
-      buildSources(item, ep.url);
+      setW(item.id, epNum);
+      // Build sources with episode URL
+      const pbts = document.getElementById('pbts');
+      pbts.innerHTML = '';
+      const epUrl = `${item.link}`;  // KhDiamond ep page (episode selected on that page)
+      const sources = [
+        { label: 'Player 1 · KhDiamond', url: epUrl, color: '#6b7d94' },
+        { label: 'Player 2 · VidSrc',    url: `https://vidsrc.to/embed/tv/${item.slug}/${epNum}/1`, color: '#34d399' },
+        { label: 'Player 3 · 2Embed',    url: `https://www.2embed.cc/embed/${item.slug}&s=1&e=${epNum}`, color: '#60a5fa' },
+        { label: 'Player 4 · EmbedSu',   url: `https://embed.su/embed/tv/${item.slug}/1/${epNum}`, color: '#a78bfa' },
+      ];
+      sources.forEach((s, idx) => {
+        const b = document.createElement('button');
+        b.className = 'pbt'+(idx===0?' on':'');
+        b.innerHTML = `<span class="dot" style="background:${s.color}"></span>${s.label}`;
+        b.addEventListener('click',()=>{document.querySelectorAll('.pbt').forEach(x=>x.classList.remove('on'));b.classList.add('on');loadPlayer(s.url);});
+        pbts.appendChild(b);
+      });
+      loadPlayer(sources[0].url);
     });
     epg.appendChild(pill);
-  });
-  // Auto-click first
-  epg.querySelector('.ep')?.click();
+  }
 }
 
 function loadPlayer(url) {
@@ -524,7 +444,7 @@ function loadPlayer(url) {
   pl.classList.remove('h');
   fr.src = 'about:blank';
   setTimeout(() => { fr.src = url; }, 60);
-  const t = setTimeout(() => pl.classList.add('h'), 7000);
+  const t = setTimeout(() => pl.classList.add('h'), 8000);
   fr.onload = () => { clearTimeout(t); pl.classList.add('h'); };
 }
 
@@ -538,46 +458,42 @@ function closeModal() {
 // ═══════════════════════════════════════════════════════════
 //  EVENTS
 // ═══════════════════════════════════════════════════════════
-let _curPage = 1;
 document.querySelectorAll('.tab').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
     btn.classList.add('on');
-    curTab = btn.dataset.t;
-    _curPage = 1; all = [];
     document.getElementById('q').value = '';
     document.getElementById('qx').classList.remove('v');
-    setHead(curTab);
-    document.getElementById('grid').innerHTML = '';
-    loadData(curTab, 1, false);
+    switchTab(btn.dataset.t);
   });
 });
 
-const qi = document.getElementById('q'), qx = document.getElementById('qx');
+const qi=document.getElementById('q'), qx=document.getElementById('qx');
 let _sd;
 qi.addEventListener('input', e => {
   qx.classList.toggle('v', e.target.value.length > 0);
   clearTimeout(_sd);
-  _sd = setTimeout(() => doSearch(e.target.value), 500);
+  _sd = setTimeout(() => doSearch(e.target.value), 300);
 });
-qx.addEventListener('click', () => {
-  qi.value = ''; qx.classList.remove('v');
-  setHead(curTab);
-  document.getElementById('grid').innerHTML = '';
-  loadData(curTab, 1, false);
-});
-
+qx.addEventListener('click', () => { qi.value=''; qx.classList.remove('v'); switchTab(curTab); });
 document.getElementById('bc').addEventListener('click', closeModal);
-document.getElementById('lmb').addEventListener('click', () => {
-  _curPage++; loadData(curTab, _curPage, true);
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
 
 // ═══════════════════════════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════════════════════════
-setHead('movies');
-loadData('movies', 1, false);
+document.getElementById('ldr').style.display = 'block';
+
+loadDB()
+  .then(() => switchTab('movies'))
+  .catch(err => {
+    console.error(err);
+    document.getElementById('ldr').style.display = 'none';
+    document.getElementById('emp').style.display = 'block';
+    document.getElementById('emsg').innerHTML = `
+      ⚠️ <b>kh_data.json មិនទាន់ Generate</b><br>
+      <small style="color:#4a6072">Run: <code>python scrape_kh.py</code> ហើយ Reload</small>`;
+  });
 </script>
 </body>
 </html>
