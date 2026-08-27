@@ -619,6 +619,35 @@
       cursor: pointer;
     }
 
+    .modal-actions-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0 6px;
+      flex-wrap: wrap;
+    }
+    .btn-tg-stream {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: linear-gradient(135deg, #229ED9, #0088cc);
+      color: #fff;
+      text-decoration: none;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 136, 204, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.16s ease;
+      cursor: pointer;
+    }
+    .btn-tg-stream:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 15px rgba(0, 136, 204, 0.5);
+    }
+    .btn-tg-stream:active { transform: scale(0.96); }
+
     /* Episode Selector */
     .episodes-section {
       margin-top: 14px;
@@ -804,6 +833,13 @@
     <p class="modal-synopsis" id="m-synopsis"></p>
     <span class="synopsis-toggle" id="m-synopsis-toggle">អានបន្ថែម ›</span>
 
+    <div class="modal-actions-bar">
+      <a id="btn-tg-direct" class="btn-tg-stream" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.05-.49-.83-.27-1.49-.42-1.43-.88.03-.24.38-.49 1.03-.75 4.04-1.76 6.74-2.92 8.09-3.5 3.85-1.65 4.65-1.94 5.18-1.95.12 0 .37.03.54.17.14.12.18.28.2.45-.01.07.01.23 0 .28z"/></svg>
+        <span id="tg-btn-label">📥 ទស្សនា / Download លើ Telegram</span>
+      </a>
+    </div>
+
     <div class="episodes-section">
       <div class="episodes-header">
         <span>បញ្ជីភាគ (Episodes)</span>
@@ -892,6 +928,17 @@ async function init() {
   try {
     // 1. Fetch shows
     allItems = await fetchAPI("shows?select=id,title,synopsis,poster_url,banner_url,release_year,status,type,featured,is_free,created_at&order=featured.desc,created_at.desc&limit=300");
+
+    // Load Backup Manifest (if available)
+    try {
+      const mfRes = await fetch('./backup_manifest.json?t=' + Date.now());
+      if (mfRes.ok) {
+        backupManifest = await mfRes.json();
+        console.log(`📦 Loaded ${Object.keys(backupManifest).length} backed up episodes from Telegram Archive`);
+      }
+    } catch (e) {
+      console.log("No local backup manifest found:", e);
+    }
 
     // 2. Fetch episodes overview
     try {
@@ -1141,10 +1188,14 @@ playerEl.addEventListener("error", function(e) {
   if (!hasTriedFallback && currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
     hasTriedFallback = true;
     const ep = currentEpisodes[currentEpIdx];
+    const backupItem = backupManifest[ep.id];
     
-    // Check if we have an alternate mirror or backup format
     fallbackBanner.classList.add("show");
-    document.getElementById("fallback-msg").textContent = "⚠️ Server ដើមគាំង - កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
+    if (backupItem) {
+      document.getElementById("fallback-msg").innerHTML = `⚡ Server ដើមគាំង — មាន Cloud Backup រួចរាល់ (${backupItem.file_size_mb} MB)`;
+    } else {
+      document.getElementById("fallback-msg").textContent = "⚠️ Server ដើមគាំង — កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
+    }
     showToast("🔄 កំពុងប្តូរទៅកាន់ Server បម្រុង...");
 
     setTimeout(() => {
@@ -1160,7 +1211,7 @@ playerEl.addEventListener("error", function(e) {
       playerEl.src = fallbackUrl;
       playerEl.load();
       playerEl.play().catch(() => {
-        document.getElementById("fallback-msg").textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម - សូមសាកល្បងម្តងទៀត";
+        document.getElementById("fallback-msg").textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម — សូមសាកល្បងម្តងទៀត";
       });
     }, 800);
   }
@@ -1225,9 +1276,13 @@ async function openModal(show) {
       const hasUrl = !!ep.video_url;
       const epNum = ep.episode_number || (idx + 1);
       const isEpWatched = !!watchedEpMap[show.id + "_" + epNum];
+      const isBackedUp = !!backupManifest[ep.id];
 
       btn.className = `ep-pill ${hasUrl ? '' : 'no-video'} ${isEpWatched ? 'ep-watched' : ''}`;
       btn.textContent = isMovie ? "ទស្សនា (Play)" : (isEpWatched ? `x${epNum} ✓` : `x${epNum}`);
+      if (isBackedUp) {
+        btn.title = "⚡ Cloud Backup Ready";
+      }
       btn.dataset.idx = idx;
 
       if (hasUrl) {
@@ -1268,6 +1323,20 @@ function playEpisode(idx) {
     markEpisodeWatched(currentShowObj.id, epNum, ep.title);
   }
 
+  // Update Telegram Direct Watch Button
+  const tgBtn = document.getElementById("btn-tg-direct");
+  const tgLabel = document.getElementById("tg-btn-label");
+  const backupItem = backupManifest[ep.id];
+  
+  if (backupItem && backupItem.telegram_message_id) {
+    const cleanChanId = "3943277744"; // Telegram Channel ID (-1003943277744)
+    tgBtn.href = `https://t.me/c/${cleanChanId}/${backupItem.telegram_message_id}`;
+    tgLabel.textContent = `📥 ទស្សនា / Download ភាគ ${epNum} លើ Telegram (${backupItem.file_size_mb} MB)`;
+    tgBtn.style.display = "inline-flex";
+  } else {
+    tgBtn.style.display = "none";
+  }
+
   document.querySelectorAll(".ep-pill").forEach(p => p.classList.remove("active"));
   const activeBtn = document.querySelector(`.ep-pill[data-idx="${idx}"]`);
   if (activeBtn) {
@@ -1287,9 +1356,22 @@ function closeModal() {
   playerEl.pause();
   playerEl.src = "";
   fallbackBanner.classList.remove("show");
+  const tgBtn = document.getElementById("btn-tg-direct");
+  if (tgBtn) tgBtn.style.display = "none";
 }
 
 document.getElementById("btn-close").addEventListener("click", closeModal);
+
+// Android APK / External App opener for Telegram Button
+document.getElementById("btn-tg-direct").addEventListener("click", function(e) {
+  const url = this.href;
+  if (!url || url === "#") return;
+  // If inside Android APK (Capacitor WebView)
+  if (window.Capacitor || window.location.protocol === "file:" || navigator.userAgent.includes("wv")) {
+    e.preventDefault();
+    window.open(url, "_system");
+  }
+});
 
 let toastTimeout;
 function showToast(msg) {

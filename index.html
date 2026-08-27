@@ -1362,6 +1362,17 @@ function closeModal() {
 
 document.getElementById("btn-close").addEventListener("click", closeModal);
 
+// Android APK / External App opener for Telegram Button
+document.getElementById("btn-tg-direct").addEventListener("click", function(e) {
+  const url = this.href;
+  if (!url || url === "#") return;
+  // If inside Android APK (Capacitor WebView)
+  if (window.Capacitor || window.location.protocol === "file:" || navigator.userAgent.includes("wv")) {
+    e.preventDefault();
+    window.open(url, "_system");
+  }
+});
+
 let toastTimeout;
 function showToast(msg) {
   const t = document.getElementById("toast");
