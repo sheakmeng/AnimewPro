@@ -107,18 +107,21 @@ async def main():
     print("🔍 Fetching shows & episodes from database...", flush=True)
     shows_map = await fetch_shows()
     episodes = await fetch_episodes()
-    print(f"✅ Found {len(shows_map)} shows and {len(episodes)} available video episodes.", flush=True)
+    print(f"✅ Found {len(shows_map)} shows and {len(episodes)} available video episodes in database.", flush=True)
 
-    # Filter out already backed-up episodes
+    # Filter out already backed-up episodes (ensure string comparison)
     pending = []
     for ep in episodes:
-        ep_id = ep["id"]
+        ep_id = str(ep["id"]).strip()
         if ep_id not in manifest:
             pending.append(ep)
 
-    print(f"📦 Total pending for backup: {len(pending)} episodes.", flush=True)
+    print(f"📊 ស្ថានភាពទិន្នន័យ Backup:", flush=True)
+    print(f"  • បាន Backup រួចរាល់: {len(manifest)} ភាគ", flush=True)
+    print(f"  • នៅសល់ត្រូវ Backup: {len(pending)} ភាគ", flush=True)
+
     if not pending:
-        print("🎉 All episodes are up to date! Nothing to backup.", flush=True)
+        print("🎉 គ្រប់ភាគទាំងអស់ត្រូវបាន Backup ចូល Telegram រួចរាល់អស់ហើយ! (All up to date)", flush=True)
         return
 
     print("🤖 Connecting to Telegram Bot...", flush=True)
