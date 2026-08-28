@@ -184,10 +184,29 @@ def extract_video_metadata(video_path: str, thumb_out_path: str):
 
     return duration, width, height, (thumb_out_path if thumb_created else None)
 
+def get_video_duration(video_path: str) -> float:
+    """Helper to get video duration in seconds for progress tracking"""
+    if not shutil.which("ffprobe"):
+        return 0.0
+    try:
+        cmd = [
+            "ffprobe", "-v", "error",
+            "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1",
+            video_path
+        ]
+        res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
+        if res.returncode == 0 and res.stdout.strip():
+            return float(res.stdout.strip())
+    except Exception:
+        pass
+    return 0.0
+
 def compress_video_if_needed(video_path: str, max_mb: float = 1950.0):
     """
     If video size exceeds max_mb (default 1950MB to fit within Telegram 2GB limit),
-    use FFmpeg to compress the video to ~800MB-1200MB without quality loss.
+    use FFmpeg to compress the video to ~800MB-1200MB without quality loss,
+    showing real-time % progress.
     Returns (final_path, is_temporary_compressed_file)
     """
     if not os.path.exists(video_path):
@@ -205,6 +224,7 @@ def compress_video_if_needed(video_path: str, max_mb: float = 1950.0):
 
     print("  ⚙️ Starting FFmpeg auto-compression (H.264 CRF 27) to fit under 2GB...", flush=True)
     compressed_path = video_path + ".compressed.mp4"
+    total_dur = get_video_duration(video_path)
 
     cmd = [
         "ffmpeg", "-y",
@@ -215,17 +235,56 @@ def compress_video_if_needed(video_path: str, max_mb: float = 1950.0):
         "-c:a", "aac",
         "-b:a", "128k",
         "-movflags", "+faststart",
+        "-progress", "pipe:1",
+        "-nostats",
         compressed_path
     ]
 
     try:
-        res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=900)
-        if res.returncode == 0 and os.path.exists(compressed_path) and os.path.getsize(compressed_path) > 0:
+        process = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            text=True,
+            bufsize=1,
+            universal_newlines=True
+        )
+
+        last_logged_pct = -1
+        last_logged_min = -1
+
+        if process.stdout:
+            for line in process.stdout:
+                line = line.strip()
+                if line.startswith("out_time_us="):
+                    try:
+                        us = int(line.split("=")[1])
+                        cur_sec = us / 1_000_000
+                        if total_dur > 0:
+                            pct = min(int((cur_sec / total_dur) * 100), 99)
+                            if pct % 10 == 0 and pct != last_logged_pct:
+                                last_logged_pct = pct
+                                cur_m, cur_s = int(cur_sec // 60), int(cur_sec % 60)
+                                tot_m, tot_s = int(total_dur // 60), int(total_dur % 60)
+                                print(f"  ⚙️ Compressing: {pct}% ({cur_m:02d}:{cur_s:02d} / {tot_m:02d}:{tot_s:02d})", flush=True)
+                        else:
+                            cur_min = int(cur_sec // 60)
+                            if cur_min > 0 and cur_min != last_logged_min and cur_min % 2 == 0:
+                                last_logged_min = cur_min
+                                print(f"  ⚙️ Compressing... {cur_min} minutes processed", flush=True)
+                    except Exception:
+                        pass
+                elif line == "progress=end":
+                    print("  ⚙️ Compressing: 100% (Finalizing output file...)", flush=True)
+
+        process.wait(timeout=900)
+
+        if process.returncode == 0 and os.path.exists(compressed_path) and os.path.getsize(compressed_path) > 0:
             new_size_mb = os.path.getsize(compressed_path) / (1024 * 1024)
             print(f"  ✨ Auto-compressed successfully: {file_size_mb:.1f} MB ➡️ {new_size_mb:.1f} MB!", flush=True)
             return compressed_path, True
         else:
-            print(f"  ❌ Compression failed with returncode {res.returncode}", flush=True)
+            print(f"  ❌ Compression finished with error code {process.returncode}", flush=True)
     except Exception as e:
         print(f"  ❌ Compression exception: {e}", flush=True)
 
