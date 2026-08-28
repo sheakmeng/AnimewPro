@@ -202,93 +202,70 @@ def get_video_duration(video_path: str) -> float:
         pass
     return 0.0
 
-def compress_video_if_needed(video_path: str, max_mb: float = 1950.0):
+def split_video_if_needed(video_path: str, max_mb: float = 1950.0):
     """
     If video size exceeds max_mb (default 1950MB to fit within Telegram 2GB limit),
-    use FFmpeg to compress the video to ~800MB-1200MB without quality loss,
-    showing real-time % progress.
-    Returns (final_path, is_temporary_compressed_file)
+    use FFmpeg lossless fast stream copy (-c copy) to split the video into Part 1, Part 2, etc.
+    Takes only ~2-3 seconds with ZERO quality loss!
+    Returns (list_of_part_paths, is_temporary_split)
     """
+    import math
     if not os.path.exists(video_path):
-        return video_path, False
+        return [video_path], False
 
     file_size_mb = os.path.getsize(video_path) / (1024 * 1024)
     if file_size_mb <= max_mb:
-        return video_path, False
+        return [video_path], False
 
     print(f"  ⚠️ Video size ({file_size_mb:.1f} MB) exceeds Telegram 2GB limit ({max_mb} MB)!", flush=True)
-    
-    if not shutil.which("ffmpeg"):
-        print("  ❌ FFmpeg not found. Cannot compress large file.", flush=True)
-        return video_path, False
 
-    print("  ⚙️ Starting FFmpeg auto-compression (H.264 CRF 27) to fit under 2GB...", flush=True)
-    compressed_path = video_path + ".compressed.mp4"
+    if not shutil.which("ffmpeg"):
+        print("  ❌ FFmpeg not found. Cannot split large file.", flush=True)
+        return [video_path], False
+
+    num_parts = math.ceil(file_size_mb / 1800.0)
     total_dur = get_video_duration(video_path)
 
-    cmd = [
-        "ffmpeg", "-y",
-        "-i", video_path,
-        "-c:v", "libx264",
-        "-crf", "27",
-        "-preset", "veryfast",
-        "-c:a", "aac",
-        "-b:a", "128k",
-        "-movflags", "+faststart",
-        "-progress", "pipe:1",
-        "-nostats",
-        compressed_path
-    ]
+    if total_dur <= 0:
+        total_dur = (file_size_mb * 8 * 1024) / 4000.0
 
-    try:
-        process = subprocess.Popen(
-            cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.DEVNULL,
-            text=True,
-            bufsize=1,
-            universal_newlines=True
-        )
+    part_dur = total_dur / num_parts
+    print(f"  ⚡ Fast Lossless Split into {num_parts} parts (approx {part_dur/60:.1f} min each) in ~2s...", flush=True)
 
-        last_logged_pct = -1
-        last_logged_min = -1
+    parts = []
+    for p_idx in range(num_parts):
+        start_sec = p_idx * part_dur
+        out_part = f"{video_path}.part{p_idx+1}.mp4"
+        cmd = [
+            "ffmpeg", "-y",
+            "-ss", str(start_sec),
+            "-i", video_path,
+            "-t", str(part_dur),
+            "-c", "copy",
+            "-avoid_negative_ts", "make_zero",
+            "-movflags", "+faststart",
+            out_part
+        ]
+        try:
+            res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=60)
+            if res.returncode == 0 and os.path.exists(out_part) and os.path.getsize(out_part) > 1024:
+                part_size_mb = os.path.getsize(out_part) / (1024 * 1024)
+                print(f"  ✨ Part {p_idx+1}/{num_parts} created ({part_size_mb:.1f} MB)", flush=True)
+                parts.append(out_part)
+            else:
+                print(f"  ❌ Failed creating part {p_idx+1}", flush=True)
+        except Exception as e:
+            print(f"  ❌ Split error on part {p_idx+1}: {e}", flush=True)
 
-        if process.stdout:
-            for line in process.stdout:
-                line = line.strip()
-                if line.startswith("out_time_us="):
-                    try:
-                        us = int(line.split("=")[1])
-                        cur_sec = us / 1_000_000
-                        if total_dur > 0:
-                            pct = min(int((cur_sec / total_dur) * 100), 99)
-                            if pct % 10 == 0 and pct != last_logged_pct:
-                                last_logged_pct = pct
-                                cur_m, cur_s = int(cur_sec // 60), int(cur_sec % 60)
-                                tot_m, tot_s = int(total_dur // 60), int(total_dur % 60)
-                                print(f"  ⚙️ Compressing: {pct}% ({cur_m:02d}:{cur_s:02d} / {tot_m:02d}:{tot_s:02d})", flush=True)
-                        else:
-                            cur_min = int(cur_sec // 60)
-                            if cur_min > 0 and cur_min != last_logged_min and cur_min % 2 == 0:
-                                last_logged_min = cur_min
-                                print(f"  ⚙️ Compressing... {cur_min} minutes processed", flush=True)
-                    except Exception:
-                        pass
-                elif line == "progress=end":
-                    print("  ⚙️ Compressing: 100% (Finalizing output file...)", flush=True)
+    if len(parts) == num_parts:
+        return parts, True
 
-        process.wait(timeout=900)
-
-        if process.returncode == 0 and os.path.exists(compressed_path) and os.path.getsize(compressed_path) > 0:
-            new_size_mb = os.path.getsize(compressed_path) / (1024 * 1024)
-            print(f"  ✨ Auto-compressed successfully: {file_size_mb:.1f} MB ➡️ {new_size_mb:.1f} MB!", flush=True)
-            return compressed_path, True
-        else:
-            print(f"  ❌ Compression finished with error code {process.returncode}", flush=True)
-    except Exception as e:
-        print(f"  ❌ Compression exception: {e}", flush=True)
-
-    return video_path, False
+    # If split failed for any reason, clean up and return original
+    for p in parts:
+        if os.path.exists(p):
+            try: os.remove(p)
+            except Exception: pass
+    return [video_path], False
 
 async def main():
     start_time = time.time()
@@ -369,8 +346,8 @@ async def main():
             temp_path = temp_video_file.name
         
         thumb_path = temp_path + ".thumb.jpg"
-        upload_video_path = temp_path
-        is_temp_compressed = False
+        video_parts = [temp_path]
+        is_split = False
 
         try:
             print("  ⏳ Downloading from source with auto-retry...", flush=True)
@@ -378,65 +355,88 @@ async def main():
             raw_file_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
             print(f"  ✅ Download complete ({raw_file_size_mb:.1f} MB). Analyzing size & metadata...", flush=True)
 
-            # Auto-compress if exceeds Telegram 2GB (1950MB) limit
-            upload_video_path, is_temp_compressed = compress_video_if_needed(temp_path, max_mb=1950.0)
-            final_file_size_mb = os.path.getsize(upload_video_path) / (1024 * 1024)
+            # Fast lossless split if file exceeds 1950MB
+            video_parts, is_split = split_video_if_needed(temp_path, max_mb=1950.0)
+            total_parts = len(video_parts)
 
-            # Extra Safety Size Guard: Telegram hard limit is 2000 MB
-            if final_file_size_mb > 1999.0:
-                print(f"  ⛔ Skipping episode {ep_id}: File size ({final_file_size_mb:.1f} MB) exceeds Telegram 2GB limit even after compression.", flush=True)
-                continue
+            uploaded_msg_ids = []
+            primary_file_id = None
+            primary_msg_id = None
+            total_uploaded_size_mb = 0
 
-            duration, width, height, thumb_file = extract_video_metadata(upload_video_path, thumb_path)
-            if duration > 0:
-                print(f"  🎬 Metadata: Duration {duration//60}m{duration%60}s | {width}x{height} | Thumb: {'Yes' if thumb_file else 'No'}", flush=True)
+            for part_idx, part_file in enumerate(video_parts, 1):
+                part_size_mb = os.path.getsize(part_file) / (1024 * 1024)
+                total_uploaded_size_mb += part_size_mb
 
-            caption = (
-                f"🎬 **{show_title}**\n"
-                f"📌 **ភាគ / Episode:** {ep_num}\n"
-                f"⚡ **Quality:** 1080p FHD\n"
-                f"📦 **Size:** {final_file_size_mb:.1f} MB\n"
-                f"🆔 `ep_id: {ep_id}`"
-            )
+                if part_size_mb > 1999.0:
+                    print(f"  ⛔ Skipping part {part_idx}: File size ({part_size_mb:.1f} MB) exceeds Telegram 2GB limit.", flush=True)
+                    continue
 
-            last_logged_pct = -1
-            def progress(current, total):
-                nonlocal last_logged_pct
-                pct = int((current / total) * 100)
-                if pct % 20 == 0 and pct != last_logged_pct:
-                    last_logged_pct = pct
-                    print(f"  📤 Uploading: {pct}% ({current / (1024*1024):.1f} MB / {total / (1024*1024):.1f} MB)", flush=True)
+                part_thumb = part_file + ".thumb.jpg"
+                duration, width, height, thumb_file = extract_video_metadata(part_file, part_thumb)
+                if duration > 0:
+                    print(f"  🎬 Part {part_idx} Metadata: Duration {duration//60}m{duration%60}s | {width}x{height} | Thumb: {'Yes' if thumb_file else 'No'}", flush=True)
 
-            msg: Message = await app.send_video(
-                chat_id=channel_id_int,
-                video=upload_video_path,
-                caption=caption,
-                duration=duration if duration > 0 else None,
-                width=width if duration > 0 else None,
-                height=height if duration > 0 else None,
-                thumb=thumb_file,
-                supports_streaming=True,
-                progress=progress
-            )
+                part_suffix = f" (Part {part_idx}/{total_parts})" if total_parts > 1 else ""
+                caption = (
+                    f"🎬 **{show_title}**\n"
+                    f"📌 **ភាគ / Episode:** {ep_num}{part_suffix}\n"
+                    f"⚡ **Quality:** 1080p FHD\n"
+                    f"📦 **Size:** {part_size_mb:.1f} MB\n"
+                    f"🆔 `ep_id: {ep_id}`"
+                )
 
-            # Store in manifest
-            manifest[ep_id] = {
-                "show_id": ep["show_id"],
-                "show_title": show_title,
-                "episode_number": ep_num,
-                "telegram_message_id": msg.id,
-                "telegram_file_id": msg.video.file_id if msg.video else None,
-                "file_size_mb": round(final_file_size_mb, 2),
-                "duration_seconds": duration,
-                "original_url": video_url,
-                "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-            }
-            save_manifest(manifest)
-            print(f"  🎉 Uploaded successfully! (Telegram Message ID: {msg.id})", flush=True)
-            success_count += 1
+                last_logged_pct = -1
+                def progress(current, total):
+                    nonlocal last_logged_pct
+                    pct = int((current / total) * 100)
+                    if pct % 20 == 0 and pct != last_logged_pct:
+                        last_logged_pct = pct
+                        part_tag = f"[Part {part_idx}/{total_parts}] " if total_parts > 1 else ""
+                        print(f"  📤 {part_tag}Uploading: {pct}% ({current / (1024*1024):.1f} MB / {total / (1024*1024):.1f} MB)", flush=True)
 
-            # Brief pause to respect Telegram rate limits
-            await asyncio.sleep(2)
+                msg: Message = await app.send_video(
+                    chat_id=channel_id_int,
+                    video=part_file,
+                    caption=caption,
+                    duration=duration if duration > 0 else None,
+                    width=width if duration > 0 else None,
+                    height=height if duration > 0 else None,
+                    thumb=thumb_file,
+                    supports_streaming=True,
+                    progress=progress
+                )
+
+                uploaded_msg_ids.append(msg.id)
+                if not primary_msg_id:
+                    primary_msg_id = msg.id
+                    primary_file_id = msg.video.file_id if msg.video else None
+
+                print(f"  🎉 Uploaded Part {part_idx}/{total_parts} successfully! (Telegram Message ID: {msg.id})", flush=True)
+
+                if os.path.exists(part_thumb):
+                    try: os.remove(part_thumb)
+                    except Exception: pass
+
+                # Brief pause between parts
+                await asyncio.sleep(2)
+
+            if primary_msg_id:
+                # Store in manifest
+                manifest[ep_id] = {
+                    "show_id": ep["show_id"],
+                    "show_title": show_title,
+                    "episode_number": ep_num,
+                    "telegram_message_id": primary_msg_id,
+                    "telegram_file_id": primary_file_id,
+                    "telegram_message_ids": uploaded_msg_ids,
+                    "total_parts": total_parts,
+                    "file_size_mb": round(total_uploaded_size_mb, 2),
+                    "original_url": video_url,
+                    "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+                }
+                save_manifest(manifest)
+                success_count += 1
 
         except Exception as err:
             print(f"  ❌ Error processing episode {ep_id}: {err}", flush=True)
@@ -444,9 +444,11 @@ async def main():
             if os.path.exists(temp_path):
                 try: os.remove(temp_path)
                 except Exception: pass
-            if is_temp_compressed and os.path.exists(upload_video_path):
-                try: os.remove(upload_video_path)
-                except Exception: pass
+            if is_split:
+                for p in video_parts:
+                    if os.path.exists(p):
+                        try: os.remove(p)
+                        except Exception: pass
             if os.path.exists(thumb_path):
                 try: os.remove(thumb_path)
                 except Exception: pass
