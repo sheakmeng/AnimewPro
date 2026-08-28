@@ -126,10 +126,10 @@ async def download_file_with_retry(url: str, output_path: str, max_retries: int 
                     
                     total_downloaded = 0
                     with open(output_path, "wb") as f:
-                        async for chunk in response.aiter_bytes(chunk_size=2 * 1024 * 1024): # 2MB chunk
+                        async for chunk in response.aiter_bytes(chunk_size=4 * 1024 * 1024): # 4MB optimized chunk
                             f.write(chunk)
                             total_downloaded += len(chunk)
-                            if total_downloaded % (15 * 1024 * 1024) < (2 * 1024 * 1024): # Log every ~15MB
+                            if total_downloaded % (20 * 1024 * 1024) < (4 * 1024 * 1024): # Log every ~20MB
                                 print(f"  📥 Downloading... {total_downloaded / (1024 * 1024):.1f} MB", flush=True)
             
             # If successfully downloaded and file is not empty
