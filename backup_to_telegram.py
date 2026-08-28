@@ -39,17 +39,17 @@ from pyrogram.types import Message
 SUPABASE_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co"
 ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvd2p4aGtpanRsc2R2aHl1ZGR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMjE3MTIsImV4cCI6MjEwMTc5NzcxMn0.ulxBnNG6fc6muqPrAxzEGw0VPyZpR5ug8bY713PyWGg"
 
-# Telegram Secrets (From Environment Variables)
-API_ID = (os.getenv("TG_API_ID") or "").strip().strip('"').strip("'")
-API_HASH = (os.getenv("TG_API_HASH") or "").strip().strip('"').strip("'")
-BOT_TOKEN = (os.getenv("TG_BOT_TOKEN") or "").strip().strip('"').strip("'")
-CHANNEL_ID = (os.getenv("TG_CHANNEL_ID") or "").strip().strip('"').strip("'")
+# Telegram Secrets (From Environment Variables or Default)
+API_ID = (os.getenv("TG_API_ID") or "20360418").strip().strip('"').strip("'")
+API_HASH = (os.getenv("TG_API_HASH") or "3990d0d3cc6c5bd81c93a13cd5e3a311").strip().strip('"').strip("'")
+BOT_TOKEN = (os.getenv("TG_BOT_TOKEN") or "8890281595:AAGEvtsLcj_bJI1AoNQE3-BUh9-AdqzVN5g").strip().strip('"').strip("'")
+CHANNEL_ID = (os.getenv("TG_CHANNEL_ID") or "-1003943277744").strip().strip('"').strip("'")
 
 # Performance & Time Guard Configuration
-# On GitHub Actions, max execution time before safe exit (in seconds)
-# Default: 3000s = 50 minutes (well before 60-90min workflow timeout)
-MAX_RUN_SECONDS = int(os.getenv("MAX_RUN_SECONDS", "3000"))
-MAX_BATCH = int(os.getenv("MAX_BATCH", "60"))
+# On GitHub Actions, max execution time before safe exit (default 3000s = 50 mins)
+# On Local / Pydroid 3, default to continuous run (86400s = 24 hours, batch 1000)
+MAX_RUN_SECONDS = int(os.getenv("MAX_RUN_SECONDS", "86400"))
+MAX_BATCH = int(os.getenv("MAX_BATCH", "1000"))
 
 MANIFEST_FILE = "backup_manifest.json"
 
