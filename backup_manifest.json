@@ -160,5 +160,71 @@
     "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMcapDO5oygEIz5ObZYS8qe2uUDgHsAAoQkAAI9K4hUOMz7IevADkceBA",
     "file_size_mb": 562.69,
     "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-010/1784834630240--.mp4"
+  },
+  "eadf8765-6abe-4595-a070-87bf68cc3404": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 12,
+    "telegram_message_id": 29,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMdapDUwwABh-yypJa4-iK_75Ag34u8AAKIJAACPSuIVPl6td8DhbAXHgQ",
+    "file_size_mb": 569.7,
+    "duration_seconds": 918,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-012/1784834659403--.mp4",
+    "backed_up_at": "2026-08-28T00:22:27Z"
+  },
+  "b5178312-6d0e-46ed-a958-84e3493f9a2a": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 13,
+    "telegram_message_id": 30,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMeapDVoGHk6GfOpKgseYcjzBwrPwsAAokkAAI9K4hUZD7O6E3AIYQeBA",
+    "file_size_mb": 609.92,
+    "duration_seconds": 982,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-013/1784834673796--.mp4",
+    "backed_up_at": "2026-08-28T00:26:08Z"
+  },
+  "f2610ed1-b5bc-4c8b-bc45-47189515d563": {
+    "show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621",
+    "show_title": "ខ្សែជីវិតឯកា",
+    "episode_number": 14,
+    "telegram_message_id": 31,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMfapDWmOasFMqvKeQRa9oon_0CkokAAowkAAI9K4hUvsc3l-3h0M4eBA",
+    "file_size_mb": 609.65,
+    "duration_seconds": 978,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-014/1784834690166--.mp4",
+    "backed_up_at": "2026-08-28T00:30:16Z"
+  },
+  "0a831b59-4275-40d9-96df-7fb0d7ef4d2b": {
+    "show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e",
+    "show_title": "ប្រហារព្រះ រដូវកាលទី ២",
+    "episode_number": 1,
+    "telegram_message_id": 32,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMgapDYP_Ymy4Iy_k-0ewe3JwjDAgYAAo8kAAI9K4hUTs7QYEDZvKMeBA",
+    "file_size_mb": 1001.87,
+    "duration_seconds": 1023,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-001/1784819301249--_-.mp4",
+    "backed_up_at": "2026-08-28T00:37:19Z"
+  },
+  "1874a7c5-644e-45fd-a267-2dee4d22e8e8": {
+    "show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e",
+    "show_title": "ប្រហារព្រះ រដូវកាលទី ២",
+    "episode_number": 2,
+    "telegram_message_id": 33,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMhapDZczUCArAivnp2wYWaMn6PrAIAApAkAAI9K4hUTSQoGVTEW34eBA",
+    "file_size_mb": 761.66,
+    "duration_seconds": 1228,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-002/1784819334713--_-.mp4",
+    "backed_up_at": "2026-08-28T00:42:27Z"
+  },
+  "067a78cc-2d17-4825-baf5-a65df593ad1c": {
+    "show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e",
+    "show_title": "ប្រហារព្រះ រដូវកាលទី ២",
+    "episode_number": 3,
+    "telegram_message_id": 34,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMiapDakemC2naM3UA3y9I8bZ90H7UAApEkAAI9K4hUxR-SHpe8fOweBA",
+    "file_size_mb": 778.4,
+    "duration_seconds": 1245,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-003/1784819354846--_-.mp4",
+    "backed_up_at": "2026-08-28T00:47:14Z"
   }
 }
