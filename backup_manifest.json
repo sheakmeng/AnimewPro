@@ -451,5 +451,159 @@
     "file_size_mb": 851.89,
     "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-011/1784902909586--.mp4",
     "backed_up_at": "2026-08-28T07:35:25Z"
+  },
+  "e1cabd6e-f70e-4475-9d5f-130aae769b5b": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 1,
+    "telegram_message_id": 55,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM3apGqM6DbdHHekCYE2aMDHW3y2CYAAkIjAAK3LZFUIWeVYrrUZEIeBA",
+    "telegram_message_ids": [
+      55
+    ],
+    "total_parts": 1,
+    "file_size_mb": 831.14,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-001/1785431145978--01-2-.mp4",
+    "backed_up_at": "2026-08-28T15:33:09Z"
+  },
+  "72f795b9-57b0-4ef5-b581-d80b39cc6ee5": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 2,
+    "telegram_message_id": 56,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM4apGrW5Tm_f3sbFQbUbaXAAH8H-xlAAJDIwACty2RVB8grUYlxSXgHgQ",
+    "telegram_message_ids": [
+      56
+    ],
+    "total_parts": 1,
+    "file_size_mb": 908.38,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-002/1785431171426-GOD02-2-.mp4",
+    "backed_up_at": "2026-08-28T15:38:05Z"
+  },
+  "5da260d0-fa40-4bc3-9896-a1b31ce1f05e": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 3,
+    "telegram_message_id": 57,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM5apGsgvWUYWHw4d4uQLHYAeZyTaEAAkUjAAK3LZFU8ovC60KBnyseBA",
+    "telegram_message_ids": [
+      57
+    ],
+    "total_parts": 1,
+    "file_size_mb": 904.77,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-003/1785431190573-GOD03-2-.mp4",
+    "backed_up_at": "2026-08-28T15:43:00Z"
+  },
+  "a794c263-4429-4497-824c-b114d964411d": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 4,
+    "telegram_message_id": 58,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM6apGuOW55qidQxA66q1nBeV5rbkIAAkYjAAK3LZFUzhylpXlOS_oeBA",
+    "telegram_message_ids": [
+      58
+    ],
+    "total_parts": 1,
+    "file_size_mb": 573.5,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-004/1785431206459-04-2-.mp4",
+    "backed_up_at": "2026-08-28T15:50:19Z"
+  },
+  "03e86c75-ab28-48c7-be6d-3e9cc9c544a8": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 5,
+    "telegram_message_id": 59,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM7apGvI0d0FfixndyANwt7EtftB0sAAkgjAAK3LZFU9BLirHryMBceBA",
+    "telegram_message_ids": [
+      59
+    ],
+    "total_parts": 1,
+    "file_size_mb": 592.08,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-005/1785431220729--5-2-.mp4",
+    "backed_up_at": "2026-08-28T15:54:14Z"
+  },
+  "859f8720-c65b-4da2-b8ce-dbeced2a7b5a": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 6,
+    "telegram_message_id": 60,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM8apGwHXYMN0lpNTPMqdkl0ROxGeoAAkojAAK3LZFUDH8mCUzqdAkeBA",
+    "telegram_message_ids": [
+      60
+    ],
+    "total_parts": 1,
+    "file_size_mb": 561.66,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-006/1785431233678--06-2-.mp4",
+    "backed_up_at": "2026-08-28T15:58:24Z"
+  },
+  "3901e296-4faa-47c4-a57a-786d7c8595f7": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 7,
+    "telegram_message_id": 61,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM9apGxNwQ4hsKeUBt84OIfJ1oUzsgAAk0jAAK3LZFUXGa_p9yHO3keBA",
+    "telegram_message_ids": [
+      61
+    ],
+    "total_parts": 1,
+    "file_size_mb": 605.88,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-007/1785431269324--07-2-.mp4",
+    "backed_up_at": "2026-08-28T16:03:06Z"
+  },
+  "af8fcbe5-9344-41b3-bb37-3e47fb91be2e": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 8,
+    "telegram_message_id": 62,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM-apGyFoQp0iQWikgiEZEf_pzlK3oAAlAjAAK3LZFUj-3GOkqmW_MeBA",
+    "telegram_message_ids": [
+      62
+    ],
+    "total_parts": 1,
+    "file_size_mb": 589.76,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-008/1785431281025--08-2-.mp4",
+    "backed_up_at": "2026-08-28T16:06:48Z"
+  },
+  "83e4c36f-91dc-4612-924b-082468d08d2e": {
+    "show_id": "650d9fd2-c94c-4d8d-926c-c2b7d1e8093d",
+    "show_title": "និទានព្រះបុរាណ",
+    "episode_number": 9,
+    "telegram_message_id": 63,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM_apGy5WkrBEswjiRe-A0w4sR-W5gAAlQjAAK3LZFUa9mZXV6iyzseBA",
+    "telegram_message_ids": [
+      63
+    ],
+    "total_parts": 1,
+    "file_size_mb": 596.01,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a661dc4dfc6594ba335c1a3/ep-009/1785431292638--09-2-.mp4",
+    "backed_up_at": "2026-08-28T16:10:16Z"
+  },
+  "f1e3d31b-21b3-40d3-bb61-564216bc6c69": {
+    "show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae",
+    "show_title": "កំណើតវីរ:បុរសនាគរាជ",
+    "episode_number": 12,
+    "telegram_message_id": 64,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANAapGztX5LRAO6OXW88vA6Cf8g9-EAAlUjAAK3LZFUutO1TPK2vSIeBA",
+    "telegram_message_ids": [
+      64
+    ],
+    "total_parts": 1,
+    "file_size_mb": 568.57,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-012/1784902138088--.mp4",
+    "backed_up_at": "2026-08-28T16:13:44Z"
+  },
+  "4927d66a-b22a-4fbd-b0b1-41e24e015279": {
+    "show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae",
+    "show_title": "កំណើតវីរ:បុរសនាគរាជ",
+    "episode_number": 13,
+    "telegram_message_id": 65,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANBapG0gw5q-P1VPgyfTdlNxRJ7bwUAAlYjAAK3LZFUkORxVDIaBR8eBA",
+    "telegram_message_ids": [
+      65
+    ],
+    "total_parts": 1,
+    "file_size_mb": 530.89,
+    "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-013/1784901032620--.mp4",
+    "backed_up_at": "2026-08-28T16:17:10Z"
   }
 }
