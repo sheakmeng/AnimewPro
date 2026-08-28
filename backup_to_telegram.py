@@ -51,20 +51,39 @@ CHANNEL_ID = (os.getenv("TG_CHANNEL_ID") or "-1003943277744").strip().strip('"')
 MAX_RUN_SECONDS = int(os.getenv("MAX_RUN_SECONDS", "86400"))
 MAX_BATCH = int(os.getenv("MAX_BATCH", "1000"))
 
-MANIFEST_FILE = "backup_manifest.json"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals() else os.getcwd()
+MANIFEST_FILE = os.path.join(SCRIPT_DIR, "backup_manifest.json")
+GITHUB_MANIFEST_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json"
 
 def load_manifest():
+    manifest = {}
     if os.path.exists(MANIFEST_FILE):
         try:
             with open(MANIFEST_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
+                manifest = json.load(f)
         except Exception:
-            return {}
-    return {}
+            manifest = {}
+            
+    # If local manifest is empty or missing, auto-fetch the latest from GitHub
+    if not manifest:
+        try:
+            print("🌐 កំពុងទាញយក Backup Manifest ចុងក្រោយពី GitHub...", flush=True)
+            r = httpx.get(GITHUB_MANIFEST_URL, timeout=15)
+            if r.status_code == 200:
+                manifest = r.json()
+                save_manifest(manifest)
+                print(f"✅ បានទាញយកទិន្នន័យភាគដែល Backup រួច ({len(manifest)} ភាគ) ពី GitHub ជោគជ័យ!", flush=True)
+        except Exception as e:
+            print(f"⚠️ មិនអាចទាញយកពី GitHub បាន: {e}", flush=True)
+            
+    return manifest
 
 def save_manifest(manifest):
-    with open(MANIFEST_FILE, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, ensure_ascii=False, indent=2)
+    try:
+        with open(MANIFEST_FILE, "w", encoding="utf-8") as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"⚠️ Error saving manifest: {e}", flush=True)
 
 async def fetch_shows():
     headers = {"apikey": ANON_KEY, "Authorization": f"Bearer {ANON_KEY}"}
