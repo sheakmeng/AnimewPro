@@ -36,7 +36,7 @@ graph TD
 AnimewPro/
 ├── .github/
 │   └── workflows/
-│       └── auto_backup.yml      # GitHub Actions Scheduler (រត់រៀងរាល់ ៦ ម៉ោងម្តង)
+│       └── auto_backup.yml      # GitHub Actions Scheduler (រត់រៀងរាល់ ១ ម៉ោងម្តង)
 ├── android/                     # Native Android Project (Capacitor wrapper)
 ├── www/                         # Compiled Web Assets សម្រាប់ Android App
 │   └── index.html
@@ -71,7 +71,7 @@ AnimewPro/
 ## 🤖 ៤. ដំណើរការលើ GitHub Actions (`auto_backup.yml`)
 
 * **កាលវិភាគ (Trigger Schedule)**:
-  - `cron: '0 */6 * * *'` : ដំណើរការរៀងរាល់ ៦ ម៉ោងម្តងដោយស្វ័យប្រវត្តិ
+  - `cron: '0 * * * *'` : ដំណើរការរៀងរាល់ ១ ម៉ោងម្តងដោយស្វ័យប្រវត្តិ
   - `workflow_dispatch` : អនុញ្ញាតឱ្យចុច Run ដោយដៃលើ GitHub UI បានគ្រប់ពេល
 * **បរិស្ថានដំណើរការ (Environment & Secrets)**:
   - ដំណើរការលើ `ubuntu-latest` ជាមួយ `Python 3.11`
@@ -79,7 +79,7 @@ AnimewPro/
     - `TG_API_ID` : Telegram Developer API ID
     - `TG_API_HASH` : Telegram Developer API Hash
     - `TG_BOT_TOKEN` : Bot Token ពី @BotFather
-    - `TG_CHANNEL_ID` : Telegram Private Channel ID (`-1003943277744`)
+    - `TG_CHANNEL_ID` : Telegram Private Channel ID (ឧ. `-100xxxxxxxxxx`)
 * **Auto Commit Manifest**:
   - បន្ទាប់ពី Backup ចប់ GitHub Action នឹងធ្វើការ Auto `git commit` និង `git push` បញ្ជី `backup_manifest.json` ថ្មីចូលទៅក្នុង Repository ដោយស្វ័យប្រវត្តិ។
 
