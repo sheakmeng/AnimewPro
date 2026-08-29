@@ -1078,8 +1078,6 @@ function markEpisodeWatched(showId, epNum, epTitle) {
     const epMap = getWatchedEpisodes();
     epMap[showId + "_" + epNum] = true;
     localStorage.setItem(STORAGE_EPS_KEY, JSON.stringify(epMap));
-
-    applyFilter();
   } catch (e) {
     console.warn("Storage save error", e);
   }
@@ -1604,15 +1602,25 @@ async function openModal(show) {
   }
 
   try {
-    // Extract episodes directly from backupManifest
+    if (!backupManifest || Object.keys(backupManifest).length === 0) {
+      await loadManifestData();
+    }
+
+    // Extract episodes directly from backupManifest with resilient fuzzy matching
     const manifestEps = [];
+    const targetShowTitle = (show.title || "").trim().toLowerCase();
+    const targetShowId = String(show.id || "").trim().toLowerCase().replace("dramaora_", "").replace("show_", "");
+
     Object.entries(backupManifest).forEach(([epId, item]) => {
-      const matchShowId = (item.show_id && item.show_id === show.id) || 
-                          (item.show_title && item.show_title === show.title) ||
-                          ("show_" + (item.show_title || "")) === show.id ||
-                          ("dramaora_" + (item.show_id || "")) === show.id ||
-                          String(item.show_id).replace("dramaora_", "") === String(show.id).replace("dramaora_", "");
-      if (matchShowId) {
+      const itemTitle = (item.show_title || "").trim().toLowerCase();
+      const itemId = String(item.show_id || "").trim().toLowerCase().replace("dramaora_", "").replace("show_", "");
+
+      const isMatch = (itemId && targetShowId && itemId === targetShowId) ||
+                      (itemTitle && targetShowTitle && itemTitle === targetShowTitle) ||
+                      (item.show_id && item.show_id === show.id) ||
+                      (item.show_title && item.show_title === show.title);
+
+      if (isMatch) {
         manifestEps.push({
           id: epId,
           show_id: show.id,
@@ -1667,16 +1675,22 @@ async function openModal(show) {
       epGrid.appendChild(btn);
     });
 
-    let targetIdx = -1;
-    if (lastWatchedEpNum) {
-      targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && (!!e.video_url || !!e.telegram_message_id));
+    // Safe Autoplay in separate block to never break episode grid
+    try {
+      let targetIdx = -1;
+      if (lastWatchedEpNum) {
+        targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && (!!e.video_url || !!e.telegram_message_id));
+      }
+      if (targetIdx === -1) {
+        targetIdx = currentEpisodes.findIndex(e => !!e.video_url || !!e.telegram_message_id);
+      }
+      if (targetIdx !== -1) {
+        playEpisode(targetIdx);
+      }
+    } catch (playErr) {
+      console.warn("Autoplay error:", playErr);
     }
-    if (targetIdx === -1) {
-      targetIdx = currentEpisodes.findIndex(e => !!e.video_url || !!e.telegram_message_id);
-    }
-    if (targetIdx !== -1) {
-      playEpisode(targetIdx);
-    }
+
   } catch (e) {
     console.error("Load episodes error:", e);
     epGrid.innerHTML = `<div style="grid-column:1/-1;color:#f87171;font-size:12px;text-align:center;">មិនអាចផ្ទុកភាគបាន</div>`;
