@@ -2592,20 +2592,6 @@ document.getElementById("btn-dismiss-banner").onclick = (e) => {
 };
 
 // Admin Access Control & Visibility
-const ADMIN_USERNAMES = ["mengsmmkh1", "sheakmeng"];
-const ADMIN_USER_IDS = ["8357847250", "684920194", "8664822430"];
-
-function checkIsAdmin() {
-  if (localStorage.getItem("animew_admin_authenticated") === "true") return true;
-  const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
-  if (user) {
-    const uName = (user.username || "").toLowerCase().replace("@", "");
-    if (ADMIN_USERNAMES.includes(uName)) return true;
-    if (user.id && ADMIN_USER_IDS.includes(String(user.id))) return true;
-  }
-  return false;
-}
-
 function updateAdminSectionVisibility() {
   const adminSec = document.getElementById("admin-menu-section");
   if (!adminSec) return;
