@@ -12,7 +12,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 BOT_TOKEN = "8664822430:AAEPSmxJgq4CEAFp94869dhLGVEAcyScde8"
-MINI_APP_URL = "https://sheakmeng.github.io/AnimewPro/"
+MINI_APP_URL = "https://animewpro.vercel.app"
 API_BASE = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 def setup_menu_button():
