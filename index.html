@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Telegram Web App SDK for Mini App Support -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     
@@ -1577,6 +1579,12 @@ async function openModal(show) {
     window.history.pushState({ modalOpen: true }, "");
   } catch (e) {}
 
+  // Telegram Mini App BackButton & Haptics
+  try {
+    if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.show();
+    if (window.Telegram?.WebApp?.HapticFeedback) window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
+  } catch (e) {}
+
   if (playerEl) {
     playerEl.pause();
     playerEl.removeAttribute("src");
@@ -1963,6 +1971,37 @@ function closeModal() {
   if (fallbackBanner) fallbackBanner.classList.remove("show");
   const actionsBar = document.getElementById("m-actions-bar");
   if (actionsBar) actionsBar.innerHTML = "";
+
+  // Telegram Mini App BackButton
+  try {
+    if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.hide();
+  } catch (e) {}
+}
+
+// Telegram Mini App Native Initialization
+if (window.Telegram && window.Telegram.WebApp) {
+  try {
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand();
+    if (tg.setHeaderColor) tg.setHeaderColor("#090c14");
+    if (tg.setBackgroundColor) tg.setBackgroundColor("#090c14");
+    if (tg.enableClosingConfirmation) tg.enableClosingConfirmation();
+
+    if (tg.BackButton) {
+      tg.BackButton.onClick(() => {
+        const modal = document.getElementById("modal");
+        const notifDrawer = document.getElementById("notif-drawer");
+        if (modal && modal.classList.contains("active")) {
+          closeModal();
+        } else if (notifDrawer && notifDrawer.classList.contains("active")) {
+          notifDrawer.classList.remove("active");
+        }
+      });
+    }
+  } catch (tgErr) {
+    console.warn("Telegram WebApp init error:", tgErr);
+  }
 }
 
 // Back button on modal
