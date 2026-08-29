@@ -6,6 +6,11 @@
 const SHEET_NAME = "Manifest";
 const VIP_SHEET_NAME = "VIP_Members";
 
+// 🔒 Secure Backend Payment API Credentials (Server-side Only, Hidden from Users)
+const PAYMENT_API_BASE = "https://mengsmm.store/api/v1/";
+const PAYMENT_API_TOKEN = "05437beba0ad9d527bc874c5b83ff07ab7a299d70a363de940c2db98e05ef5ee";
+const PAYMENT_ACCOUNT_ID = "leng_sheakmeng1@aclb";
+
 function setupSheetIfNeeded(ss) {
   let sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
@@ -52,13 +57,48 @@ function setupVipSheetIfNeeded(ss) {
   return sheet;
 }
 
-// 🌐 GET API: Returns Manifest or Checks VIP Member status
+// 🌐 GET API: Returns Manifest, Secure KHQR Proxy, or Checks VIP Member status
 function doGet(e) {
   try {
     const ss = SpreadsheetApp.getActiveSpreadsheet();
     const action = e && e.parameter ? e.parameter.action : "";
 
-    // Check VIP Member Status by Telegram User ID
+    // 🔒 1. Secure Server-side KHQR Generator (Hides Token & Domain from Client)
+    if (action === "generate_khqr") {
+      const amount = encodeURIComponent(e.parameter.amount || "2.00");
+      const url = `${PAYMENT_API_BASE}?type=generate_qr&amount=${amount}&currency=USD&api_token=${PAYMENT_API_TOKEN}`;
+      const res = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
+      const json = JSON.parse(res.getContentText());
+
+      if (json.status === "success" && json.data) {
+        return ContentService.createTextOutput(JSON.stringify({
+          status: "success",
+          data: {
+            md5: json.data.md5,
+            qr_string: json.data.qr || json.data.qr_string,
+            qr_image: json.data.link_qr_code || json.data.qr_image_url,
+            amount: json.data.amount,
+            currency: json.data.currency,
+            store_label: json.data.store_label || "LENG SHEAKMENG"
+          }
+        })).setMimeType(ContentService.MimeType.JSON);
+      } else {
+        return ContentService.createTextOutput(JSON.stringify(json))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+    }
+
+    // 🔒 2. Secure Server-side KHQR Payment Status Checker (Hides Token from Client)
+    if (action === "check_khqr" && e.parameter.md5) {
+      const md5 = encodeURIComponent(e.parameter.md5);
+      const url = `${PAYMENT_API_BASE}?type=check_md5&md5=${md5}&api_token=${PAYMENT_API_TOKEN}`;
+      const res = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
+      const json = JSON.parse(res.getContentText());
+      return ContentService.createTextOutput(JSON.stringify(json))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // 👑 3. Check VIP Member Status by Telegram User ID
     if (action === "check_vip" && e.parameter.user_id) {
       const vipSheet = setupVipSheetIfNeeded(ss);
       const targetUserId = String(e.parameter.user_id).trim();

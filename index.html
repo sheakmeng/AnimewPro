@@ -1850,9 +1850,6 @@ const STORAGE_HISTORY_KEY = "animew_watch_history";
 const STORAGE_WATCHLIST_KEY = "animew_vip_watchlist";
 const STORAGE_VIP_KEY = "animew_vip_paid_until";
 
-const MENGSMM_API_TOKEN = "05437beba0ad9d527bc874c5b83ff07ab7a299d70a363de940c2db98e05ef5ee";
-const MENGSMM_ACCOUNT_ID = "leng_sheakmeng1@aclb";
-
 let selectedVipAmount = "2.00";
 let selectedVipMonths = 1;
 let currentPaymentMd5 = "";
@@ -2492,7 +2489,7 @@ document.querySelectorAll(".vip-plan-card").forEach(card => {
 document.getElementById("vip-modal-backdrop").onclick = closeVipModal;
 document.getElementById("btn-vip-status").onclick = openVipModal;
 
-// KHQR Payment Handling via MengsMM API
+// Secure KHQR Payment Handling via Google Apps Script Backend Proxy
 async function generateKhqrPayment() {
   closeVipModal();
   const khqrModal = document.getElementById("khqr-modal");
@@ -2503,13 +2500,18 @@ async function generateKhqrPayment() {
   document.getElementById("khqr-amount-display").textContent = `$${selectedVipAmount} USD`;
 
   try {
-    const apiUrl = `https://mengsmm.store/api/v1/?type=generate_qr&amount=${selectedVipAmount}&currency=USD&api_token=${MENGSMM_API_TOKEN}`;
+    const apiUrl = `${GOOGLE_APPS_SCRIPT_URL}?action=generate_khqr&amount=${selectedVipAmount}&_t=${Date.now()}`;
     const res = await fetch(apiUrl);
     const data = await res.json();
 
     if (data.status === "success" && data.data) {
       currentPaymentMd5 = data.data.md5;
-      const qrImgUrl = data.data.link_qr_code || data.data.qr_image_url || `https://mengsmm.store/qr.php?md5=${currentPaymentMd5}`;
+      const qrStr = data.data.qr_string || data.data.qr;
+      
+      // Render official KHQR image safely without leaking backend domains
+      const qrImgUrl = qrStr 
+        ? `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(qrStr)}`
+        : (data.data.qr_image || "");
       
       document.getElementById("khqr-image").src = qrImgUrl;
       document.getElementById("khqr-loading-box").style.display = "none";
@@ -2523,7 +2525,7 @@ async function generateKhqrPayment() {
     }
   } catch (err) {
     console.error("KHQR error:", err);
-    alert("មានបញ្ហាក្នុងការតភ្ជាប់ API KHQR!");
+    alert("មានបញ្ហាក្នុងការតភ្ជាប់ប្រព័ន្ធទូទាត់ KHQR!");
     closeKhqrModal();
   }
 }
@@ -2555,11 +2557,11 @@ function startPaymentCountdown(seconds) {
 
 function startPaymentPolling() {
   clearInterval(paymentPollInterval);
-  // Auto-Checking Polling every 15 seconds (15000ms)
+  // Auto-Checking Polling every 15 seconds through secure Apps Script Proxy
   paymentPollInterval = setInterval(async () => {
     if (!currentPaymentMd5) return;
     try {
-      const checkUrl = `https://mengsmm.store/api/v1/?type=check_md5&md5=${currentPaymentMd5}&api_token=${MENGSMM_API_TOKEN}`;
+      const checkUrl = `${GOOGLE_APPS_SCRIPT_URL}?action=check_khqr&md5=${currentPaymentMd5}&_t=${Date.now()}`;
       const res = await fetch(checkUrl);
       const data = await res.json();
       
@@ -2631,10 +2633,10 @@ document.getElementById("btn-manual-check-payment").onclick = async () => {
   showToast("កំពុងពិនិត្យ...");
   if (!currentPaymentMd5) return;
   try {
-    const checkUrl = `https://mengsmm.store/api/v1/?type=check_md5&md5=${currentPaymentMd5}&api_token=${MENGSMM_API_TOKEN}`;
+    const checkUrl = `${GOOGLE_APPS_SCRIPT_URL}?action=check_khqr&md5=${currentPaymentMd5}&_t=${Date.now()}`;
     const res = await fetch(checkUrl);
     const data = await res.json();
-    if (data && (data.status === "SUCCESS" || data.status === "PAID" || data.status === "COMPLETED")) {
+    if (data && (data.status === "SUCCESS" || data.status === "PAID" || data.status === "COMPLETED" || (data.data && (data.data.status === "SUCCESS" || data.data.status === "PAID")))) {
       handlePaymentSuccess();
     } else {
       showToast("មិនទាន់ទទួលបានការទូទាត់ទេ!");
