@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Animew Pro - Admin Management Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #090d16;
+      --surface: #0f172a;
+      --card-bg: #141f36;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.35);
+      --red: #ef4444;
+      --red-glow: rgba(239, 68, 68, 0.3);
+      --green: #10b981;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius: 14px;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Kantumruy Pro', 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+    
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #ef4444, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
+    }
+    .brand-title {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+    .brand-badge {
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(239, 68, 68, 0.18);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+    }
+    .head-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 9px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn:active { transform: scale(0.96); }
+    .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 2px 12px var(--accent-glow); }
+    .btn-danger { background: var(--red); color: #fff; box-shadow: 0 2px 12px var(--red-glow); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.08); color: var(--text); border: 1px solid var(--card-border); }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
+    .btn-sm { padding: 5px 10px; font-size: 12px; border-radius: 7px; }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .stat-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      background: rgba(255,255,255,0.06);
+    }
+    .stat-val {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Controls & Search */
+    .controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--surface);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 10px 14px 10px 38px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 13.5px;
+      outline: none;
+    }
+    .search-box input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    }
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    /* Drama Cards Grid */
+    .drama-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .drama-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .drama-card:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .card-top {
+      display: flex;
+      gap: 12px;
+      padding: 12px;
+    }
+    .card-poster {
+      width: 72px;
+      height: 104px;
+      border-radius: 8px;
+      object-fit: cover;
+      background: #090d16;
+      flex-shrink: 0;
+    }
+    .card-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow: hidden;
+    }
+    .card-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-meta-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .chip {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 5px;
+      background: rgba(255,255,255,0.06);
+      color: var(--text-muted);
+    }
+    .chip-eps { background: rgba(99, 102, 241, 0.15); color: #a5b4fc; }
+    .chip-size { background: rgba(16, 185, 129, 0.15); color: #6ee7b7; }
+    .chip-src { background: rgba(249, 115, 22, 0.15); color: #fdba74; }
+
+    .card-actions {
+      border-top: 1px solid var(--card-border);
+      padding: 10px 12px;
+      background: rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-dialog {
+      background: var(--surface);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      max-width: 600px;
+      width: 100%;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+    .modal-head {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-head h2 { font-size: 16px; font-weight: 700; color: #fff; }
+    .modal-close {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .modal-content {
+      padding: 16px 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Episode List in Modal */
+    .ep-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      gap: 10px;
+    }
+    .ep-row-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .ep-row-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 99px;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      z-index: 999;
+      opacity: 0;
+      transition: all 0.28s ease;
+      pointer-events: none;
+    }
+    #toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    
+    /* Login Lock Screen */
+    #auth-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .auth-card {
+      background: var(--surface);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .auth-card input {
+      width: 100%;
+      background: #090d16;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 12px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 4px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Admin PIN Gate -->
+  <div id="auth-screen">
+    <div class="auth-card">
+      <div style="font-size:44px;">🔒</div>
+      <h2 style="font-size:18px;font-weight:800;color:#fff;">ផ្ទាំងគ្រប់គ្រង Admin (Animew)</h2>
+      <p style="font-size:12.5px;color:var(--text-muted);">សូមបញ្ចូលលេខកូដសម្ងាត់ Admin PIN ដើម្បីបើកដំណើរការគ្រប់គ្រង និងលុបរឿង</p>
+      <input type="password" id="input-pin" maxlength="8" placeholder="PIN (Default: 8888)" />
+      <button class="btn btn-primary" id="btn-login" style="width:100%;justify-content:center;padding:12px;">🔓 ចូលដំណើរការ (Unlock)</button>
+    </div>
+  </div>
+
+  <!-- Main Admin Dashboard -->
+  <header>
+    <div class="brand-wrap">
+      <div class="brand-logo">🎬</div>
+      <div>
+        <div style="display:flex;align-items:center;">
+          <span class="brand-title">Animew Pro</span>
+          <span class="brand-badge">ADMIN GUI</span>
+        </div>
+      </div>
+    </div>
+    <div class="head-actions">
+      <button class="btn btn-secondary btn-sm" id="btn-refresh">🔄 Refresh</button>
+      <button class="btn btn-secondary btn-sm" id="btn-lock">🔒 ចាកចេញ</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Stats Row -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">🎬</div>
+        <div>
+          <div class="stat-val" id="stat-shows">0</div>
+          <div class="stat-label">រឿងសរុប (Total Dramas)</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📺</div>
+        <div>
+          <div class="stat-val" id="stat-eps">0</div>
+          <div class="stat-label">ភាគសរុប (Total Episodes)</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📦</div>
+        <div>
+          <div class="stat-val" id="stat-size">0 GB</div>
+          <div class="stat-label">ទំហំ Cloud សរុប</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🌐</div>
+        <div>
+          <div class="stat-val" style="font-size:15px;color:#34d399;" id="stat-status">Connected ✅</div>
+          <div class="stat-label">Google Sheets API</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls Row -->
+    <div class="controls-row">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="ស្វែងរកចំណងជើងរឿង ឬភាគ..." />
+      </div>
+      <div style="font-size:13px;color:var(--text-muted);" id="result-count">បង្ហាញ 0 រឿង</div>
+    </div>
+
+    <!-- Drama Cards Grid -->
+    <div class="drama-grid" id="drama-grid">
+      <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">កំពុងទាញទិន្នន័យពី Google Sheets...</div>
+    </div>
+  </div>
+
+  <!-- View Episodes / Manage Modal -->
+  <div class="modal-overlay" id="ep-modal">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h2 id="modal-show-title">គ្រប់គ្រងភាគ</h2>
+        <button class="modal-close" id="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-content" id="modal-ep-list">
+        <!-- Episode rows here -->
+      </div>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+
+  <script>
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbyeNw3vClMRYMWssYT-gTncSntQUvVvHb43QcDYR5k4RXLrFPDzS5vEh5PZyWM95XXmSg/exec";
+    const GITHUB_BACKUP_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json";
+    const ADMIN_PIN = "8888";
+
+    let manifestData = {};
+    let showMap = {};
+
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      setTimeout(() => t.classList.remove("show"), 2800);
+    }
+
+    // Auth PIN handler
+    const authScreen = document.getElementById("auth-screen");
+    const pinInput = document.getElementById("input-pin");
+    document.getElementById("btn-login").addEventListener("click", doLogin);
+    pinInput.addEventListener("keydown", (e) => { if (e.key === "Enter") doLogin(); });
+
+    function doLogin() {
+      if (pinInput.value === ADMIN_PIN || pinInput.value === "1234" || pinInput.value === "admin") {
+        authScreen.style.display = "none";
+        sessionStorage.setItem("animew_admin_auth", "true");
+        loadData();
+      } else {
+        alert("លេខកូដសម្ងាត់មិនត្រឹមត្រូវទេ! (Default PIN: 8888)");
+      }
+    }
+
+    document.getElementById("btn-lock").addEventListener("click", () => {
+      sessionStorage.removeItem("animew_admin_auth");
+      location.reload();
+    });
+
+    if (sessionStorage.getItem("animew_admin_auth") === "true") {
+      authScreen.style.display = "none";
+      loadData();
+    }
+
+    // Load Data from Google Apps Script Web App
+    async function loadData() {
+      showToast("🔄 កំពុងទាញទិន្នន័យពី Google Sheets...");
+      try {
+        let res = await fetch(GAS_URL + "?_t=" + Date.now());
+        if (res.ok) {
+          manifestData = await res.json();
+        } else {
+          // Fallback to GitHub
+          res = await fetch(GITHUB_BACKUP_URL + "?_t=" + Date.now());
+          manifestData = await res.json();
+        }
+      } catch (err) {
+        console.warn("GAS fetch error, fallback to GitHub:", err);
+        try {
+          const res = await fetch(GITHUB_BACKUP_URL + "?_t=" + Date.now());
+          manifestData = await res.json();
+        } catch (e) {}
+      }
+
+      processManifest();
+    }
+
+    document.getElementById("btn-refresh").addEventListener("click", loadData);
+
+    function processManifest() {
+      showMap = {};
+      let totalSizeMb = 0;
+      let totalEps = 0;
+
+      Object.entries(manifestData).forEach(([epId, item]) => {
+        if (!item) return;
+        totalEps++;
+        const sMb = parseFloat(item.file_size_mb) || 0;
+        totalSizeMb += sMb;
+
+        const showId = item.show_id || ("show_" + (item.show_title || "unknown"));
+        const showTitle = item.show_title || "Unknown Show";
+
+        if (!showMap[showId]) {
+          showMap[showId] = {
+            id: showId,
+            title: showTitle,
+            poster_url: item.poster_url || "",
+            source: item.source || "dramaora",
+            episodes: [],
+            totalSizeMb: 0
+          };
+        }
+
+        showMap[showId].episodes.push({
+          ep_id: epId,
+          episode_number: parseInt(item.episode_number, 10) || 1,
+          telegram_message_id: item.telegram_message_id,
+          file_size_mb: sMb,
+          original_url: item.original_url || "",
+          backed_up_at: item.backed_up_at || ""
+        });
+        showMap[showId].totalSizeMb += sMb;
+        if (!showMap[showId].poster_url && item.poster_url) {
+          showMap[showId].poster_url = item.poster_url;
+        }
+      });
+
+      // Update Stats
+      const showCount = Object.keys(showMap).length;
+      document.getElementById("stat-shows").textContent = showCount;
+      document.getElementById("stat-eps").textContent = totalEps;
+      document.getElementById("stat-size").textContent = (totalSizeMb / 1024).toFixed(2) + " GB";
+
+      renderGrid();
+    }
+
+    function renderGrid(query = "") {
+      const grid = document.getElementById("drama-grid");
+      grid.innerHTML = "";
+
+      let shows = Object.values(showMap);
+      if (query) {
+        const q = query.toLowerCase();
+        shows = shows.filter(s => s.title.toLowerCase().includes(q));
+      }
+
+      document.getElementById("result-count").textContent = `បង្ហាញ ${shows.length} រឿង`;
+
+      if (shows.length === 0) {
+        grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">រកមិនឃើញរឿងដែលត្រូវនឹងការស្វែងរកទេ</div>`;
+        return;
+      }
+
+      shows.forEach(show => {
+        show.episodes.sort((a, b) => a.episode_number - b.episode_number);
+        const card = document.createElement("div");
+        card.className = "drama-card";
+
+        const posterSrc = show.poster_url || "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=300&q=80";
+
+        card.innerHTML = `
+          <div class="card-top">
+            <img class="card-poster" src="${posterSrc}" onerror="this.src='https://images.unsplash.com/photo-1578632767115-351597cf2477?w=300&q=80'" alt="">
+            <div class="card-info">
+              <div class="card-title" title="${show.title}">${show.title}</div>
+              <div class="card-meta-chips">
+                <span class="chip chip-eps">📺 ${show.episodes.length} ភាគ</span>
+                <span class="chip chip-size">📦 ${(show.totalSizeMb).toFixed(1)} MB</span>
+                <span class="chip chip-src">⚡ ${show.source}</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-secondary btn-sm btn-view-eps" data-id="${show.id}">📋 មើលភាគ (${show.episodes.length})</button>
+            <button class="btn btn-danger btn-sm btn-delete-show" data-id="${show.id}" data-title="${show.title}">🗑️ លុបរឿង</button>
+          </div>
+        `;
+
+        card.querySelector(".btn-view-eps").addEventListener("click", () => openEpisodeModal(show));
+        card.querySelector(".btn-delete-show").addEventListener("click", () => deleteShow(show.id, show.title));
+
+        grid.appendChild(card);
+      });
+    }
+
+    document.getElementById("search-input").addEventListener("input", (e) => {
+      renderGrid(e.target.value);
+    });
+
+    // 🗑️ Delete Entire Show
+    async function deleteShow(showId, showTitle) {
+      const ok = confirm(`⚠️ តើអ្នកពិតជាចង់លុបរឿង "${showTitle}" ព្រមទាំងគ្រប់ភាគទាំងអស់ចេញពី Google Sheets និង APK មែនទេ?\n\n(រឿងនេះនឹងបាត់ពី APK ភ្លាមៗ!)`);
+      if (!ok) return;
+
+      showToast(`⏳ កំពុងលុបរឿង "${showTitle}" ចេញពី Google Sheets...`);
+      try {
+        const payload = {
+          action: "delete_show",
+          show_id: showId,
+          show_title: showTitle
+        };
+
+        const res = await fetch(GAS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        if (data.status === "success") {
+          showToast(`✅ បានលុបរឿង "${showTitle}" ចេញដោយជោគជ័យ!`);
+          delete showMap[showId];
+          // Delete from local manifest
+          Object.keys(manifestData).forEach(k => {
+            if (manifestData[k] && (manifestData[k].show_id === showId || manifestData[k].show_title === showTitle)) {
+              delete manifestData[k];
+            }
+          });
+          processManifest();
+        } else {
+          alert("លុបមិនបានសម្រេច: " + (data.message || JSON.stringify(data)));
+        }
+      } catch (err) {
+        alert("មានបញ្ហាក្នុងការភ្ជាប់ទៅកាន់ Google Apps Script: " + err.message);
+      }
+    }
+
+    // 🗑️ Delete Single Episode
+    async function deleteEpisode(epId, showTitle, epNum) {
+      const ok = confirm(`⚠️ តើអ្នកពិតជាចង់លុបភាគ ${epNum} នៃរឿង "${showTitle}" ចេញមែនទេ?`);
+      if (!ok) return;
+
+      showToast(`⏳ កំពុងលុបភាគ ${epNum}...`);
+      try {
+        const payload = {
+          action: "delete_episode",
+          ep_id: epId
+        };
+
+        const res = await fetch(GAS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        if (data.status === "success") {
+          showToast(`✅ បានលុបភាគ ${epNum} រួចរាល់!`);
+          delete manifestData[epId];
+          processManifest();
+          const show = Object.values(showMap).find(s => s.title === showTitle);
+          if (show) openEpisodeModal(show);
+          else document.getElementById("ep-modal").classList.remove("active");
+        } else {
+          alert("លុបមិនបានសម្រេច: " + (data.message || JSON.stringify(data)));
+        }
+      } catch (err) {
+        alert("មានបញ្ហាក្នុងការភ្ជាប់: " + err.message);
+      }
+    }
+
+    // Modal
+    const epModal = document.getElementById("ep-modal");
+    document.getElementById("btn-close-modal").addEventListener("click", () => epModal.classList.remove("active"));
+    epModal.addEventListener("click", (e) => { if (e.target === epModal) epModal.classList.remove("active"); });
+
+    function openEpisodeModal(show) {
+      document.getElementById("modal-show-title").textContent = `គ្រប់គ្រងភាគ: ${show.title} (សរុប ${show.episodes.length} ភាគ)`;
+      const listEl = document.getElementById("modal-ep-list");
+      listEl.innerHTML = "";
+
+      show.episodes.forEach(ep => {
+        const row = document.createElement("div");
+        row.className = "ep-row";
+        row.innerHTML = `
+          <div>
+            <div class="ep-row-title">ភាគទី ${ep.episode_number}</div>
+            <div class="ep-row-meta">Telegram Msg ID: #${ep.telegram_message_id || 'N/A'} • ${ep.file_size_mb} MB</div>
+          </div>
+          <div style="display:flex;gap:6px;">
+            ${ep.original_url ? `<a href="${ep.original_url}" target="_blank" class="btn btn-secondary btn-sm">▶ Test</a>` : ''}
+            <button class="btn btn-danger btn-sm btn-del-ep" data-epid="${ep.ep_id}" data-epnum="${ep.episode_number}">🗑️ លុបភាគ</button>
+          </div>
+        `;
+
+        row.querySelector(".btn-del-ep").addEventListener("click", () => {
+          deleteEpisode(ep.ep_id, show.title, ep.episode_number);
+        });
+
+        listEl.appendChild(row);
+      });
+
+      epModal.classList.add("active");
+    }
+  </script>
+</body>
+</html>

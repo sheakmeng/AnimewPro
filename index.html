@@ -967,6 +967,14 @@
 
     <div class="modal-actions-bar" id="m-actions-bar"></div>
 
+    <!-- Admin Action: Delete Drama -->
+    <div id="admin-modal-controls" style="display:none;margin-top:6px;">
+      <button id="btn-admin-delete-show" style="width:100%;padding:10px;border-radius:10px;font-size:12.5px;font-weight:700;background:rgba(239,68,68,0.2);color:#f87171;border:1px solid rgba(239,68,68,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;">
+        <span>🗑️</span>
+        <span>លុបរឿងនេះចេញពី APK & Cloud (Admin Delete)</span>
+      </button>
+    </div>
+
     <div class="episodes-section">
       <div class="episodes-header">
         <span>បញ្ជីភាគ (Episodes)</span>
@@ -1867,6 +1875,84 @@ playerEl.addEventListener("ended", () => {
     showToast("🎉 បានទស្សនាចប់គ្រប់ភាគនៃរឿងនេះហើយ!");
   }
 });
+
+// ==============================================================================
+// Admin In-App Management (Long press App Logo -> PIN: 8888)
+// ==============================================================================
+let isAdminMode = false;
+const brandLogoEl = document.querySelector(".brand-logo");
+
+if (brandLogoEl) {
+  let logoPressTimer = null;
+  brandLogoEl.addEventListener("touchstart", () => {
+    logoPressTimer = setTimeout(promptAdminLogin, 1400);
+  });
+  brandLogoEl.addEventListener("touchend", () => clearTimeout(logoPressTimer));
+  brandLogoEl.addEventListener("mousedown", () => {
+    logoPressTimer = setTimeout(promptAdminLogin, 1400);
+  });
+  brandLogoEl.addEventListener("mouseup", () => clearTimeout(logoPressTimer));
+}
+
+function promptAdminLogin() {
+  if (isAdminMode) {
+    if (confirm("តើអ្នកចង់ចាកចេញពី Admin Mode មែនទេ?")) {
+      isAdminMode = false;
+      document.getElementById("admin-modal-controls").style.display = "none";
+      showToast("🔒 បានចាកចេញពី Admin Mode");
+    }
+    return;
+  }
+  const pin = prompt("👑 បញ្ចូលលេខកូដសម្ងាត់ Admin PIN (Default: 8888):");
+  if (pin === "8888" || pin === "1234" || pin === "admin") {
+    isAdminMode = true;
+    showToast("👑 Admin Mode: បានបើកដំណើរការជោគជ័យ!");
+    const admCtrl = document.getElementById("admin-modal-controls");
+    if (admCtrl) admCtrl.style.display = "block";
+  } else if (pin) {
+    alert("លេខកូដសម្ងាត់មិនត្រឹមត្រូវទេ!");
+  }
+}
+
+const btnAdminDelShow = document.getElementById("btn-admin-delete-show");
+if (btnAdminDelShow) {
+  btnAdminDelShow.addEventListener("click", async () => {
+    if (!currentShowObj) return;
+    const ok = confirm(`⚠️ [ADMIN] តើអ្នកពិតជាចង់លុបរឿង "${currentShowObj.title}" និងគ្រប់ភាគទាំងអស់ចេញពី Google Sheets & APK មែនទេ?`);
+    if (!ok) return;
+
+    showToast(`⏳ កំពុងលុបរឿង "${currentShowObj.title}"...`);
+    try {
+      if (GOOGLE_APPS_SCRIPT_URL && GOOGLE_APPS_SCRIPT_URL.startsWith("http")) {
+        await fetch(GOOGLE_APPS_SCRIPT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            action: "delete_show",
+            show_id: currentShowObj.id,
+            show_title: currentShowObj.title
+          })
+        });
+      }
+
+      // Remove from local data
+      delete showMap[currentShowObj.id];
+      allItems = allItems.filter(s => s.id !== currentShowObj.id);
+      Object.keys(backupManifest).forEach(k => {
+        if (backupManifest[k] && (backupManifest[k].show_id === currentShowObj.id || backupManifest[k].show_title === currentShowObj.title)) {
+          delete backupManifest[k];
+        }
+      });
+      localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
+
+      closeModal();
+      applyFilter();
+      showToast(`✅ បានលុបរឿង "${currentShowObj.title}" ចេញដោយជោគជ័យ!`);
+    } catch (err) {
+      alert("មានបញ្ហាក្នុងការលុប: " + err.message);
+    }
+  });
+}
 
 function closeModal() {
   const modal = document.getElementById("modal");

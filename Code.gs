@@ -115,6 +115,48 @@ function doPost(e) {
       })).setMimeType(ContentService.MimeType.JSON);
     }
     
+    // 🗑️ Delete Entire Show (All episodes of a show)
+    if (body.action === "delete_show" && (body.show_id || body.show_title)) {
+      const targetShowId = String(body.show_id || "").trim();
+      const targetTitle = String(body.show_title || "").trim();
+      const data = sheet.getDataRange().getValues();
+      let deletedCount = 0;
+      
+      for (let i = data.length - 1; i >= 1; i--) {
+        const rowShowId = String(data[i][1]).trim();
+        const rowTitle = String(data[i][2]).trim();
+        if ((targetShowId && rowShowId === targetShowId) || (targetTitle && rowTitle === targetTitle)) {
+          sheet.deleteRow(i + 1);
+          deletedCount++;
+        }
+      }
+      return ContentService.createTextOutput(JSON.stringify({
+        status: "success",
+        action: "delete_show",
+        deleted_count: deletedCount,
+        show_title: targetTitle
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // 🗑️ Delete Single Episode
+    if (body.action === "delete_episode" && body.ep_id) {
+      const targetEpId = String(body.ep_id).trim();
+      const data = sheet.getDataRange().getValues();
+      let deleted = false;
+      for (let i = data.length - 1; i >= 1; i--) {
+        if (String(data[i][0]).trim() === targetEpId) {
+          sheet.deleteRow(i + 1);
+          deleted = true;
+          break;
+        }
+      }
+      return ContentService.createTextOutput(JSON.stringify({
+        status: deleted ? "success" : "not_found",
+        action: "delete_episode",
+        ep_id: targetEpId
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+    
     // Single Episode Sync (Realtime from Pydroid 3)
     const epId = String(body.ep_id || body.id || "").trim();
     const epData = body.data || body;
