@@ -449,25 +449,29 @@
     }
     .modal-nav {
       position: absolute;
-      top: max(10px, env(safe-area-inset-top));
+      top: max(12px, env(safe-area-inset-top));
       left: 12px;
-      z-index: 20;
+      z-index: 99999 !important;
+      pointer-events: auto !important;
     }
     .btn-back {
-      background: rgba(0, 0, 0, 0.65);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(0, 0, 0, 0.78);
+      border: 1.5px solid rgba(255,255,255,0.3);
       color: #fff;
-      width: 36px;
-      height: 36px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.7);
+      pointer-events: auto !important;
+      touch-action: manipulation;
     }
-    .btn-back:active { transform: scale(0.92); }
+    .btn-back:active { transform: scale(0.90); background: rgba(0,0,0,0.95); }
 
     #player {
       width: 100%;
@@ -1958,6 +1962,21 @@ function closeModal() {
   if (fallbackBanner) fallbackBanner.classList.remove("show");
   const actionsBar = document.getElementById("m-actions-bar");
   if (actionsBar) actionsBar.innerHTML = "";
+}
+
+// Back button on modal
+const btnCloseModal = document.getElementById("btn-close");
+if (btnCloseModal) {
+  btnCloseModal.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    closeModal();
+  });
+  btnCloseModal.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    closeModal();
+  });
 }
 
 // Android Hardware Back Button & Gesture Support
