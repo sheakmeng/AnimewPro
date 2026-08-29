@@ -1578,15 +1578,11 @@ async function openModal(show) {
   const synEl = document.getElementById("m-synopsis");
   if (synEl) synEl.textContent = show.synopsis || "គ្មានព័ត៌មានសង្ខេប / No synopsis.";
   
-  const isMovie = show.type === "movie";
-  const isDramaora = show.type === "dramaora" || show.source === "dramaora";
   const metaEl = document.getElementById("m-meta");
   if (metaEl) {
     metaEl.innerHTML = `
-      <span class="badge-chip ${isDramaora ? 'badge-tg' : (isMovie ? 'badge-movie' : 'badge-series')}">${isDramaora ? 'Dramaora (Unlocked)' : (isMovie ? 'ភាពយន្តទោល (Movie)' : 'ភាពយន្តភាគ (Series)')}</span>
       ${show.release_year ? `<span class="badge-chip" style="background:rgba(255,255,255,0.08);color:#cbd5e1;">${show.release_year}</span>` : ''}
       <span class="badge-chip badge-hd">1080p FHD</span>
-      ${show.is_telegram_backup ? '<span class="badge-chip badge-tg">✈️ Telegram Cloud Ready</span>' : ''}
     `;
   }
 
