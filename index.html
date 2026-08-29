@@ -994,8 +994,8 @@ function showToast(msg) {
 
 const SB_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co";
 const ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvd2p4aGtpanRsc2R2aHl1ZGR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMjE3MTIsImV4cCI6MjEwMTc5NzcxMn0.ulxBnNG6fc6muqPrAxzEGw0VPyZpR5ug8bY713PyWGg";
-const HEADERS = { "apikey": ANON, "Authorization": "Bearer " + ANON };
 const GITHUB_MANIFEST_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json";
+const GOOGLE_APPS_SCRIPT_URL = ""; // 📊 Paste your deployed Google Apps Script Web App URL here for Realtime Live Sync
 
 const STORAGE_WATCHED_KEY = "animew_watched_shows";
 const STORAGE_EPS_KEY = "animew_watched_episodes";
@@ -1087,6 +1087,23 @@ async function loadManifestData() {
     }
   } catch (e) {
     console.warn("ℹ️ Offline or could not sync GitHub manifest:", e);
+  }
+
+  // 📊 Live Realtime Sync from Google Sheets Web App (if configured)
+  if (typeof GOOGLE_APPS_SCRIPT_URL === "string" && GOOGLE_APPS_SCRIPT_URL.startsWith("http")) {
+    try {
+      const gasRes = await fetch(GOOGLE_APPS_SCRIPT_URL + "?_t=" + Date.now(), { cache: "no-store" });
+      if (gasRes.ok) {
+        const gasData = await gasRes.json();
+        if (typeof gasData === "object" && gasData && Object.keys(gasData).length > 0) {
+          backupManifest = Object.assign(backupManifest, gasData);
+          localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
+          console.log(`📊 Live synced ${Object.keys(gasData).length} backed-up episodes from Google Sheets!`);
+        }
+      }
+    } catch (e) {
+      console.warn("ℹ️ Could not sync Google Sheets manifest:", e);
+    }
   }
 
   return backupManifest;

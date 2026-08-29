@@ -85,6 +85,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals(
 MANIFEST_FILE = os.path.join(SCRIPT_DIR, "backup_manifest.json")
 GITHUB_MANIFEST_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json"
 
+# 📊 Google Apps Script Web App URL (Paste your deployed Web App URL here for Realtime Sheet Sync)
+GOOGLE_APPS_SCRIPT_URL = "" 
+
 MANIFEST_CANDIDATE_PATHS = [
     MANIFEST_FILE,
     os.path.join(os.getcwd(), "backup_manifest.json"),
@@ -92,6 +95,19 @@ MANIFEST_CANDIDATE_PATHS = [
     "/storage/emulated/0/Download/backup_manifest.json",
     "/sdcard/backup_manifest.json"
 ]
+
+async def sync_to_google_sheet(ep_id: str, ep_data: dict):
+    """Sync backed up episode directly to Google Sheets Web App in real-time."""
+    if not GOOGLE_APPS_SCRIPT_URL or not GOOGLE_APPS_SCRIPT_URL.startswith("http"):
+        return
+    try:
+        payload = {"ep_id": ep_id, "data": ep_data}
+        async with httpx.AsyncClient(timeout=10.0, follow_redirects=True) as client:
+            r = await client.post(GOOGLE_APPS_SCRIPT_URL, json=payload)
+            if r.status_code == 200:
+                print(f"  📊 Live Synced to Google Sheet: {ep_data.get('show_title')} EP {ep_data.get('episode_number')}", flush=True)
+    except Exception as e:
+        print(f"  ⚠️ Google Sheet sync notice: {e}", flush=True)
 
 # ==============================================================================
 # MANIFEST MANAGEMENT & ZERO-DUPLICATION ENGINE
@@ -835,6 +851,7 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
                 "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
             }
             save_manifest(manifest)
+            await sync_to_google_sheet(ep_id, manifest[ep_id])
             return True
 
     except Exception as err:
