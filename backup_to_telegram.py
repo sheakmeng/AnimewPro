@@ -639,6 +639,26 @@ def extract_video_metadata(video_path: str, thumb_out_path: str):
 
     return duration, width, height, (thumb_out_path if thumb_created else None)
 
+async def download_thumbnail_image(poster_url: str, thumb_out_path: str):
+    """Download official drama poster image to use as Telegram video thumbnail cover."""
+    if not poster_url or not str(poster_url).startswith("http"):
+        return None
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Referer": "https://vi.dramaora.tv/"
+        }
+        async with httpx.AsyncClient(headers=headers, timeout=10.0, follow_redirects=True) as client:
+            r = await client.get(poster_url)
+            if r.status_code == 200 and len(r.content) > 500:
+                with open(thumb_out_path, "wb") as f:
+                    f.write(r.content)
+                if os.path.exists(thumb_out_path) and os.path.getsize(thumb_out_path) > 500:
+                    return thumb_out_path
+    except Exception:
+        pass
+    return None
+
 def split_video_if_needed(video_path: str, max_mb: float = 1950.0):
     if not os.path.exists(video_path):
         return [video_path], False
@@ -704,6 +724,7 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
     show_title = ep.get("show_title") or "Unknown Show"
     ep_num = ep.get("episode_number") or 1
     video_url = ep.get("video_url") or ""
+    poster_url = ep.get("poster_url") or ""
 
     if not video_url:
         print(f"  ⚠️ Skipping {show_title} EP {ep_num}: No stream URL.", flush=True)
@@ -741,6 +762,13 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
 
             part_thumb = part_file + ".thumb.jpg"
             duration, width, height, thumb_file = extract_video_metadata(part_file, part_thumb)
+            
+            # 🖼️ Capture & Download Official Drama Poster Thumbnail if no ffmpeg thumb
+            if not thumb_file and poster_url:
+                thumb_file = await download_thumbnail_image(poster_url, part_thumb)
+                if thumb_file:
+                    print(f"  🖼️ បានទាញយក Drama Poster Cover សម្រាប់ Thumbnail លើ Telegram!", flush=True)
+
             if duration > 0:
                 print(f"  🎬 Metadata: {duration//60}m{duration%60}s | {width}x{height} | Thumb: {'Yes' if thumb_file else 'No'}", flush=True)
 
@@ -752,6 +780,8 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
                 f"📦 **Size:** {part_size_mb:.1f} MB\n"
                 f"🆔 `ep_id: {ep_id}`"
             )
+            if poster_url:
+                caption += f"\n🖼️ **Poster:** [មើលរូបភាព Poster]({poster_url})"
 
             last_logged_pct = -1
             def progress(current, total):
@@ -770,7 +800,7 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
                 duration=int(duration or 0),
                 width=int(width or 0),
                 height=int(height or 0),
-                thumb=thumb_file if (thumb_file and os.path.exists(thumb_file)) else None,
+                thumb=thumb_file if (thumb_file and os.path.exists(thumb_file) and os.path.getsize(thumb_file) > 0) else None,
                 supports_streaming=True,
                 progress=progress
             )
