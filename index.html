@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>Animew Pro</title>
+  <title>Animew Pro - Telegram Cloud & Dramaora Stream</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -18,6 +18,7 @@
       --border: rgba(255, 255, 255, 0.08);
       --accent: #6366f1;
       --accent-gradient: linear-gradient(135deg, #6366f1, #38bdf8);
+      --tg-gradient: linear-gradient(135deg, #0088cc, #00b4d8);
       --orange-gradient: linear-gradient(135deg, #f97316, #ef4444);
       --red-badge: #ef4444;
       --green: #10b981;
@@ -45,7 +46,7 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(9, 12, 20, 0.92);
+      background: rgba(9, 12, 20, 0.94);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
@@ -84,6 +85,18 @@
       border: 1px solid rgba(99, 102, 241, 0.3);
       text-transform: uppercase;
     }
+    .tg-cloud-badge {
+      font-size: 9px;
+      font-weight: 700;
+      background: rgba(0, 136, 204, 0.2);
+      color: #38bdf8;
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(0, 136, 204, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
 
     .header-actions {
       display: flex;
@@ -91,7 +104,7 @@
       gap: 8px;
     }
 
-    .btn-bell {
+    .btn-action-round {
       position: relative;
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid var(--border);
@@ -105,7 +118,11 @@
       cursor: pointer;
       transition: all 0.2s ease;
     }
-    .btn-bell:active { transform: scale(0.92); }
+    .btn-action-round:active { transform: scale(0.92); }
+    .btn-action-round.spinning svg {
+      animation: spin 0.8s linear infinite;
+    }
+
     .bell-badge {
       position: absolute;
       top: -2px;
@@ -165,7 +182,7 @@
       display: flex;
       gap: 6px;
       overflow-x: auto;
-      padding: 2px 14px 10px;
+      padding: 4px 14px 10px;
       scrollbar-width: none;
     }
     .filter-tabs::-webkit-scrollbar { display: none; }
@@ -177,10 +194,13 @@
       font-family: inherit;
       font-size: 12px;
       font-weight: 500;
-      padding: 5px 12px;
+      padding: 6px 13px;
       border-radius: 20px;
       cursor: pointer;
       transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
     .tab-btn.active {
       background: var(--accent);
@@ -188,6 +208,11 @@
       color: #fff;
       font-weight: 600;
       box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
+    }
+    .tab-btn.tab-tg.active {
+      background: #0088cc;
+      border-color: #0088cc;
+      box-shadow: 0 2px 10px rgba(0, 136, 204, 0.4);
     }
     .tab-btn.tab-recent.active {
       background: #ef4444;
@@ -248,74 +273,88 @@
       display: flex;
       flex-direction: column;
       cursor: pointer;
-      border: 1px solid var(--border);
-      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
       position: relative;
+      border: 1px solid var(--border);
+      transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s ease, border-color 0.18s ease;
     }
     .media-card:active {
       transform: scale(0.96);
+      border-color: rgba(99, 102, 241, 0.4);
     }
     .media-card.is-watched {
-      border-color: rgba(239, 68, 68, 0.45);
-      box-shadow: 0 0 10px rgba(239, 68, 68, 0.12);
+      border-color: rgba(99, 102, 241, 0.25);
     }
 
     .thumb-wrap {
       position: relative;
       width: 100%;
-      aspect-ratio: 2/3;
-      background: #182033;
+      padding-top: 142%; /* 1:1.42 poster ratio */
+      background: #141b2d;
       overflow: hidden;
     }
     .thumb-img {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
+      transition: opacity 0.3s ease, transform 0.3s ease;
     }
-    .media-card:hover .thumb-img {
-      transform: scale(1.04);
-    }
-
     .thumb-placeholder {
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      inset: 0;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 24px;
-      background: linear-gradient(135deg, #182033, #0f1422);
-      color: rgba(255,255,255,0.2);
+      background: linear-gradient(145deg, #1e1b4b, #0f172a);
+      color: #818cf8;
+      font-size: 30px;
+      padding: 8px;
+    }
+    .thumb-placeholder-text {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-top: 6px;
+      text-align: center;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
-    /* Overlay Badges on Thumbnail */
     .overlay-top-left {
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 6px;
+      left: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
       z-index: 2;
     }
     .overlay-top-right {
       position: absolute;
-      top: 5px;
-      right: 5px;
-      z-index: 2;
+      top: 6px;
+      right: 6px;
       display: flex;
       flex-direction: column;
-      gap: 3px;
       align-items: flex-end;
+      gap: 3px;
+      z-index: 2;
     }
     .overlay-bottom {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 16px 5px 4px;
-      background: linear-gradient(to top, rgba(9, 12, 20, 0.95), transparent);
+      padding: 20px 6px 6px;
+      background: linear-gradient(to top, rgba(9,12,20,0.95) 0%, transparent 100%);
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: flex-end;
       z-index: 2;
     }
 
@@ -324,195 +363,81 @@
       font-weight: 700;
       padding: 2px 5px;
       border-radius: 4px;
-      line-height: 1.1;
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-    }
-    .badge-movie {
-      background: rgba(14, 165, 233, 0.85);
-      color: #fff;
-    }
-    .badge-series {
-      background: rgba(99, 102, 241, 0.85);
-      color: #fff;
-    }
-    
-    .badge-watched {
-      background: linear-gradient(135deg, #ef4444, #b91c1c);
-      color: #fff;
-      font-weight: 700;
-      box-shadow: 0 2px 6px rgba(239, 68, 68, 0.5);
-    }
-
-    .badge-ep-count {
-      background: var(--orange-gradient);
-      color: #fff;
-      box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
-      font-weight: 800;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       letter-spacing: 0.2px;
+      line-height: 1.2;
     }
-    .badge-new-tag {
-      background: rgba(16, 185, 129, 0.9);
-      color: #fff;
-      font-size: 8px;
-    }
-
-    .badge-year {
-      font-size: 9px;
-      color: #cbd5e1;
-      font-weight: 600;
-    }
+    .badge-series { background: rgba(99, 102, 241, 0.88); color: #fff; }
+    .badge-movie  { background: rgba(249, 115, 22, 0.88); color: #fff; }
+    .badge-tg     { background: rgba(0, 136, 204, 0.92); color: #fff; }
+    .badge-hd     { background: rgba(0, 0, 0, 0.65); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .badge-ep-count { background: #ef4444; color: #fff; }
+    .badge-watched { background: rgba(16, 185, 129, 0.88); color: #fff; }
+    .badge-year { font-size: 10px; font-weight: 600; color: #cbd5e1; }
+    .badge-new-tag { background: #10b981; color: #fff; font-size: 8.5px; }
 
     .card-info {
-      padding: 6px 7px 8px;
+      padding: 7px 6px 8px;
       display: flex;
       flex-direction: column;
       gap: 2px;
-      flex: 1;
+      flex-grow: 1;
     }
     .card-title {
       font-size: 11.5px;
       font-weight: 600;
-      line-height: 1.35;
-      color: #f1f5f9;
+      color: var(--text);
+      line-height: 1.3;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis;
-      min-height: 31px;
+      word-break: break-word;
     }
-
     .card-last-watched {
       font-size: 9.5px;
-      color: #f87171;
-      font-weight: 600;
+      font-weight: 500;
+      color: #818cf8;
       display: flex;
       align-items: center;
       gap: 3px;
-    }
-
-    /* Notification Drawer */
-    #notif-drawer {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 999;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-    #notif-drawer.active { display: flex; justify-content: flex-end; }
-
-    .notif-panel {
-      width: 100%;
-      max-width: 360px;
-      height: 100%;
-      background: var(--surface);
-      border-left: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      animation: slideLeft 0.25s ease-out;
-    }
-    @keyframes slideLeft {
-      from { transform: translateX(100%); }
-      to { transform: translateX(0); }
-    }
-
-    .notif-head {
-      padding: max(16px, env(safe-area-inset-top)) 16px 14px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(9, 12, 20, 0.95);
-    }
-    .notif-head-title {
-      font-size: 15px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .btn-close-notif {
-      background: rgba(255, 255, 255, 0.08);
-      border: none;
-      color: #fff;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    .notif-list {
-      flex: 1;
-      overflow-y: auto;
-      padding: 10px 12px 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .notif-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 10px 12px;
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-    .notif-card:active {
-      background: var(--card-hover);
-      transform: scale(0.98);
-    }
-    .notif-thumb {
-      width: 44px;
-      height: 60px;
-      border-radius: 6px;
-      object-fit: cover;
-      background: #182033;
-      flex-shrink: 0;
-    }
-    .notif-info { flex: 1; min-width: 0; }
-    .notif-show-title {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-bottom: 2px;
-    }
-    .notif-desc {
-      font-size: 11px;
-      color: #38bdf8;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .notif-time {
-      font-size: 10px;
-      color: var(--text-muted);
       margin-top: 2px;
     }
 
-    /* Modal / Video Player */
+    /* State & Loader */
+    .state-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      gap: 12px;
+    }
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid rgba(255,255,255,0.1);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Video Player Modal */
     #modal {
-      display: none;
       position: fixed;
       inset: 0;
-      z-index: 1000;
-      background: #06080e;
+      z-index: 100;
+      background: var(--bg);
+      display: none;
+      flex-direction: column;
       overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
     }
-    #modal.active { display: block; }
+    #modal.active { display: flex; }
 
     .modal-sticky-player {
       position: sticky;
@@ -520,170 +445,237 @@
       z-index: 10;
       background: #000;
       width: 100%;
-      aspect-ratio: 16/9;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.8);
-      position: relative;
     }
-    .modal-sticky-player video {
-      width: 100%;
-      height: 100%;
-      display: block;
-      background: #000;
-    }
-
-    /* Fallback Alert Banner overlay */
-    .fallback-banner {
-      display: none;
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      right: 10px;
-      background: rgba(239, 68, 68, 0.9);
-      backdrop-filter: blur(8px);
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      color: #fff;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 30;
-      animation: fadeIn 0.3s ease;
-    }
-    .fallback-banner.show { display: flex; }
-    .btn-switch-server {
-      background: #fff;
-      color: #000;
-      border: none;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
     .modal-nav {
       position: absolute;
-      top: max(8px, env(safe-area-inset-top));
-      left: 8px;
+      top: max(10px, env(safe-area-inset-top));
+      left: 12px;
       z-index: 20;
     }
     .btn-back {
-      background: rgba(15, 23, 42, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px solid rgba(255,255,255,0.15);
       color: #fff;
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
+    .btn-back:active { transform: scale(0.92); }
+
+    #player {
+      width: 100%;
+      max-height: 48vh;
+      aspect-ratio: 16/9;
+      background: #000;
+      display: block;
+    }
+
+    .fallback-banner {
+      background: linear-gradient(90deg, #1e1b4b, #312e81);
+      border-bottom: 1px solid rgba(99, 102, 241, 0.4);
+      padding: 7px 12px;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      color: #c7d2fe;
+    }
+    .fallback-banner.show { display: flex; }
+    .btn-switch-server {
+      background: #4f46e5;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Player Controls Bar (Prev, Next, Lock, AutoNext) */
+    .player-controls-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      padding: 8px 12px;
+      background: #0d121f;
+      border-bottom: 1px solid var(--border);
+    }
+    .ctrl-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 7px 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      white-space: nowrap;
+    }
+    .ctrl-btn:active { transform: scale(0.94); }
+    .ctrl-btn.active {
+      background: rgba(99, 102, 241, 0.2);
+      border-color: rgba(99, 102, 241, 0.4);
+      color: #818cf8;
+    }
+    .ctrl-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .ctrl-btn-lock {
+      flex: 0.8;
+      background: rgba(239, 68, 68, 0.1);
+      border-color: rgba(239, 68, 68, 0.25);
+      color: #fca5a5;
+    }
+
+    /* Screen Lock Overlay */
+    #screen-lock-shield {
+      position: absolute;
+      inset: 0;
+      z-index: 50;
+      background: rgba(0, 0, 0, 0.01);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      pointer-events: auto;
+    }
+    #screen-lock-shield.locked {
+      display: flex;
+    }
+    .floating-unlock-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(16, 21, 36, 0.85);
+      border: 1px solid rgba(239, 68, 68, 0.5);
+      color: #f87171;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 99px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      animation: pulse 2s infinite;
+    }
+    .floating-unlock-btn:active { transform: scale(0.92); }
 
     .modal-body {
       padding: 14px 14px 60px;
-      max-width: 900px;
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .modal-title {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 700;
       line-height: 1.35;
-      margin-bottom: 6px;
+      color: #fff;
     }
     .modal-meta {
       display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
       flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
     }
     .modal-synopsis {
-      font-size: 12px;
-      line-height: 1.6;
+      font-size: 12.5px;
       color: var(--text-muted);
-      margin-bottom: 16px;
-      max-height: 68px;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
       overflow: hidden;
-      position: relative;
     }
-    .modal-synopsis.expanded { max-height: none; }
+    .modal-synopsis.expanded { -webkit-line-clamp: unset; }
     .synopsis-toggle {
       font-size: 11.5px;
       color: #818cf8;
       font-weight: 600;
-      margin-top: 4px;
-      display: inline-block;
       cursor: pointer;
+      align-self: flex-start;
     }
 
+    /* Modal Action Bar */
     .modal-actions-bar {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      margin: 10px 0 6px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
     }
     .btn-tg-stream {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 7px;
-      background: linear-gradient(135deg, #229ED9, #0088cc);
+      justify-content: center;
+      gap: 8px;
+      background: var(--tg-gradient);
       color: #fff;
       text-decoration: none;
-      font-size: 11.5px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 12.5px;
       font-weight: 700;
-      padding: 7px 14px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0, 136, 204, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      transition: all 0.16s ease;
-      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0, 136, 204, 0.35);
+      transition: transform 0.15s ease;
     }
-    .btn-tg-stream:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 15px rgba(0, 136, 204, 0.5);
-    }
-    .btn-tg-stream:active { transform: scale(0.96); }
+    .btn-tg-stream:active { transform: scale(0.97); }
 
-    /* Episode Selector */
+    /* Episodes Section */
     .episodes-section {
-      margin-top: 14px;
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
     .episodes-header {
-      font-size: 13.5px;
-      font-weight: 700;
-      margin-bottom: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #fff;
     }
-    
     .episodes-pills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
       gap: 6px;
     }
     .ep-pill {
-      background: var(--card-bg);
+      background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border);
-      color: var(--text);
-      padding: 8px 4px;
       border-radius: 8px;
-      font-size: 11.5px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 12px;
       font-weight: 600;
-      text-align: center;
+      padding: 8px 4px;
       cursor: pointer;
-      transition: all 0.15s ease;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      transition: all 0.18s ease;
+      text-align: center;
       position: relative;
     }
+    .ep-pill:active { transform: scale(0.94); }
     .ep-pill.active {
       background: var(--accent);
       border-color: var(--accent);
@@ -691,9 +683,12 @@
       box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
     }
     .ep-pill.ep-watched:not(.active) {
-      border-color: rgba(239, 68, 68, 0.6);
-      background: rgba(239, 68, 68, 0.12);
-      color: #fca5a5;
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.1);
+      color: #34d399;
+    }
+    .ep-pill.is-tg:not(.active) {
+      border-color: rgba(0, 136, 204, 0.35);
     }
     .ep-pill.no-video {
       opacity: 0.35;
@@ -701,41 +696,127 @@
       border-style: dashed;
     }
 
-    /* State / Spinner */
-    .state-box {
-      text-align: center;
-      padding: 60px 20px;
+    /* Notification Drawer */
+    #notif-drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: none;
+      justify-content: flex-end;
+    }
+    #notif-drawer.active { display: flex; }
+    .notif-panel {
+      width: 85%;
+      max-width: 380px;
+      height: 100%;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      animation: slideInRight 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes slideInRight {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+    .notif-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: max(14px, env(safe-area-inset-top)) 14px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .notif-head-title {
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-close-notif {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 4px;
+    }
+    .notif-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .notif-card {
+      display: flex;
+      gap: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .notif-card:active { background: rgba(255,255,255,0.06); }
+    .notif-thumb {
+      width: 44px;
+      height: 60px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #141b2d;
+      flex-shrink: 0;
+    }
+    .notif-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+      overflow: hidden;
+    }
+    .notif-show-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .notif-desc {
+      font-size: 11px;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .notif-time {
+      font-size: 10px;
       color: var(--text-muted);
     }
-    .spinner {
-      width: 26px;
-      height: 26px;
-      border: 2.5px solid rgba(99, 102, 241, 0.2);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 12px;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
 
     /* Toast */
     #toast {
       position: fixed;
-      bottom: 24px;
+      bottom: max(20px, env(safe-area-inset-bottom));
       left: 50%;
       transform: translateX(-50%) translateY(100px);
-      background: rgba(16, 21, 36, 0.95);
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      padding: 8px 16px;
-      border-radius: 99px;
+      background: rgba(16, 21, 36, 0.96);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
       font-size: 12px;
       font-weight: 600;
-      color: #fff;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-      backdrop-filter: blur(10px);
-      transition: transform 0.25s ease;
-      z-index: 2000;
+      padding: 8px 18px;
+      border-radius: 99px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+      z-index: 200;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       pointer-events: none;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      white-space: nowrap;
     }
     #toast.show { transform: translateX(-50%) translateY(0); }
   </style>
@@ -745,24 +826,30 @@
 <header>
   <div class="nav-top">
     <div class="brand">
-      <span class="brand-logo">Animew</span>
-      <span class="brand-badge">PRO</span>
+      <span class="brand-logo">Animew Pro</span>
+      <span class="brand-badge">FHD</span>
+      <span class="tg-cloud-badge">✈️ Telegram</span>
     </div>
     <div class="header-actions">
-      <button class="btn-bell" id="btn-notif" aria-label="Notifications">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      <button class="btn-action-round" id="btn-sync" title="Sync & Refresh Posters">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+      </button>
+      <button class="btn-action-round" id="btn-notif" aria-label="Notifications">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
         <span class="bell-badge" id="notif-count" style="display:none;">0</span>
       </button>
     </div>
   </div>
   <div class="search-bar">
-    <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input id="search-input" type="text" placeholder="ស្វែងរកភាពយន្ត / Search..." />
+    <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="search-input" type="text" placeholder="ស្វែងរកភាពយន្ត / Search anime & dramas..." />
   </div>
 </header>
 
 <div class="filter-tabs">
-  <button class="tab-btn active" data-filter="all">ទាំងអស់</button>
+  <button class="tab-btn active" data-filter="all">ទាំងអស់ (All)</button>
+  <button class="tab-btn tab-tg" data-filter="telegram">✈️ Telegram Archive</button>
+  <button class="tab-btn" data-filter="dramaora">🎬 Dramaora</button>
   <button class="tab-btn tab-recent" data-filter="recent">🕒 ទើបមើល (Recent)</button>
   <button class="tab-btn" data-filter="movie">រឿងទោល (Movies)</button>
   <button class="tab-btn" data-filter="series">រឿងភាគ (Series)</button>
@@ -770,12 +857,12 @@
 </div>
 
 <main>
-  <div id="loader" class="state-box">
+  <div id="loader" class="state-box" style="display:none;">
     <div class="spinner"></div>
-    <div style="font-size:12px;">កំពុងផ្ទុកទិន្នន័យ...</div>
+    <div style="font-size:12px;">កំពុងផ្ទុកទិន្នន័យពី Cloud Archive...</div>
   </div>
 
-  <div id="content" style="display:none;">
+  <div id="content" style="display:block;">
     <div class="section-head">
       <span class="section-title">
         <span id="section-icon">🎬</span>
@@ -820,10 +907,36 @@
     </div>
     <video id="player" controls playsinline preload="auto"></video>
     
+    <!-- Screen Lock Overlay Shield -->
+    <div id="screen-lock-shield">
+      <button class="floating-unlock-btn" id="btn-floating-unlock" type="button">
+        <span>🔒</span>
+        <span>ចុចដើម្បីដោះសោរ (Unlock)</span>
+      </button>
+    </div>
+
+    <!-- Quick Episode & Lock Controls Bar -->
+    <div class="player-controls-bar">
+      <button class="ctrl-btn" id="btn-prev-ep" title="Previous Episode" type="button">
+        <span>⏮️</span>
+        <span>ភាគមុន</span>
+      </button>
+      <button class="ctrl-btn active" id="btn-toggle-autonext" title="Toggle Auto Next Episode" type="button">
+        <span>⚡</span>
+        <span id="label-autonext">Auto Next: ON</span>
+      </button>
+      <button class="ctrl-btn ctrl-btn-lock" id="btn-lock-screen" title="Lock Screen Controls" type="button">
+        <span>🔒</span>
+        <span>Lock</span>
+      </button>
+      <button class="ctrl-btn" id="btn-next-ep" title="Next Episode" type="button">
+        <span>ភាគបន្ទាប់</span>
+        <span>⏭️</span>
+      </button>
     <!-- Automatic Fallback Banner -->
     <div class="fallback-banner" id="fallback-banner">
       <span id="fallback-msg">⚠️ Server ដើមមានបញ្ហា - បានប្តូរទៅ Server បម្រុង</span>
-      <button class="btn-switch-server" id="btn-retry-stream">សាកល្បងឡើងវិញ</button>
+      <button class="btn-switch-server" id="btn-retry-stream" type="button">សាកល្បងឡើងវិញ</button>
     </div>
   </div>
 
@@ -833,12 +946,7 @@
     <p class="modal-synopsis" id="m-synopsis"></p>
     <span class="synopsis-toggle" id="m-synopsis-toggle">អានបន្ថែម ›</span>
 
-    <div class="modal-actions-bar">
-      <a id="btn-tg-direct" class="btn-tg-stream" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.05-.49-.83-.27-1.49-.42-1.43-.88.03-.24.38-.49 1.03-.75 4.04-1.76 6.74-2.92 8.09-3.5 3.85-1.65 4.65-1.94 5.18-1.95.12 0 .37.03.54.17.14.12.18.28.2.45-.01.07.01.23 0 .28z"/></svg>
-        <span id="tg-btn-label">📥 ទស្សនា / Download លើ Telegram</span>
-      </a>
-    </div>
+    <div class="modal-actions-bar" id="m-actions-bar"></div>
 
     <div class="episodes-section">
       <div class="episodes-header">
@@ -853,17 +961,33 @@
 <div id="toast"></div>
 
 <script>
+let toastTimeout = null;
+function showToast(msg) {
+  try {
+    const t = document.getElementById("toast");
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => t.classList.remove("show"), 2800);
+  } catch (e) {}
+}
+
 const SB_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co";
 const ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvd2p4aGtpanRsc2R2aHl1ZGR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMjE3MTIsImV4cCI6MjEwMTc5NzcxMn0.ulxBnNG6fc6muqPrAxzEGw0VPyZpR5ug8bY713PyWGg";
 const HEADERS = { "apikey": ANON, "Authorization": "Bearer " + ANON };
+const GITHUB_MANIFEST_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json";
 
 const STORAGE_WATCHED_KEY = "animew_watched_shows";
 const STORAGE_EPS_KEY = "animew_watched_episodes";
+const STORAGE_MANIFEST_KEY = "animew_cached_manifest";
+
+const EMBEDDED_MANIFEST = {"8c8b8e70-ba3f-4f6b-a297-fda004ea917e": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 1, "telegram_message_id": 11, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMLapBa8Stgpk9U4QcROgTcc43RGGkAAgokAAI9K4hUCY4outCvDggeBA", "file_size_mb": 582.65, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-001/1784834470456--.mp4"}, "7d30c7e7-59a3-4e1a-bd6f-4e67f1b7f03a": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 2, "telegram_message_id": 12, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMMapBbezyQZZsCf7buOoQ78U1Qb0oAAgskAAI9K4hUkBK2qCRAtL0eBA", "file_size_mb": 556.12, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-002/1784834492241--.mp4"}, "7aed35f6-68c7-424b-b002-027629bd03ee": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 3, "telegram_message_id": 13, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMNapBcFuS0i8J3csW_RoaHZYL7h80AAgwkAAI9K4hUBD4zQLAqOD0eBA", "file_size_mb": 572.1, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-003/1784834511582--.mp4"}, "17acb30d-3168-41c2-97d0-58b2492864f2": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 1, "telegram_message_id": 14, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMOapBdtr2G_o34ymRgLo93Rw3-kR8AAg4kAAI9K4hUBmRYbBvvZRgeBA", "file_size_mb": 746.34, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-001/1784732080399--.mp4"}, "427b1dde-7130-4447-9070-a647a54ee7f6": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 2, "telegram_message_id": 15, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMPapBeuf_mpNSGuHwpqqEOC99cIhUAAg8kAAI9K4hUNt4Dtz46YpMeBA", "file_size_mb": 1041.31, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-002/1784732104377--.mp4"}, "4e9d64ae-10f4-41ab-9916-de23e835aded": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 3, "telegram_message_id": 16, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMQapBgfRJIl3BJwJAGJNv57B7gOLYAAhEkAAI9K4hUY8rf8-azIgMeBA", "file_size_mb": 878.43, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-003/1784732122082--.mp4"}, "62450a23-daba-4e83-ac7e-abe5c53ece5c": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 4, "telegram_message_id": 17, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMRapBhXP7Jq0ARVYVicu1W0ccwbboAAhIkAAI9K4hU-Q_PWQsKy48eBA", "file_size_mb": 903.54, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-004/1784732143187--.mp4"}, "06d2c16e-64ce-4f62-a51c-2c43a45e2b38": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 5, "telegram_message_id": 18, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMSapBikVVKiJqPtCJWh4qK5WSMqzIAAhMkAAI9K4hUXssbSnnbSxEeBA", "file_size_mb": 873.97, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-005/1784732161257--.mp4"}, "3e2fb73b-0cac-41d0-a789-1cf38ebc4fdc": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 6, "telegram_message_id": 19, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMTapBjZk0Bvzc0Ea_TX_rYIFV2M68AAhUkAAI9K4hUdMGJNLfjY0MeBA", "file_size_mb": 863.38, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-006/1784732190078--.mp4"}, "203ce2ad-1634-462a-aafe-3ddbdfff88d1": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 7, "telegram_message_id": 20, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMUapBj866avcNOThyXIpo0r2IZNLYAAhckAAI9K4hU5rlLp7V3A4geBA", "file_size_mb": 526.73, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-007/1784732211707--.mp4"}, "45fa6fda-bbc0-4d48-bfa3-e74ea3b76495": {"show_id": "f04196eb-4925-4a27-a469-c6a0d91ffd61", "show_title": "ដំណើរស្វែងរកអទិទេព", "episode_number": 8, "telegram_message_id": 21, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMVapBkf1cssC3PB-sYPvs8Sq2yzpQAAh0kAAI9K4hUJKc-OhSyYFQeBA", "file_size_mb": 586.74, "original_url": "https://s3.nintanime.com/media/episodes/6a60d404d6d80648be96bc47/ep-008/1784732225785--.mp4"}, "f4061bb7-1035-4e7a-a125-d2b737b1494b": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 4, "telegram_message_id": 22, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMWapBlDlSlOcTIqnutfFF13_hParQAAh4kAAI9K4hU3cnYI3Y31t8eBA", "file_size_mb": 572.26, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-004/1784834532350--.mp4"}, "32eee2d6-12d5-4b1a-8d78-735837cca64c": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 5, "telegram_message_id": 23, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMXapBln-_SFkE1e66pft6roOzul_YAAh8kAAI9K4hUSJqhcLbtEyoeBA", "file_size_mb": 583.78, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-005/1784834551151--.mp4"}, "24170e5c-894e-492b-8b57-afaea031193f": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 6, "telegram_message_id": 24, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMYapBmI4BkafMScAkM5tNNlqx8iGoAAiAkAAI9K4hUxARN2Y3nONUeBA", "file_size_mb": 554.78, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-006/1784834573620--.mp4"}, "29519d38-c5db-4c57-ae13-65dfd8900022": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 7, "telegram_message_id": 25, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMZapDMHwFjZnm29i8yQkF7wk_Dub8AAoEkAAI9K4hUzyUrTE8X-6QeBA", "file_size_mb": 582.7, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-007/1784834588627--.mp4"}, "3738b25a-aafc-4182-8591-6cea895639d2": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 8, "telegram_message_id": 26, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMaapDM5ze2AcUHbKDG_pGwxWuNKbAAAoIkAAI9K4hUXc00aZyuoWUeBA", "file_size_mb": 568.43, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-008/1784834601454--.mp4"}, "d833bc62-3d69-4b72-9930-b4027034c7a2": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 9, "telegram_message_id": 27, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMbapDN43OIqarOKBhfGOPF2-rbvJAAAoMkAAI9K4hUMGFrMgABLjYlHgQ", "file_size_mb": 558.32, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-009/1784834617301--.mp4"}, "af3e24c6-2e95-4c52-9bb5-0d8ff823bd8e": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 10, "telegram_message_id": 28, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMcapDO5oygEIz5ObZYS8qe2uUDgHsAAoQkAAI9K4hUOMz7IevADkceBA", "file_size_mb": 562.69, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-010/1784834630240--.mp4"}, "eadf8765-6abe-4595-a070-87bf68cc3404": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 12, "telegram_message_id": 29, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMdapDUwwABh-yypJa4-iK_75Ag34u8AAKIJAACPSuIVPl6td8DhbAXHgQ", "file_size_mb": 569.7, "duration_seconds": 918, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-012/1784834659403--.mp4", "backed_up_at": "2026-08-28T00:22:27Z"}, "b5178312-6d0e-46ed-a958-84e3493f9a2a": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 13, "telegram_message_id": 30, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMeapDVoGHk6GfOpKgseYcjzBwrPwsAAokkAAI9K4hUZD7O6E3AIYQeBA", "file_size_mb": 609.92, "duration_seconds": 982, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-013/1784834673796--.mp4", "backed_up_at": "2026-08-28T00:26:08Z"}, "f2610ed1-b5bc-4c8b-bc45-47189515d563": {"show_id": "81f5e4cc-d493-4ac3-a2fd-5a540404f621", "show_title": "ខ្សែជីវិតឯកា", "episode_number": 14, "telegram_message_id": 31, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMfapDWmOasFMqvKeQRa9oon_0CkokAAowkAAI9K4hUvsc3l-3h0M4eBA", "file_size_mb": 609.65, "duration_seconds": 978, "original_url": "https://s3.nintanime.com/media/episodes/6a62689559f6a806cfb63e62/ep-014/1784834690166--.mp4", "backed_up_at": "2026-08-28T00:30:16Z"}, "0a831b59-4275-40d9-96df-7fb0d7ef4d2b": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 1, "telegram_message_id": 32, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMgapDYP_Ymy4Iy_k-0ewe3JwjDAgYAAo8kAAI9K4hUTs7QYEDZvKMeBA", "file_size_mb": 1001.87, "duration_seconds": 1023, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-001/1784819301249--_-.mp4", "backed_up_at": "2026-08-28T00:37:19Z"}, "1874a7c5-644e-45fd-a267-2dee4d22e8e8": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 2, "telegram_message_id": 33, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMhapDZczUCArAivnp2wYWaMn6PrAIAApAkAAI9K4hUTSQoGVTEW34eBA", "file_size_mb": 761.66, "duration_seconds": 1228, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-002/1784819334713--_-.mp4", "backed_up_at": "2026-08-28T00:42:27Z"}, "067a78cc-2d17-4825-baf5-a65df593ad1c": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 3, "telegram_message_id": 34, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMiapDakemC2naM3UA3y9I8bZ90H7UAApEkAAI9K4hUxR-SHpe8fOweBA", "file_size_mb": 778.4, "duration_seconds": 1245, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-003/1784819354846--_-.mp4", "backed_up_at": "2026-08-28T00:47:14Z"}, "93d6d1f4-8c72-40bb-9c72-4d32bb14e357": {"show_id": "6fb16064-dce2-4a70-a746-68b7a6b41ff1", "show_title": "សង្គ្រាមមឈូស", "episode_number": 1, "telegram_message_id": 36, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMkapDvI1ivsfOWGtuWqx1_pSL61RwAAqwkAAI9K4hUU3Astm308KseBA", "telegram_message_ids": [36, 37], "total_parts": 2, "file_size_mb": 3398.77, "original_url": "https://s3.nintanime.com/media/episodes/6a62715159f6a806cfb64854/ep-001/1784843351502--THE-MOVIE-.mp4", "backed_up_at": "2026-08-28T02:23:25Z"}, "615e7f26-2b54-412e-b127-93d4435dc7e2": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 4, "telegram_message_id": 38, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMmapDyjDisRmfT6rE_g47IY8Adg3sAArEkAAI9K4hUFXa5J1lRiz8eBA", "telegram_message_ids": [38], "total_parts": 1, "file_size_mb": 766.58, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-004/1784819371835--_-.mp4", "backed_up_at": "2026-08-28T02:29:35Z"}, "991a004f-ef97-4fd5-ba07-e93aaf8f4ae5": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 5, "telegram_message_id": 39, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMnapDzsz0F5Gao8SgSMIX2lwABWScxAAKyJAACPSuIVNYaDnQIlSczHgQ", "telegram_message_ids": [39], "total_parts": 1, "file_size_mb": 731.85, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-005/1784819401249--_-.mp4", "backed_up_at": "2026-08-28T02:34:29Z"}, "317322c5-fc16-4df8-8208-9a042c458d9d": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 6, "telegram_message_id": 40, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMoapD1CIvxKfX_SML63fHG29QsB-YAArQkAAI9K4hU59Z4v9jPtWseBA", "telegram_message_ids": [40], "total_parts": 1, "file_size_mb": 712.26, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-006/1784820139623--_-.mp4", "backed_up_at": "2026-08-28T02:40:11Z"}, "987bd4ad-58d1-4e40-8210-dd3de6bfbad7": {"show_id": "8d4ee7ab-a4da-4a05-b9d0-e8f986a4293e", "show_title": "ប្រហារព្រះ រដូវកាលទី ២", "episode_number": 7, "telegram_message_id": 41, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMpapD2S6nZef1FurJJT3JRpOuZtMkAArUkAAI9K4hU0G95Bv5_MwceBA", "telegram_message_ids": [41], "total_parts": 1, "file_size_mb": 700.81, "original_url": "https://s3.nintanime.com/media/episodes/6a6103fad6d80648be96e935/ep-007/1784899965447--_-.mp4", "backed_up_at": "2026-08-28T02:45:33Z"}, "ed78147b-e24c-4d54-af12-8583dc12c89a": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 1, "telegram_message_id": 42, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMqapD32M8nXPUxAAF9pLps4rQ8vJFHAAK2JAACPSuIVB2a-6gYL7Y-HgQ", "telegram_message_ids": [42], "total_parts": 1, "file_size_mb": 1075.88, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-001/1784900798570--.mp4", "backed_up_at": "2026-08-28T02:52:10Z"}, "a0f00b11-e6bc-4aef-aefc-59a50199dc7b": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 2, "telegram_message_id": 44, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMsapEwz4K7LcLb5-ml9YAxF2_aB4kAAqkdAAI9K5BUT8cRZqp1K1UeBA", "telegram_message_ids": [44], "total_parts": 1, "file_size_mb": 1001.46, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-002/1784900824475-02.mp4", "backed_up_at": "2026-08-28T06:55:13Z"}, "97d80daf-c8dd-4b91-8cba-a5d6847dd3f0": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 3, "telegram_message_id": 45, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMtapEyYIvplAw46_KO7fMkdZQPYr0AArAdAAI9K5BU7MOu0rO9KMIeBA", "telegram_message_ids": [45], "total_parts": 1, "file_size_mb": 982.19, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-003/1784900837573--.mp4", "backed_up_at": "2026-08-28T07:01:54Z"}, "41c9739a-1da6-4748-97c0-eb7d2aeae51a": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 4, "telegram_message_id": 46, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMuapEzMuSkYMAlrYBzK_OLuh6Yg_sAArIdAAI9K5BURLaMIdPXfOweBA", "telegram_message_ids": [46], "total_parts": 1, "file_size_mb": 511.34, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-004/1784900851181--.mp4", "backed_up_at": "2026-08-28T07:05:25Z"}, "1fe364fa-bc7c-473a-aef9-226818644b9c": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 5, "telegram_message_id": 47, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMvapE0q66Zf69dmEXfaUPewibWQh0AAr4dAAI9K5BUB5_GL32T4aEeBA", "telegram_message_ids": [47], "total_parts": 1, "file_size_mb": 930.27, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-005/1784900878448--.mp4", "backed_up_at": "2026-08-28T07:11:41Z"}, "681e966a-a882-4e07-b416-d834e84f6f11": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 6, "telegram_message_id": 48, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMwapE1iXHYLvtUrgh_kaajrGOmkKEAAsIdAAI9K5BU9QVFEERO-RweBA", "telegram_message_ids": [48], "total_parts": 1, "file_size_mb": 525.57, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-006/1784900894626--.mp4", "backed_up_at": "2026-08-28T07:15:23Z"}, "1ad28261-505b-4e48-ab57-1ac51177395f": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 7, "telegram_message_id": 49, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMxapE2XzaLJyG5UhRp-sAyutfBRDcAAsMdAAI9K5BUZqi0i87sYxIeBA", "telegram_message_ids": [49], "total_parts": 1, "file_size_mb": 530.65, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-007/1784900912096--.mp4", "backed_up_at": "2026-08-28T07:18:58Z"}, "e23abc15-0b1b-4b33-8606-8b1c0cc65f66": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 8, "telegram_message_id": 50, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMyapE3KyDatU8rhrK4I58fnXspaT8AAsUdAAI9K5BUGd-3VVpWrCIeBA", "telegram_message_ids": [50], "total_parts": 1, "file_size_mb": 503.29, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-008/1784900938733--.mp4", "backed_up_at": "2026-08-28T07:22:21Z"}, "d986154b-997a-4a3c-a99e-0fd98ccf9085": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 9, "telegram_message_id": 51, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAMzapE39XK1vuH9kCtgN52M0GjvF9MAAscdAAI9K5BUzQz90hPc0AkeBA", "telegram_message_ids": [51], "total_parts": 1, "file_size_mb": 486.49, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-009/1784900956790--.mp4", "backed_up_at": "2026-08-28T07:25:44Z"}, "e64a8d11-449a-4d29-9d2d-d5e851140018": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 10, "telegram_message_id": 52, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM0apE48IPZc1Fl9kSMrw9iFz5iE6oAAsodAAI9K5BUrRFGClUDucseBA", "telegram_message_ids": [52], "total_parts": 1, "file_size_mb": 522.59, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-010/1784900977332--.mp4", "backed_up_at": "2026-08-28T07:29:55Z"}, "984f0771-78c6-443a-afe4-f4ad42a4c8f0": {"show_id": "8b033798-1a29-42a7-a8c4-71942dc016ae", "show_title": "កំណើតវីរ:បុរសនាគរាជ", "episode_number": 11, "telegram_message_id": 53, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAM1apE6O-2cNQhHp1rf4LBzeRrYkgMAAtMdAAI9K5BUXNKP6fUB9sUeBA", "telegram_message_ids": [53], "total_parts": 1, "file_size_mb": 851.89, "original_url": "https://s3.nintanime.com/media/episodes/6a636b94206ba650916110cc/ep-011/1784902909586--.mp4", "backed_up_at": "2026-08-28T07:35:25Z"}, "dramaora_52023960492_1": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 1, "telegram_message_id": 95, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANfapKGPiufJ4kjBNkfdzfOt5wIm2kAAmkfAAK3LZlUox1QKlVrxpceBA", "telegram_message_ids": [95], "total_parts": 1, "file_size_mb": 19.23, "original_url": "https://v4.xtv.media/video/20260810/b9dc29fccd6842128bb468133da92bbe/cloudv-transfer/5555555519r835q25556s465on88q9nr_f8e63853400844a58374da8a53d7c8aa_0_4.mp4?wsSecret=f1ed0d6ca5f1a8ac68756f0b44b02d84&wsTime=1787994672", "source": "dramaora", "backed_up_at": "2026-08-29T07:12:00Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_2": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 2, "telegram_message_id": 96, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANgapKGRv0P8Su-RH7tEnCSp2ginf0AAmofAAK3LZlUB_drXJmhXTYeBA", "telegram_message_ids": [96], "total_parts": 1, "file_size_mb": 13.63, "original_url": "https://v4.xtv.media/video/20260810/82fab1988dcd4d85b527662f6721a094/cloudv-transfer/55555555q8nr008o5556s4655872q9nr_85ff4894ef814d0ab22e87ca57845176_0_4.mp4?wsSecret=144c1d6ed538e41885c2b981b9801c79&wsTime=1787994672", "source": "dramaora", "backed_up_at": "2026-08-29T07:12:07Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_3": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 3, "telegram_message_id": 97, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANhapKGUTYi5TNWnZ6RS9BZp4Koy1EAAmsfAAK3LZlUIngtZc2QlIMeBA", "telegram_message_ids": [97], "total_parts": 1, "file_size_mb": 11.03, "original_url": "https://v4.xtv.media/video/20260810/ca8fc06280324817b007607d3669adce/cloudv-transfer/55555555psp0s9sq5556s4655qr4q9nr_c7f205927d3c41b089c7d32877de28f2_0_4.mp4?wsSecret=9182aa7a9720601158f34ff5dae06b8f&wsTime=1787994672", "source": "dramaora", "backed_up_at": "2026-08-29T07:12:18Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_4": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 4, "telegram_message_id": 98, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANiapKGXU7PYYpeYPkchFgB313ENBAAAmwfAAK3LZlUmEc7Ht-zZpkeBA", "telegram_message_ids": [98], "total_parts": 1, "file_size_mb": 14.02, "original_url": "https://v4.xtv.media/video/20260810/8d8cc186e2bc44048e096733618db8e7/cloudv-transfer/55555555927546r25556s465o15oq9nr_214e063df4174fa18fc40b08a175aa20_0_4.mp4?wsSecret=7099bafa54ced8d7cc9881880a0dcae4&wsTime=1787994672", "source": "dramaora", "backed_up_at": "2026-08-29T07:12:30Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_5": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 5, "telegram_message_id": 99, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANjapKGaTuHh_rvOjRyp0cUmKGGjp0AAm0fAAK3LZlU7_SnhiFAVHceBA", "telegram_message_ids": [99], "total_parts": 1, "file_size_mb": 10.73, "original_url": "https://v4.xtv.media/video/20260810/0039a79cdf1749a88eaeccdc59ae1635/cloudv-transfer/5555555585q247975556s4655p7pq9nr_a234c1a3deac4dc48900e95dd4c4a2b9_0_4.mp4?wsSecret=d887e31f38ce9f7a66d0f142c0cdcacd&wsTime=1787994673", "source": "dramaora", "backed_up_at": "2026-08-29T07:12:42Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_6": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 6, "telegram_message_id": 100, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANkapKGdPPvWU8CQ7sAAYqM50bn38jnAAJuHwACty2ZVIAWI8p7C6HbHgQ", "telegram_message_ids": [100], "total_parts": 1, "file_size_mb": 13.55, "original_url": "https://v4.xtv.media/video/20260810/5b4c431766864742a0da88d87cf38cc7/cloudv-transfer/555555554so1ppss5556s465656qq9nr_608c234830d4457d8f3218001af5197c_0_4.mp4?wsSecret=63f5183fe8eefd121ff01d8ec62854ae&wsTime=1787994673", "source": "dramaora", "backed_up_at": "2026-08-29T07:12:53Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_7": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 7, "telegram_message_id": 101, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANlapKGgON4GG4AAS58aujKkJ51nvsxAAJvHwACty2ZVIUW-bnvC6EaHgQ", "telegram_message_ids": [101], "total_parts": 1, "file_size_mb": 13.05, "original_url": "https://v4.xtv.media/video/20260810/f88f506b65784bccbfac4f87c98c6f5d/cloudv-transfer/555555554r8362p65556s465qs9rq9nr_a417b037e7e44fa28133b5c4ac22ff6b_0_4.mp4?wsSecret=fd64dbab3ef4843527c75ebdd876ed1c&wsTime=1787994673", "source": "dramaora", "backed_up_at": "2026-08-29T07:13:05Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_8": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 8, "telegram_message_id": 102, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANmapKGiRgg_eQxnym17E7powHlpQYAAnAfAAK3LZlUKqkFqlm50OceBA", "telegram_message_ids": [102], "total_parts": 1, "file_size_mb": 21.0, "original_url": "https://v4.xtv.media/video/20260810/f2060b4614994f47870d1236b18bb44a/cloudv-transfer/55555555n49o12145556s4650r2sq9nr_4a29a0559ac140d2b2305394bfa14d8f_0_4.mp4?wsSecret=c80ce42c28e0580d74adf95a23b3a199&wsTime=1787994673", "source": "dramaora", "backed_up_at": "2026-08-29T07:13:15Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_9": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 9, "telegram_message_id": 103, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANnapKGka856ZP85yPwft_o3e70nIMAAnEfAAK3LZlUBJHE_DQOabYeBA", "telegram_message_ids": [103], "total_parts": 1, "file_size_mb": 14.69, "original_url": "https://v4.xtv.media/video/20260810/b2d9c94cccbb4d92ad6fa4558ae62646/cloudv-transfer/5555555544735q0o5556s465qp87r9nr_bab6196055ca42f78fdfcd40970d1a3a_0_4.mp4?wsSecret=5f554f9b1ce1deb11a04919e0097e9f7&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:13:22Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_10": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 10, "telegram_message_id": 104, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANoapKGoRoqPY4oz22CuWCKQtLLzHIAAnIfAAK3LZlUcrSMnJCiXlAeBA", "telegram_message_ids": [104], "total_parts": 1, "file_size_mb": 22.68, "original_url": "https://v4.xtv.media/video/20260810/d75070d3d37c4a8fbe89a96ec6dab306/cloudv-transfer/55555555o73913845556s4651648r9nr_8ab4b333eacf4c52a33084ab773e4ed8_0_4.mp4?wsSecret=b4627c610a664b58ee826c460871cc90&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:13:39Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_11": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 11, "telegram_message_id": 105, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANpapKGs8OUuOk99DhXylOQ7WBQmOQAAnMfAAK3LZlU5HADRtj3hEQeBA", "telegram_message_ids": [105], "total_parts": 1, "file_size_mb": 12.03, "original_url": "https://v4.xtv.media/video/20260810/b949b22e90de4c468df194cec1e26fe5/cloudv-transfer/5555555585norp695556s4655661r9nr_ca14f5a760434b59a18af707f3b4ca43_0_4.mp4?wsSecret=e5a64d421c1d8adfc74602735b45b534&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:13:56Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_12": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 12, "telegram_message_id": 106, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANqapKGwBJCHyNNJabEvV2eSWWnViAAAnQfAAK3LZlUlmycTQFLIvoeBA", "telegram_message_ids": [106], "total_parts": 1, "file_size_mb": 9.03, "original_url": "https://v4.xtv.media/video/20260810/db1e125989cc4493bcf8b25c334ed58b/cloudv-transfer/55555555979q64sq5556s4658o62r9nr_fd2608b377734d658ed48cf6566b6750_0_4.mp4?wsSecret=43549e6c2d2dbb5241ffc35715526bb0&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:14:10Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_13": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 13, "telegram_message_id": 107, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANrapKGzFi9fh932sYnsC6Al1Zw3jQAAnUfAAK3LZlU-InHVB0RzoYeBA", "telegram_message_ids": [107], "total_parts": 1, "file_size_mb": 10.6, "original_url": "https://v4.xtv.media/video/20260810/96a238b8f1b64867aaaa76faa1ce853f/cloudv-transfer/55555555pq65ns2r5556s4655953r9nr_4ec8d6a74a2747098fbd2c7945d8b5bd_0_4.mp4?wsSecret=94586aaf249e281de1255806aac8c5cf&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:14:21Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_14": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 14, "telegram_message_id": 108, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANsapKG1mmEfZV5V6jwJj3Umy1R1_cAAnYfAAK3LZlUU0zqlItgIFYeBA", "telegram_message_ids": [108], "total_parts": 1, "file_size_mb": 20.64, "original_url": "https://v4.xtv.media/video/20260810/7472c2d7c98f42719d4206d15559a620/cloudv-transfer/55555555n35086595556s46509r3r9nr_a487acbf16b24e23bedb901be3e75a76_0_4.mp4?wsSecret=97f6349065d4a9ecc3e00f64c574fd92&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:14:31Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_15": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 15, "telegram_message_id": 109, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANtapKG3Z95-8DI_s-PV7n7uNjq9TQAAncfAAK3LZlUrYZq7T38nhweBA", "telegram_message_ids": [109], "total_parts": 1, "file_size_mb": 12.51, "original_url": "https://v4.xtv.media/video/20260810/c3d62f970bfe431a8fbb3ed444fca095/cloudv-transfer/555555557qnnp2ro5556s465o49nr9nr_15689ff21e484098870a0b2c41cb0701_0_4.mp4?wsSecret=b33597b0cf46769fe8c73f680beb73f4&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:14:38Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_16": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 16, "telegram_message_id": 110, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANuapKG5YHfzb8cA6TDkKczXbucj7UAAngfAAK3LZlUHcJpf9qpx0UeBA", "telegram_message_ids": [110], "total_parts": 1, "file_size_mb": 13.66, "original_url": "https://v4.xtv.media/video/20260810/91fc822f691349a2bc7d87f0826ec8c5/cloudv-transfer/55555555o1qs67s05556s465qr8or9nr_9029629eb5a64ae1b39c69827b41f4eb_0_4.mp4?wsSecret=c87c1c244d6269ab91ce2e481ef5e644&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:14:46Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_17": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 17, "telegram_message_id": 111, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANvapKG61b4YnL9pG21BtZKJbSTFe8AAnkfAAK3LZlUBPJyjR68ZcEeBA", "telegram_message_ids": [111], "total_parts": 1, "file_size_mb": 12.32, "original_url": "https://v4.xtv.media/video/20260810/313c358232cd4848a099d02289306b80/cloudv-transfer/55555555s410507o5556s465rr0pr9nr_4700ac7b706048458aeba4a3479cb495_0_4.mp4?wsSecret=72573821bc5d59989a6c2598222dab58&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:14:52Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_18": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 18, "telegram_message_id": 112, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANwapKG8u7DSlBFwK0VXMZ67N-VtC0AAnofAAK3LZlUTly0fMtyX54eBA", "telegram_message_ids": [112], "total_parts": 1, "file_size_mb": 8.33, "original_url": "https://v4.xtv.media/video/20260810/f50cc33ca96c47c287769c3eedac4309/cloudv-transfer/55555555ps60n5qs5556s465s6nqr9nr_be32bb1c28464a04a2c0850f3c07241a_0_4.mp4?wsSecret=107b192d61716490f889e6a07628428c&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:00Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_19": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 19, "telegram_message_id": 113, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANxapKG-vF1TxNc3sqU1UAZTmzF6WEAAnsfAAK3LZlU_PuD87uQS9MeBA", "telegram_message_ids": [113], "total_parts": 1, "file_size_mb": 14.25, "original_url": "https://v4.xtv.media/video/20260810/e9c29989c5bd4738b3b01995a9183e6e/cloudv-transfer/555555555pn3n8pr5556s465p44rr9nr_86f55a60f3924f3ea6c28ef94cac0d06_0_4.mp4?wsSecret=e32c11cf263bad0e26a112981aff9da8&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:07Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_20": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 20, "telegram_message_id": 114, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANyapKHAfl4PU_cHB_WOMdqUknvhqwAAnwfAAK3LZlUoylN_bddlnseBA", "telegram_message_ids": [114], "total_parts": 1, "file_size_mb": 14.31, "original_url": "https://v4.xtv.media/video/20260810/6eec41eca20a4735bf20cb67efb48457/cloudv-transfer/555555555p8q1nns5556s4656s4sr9nr_2d7c972468d04276820e1554476cc6d4_0_4.mp4?wsSecret=6088b79f4997b58e67332332c44eec56&wsTime=1787994674", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:14Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_21": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 21, "telegram_message_id": 115, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAANzapKHCIWol7osz2Qxg7JEmJvrp4YAAn0fAAK3LZlULAh9Q8fvkGoeBA", "telegram_message_ids": [115], "total_parts": 1, "file_size_mb": 13.09, "original_url": "https://v4.xtv.media/video/20260810/dcdf4ec8c4f34183b8a59ca3a0a5ec81/cloudv-transfer/55555555p9p685755556s46572n5s9nr_c11f576697dd47319d8922551cf3c135_0_4.mp4?wsSecret=feede0cd7e77db4f8c8041e744876662&wsTime=1787994676", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:21Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_22": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 22, "telegram_message_id": 116, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN0apKHEPpXvONPMvfS5Z8D7tocUIkAAn4fAAK3LZlUr53-tJpQK-IeBA", "telegram_message_ids": [116], "total_parts": 1, "file_size_mb": 14.3, "original_url": "https://v4.xtv.media/video/20260810/c97c51b40b95417c9cd73733c6f1deed/cloudv-transfer/55555555pqn506o35556s46538o6s9nr_9646c17be21a4fa69f23f1c834125cb8_0_4.mp4?wsSecret=afd4afb600504331d9193aede2ab5c55&wsTime=1787994676", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:29Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_23": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 23, "telegram_message_id": 117, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN1apKHGIJa2Am_MoJOfGwfBXvmLZMAAn8fAAK3LZlUSLwQj1o6AwceBA", "telegram_message_ids": [117], "total_parts": 1, "file_size_mb": 11.04, "original_url": "https://v4.xtv.media/video/20260810/b108300ee8484710bf1a45e10d2d7e6f/cloudv-transfer/555555551rso50635556s46557r7s9nr_5d60a893e96f49788419079f749970eb_0_4.mp4?wsSecret=b6b26e4ae1f3a51544c46b770a5df945&wsTime=1787994676", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:37Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_24": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 24, "telegram_message_id": 118, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN2apKHH38cBcWJtYHfcCf1H4vBfgwAAoAfAAK3LZlUME_eXEqfffkeBA", "telegram_message_ids": [118], "total_parts": 1, "file_size_mb": 8.24, "original_url": "https://v4.xtv.media/video/20260810/5ee6e43a72114435ab72ffca07c1efcd/cloudv-transfer/55555555o3r2r1135556s46521p8s9nr_7e8f1499c0a7442eb90e873f9500be6b_0_4.mp4?wsSecret=6e170bb2283e8a9296f83d7eee298b6f&wsTime=1787994676", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:45Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_25": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 25, "telegram_message_id": 119, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN3apKHKH4oFBAxwnlMdl2NAAFU5SyLAAKBHwACty2ZVLAPwBue3XBDHgQ", "telegram_message_ids": [119], "total_parts": 1, "file_size_mb": 13.41, "original_url": "https://v4.xtv.media/video/20260810/cf7ff607c4034a4ca2ef3b7d0c3384b6/cloudv-transfer/555555556p8onpn15556s4658p49s9nr_45e23f34274045f6867ecb3ea719d755_0_4.mp4?wsSecret=9a83ac5799e5a96bcabc4582f8cd5c92&wsTime=1787994677", "source": "dramaora", "backed_up_at": "2026-08-29T07:15:53Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_26": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 26, "telegram_message_id": 120, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN4apKHMBETNOqF6ugpN1HDq1NTqawAAoIfAAK3LZlUMBxvhURNbgoeBA", "telegram_message_ids": [120], "total_parts": 1, "file_size_mb": 9.39, "original_url": "https://v4.xtv.media/video/20260810/6d8c6578676a435aacfa467b40fb53ca/cloudv-transfer/555555557n6p1pn15556s46599p0s9nr_19baa2d2cc5146a390674a8facc9c9b4_0_4.mp4?wsSecret=7696b7207c6276efa5a5c155c201d132&wsTime=1787994677", "source": "dramaora", "backed_up_at": "2026-08-29T07:16:02Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_27": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 27, "telegram_message_id": 121, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN5apKHRqllyvn41mjOYWl9kTSDcysAAoMfAAK3LZlUtHp7LGZ-c_UeBA", "telegram_message_ids": [121], "total_parts": 1, "file_size_mb": 17.02, "original_url": "https://v4.xtv.media/video/20260810/f37954b0e7334bfdb13e76bc1314a33b/cloudv-transfer/5555555597s890595556s465q2n1s9nr_2ee952a9afb64cba89b75f0522e9e40a_0_4.mp4?wsSecret=8b9346757eb7feda4891e650d1ad3868&wsTime=1787994677", "source": "dramaora", "backed_up_at": "2026-08-29T07:16:23Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_28": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 28, "telegram_message_id": 122, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN6apKHTeCKXsyWsq0KTfOCNN33j0gAAoQfAAK3LZlUzTSkwrQFp9YeBA", "telegram_message_ids": [122], "total_parts": 1, "file_size_mb": 7.71, "original_url": "https://v4.xtv.media/video/20260810/b67118475f174441b1ff9200fbefab95/cloudv-transfer/55555555504n31935556s46544s2s9nr_5b519aea228c46fab20266f356e55268_0_4.mp4?wsSecret=4af11c0e6468a858430c66a8e2dc7fb4&wsTime=1787994677", "source": "dramaora", "backed_up_at": "2026-08-29T07:16:30Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_29": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 29, "telegram_message_id": 123, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN7apKHVZSVWkFFFmFS5QHynW7pD1MAAoYfAAK3LZlUcR8pDVA13KEeBA", "telegram_message_ids": [123], "total_parts": 1, "file_size_mb": 10.44, "original_url": "https://v4.xtv.media/video/20260810/d9888e8b2ace4a3bafa834553ff77b03/cloudv-transfer/555555552p9r93n95556s465q7p3s9nr_9c259009e1fa487091d29900056c6696_0_4.mp4?wsSecret=999178ceffebd6be2e18ba4a23092523&wsTime=1787994677", "source": "dramaora", "backed_up_at": "2026-08-29T07:16:38Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52023960492_30": {"show_id": "dramaora_52023960492", "show_title": "Fallen Desire", "episode_number": 30, "telegram_message_id": 124, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN8apKHdq9Ht955R2AleTJP6mbTj2AAAogfAAK3LZlUcc4y1EOM99geBA", "telegram_message_ids": [124], "total_parts": 1, "file_size_mb": 16.54, "original_url": "https://v4.xtv.media/video/20260810/029c92b2c19d4f7581d65f849b1ec2dd/cloudv-transfer/5555555536sono335556s465opn4s9nr_9f479b98c4484de7baa112432eea7e37_0_4.mp4?wsSecret=7edfa0506209929a76e653ee8ab7eb19&wsTime=1787994677", "source": "dramaora", "backed_up_at": "2026-08-29T07:17:11Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg"}, "dramaora_52027768287_1": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 1, "telegram_message_id": 125, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN9apKHgZbaJq155mZSIlvrRjUZUecAAokfAAK3LZlUrdPVkoLKcaEeBA", "telegram_message_ids": [125], "total_parts": 1, "file_size_mb": 13.69, "original_url": "https://v4.xtv.media/video/20260821/24c45a393d444363a026b340dadf267d/cloudv-transfer/55555555q5s4opo255565n65o9nn0077_8d14d5e202624586b5ad7c98584763b9_0_4.mp4?wsSecret=379f3133c5cbd630dd515fbb79cb4468&wsTime=1787994679", "source": "dramaora", "backed_up_at": "2026-08-29T07:17:22Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_2": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 2, "telegram_message_id": 126, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN-apKHksHy2MxFio4YzCm-TN35fd8AAoofAAK3LZlUn9LmAnSOYBseBA", "telegram_message_ids": [126], "total_parts": 1, "file_size_mb": 15.86, "original_url": "https://v4.xtv.media/video/20260817/11c944ea150846d6a0549cdc7341617b/cloudv-transfer/5555555541s566o055565n654ns14pr5_c6920063c1df40789917c0af4b2d0362_0_4.mp4?wsSecret=57c07072b770e9c29fadd22cbe882821&wsTime=1787994679", "source": "dramaora", "backed_up_at": "2026-08-29T07:17:39Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_3": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 3, "telegram_message_id": 127, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAN_apKHmUP6u_eWtPLavEo6H9YitxAAAosfAAK3LZlUhKdsJ1DW_s8eBA", "telegram_message_ids": [127], "total_parts": 1, "file_size_mb": 10.9, "original_url": "https://v4.xtv.media/video/20260817/3d875c9124284bf0b81c5541c1119821/cloudv-transfer/555555555pon751n55565n656q7n4pr5_a2ec7fac41bf44c89dcc039f23139895_0_4.mp4?wsSecret=db5786eb8b6551abc4f0edd5c4f58c2e&wsTime=1787994679", "source": "dramaora", "backed_up_at": "2026-08-29T07:17:46Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_4": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 4, "telegram_message_id": 128, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOAapKHy32U23Ae2ipTNGP1xUsBVUoAAowfAAK3LZlU52_oreE2d-4eBA", "telegram_message_ids": [128], "total_parts": 1, "file_size_mb": 8.72, "original_url": "https://v4.xtv.media/video/20260817/eb809886e616460a88e3af9cd5e87e85/cloudv-transfer/55555555100s750o55565n65n2ro4pr5_10c972f8d663424487baca0cc8514982_0_4.mp4?wsSecret=99f904d32009de2432f70c91c6d552cb&wsTime=1787994679", "source": "dramaora", "backed_up_at": "2026-08-29T07:18:37Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_5": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 5, "telegram_message_id": 129, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOBapKH1zkFrCBAQxC8N9b_DywGjVkAAo0fAAK3LZlUC_tMZ9A1y0MeBA", "telegram_message_ids": [129], "total_parts": 1, "file_size_mb": 8.57, "original_url": "https://v4.xtv.media/video/20260817/5cd00a3aa58a452f986fcb21191d7dd6/cloudv-transfer/555555550p39s72455565n654q1q4pr5_bc9ed569149e4a5a8798de78a9f6b840_0_4.mp4?wsSecret=474a464467107af2ab7434516a3a26da&wsTime=1787994680", "source": "dramaora", "backed_up_at": "2026-08-29T07:18:48Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_6": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 6, "telegram_message_id": 130, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOCapKH3nn0TjLosNpsZeSDO1sbk4QAAo4fAAK3LZlUi-RiSwxAh74eBA", "telegram_message_ids": [130], "total_parts": 1, "file_size_mb": 6.54, "original_url": "https://v4.xtv.media/video/20260817/74c434017a184e0daa399461f575a442/cloudv-transfer/55555555o1713q6155565n65sp1r4pr5_9bf39af14cc4429fa943ee5e20ac5de7_0_4.mp4?wsSecret=2081ac54fc8f2ffeddcf1e419e24d678&wsTime=1787994680", "source": "dramaora", "backed_up_at": "2026-08-29T07:18:56Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_7": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 7, "telegram_message_id": 131, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAODapKH5vTZDjYOL_YWjt9yR2WEmmkAAo8fAAK3LZlUriFTretXBcseBA", "telegram_message_ids": [131], "total_parts": 1, "file_size_mb": 7.93, "original_url": "https://v4.xtv.media/video/20260817/6fa195aae959477daf0b0e91959f8017/cloudv-transfer/55555555n54pno1355565n65q17s4pr5_9faedb5b886e482b94c285596a5c7fd5_0_4.mp4?wsSecret=d683be3ab2238be4c9c0db3099c908a9&wsTime=1787994680", "source": "dramaora", "backed_up_at": "2026-08-29T07:19:03Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_8": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 8, "telegram_message_id": 132, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOEapKH7gKCK2IlY9-AEWUN4kGbKyUAApAfAAK3LZlUlgKox0R8-AseBA", "telegram_message_ids": [132], "total_parts": 1, "file_size_mb": 8.76, "original_url": "https://v4.xtv.media/video/20260817/80ef9c051ca249df89bc346a75c02b63/cloudv-transfer/555555552p44404s55565n658sss4pr5_de1e800f8c324b3694bacbac347a451a_0_4.mp4?wsSecret=5f027915d287bb5d9ce876e0660be93e&wsTime=1787994680", "source": "dramaora", "backed_up_at": "2026-08-29T07:19:12Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_9": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 9, "telegram_message_id": 133, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOFapKH-UkBQTAGMBI8BOwZurNDdS8AApEfAAK3LZlU9GfgghJ9ljoeBA", "telegram_message_ids": [133], "total_parts": 1, "file_size_mb": 8.09, "original_url": "https://v4.xtv.media/video/20260817/5458f207f7ca4e2bb38d20ce4a9cb9ba/cloudv-transfer/55555555r0po3soq55565n650p06npr5_644a2a0bc0ba4443a13d2f03528bd822_0_4.mp4?wsSecret=941cc395d8ea089f398c7da59b7d2afe&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:19:22Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_10": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 10, "telegram_message_id": 134, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOGapKICrIxgrwgIXryEThSLCjWTGwAApIfAAK3LZlUKzjKifAseVAeBA", "telegram_message_ids": [134], "total_parts": 1, "file_size_mb": 10.33, "original_url": "https://v4.xtv.media/video/20260817/cf9e643b90b0490d90cba9dc897586ea/cloudv-transfer/55555555sqp8252q55565n65q167npr5_81a8d2590b4f40109767fddd66d8803c_0_4.mp4?wsSecret=dd4a647a55b22f5a32c0f3a2bf4ba572&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:19:39Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_11": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 11, "telegram_message_id": 135, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOHapKIEBY8VQtFLcHgcHLgDxkTHTEAApMfAAK3LZlUnvMJ4W_gaAkeBA", "telegram_message_ids": [135], "total_parts": 1, "file_size_mb": 11.63, "original_url": "https://v4.xtv.media/video/20260817/a686c1047623493b816959a60ce97b89/cloudv-transfer/55555555s1np83qp55565n656468npr5_941927bf34e2440598477ff7e1f85974_0_4.mp4?wsSecret=5acfd57b4bf8d100f202c58ef25997de&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:19:45Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_12": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 12, "telegram_message_id": 136, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOIapKIGsocNyDIjBVa3iHQpFwTB_sAApQfAAK3LZlUxIS5Um_8dQIeBA", "telegram_message_ids": [136], "total_parts": 1, "file_size_mb": 9.73, "original_url": "https://v4.xtv.media/video/20260817/98db10792683487fa92cae02b5aed73f/cloudv-transfer/555555551s1qp77555565n652519npr5_c76ec42440514dd2828f28bb67f6191c_0_4.mp4?wsSecret=762dd4a94b2286ee4cbd343d642e7dab&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:19:56Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_13": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 13, "telegram_message_id": 137, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOJapKII04FqgX8-DY6hbYQibwCS-UAApUfAAK3LZlUww_2Co4S4dgeBA", "telegram_message_ids": [137], "total_parts": 1, "file_size_mb": 8.25, "original_url": "https://v4.xtv.media/video/20260817/9d1564c18762493b92793173a701756d/cloudv-transfer/55555555p084p60n55565n651r90npr5_212b3a35c0d6413fa8d736b6ec217ca5_0_4.mp4?wsSecret=910e145bea8941cb80f2c44870155c70&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:04Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_14": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 14, "telegram_message_id": 138, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOKapKIKyR3-zXorwSUQV3Mspp6i8YAApYfAAK3LZlUZCNBrl5sMLMeBA", "telegram_message_ids": [138], "total_parts": 1, "file_size_mb": 9.49, "original_url": "https://v4.xtv.media/video/20260817/736c69382e2049a5b33e6ddadf22c3f3/cloudv-transfer/5555555531ps58nq55565n658sr0npr5_c1869df9dd3a41bc9d0799b964d11774_0_4.mp4?wsSecret=ca3e3bf764b46a2271e17c37a62d8041&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:13Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_15": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 15, "telegram_message_id": 139, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOLapKIM9CT5D06_rVYVlfavTp1zDsAApcfAAK3LZlUMarHGa18Mh0eBA", "telegram_message_ids": [139], "total_parts": 1, "file_size_mb": 7.85, "original_url": "https://v4.xtv.media/video/20260817/6fb5f2ca543b458bac6c58ef73f5e73b/cloudv-transfer/55555555ns9s40rq55565n6569p1npr5_d9f08031f3a043c59bc9dd7fb69da985_0_4.mp4?wsSecret=846ea54c023bd2f9397f75d932f1f751&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:21Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_16": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 16, "telegram_message_id": 140, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOMapKIO_ucA7DfeDVWKFEz09PKZ_EAApgfAAK3LZlUwLQZaYhU7C8eBA", "telegram_message_ids": [140], "total_parts": 1, "file_size_mb": 8.14, "original_url": "https://v4.xtv.media/video/20260817/f0032ba42a844ec3aea96673777e8065/cloudv-transfer/5555555590107snp55565n652n42npr5_b9f5d410bf3f4b0191cd95552f607655_0_4.mp4?wsSecret=444e9b752c701191fafd327c56cff095&wsTime=1787994681", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:28Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_17": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 17, "telegram_message_id": 141, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAONapKIQsgp1lZ22X5xeq-SovbYGigAApkfAAK3LZlUPb5oobAAAVmwHgQ", "telegram_message_ids": [141], "total_parts": 1, "file_size_mb": 8.84, "original_url": "https://v4.xtv.media/video/20260817/e28be6c16fd44274983d25b0a1608047/cloudv-transfer/5555555542q536q055565n650383npr5_9e32a19594fc44bcae6f63c4830c4dae_0_4.mp4?wsSecret=899de5cad3f0cfb3c08aea2fc1b348eb&wsTime=1787994682", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:36Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_18": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 18, "telegram_message_id": 142, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOOapKISv5VXYxglTmx4Zh_59XRIc0AApwfAAK3LZlUF2XN3SRX5KoeBA", "telegram_message_ids": [142], "total_parts": 1, "file_size_mb": 7.42, "original_url": "https://v4.xtv.media/video/20260817/3d3387607abd45ce9ab67d079c1a62e6/cloudv-transfer/55555555p023qs2855565n65ss74npr5_71aa2e99308145c8a6cfe26a2c192835_0_4.mp4?wsSecret=f482e64dccff12def1e60db77a19c14f&wsTime=1787994682", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:43Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_19": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 19, "telegram_message_id": 143, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOPapKIUGblx4yYqc-KZhIjMu8BeWsAAp0fAAK3LZlU5fNMgTjy0oIeBA", "telegram_message_ids": [143], "total_parts": 1, "file_size_mb": 10.06, "original_url": "https://v4.xtv.media/video/20260817/a8d04a2049594b1c9edd6179c2e204ed/cloudv-transfer/55555555r4s16p2955565n65555nnpr5_75872b5fe5b64a3b83ec8a91e5994fea_0_4.mp4?wsSecret=a43d0b1fa835f75e7752805e9b3619ae&wsTime=1787994682", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:49Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_20": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 20, "telegram_message_id": 144, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOQapKIV0UAAfVOsblrDwaISuocR5iGAAKeHwACty2ZVPsfdtMJ5b_yHgQ", "telegram_message_ids": [144], "total_parts": 1, "file_size_mb": 6.49, "original_url": "https://v4.xtv.media/video/20260817/d0c46d4b0ce24486b45b25d186a4a1fe/cloudv-transfer/555555551q5s214255565n6520snnpr5_9ff5b2180652438887aa77610de53c75_0_4.mp4?wsSecret=45483b3ab521ad0dbf6382b01d31cbcc&wsTime=1787994682", "source": "dramaora", "backed_up_at": "2026-08-29T07:20:56Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_21": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 21, "telegram_message_id": 145, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAORapKIXmsws3kAAbhomE6Ap5_00wcuAAKfHwACty2ZVMed80w8GllDHgQ", "telegram_message_ids": [145], "total_parts": 1, "file_size_mb": 10.68, "original_url": "https://v4.xtv.media/video/20260817/fce6e125bb5f403b8cf88acda1fc278b/cloudv-transfer/55555555867r9qpo55565n65s0ponpr5_ea068305c1a948158fb2211dab629122_0_4.mp4?wsSecret=e7c245d99cf1c715bb0a1d0c60ac5169&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:03Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_22": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 22, "telegram_message_id": 146, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOSapKIZWqy3SThmXCZ9MEZHBP590EAAqEfAAK3LZlULTEWDe11564eBA", "telegram_message_ids": [146], "total_parts": 1, "file_size_mb": 10.99, "original_url": "https://v4.xtv.media/video/20260817/301898c9201a4e16b6c83fd7bb378040/cloudv-transfer/555555551514rsr255565n65po6qnpr5_db2665ea9c4248999ae6350ff01837fb_0_4.mp4?wsSecret=96373ae8b6a54f13b4984e46a576fa3f&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:10Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_23": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 23, "telegram_message_id": 147, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOTapKIcOVipbrP7PJ0DTsLlEubSAIAAqMfAAK3LZlUN5xds-w_pR8eBA", "telegram_message_ids": [147], "total_parts": 1, "file_size_mb": 9.79, "original_url": "https://v4.xtv.media/video/20260817/27220f7f2a434598a11440b84775d60f/cloudv-transfer/55555555nr8848p855565n65118rnpr5_50cef99b1afb4aba8ddf55748d640a3e_0_4.mp4?wsSecret=55f9ab8ef15d9ccef94d0eff6c135584&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:21Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_24": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 24, "telegram_message_id": 148, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOUapKIew5unPjR-htEGuYB2cYINO4AAqQfAAK3LZlUDNlSJzoQqzweBA", "telegram_message_ids": [148], "total_parts": 1, "file_size_mb": 7.98, "original_url": "https://v4.xtv.media/video/20260817/382b5b805bc741d6852e5055d7e986fc/cloudv-transfer/5555555501o9q52n55565n65s86snpr5_03b174b3e22042aea9e3405fc181051a_0_4.mp4?wsSecret=9cdbb841cb417da4fd406e87252a5ef4&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:32Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_25": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 25, "telegram_message_id": 149, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOVapKIg6tHl8572jhvI90WpAk_VF4AAqUfAAK3LZlU9yuEV8T1cCQeBA", "telegram_message_ids": [149], "total_parts": 1, "file_size_mb": 8.45, "original_url": "https://v4.xtv.media/video/20260817/728096e2a03444098639f77377736d65/cloudv-transfer/555555550sp93r4455565n65pnpsnpr5_b9e3bb0a609d44eb81b9fbd85d7c26dd_0_4.mp4?wsSecret=415aa48ebfc43abe3f3c40ed90589139&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:40Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_26": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 26, "telegram_message_id": 150, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOWapKIiwfHSVvBJRn3_MHwqJnQe44AAqcfAAK3LZlURLHRndd8CyseBA", "telegram_message_ids": [150], "total_parts": 1, "file_size_mb": 8.64, "original_url": "https://v4.xtv.media/video/20260817/185a6393ffff466fb4c0e9001a039df0/cloudv-transfer/55555555oso2n41r55565n655oq5opr5_2b466e608ad343178869386a4bdb0b4e_0_4.mp4?wsSecret=e1de39b30ab81d65f48963493471cc76&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:49Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_27": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 27, "telegram_message_id": 151, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOXapKIk0lonEmk5Befz0U6av3IzCIAAqkfAAK3LZlU84MGufVGJqIeBA", "telegram_message_ids": [151], "total_parts": 1, "file_size_mb": 7.89, "original_url": "https://v4.xtv.media/video/20260817/1545fd0010064a03ac234572a9581d7d/cloudv-transfer/5555555545057o7355565n65p4o6opr5_20d223bbc26b4074a438f7eb3531ee4b_0_4.mp4?wsSecret=1aed8bb78f0b9197f099a623110eef14&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:21:56Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_28": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 28, "telegram_message_id": 152, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOYapKImlxunw-gPKUWxamKeP12nZAAAqofAAK3LZlUH__fETQBXoYeBA", "telegram_message_ids": [152], "total_parts": 1, "file_size_mb": 6.88, "original_url": "https://v4.xtv.media/video/20260817/530173812e594d5b994d24e4faf1e0df/cloudv-transfer/555555557rss97no55565n65r137opr5_459dea43a2df4588a1edcda6e8bd5e8f_0_4.mp4?wsSecret=e232270471b804d9e85a5302322b65b3&wsTime=1787994683", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:03Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_29": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 29, "telegram_message_id": 153, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOZapKIocUKywHeAeoBOI3S8Kr1hJkAAqsfAAK3LZlUBpfYPUQ7_9UeBA", "telegram_message_ids": [153], "total_parts": 1, "file_size_mb": 7.35, "original_url": "https://v4.xtv.media/video/20260817/57051abb91ff424099a76cb17e996871/cloudv-transfer/55555555q1oo00qr55565n659n68opr5_11d26d0e55c34754993f02e46592c293_0_4.mp4?wsSecret=29c2a05c02cd68174b0364437eeddd09&wsTime=1787994684", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:10Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_30": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 30, "telegram_message_id": 154, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOaapKIqdzlOreB3neSjDc9ozNueVYAAqwfAAK3LZlU3h6bBPM_l54eBA", "telegram_message_ids": [154], "total_parts": 1, "file_size_mb": 10.92, "original_url": "https://v4.xtv.media/video/20260817/d732445c858b46ea95f3e52f382f940a/cloudv-transfer/5555555501snps9n55565n6583r8opr5_8ef825e4742d43ee8e6a40657b70a2f7_0_4.mp4?wsSecret=c7d8299895a27ca80acce466abe7d231&wsTime=1787994684", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:18Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_31": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 31, "telegram_message_id": 155, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAObapKItSOSM367GzW-zZsPBl17xNIAAq0fAAK3LZlUl17COrBeZxweBA", "telegram_message_ids": [155], "total_parts": 1, "file_size_mb": 8.46, "original_url": "https://v4.xtv.media/video/20260817/65fcb161ff124717b418db0696a73a30/cloudv-transfer/5555555599o867q155565n65o3q9opr5_5311b0f17386486ca44ccc6b8f61781c_0_4.mp4?wsSecret=0f3c05489e1a8354be29d91da75630bd&wsTime=1787994684", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:30Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_32": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 32, "telegram_message_id": 156, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOcapKIvqn6wlkRzmhqTWYgS9vvY6oAAq4fAAK3LZlUFe3VUB0_Et0eBA", "telegram_message_ids": [156], "total_parts": 1, "file_size_mb": 7.49, "original_url": "https://v4.xtv.media/video/20260817/1fecf35cbcb448b89a4364e93d57089f/cloudv-transfer/5555555562r549rn55565n6544n0opr5_552c487acbbc4371bb07d85a2454f43e_0_4.mp4?wsSecret=f2897b6ba8bc7384bc0cae5b4fcd6215&wsTime=1787994684", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:39Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_33": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 33, "telegram_message_id": 157, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOdapKIxskGLqYwEIqxfNfXmM29TH8AAq8fAAK3LZlUSdWZwqXLPl0eBA", "telegram_message_ids": [157], "total_parts": 1, "file_size_mb": 10.23, "original_url": "https://v4.xtv.media/video/20260817/ddce422c0c274fce8f234861491dccff/cloudv-transfer/55555555psrr65q455565n65r921opr5_53c53aa9899e42b9a45ae9df3fbb420c_0_4.mp4?wsSecret=558ec8c3d39157ee69cd95d0f4f0e141&wsTime=1787994685", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:47Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_34": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 34, "telegram_message_id": 158, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOeapKIz6RO3xNSAsPxLmr-Mk2HXpQAArAfAAK3LZlUPYFrX1QuFFkeBA", "telegram_message_ids": [158], "total_parts": 1, "file_size_mb": 8.39, "original_url": "https://v4.xtv.media/video/20260817/c3d210ee09144c0e9135e30e2a050488/cloudv-transfer/55555555r98s643955565n656323ppr5_9aeb8f063ee94da5b525028f380de50b_0_4.mp4?wsSecret=de52b48222f1b3cff1e42607ba3f1d35&wsTime=1787994685", "source": "dramaora", "backed_up_at": "2026-08-29T07:22:57Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_35": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 35, "telegram_message_id": 159, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOfapKI1yz85Yh9PRrHYv50BX2og5EAArEfAAK3LZlUSdAlbp2zp-ceBA", "telegram_message_ids": [159], "total_parts": 1, "file_size_mb": 8.73, "original_url": "https://v4.xtv.media/video/20260817/832f574018e8495b9809347c62557484/cloudv-transfer/555555555365654r55565n654rr2opr5_8998b18c09d04a2e849ef62b0ada0b7d_0_4.mp4?wsSecret=9d63aae51ed43565612c9feef17e1864&wsTime=1787994685", "source": "dramaora", "backed_up_at": "2026-08-29T07:23:05Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_36": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 36, "telegram_message_id": 160, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOgapKI3kaU0x_lbpz4-WweW5_N-KEAArMfAAK3LZlU_MnR1AIi6p8eBA", "telegram_message_ids": [160], "total_parts": 1, "file_size_mb": 7.23, "original_url": "https://v4.xtv.media/video/20260817/c9e2c23a25b2452db7149faed91fbeb6/cloudv-transfer/555555557762ro3455565n6528o3opr5_cd7d96ebbb67487a8824d84dfaeb664d_0_4.mp4?wsSecret=6733a35daaa102b4dbb8dfc4a4acccb4&wsTime=1787994685", "source": "dramaora", "backed_up_at": "2026-08-29T07:23:12Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_37": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 37, "telegram_message_id": 161, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOhapKI5mjAn8U7yi47KqAatYEnwuEAArUfAAK3LZlUIvDOH0bK0O0eBA", "telegram_message_ids": [161], "total_parts": 1, "file_size_mb": 8.78, "original_url": "https://v4.xtv.media/video/20260817/176152e2d9c64803baf382e1c5454397/cloudv-transfer/55555555r2rrp5n155565n65n824opr5_d2a2f94345384bfe95c95f1c7a84a998_0_4.mp4?wsSecret=0e27eea5ee17417a5b1c0e3abf93e8d1&wsTime=1787994686", "source": "dramaora", "backed_up_at": "2026-08-29T07:23:19Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_38": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 38, "telegram_message_id": 162, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOiapKI8K8Y4fbyfM0KJ5ArCi3FzQcAArYfAAK3LZlU9zpVNjudq8seBA", "telegram_message_ids": [162], "total_parts": 1, "file_size_mb": 12.56, "original_url": "https://v4.xtv.media/video/20260817/c14518c908e249f6b2f7924eb6db46b6/cloudv-transfer/55555555s461p9o455565n653snnopr5_d8469ebcc3524b26aff9ca3d099437a0_0_4.mp4?wsSecret=d8f30db6842c4412e262f4bdb410acc4&wsTime=1787994686", "source": "dramaora", "backed_up_at": "2026-08-29T07:23:29Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_39": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 39, "telegram_message_id": 163, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOjapKJBXjFjpDotheJrJw5YD6vSNYAArcfAAK3LZlUXOFLV1kV5u4eBA", "telegram_message_ids": [163], "total_parts": 1, "file_size_mb": 7.48, "original_url": "https://v4.xtv.media/video/20260817/b7f971950513497f84e7243c17cb9256/cloudv-transfer/555555551r6po99s55565n653rnoopr5_097e835fc8aa4cd3a6f02fd91415b77e_0_4.mp4?wsSecret=fbc7713afb9d8ce207db6811c9d737bb&wsTime=1787994686", "source": "dramaora", "backed_up_at": "2026-08-29T07:23:51Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_40": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 40, "telegram_message_id": 164, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOkapKJGfynhmaoekNNOVNd3l7F7sYAArgfAAK3LZlUIhh1dtBZUcYeBA", "telegram_message_ids": [164], "total_parts": 1, "file_size_mb": 8.35, "original_url": "https://v4.xtv.media/video/20260817/1f98a0e42e8c4f3887d19737435acd29/cloudv-transfer/555555555p7po2rp55565n659r9popr5_9df56f1084eb4bf497d911b7cb5e348e_0_4.mp4?wsSecret=c9dfd5b8712b9de0865fff080641345d&wsTime=1787994686", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:10Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_41": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 41, "telegram_message_id": 165, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOlapKJIFr0v1T3bj1wOlNiufBycykAArkfAAK3LZlUBaYGC3zFOroeBA", "telegram_message_ids": [165], "total_parts": 1, "file_size_mb": 7.25, "original_url": "https://v4.xtv.media/video/20260817/211922c802904987ab84a91ed8b0c78f/cloudv-transfer/55555555p015790755565n65425qopr5_106de251091f460fa951bfa6c1308c03_0_4.mp4?wsSecret=9cce0203646b6d6c0ef37503f6f2e624&wsTime=1787994687", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:17Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_42": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 42, "telegram_message_id": 166, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOmapKJJm8NokpGRRYF_6WtNJDAfUMAArofAAK3LZlUh4bSykPFAXMeBA", "telegram_message_ids": [166], "total_parts": 1, "file_size_mb": 11.36, "original_url": "https://v4.xtv.media/video/20260817/31544b44acc543e396095b7c859f77b4/cloudv-transfer/555555553sro758555565n65ooqqopr5_02c68d93557e45968c9019fb5788dab2_0_4.mp4?wsSecret=b62aad45d9659f402245c2cedc5db537&wsTime=1787994687", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:23Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_43": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 43, "telegram_message_id": 167, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOnapKJLi_-Qy8mXHcI3B_oMYRtaNQAArsfAAK3LZlUk9XIVRr-e8AeBA", "telegram_message_ids": [167], "total_parts": 1, "file_size_mb": 9.19, "original_url": "https://v4.xtv.media/video/20260817/caa303cbc05748949eeef45b374afae8/cloudv-transfer/55555555q145q99555565n6594rropr5_0d1d422d1629435c961872fc219aac8b_0_4.mp4?wsSecret=a43d8b013096930021cb1fd1a980e4e8&wsTime=1787994687", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:31Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_44": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 44, "telegram_message_id": 168, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOoapKJNf_HqwInGA75gI5BrFBjaNoAArwfAAK3LZlUUh904mGL68YeBA", "telegram_message_ids": [168], "total_parts": 1, "file_size_mb": 7.7, "original_url": "https://v4.xtv.media/video/20260817/b30ce58ee03f4bde956dc724a01a2815/cloudv-transfer/555555551733933155565n65rposopr5_8a23403969934ef39f732873e846ae22_0_4.mp4?wsSecret=7c01ad91ed03946474cf2322e678b887&wsTime=1787994687", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:39Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_45": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 45, "telegram_message_id": 169, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOpapKJPbnZdggmem-ab6zcBKh4L8oAAr0fAAK3LZlU-bLYvWiilVseBA", "telegram_message_ids": [169], "total_parts": 1, "file_size_mb": 11.77, "original_url": "https://v4.xtv.media/video/20260817/cf1d79c46dcb4ba2869d07dbecab497a/cloudv-transfer/55555555630s466355565n651n35ppr5_d25d18644bda4687b2d0a42c3867cfe6_0_4.mp4?wsSecret=ee9f797ef6c0b1d2eb6971c1f124c043&wsTime=1787994688", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:46Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_46": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 46, "telegram_message_id": 170, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOqapKJRDePvrhEpUwD3ceBFbrT4KYAAr4fAAK3LZlU3vjOKzgRsw4eBA", "telegram_message_ids": [170], "total_parts": 1, "file_size_mb": 9.04, "original_url": "https://v4.xtv.media/video/20260817/6fd668242617497a9fbd8ee5adff9d1f/cloudv-transfer/5555555529o3s59855565n6593r6ppr5_890cd4143016411f946ceca8945d801d_0_4.mp4?wsSecret=a895ddda2c99d686b30f7812361d4ac6&wsTime=1787994688", "source": "dramaora", "backed_up_at": "2026-08-29T07:24:54Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_47": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 47, "telegram_message_id": 171, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOrapKJUv4y5BylFk_RTfEtHYw94QEAAsEfAAK3LZlUi8S5thH8BIUeBA", "telegram_message_ids": [171], "total_parts": 1, "file_size_mb": 12.87, "original_url": "https://v4.xtv.media/video/20260817/47257c72dd1e41929b1cff01f87eb8bd/cloudv-transfer/55555555385npo3755565n6536p7ppr5_54d1195e46934e1180ed9102d0a81dd7_0_4.mp4?wsSecret=e71679c810e1eaf364d0a8c24c5418dd&wsTime=1787994688", "source": "dramaora", "backed_up_at": "2026-08-29T07:25:07Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_48": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 48, "telegram_message_id": 172, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOsapKJXs_UnZmD5Gnj8QAB5cnOK1NBAALCHwACty2ZVLjcz3NG2DdvHgQ", "telegram_message_ids": [172], "total_parts": 1, "file_size_mb": 7.1, "original_url": "https://v4.xtv.media/video/20260817/ad0ac23f9c494fed9be5c1d117020e66/cloudv-transfer/55555555q7p6psop55565n657659ppr5_0707e84dc810410fa382ec53ff1c270c_0_4.mp4?wsSecret=f8e4f4aafa0aae55fb1b0b754757951b&wsTime=1787994688", "source": "dramaora", "backed_up_at": "2026-08-29T07:25:20Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_49": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 49, "telegram_message_id": 173, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOtapKJZk1yt2ApzTjq1cp56nMy3xQAAsQfAAK3LZlUu_PvVmUAAY5oHgQ", "telegram_message_ids": [173], "total_parts": 1, "file_size_mb": 6.9, "original_url": "https://v4.xtv.media/video/20260817/69fde5a81b034404a9935011df3e5b8d/cloudv-transfer/55555555272q7o3455565n654rp9ppr5_02e65461c05444bb939ee1a2228103f8_0_4.mp4?wsSecret=afb1d978c464c4bff4a256e9af4fdefb&wsTime=1787994689", "source": "dramaora", "backed_up_at": "2026-08-29T07:25:27Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_50": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 50, "telegram_message_id": 174, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOuapKJbbnWpxrk3meLQK_SiGVKK9sAAsUfAAK3LZlUb89O9T8tu9IeBA", "telegram_message_ids": [174], "total_parts": 1, "file_size_mb": 7.9, "original_url": "https://v4.xtv.media/video/20260817/59a4c0216fa44586b1a16b96e81e818e/cloudv-transfer/55555555s2r9772655565n658130ppr5_2a513e4ba6f94ef28ca5b4edaba2400c_0_4.mp4?wsSecret=3725032836f2195d4a4b6b102634436f&wsTime=1787994689", "source": "dramaora", "backed_up_at": "2026-08-29T07:25:34Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_51": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 51, "telegram_message_id": 175, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOvapKJc6OhL7bnNrIOZvIfAhb3Ea0AAsYfAAK3LZlUKqa-NHo-HH0eBA", "telegram_message_ids": [175], "total_parts": 1, "file_size_mb": 7.15, "original_url": "https://v4.xtv.media/video/20260817/df2088b9657c49c29a81c28586476237/cloudv-transfer/55555555n7nr4p4q55565n65qn01ppr5_9caebb94c6674777bef23cb66eac04ee_0_4.mp4?wsSecret=c0a7d4e98a413b211b0862e26badaf3f&wsTime=1787994689", "source": "dramaora", "backed_up_at": "2026-08-29T07:25:41Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}, "dramaora_52027768287_52": {"show_id": "dramaora_52027768287", "show_title": "Cursed ByDesire", "episode_number": 52, "telegram_message_id": 176, "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAOwapKJelEuFCacZ7Azts3kVKGSaqoAAscfAAK3LZlUOExQMC_aPWEeBA", "telegram_message_ids": [176], "total_parts": 1, "file_size_mb": 6.19, "original_url": "https://v4.xtv.media/video/20260817/a4d1fc3c7d024e3ab6a776fafad4559e/cloudv-transfer/555555555p2rsn3755565n659492ppr5_9e3c3bdc1c504e3d885d940423e6cd43_0_4.mp4?wsSecret=5a58f068fcd793f7efab9285f86bf078&wsTime=1787994689", "source": "dramaora", "backed_up_at": "2026-08-29T07:25:48Z", "poster_url": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"}};
 
 let allItems = [];
 let showEpisodeStats = {};
 let recentUpdatesList = [];
-let backupManifest = {}; // { [epId]: { telegram_message_id, file_size_mb } }
+let backupManifest = {};
 let currentFilter = "all";
 let currentEpisodes = [];
 let currentShowObj = null;
@@ -872,25 +996,16 @@ let hasTriedFallback = false;
 
 // Watch history persistence
 function getWatchedHistory() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}");
-  } catch { return {}; }
+  try { return JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}"); } catch { return {}; }
 }
-
 function getWatchedEpisodes() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_EPS_KEY) || "{}");
-  } catch { return {}; }
+  try { return JSON.parse(localStorage.getItem(STORAGE_EPS_KEY) || "{}"); } catch { return {}; }
 }
 
 function markEpisodeWatched(showId, epNum, epTitle) {
   try {
     const history = getWatchedHistory();
-    history[showId] = {
-      lastEp: epNum,
-      lastTitle: epTitle,
-      timestamp: Date.now()
-    };
+    history[showId] = { lastEp: epNum, lastTitle: epTitle, timestamp: Date.now() };
     localStorage.setItem(STORAGE_WATCHED_KEY, JSON.stringify(history));
 
     const epMap = getWatchedEpisodes();
@@ -904,9 +1019,58 @@ function markEpisodeWatched(showId, epNum, epTitle) {
 }
 
 async function fetchAPI(endpoint) {
-  const r = await fetch(`${SB_URL}/rest/v1/${endpoint}`, { headers: HEADERS });
-  if (!r.ok) throw new Error("Network error: " + r.status);
-  return r.json();
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 800);
+    const r = await fetch(`${SB_URL}/rest/v1/${endpoint}`, { headers: HEADERS, signal: controller.signal });
+    clearTimeout(timeoutId);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+async function loadManifestData() {
+  if (typeof EMBEDDED_MANIFEST === "object" && EMBEDDED_MANIFEST) {
+    backupManifest = Object.assign({}, EMBEDDED_MANIFEST);
+  }
+  try {
+    const cached = localStorage.getItem(STORAGE_MANIFEST_KEY);
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      if (typeof parsed === "object" && parsed) {
+        backupManifest = Object.assign(backupManifest, parsed);
+      }
+    }
+  } catch (e) {}
+
+  try {
+    const localRes = await fetch("./backup_manifest.json");
+    if (localRes.ok) {
+      const data = await localRes.json();
+      if (typeof data === "object" && data) {
+        backupManifest = Object.assign(backupManifest, data);
+      }
+    }
+  } catch (e) {}
+
+  // 🌐 Live Sync latest Backed-Up Dramas & Episodes from GitHub Cloud
+  try {
+    const ghRes = await fetch(GITHUB_MANIFEST_URL + "?_t=" + Date.now(), { cache: "no-store" });
+    if (ghRes.ok) {
+      const ghData = await ghRes.json();
+      if (typeof ghData === "object" && ghData && Object.keys(ghData).length > 0) {
+        backupManifest = Object.assign(backupManifest, ghData);
+        localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
+        console.log(`🌐 Live synced ${Object.keys(ghData).length} backed-up episodes from GitHub!`);
+      }
+    }
+  } catch (e) {
+    console.warn("ℹ️ Offline or could not sync GitHub manifest:", e);
+  }
+
+  return backupManifest;
 }
 
 function timeAgo(dateStr) {
@@ -917,83 +1081,146 @@ function timeAgo(dateStr) {
   const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
   const diffDays = Math.floor(diffHours / 24);
 
-  if (diffHours < 1) return "ទើបតែបញ្ចូល (Just now)";
+  if (diffHours < 1) return "ទើបបញ្ចូល (Just now)";
   if (diffHours < 24) return `${diffHours} ម៉ោងមុន`;
   if (diffDays === 1) return "ម្សិលមិញ (Yesterday)";
   if (diffDays < 7) return `${diffDays} ថ្ងៃមុន`;
   return past.toLocaleDateString('km-KH', { month: 'short', day: 'numeric' });
 }
 
-async function init() {
-  try {
-    // 1. Fetch shows
-    allItems = await fetchAPI("shows?select=id,title,synopsis,poster_url,banner_url,release_year,status,type,featured,is_free,created_at&order=featured.desc,created_at.desc&limit=300");
+const KNOWN_POSTERS = {
+  "52023960492": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg",
+  "52027768287": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg",
+  "dramaora_52023960492": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg",
+  "dramaora_52027768287": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg",
+  "Fallen Desire": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg",
+  "Cursed ByDesire": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg",
+  "Cursed by Desire": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"
+};
 
-    // Load Backup Manifest (if available)
-    try {
-      const mfRes = await fetch('./backup_manifest.json?t=' + Date.now());
-      if (mfRes.ok) {
-        backupManifest = await mfRes.json();
-        console.log(`📦 Loaded ${Object.keys(backupManifest).length} backed up episodes from Telegram Archive`);
-      }
-    } catch (e) {
-      console.log("No local backup manifest found:", e);
+async function init(silent = false) {
+  try {
+    if (!silent) {
+      document.getElementById("loader").style.display = "flex";
+      document.getElementById("content").style.display = "none";
     }
 
-    // 2. Fetch episodes overview
-    try {
-      const recentEps = await fetchAPI("episodes?select=id,show_id,title,episode_number,created_at,video_url&video_url=not.is.null&order=created_at.desc&limit=600");
+    await loadManifestData();
+    const manifestCount = Object.keys(backupManifest).length;
+    console.log(`📦 Loaded ${manifestCount} Telegram Cloud Backed Up episodes`);
+
+    // 1. Fetch Supabase shows (if available)
+    const sbShows = await fetchAPI("shows?select=id,title,synopsis,poster_url,banner_url,release_year,status,type,featured,is_free,created_at&order=featured.desc,created_at.desc&limit=300");
+    const showMap = {};
+
+    if (sbShows && Array.isArray(sbShows)) {
+      sbShows.forEach(s => { showMap[s.id] = s; });
+    }
+
+    // 2. Synthesize shows from backupManifest with Poster Thumbnails
+    Object.entries(backupManifest).forEach(([epId, item]) => {
+      const showId = item.show_id || ("show_" + (item.show_title || "Unknown"));
+      const isDramaora = item.source === "dramaora" || String(showId).includes("dramaora");
+      const resolvedPoster = item.poster_url || KNOWN_POSTERS[showId] || KNOWN_POSTERS[item.show_title] || "";
       
-      const showMap = {};
-      allItems.forEach(s => { showMap[s.id] = s; });
-
-      const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-
-      recentEps.forEach(ep => {
-        if (!showEpisodeStats[ep.show_id]) {
-          showEpisodeStats[ep.show_id] = { maxEp: ep.episode_number || 1, count: 0, newEpsCount: 0, latestEpDate: ep.created_at };
+      if (!showMap[showId]) {
+        showMap[showId] = {
+          id: showId,
+          title: item.show_title || "Unknown Show",
+          synopsis: item.synopsis || `រឿង "${item.show_title}" បានរក្សាទុកក្នុង Telegram Cloud Archive រួចរាល់។ អ្នកអាចទស្សនា ឬទាញយកផ្ទាល់បានភ្លាមៗ។`,
+          poster_url: resolvedPoster,
+          banner_url: resolvedPoster,
+          release_year: 2026,
+          status: "completed",
+          type: isDramaora ? "dramaora" : "series",
+          featured: true,
+          is_free: true,
+          is_telegram_backup: true,
+          source: item.source || "telegram",
+          created_at: item.backed_up_at || new Date().toISOString()
+        };
+      } else {
+        showMap[showId].is_telegram_backup = true;
+        if (!showMap[showId].poster_url && resolvedPoster) {
+          showMap[showId].poster_url = resolvedPoster;
         }
-        const st = showEpisodeStats[ep.show_id];
-        st.count += 1;
-        if (ep.episode_number > st.maxEp) {
-          st.maxEp = ep.episode_number;
+        if (!showMap[showId].synopsis && item.synopsis) {
+          showMap[showId].synopsis = item.synopsis;
         }
-        if (new Date(ep.created_at) > sevenDaysAgo) {
-          st.newEpsCount += 1;
-        }
-      });
-
-      // Notification updates
-      const seenShowUpdates = new Set();
-      recentUpdatesList = [];
-
-      recentEps.slice(0, 30).forEach(ep => {
-        const show = showMap[ep.show_id];
-        if (show && !seenShowUpdates.has(ep.show_id + "_" + ep.episode_number)) {
-          seenShowUpdates.add(ep.show_id + "_" + ep.episode_number);
-          recentUpdatesList.push({
-            show: show,
-            episode_number: ep.episode_number,
-            title: ep.title,
-            created_at: ep.created_at
-          });
-        }
-      });
-
-      const notifCountBadge = document.getElementById("notif-count");
-      if (recentUpdatesList.length > 0) {
-        notifCountBadge.textContent = Math.min(recentUpdatesList.length, 99);
-        notifCountBadge.style.display = "flex";
       }
+    });
 
-    } catch (e) {
-      console.warn("Episode stats error:", e);
+    allItems = Object.values(showMap);
+
+    // Sort: Dramas with posters and recent updates first
+    allItems.sort((a, b) => {
+      if (a.is_telegram_backup && !b.is_telegram_backup) return -1;
+      if (!a.is_telegram_backup && b.is_telegram_backup) return 1;
+      return new Date(b.created_at || 0) - new Date(a.created_at || 0);
+    });
+
+    // 3. Process Episode Stats & Updates
+    const sbEps = await fetchAPI("episodes?select=id,show_id,title,episode_number,created_at,video_url&video_url=not.is.null&order=created_at.desc&limit=600");
+    const allEpsList = (sbEps && Array.isArray(sbEps)) ? [...sbEps] : [];
+
+    // Add manifest episodes
+    Object.entries(backupManifest).forEach(([epId, item]) => {
+      const showId = item.show_id || ("show_" + (item.show_title || "Unknown"));
+      allEpsList.push({
+        id: epId,
+        show_id: showId,
+        title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
+        episode_number: item.episode_number || 1,
+        created_at: item.backed_up_at || new Date().toISOString(),
+        video_url: item.original_url || "",
+        poster_url: item.poster_url || "",
+        telegram_message_id: item.telegram_message_id,
+        file_size_mb: item.file_size_mb,
+        source: item.source || "telegram"
+      });
+    });
+
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+    showEpisodeStats = {};
+
+    allEpsList.forEach(ep => {
+      if (!showEpisodeStats[ep.show_id]) {
+        showEpisodeStats[ep.show_id] = { maxEp: ep.episode_number || 1, count: 0, newEpsCount: 0, latestEpDate: ep.created_at };
+      }
+      const st = showEpisodeStats[ep.show_id];
+      st.count += 1;
+      if (ep.episode_number > st.maxEp) st.maxEp = ep.episode_number;
+      if (new Date(ep.created_at) > sevenDaysAgo) st.newEpsCount += 1;
+    });
+
+    // Recent Updates List for Notification Drawer
+    const seenUpdates = new Set();
+    recentUpdatesList = [];
+    allEpsList.slice(0, 40).forEach(ep => {
+      const show = showMap[ep.show_id];
+      if (show && !seenUpdates.has(ep.show_id + "_" + ep.episode_number)) {
+        seenUpdates.add(ep.show_id + "_" + ep.episode_number);
+        recentUpdatesList.push({
+          show: show,
+          episode_number: ep.episode_number,
+          title: ep.title,
+          created_at: ep.created_at
+        });
+      }
+    });
+
+    const notifCountBadge = document.getElementById("notif-count");
+    if (recentUpdatesList.length > 0) {
+      notifCountBadge.textContent = Math.min(recentUpdatesList.length, 99);
+      notifCountBadge.style.display = "flex";
     }
 
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
     applyFilter();
+
   } catch (err) {
+    console.error("Init error:", err);
     document.getElementById("loader").innerHTML = `<div style="font-size:24px;">⚠️</div><div style="margin-top:8px;">មិនអាចផ្ទុកទិន្នន័យបាន: ${err.message}</div>`;
   }
 }
@@ -1021,8 +1248,9 @@ function renderGrid(items) {
     card.className = `media-card ${isWatched ? 'is-watched' : ''}`;
     
     const isMovie = show.type === "movie";
-    const typeLabel = isMovie ? "Movie" : "Series";
-    const typeClass = isMovie ? "badge-movie" : "badge-series";
+    const isDramaora = show.type === "dramaora" || show.source === "dramaora";
+    const typeLabel = isDramaora ? "Dramaora" : (isMovie ? "Movie" : "Series");
+    const typeClass = isDramaora ? "badge-tg" : (isMovie ? "badge-movie" : "badge-series");
     
     const stats = showEpisodeStats[show.id];
     let epBadgeHtml = "";
@@ -1047,14 +1275,25 @@ function renderGrid(items) {
       }
     }
 
+    let tgCloudBadge = "";
+    if (show.is_telegram_backup) {
+      tgCloudBadge = `<span class="badge-chip badge-tg">✈️ TG Cloud</span>`;
+    }
+
+    const resolvedPoster = show.poster_url || KNOWN_POSTERS[show.id] || KNOWN_POSTERS[show.title] || "";
+
     card.innerHTML = `
       <div class="thumb-wrap">
-        ${show.poster_url 
-          ? `<img class="thumb-img" src="${show.poster_url}" loading="lazy" alt="${show.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` 
+        ${resolvedPoster 
+          ? `<img class="thumb-img" src="${resolvedPoster}" loading="eager" alt="${show.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` 
           : ''}
-        <div class="thumb-placeholder" style="${show.poster_url ? 'display:none' : ''}">🎬</div>
+        <div class="thumb-placeholder" style="${resolvedPoster ? 'display:none' : 'display:flex'}">
+          <span>🎬</span>
+          <span class="thumb-placeholder-text">${show.title}</span>
+        </div>
         <div class="overlay-top-left">
           <span class="badge-chip ${typeClass}">${typeLabel}</span>
+          ${tgCloudBadge}
           ${watchedBadgeHtml}
         </div>
         <div class="overlay-top-right">
@@ -1085,7 +1324,15 @@ function applyFilter() {
   const sectionLabel = document.getElementById("section-label");
   const sectionIcon = document.getElementById("section-icon");
 
-  if (currentFilter === "recent") {
+  if (currentFilter === "telegram") {
+    list = list.filter(s => !!s.is_telegram_backup);
+    sectionLabel.textContent = "រឿងក្នុង Telegram Archive";
+    sectionIcon.textContent = "✈️";
+  } else if (currentFilter === "dramaora") {
+    list = list.filter(s => s.type === "dramaora" || s.source === "dramaora");
+    sectionLabel.textContent = "រឿង Dramaora.tv (Unlocked)";
+    sectionIcon.textContent = "🎬";
+  } else if (currentFilter === "recent") {
     const watchedHistory = getWatchedHistory();
     list = list.filter(s => !!watchedHistory[s.id]);
     list.sort((a, b) => (watchedHistory[b.id]?.timestamp || 0) - (watchedHistory[a.id]?.timestamp || 0));
@@ -1096,7 +1343,7 @@ function applyFilter() {
     sectionLabel.textContent = "ភាពយន្តទោល (Movies)";
     sectionIcon.textContent = "🎬";
   } else if (currentFilter === "series") {
-    list = list.filter(s => s.type !== "movie");
+    list = list.filter(s => s.type !== "movie" && s.type !== "dramaora");
     sectionLabel.textContent = "ភាពយន្តភាគ (Series)";
     sectionIcon.textContent = "📺";
   } else if (currentFilter === "featured") {
@@ -1126,6 +1373,19 @@ document.getElementById("btn-close-notif").addEventListener("click", () => {
 });
 notifDrawer.addEventListener("click", (e) => {
   if (e.target === notifDrawer) notifDrawer.classList.remove("active");
+});
+
+// Instant Refresh Button
+const syncBtn = document.getElementById("btn-sync");
+syncBtn.addEventListener("click", async () => {
+  syncBtn.classList.add("spinning");
+  showToast("🔄 កំពុងទាញយក Poster & រឿងថ្មីៗពី Telegram...");
+  await loadManifestData();
+  await init(true);
+  setTimeout(() => {
+    syncBtn.classList.remove("spinning");
+    showToast(`✅ បាន Refresh រួចរាល់! (សរុប ${allItems.length} រឿង)`);
+  }, 600);
 });
 
 function renderNotifications() {
@@ -1176,89 +1436,152 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
 // Search handler
 document.getElementById("search-input").addEventListener("input", applyFilter);
 
-// Modal Player Logic & Intelligent Fallback
+// Modal Player Logic
 const playerEl = document.getElementById("player");
 const fallbackBanner = document.getElementById("fallback-banner");
 const retryStreamBtn = document.getElementById("btn-retry-stream");
 
 // Error listener for automatic server fallback
-playerEl.addEventListener("error", function(e) {
-  console.warn("⚠️ Player encountered error loading stream:", e);
-  
-  if (!hasTriedFallback && currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
-    hasTriedFallback = true;
-    const ep = currentEpisodes[currentEpIdx];
-    const backupItem = backupManifest[ep.id];
+if (playerEl) {
+  playerEl.addEventListener("error", function(e) {
+    console.warn("⚠️ Player encountered error loading stream:", e);
     
-    fallbackBanner.classList.add("show");
-    if (backupItem) {
-      document.getElementById("fallback-msg").innerHTML = `⚡ Server ដើមគាំង — មាន Cloud Backup រួចរាល់ (${backupItem.file_size_mb} MB)`;
-    } else {
-      document.getElementById("fallback-msg").textContent = "⚠️ Server ដើមគាំង — កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
-    }
-    showToast("🔄 កំពុងប្តូរទៅកាន់ Server បម្រុង...");
-
-    setTimeout(() => {
-      // Retry or switch to alternate backup stream
-      const originalUrl = ep.video_url || "";
-      let fallbackUrl = originalUrl;
+    if (!hasTriedFallback && currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
+      hasTriedFallback = true;
+      const ep = currentEpisodes[currentEpIdx];
+      const backupItem = backupManifest[ep.id];
       
-      // If original URL contains query params, try clean or mirror
-      if (originalUrl.includes("?")) {
-        fallbackUrl = originalUrl.split("?")[0];
+      if (fallbackBanner) fallbackBanner.classList.add("show");
+      const fallbackMsgEl = document.getElementById("fallback-msg");
+      if (fallbackMsgEl) {
+        if (backupItem) {
+          fallbackMsgEl.innerHTML = `⚡ Server ដើមគាំង — មាន Cloud Backup រួចរាល់ (${backupItem.file_size_mb} MB)`;
+        } else {
+          fallbackMsgEl.textContent = "⚠️ Server ដើមគាំង — កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
+        }
       }
-      
-      playerEl.src = fallbackUrl;
-      playerEl.load();
-      playerEl.play().catch(() => {
-        document.getElementById("fallback-msg").textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម — សូមសាកល្បងម្តងទៀត";
-      });
-    }, 800);
-  }
-});
+      showToast("🔄 កំពុងប្តូរទៅកាន់ Server បម្រុង...");
 
-retryStreamBtn.addEventListener("click", () => {
-  if (currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
-    hasTriedFallback = false;
-    fallbackBanner.classList.remove("show");
-    playEpisode(currentEpIdx);
-  }
-});
+      setTimeout(() => {
+        const originalUrl = ep.video_url || "";
+        let fallbackUrl = originalUrl;
+        if (originalUrl.includes("?")) {
+          fallbackUrl = originalUrl.split("?")[0];
+        }
+        playerEl.src = fallbackUrl;
+        playerEl.load();
+        playerEl.play().catch(() => {
+          if (fallbackMsgEl) fallbackMsgEl.textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម — សូមបើកមើលក្នុង Telegram";
+        });
+      }, 800);
+    }
+  });
+}
+
+if (retryStreamBtn) {
+  retryStreamBtn.addEventListener("click", () => {
+    if (currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
+      hasTriedFallback = false;
+      if (fallbackBanner) fallbackBanner.classList.remove("show");
+      playEpisode(currentEpIdx);
+    }
+  });
+}
 
 async function openModal(show) {
   currentShowObj = show;
   const modal = document.getElementById("modal");
+  if (!modal) return;
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
-  fallbackBanner.classList.remove("show");
+  if (fallbackBanner) fallbackBanner.classList.remove("show");
 
-  playerEl.src = "";
-  playerEl.poster = show.banner_url || show.poster_url || "";
+  if (playerEl) {
+    playerEl.src = "";
+    playerEl.poster = show.banner_url || show.poster_url || "";
+  }
 
-  document.getElementById("m-title").textContent = show.title;
-  document.getElementById("m-synopsis").textContent = show.synopsis || "គ្មានព័ត៌មានសង្ខេប / No synopsis.";
+  const titleEl = document.getElementById("m-title");
+  if (titleEl) titleEl.textContent = show.title || "ភាពយន្ត";
+  
+  const synEl = document.getElementById("m-synopsis");
+  if (synEl) synEl.textContent = show.synopsis || "គ្មានព័ត៌មានសង្ខេប / No synopsis.";
   
   const isMovie = show.type === "movie";
-  document.getElementById("m-meta").innerHTML = `
-    <span class="badge-chip ${isMovie ? 'badge-movie' : 'badge-series'}">${isMovie ? 'ភាពយន្តទោល (Movie)' : 'ភាពយន្តភាគ (Series)'}</span>
-    ${show.release_year ? `<span class="badge-chip" style="background:rgba(255,255,255,0.08);color:#cbd5e1;">${show.release_year}</span>` : ''}
-    <span class="badge-chip badge-hd">1080p FHD</span>
-  `;
+  const isDramaora = show.type === "dramaora" || show.source === "dramaora";
+  const metaEl = document.getElementById("m-meta");
+  if (metaEl) {
+    metaEl.innerHTML = `
+      <span class="badge-chip ${isDramaora ? 'badge-tg' : (isMovie ? 'badge-movie' : 'badge-series')}">${isDramaora ? 'Dramaora (Unlocked)' : (isMovie ? 'ភាពយន្តទោល (Movie)' : 'ភាពយន្តភាគ (Series)')}</span>
+      ${show.release_year ? `<span class="badge-chip" style="background:rgba(255,255,255,0.08);color:#cbd5e1;">${show.release_year}</span>` : ''}
+      <span class="badge-chip badge-hd">1080p FHD</span>
+      ${show.is_telegram_backup ? '<span class="badge-chip badge-tg">✈️ Telegram Cloud Ready</span>' : ''}
+    `;
+  }
 
   const synBox = document.getElementById("m-synopsis");
-  synBox.classList.remove("expanded");
+  if (synBox) synBox.classList.remove("expanded");
   const synBtn = document.getElementById("m-synopsis-toggle");
-  synBtn.textContent = "អានបន្ថែម ›";
-  synBtn.onclick = () => {
-    synBox.classList.toggle("expanded");
-    synBtn.textContent = synBox.classList.contains("expanded") ? "បង្រួមមកវិញ ‹" : "អានបន្ថែម ›";
-  };
+  if (synBtn) {
+    synBtn.textContent = "អានបន្ថែម ›";
+    synBtn.onclick = () => {
+      if (!synBox) return;
+      synBox.classList.toggle("expanded");
+      synBtn.textContent = synBox.classList.contains("expanded") ? "បង្រួមមកវិញ ‹" : "អានបន្ថែម ›";
+    };
+  }
 
   const epGrid = document.getElementById("m-episodes-grid");
-  epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;"><div class="spinner"></div><span>កំពុងទាញភាគ...</span></div>`;
+  if (epGrid) {
+    epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;"><div class="spinner"></div><span>កំពុងទាញភាគ...</span></div>`;
+  }
 
   try {
-    currentEpisodes = await fetchAPI(`episodes?select=id,title,episode_number,video_url,duration,season&show_id=eq.${show.id}&order=season.asc,episode_number.asc&limit=500`);
+    // 1. Fetch from Supabase with fast timeout
+    let episodes = await fetchAPI(`episodes?select=id,title,episode_number,video_url,duration,season&show_id=eq.${show.id}&order=season.asc,episode_number.asc&limit=500`);
+    if (!episodes || !Array.isArray(episodes)) episodes = [];
+
+    // 2. Fetch/Merge from backupManifest
+    const manifestEps = [];
+    Object.entries(backupManifest).forEach(([epId, item]) => {
+      const matchShowId = (item.show_id && item.show_id === show.id) || 
+                          (item.show_title && item.show_title === show.title) ||
+                          ("show_" + (item.show_title || "")) === show.id ||
+                          ("dramaora_" + (item.show_id || "")) === show.id ||
+                          String(item.show_id).replace("dramaora_", "") === String(show.id).replace("dramaora_", "");
+      if (matchShowId) {
+        manifestEps.push({
+          id: epId,
+          show_id: show.id,
+          title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
+          episode_number: parseInt(item.episode_number, 10) || 1,
+          video_url: item.original_url || "",
+          telegram_message_id: item.telegram_message_id,
+          telegram_message_ids: item.telegram_message_ids,
+          file_size_mb: item.file_size_mb,
+          source: item.source || "telegram"
+        });
+      }
+    });
+
+    // Merge episodes uniquely
+    const epMap = {};
+    episodes.forEach(e => { epMap[e.episode_number || e.id] = e; });
+    manifestEps.forEach(e => {
+      const num = e.episode_number || e.id;
+      if (!epMap[num]) {
+        epMap[num] = e;
+      } else {
+        epMap[num].telegram_message_id = e.telegram_message_id;
+        epMap[num].telegram_message_ids = e.telegram_message_ids;
+        epMap[num].file_size_mb = e.file_size_mb;
+        if (!epMap[num].video_url && e.video_url) {
+          epMap[num].video_url = e.video_url;
+        }
+      }
+    });
+
+    currentEpisodes = Object.values(epMap).sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
     document.getElementById("m-ep-count").textContent = currentEpisodes.length;
 
     if (currentEpisodes.length === 0) {
@@ -1273,15 +1596,15 @@ async function openModal(show) {
     epGrid.innerHTML = "";
     currentEpisodes.forEach((ep, idx) => {
       const btn = document.createElement("button");
-      const hasUrl = !!ep.video_url;
+      const hasUrl = !!ep.video_url || !!ep.telegram_message_id;
       const epNum = ep.episode_number || (idx + 1);
       const isEpWatched = !!watchedEpMap[show.id + "_" + epNum];
-      const isBackedUp = !!backupManifest[ep.id];
+      const isBackedUp = !!ep.telegram_message_id || !!backupManifest[ep.id];
 
-      btn.className = `ep-pill ${hasUrl ? '' : 'no-video'} ${isEpWatched ? 'ep-watched' : ''}`;
+      btn.className = `ep-pill ${hasUrl ? '' : 'no-video'} ${isEpWatched ? 'ep-watched' : ''} ${isBackedUp ? 'is-tg' : ''}`;
       btn.textContent = isMovie ? "ទស្សនា (Play)" : (isEpWatched ? `x${epNum} ✓` : `x${epNum}`);
       if (isBackedUp) {
-        btn.title = "⚡ Cloud Backup Ready";
+        btn.title = "⚡ Telegram Cloud Backup Ready";
       }
       btn.dataset.idx = idx;
 
@@ -1293,15 +1616,16 @@ async function openModal(show) {
 
     let targetIdx = -1;
     if (lastWatchedEpNum) {
-      targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && !!e.video_url);
+      targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && (!!e.video_url || !!e.telegram_message_id));
     }
     if (targetIdx === -1) {
-      targetIdx = currentEpisodes.findIndex(e => !!e.video_url);
+      targetIdx = currentEpisodes.findIndex(e => !!e.video_url || !!e.telegram_message_id);
     }
     if (targetIdx !== -1) {
       playEpisode(targetIdx);
     }
   } catch (e) {
+    console.error("Load episodes error:", e);
     epGrid.innerHTML = `<div style="grid-column:1/-1;color:#f87171;font-size:12px;text-align:center;">មិនអាចផ្ទុកភាគបាន</div>`;
   }
 }
@@ -1312,10 +1636,12 @@ function playEpisode(idx) {
   fallbackBanner.classList.remove("show");
 
   const ep = currentEpisodes[idx];
-  if (!ep || !ep.video_url) return;
+  if (!ep) return;
 
-  playerEl.src = ep.video_url;
-  playerEl.play().catch(() => {});
+  if (ep.video_url) {
+    playerEl.src = ep.video_url;
+    playerEl.play().catch(() => {});
+  }
 
   const epNum = ep.episode_number || (idx + 1);
 
@@ -1324,36 +1650,37 @@ function playEpisode(idx) {
   }
 
   // Dynamic Telegram Action Buttons (Single or Multi-Part)
-  const actionsBar = document.querySelector(".modal-actions-bar");
+  const actionsBar = document.getElementById("m-actions-bar");
   if (actionsBar) {
     actionsBar.innerHTML = "";
-    const backupItem = backupManifest[ep.id];
+    const backupItem = backupManifest[ep.id] || ep;
     
     if (backupItem && backupItem.telegram_message_id) {
-      const cleanChanId = "3943277744"; // Telegram Channel ID (-1003943277744)
+      const cleanChanId = "3943277744"; // Telegram Channel (-1003943277744)
       const msgIds = backupItem.telegram_message_ids || [backupItem.telegram_message_id];
 
       msgIds.forEach((msgId, pIdx) => {
-        const tgLink = `https://t.me/c/${cleanChanId}/${msgId}`;
+        const tgWebLink = `https://t.me/c/${cleanChanId}/${msgId}`;
         const btn = document.createElement("a");
         btn.className = "btn-tg-stream";
-        btn.href = tgLink;
+        btn.href = tgWebLink;
         btn.target = "_blank";
         btn.rel = "noopener noreferrer";
 
+        const sizeLabel = backupItem.file_size_mb ? ` (${backupItem.file_size_mb} MB)` : "";
         const partLabel = msgIds.length > 1 
-          ? `📥 Part ${pIdx + 1}/${msgIds.length} លើ Telegram`
-          : `📥 ទស្សនា / Download លើ Telegram (${backupItem.file_size_mb} MB)`;
+          ? `✈️ ទស្សនា Part ${pIdx + 1}/${msgIds.length} លើ Telegram${sizeLabel}`
+          : `✈️ ទស្សនា / Download លើ Telegram Cloud${sizeLabel}`;
 
         btn.innerHTML = `
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.05-.49-.83-.27-1.49-.42-1.43-.88.03-.24.38-.49 1.03-.75 4.04-1.76 6.74-2.92 8.09-3.5 3.85-1.65 4.65-1.94 5.18-1.95.12 0 .37.03.54.17.14.12.18.28.2.45-.01.07.01.23 0 .28z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.05-.49-.83-.27-1.49-.42-1.43-.88.03-.24.38-.49 1.03-.75 4.04-1.76 6.74-2.92 8.09-3.5 3.85-1.65 4.65-1.94 5.18-1.95.12 0 .37.03.54.17.14.12.18.28.2.45-.01.07.01.23 0 .28z"/></svg>
           <span>${partLabel}</span>
         `;
 
         btn.addEventListener("click", function(e) {
           if (window.Capacitor || window.location.protocol === "file:" || navigator.userAgent.includes("wv")) {
             e.preventDefault();
-            window.open(tgLink, "_system");
+            window.open(tgWebLink, "_system");
           }
         });
 
@@ -1372,29 +1699,120 @@ function playEpisode(idx) {
     }
   }
 
+  // Update Previous / Next button states
+  const prevEpBtn = document.getElementById("btn-prev-ep");
+  const nextEpBtn = document.getElementById("btn-next-ep");
+  if (prevEpBtn) {
+    prevEpBtn.disabled = idx <= 0;
+  }
+  if (nextEpBtn) {
+    nextEpBtn.disabled = idx >= currentEpisodes.length - 1;
+  }
+
   showToast(`▶ កំពុងចាក់: ${ep.title || 'ភាគ ' + epNum}`);
 }
 
+// Player Controls & Auto Next Logic
+let isAutoNextEnabled = true;
+let isScreenLocked = false;
+let autoNextCountdownTimer = null;
+
+const prevEpBtn = document.getElementById("btn-prev-ep");
+const nextEpBtn = document.getElementById("btn-next-ep");
+const autoNextBtn = document.getElementById("btn-toggle-autonext");
+const autoNextLabel = document.getElementById("label-autonext");
+const lockScreenBtn = document.getElementById("btn-lock-screen");
+const lockShield = document.getElementById("screen-lock-shield");
+const floatingUnlockBtn = document.getElementById("btn-floating-unlock");
+
+// Auto Next Toggle
+if (autoNextBtn) {
+  autoNextBtn.addEventListener("click", () => {
+    isAutoNextEnabled = !isAutoNextEnabled;
+    if (isAutoNextEnabled) {
+      autoNextBtn.classList.add("active");
+      autoNextLabel.textContent = "Auto Next: ON";
+      showToast("⚡ បានបើក Auto Next Episode (ON)");
+    } else {
+      autoNextBtn.classList.remove("active");
+      autoNextLabel.textContent = "Auto Next: OFF";
+      showToast("⏸️ បានបិទ Auto Next Episode (OFF)");
+    }
+  });
+}
+
+// Previous & Next Episode Navigation
+if (prevEpBtn) {
+  prevEpBtn.addEventListener("click", () => {
+    if (currentEpIdx > 0) {
+      playEpisode(currentEpIdx - 1);
+    }
+  });
+}
+
+if (nextEpBtn) {
+  nextEpBtn.addEventListener("click", () => {
+    if (currentEpIdx >= 0 && currentEpIdx + 1 < currentEpisodes.length) {
+      playEpisode(currentEpIdx + 1);
+    }
+  });
+}
+
+// Screen Lock & Unlock
+function lockPlayerScreen() {
+  isScreenLocked = true;
+  if (lockShield) lockShield.classList.add("locked");
+  showToast("🔒 បានចាក់សោរអេក្រង់ (Locked) — មិនអាចចុចប៉ះខុសបានទេ");
+}
+
+function unlockPlayerScreen() {
+  isScreenLocked = false;
+  if (lockShield) lockShield.classList.remove("locked");
+  showToast("🔓 បានដោះសោរអេក្រង់ (Unlocked)");
+}
+
+if (lockScreenBtn) lockScreenBtn.addEventListener("click", lockPlayerScreen);
+if (floatingUnlockBtn) floatingUnlockBtn.addEventListener("click", unlockPlayerScreen);
+
+// Video Ended -> Auto Next Episode
+playerEl.addEventListener("ended", () => {
+  if (!isAutoNextEnabled) return;
+  if (currentEpIdx >= 0 && currentEpIdx + 1 < currentEpisodes.length) {
+    const nextIdx = currentEpIdx + 1;
+    const nextEp = currentEpisodes[nextIdx];
+    const nextNum = nextEp ? (nextEp.episode_number || (nextIdx + 1)) : (nextIdx + 1);
+
+    showToast(`🎬 ចប់ភាគ! កំពុងប្តូរទៅភាគ x${nextNum} ក្នុង 3 វិនាទី...`);
+    clearTimeout(autoNextCountdownTimer);
+    autoNextCountdownTimer = setTimeout(() => {
+      playEpisode(nextIdx);
+    }, 2800);
+  } else {
+    showToast("🎉 បានទស្សនាចប់គ្រប់ភាគនៃរឿងនេះហើយ!");
+  }
+});
+
 function closeModal() {
-  document.getElementById("modal").classList.remove("active");
+  const modal = document.getElementById("modal");
+  if (modal) modal.classList.remove("active");
   document.body.style.overflow = "";
-  playerEl.pause();
-  playerEl.src = "";
-  fallbackBanner.classList.remove("show");
-  const actionsBar = document.querySelector(".modal-actions-bar");
+  if (playerEl) {
+    playerEl.pause();
+    playerEl.src = "";
+  }
+  unlockPlayerScreen();
+  clearTimeout(autoNextCountdownTimer);
+  if (fallbackBanner) fallbackBanner.classList.remove("show");
+  const actionsBar = document.getElementById("m-actions-bar");
   if (actionsBar) actionsBar.innerHTML = "";
 }
 
 document.getElementById("btn-close").addEventListener("click", closeModal);
 
-let toastTimeout;
-function showToast(msg) {
-  const t = document.getElementById("toast");
-  t.textContent = msg;
-  t.classList.add("show");
-  clearTimeout(toastTimeout);
-  toastTimeout = setTimeout(() => t.classList.remove("show"), 2800);
-}
+// Auto-refresh when app becomes visible or every 20s
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) init(true);
+});
 
 // Start
 init();
