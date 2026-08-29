@@ -1097,27 +1097,37 @@ async function fetchAPI(endpoint) {
 }
 
 async function loadManifestData() {
-  backupManifest = {};
-
   // 1. Check local cache (cached from Google Sheets)
   try {
     const cached = localStorage.getItem(STORAGE_MANIFEST_KEY);
     if (cached) {
       const parsed = JSON.parse(cached);
-      if (typeof parsed === "object" && parsed) {
+      if (typeof parsed === "object" && parsed && Object.keys(parsed).length > 0) {
         backupManifest = parsed;
       }
     }
   } catch (e) {}
 
-  // 2. Fetch directly from Google Sheets Web App (Single Source of Truth)
+  // 2. Fetch bundled backup_manifest.json if cache is empty
+  if (!backupManifest || Object.keys(backupManifest).length === 0) {
+    try {
+      const bundledRes = await fetch("backup_manifest.json");
+      if (bundledRes.ok) {
+        const bundledData = await bundledRes.json();
+        if (typeof bundledData === "object" && bundledData && Object.keys(bundledData).length > 0) {
+          backupManifest = bundledData;
+        }
+      }
+    } catch (e) {}
+  }
+
+  // 3. Fetch directly from Google Sheets Web App (Single Source of Truth)
   if (typeof GOOGLE_APPS_SCRIPT_URL === "string" && GOOGLE_APPS_SCRIPT_URL.startsWith("http")) {
     try {
       const gasRes = await fetch(GOOGLE_APPS_SCRIPT_URL + "?_t=" + Date.now(), { cache: "no-store" });
       if (gasRes.ok) {
         const gasData = await gasRes.json();
-        if (typeof gasData === "object" && gasData !== null) {
-          // Google Sheets is the master: replace backupManifest completely!
+        if (typeof gasData === "object" && gasData !== null && Object.keys(gasData).length > 0) {
           backupManifest = gasData;
           localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
           console.log(`📊 Master Synced ${Object.keys(gasData).length} episodes directly from Google Sheets!`);
@@ -1127,20 +1137,6 @@ async function loadManifestData() {
     } catch (e) {
       console.warn("ℹ️ Could not fetch Google Sheets manifest:", e);
     }
-  }
-
-  // 3. Fallback to GitHub / local only if Google Sheets wasn't reachable
-  if (Object.keys(backupManifest).length === 0) {
-    try {
-      const ghRes = await fetch(GITHUB_MANIFEST_URL + "?_t=" + Date.now(), { cache: "no-store" });
-      if (ghRes.ok) {
-        const ghData = await ghRes.json();
-        if (typeof ghData === "object" && ghData && Object.keys(ghData).length > 0) {
-          backupManifest = ghData;
-          localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
-        }
-      }
-    } catch (e) {}
   }
 
   return backupManifest;
@@ -1205,17 +1201,36 @@ async function init(silent = false) {
           is_free: true,
           is_telegram_backup: true,
           source: "dramaora",
-          created_at: item.backed_up_at || new Date().toISOString()
+          created_at: item.backed_up_at || new Date().toISOString(),
+          episodes: []
         };
       } else {
         showMap[showId].is_telegram_backup = true;
         if (!showMap[showId].poster_url && resolvedPoster) {
           showMap[showId].poster_url = resolvedPoster;
+          showMap[showId].banner_url = resolvedPoster;
         }
-        if (!showMap[showId].synopsis && item.synopsis) {
+        if (item.synopsis && (!showMap[showId].synopsis || showMap[showId].synopsis.includes("បានរក្សាទុកក្នុង Telegram Cloud"))) {
           showMap[showId].synopsis = item.synopsis;
         }
       }
+
+      showMap[showId].episodes.push({
+        id: epId,
+        show_id: showId,
+        title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
+        episode_number: parseInt(item.episode_number, 10) || 1,
+        video_url: item.original_url || "",
+        telegram_message_id: item.telegram_message_id,
+        telegram_message_ids: item.telegram_message_ids,
+        file_size_mb: item.file_size_mb,
+        source: item.source || "telegram"
+      });
+    });
+
+    // Sort episodes for every show
+    Object.values(showMap).forEach(s => {
+      s.episodes.sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
     });
 
     allItems = Object.values(showMap);
@@ -1566,7 +1581,7 @@ async function openModal(show) {
     playerEl.pause();
     playerEl.removeAttribute("src");
     playerEl.src = "";
-    playerEl.load();
+    try { playerEl.load(); } catch (e) {}
     playerEl.poster = show.banner_url || show.poster_url || "";
   }
 
@@ -1597,17 +1612,11 @@ async function openModal(show) {
   }
 
   const epGrid = document.getElementById("m-episodes-grid");
-  if (epGrid) {
-    epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;"><div class="spinner"></div><span>កំពុងទាញភាគ...</span></div>`;
-  }
 
-  try {
-    if (!backupManifest || Object.keys(backupManifest).length === 0) {
-      await loadManifestData();
-    }
+  // Directly extract episodes from show.episodes or backupManifest
+  let eps = (Array.isArray(show.episodes) && show.episodes.length > 0) ? [...show.episodes] : [];
 
-    // Extract episodes directly from backupManifest with resilient fuzzy matching
-    const manifestEps = [];
+  if (eps.length === 0 && backupManifest) {
     const targetShowTitle = (show.title || "").trim().toLowerCase();
     const targetShowId = String(show.id || "").trim().toLowerCase().replace("dramaora_", "").replace("show_", "");
 
@@ -1621,7 +1630,7 @@ async function openModal(show) {
                       (item.show_title && item.show_title === show.title);
 
       if (isMatch) {
-        manifestEps.push({
+        eps.push({
           id: epId,
           show_id: show.id,
           title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
@@ -1636,24 +1645,24 @@ async function openModal(show) {
     });
 
     const epMap = {};
-    manifestEps.forEach(e => {
-      const num = e.episode_number || e.id;
-      epMap[num] = e;
-    });
+    eps.forEach(e => { epMap[e.episode_number || e.id] = e; });
+    eps = Object.values(epMap).sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
+  }
 
-    currentEpisodes = Object.values(epMap).sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
-    const epCountBadge = document.getElementById("m-ep-count");
-    if (epCountBadge) epCountBadge.textContent = currentEpisodes.length;
+  currentEpisodes = eps;
+  const epCountBadge = document.getElementById("m-ep-count");
+  if (epCountBadge) epCountBadge.textContent = currentEpisodes.length;
 
-    if (currentEpisodes.length === 0) {
-      epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;">មិនទាន់មានភាគសម្រាប់ទស្សនានៅឡើយទេ</div>`;
-      return;
-    }
+  if (currentEpisodes.length === 0) {
+    if (epGrid) epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;">មិនទាន់មានភាគសម្រាប់ទស្សនានៅឡើយទេ</div>`;
+    return;
+  }
 
-    const watchedEpMap = getWatchedEpisodes();
-    const watchedHistory = getWatchedHistory();
-    const lastWatchedEpNum = watchedHistory[show.id]?.lastEp;
+  const watchedEpMap = getWatchedEpisodes();
+  const watchedHistory = getWatchedHistory();
+  const lastWatchedEpNum = watchedHistory[show.id]?.lastEp;
 
+  if (epGrid) {
     epGrid.innerHTML = "";
     currentEpisodes.forEach((ep, idx) => {
       const btn = document.createElement("button");
@@ -1663,7 +1672,7 @@ async function openModal(show) {
       const isBackedUp = !!ep.telegram_message_id || !!backupManifest[ep.id];
 
       btn.className = `ep-pill ${hasUrl ? '' : 'no-video'} ${isEpWatched ? 'ep-watched' : ''} ${isBackedUp ? 'is-tg' : ''}`;
-      btn.textContent = isMovie ? "ទស្សនា (Play)" : (isEpWatched ? `x${epNum} ✓` : `x${epNum}`);
+      btn.textContent = show.type === "movie" ? "ទស្សនា (Play)" : (isEpWatched ? `x${epNum} ✓` : `x${epNum}`);
       if (isBackedUp) {
         btn.title = "⚡ Telegram Cloud Backup Ready";
       }
@@ -1674,26 +1683,22 @@ async function openModal(show) {
       }
       epGrid.appendChild(btn);
     });
+  }
 
-    // Safe Autoplay in separate block to never break episode grid
-    try {
-      let targetIdx = -1;
-      if (lastWatchedEpNum) {
-        targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && (!!e.video_url || !!e.telegram_message_id));
-      }
-      if (targetIdx === -1) {
-        targetIdx = currentEpisodes.findIndex(e => !!e.video_url || !!e.telegram_message_id);
-      }
-      if (targetIdx !== -1) {
-        playEpisode(targetIdx);
-      }
-    } catch (playErr) {
-      console.warn("Autoplay error:", playErr);
+  // Safe Autoplay in separate block
+  try {
+    let targetIdx = -1;
+    if (lastWatchedEpNum) {
+      targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && (!!e.video_url || !!e.telegram_message_id));
     }
-
-  } catch (e) {
-    console.error("Load episodes error:", e);
-    epGrid.innerHTML = `<div style="grid-column:1/-1;color:#f87171;font-size:12px;text-align:center;">មិនអាចផ្ទុកភាគបាន</div>`;
+    if (targetIdx === -1) {
+      targetIdx = currentEpisodes.findIndex(e => !!e.video_url || !!e.telegram_message_id);
+    }
+    if (targetIdx !== -1) {
+      playEpisode(targetIdx);
+    }
+  } catch (playErr) {
+    console.warn("Autoplay notice:", playErr);
   }
 }
 
