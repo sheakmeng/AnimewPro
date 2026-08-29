@@ -478,6 +478,14 @@
       object-fit: contain;
     }
 
+    video::-webkit-media-controls-panel {
+      padding-bottom: max(24px, env(safe-area-inset-bottom, 20px)) !important;
+      margin-bottom: max(16px, env(safe-area-inset-bottom, 16px)) !important;
+    }
+    video::-webkit-media-controls-enclosure {
+      padding-bottom: max(24px, env(safe-area-inset-bottom, 20px)) !important;
+    }
+
     .fallback-banner {
       background: linear-gradient(90deg, #1e1b4b, #312e81);
       border-bottom: 1px solid rgba(99, 102, 241, 0.4);
@@ -919,13 +927,17 @@
 
     <!-- Quick Episode & Lock Controls Bar -->
     <div class="player-controls-bar">
+      <button class="ctrl-btn" id="btn-seek-back" title="ថយក្រោយ 10 វិនាទី" type="button">
+        <span>⏪</span>
+        <span>-10s</span>
+      </button>
       <button class="ctrl-btn" id="btn-prev-ep" title="Previous Episode" type="button">
         <span>⏮️</span>
         <span>ភាគមុន</span>
       </button>
       <button class="ctrl-btn active" id="btn-toggle-autonext" title="Toggle Auto Next Episode" type="button">
         <span>⚡</span>
-        <span id="label-autonext">Auto Next: ON</span>
+        <span id="label-autonext">Auto: ON</span>
       </button>
       <button class="ctrl-btn ctrl-btn-lock" id="btn-lock-screen" title="Lock Screen Controls" type="button">
         <span>🔒</span>
@@ -935,6 +947,11 @@
         <span>ភាគបន្ទាប់</span>
         <span>⏭️</span>
       </button>
+      <button class="ctrl-btn" id="btn-seek-fwd" title="ខាទៅមុខ 10 វិនាទី" type="button">
+        <span>+10s</span>
+        <span>⏩</span>
+      </button>
+    </div>
     <!-- Automatic Fallback Banner -->
     <div class="fallback-banner" id="fallback-banner">
       <span id="fallback-msg">⚠️ Server ដើមមានបញ្ហា - បានប្តូរទៅ Server បម្រុង</span>
@@ -1741,6 +1758,46 @@ if (autoNextBtn) {
       showToast("⏸️ បានបិទ Auto Next Episode (OFF)");
     }
   });
+}
+
+// Quick Seek -10s / +10s
+const seekBackBtn = document.getElementById("btn-seek-back");
+const seekFwdBtn = document.getElementById("btn-seek-fwd");
+
+function seekVideo(seconds) {
+  if (!playerEl || isNaN(playerEl.duration)) return;
+  playerEl.currentTime = Math.max(0, Math.min(playerEl.duration, playerEl.currentTime + seconds));
+  const sign = seconds > 0 ? `+${seconds}s ⏩` : `${seconds}s ⏪`;
+  showToast(`⏱️ ${sign} (${formatTime(playerEl.currentTime)} / ${formatTime(playerEl.duration)})`);
+}
+
+function formatTime(secs) {
+  if (isNaN(secs) || secs < 0) return "0:00";
+  const m = Math.floor(secs / 60);
+  const s = Math.floor(secs % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+if (seekBackBtn) seekBackBtn.addEventListener("click", () => seekVideo(-10));
+if (seekFwdBtn) seekFwdBtn.addEventListener("click", () => seekVideo(10));
+
+// Double-Tap left/right on player screen to seek
+let lastPlayerTapTime = 0;
+if (playerEl) {
+  playerEl.addEventListener("touchstart", (e) => {
+    const now = Date.now();
+    const touch = e.changedTouches[0];
+    if (touch && now - lastPlayerTapTime < 320) {
+      const rect = playerEl.getBoundingClientRect();
+      const tapX = touch.clientX - rect.left;
+      if (tapX < rect.width * 0.4) {
+        seekVideo(-10);
+      } else if (tapX > rect.width * 0.6) {
+        seekVideo(10);
+      }
+    }
+    lastPlayerTapTime = now;
+  }, { passive: true });
 }
 
 // Previous & Next Episode Navigation
