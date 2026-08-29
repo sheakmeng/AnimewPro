@@ -974,6 +974,19 @@
       border-color: rgba(16, 185, 129, 0.35);
       color: #34d399;
     }
+    .ep-pill.ep-vip-lock {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: #fbbf24;
+      position: relative;
+    }
+    .ep-pill.ep-vip-lock::after {
+      content: "👑";
+      font-size: 9px;
+      position: absolute;
+      top: 1px;
+      right: 2px;
+    }
 
     /* Notification Banner */
     #new-backup-banner {
@@ -2172,15 +2185,35 @@ async function openModal(show) {
   epGrid.innerHTML = "";
 
   const watchedMap = JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}");
+  const isVip = isUserVip();
 
   currentEpisodes.forEach((ep, idx) => {
     const btn = document.createElement("button");
     const epNum = ep.episode_number || (idx + 1);
     const isWatched = !!watchedMap[`${show.id}_${epNum}`];
+    const isLocked = !isVip && (epNum > FREE_EPISODES_LIMIT);
 
-    btn.className = `ep-pill ${isWatched ? 'ep-watched' : ''}`;
-    btn.textContent = `x${epNum} ${isWatched ? '✓' : ''}`;
-    btn.onclick = () => playEpisode(idx);
+    let classes = ["ep-pill"];
+    if (isWatched) classes.push("ep-watched");
+    if (isLocked) classes.push("ep-vip-lock");
+
+    btn.className = classes.join(" ");
+    
+    if (isLocked) {
+      btn.innerHTML = `🔒 x${epNum}`;
+    } else {
+      btn.textContent = `x${epNum} ${isWatched ? '✓' : ''}`;
+    }
+
+    btn.onclick = () => {
+      if (isLocked) {
+        showToast(`👑 ភាគទី ${epNum} សម្រាប់តែសមាជិក VIP ប៉ុណ្ណោះ!`);
+        openVipModal();
+        return;
+      }
+      playEpisode(idx);
+    };
+
     epGrid.appendChild(btn);
   });
 
@@ -2189,10 +2222,26 @@ async function openModal(show) {
   }
 }
 
+const FREE_EPISODES_LIMIT = 7;
+
+function isUserVip() {
+  const vipUntil = localStorage.getItem(STORAGE_VIP_KEY);
+  if (!vipUntil) return false;
+  return parseInt(vipUntil, 10) > Date.now();
+}
+
 function playEpisode(idx) {
   if (!currentEpisodes[idx]) return;
-  currentEpIndex = idx;
   const ep = currentEpisodes[idx];
+  const epNum = ep.episode_number || (idx + 1);
+
+  if (!isUserVip() && epNum > FREE_EPISODES_LIMIT) {
+    showToast(`👑 ភាគទី ${epNum} សម្រាប់តែសមាជិក VIP! សូមជាវសមាជិកភាពដើម្បីទស្សនា។`);
+    openVipModal();
+    return;
+  }
+
+  currentEpIndex = idx;
 
   document.querySelectorAll(".ep-pill").forEach((btn, i) => {
     btn.classList.toggle("active", i === idx);
@@ -2206,7 +2255,7 @@ function playEpisode(idx) {
 
   // Save Watched State
   const watchedMap = JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}");
-  watchedMap[`${currentShowObj.id}_${ep.episode_number || (idx + 1)}`] = true;
+  watchedMap[`${currentShowObj.id}_${epNum}`] = true;
   localStorage.setItem(STORAGE_WATCHED_KEY, JSON.stringify(watchedMap));
   updateAccountStats();
 }
@@ -2234,7 +2283,16 @@ document.getElementById("ctrl-prev").onclick = () => {
   if (currentEpIndex > 0) playEpisode(currentEpIndex - 1);
 };
 document.getElementById("ctrl-next").onclick = () => {
-  if (currentEpIndex < currentEpisodes.length - 1) playEpisode(currentEpIndex + 1);
+  if (currentEpIndex < currentEpisodes.length - 1) {
+    const nextIdx = currentEpIndex + 1;
+    const nextEpNum = currentEpisodes[nextIdx]?.episode_number || (nextIdx + 1);
+    if (!isUserVip() && nextEpNum > FREE_EPISODES_LIMIT) {
+      showToast(`👑 ភាគទី ${nextEpNum} សម្រាប់តែសមាជិក VIP!`);
+      openVipModal();
+      return;
+    }
+    playEpisode(nextIdx);
+  }
 };
 document.getElementById("ctrl-auto-next").onclick = () => {
   isAutoNext = !isAutoNext;
@@ -2252,7 +2310,14 @@ document.getElementById("ctrl-speed").onclick = () => {
 if (playerEl) {
   playerEl.addEventListener("ended", () => {
     if (isAutoNext && currentEpIndex < currentEpisodes.length - 1) {
-      playEpisode(currentEpIndex + 1);
+      const nextIdx = currentEpIndex + 1;
+      const nextEpNum = currentEpisodes[nextIdx]?.episode_number || (nextIdx + 1);
+      if (!isUserVip() && nextEpNum > FREE_EPISODES_LIMIT) {
+        showToast(`👑 ភាគទី ${nextEpNum} ឡើងទៅ សម្រាប់តែសមាជិក VIP!`);
+        openVipModal();
+        return;
+      }
+      playEpisode(nextIdx);
     }
   });
 }
