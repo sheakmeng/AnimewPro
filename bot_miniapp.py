@@ -21,7 +21,7 @@ def setup_menu_button():
     payload = {
         "menu_button": {
             "type": "web_app",
-            "text": "🎬 បើកទស្សនារឿង",
+            "text": "🎬 DramaFlixHD",
             "web_app": {
                 "url": MINI_APP_URL
             }
@@ -31,7 +31,7 @@ def setup_menu_button():
         r = requests.post(url, json=payload, timeout=10)
         res = r.json()
         if res.get("ok"):
-            logging.info("✅ Menu Button set successfully to Mini App!")
+            logging.info("✅ Menu Button set successfully to DramaFlixHD!")
         else:
             logging.warning(f"⚠️ Failed to set menu button: {res}")
     except Exception as e:
@@ -42,7 +42,7 @@ def send_welcome_message(chat_id, user_first_name=""):
     url = f"{API_BASE}/sendMessage"
     welcome_text = (
         f"👋 សួស្តី <b>{user_first_name or 'ប្រិយមិត្ត'}</b>!\n\n"
-        "✨ សូមស្វាគមន៍មកកាន់ <b>VIP DRAMA Mini App</b>!\n"
+        "✨ សូមស្វាគមន៍មកកាន់ <b>DramaFlixHD Mini App</b>!\n"
         "🎬 អ្នកអាចទស្សនារឿងភាគខ្លីៗ និងរឿងពេញនិយមច្រើនជាង <b>395+ ភាគ</b> កម្រិតរូបភាព <b>1080p FHD</b> ដោយឥតគិតថ្លៃ ១០០% លើ Telegram។\n\n"
         "👇 <b>ចុចប៊ូតុងខាងក្រោមដើម្បីបើកមើលរឿងភ្លាមៗ៖</b>"
     )
@@ -55,7 +55,7 @@ def send_welcome_message(chat_id, user_first_name=""):
             "inline_keyboard": [
                 [
                     {
-                        "text": "🎬 បើកទស្សនារឿង (Open Mini App)",
+                        "text": "🎬 បើកទស្សនារឿង (DramaFlixHD)",
                         "web_app": {
                             "url": MINI_APP_URL
                         }
