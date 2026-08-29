@@ -1604,11 +1604,7 @@ async function openModal(show) {
   }
 
   try {
-    // 1. Fetch from Supabase with fast timeout
-    let episodes = await fetchAPI(`episodes?select=id,title,episode_number,video_url,duration,season&show_id=eq.${show.id}&order=season.asc,episode_number.asc&limit=500`);
-    if (!episodes || !Array.isArray(episodes)) episodes = [];
-
-    // 2. Fetch/Merge from backupManifest
+    // Extract episodes directly from backupManifest
     const manifestEps = [];
     Object.entries(backupManifest).forEach(([epId, item]) => {
       const matchShowId = (item.show_id && item.show_id === show.id) || 
@@ -1631,25 +1627,15 @@ async function openModal(show) {
       }
     });
 
-    // Merge episodes uniquely
     const epMap = {};
-    episodes.forEach(e => { epMap[e.episode_number || e.id] = e; });
     manifestEps.forEach(e => {
       const num = e.episode_number || e.id;
-      if (!epMap[num]) {
-        epMap[num] = e;
-      } else {
-        epMap[num].telegram_message_id = e.telegram_message_id;
-        epMap[num].telegram_message_ids = e.telegram_message_ids;
-        epMap[num].file_size_mb = e.file_size_mb;
-        if (!epMap[num].video_url && e.video_url) {
-          epMap[num].video_url = e.video_url;
-        }
-      }
+      epMap[num] = e;
     });
 
     currentEpisodes = Object.values(epMap).sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
-    document.getElementById("m-ep-count").textContent = currentEpisodes.length;
+    const epCountBadge = document.getElementById("m-ep-count");
+    if (epCountBadge) epCountBadge.textContent = currentEpisodes.length;
 
     if (currentEpisodes.length === 0) {
       epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;">មិនទាន់មានភាគសម្រាប់ទស្សនានៅឡើយទេ</div>`;
@@ -1700,7 +1686,7 @@ async function openModal(show) {
 function playEpisode(idx) {
   currentEpIdx = idx;
   hasTriedFallback = false;
-  fallbackBanner.classList.remove("show");
+  if (fallbackBanner) fallbackBanner.classList.remove("show");
 
   const ep = currentEpisodes[idx];
   if (!ep) return;
