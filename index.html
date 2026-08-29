@@ -1347,35 +1347,150 @@
     }
 
     /* KHQR Payment Sheet */
-    .khqr-card-wrap {
+    /* Official Standard Bakong KHQR Card Stand */
+    .bakong-khqr-stand {
       background: #ffffff;
       border-radius: 18px;
-      padding: 16px;
-      display: inline-block;
+      overflow: hidden;
+      max-width: 295px;
       margin: 10px auto;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
       text-align: center;
+      position: relative;
     }
 
-    .khqr-image {
-      width: 210px;
-      height: 210px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-      border-radius: 8px;
+    .bakong-khqr-header {
+      background: #E1251B;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #ffffff;
     }
 
-    .khqr-amount-badge {
-      background: #1e293b;
-      color: #38bdf8;
-      font-size: 16px;
+    .bakong-khqr-logo {
+      font-size: 21px;
       font-weight: 900;
       font-family: 'Outfit', sans-serif;
-      padding: 5px 14px;
-      border-radius: 20px;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .bakong-khqr-logo span {
+      background: #ffffff;
+      color: #E1251B;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 15px;
+      margin-left: 4px;
+      font-weight: 900;
+    }
+
+    .bakong-khqr-curr-badge {
+      font-size: 12px;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 3px 9px;
+      border-radius: 12px;
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    .bakong-khqr-body {
+      padding: 14px 16px 12px;
+      background: #ffffff;
+    }
+
+    .bakong-merchant-name {
+      font-size: 15px;
+      font-weight: 900;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .bakong-merchant-sub {
+      font-size: 11.5px;
+      color: #64748b;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .bakong-dashed-line {
+      border-top: 1.5px dashed #cbd5e1;
+      margin: 12px 0 10px;
+      position: relative;
+    }
+
+    .bakong-dashed-line::before, .bakong-dashed-line::after {
+      content: '';
+      position: absolute;
+      top: -7px;
+      width: 14px;
+      height: 14px;
+      background: #0d1322;
+      border-radius: 50%;
+    }
+    .bakong-dashed-line::before { left: -23px; }
+    .bakong-dashed-line::after { right: -23px; }
+
+    .bakong-qr-wrapper {
+      position: relative;
       display: inline-block;
-      margin-top: 10px;
+      padding: 4px;
+      background: #ffffff;
+      border-radius: 12px;
+    }
+
+    .bakong-qr-img {
+      width: 195px;
+      height: 195px;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .bakong-qr-center-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      background: #ffffff;
+      border: 2px solid #E1251B;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .bakong-amount-display {
+      margin-top: 8px;
+      font-size: 22px;
+      font-weight: 900;
+      color: #0f172a;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .bakong-amount-display span {
+      font-size: 13px;
+      font-weight: 700;
+      color: #64748b;
+      margin-left: 3px;
+    }
+
+    .bakong-footer-text {
+      font-size: 10px;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-top: 6px;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 6px;
     }
 
     .khqr-timer-box {
@@ -1815,10 +1930,31 @@
     </div>
 
     <div id="khqr-content-box" style="display:none;">
-      <div class="khqr-card-wrap">
-        <img id="khqr-image" src="" alt="KHQR Code" class="khqr-image" />
-        <div class="khqr-amount-badge" id="khqr-amount-display">$2.00 USD</div>
-        <div style="font-size:12px; color:#475569; margin-top:6px; font-weight:600;">ឈ្មោះគណនីទទួល (Receiver): <b style="color:#0f172a; font-weight:800;">LENG SHEAKMENG</b></div>
+      <!-- Standard Official Bakong KHQR Stand Template -->
+      <div class="bakong-khqr-stand">
+        <div class="bakong-khqr-header">
+          <div class="bakong-khqr-logo">
+            KH<span>QR</span>
+          </div>
+          <div class="bakong-khqr-curr-badge" id="bakong-curr-badge">$ USD</div>
+        </div>
+
+        <div class="bakong-khqr-body">
+          <div class="bakong-merchant-name" id="bakong-merchant-name">LENG SHEAKMENG</div>
+          <div class="bakong-merchant-sub">DramaFlixHD VIP Member</div>
+          
+          <div class="bakong-dashed-line"></div>
+          
+          <div class="bakong-qr-wrapper">
+            <img id="khqr-image" src="" alt="Bakong KHQR Code" class="bakong-qr-img" />
+            <div class="bakong-qr-center-logo">
+              <svg viewBox="0 0 24 24" fill="#E1251B"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/></svg>
+            </div>
+          </div>
+
+          <div class="bakong-amount-display" id="khqr-amount-display">$2.00 <span>USD</span></div>
+          <div class="bakong-footer-text">Scan to pay with Bakong & Any Banking App</div>
+        </div>
       </div>
       
       <div class="khqr-timer-box">
