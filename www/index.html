@@ -2714,6 +2714,14 @@ document.getElementById("btn-account-admin").onclick = () => {
   }
 };
 
+// Anti-Inspect, Anti-RightClick & URL Privacy Protection
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) || (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S'))) {
+    e.preventDefault();
+  }
+});
+
 // Main App Bootstrap (Instant Zero-Lag Launch)
 function initApp() {
   initTelegramUser();
