@@ -1404,6 +1404,7 @@
     }
 
     .bakong-qr-wrapper {
+      position: relative;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -1417,6 +1418,29 @@
       display: block;
       margin: 0 auto;
       object-fit: contain;
+    }
+
+    .bakong-qr-center-dollar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #000000;
+      border: 3px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+    }
+
+    .bakong-qr-center-dollar svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .khqr-timer-box {
@@ -1873,6 +1897,13 @@
           
           <div class="bakong-qr-wrapper">
             <img id="khqr-image" src="" alt="Bakong KHQR Code" class="bakong-qr-img" />
+            <!-- Centered Black Circle with White Dollar Sign Emblem matching user image -->
+            <div class="bakong-qr-center-dollar">
+              <svg viewBox="0 0 100 100" width="38" height="38">
+                <circle cx="50" cy="50" r="48" fill="#000000" />
+                <text x="50" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Outfit', sans-serif" font-size="64" font-weight="900" fill="#ffffff" text-anchor="middle">$</text>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
