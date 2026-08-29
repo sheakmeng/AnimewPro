@@ -436,6 +436,7 @@
       flex-direction: column;
       overflow-y: auto;
       overscroll-behavior: contain;
+      padding-bottom: max(40px, env(safe-area-inset-bottom, 32px));
     }
     #modal.active { display: flex; }
 
@@ -474,6 +475,7 @@
       aspect-ratio: 16/9;
       background: #000;
       display: block;
+      object-fit: contain;
     }
 
     .fallback-banner {
