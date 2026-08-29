@@ -45,7 +45,6 @@ function doGet(e) {
         try {
           manifest[epId] = JSON.parse(jsonStr);
         } catch (err) {
-          // Fallback reconstruction from row columns
           manifest[epId] = {
             "show_id": String(data[i][1] || ""),
             "show_title": String(data[i][2] || ""),
@@ -80,20 +79,12 @@ function doPost(e) {
     
     const now = new Date().toISOString();
     
-    // Support Bulk Sync (all episodes in one POST)
+    // Support Bulk Sync (all episodes in one ultra-fast batch)
     if (body.action === "bulk_sync" && body.manifest) {
       const allItems = body.manifest;
-      const data = sheet.getDataRange().getValues();
-      const existingMap = {};
-      for (let i = 1; i < data.length; i++) {
-        existingMap[String(data[i][0])] = i + 1; // 1-based row index
-      }
-      
-      let added = 0;
-      let updated = 0;
-      
+      const rows = [];
       Object.entries(allItems).forEach(([epId, item]) => {
-        const rowData = [
+        rows.push([
           epId,
           item.show_id || "",
           item.show_title || "",
@@ -106,28 +97,25 @@ function doPost(e) {
           item.source || "dramaora",
           item.backed_up_at || now,
           JSON.stringify(item)
-        ];
-        
-        if (existingMap[epId]) {
-          sheet.getRange(existingMap[epId], 1, 1, 12).setValues([rowData]);
-          updated++;
-        } else {
-          sheet.appendRow(rowData);
-          existingMap[epId] = sheet.getLastRow();
-          added++;
-        }
+        ]);
       });
+      
+      const lastRow = sheet.getLastRow();
+      if (lastRow > 1) {
+        sheet.getRange(2, 1, lastRow - 1, 12).clearContent();
+      }
+      if (rows.length > 0) {
+        sheet.getRange(2, 1, rows.length, 12).setValues(rows);
+      }
       
       return ContentService.createTextOutput(JSON.stringify({
         status: "success",
         action: "bulk_sync",
-        added: added,
-        updated: updated,
-        total: sheet.getLastRow() - 1
+        total: rows.length
       })).setMimeType(ContentService.MimeType.JSON);
     }
     
-    // Single Episode Sync
+    // Single Episode Sync (Realtime from Pydroid 3)
     const epId = String(body.ep_id || body.id || "").trim();
     const epData = body.data || body;
     

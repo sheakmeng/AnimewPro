@@ -85,8 +85,8 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals(
 MANIFEST_FILE = os.path.join(SCRIPT_DIR, "backup_manifest.json")
 GITHUB_MANIFEST_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json"
 
-# 📊 Google Apps Script Web App URL (Paste your deployed Web App URL here for Realtime Sheet Sync)
-GOOGLE_APPS_SCRIPT_URL = "" 
+# 📊 Google Apps Script Web App URL (Realtime Google Sheet & APK Cloud Sync)
+GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeNw3vClMRYMWssYT-gTncSntQUvVvHb43QcDYR5k4RXLrFPDzS5vEh5PZyWM95XXmSg/exec" 
 
 MANIFEST_CANDIDATE_PATHS = [
     MANIFEST_FILE,
