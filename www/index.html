@@ -13,91 +13,117 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     
     :root {
-      --bg: #090c14;
-      --surface: #101524;
-      --card-bg: #141b2d;
-      --card-hover: #1a233a;
+      --bg: #070a13;
+      --bg-darker: #04060b;
+      --surface: #0d1322;
+      --surface-glass: rgba(13, 19, 34, 0.85);
+      --card-bg: #121a2e;
+      --card-hover: #1b253f;
       --border: rgba(255, 255, 255, 0.08);
-      --accent: #6366f1;
-      --accent-gradient: linear-gradient(135deg, #6366f1, #38bdf8);
-      --tg-gradient: linear-gradient(135deg, #0088cc, #00b4d8);
-      --orange-gradient: linear-gradient(135deg, #f97316, #ef4444);
-      --red-badge: #ef4444;
-      --green: #10b981;
+      --border-glow: rgba(56, 189, 248, 0.35);
+      
+      --accent: #2563eb;
+      --accent-glow: #3b82f6;
+      --accent-gradient: linear-gradient(135deg, #2563eb, #0ea5e9);
+      --vip-gradient: linear-gradient(135deg, #1d4ed8, #3b82f6);
+      --gold-gradient: linear-gradient(135deg, #f59e0b, #fbbf24);
+      --orange-gradient: linear-gradient(135deg, #ef4444, #f97316);
+      
       --text: #f8fafc;
       --text-muted: #94a3b8;
-      --radius: 12px;
+      --text-sub: #64748b;
+      --gold: #f59e0b;
+      --red: #ef4444;
+      --radius: 14px;
+      --radius-sm: 8px;
+      --radius-lg: 20px;
     }
 
     html, body {
-      height: 100%;
-      background: var(--bg);
+      background-color: var(--bg);
       color: var(--text);
-      font-family: 'Kantumruy Pro', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Kantumruy Pro', 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
       overflow-x: hidden;
-      user-select: none;
       -webkit-font-smoothing: antialiased;
+      padding-bottom: 75px;
+      user-select: none;
     }
 
+    a { text-decoration: none; color: inherit; }
+    button { font-family: inherit; }
+
+    /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 4px; height: 4px; }
     ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 99px; }
+    ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; }
 
-    /* App Header */
-    header {
+    /* Top User Header Bar */
+    .top-header {
       position: sticky;
       top: 0;
-      z-index: 50;
-      background: rgba(9, 12, 20, 0.94);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      z-index: 1000;
+      background: rgba(7, 10, 19, 0.92);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      padding: max(10px, env(safe-area-inset-top)) 16px 10px;
       border-bottom: 1px solid var(--border);
-      padding: max(10px, env(safe-area-inset-top)) 14px 10px;
-    }
-
-    .nav-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      margin-bottom: 10px;
     }
 
-    .brand {
+    .user-profile-box {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 10px;
+      cursor: pointer;
     }
-    .brand-logo {
+
+    .user-avatar-wrap {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      padding: 2px;
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
+      flex-shrink: 0;
+    }
+
+    .user-avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #1e293b;
+      display: block;
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .user-greeting {
+      font-size: 11px;
+      color: #94a3b8;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .user-handle {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
       font-family: 'Outfit', sans-serif;
-      font-size: 20px;
-      font-weight: 900;
-      letter-spacing: -0.5px;
-      background: var(--accent-gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .brand-badge {
-      font-size: 9px;
-      font-weight: 700;
-      background: rgba(99, 102, 241, 0.2);
-      color: #818cf8;
-      padding: 2px 6px;
-      border-radius: 6px;
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      text-transform: uppercase;
-    }
-    .tg-cloud-badge {
-      font-size: 9px;
-      font-weight: 700;
-      background: rgba(0, 136, 204, 0.2);
-      color: #38bdf8;
-      padding: 2px 6px;
-      border-radius: 6px;
-      border: 1px solid rgba(0, 136, 204, 0.35);
-      display: flex;
-      align-items: center;
-      gap: 3px;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 140px;
     }
 
     .header-actions {
@@ -106,11 +132,703 @@
       gap: 8px;
     }
 
-    .btn-action-round {
-      position: relative;
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid var(--border);
-      color: var(--text);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .icon-btn:hover, .icon-btn:active {
+      background: rgba(255, 255, 255, 0.12);
+      transform: scale(0.96);
+    }
+
+    .notif-badge {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      background: #ef4444;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 2px 5px;
+      border-radius: 10px;
+      border: 2px solid var(--bg);
+      display: none;
+    }
+
+    .vip-badge-btn {
+      background: var(--vip-gradient);
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 7px 14px;
+      font-size: 12.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    .vip-badge-btn:hover, .vip-badge-btn:active {
+      transform: scale(0.96);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.6);
+    }
+
+    /* Subtitle Ticker Bar */
+    .ticker-bar {
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #cbd5e1;
+      font-weight: 500;
+      background: rgba(13, 19, 34, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .ticker-bar .ticker-icon {
+      font-size: 13px;
+    }
+
+    .ticker-bar .ticker-text {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .ticker-bar .ticker-heart {
+      color: #94a3b8;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .ticker-bar .ticker-heart:hover { color: #f43f5e; }
+
+    /* Hero Spotlight Carousel Banner */
+    .hero-spotlight {
+      position: relative;
+      margin: 14px 14px 18px;
+      background: linear-gradient(145deg, #0d152a, #090e1c);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 30px rgba(14, 165, 233, 0.12);
+    }
+
+    .hero-bg-art {
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 100%;
+      height: 160%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(40px) brightness(0.35);
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 0;
+      transition: background-image 0.5s ease;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .hero-poster-box {
+      position: relative;
+      width: 120px;
+      height: 170px;
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 1.5px solid rgba(56, 189, 248, 0.5);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .hero-poster-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-vip-tag {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+      color: #000000;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      letter-spacing: 0.5px;
+    }
+
+    .hero-details {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .hero-badges-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .badge-trend {
+      background: rgba(239, 68, 68, 0.18);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge-rank {
+      background: rgba(255, 255, 255, 0.08);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .hero-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+
+    .hero-meta .rating {
+      color: #fbbf24;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .hero-meta .hd-badge {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .btn-hero-play {
+      background: var(--accent-gradient);
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(14, 165, 233, 0.4);
+      transition: transform 0.2s;
+    }
+    .btn-hero-play:hover, .btn-hero-play:active { transform: scale(0.96); }
+
+    .btn-hero-add {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+      border-radius: 20px;
+      padding: 8px 14px;
+      font-size: 12.5px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      transition: all 0.2s;
+    }
+    .btn-hero-add:hover, .btn-hero-add:active { background: rgba(255, 255, 255, 0.14); }
+    .btn-hero-add.added { color: #10b981; border-color: #10b981; background: rgba(16, 185, 129, 0.12); }
+
+    /* Hero Thumbnails Slider */
+    .hero-thumb-row {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+    }
+    .hero-thumb-row::-webkit-scrollbar { display: none; }
+
+    .hero-mini-card {
+      width: 54px;
+      height: 72px;
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      cursor: pointer;
+      opacity: 0.6;
+      transition: all 0.25s ease;
+      background: #1e293b;
+    }
+
+    .hero-mini-card.active {
+      opacity: 1;
+      border-color: #38bdf8;
+      transform: scale(1.06);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+    }
+
+    .hero-mini-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Section Styling */
+    .section-wrap {
+      margin: 18px 14px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title-icon {
+      color: var(--gold);
+      font-size: 16px;
+    }
+
+    .section-view-all {
+      font-size: 12px;
+      color: #94a3b8;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      transition: color 0.2s;
+    }
+    .section-view-all:hover { color: #38bdf8; }
+
+    /* Filter Pills */
+    .filter-pills-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      margin-bottom: 14px;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+    }
+    .filter-pills-row::-webkit-scrollbar { display: none; }
+
+    .filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: #cbd5e1;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .filter-pill.active {
+      background: var(--accent-gradient);
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    }
+
+    /* Drama Cards Grid */
+    .drama-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      gap: 12px;
+    }
+
+    @media (min-width: 480px) {
+      .drama-grid { grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); }
+    }
+    @media (min-width: 768px) {
+      .drama-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); }
+    }
+
+    .drama-card {
+      position: relative;
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+    }
+
+    .drama-card:hover, .drama-card:active {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(56, 189, 248, 0.2);
+    }
+
+    .card-poster-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2/3;
+      background: #1e293b;
+      overflow: hidden;
+    }
+
+    .card-poster-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .drama-card:hover .card-poster-img {
+      transform: scale(1.05);
+    }
+
+    .card-ep-count {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      color: #38bdf8;
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .card-info {
+      padding: 8px;
+    }
+
+    .card-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-sub {
+      font-size: 10.5px;
+      color: #94a3b8;
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Bottom Floating Navigation Bar */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(7, 10, 19, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border);
+      padding: 6px 4px max(6px, env(safe-area-inset-bottom));
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav-tab-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      color: #64748b;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+      min-width: 50px;
+      background: transparent;
+      border: none;
+    }
+
+    .nav-tab-item svg {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.2s ease, stroke 0.2s ease;
+    }
+
+    .nav-tab-item span {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+    }
+
+    .nav-tab-item.active {
+      color: #38bdf8;
+    }
+
+    .nav-tab-item.active svg {
+      stroke: #38bdf8;
+      transform: translateY(-2px);
+      filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.6));
+    }
+
+    .nav-tab-item:active {
+      transform: scale(0.92);
+    }
+
+    /* App Views / Pages */
+    .app-view {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+    .app-view.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Search View */
+    .search-container {
+      padding: 16px;
+    }
+
+    .search-input-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--card-bg);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 16px;
+      padding: 10px 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
+
+    .search-input-box input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+    }
+
+    .search-input-box input::placeholder { color: #64748b; }
+
+    /* Account Profile View */
+    .profile-card {
+      margin: 16px;
+      background: linear-gradient(145deg, #0d152a, #111a33);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+    }
+
+    .profile-avatar-lg {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      padding: 3px;
+      background: var(--gold-gradient);
+      margin: 0 auto 12px;
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+    }
+
+    .profile-avatar-lg img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-name-lg {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .profile-vip-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--vip-gradient);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 8px;
+    }
+
+    .profile-stats-row {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 18px;
+      font-weight: 800;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+
+    .profile-menu-list {
+      margin: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .profile-menu-item {
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      color: #e2e8f0;
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .profile-menu-item:last-child { border-bottom: none; }
+    .profile-menu-item:hover { background: rgba(255, 255, 255, 0.04); }
+
+    /* Video Player Modal */
+    #modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000000;
+      z-index: 10000;
+      display: none;
+      flex-direction: column;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+    #modal.active { display: flex; }
+
+    .player-header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(16px);
+      padding: max(10px, env(safe-area-inset-top)) 12px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-back-player {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
       width: 36px;
       height: 36px;
       border-radius: 50%;
@@ -118,735 +836,154 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: all 0.2s ease;
+      font-size: 16px;
+      transition: transform 0.2s;
     }
-    .btn-action-round:active { transform: scale(0.92); }
-    .btn-action-round.spinning svg {
-      animation: spin 0.8s linear infinite;
+    .btn-back-player:active { transform: scale(0.9); }
+
+    .player-wrap {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000000;
+      position: relative;
+      max-height: 45vh;
     }
 
-    .bell-badge {
-      position: absolute;
-      top: -2px;
-      right: -2px;
-      background: #ef4444;
-      color: #fff;
-      font-size: 9px;
-      font-weight: 700;
-      min-width: 17px;
-      height: 17px;
-      border-radius: 99px;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+    }
+
+    /* Video Quick Controls */
+    .player-quick-controls {
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 0 4px;
-      border: 2px solid var(--bg);
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.15); }
-    }
-
-    .search-bar {
-      position: relative;
-      width: 100%;
-    }
-    .search-bar input {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 8px 12px 8px 34px;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 13px;
-      outline: none;
-      transition: all 0.2s ease;
-    }
-    .search-bar input:focus {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(99, 102, 241, 0.5);
-      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
-    }
-    .search-bar input::placeholder { color: #64748b; font-size: 12.5px; }
-    .search-icon {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #64748b;
-      pointer-events: none;
-    }
-
-    /* Filter Tabs */
-    .filter-tabs {
-      display: flex;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #070a13;
+      border-bottom: 1px solid var(--border);
       gap: 6px;
       overflow-x: auto;
-      padding: 4px 14px 10px;
-      scrollbar-width: none;
     }
-    .filter-tabs::-webkit-scrollbar { display: none; }
-    .tab-btn {
-      flex-shrink: 0;
-      background: rgba(255, 255, 255, 0.04);
+
+    .ctrl-pill-btn {
+      background: rgba(255, 255, 255, 0.06);
       border: 1px solid var(--border);
-      color: var(--text-muted);
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: 500;
-      padding: 6px 13px;
-      border-radius: 20px;
+      color: #cbd5e1;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 11px;
+      font-weight: 700;
       cursor: pointer;
-      transition: all 0.2s ease;
       display: flex;
       align-items: center;
       gap: 4px;
+      white-space: nowrap;
+      transition: all 0.2s;
     }
-    .tab-btn.active {
-      background: var(--accent);
-      border-color: var(--accent);
+    .ctrl-pill-btn:active { transform: scale(0.94); }
+    .ctrl-pill-btn.active {
+      background: var(--accent-gradient);
       color: #fff;
-      font-weight: 600;
-      box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
-    }
-    .tab-btn.tab-tg.active {
-      background: #0088cc;
-      border-color: #0088cc;
-      box-shadow: 0 2px 10px rgba(0, 136, 204, 0.4);
-    }
-    .tab-btn.tab-recent.active {
-      background: #ef4444;
-      border-color: #ef4444;
-      box-shadow: 0 2px 10px rgba(239, 68, 68, 0.4);
+      border-color: transparent;
     }
 
-    /* Main Container */
-    main {
-      padding: 6px 10px 80px;
-      max-width: 1200px;
-      margin: 0 auto;
+    .modal-content-body {
+      padding: 14px;
+      flex: 1;
+      background: var(--bg);
     }
 
-    .section-head {
+    .modal-show-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.3;
+    }
+
+    .modal-meta-row {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin: 12px 4px 10px;
-    }
-    .section-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .section-badge {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-muted);
-      background: rgba(255, 255, 255, 0.06);
-      padding: 1px 7px;
-      border-radius: 10px;
-    }
-
-    /* Compact 3-Column Grid */
-    .media-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 8px;
-    }
-
-    @media (min-width: 600px) {
-      .media-grid { grid-template-columns: repeat(4, 1fr); gap: 12px; }
-      main { padding: 10px 16px 80px; }
-    }
-    @media (min-width: 900px) {
-      .media-grid { grid-template-columns: repeat(6, 1fr); gap: 14px; }
-    }
-
-    /* Card */
-    .media-card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      position: relative;
-      border: 1px solid var(--border);
-      transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s ease, border-color 0.18s ease;
-    }
-    .media-card:active {
-      transform: scale(0.96);
-      border-color: rgba(99, 102, 241, 0.4);
-    }
-    .media-card.is-watched {
-      border-color: rgba(99, 102, 241, 0.25);
-    }
-
-    .thumb-wrap {
-      position: relative;
-      width: 100%;
-      padding-top: 142%; /* 1:1.42 poster ratio */
-      background: #141b2d;
-      overflow: hidden;
-    }
-    .thumb-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    .thumb-placeholder {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(145deg, #1e1b4b, #0f172a);
-      color: #818cf8;
-      font-size: 30px;
-      padding: 8px;
-    }
-    .thumb-placeholder-text {
-      font-size: 10.5px;
-      font-weight: 700;
-      color: #f1f5f9;
-      margin-top: 6px;
-      text-align: center;
-      line-height: 1.25;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .overlay-top-left {
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-      z-index: 2;
-    }
-    .overlay-top-right {
-      position: absolute;
-      top: 6px;
-      right: 6px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 3px;
-      z-index: 2;
-    }
-    .overlay-bottom {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 20px 6px 6px;
-      background: linear-gradient(to top, rgba(9,12,20,0.95) 0%, transparent 100%);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 2;
+      margin: 8px 0;
+      font-size: 11.5px;
+      color: #94a3b8;
     }
 
     .badge-chip {
-      font-size: 9px;
-      font-weight: 700;
-      padding: 2px 5px;
-      border-radius: 4px;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      letter-spacing: 0.2px;
-      line-height: 1.2;
-    }
-    .badge-series { background: rgba(99, 102, 241, 0.88); color: #fff; }
-    .badge-movie  { background: rgba(249, 115, 22, 0.88); color: #fff; }
-    .badge-tg     { background: rgba(0, 136, 204, 0.92); color: #fff; }
-    .badge-hd     { background: rgba(0, 0, 0, 0.65); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
-    .badge-ep-count { background: #ef4444; color: #fff; }
-    .badge-watched { background: rgba(16, 185, 129, 0.88); color: #fff; }
-    .badge-year { font-size: 10px; font-weight: 600; color: #cbd5e1; }
-    .badge-new-tag { background: #10b981; color: #fff; font-size: 8.5px; }
-
-    .card-info {
-      padding: 7px 6px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      flex-grow: 1;
-    }
-    .card-title {
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.3;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      word-break: break-word;
-    }
-    .card-last-watched {
-      font-size: 9.5px;
-      font-weight: 500;
-      color: #818cf8;
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      margin-top: 2px;
-    }
-
-    /* State & Loader */
-    .state-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 20px;
-      text-align: center;
-      color: var(--text-muted);
-      gap: 12px;
-    }
-    .spinner {
-      width: 32px;
-      height: 32px;
-      border: 3px solid rgba(255,255,255,0.1);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* Video Player Modal */
-    #modal {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      background: var(--bg);
-      display: none;
-      flex-direction: column;
-      overflow-y: auto;
-      overscroll-behavior: contain;
-      padding-bottom: max(40px, env(safe-area-inset-bottom, 32px));
-    }
-    #modal.active { display: flex; }
-
-    .modal-sticky-player {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: #000;
-      width: 100%;
-    }
-    .modal-nav {
-      position: absolute;
-      top: max(12px, env(safe-area-inset-top));
-      left: 12px;
-      z-index: 99999 !important;
-      pointer-events: auto !important;
-    }
-    .btn-back {
-      background: rgba(0, 0, 0, 0.78);
-      border: 1.5px solid rgba(255,255,255,0.3);
-      color: #fff;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 4px 18px rgba(0,0,0,0.7);
-      pointer-events: auto !important;
-      touch-action: manipulation;
-    }
-    .btn-back:active { transform: scale(0.90); background: rgba(0,0,0,0.95); }
-
-    #player {
-      width: 100%;
-      max-height: 48vh;
-      aspect-ratio: 16/9;
-      background: #000;
-      display: block;
-      object-fit: contain;
-    }
-
-    video::-webkit-media-controls-panel {
-      padding-bottom: max(24px, env(safe-area-inset-bottom, 20px)) !important;
-      margin-bottom: max(16px, env(safe-area-inset-bottom, 16px)) !important;
-    }
-    video::-webkit-media-controls-enclosure {
-      padding-bottom: max(24px, env(safe-area-inset-bottom, 20px)) !important;
-    }
-
-    .fallback-banner {
-      background: linear-gradient(90deg, #1e1b4b, #312e81);
-      border-bottom: 1px solid rgba(99, 102, 241, 0.4);
-      padding: 7px 12px;
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 11.5px;
-      color: #c7d2fe;
-    }
-    .fallback-banner.show { display: flex; }
-    .btn-switch-server {
-      background: #4f46e5;
-      color: #fff;
-      border: none;
+      background: rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      padding: 2px 8px;
       border-radius: 6px;
-      padding: 3px 8px;
-      font-size: 11px;
-      font-weight: 600;
-      cursor: pointer;
+      font-weight: 700;
+      font-size: 10.5px;
+    }
+    .badge-chip.badge-hd {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
     }
 
-    /* Player Controls Bar (Prev, Next, Lock, AutoNext) */
-    .player-controls-bar {
+    /* Episode Selector Grid */
+    .episodes-section-title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin: 16px 0 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 6px;
-      padding: 8px 12px;
-      background: #0d121f;
-      border-bottom: 1px solid var(--border);
-    }
-    .ctrl-btn {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--border);
-      color: var(--text);
-      font-family: inherit;
-      font-size: 11.5px;
-      font-weight: 600;
-      padding: 7px 6px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.18s ease;
-      white-space: nowrap;
-    }
-    .ctrl-btn:active { transform: scale(0.94); }
-    .ctrl-btn.active {
-      background: rgba(99, 102, 241, 0.2);
-      border-color: rgba(99, 102, 241, 0.4);
-      color: #818cf8;
-    }
-    .ctrl-btn:disabled {
-      opacity: 0.35;
-      cursor: not-allowed;
-      pointer-events: none;
-    }
-    .ctrl-btn-lock {
-      flex: 0.8;
-      background: rgba(239, 68, 68, 0.1);
-      border-color: rgba(239, 68, 68, 0.25);
-      color: #fca5a5;
     }
 
-    /* Screen Lock Overlay */
-    #screen-lock-shield {
-      position: absolute;
-      inset: 0;
-      z-index: 50;
-      background: rgba(0, 0, 0, 0.01);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      pointer-events: auto;
-    }
-    #screen-lock-shield.locked {
-      display: flex;
-    }
-    .floating-unlock-btn {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background: rgba(16, 21, 36, 0.85);
-      border: 1px solid rgba(239, 68, 68, 0.5);
-      color: #f87171;
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 8px 14px;
-      border-radius: 99px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      animation: pulse 2s infinite;
-    }
-    .floating-unlock-btn:active { transform: scale(0.92); }
-
-    .modal-body {
-      padding: 14px 14px 60px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .modal-title {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.35;
-      color: #fff;
-    }
-    .modal-meta {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 6px;
-    }
-    .modal-synopsis {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .modal-synopsis.expanded { -webkit-line-clamp: unset; }
-    .synopsis-toggle {
-      font-size: 11.5px;
-      color: #818cf8;
-      font-weight: 600;
-      cursor: pointer;
-      align-self: flex-start;
-    }
-
-    /* Modal Action Bar */
-    .modal-actions-bar {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 4px;
-    }
-    .btn-tg-stream {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: var(--tg-gradient);
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 14px;
-      border-radius: 10px;
-      font-size: 12.5px;
-      font-weight: 700;
-      box-shadow: 0 4px 14px rgba(0, 136, 204, 0.35);
-      transition: transform 0.15s ease;
-    }
-    .btn-tg-stream:active { transform: scale(0.97); }
-
-    /* Episodes Section */
-    .episodes-section {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .episodes-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 13.5px;
-      font-weight: 700;
-      color: #fff;
-    }
-    .episodes-pills-grid {
+    .ep-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
-      gap: 6px;
+      grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+      gap: 8px;
+      max-height: 280px;
+      overflow-y: auto;
+      padding-right: 2px;
     }
+
     .ep-pill {
-      background: rgba(255, 255, 255, 0.05);
+      background: #121a2e;
       border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 8px 4px;
+      color: #cbd5e1;
+      border-radius: 10px;
+      padding: 10px 4px;
+      font-size: 12.5px;
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
       cursor: pointer;
-      transition: all 0.18s ease;
       text-align: center;
-      position: relative;
+      transition: all 0.2s;
     }
-    .ep-pill:active { transform: scale(0.94); }
+
+    .ep-pill:hover { border-color: rgba(56, 189, 248, 0.5); }
     .ep-pill.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-      box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+      background: var(--accent-gradient);
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
     }
-    .ep-pill.ep-watched:not(.active) {
-      border-color: rgba(16, 185, 129, 0.4);
+    .ep-pill.ep-watched {
       background: rgba(16, 185, 129, 0.1);
+      border-color: rgba(16, 185, 129, 0.35);
       color: #34d399;
     }
-    .ep-pill.is-tg:not(.active) {
-      border-color: rgba(0, 136, 204, 0.35);
-    }
-    .ep-pill.no-video {
-      opacity: 0.35;
-      cursor: not-allowed;
-      border-style: dashed;
-    }
 
-    /* Notification Drawer */
-    #notif-drawer {
-      position: fixed;
-      inset: 0;
-      z-index: 90;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      display: none;
-      justify-content: flex-end;
-    }
-    #notif-drawer.active { display: flex; }
-    .notif-panel {
-      width: 85%;
-      max-width: 380px;
-      height: 100%;
-      background: var(--surface);
-      border-left: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      animation: slideInRight 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    @keyframes slideInRight {
-      from { transform: translateX(100%); }
-      to { transform: translateX(0); }
-    }
-    .notif-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: max(14px, env(safe-area-inset-top)) 14px 14px;
-      border-bottom: 1px solid var(--border);
-    }
-    .notif-head-title {
-      font-size: 14px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .btn-close-notif {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      cursor: pointer;
-      padding: 4px;
-    }
-    .notif-list {
-      flex: 1;
-      overflow-y: auto;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .notif-card {
-      display: flex;
-      gap: 10px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 8px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .notif-card:active { background: rgba(255,255,255,0.06); }
-    .notif-thumb {
-      width: 44px;
-      height: 60px;
-      border-radius: 6px;
-      object-fit: cover;
-      background: #141b2d;
-      flex-shrink: 0;
-    }
-    .notif-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 3px;
-      overflow: hidden;
-    }
-    .notif-show-title {
-      font-size: 12px;
-      font-weight: 600;
-      color: #fff;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .notif-desc {
-      font-size: 11px;
-      color: #38bdf8;
-      display: flex;
-      align-items: center;
-      gap: 3px;
-    }
-    .notif-time {
-      font-size: 10px;
-      color: var(--text-muted);
-    }
-
-    /* Toast */
-    #toast {
-      position: fixed;
-      bottom: max(20px, env(safe-area-inset-bottom));
-      left: 50%;
-      transform: translateX(-50%) translateY(100px);
-      background: rgba(16, 21, 36, 0.96);
-      border: 1px solid rgba(255,255,255,0.18);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 99px;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.6);
-      z-index: 200;
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      pointer-events: none;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      white-space: nowrap;
-    }
-    #toast.show { transform: translateX(-50%) translateY(0); }
-
-    /* Realtime Floating Notification Banner */
+    /* Notification Banner */
     #new-backup-banner {
       position: fixed;
       top: max(12px, env(safe-area-inset-top));
       left: 12px;
       right: 12px;
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.98));
+      background: linear-gradient(135deg, rgba(13, 21, 42, 0.98), rgba(20, 31, 56, 0.98));
       border: 1px solid rgba(56, 189, 248, 0.5);
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 12px 14px;
-      box-shadow: 0 10px 32px rgba(0,0,0,0.7), 0 0 24px rgba(56,189,248,0.25);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.8), 0 0 24px rgba(56,189,248,0.3);
       z-index: 99999;
       display: flex;
       align-items: center;
@@ -857,249 +994,480 @@
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
     }
-    #new-backup-banner.show {
-      transform: translateY(0);
+    #new-backup-banner.show { transform: translateY(0); }
+
+    /* Notification Drawer */
+    #notif-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(340px, 90vw);
+      background: #090e1c;
+      border-left: 1px solid var(--border);
+      z-index: 10001;
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -10px 0 30px rgba(0,0,0,0.8);
     }
+    #notif-drawer.active { transform: translateX(0); }
+
+    .drawer-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .notif-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .notif-item {
+      background: #121a2e;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .notif-item:hover { background: #1a2542; }
+
+    /* Loading Spinner */
+    .spinner {
+      width: 24px;
+      height: 24px;
+      border: 2.5px solid rgba(255,255,255,0.1);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 85px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      z-index: 100000;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+      pointer-events: none;
+    }
+    #toast.show { transform: translateX(-50%) translateY(0); }
   </style>
 </head>
 <body>
 
 <!-- Realtime Floating Notification Banner -->
 <div id="new-backup-banner">
-  <div style="font-size:26px; filter:drop-shadow(0 0 6px rgba(56,189,248,0.6));">🔔</div>
+  <div style="font-size:24px; filter:drop-shadow(0 0 6px rgba(56,189,248,0.6));">🔔</div>
   <div style="flex:1; min-width:0;">
     <div style="font-size:10.5px; font-weight:800; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">✨ ការ Backup ចូលថ្មី (New Update)</div>
-    <div id="new-backup-title" style="font-size:13px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px;">រឿងថ្មីទើបបញ្ចូល</div>
-    <div id="new-backup-desc" style="font-size:11px; color:#cbd5e1; margin-top:1px;">ចុចដើម្បីបើកទស្សនាភ្លាមៗ ›</div>
+    <div id="new-backup-title" style="font-size:13px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:1px;">រឿងថ្មីទើបបញ្ចូល</div>
+    <div id="new-backup-desc" style="font-size:11px; color:#cbd5e1;">ចុចដើម្បីបើកទស្សនាភ្លាមៗ ›</div>
   </div>
   <button id="btn-dismiss-banner" style="background:rgba(255,255,255,0.12); border:none; color:#fff; border-radius:50%; width:24px; height:24px; cursor:pointer; font-size:11px; display:flex; align-items:center; justify-content:center;">✕</button>
 </div>
 
-<header>
-  <div class="nav-top">
-    <div class="brand">
-      <span class="brand-logo">VIP DRAMA</span>
-      <span class="brand-badge">FHD</span>
-      <span class="tg-cloud-badge">✈️ Telegram</span>
+<!-- Top User Header Bar -->
+<header class="top-header">
+  <div class="user-profile-box" id="header-user-box">
+    <div class="user-avatar-wrap">
+      <img id="user-avatar-img" class="user-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Avatar" />
     </div>
-    <div class="header-actions">
-      <button class="btn-action-round" id="btn-sync" title="Sync & Refresh Posters">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-      </button>
-      <button class="btn-action-round" id="btn-notif" aria-label="Notifications">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
-        <span class="bell-badge" id="notif-count" style="display:none;">0</span>
-      </button>
+    <div class="user-info">
+      <span class="user-greeting">សួស្តី</span>
+      <span class="user-handle" id="user-display-name">@mengsmmkh1</span>
     </div>
   </div>
-  <div class="search-bar">
-    <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-    <input id="search-input" type="text" placeholder="ស្វែងរកភាពយន្ត / Search VIP dramas..." />
+  <div class="header-actions">
+    <button class="icon-btn" id="btn-header-search" title="Search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    </button>
+    <button class="icon-btn" id="btn-header-notif" title="Notifications">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+      <span class="notif-badge" id="header-notif-count">0</span>
+    </button>
+    <button class="vip-badge-btn" id="btn-vip-status">
+      <span>👑</span>
+      <span>VIP</span>
+    </button>
   </div>
 </header>
 
-<div class="filter-tabs">
-  <button class="tab-btn active" data-filter="all">ទាំងអស់ (All)</button>
-  <button class="tab-btn tab-tg" data-filter="telegram">✈️ Telegram Archive</button>
-  <button class="tab-btn" data-filter="dramaora">🎬 Dramaora</button>
-  <button class="tab-btn tab-recent" data-filter="recent">🕒 ទើបមើល (Recent)</button>
-  <button class="tab-btn" data-filter="movie">រឿងទោល (Movies)</button>
-  <button class="tab-btn" data-filter="series">រឿងភាគ (Series)</button>
-  <button class="tab-btn" data-filter="featured">ពេញនិយម (Featured)</button>
+<!-- Subtitle Ticker Bar -->
+<div class="ticker-bar">
+  <span class="ticker-icon">🎬</span>
+  <span class="ticker-text">រឿងភាគថ្មីៗ គុណភាពច្បាស់ កំពុងរង់ចាំអ្នក</span>
+  <span class="ticker-heart" id="btn-ticker-heart">❤️</span>
 </div>
 
-<main>
-  <div id="loader" class="state-box" style="display:none;">
-    <div class="spinner"></div>
-    <div style="font-size:12px;">កំពុងផ្ទុកទិន្នន័យពី Cloud Archive...</div>
-  </div>
+<!-- ================= VIEW 1: HOME ================= -->
+<div id="view-home" class="app-view active">
 
-  <div id="content" style="display:block;">
-    <div class="section-head">
-      <span class="section-title">
-        <span id="section-icon">🎬</span>
-        <span id="section-label">ភាពយន្តទាំងអស់</span>
-      </span>
-      <span class="section-badge" id="item-count">0</span>
+  <!-- Hero Spotlight Carousel -->
+  <div class="hero-spotlight" id="hero-spotlight-card">
+    <div class="hero-bg-art" id="hero-bg-art"></div>
+    <div class="hero-content">
+      <div class="hero-poster-box">
+        <img id="hero-poster-img" class="hero-poster-img" src="" alt="Hero Poster" />
+        <span class="hero-vip-tag">👑 VIP</span>
+      </div>
+      <div class="hero-details">
+        <div class="hero-badges-row">
+          <span class="badge-trend">🔥 កំពុងពេញនិយម</span>
+          <span class="badge-rank" id="hero-rank-tag">TOP #1</span>
+        </div>
+        <h2 class="hero-title" id="hero-title">កំពុងទាញទិន្នន័យ...</h2>
+        <div class="hero-meta">
+          <span class="rating">⭐ <span id="hero-rating">9.8</span></span>
+          <span id="hero-year">2024</span>
+          <span class="hd-badge">1080p FHD</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-hero-play" id="btn-hero-play">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>ចាក់មើល</span>
+          </button>
+          <button class="btn-hero-add" id="btn-hero-add">
+            <span id="hero-add-icon">+</span>
+            <span id="hero-add-text">បញ្ជីខ្ញុំ</span>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="media-grid" id="grid"></div>
+
+    <!-- Mini Thumbnails Row to Switch Spotlight -->
+    <div class="hero-thumb-row" id="hero-thumbs-row"></div>
   </div>
 
-  <div id="empty-state" class="state-box" style="display:none;">
-    <div style="font-size:32px; margin-bottom:8px;">🔍</div>
-    <div id="empty-msg" style="font-size:13px;">រកមិនឃើញភាពយន្តទេ</div>
+  <!-- Section: Trending Now (កំពុងល្បី) -->
+  <div class="section-wrap">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="section-title-icon">⊞</span>
+        <span>កំពុងល្បី</span>
+      </div>
+      <div class="section-view-all" id="btn-see-all-trending">
+        <span>មើលទាំងអស់</span>
+        <span>›</span>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="filter-pills-row">
+      <button class="filter-pill active" data-filter="all">ទាំងអស់</button>
+      <button class="filter-pill" data-filter="dramaora">🎬 ភាគខ្លី Dramaora</button>
+      <button class="filter-pill" data-filter="chinese">🇨🇳 រឿងភាគចិន</button>
+      <button class="filter-pill" data-filter="korean">🇰🇷 រឿងភាគកូរ៉េ</button>
+      <button class="filter-pill" data-filter="thai">🇹🇭 រឿងភាគថៃ</button>
+    </div>
+
+    <!-- Drama Cards Grid -->
+    <div class="drama-grid" id="main-drama-grid">
+      <div class="spinner"></div>
+    </div>
   </div>
-</main>
+
+</div>
+
+<!-- ================= VIEW 2: SEARCH ================= -->
+<div id="view-search" class="app-view">
+  <div class="search-container">
+    <div class="search-input-box">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="tab-search-input" placeholder="ស្វែងរកចំណងជើងរឿង ឬភាគ..." autofocus />
+      <button id="btn-clear-search" style="background:none;border:none;color:#64748b;font-size:16px;cursor:pointer;display:none;">✕</button>
+    </div>
+    <div style="margin-top:16px;">
+      <div class="section-title" style="margin-bottom:12px;">លទ្ធផលស្វែងរក</div>
+      <div class="drama-grid" id="search-results-grid">
+        <div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">សូមវាយបញ្ចូលឈ្មោះរឿងដែលអ្នកចង់ស្វែងរក</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= VIEW 3: DRAMAS ================= -->
+<div id="view-dramas" class="app-view">
+  <div class="section-wrap" style="padding-top:10px;">
+    <div class="section-title" style="margin-bottom:14px;">
+      <span class="section-title-icon">📺</span>
+      <span>រឿងភាគទាំងអស់ (All VIP Dramas)</span>
+    </div>
+    <div class="drama-grid" id="all-dramas-grid"></div>
+  </div>
+</div>
+
+<!-- ================= VIEW 4: SHORT PLAYS ================= -->
+<div id="view-shorts" class="app-view">
+  <div class="section-wrap" style="padding-top:10px;">
+    <div class="section-title" style="margin-bottom:14px;">
+      <span class="section-title-icon">🎬</span>
+      <span>រឿងភាគខ្លី Dramaora (VIP 100% Unlocked)</span>
+    </div>
+    <div class="drama-grid" id="shorts-dramas-grid"></div>
+  </div>
+</div>
+
+<!-- ================= VIEW 5: WATCHLIST ================= -->
+<div id="view-watchlist" class="app-view">
+  <div class="section-wrap" style="padding-top:10px;">
+    <div class="section-title" style="margin-bottom:14px;">
+      <span class="section-title-icon">📑</span>
+      <span>បញ្ជីរឿងរបស់ខ្ញុំ (My Watchlist)</span>
+    </div>
+    <div class="drama-grid" id="watchlist-grid">
+      <div style="grid-column:1/-1;text-align:center;color:#64748b;padding:40px 0;font-size:13px;">មិនទាន់មានរឿងក្នុងបញ្ជីនៅឡើយទេ។ ចុចប៊ូតុង "+ បញ្ជីខ្ញុំ" ដើម្បីរក្សាទុក!</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= VIEW 6: ACCOUNT ================= -->
+<div id="view-account" class="app-view">
+  <div class="profile-card">
+    <div class="profile-avatar-lg">
+      <img id="account-avatar-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80" alt="Avatar" />
+    </div>
+    <div class="profile-name-lg" id="account-name-lg">@mengsmmkh1</div>
+    <div class="profile-vip-status">👑 VIP Lifetime Member</div>
+    <div class="profile-stats-row">
+      <div class="stat-box">
+        <div class="stat-num" id="stat-shows-count">0</div>
+        <div class="stat-label">រឿងសរុប</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="stat-watched-count">0</div>
+        <div class="stat-label">ភាគមើលរួច</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="stat-saved-count">0</div>
+        <div class="stat-label">បានរក្សាទុក</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-menu-list">
+    <div class="profile-menu-item" id="btn-account-sync">
+      <span>🔄 Sync ទិន្នន័យពី Google Sheets</span>
+      <span>›</span>
+    </div>
+    <div class="profile-menu-item" id="btn-account-clear-cache">
+      <span>🧹 សម្អាត Cache (Clear History)</span>
+      <span>›</span>
+    </div>
+    <div class="profile-menu-item" id="btn-account-admin">
+      <span>⚙️ Admin Panel (គ្រប់គ្រងរឿង)</span>
+      <span>›</span>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom Floating Navigation Bar -->
+<nav class="bottom-nav">
+  <button class="nav-tab-item active" data-tab="home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>ទំព័រដើម</span>
+  </button>
+  <button class="nav-tab-item" data-tab="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <span>ស្វែងរក</span>
+  </button>
+  <button class="nav-tab-item" data-tab="dramas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+    <span>រឿង</span>
+  </button>
+  <button class="nav-tab-item" data-tab="shorts">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+    <span>ភាគខ្លី</span>
+  </button>
+  <button class="nav-tab-item" data-tab="watchlist">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+    <span>បញ្ជី</span>
+  </button>
+  <button class="nav-tab-item" data-tab="account">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>គណនី</span>
+  </button>
+</nav>
 
 <!-- Notification Drawer -->
 <div id="notif-drawer">
-  <div class="notif-panel">
-    <div class="notif-head">
-      <div class="notif-head-title">
-        <span>🔔</span>
-        <span>ការអាប់ដេតថ្មីៗ (Updates)</span>
-      </div>
-      <button class="btn-close-notif" id="btn-close-notif">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-      </button>
+  <div class="drawer-header">
+    <div style="font-size:15px; font-weight:800; color:#fff; display:flex; align-items:center; gap:6px;">
+      <span>🔔</span>
+      <span>ការ Backup ថ្មីៗ</span>
     </div>
-    <div class="notif-list" id="notif-list">
-      <div class="state-box" style="padding:40px 0;"><div class="spinner"></div></div>
-    </div>
+    <button id="btn-close-drawer" style="background:none; border:none; color:#94a3b8; font-size:18px; cursor:pointer;">✕</button>
+  </div>
+  <div class="notif-list" id="notif-list-container">
+    <div style="text-align:center; color:#64748b; padding:20px; font-size:12px;">គ្មានការ Backup ថ្មីទេ</div>
   </div>
 </div>
 
 <!-- Video Player Modal -->
 <div id="modal">
-  <div class="modal-sticky-player">
-    <div class="modal-nav">
-      <button class="btn-back" id="btn-close" aria-label="Back">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
-      </button>
-    </div>
-    <video id="player" controls playsinline preload="auto"></video>
-    
-    <!-- Screen Lock Overlay Shield -->
-    <div id="screen-lock-shield">
-      <button class="floating-unlock-btn" id="btn-floating-unlock" type="button">
-        <span>🔒</span>
-        <span>ចុចដើម្បីដោះសោរ (Unlock)</span>
-      </button>
-    </div>
-
-    <!-- Quick Episode & Lock Controls Bar -->
-    <div class="player-controls-bar">
-      <button class="ctrl-btn" id="btn-seek-back" title="ថយក្រោយ 10 វិនាទី" type="button">
-        <span>⏪</span>
-        <span>-10s</span>
-      </button>
-      <button class="ctrl-btn" id="btn-prev-ep" title="Previous Episode" type="button">
-        <span>⏮️</span>
-        <span>ភាគមុន</span>
-      </button>
-      <button class="ctrl-btn active" id="btn-toggle-autonext" title="Toggle Auto Next Episode" type="button">
-        <span>⚡</span>
-        <span id="label-autonext">Auto: ON</span>
-      </button>
-      <button class="ctrl-btn ctrl-btn-lock" id="btn-lock-screen" title="Lock Screen Controls" type="button">
-        <span>🔒</span>
-        <span>Lock</span>
-      </button>
-      <button class="ctrl-btn" id="btn-next-ep" title="Next Episode" type="button">
-        <span>ភាគបន្ទាប់</span>
-        <span>⏭️</span>
-      </button>
-      <button class="ctrl-btn" id="btn-seek-fwd" title="ខាទៅមុខ 10 វិនាទី" type="button">
-        <span>+10s</span>
-        <span>⏩</span>
-      </button>
-    </div>
-    <!-- Automatic Fallback Banner -->
-    <div class="fallback-banner" id="fallback-banner">
-      <span id="fallback-msg">⚠️ Server ដើមមានបញ្ហា - បានប្តូរទៅ Server បម្រុង</span>
-      <button class="btn-switch-server" id="btn-retry-stream" type="button">សាកល្បងឡើងវិញ</button>
-    </div>
+  <div class="player-header">
+    <button class="btn-back-player" id="btn-modal-back" title="Back">‹</button>
+    <div id="m-header-title" style="font-size:14px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:65%;">ភាពយន្ត</div>
+    <div style="width:36px;"></div>
   </div>
 
-  <div class="modal-body">
-    <h1 class="modal-title" id="m-title"></h1>
-    <div class="modal-meta" id="m-meta"></div>
-    <p class="modal-synopsis" id="m-synopsis"></p>
-    <span class="synopsis-toggle" id="m-synopsis-toggle">អានបន្ថែម ›</span>
+  <div class="player-wrap">
+    <video id="player" controls playsinline webkit-playsinline></video>
+  </div>
 
-    <div class="modal-actions-bar" id="m-actions-bar"></div>
+  <!-- Player Controls Row -->
+  <div class="player-quick-controls">
+    <button class="ctrl-pill-btn" id="ctrl-prev">⏮ ភាគមុន</button>
+    <button class="ctrl-pill-btn" id="ctrl-rewind">⏪ -10s</button>
+    <button class="ctrl-pill-btn" id="ctrl-forward">+10s ⏩</button>
+    <button class="ctrl-pill-btn" id="ctrl-next">ភាគបន្ទាប់ ⏭</button>
+    <button class="ctrl-pill-btn active" id="ctrl-auto-next">Auto: ON</button>
+    <button class="ctrl-pill-btn" id="ctrl-speed">⚡ 1.0x</button>
+  </div>
 
-    <!-- Admin Action: Delete Drama -->
-    <div id="admin-modal-controls" style="display:none;margin-top:6px;">
-      <button id="btn-admin-delete-show" style="width:100%;padding:10px;border-radius:10px;font-size:12.5px;font-weight:700;background:rgba(239,68,68,0.2);color:#f87171;border:1px solid rgba(239,68,68,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;">
-        <span>🗑️</span>
-        <span>លុបរឿងនេះចេញពី APK & Cloud (Admin Delete)</span>
-      </button>
+  <div class="modal-content-body">
+    <h1 class="modal-show-title" id="m-title">ចំណងជើង</h1>
+    <div class="modal-meta-row" id="m-meta"></div>
+    <div id="m-synopsis" style="font-size:12px; color:#cbd5e1; line-height:1.6; margin-bottom:14px;"></div>
+
+    <div class="episodes-section-title">
+      <span>បញ្ជីភាគទាំងអស់</span>
+      <span style="font-size:11px; color:#38bdf8; font-weight:700;">សរុប <span id="m-ep-count">0</span> ភាគ</span>
     </div>
-
-    <div class="episodes-section">
-      <div class="episodes-header">
-        <span>បញ្ជីភាគ (Episodes)</span>
-        <span class="section-badge" id="m-ep-count">0</span>
-      </div>
-      <div class="episodes-pills-grid" id="m-episodes-grid"></div>
-    </div>
+    <div class="ep-grid" id="m-episodes-grid"></div>
   </div>
 </div>
 
-<div id="toast"></div>
+<!-- Toast Box -->
+<div id="toast">បានរក្សាទុក!</div>
 
 <script>
-let toastTimeout = null;
-function showToast(msg) {
-  try {
-    const t = document.getElementById("toast");
-    if (!t) return;
-    t.textContent = msg;
-    t.classList.add("show");
-    clearTimeout(toastTimeout);
-    toastTimeout = setTimeout(() => t.classList.remove("show"), 2800);
-  } catch (e) {}
-}
+// Master Configuration & Endpoints
+const STORAGE_MANIFEST_KEY = "animew_master_manifest_cache";
+const STORAGE_WATCHED_KEY = "animew_watched_episodes";
+const STORAGE_HISTORY_KEY = "animew_watch_history";
+const STORAGE_WATCHLIST_KEY = "animew_vip_watchlist";
 
-const SB_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co";
-const ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvd2p4aGtpanRsc2R2aHl1ZGR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMjE3MTIsImV4cCI6MjEwMTc5NzcxMn0.ulxBnNG6fc6muqPrAxzEGw0VPyZpR5ug8bY713PyWGg";
-const GITHUB_MANIFEST_URL = "https://raw.githubusercontent.com/sheakmeng/AnimewPro/main/backup_manifest.json";
 const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeNw3vClMRYMWssYT-gTncSntQUvVvHb43QcDYR5k4RXLrFPDzS5vEh5PZyWM95XXmSg/exec";
 
-const STORAGE_WATCHED_KEY = "animew_watched_shows";
-const STORAGE_EPS_KEY = "animew_watched_episodes";
-const STORAGE_MANIFEST_KEY = "animew_cached_manifest_v2";
-const STORAGE_SEEN_BACKUPS_KEY = "animew_seen_backup_ep_ids";
+const KNOWN_POSTERS = {
+  "show_Fallen Desire": "https://img.dramaora.tv/cover/2026/02/10/7ba50616b777a83d78cba801a61352e6.jpg",
+  "show_Cursed ByDesire": "https://img.dramaora.tv/cover/2026/02/10/893608d53ef69b6ba18ce9ee99c7d4ea.jpg",
+  "show_Milk Service": "https://img.dramaora.tv/cover/2026/02/10/872242fa023e32b498ba4df35e69bf4f.jpg",
+  "show_The Green Trap": "https://img.dramaora.tv/cover/2026/02/10/fe673752e259b3f3659c25f4bb59a35e.jpg",
+  "show_Queen of Control": "https://img.dramaora.tv/cover/2026/02/10/1f444c9b0e14f08c3ec0b01c3fc3ae06.jpg",
+  "show_Caged in Luxury": "https://img.dramaora.tv/cover/2026/02/10/68c8a14917dcbb54cb474c1071295b28.jpg",
+  "show_Addicted to Temptation": "https://img.dramaora.tv/cover/2026/02/10/a5f1e8e235adcf8892f39726ae2d42df.jpg",
+  "show_Love Fades Away": "https://img.dramaora.tv/cover/2026/02/10/bb97c25143a5ee2e3d74c05d7b5f54fc.jpg",
+  "show_At First Sight": "https://img.dramaora.tv/cover/2026/02/10/a2d334dd7dc2b322a3fcad5bdf57b4da.jpg",
+  "show_Felix's Happy Life": "https://img.dramaora.tv/cover/2026/02/10/88ca5fceb65ff10985da38686e09ebef.jpg",
+  "show_ON THE EDGE": "https://img.dramaora.tv/cover/2026/02/10/eb3fbe14ee47be59be615dbe36718d7f.jpg"
+};
 
-const EMBEDDED_MANIFEST = {};
-let allItems = [];
-let showEpisodeStats = {};
-let recentUpdatesList = [];
+// Global App States
 let backupManifest = {};
-let currentFilter = "all";
-let currentEpisodes = [];
+let allItems = [];
+let filteredItems = [];
+let currentFeaturedIndex = 0;
 let currentShowObj = null;
-let currentEpIdx = -1;
-let hasTriedFallback = false;
+let currentEpisodes = [];
+let currentEpIndex = 0;
+let isAutoNext = true;
+let playbackSpeedIdx = 0;
+const speeds = [1.0, 1.25, 1.5, 2.0];
 
-// Watch history persistence
-function getWatchedHistory() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}"); } catch { return {}; }
-}
-function getWatchedEpisodes() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_EPS_KEY) || "{}"); } catch { return {}; }
-}
+const playerEl = document.getElementById("player");
 
-function markEpisodeWatched(showId, epNum, epTitle) {
-  try {
-    const history = getWatchedHistory();
-    history[showId] = { lastEp: epNum, lastTitle: epTitle, timestamp: Date.now() };
-    localStorage.setItem(STORAGE_WATCHED_KEY, JSON.stringify(history));
+// Telegram User Initialization
+function initTelegramUser() {
+  if (window.Telegram && window.Telegram.WebApp) {
+    try {
+      const tg = window.Telegram.WebApp;
+      tg.ready();
+      tg.expand();
+      if (tg.setHeaderColor) tg.setHeaderColor("#070a13");
+      if (tg.setBackgroundColor) tg.setBackgroundColor("#070a13");
+      if (tg.enableClosingConfirmation) tg.enableClosingConfirmation();
 
-    const epMap = getWatchedEpisodes();
-    epMap[showId + "_" + epNum] = true;
-    localStorage.setItem(STORAGE_EPS_KEY, JSON.stringify(epMap));
-  } catch (e) {
-    console.warn("Storage save error", e);
+      const user = tg.initDataUnsafe?.user;
+      if (user) {
+        const displayName = user.username ? `@${user.username}` : (user.first_name ? `${user.first_name}` : "@mengsmmkh1");
+        document.getElementById("user-display-name").textContent = displayName;
+        document.getElementById("account-name-lg").textContent = displayName;
+        if (user.photo_url) {
+          document.getElementById("user-avatar-img").src = user.photo_url;
+          document.getElementById("account-avatar-img").src = user.photo_url;
+        }
+      }
+
+      if (tg.BackButton) {
+        tg.BackButton.onClick(() => {
+          const modal = document.getElementById("modal");
+          const notifDrawer = document.getElementById("notif-drawer");
+          if (modal && modal.classList.contains("active")) {
+            closeModal();
+          } else if (notifDrawer && notifDrawer.classList.contains("active")) {
+            notifDrawer.classList.remove("active");
+          }
+        });
+      }
+    } catch (e) {
+      console.warn("Telegram WebApp init:", e);
+    }
   }
 }
 
-async function fetchAPI(endpoint) {
+// Watchlist Helpers
+function getWatchlist() {
   try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 800);
-    const r = await fetch(`${SB_URL}/rest/v1/${endpoint}`, { headers: HEADERS, signal: controller.signal });
-    clearTimeout(timeoutId);
-    if (!r.ok) return null;
-    return await r.json();
-  } catch (e) {
-    return null;
+    return JSON.parse(localStorage.getItem(STORAGE_WATCHLIST_KEY) || "{}");
+  } catch (e) { return {}; }
+}
+function toggleWatchlist(show) {
+  const list = getWatchlist();
+  if (list[show.id]) {
+    delete list[show.id];
+    showToast("បានដកចេញពីបញ្ជី");
+  } else {
+    list[show.id] = { id: show.id, title: show.title, poster_url: show.poster_url, episodes_count: show.episodes?.length || 1 };
+    showToast("បានរក្សាទុកក្នុងបញ្ជី ❤️");
   }
+  localStorage.setItem(STORAGE_WATCHLIST_KEY, JSON.stringify(list));
+  updateHeroAddButtonState(show);
+  renderWatchlistView();
+  updateAccountStats();
 }
 
+function showToast(msg) {
+  const toast = document.getElementById("toast");
+  if (!toast) return;
+  toast.textContent = msg;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 2000);
+}
+
+// Data Fetching & Sync
 async function loadManifestData() {
-  // 1. Check local cache (cached from Google Sheets)
   try {
     const cached = localStorage.getItem(STORAGE_MANIFEST_KEY);
     if (cached) {
@@ -1110,7 +1478,6 @@ async function loadManifestData() {
     }
   } catch (e) {}
 
-  // 2. Fetch bundled backup_manifest.json if cache is empty
   if (!backupManifest || Object.keys(backupManifest).length === 0) {
     try {
       const bundledRes = await fetch("backup_manifest.json");
@@ -1123,7 +1490,6 @@ async function loadManifestData() {
     } catch (e) {}
   }
 
-  // 3. Fetch directly from Google Sheets Web App (Single Source of Truth)
   if (typeof GOOGLE_APPS_SCRIPT_URL === "string" && GOOGLE_APPS_SCRIPT_URL.startsWith("http")) {
     try {
       const gasRes = await fetch(GOOGLE_APPS_SCRIPT_URL + "?_t=" + Date.now(), { cache: "no-store" });
@@ -1132,454 +1498,211 @@ async function loadManifestData() {
         if (typeof gasData === "object" && gasData !== null && Object.keys(gasData).length > 0) {
           backupManifest = gasData;
           localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
-          console.log(`📊 Master Synced ${Object.keys(gasData).length} episodes directly from Google Sheets!`);
-          return backupManifest;
         }
       }
-    } catch (e) {
-      console.warn("ℹ️ Could not fetch Google Sheets manifest:", e);
-    }
+    } catch (e) {}
   }
-
   return backupManifest;
 }
 
-function timeAgo(dateStr) {
-  if (!dateStr) return "";
-  const now = new Date();
-  const past = new Date(dateStr);
-  const diffMs = now - past;
-  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
-  const diffDays = Math.floor(diffHours / 24);
+// Synthesize Shows and Attach Episodes
+function buildShowsFromManifest() {
+  const showMap = {};
+  Object.entries(backupManifest).forEach(([epId, item]) => {
+    const showId = item.show_id || ("show_" + (item.show_title || "Unknown"));
+    const resolvedPoster = item.poster_url || KNOWN_POSTERS[showId] || KNOWN_POSTERS[item.show_title] || "https://img.dramaora.tv/cover/2026/02/10/eb3fbe14ee47be59be615dbe36718d7f.jpg";
 
-  if (diffHours < 1) return "ទើបបញ្ចូល (Just now)";
-  if (diffHours < 24) return `${diffHours} ម៉ោងមុន`;
-  if (diffDays === 1) return "ម្សិលមិញ (Yesterday)";
-  if (diffDays < 7) return `${diffDays} ថ្ងៃមុន`;
-  return past.toLocaleDateString('km-KH', { month: 'short', day: 'numeric' });
+    if (!showMap[showId]) {
+      showMap[showId] = {
+        id: showId,
+        title: item.show_title || "VIP Drama",
+        synopsis: item.synopsis || `រឿង "${item.show_title}" បានរក្សាទុកក្នុង Telegram Cloud គុណភាព 1080p FHD រួចរាល់។`,
+        poster_url: resolvedPoster,
+        banner_url: resolvedPoster,
+        release_year: 2024,
+        rating: 9.8,
+        type: "dramaora",
+        episodes: []
+      };
+    }
+
+    showMap[showId].episodes.push({
+      id: epId,
+      show_id: showId,
+      title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
+      episode_number: parseInt(item.episode_number, 10) || 1,
+      video_url: item.original_url || "",
+      telegram_message_id: item.telegram_message_id,
+      file_size_mb: item.file_size_mb
+    });
+  });
+
+  Object.values(showMap).forEach(s => {
+    s.episodes.sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
+  });
+
+  allItems = Object.values(showMap);
+  filteredItems = [...allItems];
 }
 
-const KNOWN_POSTERS = {
-  "52023960492": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg",
-  "52027768287": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg",
-  "dramaora_52023960492": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg",
-  "dramaora_52027768287": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg",
-  "Fallen Desire": "https://v4.xtv.media/cloudv-material/20260810/ea4bdbb6019f1000aaa46b9200000000.jpg",
-  "Cursed ByDesire": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg",
-  "Cursed by Desire": "https://v4.xtv.media/cloudv-material/20260817/0ec1513d01a01000ccc953e800000000.jpg"
-};
+// Render Spotlight Banner & Mini Thumbs
+function renderSpotlight() {
+  if (allItems.length === 0) return;
+  const show = allItems[currentFeaturedIndex] || allItems[0];
+  if (!show) return;
 
-async function init(silent = false) {
-  try {
-    if (!silent) {
-      document.getElementById("loader").style.display = "flex";
-      document.getElementById("content").style.display = "none";
-    }
+  document.getElementById("hero-title").textContent = show.title;
+  document.getElementById("hero-poster-img").src = show.poster_url;
+  document.getElementById("hero-bg-art").style.backgroundImage = `url('${show.poster_url}')`;
+  document.getElementById("hero-rank-tag").textContent = `TOP #${currentFeaturedIndex + 1}`;
+  document.getElementById("hero-rating").textContent = (9.5 + (currentFeaturedIndex % 4) * 0.1).toFixed(1);
+  document.getElementById("hero-year").textContent = show.release_year || 2024;
 
-    await loadManifestData();
-    const manifestCount = Object.keys(backupManifest).length;
-    console.log(`📦 Loaded ${manifestCount} Telegram Cloud Backed Up episodes`);
+  updateHeroAddButtonState(show);
 
-    // 1. Synthesize shows purely from Dramaora Telegram Cloud Backups
-    const showMap = {};
-    Object.entries(backupManifest).forEach(([epId, item]) => {
-      const showId = item.show_id || ("show_" + (item.show_title || "Unknown"));
-      const isDramaora = item.source === "dramaora" || String(showId).includes("dramaora");
-      if (!isDramaora && item.source !== "dramaora") return;
+  document.getElementById("btn-hero-play").onclick = () => openModal(show);
+  document.getElementById("btn-hero-add").onclick = () => toggleWatchlist(show);
 
-      const resolvedPoster = item.poster_url || KNOWN_POSTERS[showId] || KNOWN_POSTERS[item.show_title] || "";
-      
-      if (!showMap[showId]) {
-        showMap[showId] = {
-          id: showId,
-          title: item.show_title || "Unknown Show",
-          synopsis: item.synopsis || `រឿង "${item.show_title}" បានរក្សាទុកក្នុង Telegram Cloud Archive រួចរាល់។ អ្នកអាចទស្សនា ឬទាញយកផ្ទាល់បានភ្លាមៗ។`,
-          poster_url: resolvedPoster,
-          banner_url: resolvedPoster,
-          release_year: 2026,
-          status: "completed",
-          type: "dramaora",
-          featured: true,
-          is_free: true,
-          is_telegram_backup: true,
-          source: "dramaora",
-          created_at: item.backed_up_at || new Date().toISOString(),
-          episodes: []
-        };
-      } else {
-        showMap[showId].is_telegram_backup = true;
-        if (!showMap[showId].poster_url && resolvedPoster) {
-          showMap[showId].poster_url = resolvedPoster;
-          showMap[showId].banner_url = resolvedPoster;
-        }
-        if (item.synopsis && (!showMap[showId].synopsis || showMap[showId].synopsis.includes("បានរក្សាទុកក្នុង Telegram Cloud"))) {
-          showMap[showId].synopsis = item.synopsis;
-        }
-      }
-
-      showMap[showId].episodes.push({
-        id: epId,
-        show_id: showId,
-        title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
-        episode_number: parseInt(item.episode_number, 10) || 1,
-        video_url: item.original_url || "",
-        telegram_message_id: item.telegram_message_id,
-        telegram_message_ids: item.telegram_message_ids,
-        file_size_mb: item.file_size_mb,
-        source: item.source || "telegram"
-      });
+  // Render Mini Thumbnails
+  const thumbRow = document.getElementById("hero-thumbs-row");
+  if (thumbRow) {
+    thumbRow.innerHTML = "";
+    allItems.slice(0, 8).forEach((s, idx) => {
+      const card = document.createElement("div");
+      card.className = `hero-mini-card ${idx === currentFeaturedIndex ? 'active' : ''}`;
+      card.innerHTML = `<img src="${s.poster_url}" alt="${s.title}" loading="lazy"/>`;
+      card.onclick = () => {
+        currentFeaturedIndex = idx;
+        renderSpotlight();
+      };
+      thumbRow.appendChild(card);
     });
-
-    // Sort episodes for every show
-    Object.values(showMap).forEach(s => {
-      s.episodes.sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
-    });
-
-    allItems = Object.values(showMap);
-
-    // Sort: Dramas with posters and recent updates first
-    allItems.sort((a, b) => {
-      if (a.is_telegram_backup && !b.is_telegram_backup) return -1;
-      if (!a.is_telegram_backup && b.is_telegram_backup) return 1;
-      return new Date(b.created_at || 0) - new Date(a.created_at || 0);
-    });
-
-    // 3. Process Episode Stats & Updates
-    const sbEps = await fetchAPI("episodes?select=id,show_id,title,episode_number,created_at,video_url&video_url=not.is.null&order=created_at.desc&limit=600");
-    const allEpsList = (sbEps && Array.isArray(sbEps)) ? [...sbEps] : [];
-
-    // Add manifest episodes
-    Object.entries(backupManifest).forEach(([epId, item]) => {
-      const showId = item.show_id || ("show_" + (item.show_title || "Unknown"));
-      allEpsList.push({
-        id: epId,
-        show_id: showId,
-        title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
-        episode_number: item.episode_number || 1,
-        created_at: item.backed_up_at || new Date().toISOString(),
-        video_url: item.original_url || "",
-        poster_url: item.poster_url || "",
-        telegram_message_id: item.telegram_message_id,
-        file_size_mb: item.file_size_mb,
-        source: item.source || "telegram"
-      });
-    });
-
-    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-    showEpisodeStats = {};
-
-    allEpsList.forEach(ep => {
-      if (!showEpisodeStats[ep.show_id]) {
-        showEpisodeStats[ep.show_id] = { maxEp: ep.episode_number || 1, count: 0, newEpsCount: 0, latestEpDate: ep.created_at };
-      }
-      const st = showEpisodeStats[ep.show_id];
-      st.count += 1;
-      if (ep.episode_number > st.maxEp) st.maxEp = ep.episode_number;
-      if (new Date(ep.created_at) > sevenDaysAgo) st.newEpsCount += 1;
-    });
-
-    // Recent Updates List for Notification Drawer
-    const seenUpdates = new Set();
-    recentUpdatesList = [];
-    allEpsList.slice(0, 50).forEach(ep => {
-      const show = showMap[ep.show_id];
-      if (show && !seenUpdates.has(ep.show_id + "_" + ep.episode_number)) {
-        seenUpdates.add(ep.show_id + "_" + ep.episode_number);
-        recentUpdatesList.push({
-          show: show,
-          episode_number: ep.episode_number,
-          title: ep.title,
-          created_at: ep.created_at
-        });
-      }
-    });
-
-    const notifCountBadge = document.getElementById("notif-count");
-    if (recentUpdatesList.length > 0) {
-      notifCountBadge.textContent = Math.min(recentUpdatesList.length, 99);
-      notifCountBadge.style.display = "flex";
-    }
-
-    // Check for Brand-New Backups to trigger Live Notification Banner
-    checkForNewBackupNotifications(allEpsList);
-
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("content").style.display = "block";
-    applyFilter();
-
-  } catch (err) {
-    console.error("Init error:", err);
-    document.getElementById("loader").innerHTML = `<div style="font-size:24px;">⚠️</div><div style="margin-top:8px;">មិនអាចផ្ទុកទិន្នន័យបាន: ${err.message}</div>`;
   }
 }
 
-function renderGrid(items) {
-  const grid = document.getElementById("grid");
-  grid.innerHTML = "";
-  document.getElementById("item-count").textContent = items.length;
+function updateHeroAddButtonState(show) {
+  const addBtn = document.getElementById("btn-hero-add");
+  const addIcon = document.getElementById("hero-add-icon");
+  const addText = document.getElementById("hero-add-text");
+  const list = getWatchlist();
+  if (list[show.id]) {
+    addBtn.classList.add("added");
+    addIcon.textContent = "✓";
+    addText.textContent = "ក្នុងបញ្ជី";
+  } else {
+    addBtn.classList.remove("added");
+    addIcon.textContent = "+";
+    addText.textContent = "បញ្ជីខ្ញុំ";
+  }
+}
+
+// Render Drama Grids
+function renderGrid(containerId, items) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
 
   if (items.length === 0) {
-    document.getElementById("empty-state").style.display = "block";
-    document.getElementById("empty-msg").textContent = currentFilter === "recent" ? "មិនទាន់មានប្រវត្តិទស្សនានៅឡើយទេ" : "រកមិនឃើញភាពយន្តទេ";
-    return;
-  }
-  document.getElementById("empty-state").style.display = "none";
-
-  const watchedHistory = getWatchedHistory();
-  const fragment = document.createDocumentFragment();
-
-  items.forEach(show => {
-    const card = document.createElement("div");
-    const watchedInfo = watchedHistory[show.id];
-    const isWatched = !!watchedInfo;
-
-    card.className = `media-card ${isWatched ? 'is-watched' : ''}`;
-    
-    const isMovie = show.type === "movie";
-    const isDramaora = show.type === "dramaora" || show.source === "dramaora";
-    const typeLabel = isDramaora ? "Dramaora" : (isMovie ? "Movie" : "Series");
-    const typeClass = isDramaora ? "badge-tg" : (isMovie ? "badge-movie" : "badge-series");
-    
-    const stats = showEpisodeStats[show.id];
-    let epBadgeHtml = "";
-    if (isMovie) {
-      epBadgeHtml = `<span class="badge-chip badge-hd">FULL</span>`;
-    } else if (stats) {
-      if (stats.newEpsCount > 1) {
-        epBadgeHtml = `<span class="badge-chip badge-ep-count">+x${stats.newEpsCount}</span><span class="badge-chip badge-hd">x${stats.maxEp}</span>`;
-      } else {
-        epBadgeHtml = `<span class="badge-chip badge-ep-count">x${stats.maxEp || stats.count}</span>`;
-      }
-    }
-
-    let watchedBadgeHtml = "";
-    let lastWatchedSub = "";
-    if (isWatched) {
-      watchedBadgeHtml = `<span class="badge-chip badge-watched">✓ មើលរួច</span>`;
-      if (!isMovie && watchedInfo.lastEp) {
-        lastWatchedSub = `<div class="card-last-watched"><span>👁️</span><span>ដល់ភាគ x${watchedInfo.lastEp}</span></div>`;
-      } else if (isMovie) {
-        lastWatchedSub = `<div class="card-last-watched"><span>👁️</span><span>បានទស្សនា</span></div>`;
-      }
-    }
-
-    let tgCloudBadge = "";
-    if (show.is_telegram_backup) {
-      tgCloudBadge = `<span class="badge-chip badge-tg">✈️ TG Cloud</span>`;
-    }
-
-    const resolvedPoster = show.poster_url || KNOWN_POSTERS[show.id] || KNOWN_POSTERS[show.title] || "";
-
-    card.innerHTML = `
-      <div class="thumb-wrap">
-        ${resolvedPoster 
-          ? `<img class="thumb-img" src="${resolvedPoster}" loading="eager" alt="${show.title}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` 
-          : ''}
-        <div class="thumb-placeholder" style="${resolvedPoster ? 'display:none' : 'display:flex'}">
-          <span>🎬</span>
-          <span class="thumb-placeholder-text">${show.title}</span>
-        </div>
-        <div class="overlay-bottom">
-          <span class="badge-year">${show.release_year || '2026'}</span>
-        </div>
-      </div>
-      <div class="card-info">
-        <div class="card-title">${show.title}</div>
-        ${lastWatchedSub}
-      </div>
-    `;
-
-    card.addEventListener("click", () => openModal(show));
-    fragment.appendChild(card);
-  });
-
-  grid.appendChild(fragment);
-}
-
-function applyFilter() {
-  const searchVal = document.getElementById("search-input").value.trim().toLowerCase();
-  let list = allItems;
-
-  const sectionLabel = document.getElementById("section-label");
-  const sectionIcon = document.getElementById("section-icon");
-
-  if (currentFilter === "telegram") {
-    list = list.filter(s => !!s.is_telegram_backup);
-    sectionLabel.textContent = "រឿងក្នុង Telegram Archive";
-    sectionIcon.textContent = "✈️";
-  } else if (currentFilter === "dramaora") {
-    list = list.filter(s => s.type === "dramaora" || s.source === "dramaora");
-    sectionLabel.textContent = "រឿង Dramaora.tv (Unlocked)";
-    sectionIcon.textContent = "🎬";
-  } else if (currentFilter === "recent") {
-    const watchedHistory = getWatchedHistory();
-    list = list.filter(s => !!watchedHistory[s.id]);
-    list.sort((a, b) => (watchedHistory[b.id]?.timestamp || 0) - (watchedHistory[a.id]?.timestamp || 0));
-    sectionLabel.textContent = "ភាពយន្តទើបមើល (Recent Watched)";
-    sectionIcon.textContent = "🕒";
-  } else if (currentFilter === "movie") {
-    list = list.filter(s => s.type === "movie");
-    sectionLabel.textContent = "ភាពយន្តទោល (Movies)";
-    sectionIcon.textContent = "🎬";
-  } else if (currentFilter === "series") {
-    list = list.filter(s => s.type !== "movie" && s.type !== "dramaora");
-    sectionLabel.textContent = "ភាពយន្តភាគ (Series)";
-    sectionIcon.textContent = "📺";
-  } else if (currentFilter === "featured") {
-    list = list.filter(s => s.featured);
-    sectionLabel.textContent = "ភាពយន្តពេញនិយម (Featured)";
-    sectionIcon.textContent = "⭐";
-  } else {
-    sectionLabel.textContent = "ភាពយន្តទាំងអស់";
-    sectionIcon.textContent = "🎬";
-  }
-
-  if (searchVal) {
-    list = list.filter(s => s.title.toLowerCase().includes(searchVal));
-  }
-
-  renderGrid(list);
-}
-
-// Notification Drawer Open/Close
-const notifDrawer = document.getElementById("notif-drawer");
-document.getElementById("btn-notif").addEventListener("click", () => {
-  notifDrawer.classList.add("active");
-  renderNotifications();
-});
-document.getElementById("btn-close-notif").addEventListener("click", () => {
-  notifDrawer.classList.remove("active");
-});
-notifDrawer.addEventListener("click", (e) => {
-  if (e.target === notifDrawer) notifDrawer.classList.remove("active");
-});
-
-// Instant Refresh Button
-const syncBtn = document.getElementById("btn-sync");
-syncBtn.addEventListener("click", async () => {
-  syncBtn.classList.add("spinning");
-  showToast("🔄 កំពុងទាញយក Poster & រឿងថ្មីៗពី Telegram...");
-  await loadManifestData();
-  await init(true);
-  setTimeout(() => {
-    syncBtn.classList.remove("spinning");
-    showToast(`✅ បាន Refresh រួចរាល់! (សរុប ${allItems.length} រឿង)`);
-  }, 600);
-});
-
-function renderNotifications() {
-  const listEl = document.getElementById("notif-list");
-  if (recentUpdatesList.length === 0) {
-    listEl.innerHTML = `<div class="state-box"><span>គ្មានការអាប់ដេតថ្មីៗទេ</span></div>`;
+    container.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">គ្មានទិន្នន័យ</div>`;
     return;
   }
 
-  listEl.innerHTML = "";
-  recentUpdatesList.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "notif-card";
-    const isMovie = item.show.type === "movie";
-    const epText = isMovie ? "បានបន្ថែមភាពយន្តពេញ" : `បានបញ្ចូលភាគ x${item.episode_number}`;
-
-    card.innerHTML = `
-      <img class="notif-thumb" src="${item.show.poster_url || ''}" onerror="this.src=''" alt="">
-      <div class="notif-info">
-        <div class="notif-show-title">${item.show.title}</div>
-        <div class="notif-desc">
-          <span>⚡</span>
-          <span>${epText}</span>
+  container.innerHTML = items.map((show) => {
+    const epCount = show.episodes?.length || 1;
+    return `
+      <div class="drama-card" onclick="handleCardClick('${show.id}')">
+        <div class="card-poster-wrap">
+          <img class="card-poster-img" src="${show.poster_url}" alt="${show.title}" loading="lazy" />
+          <span class="card-ep-count">x${epCount}</span>
         </div>
-        <div class="notif-time">${timeAgo(item.created_at)}</div>
+        <div class="card-info">
+          <div class="card-title">${show.title}</div>
+          <div class="card-sub">
+            <span style="color:#fbbf24;font-weight:700;">⭐ 9.8</span>
+            <span>1080p FHD</span>
+          </div>
+        </div>
       </div>
     `;
-
-    card.addEventListener("click", () => {
-      notifDrawer.classList.remove("active");
-      openModal(item.show);
-    });
-
-    listEl.appendChild(card);
-  });
+  }).join("");
 }
 
-// Filter tabs
-document.querySelectorAll(".tab-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    currentFilter = btn.dataset.filter;
-    applyFilter();
-  });
-});
-
-// Search handler
-document.getElementById("search-input").addEventListener("input", applyFilter);
-
-// Modal Player Logic
-const playerEl = document.getElementById("player");
-const fallbackBanner = document.getElementById("fallback-banner");
-const retryStreamBtn = document.getElementById("btn-retry-stream");
-
-// Error listener for automatic server fallback
-if (playerEl) {
-  playerEl.addEventListener("error", function(e) {
-    console.warn("⚠️ Player encountered error loading stream:", e);
-    
-    if (!hasTriedFallback && currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
-      hasTriedFallback = true;
-      const ep = currentEpisodes[currentEpIdx];
-      const backupItem = backupManifest[ep.id];
-      
-      if (fallbackBanner) fallbackBanner.classList.add("show");
-      const fallbackMsgEl = document.getElementById("fallback-msg");
-      if (fallbackMsgEl) {
-        if (backupItem) {
-          fallbackMsgEl.innerHTML = `⚡ Server ដើមគាំង — មាន Cloud Backup រួចរាល់ (${backupItem.file_size_mb} MB)`;
-        } else {
-          fallbackMsgEl.textContent = "⚠️ Server ដើមគាំង — កំពុងប្តូរទៅ Server បម្រុង (Fallback)...";
-        }
-      }
-      showToast("🔄 កំពុងប្តូរទៅកាន់ Server បម្រុង...");
-
-      setTimeout(() => {
-        const originalUrl = ep.video_url || "";
-        let fallbackUrl = originalUrl;
-        if (originalUrl.includes("?")) {
-          fallbackUrl = originalUrl.split("?")[0];
-        }
-        playerEl.src = fallbackUrl;
-        playerEl.load();
-        playerEl.play().catch(() => {
-          if (fallbackMsgEl) fallbackMsgEl.textContent = "⚠️ មិនអាចចាក់បានពី Server ដើម — សូមបើកមើលក្នុង Telegram";
-        });
-      }, 800);
-    }
-  });
+function handleCardClick(showId) {
+  const show = allItems.find(s => s.id === showId);
+  if (show) openModal(show);
 }
 
-if (retryStreamBtn) {
-  retryStreamBtn.addEventListener("click", () => {
-    if (currentEpIdx >= 0 && currentEpisodes[currentEpIdx]) {
-      hasTriedFallback = false;
-      if (fallbackBanner) fallbackBanner.classList.remove("show");
-      playEpisode(currentEpIdx);
-    }
-  });
+// Watchlist View
+function renderWatchlistView() {
+  const grid = document.getElementById("watchlist-grid");
+  if (!grid) return;
+  const list = Object.values(getWatchlist());
+  if (list.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#64748b;padding:40px 0;font-size:13px;">មិនទាន់មានរឿងក្នុងបញ្ជីនៅឡើយទេ។ ចុចប៊ូតុង "+ បញ្ជីខ្ញុំ" ដើម្បីរក្សាទុក!</div>`;
+    return;
+  }
+  const shows = list.map(item => allItems.find(s => s.id === item.id)).filter(Boolean);
+  renderGrid("watchlist-grid", shows);
 }
 
+// Account View & Stats
+function updateAccountStats() {
+  document.getElementById("stat-shows-count").textContent = allItems.length;
+  const watchedMap = JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}");
+  document.getElementById("stat-watched-count").textContent = Object.keys(watchedMap).length;
+  const list = Object.values(getWatchlist());
+  document.getElementById("stat-saved-count").textContent = list.length;
+}
+
+// Search Logic
+function handleSearch(query) {
+  const cleanQ = (query || "").trim().toLowerCase();
+  const resGrid = document.getElementById("search-results-grid");
+  const clearBtn = document.getElementById("btn-clear-search");
+  
+  if (clearBtn) clearBtn.style.display = cleanQ ? "block" : "none";
+
+  if (!cleanQ) {
+    resGrid.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">សូមវាយបញ្ចូលឈ្មោះរឿងដែលអ្នកចង់ស្វែងរក</div>`;
+    return;
+  }
+
+  const results = allItems.filter(s => 
+    s.title.toLowerCase().includes(cleanQ) || 
+    (s.synopsis && s.synopsis.toLowerCase().includes(cleanQ))
+  );
+
+  renderGrid("search-results-grid", results);
+}
+
+// Tab Navigation Switching
+function switchTab(tabName) {
+  document.querySelectorAll(".nav-tab-item").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.tab === tabName);
+  });
+
+  document.querySelectorAll(".app-view").forEach(view => {
+    view.classList.remove("active");
+  });
+
+  const activeView = document.getElementById(`view-${tabName}`);
+  if (activeView) activeView.classList.add("active");
+
+  if (tabName === "watchlist") renderWatchlistView();
+  if (tabName === "account") updateAccountStats();
+  if (tabName === "dramas") renderGrid("all-dramas-grid", allItems);
+  if (tabName === "shorts") renderGrid("shorts-dramas-grid", allItems);
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Video Player & Modal
 async function openModal(show) {
   currentShowObj = show;
   const modal = document.getElementById("modal");
   if (!modal) return;
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
-  if (fallbackBanner) fallbackBanner.classList.remove("show");
 
-  try {
-    window.history.pushState({ modalOpen: true }, "");
-  } catch (e) {}
-
-  // Telegram Mini App BackButton & Haptics
   try {
     if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.show();
     if (window.Telegram?.WebApp?.HapticFeedback) window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
@@ -1593,365 +1716,61 @@ async function openModal(show) {
     playerEl.poster = show.banner_url || show.poster_url || "";
   }
 
-  const titleEl = document.getElementById("m-title");
-  if (titleEl) titleEl.textContent = show.title || "ភាពយន្ត";
-  
-  const synEl = document.getElementById("m-synopsis");
-  if (synEl) synEl.textContent = show.synopsis || "គ្មានព័ត៌មានសង្ខេប / No synopsis.";
-  
-  const metaEl = document.getElementById("m-meta");
-  if (metaEl) {
-    metaEl.innerHTML = `
-      ${show.release_year ? `<span class="badge-chip" style="background:rgba(255,255,255,0.08);color:#cbd5e1;">${show.release_year}</span>` : ''}
-      <span class="badge-chip badge-hd">1080p FHD</span>
-    `;
-  }
+  document.getElementById("m-header-title").textContent = show.title || "ភាពយន្ត";
+  document.getElementById("m-title").textContent = show.title || "ភាពយន្ត";
+  document.getElementById("m-synopsis").textContent = show.synopsis || "គ្មានព័ត៌មានសង្ខេប";
 
-  const synBox = document.getElementById("m-synopsis");
-  if (synBox) synBox.classList.remove("expanded");
-  const synBtn = document.getElementById("m-synopsis-toggle");
-  if (synBtn) {
-    synBtn.textContent = "អានបន្ថែម ›";
-    synBtn.onclick = () => {
-      if (!synBox) return;
-      synBox.classList.toggle("expanded");
-      synBtn.textContent = synBox.classList.contains("expanded") ? "បង្រួមមកវិញ ‹" : "អានបន្ថែម ›";
-    };
-  }
+  const metaEl = document.getElementById("m-meta");
+  metaEl.innerHTML = `
+    <span class="badge-chip" style="background:rgba(255,255,255,0.08);color:#cbd5e1;">${show.release_year || 2024}</span>
+    <span class="badge-chip badge-hd">1080p FHD</span>
+    <span class="badge-chip" style="color:#fbbf24;">⭐ 9.8 VIP</span>
+  `;
+
+  currentEpisodes = show.episodes || [];
+  document.getElementById("m-ep-count").textContent = currentEpisodes.length;
 
   const epGrid = document.getElementById("m-episodes-grid");
+  epGrid.innerHTML = "";
 
-  // Directly extract episodes from show.episodes or backupManifest
-  let eps = (Array.isArray(show.episodes) && show.episodes.length > 0) ? [...show.episodes] : [];
+  const watchedMap = JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}");
 
-  if (eps.length === 0 && backupManifest) {
-    const targetShowTitle = (show.title || "").trim().toLowerCase();
-    const targetShowId = String(show.id || "").trim().toLowerCase().replace("dramaora_", "").replace("show_", "");
+  currentEpisodes.forEach((ep, idx) => {
+    const btn = document.createElement("button");
+    const epNum = ep.episode_number || (idx + 1);
+    const isWatched = !!watchedMap[`${show.id}_${epNum}`];
 
-    Object.entries(backupManifest).forEach(([epId, item]) => {
-      const itemTitle = (item.show_title || "").trim().toLowerCase();
-      const itemId = String(item.show_id || "").trim().toLowerCase().replace("dramaora_", "").replace("show_", "");
+    btn.className = `ep-pill ${isWatched ? 'ep-watched' : ''}`;
+    btn.textContent = `x${epNum} ${isWatched ? '✓' : ''}`;
+    btn.onclick = () => playEpisode(idx);
+    epGrid.appendChild(btn);
+  });
 
-      const isMatch = (itemId && targetShowId && itemId === targetShowId) ||
-                      (itemTitle && targetShowTitle && itemTitle === targetShowTitle) ||
-                      (item.show_id && item.show_id === show.id) ||
-                      (item.show_title && item.show_title === show.title);
-
-      if (isMatch) {
-        eps.push({
-          id: epId,
-          show_id: show.id,
-          title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
-          episode_number: parseInt(item.episode_number, 10) || 1,
-          video_url: item.original_url || "",
-          telegram_message_id: item.telegram_message_id,
-          telegram_message_ids: item.telegram_message_ids,
-          file_size_mb: item.file_size_mb,
-          source: item.source || "telegram"
-        });
-      }
-    });
-
-    const epMap = {};
-    eps.forEach(e => { epMap[e.episode_number || e.id] = e; });
-    eps = Object.values(epMap).sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
-  }
-
-  currentEpisodes = eps;
-  const epCountBadge = document.getElementById("m-ep-count");
-  if (epCountBadge) epCountBadge.textContent = currentEpisodes.length;
-
-  if (currentEpisodes.length === 0) {
-    if (epGrid) epGrid.innerHTML = `<div class="state-box" style="grid-column:1/-1;padding:20px 0;">មិនទាន់មានភាគសម្រាប់ទស្សនានៅឡើយទេ</div>`;
-    return;
-  }
-
-  const watchedEpMap = getWatchedEpisodes();
-  const watchedHistory = getWatchedHistory();
-  const lastWatchedEpNum = watchedHistory[show.id]?.lastEp;
-
-  if (epGrid) {
-    epGrid.innerHTML = "";
-    currentEpisodes.forEach((ep, idx) => {
-      const btn = document.createElement("button");
-      const hasUrl = !!ep.video_url || !!ep.telegram_message_id;
-      const epNum = ep.episode_number || (idx + 1);
-      const isEpWatched = !!watchedEpMap[show.id + "_" + epNum];
-      const isBackedUp = !!ep.telegram_message_id || !!backupManifest[ep.id];
-
-      btn.className = `ep-pill ${hasUrl ? '' : 'no-video'} ${isEpWatched ? 'ep-watched' : ''} ${isBackedUp ? 'is-tg' : ''}`;
-      btn.textContent = show.type === "movie" ? "ទស្សនា (Play)" : (isEpWatched ? `x${epNum} ✓` : `x${epNum}`);
-      if (isBackedUp) {
-        btn.title = "⚡ Telegram Cloud Backup Ready";
-      }
-      btn.dataset.idx = idx;
-
-      if (hasUrl) {
-        btn.addEventListener("click", () => playEpisode(idx));
-      }
-      epGrid.appendChild(btn);
-    });
-  }
-
-  // Safe Autoplay in separate block
-  try {
-    let targetIdx = -1;
-    if (lastWatchedEpNum) {
-      targetIdx = currentEpisodes.findIndex(e => e.episode_number === lastWatchedEpNum && (!!e.video_url || !!e.telegram_message_id));
-    }
-    if (targetIdx === -1) {
-      targetIdx = currentEpisodes.findIndex(e => !!e.video_url || !!e.telegram_message_id);
-    }
-    if (targetIdx !== -1) {
-      playEpisode(targetIdx);
-    }
-  } catch (playErr) {
-    console.warn("Autoplay notice:", playErr);
+  if (currentEpisodes.length > 0) {
+    playEpisode(0);
   }
 }
 
 function playEpisode(idx) {
-  currentEpIdx = idx;
-  hasTriedFallback = false;
-  if (fallbackBanner) fallbackBanner.classList.remove("show");
-
+  if (!currentEpisodes[idx]) return;
+  currentEpIndex = idx;
   const ep = currentEpisodes[idx];
-  if (!ep) return;
 
-  if (ep.video_url) {
+  document.querySelectorAll(".ep-pill").forEach((btn, i) => {
+    btn.classList.toggle("active", i === idx);
+  });
+
+  if (playerEl && ep.video_url) {
     playerEl.src = ep.video_url;
-    playerEl.play().catch(() => {});
+    playerEl.playbackRate = speeds[playbackSpeedIdx];
+    playerEl.play().catch(e => console.warn("Auto-play:", e));
   }
 
-  const epNum = ep.episode_number || (idx + 1);
-
-  if (currentShowObj) {
-    markEpisodeWatched(currentShowObj.id, epNum, ep.title);
-  }
-
-  const actionsBar = document.getElementById("m-actions-bar");
-  if (actionsBar) {
-    actionsBar.innerHTML = "";
-  }
-
-  document.querySelectorAll(".ep-pill").forEach(p => p.classList.remove("active"));
-  const activeBtn = document.querySelector(`.ep-pill[data-idx="${idx}"]`);
-  if (activeBtn) {
-    activeBtn.classList.add("active");
-    activeBtn.classList.add("ep-watched");
-    if (currentShowObj?.type !== "movie") {
-      activeBtn.textContent = `x${epNum} ✓`;
-    }
-  }
-
-  // Update Previous / Next button states
-  const prevEpBtn = document.getElementById("btn-prev-ep");
-  const nextEpBtn = document.getElementById("btn-next-ep");
-  if (prevEpBtn) {
-    prevEpBtn.disabled = idx <= 0;
-  }
-  if (nextEpBtn) {
-    nextEpBtn.disabled = idx >= currentEpisodes.length - 1;
-  }
-
-  showToast(`▶ កំពុងចាក់: ${ep.title || 'ភាគ ' + epNum}`);
-}
-
-// Player Controls & Auto Next Logic
-let isAutoNextEnabled = true;
-let isScreenLocked = false;
-let autoNextCountdownTimer = null;
-
-const prevEpBtn = document.getElementById("btn-prev-ep");
-const nextEpBtn = document.getElementById("btn-next-ep");
-const autoNextBtn = document.getElementById("btn-toggle-autonext");
-const autoNextLabel = document.getElementById("label-autonext");
-const lockScreenBtn = document.getElementById("btn-lock-screen");
-const lockShield = document.getElementById("screen-lock-shield");
-const floatingUnlockBtn = document.getElementById("btn-floating-unlock");
-
-// Auto Next Toggle
-if (autoNextBtn) {
-  autoNextBtn.addEventListener("click", () => {
-    isAutoNextEnabled = !isAutoNextEnabled;
-    if (isAutoNextEnabled) {
-      autoNextBtn.classList.add("active");
-      autoNextLabel.textContent = "Auto Next: ON";
-      showToast("⚡ បានបើក Auto Next Episode (ON)");
-    } else {
-      autoNextBtn.classList.remove("active");
-      autoNextLabel.textContent = "Auto Next: OFF";
-      showToast("⏸️ បានបិទ Auto Next Episode (OFF)");
-    }
-  });
-}
-
-// Quick Seek -10s / +10s
-const seekBackBtn = document.getElementById("btn-seek-back");
-const seekFwdBtn = document.getElementById("btn-seek-fwd");
-
-function seekVideo(seconds) {
-  if (!playerEl || isNaN(playerEl.duration)) return;
-  playerEl.currentTime = Math.max(0, Math.min(playerEl.duration, playerEl.currentTime + seconds));
-  const sign = seconds > 0 ? `+${seconds}s ⏩` : `${seconds}s ⏪`;
-  showToast(`⏱️ ${sign} (${formatTime(playerEl.currentTime)} / ${formatTime(playerEl.duration)})`);
-}
-
-function formatTime(secs) {
-  if (isNaN(secs) || secs < 0) return "0:00";
-  const m = Math.floor(secs / 60);
-  const s = Math.floor(secs % 60);
-  return `${m}:${s < 10 ? '0' : ''}${s}`;
-}
-
-if (seekBackBtn) seekBackBtn.addEventListener("click", () => seekVideo(-10));
-if (seekFwdBtn) seekFwdBtn.addEventListener("click", () => seekVideo(10));
-
-// Double-Tap left/right on player screen to seek
-let lastPlayerTapTime = 0;
-if (playerEl) {
-  playerEl.addEventListener("touchstart", (e) => {
-    const now = Date.now();
-    const touch = e.changedTouches[0];
-    if (touch && now - lastPlayerTapTime < 320) {
-      const rect = playerEl.getBoundingClientRect();
-      const tapX = touch.clientX - rect.left;
-      if (tapX < rect.width * 0.4) {
-        seekVideo(-10);
-      } else if (tapX > rect.width * 0.6) {
-        seekVideo(10);
-      }
-    }
-    lastPlayerTapTime = now;
-  }, { passive: true });
-}
-
-// Previous & Next Episode Navigation
-if (prevEpBtn) {
-  prevEpBtn.addEventListener("click", () => {
-    if (currentEpIdx > 0) {
-      playEpisode(currentEpIdx - 1);
-    }
-  });
-}
-
-if (nextEpBtn) {
-  nextEpBtn.addEventListener("click", () => {
-    if (currentEpIdx >= 0 && currentEpIdx + 1 < currentEpisodes.length) {
-      playEpisode(currentEpIdx + 1);
-    }
-  });
-}
-
-// Screen Lock & Unlock
-function lockPlayerScreen() {
-  isScreenLocked = true;
-  if (lockShield) lockShield.classList.add("locked");
-  showToast("🔒 បានចាក់សោរអេក្រង់ (Locked) — មិនអាចចុចប៉ះខុសបានទេ");
-}
-
-function unlockPlayerScreen() {
-  isScreenLocked = false;
-  if (lockShield) lockShield.classList.remove("locked");
-  showToast("🔓 បានដោះសោរអេក្រង់ (Unlocked)");
-}
-
-if (lockScreenBtn) lockScreenBtn.addEventListener("click", lockPlayerScreen);
-if (floatingUnlockBtn) floatingUnlockBtn.addEventListener("click", unlockPlayerScreen);
-
-// Video Ended -> Auto Next Episode
-playerEl.addEventListener("ended", () => {
-  if (!isAutoNextEnabled) return;
-  if (currentEpIdx >= 0 && currentEpIdx + 1 < currentEpisodes.length) {
-    const nextIdx = currentEpIdx + 1;
-    const nextEp = currentEpisodes[nextIdx];
-    const nextNum = nextEp ? (nextEp.episode_number || (nextIdx + 1)) : (nextIdx + 1);
-
-    showToast(`🎬 ចប់ភាគ! កំពុងប្តូរទៅភាគ x${nextNum} ក្នុង 3 វិនាទី...`);
-    clearTimeout(autoNextCountdownTimer);
-    autoNextCountdownTimer = setTimeout(() => {
-      playEpisode(nextIdx);
-    }, 2800);
-  } else {
-    showToast("🎉 បានទស្សនាចប់គ្រប់ភាគនៃរឿងនេះហើយ!");
-  }
-});
-
-// ==============================================================================
-// Admin In-App Management (Long press App Logo -> PIN: 8888)
-// ==============================================================================
-let isAdminMode = false;
-const brandLogoEl = document.querySelector(".brand-logo");
-
-if (brandLogoEl) {
-  let logoPressTimer = null;
-  brandLogoEl.addEventListener("touchstart", () => {
-    logoPressTimer = setTimeout(promptAdminLogin, 1400);
-  });
-  brandLogoEl.addEventListener("touchend", () => clearTimeout(logoPressTimer));
-  brandLogoEl.addEventListener("mousedown", () => {
-    logoPressTimer = setTimeout(promptAdminLogin, 1400);
-  });
-  brandLogoEl.addEventListener("mouseup", () => clearTimeout(logoPressTimer));
-}
-
-function promptAdminLogin() {
-  if (isAdminMode) {
-    if (confirm("តើអ្នកចង់ចាកចេញពី Admin Mode មែនទេ?")) {
-      isAdminMode = false;
-      document.getElementById("admin-modal-controls").style.display = "none";
-      showToast("🔒 បានចាកចេញពី Admin Mode");
-    }
-    return;
-  }
-  const pin = prompt("👑 បញ្ចូលលេខកូដសម្ងាត់ Admin PIN (Default: 8888):");
-  if (pin === "8888" || pin === "1234" || pin === "admin") {
-    isAdminMode = true;
-    showToast("👑 Admin Mode: បានបើកដំណើរការជោគជ័យ!");
-    const admCtrl = document.getElementById("admin-modal-controls");
-    if (admCtrl) admCtrl.style.display = "block";
-  } else if (pin) {
-    alert("លេខកូដសម្ងាត់មិនត្រឹមត្រូវទេ!");
-  }
-}
-
-const btnAdminDelShow = document.getElementById("btn-admin-delete-show");
-if (btnAdminDelShow) {
-  btnAdminDelShow.addEventListener("click", async () => {
-    if (!currentShowObj) return;
-    const ok = confirm(`⚠️ [ADMIN] តើអ្នកពិតជាចង់លុបរឿង "${currentShowObj.title}" និងគ្រប់ភាគទាំងអស់ចេញពី Google Sheets & APK មែនទេ?`);
-    if (!ok) return;
-
-    showToast(`⏳ កំពុងលុបរឿង "${currentShowObj.title}"...`);
-    try {
-      if (GOOGLE_APPS_SCRIPT_URL && GOOGLE_APPS_SCRIPT_URL.startsWith("http")) {
-        await fetch(GOOGLE_APPS_SCRIPT_URL, {
-          method: "POST",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({
-            action: "delete_show",
-            show_id: currentShowObj.id,
-            show_title: currentShowObj.title
-          })
-        });
-      }
-
-      // Remove from local data
-      allItems = allItems.filter(s => s.id !== currentShowObj.id && s.title !== currentShowObj.title);
-      Object.keys(backupManifest).forEach(k => {
-        if (backupManifest[k] && (backupManifest[k].show_id === currentShowObj.id || backupManifest[k].show_title === currentShowObj.title)) {
-          delete backupManifest[k];
-        }
-      });
-      localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
-
-      closeModal();
-      applyFilter();
-      showToast(`✅ បានលុបរឿង "${currentShowObj.title}" ចេញដោយជោគជ័យ!`);
-    } catch (err) {
-      alert("មានបញ្ហាក្នុងការលុប: " + err.message);
-    }
-  });
+  // Save Watched State
+  const watchedMap = JSON.parse(localStorage.getItem(STORAGE_WATCHED_KEY) || "{}");
+  watchedMap[`${currentShowObj.id}_${ep.episode_number || (idx + 1)}`] = true;
+  localStorage.setItem(STORAGE_WATCHED_KEY, JSON.stringify(watchedMap));
+  updateAccountStats();
 }
 
 function closeModal() {
@@ -1962,224 +1781,138 @@ function closeModal() {
     playerEl.pause();
     playerEl.removeAttribute("src");
     playerEl.src = "";
-    try {
-      playerEl.load(); // Immediately terminate audio decoding stream on Android
-    } catch (e) {}
+    try { playerEl.load(); } catch (e) {}
   }
-  unlockPlayerScreen();
-  clearTimeout(autoNextCountdownTimer);
-  if (fallbackBanner) fallbackBanner.classList.remove("show");
-  const actionsBar = document.getElementById("m-actions-bar");
-  if (actionsBar) actionsBar.innerHTML = "";
-
-  // Telegram Mini App BackButton
   try {
     if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.hide();
   } catch (e) {}
 }
 
-// Telegram Mini App Native Initialization
-if (window.Telegram && window.Telegram.WebApp) {
-  try {
-    const tg = window.Telegram.WebApp;
-    tg.ready();
-    tg.expand();
-    if (tg.setHeaderColor) tg.setHeaderColor("#090c14");
-    if (tg.setBackgroundColor) tg.setBackgroundColor("#090c14");
-    if (tg.enableClosingConfirmation) tg.enableClosingConfirmation();
+// Quick Player Controls
+document.getElementById("btn-modal-back").onclick = closeModal;
+document.getElementById("ctrl-rewind").onclick = () => { if (playerEl) playerEl.currentTime -= 10; };
+document.getElementById("ctrl-forward").onclick = () => { if (playerEl) playerEl.currentTime += 10; };
+document.getElementById("ctrl-prev").onclick = () => {
+  if (currentEpIndex > 0) playEpisode(currentEpIndex - 1);
+};
+document.getElementById("ctrl-next").onclick = () => {
+  if (currentEpIndex < currentEpisodes.length - 1) playEpisode(currentEpIndex + 1);
+};
+document.getElementById("ctrl-auto-next").onclick = () => {
+  isAutoNext = !isAutoNext;
+  const btn = document.getElementById("ctrl-auto-next");
+  btn.classList.toggle("active", isAutoNext);
+  btn.textContent = `Auto: ${isAutoNext ? 'ON' : 'OFF'}`;
+};
+document.getElementById("ctrl-speed").onclick = () => {
+  playbackSpeedIdx = (playbackSpeedIdx + 1) % speeds.length;
+  const spd = speeds[playbackSpeedIdx];
+  if (playerEl) playerEl.playbackRate = spd;
+  document.getElementById("ctrl-speed").textContent = `⚡ ${spd}x`;
+};
 
-    if (tg.BackButton) {
-      tg.BackButton.onClick(() => {
-        const modal = document.getElementById("modal");
-        const notifDrawer = document.getElementById("notif-drawer");
-        if (modal && modal.classList.contains("active")) {
-          closeModal();
-        } else if (notifDrawer && notifDrawer.classList.contains("active")) {
-          notifDrawer.classList.remove("active");
-        }
-      });
+if (playerEl) {
+  playerEl.addEventListener("ended", () => {
+    if (isAutoNext && currentEpIndex < currentEpisodes.length - 1) {
+      playEpisode(currentEpIndex + 1);
     }
-  } catch (tgErr) {
-    console.warn("Telegram WebApp init error:", tgErr);
-  }
-}
-
-// Back button on modal
-const btnCloseModal = document.getElementById("btn-close");
-if (btnCloseModal) {
-  btnCloseModal.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    closeModal();
-  });
-  btnCloseModal.addEventListener("touchend", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    closeModal();
   });
 }
 
-// Android Hardware Back Button & Gesture Support
-window.addEventListener("popstate", (e) => {
-  const modal = document.getElementById("modal");
-  const notifDrawer = document.getElementById("notif-drawer");
-  if (modal && modal.classList.contains("active")) {
-    closeModal();
-  } else if (notifDrawer && notifDrawer.classList.contains("active")) {
-    notifDrawer.classList.remove("active");
-  }
+// Event Listeners for Navigation & Search
+document.querySelectorAll(".nav-tab-item").forEach(btn => {
+  btn.addEventListener("click", () => switchTab(btn.dataset.tab));
 });
 
-// Capacitor Native App Hardware Back Button & Lifecycle Listeners
-if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
-  window.Capacitor.Plugins.App.addListener('backButton', ({ canGoBack }) => {
-    const modal = document.getElementById("modal");
-    const notifDrawer = document.getElementById("notif-drawer");
-    if (modal && modal.classList.contains("active")) {
-      closeModal();
-      return;
-    }
-    if (notifDrawer && notifDrawer.classList.contains("active")) {
-      notifDrawer.classList.remove("active");
-      return;
-    }
-    if (canGoBack) {
-      window.history.back();
+document.getElementById("btn-header-search").onclick = () => {
+  switchTab("search");
+  document.getElementById("tab-search-input").focus();
+};
+
+document.getElementById("tab-search-input").addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+
+document.getElementById("btn-clear-search").onclick = () => {
+  const inp = document.getElementById("tab-search-input");
+  inp.value = "";
+  handleSearch("");
+};
+
+// Filter Category Pills
+document.querySelectorAll(".filter-pill").forEach(pill => {
+  pill.addEventListener("click", () => {
+    document.querySelectorAll(".filter-pill").forEach(p => p.classList.remove("active"));
+    pill.classList.add("active");
+    const cat = pill.dataset.filter;
+    if (cat === "all") {
+      filteredItems = [...allItems];
+    } else if (cat === "dramaora") {
+      filteredItems = allItems.filter(s => s.type === "dramaora" || s.id.includes("dramaora"));
     } else {
-      window.Capacitor.Plugins.App.exitApp();
+      filteredItems = allItems;
     }
+    renderGrid("main-drama-grid", filteredItems);
   });
-
-  window.Capacitor.Plugins.App.addListener('appStateChange', ({ isActive }) => {
-    if (!isActive && playerEl) {
-      playerEl.pause();
-    }
-  });
-}
-
-window.addEventListener("pagehide", () => {
-  if (playerEl) {
-    playerEl.pause();
-    playerEl.removeAttribute("src");
-    playerEl.src = "";
-    try { playerEl.load(); } catch (e) {}
-  }
 });
 
-// ==============================================================================
-// Live Realtime Backup Notification Engine
-// ==============================================================================
-let hasInitializedSeenBackups = false;
+document.getElementById("btn-see-all-trending").onclick = () => switchTab("dramas");
+document.getElementById("header-user-box").onclick = () => switchTab("account");
+document.getElementById("btn-vip-status").onclick = () => {
+  showToast("👑 VIP Lifetime Member - Unlocked 100%");
+};
 
-function playChimeSound() {
-  try {
-    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = "sine";
-    osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
-    osc.frequency.setValueAtTime(880.00, audioCtx.currentTime + 0.12); // A5
-    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.start();
-    osc.stop(audioCtx.currentTime + 0.55);
-  } catch (e) {}
-}
+// Notification Drawer Handlers
+document.getElementById("btn-header-notif").onclick = () => {
+  document.getElementById("notif-drawer").classList.add("active");
+};
+document.getElementById("btn-close-drawer").onclick = () => {
+  document.getElementById("notif-drawer").classList.remove("active");
+};
+document.getElementById("btn-dismiss-banner").onclick = (e) => {
+  e.stopPropagation();
+  document.getElementById("new-backup-banner").classList.remove("show");
+};
 
-function checkForNewBackupNotifications(allEps) {
-  if (!allEps || allEps.length === 0) return;
+// Account Menu Handlers
+document.getElementById("btn-account-sync").onclick = async () => {
+  showToast("កំពុង Sync ពី Google Sheets...");
+  await loadManifestData();
+  buildShowsFromManifest();
+  renderSpotlight();
+  renderGrid("main-drama-grid", allItems);
+  updateAccountStats();
+  showToast("Sync ជោគជ័យ ១០០%!");
+};
 
-  let seenEpIds = [];
-  try {
-    const raw = localStorage.getItem(STORAGE_SEEN_BACKUPS_KEY);
-    if (raw) seenEpIds = JSON.parse(raw);
-  } catch (e) {}
-
-  if (!Array.isArray(seenEpIds)) seenEpIds = [];
-
-  // First time app runs: register current episodes as seen
-  if (!hasInitializedSeenBackups && seenEpIds.length === 0) {
-    seenEpIds = allEps.map(e => e.id || (e.show_id + "_" + e.episode_number));
-    localStorage.setItem(STORAGE_SEEN_BACKUPS_KEY, JSON.stringify(seenEpIds));
-    hasInitializedSeenBackups = true;
-    return;
+document.getElementById("btn-account-clear-cache").onclick = () => {
+  if (confirm("តើអ្នកចង់សម្អាតប្រវត្តិមើលទាំងអស់មែនទេ?")) {
+    localStorage.removeItem(STORAGE_WATCHED_KEY);
+    updateAccountStats();
+    showToast("បានសម្អាតរួចរាល់!");
   }
-  hasInitializedSeenBackups = true;
+};
 
-  const seenSet = new Set(seenEpIds);
-  const brandNewEps = allEps.filter(e => {
-    const key = e.id || (e.show_id + "_" + e.episode_number);
-    return !seenSet.has(key);
-  });
-
-  if (brandNewEps.length > 0) {
-    const latestEp = brandNewEps[0];
-    const banner = document.getElementById("new-backup-banner");
-    const titleEl = document.getElementById("new-backup-title");
-    const descEl = document.getElementById("new-backup-desc");
-
-    if (banner && titleEl && descEl) {
-      titleEl.textContent = latestEp.title || "មានរឿងថ្មីទើបបញ្ចូល";
-      descEl.textContent = brandNewEps.length > 1 
-        ? `ទើប Backup ចូល ${brandNewEps.length} ភាគថ្មី! ចុចដើម្បីទស្សនា` 
-        : `ទើប Backup ចូលរួចរាល់! ចុចដើម្បីទស្សនា`;
-
-      banner.classList.add("show");
-      playChimeSound();
-
-      // Auto dismiss after 7s
-      setTimeout(() => {
-        banner.classList.remove("show");
-      }, 7000);
-    }
-
-    // Save updated seen list
-    const updatedSeen = [...seenEpIds, ...brandNewEps.map(e => e.id || (e.show_id + "_" + e.episode_number))];
-    localStorage.setItem(STORAGE_SEEN_BACKUPS_KEY, JSON.stringify(updatedSeen));
+document.getElementById("btn-account-admin").onclick = () => {
+  const pin = prompt("សូមបញ្ចូល Admin PIN:");
+  if (pin === "8888") {
+    window.location.href = "admin.html";
+  } else if (pin) {
+    alert("PIN មិនត្រឹមត្រូវទេ!");
   }
+};
+
+// Main App Bootstrap
+async function initApp() {
+  initTelegramUser();
+  await loadManifestData();
+  buildShowsFromManifest();
+  renderSpotlight();
+  renderGrid("main-drama-grid", allItems);
+  updateAccountStats();
 }
 
-// Banner Click -> Open Notification Drawer
-const backupBanner = document.getElementById("new-backup-banner");
-if (backupBanner) {
-  backupBanner.addEventListener("click", (e) => {
-    if (e.target.id === "btn-dismiss-banner") {
-      backupBanner.classList.remove("show");
-      return;
-    }
-    backupBanner.classList.remove("show");
-    const notifDrawer = document.getElementById("notif-drawer");
-    if (notifDrawer) {
-      notifDrawer.classList.add("active");
-      renderNotifications();
-    }
-  });
-}
-
-const btnDismissBanner = document.getElementById("btn-dismiss-banner");
-if (btnDismissBanner) {
-  btnDismissBanner.addEventListener("click", (e) => {
-    e.stopPropagation();
-    backupBanner.classList.remove("show");
-  });
-}
-
-// Background Auto-Sync every 25 seconds for new Backups
-setInterval(async () => {
-  if (!document.hidden) {
-    await init(true);
-  }
-}, 25000);
-
-// Auto-refresh when app becomes visible
-document.addEventListener("visibilitychange", () => {
-  if (!document.hidden) init(true);
-});
-
-// Start
-init();
+window.addEventListener("DOMContentLoaded", initApp);
 </script>
 </body>
 </html>
