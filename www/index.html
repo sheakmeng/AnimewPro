@@ -1579,18 +1579,22 @@
     </div>
   </div>
 
-  <div class="profile-menu-list">
-    <div class="profile-menu-item" id="btn-account-sync">
-      <span>🔄 Sync ទិន្នន័យពី Google Sheets</span>
-      <span>›</span>
-    </div>
-    <div class="profile-menu-item" id="btn-account-clear-cache">
-      <span>🧹 សម្អាត Cache (Clear History)</span>
-      <span>›</span>
-    </div>
-    <div class="profile-menu-item" id="btn-account-admin">
-      <span>⚙️ Admin Panel (គ្រប់គ្រងរឿង)</span>
-      <span>›</span>
+  <!-- Admin Only Section (Hidden for normal members) -->
+  <div id="admin-menu-section" style="display:none; margin-top:14px;">
+    <div style="font-size:11px; font-weight:800; color:#38bdf8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; padding-left:4px;">👑 ផ្ទាំងគ្រប់គ្រង Admin (Admin Only)</div>
+    <div class="profile-menu-list">
+      <div class="profile-menu-item" id="btn-account-sync">
+        <span>🔄 Sync ទិន្នន័យពី Google Sheets</span>
+        <span>›</span>
+      </div>
+      <div class="profile-menu-item" id="btn-account-clear-cache">
+        <span>🧹 សម្អាត Cache (Clear History)</span>
+        <span>›</span>
+      </div>
+      <div class="profile-menu-item" id="btn-account-admin">
+        <span>⚙️ Admin Panel (គ្រប់គ្រងរឿង)</span>
+        <span>›</span>
+      </div>
     </div>
   </div>
 </div>
@@ -2531,6 +2535,52 @@ document.getElementById("btn-dismiss-banner").onclick = (e) => {
   document.getElementById("new-backup-banner").classList.remove("show");
 };
 
+// Admin Access Control & Visibility
+const ADMIN_USERNAMES = ["mengsmmkh1", "sheakmeng"];
+const ADMIN_USER_IDS = ["684920194", "8664822430"];
+
+function checkIsAdmin() {
+  if (localStorage.getItem("animew_admin_authenticated") === "true") return true;
+  const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  if (user) {
+    const uName = (user.username || "").toLowerCase().replace("@", "");
+    if (ADMIN_USERNAMES.includes(uName)) return true;
+    if (user.id && ADMIN_USER_IDS.includes(String(user.id))) return true;
+  }
+  return false;
+}
+
+function updateAdminSectionVisibility() {
+  const adminSec = document.getElementById("admin-menu-section");
+  if (!adminSec) return;
+  if (checkIsAdmin()) {
+    adminSec.style.display = "block";
+  } else {
+    adminSec.style.display = "none";
+  }
+}
+
+// Secret 5-tap avatar unlock for Admin
+let avatarTapCount = 0;
+let avatarTapTimer = null;
+const avatarEl = document.getElementById("account-avatar-img");
+if (avatarEl) {
+  avatarEl.addEventListener("click", () => {
+    avatarTapCount++;
+    clearTimeout(avatarTapTimer);
+    avatarTapTimer = setTimeout(() => { avatarTapCount = 0; }, 2000);
+    if (avatarTapCount >= 5) {
+      avatarTapCount = 0;
+      const pin = prompt("សូមបញ្ចូល Admin PIN ដើម្បីបើក Admin Menu:");
+      if (pin === "8888") {
+        localStorage.setItem("animew_admin_authenticated", "true");
+        updateAdminSectionVisibility();
+        showToast("🔓 Admin Menu Unlocked!");
+      }
+    }
+  });
+}
+
 // Account Menu Handlers
 document.getElementById("btn-account-sync").onclick = async () => {
   showToast("កំពុង Sync ពី Google Sheets...");
@@ -2548,7 +2598,7 @@ document.getElementById("btn-account-clear-cache").onclick = () => {
 
 document.getElementById("btn-account-admin").onclick = () => {
   const pin = prompt("សូមបញ្ចូល Admin PIN:");
-  if (pin === "8888") {
+  if (pin === "8888" || checkIsAdmin()) {
     window.location.href = "admin.html";
   } else if (pin) {
     alert("PIN មិនត្រឹមត្រូវទេ!");
@@ -2563,6 +2613,7 @@ function initApp() {
   renderSpotlight();
   renderGrid("main-drama-grid", allItems);
   updateAccountStats();
+  updateAdminSectionVisibility();
   
   // Non-blocking silent background sync
   setTimeout(syncLiveManifestBackground, 500);
