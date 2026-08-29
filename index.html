@@ -2081,26 +2081,34 @@ function renderSpotlight(animate = false) {
   const addBtn = document.getElementById("btn-hero-add");
   if (addBtn) addBtn.onclick = () => toggleWatchlist(show);
 
-  // Render Mini Thumbnails
+  // Update Mini Thumbnails without rebuilding DOM or causing page scroll
   const thumbRow = document.getElementById("hero-thumbs-row");
   if (thumbRow) {
-    thumbRow.innerHTML = "";
-    allItems.slice(0, maxFeatured).forEach((s, idx) => {
-      const card = document.createElement("div");
-      card.className = `hero-mini-card ${idx === currentFeaturedIndex ? 'active' : ''}`;
-      card.innerHTML = `<img src="${s.poster_url}" alt="${s.title}" loading="lazy"/>`;
-      card.onclick = () => {
-        currentFeaturedIndex = idx;
-        renderSpotlight(true);
-        restartSpotlightAutoSlide();
-      };
-      thumbRow.appendChild(card);
-    });
+    const existingCards = thumbRow.querySelectorAll(".hero-mini-card");
+    if (existingCards.length !== maxFeatured) {
+      thumbRow.innerHTML = "";
+      allItems.slice(0, maxFeatured).forEach((s, idx) => {
+        const card = document.createElement("div");
+        card.className = `hero-mini-card ${idx === currentFeaturedIndex ? 'active' : ''}`;
+        card.innerHTML = `<img src="${s.poster_url}" alt="${s.title}" loading="lazy"/>`;
+        card.onclick = () => {
+          currentFeaturedIndex = idx;
+          renderSpotlight(true);
+          restartSpotlightAutoSlide();
+        };
+        thumbRow.appendChild(card);
+      });
+    } else {
+      existingCards.forEach((card, idx) => {
+        card.classList.toggle("active", idx === currentFeaturedIndex);
+      });
+    }
 
-    // Auto-scroll the active thumbnail smoothly into view
+    // Scroll ONLY the horizontal container (NEVER scrolls the window/page)
     const activeThumb = thumbRow.children[currentFeaturedIndex];
     if (activeThumb) {
-      activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      const scrollLeftTarget = activeThumb.offsetLeft - (thumbRow.clientWidth / 2) + (activeThumb.clientWidth / 2);
+      thumbRow.scrollTo({ left: Math.max(0, scrollLeftTarget), behavior: 'smooth' });
     }
   }
 }
