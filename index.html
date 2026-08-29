@@ -1556,8 +1556,15 @@ async function openModal(show) {
   document.body.style.overflow = "hidden";
   if (fallbackBanner) fallbackBanner.classList.remove("show");
 
+  try {
+    window.history.pushState({ modalOpen: true }, "");
+  } catch (e) {}
+
   if (playerEl) {
+    playerEl.pause();
+    playerEl.removeAttribute("src");
     playerEl.src = "";
+    playerEl.load();
     playerEl.poster = show.banner_url || show.poster_url || "";
   }
 
@@ -1940,7 +1947,11 @@ function closeModal() {
   document.body.style.overflow = "";
   if (playerEl) {
     playerEl.pause();
+    playerEl.removeAttribute("src");
     playerEl.src = "";
+    try {
+      playerEl.load(); // Immediately terminate audio decoding stream on Android
+    } catch (e) {}
   }
   unlockPlayerScreen();
   clearTimeout(autoNextCountdownTimer);
@@ -1948,6 +1959,53 @@ function closeModal() {
   const actionsBar = document.getElementById("m-actions-bar");
   if (actionsBar) actionsBar.innerHTML = "";
 }
+
+// Android Hardware Back Button & Gesture Support
+window.addEventListener("popstate", (e) => {
+  const modal = document.getElementById("modal");
+  const notifDrawer = document.getElementById("notif-drawer");
+  if (modal && modal.classList.contains("active")) {
+    closeModal();
+  } else if (notifDrawer && notifDrawer.classList.contains("active")) {
+    notifDrawer.classList.remove("active");
+  }
+});
+
+// Capacitor Native App Hardware Back Button & Lifecycle Listeners
+if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+  window.Capacitor.Plugins.App.addListener('backButton', ({ canGoBack }) => {
+    const modal = document.getElementById("modal");
+    const notifDrawer = document.getElementById("notif-drawer");
+    if (modal && modal.classList.contains("active")) {
+      closeModal();
+      return;
+    }
+    if (notifDrawer && notifDrawer.classList.contains("active")) {
+      notifDrawer.classList.remove("active");
+      return;
+    }
+    if (canGoBack) {
+      window.history.back();
+    } else {
+      window.Capacitor.Plugins.App.exitApp();
+    }
+  });
+
+  window.Capacitor.Plugins.App.addListener('appStateChange', ({ isActive }) => {
+    if (!isActive && playerEl) {
+      playerEl.pause();
+    }
+  });
+}
+
+window.addEventListener("pagehide", () => {
+  if (playerEl) {
+    playerEl.pause();
+    playerEl.removeAttribute("src");
+    playerEl.src = "";
+    try { playerEl.load(); } catch (e) {}
+  }
+});
 
 // ==============================================================================
 // Live Realtime Backup Notification Engine
