@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <!-- Telegram Web App SDK for Mini App Support -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <!-- Pre-bundled Instant Local Data Manifest (0ms Load) -->
+  <script src="data.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     
@@ -1466,8 +1468,11 @@ function showToast(msg) {
   setTimeout(() => toast.classList.remove("show"), 2000);
 }
 
-// Data Fetching & Sync
-async function loadManifestData() {
+// Data Fetching & Sync (Instant Sync + Non-blocking Background Sync)
+function loadInstantData() {
+  if (window.INITIAL_MANIFEST && typeof window.INITIAL_MANIFEST === "object" && Object.keys(window.INITIAL_MANIFEST).length > 0) {
+    backupManifest = window.INITIAL_MANIFEST;
+  }
   try {
     const cached = localStorage.getItem(STORAGE_MANIFEST_KEY);
     if (cached) {
@@ -1477,32 +1482,31 @@ async function loadManifestData() {
       }
     }
   } catch (e) {}
+}
 
-  if (!backupManifest || Object.keys(backupManifest).length === 0) {
-    try {
-      const bundledRes = await fetch("backup_manifest.json");
-      if (bundledRes.ok) {
-        const bundledData = await bundledRes.json();
-        if (typeof bundledData === "object" && bundledData && Object.keys(bundledData).length > 0) {
-          backupManifest = bundledData;
-        }
-      }
-    } catch (e) {}
-  }
-
+async function syncLiveManifestBackground() {
   if (typeof GOOGLE_APPS_SCRIPT_URL === "string" && GOOGLE_APPS_SCRIPT_URL.startsWith("http")) {
     try {
       const gasRes = await fetch(GOOGLE_APPS_SCRIPT_URL + "?_t=" + Date.now(), { cache: "no-store" });
       if (gasRes.ok) {
         const gasData = await gasRes.json();
         if (typeof gasData === "object" && gasData !== null && Object.keys(gasData).length > 0) {
+          const oldCount = Object.keys(backupManifest || {}).length;
+          const newCount = Object.keys(gasData).length;
           backupManifest = gasData;
           localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
+          
+          if (newCount > oldCount) {
+            buildShowsFromManifest();
+            renderSpotlight();
+            renderGrid("main-drama-grid", allItems);
+            updateAccountStats();
+            showToast("✨ មានការ Backup រឿងថ្មីចូល!");
+          }
         }
       }
     } catch (e) {}
   }
-  return backupManifest;
 }
 
 // Synthesize Shows and Attach Episodes
@@ -1877,11 +1881,7 @@ document.getElementById("btn-dismiss-banner").onclick = (e) => {
 // Account Menu Handlers
 document.getElementById("btn-account-sync").onclick = async () => {
   showToast("កំពុង Sync ពី Google Sheets...");
-  await loadManifestData();
-  buildShowsFromManifest();
-  renderSpotlight();
-  renderGrid("main-drama-grid", allItems);
-  updateAccountStats();
+  syncLiveManifestBackground();
   showToast("Sync ជោគជ័យ ១០០%!");
 };
 
@@ -1902,17 +1902,24 @@ document.getElementById("btn-account-admin").onclick = () => {
   }
 };
 
-// Main App Bootstrap
-async function initApp() {
+// Main App Bootstrap (Instant Zero-Lag Launch)
+function initApp() {
   initTelegramUser();
-  await loadManifestData();
+  loadInstantData();
   buildShowsFromManifest();
   renderSpotlight();
   renderGrid("main-drama-grid", allItems);
   updateAccountStats();
+  
+  // Non-blocking silent background sync
+  setTimeout(syncLiveManifestBackground, 500);
 }
 
 window.addEventListener("DOMContentLoaded", initApp);
+// Immediate execution if DOM ready
+if (document.readyState !== "loading") {
+  initApp();
+}
 </script>
 </body>
 </html>
