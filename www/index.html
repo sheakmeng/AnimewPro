@@ -1936,8 +1936,7 @@ if (btnAdminDelShow) {
       }
 
       // Remove from local data
-      delete showMap[currentShowObj.id];
-      allItems = allItems.filter(s => s.id !== currentShowObj.id);
+      allItems = allItems.filter(s => s.id !== currentShowObj.id && s.title !== currentShowObj.title);
       Object.keys(backupManifest).forEach(k => {
         if (backupManifest[k] && (backupManifest[k].show_id === currentShowObj.id || backupManifest[k].show_title === currentShowObj.title)) {
           delete backupManifest[k];
