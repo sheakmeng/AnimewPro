@@ -42,7 +42,7 @@ def send_welcome_message(chat_id, user_first_name=""):
     url = f"{API_BASE}/sendMessage"
     welcome_text = (
         f"👋 សួស្តី <b>{user_first_name or 'ប្រិយមិត្ត'}</b>!\n\n"
-        "✨ សូមស្វាគមន៍មកកាន់ <b>Animew Pro & Dramaora Mini App</b>!\n"
+        "✨ សូមស្វាគមន៍មកកាន់ <b>VIP DRAMA Mini App</b>!\n"
         "🎬 អ្នកអាចទស្សនារឿងភាគខ្លីៗ និងរឿងពេញនិយមច្រើនជាង <b>395+ ភាគ</b> កម្រិតរូបភាព <b>1080p FHD</b> ដោយឥតគិតថ្លៃ ១០០% លើ Telegram។\n\n"
         "👇 <b>ចុចប៊ូតុងខាងក្រោមដើម្បីបើកមើលរឿងភ្លាមៗ៖</b>"
     )

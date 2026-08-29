@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Animew Pro</string>
-    <string name="title_activity_main">Animew Pro</string>
+    <string name="app_name">VIP DRAMA</string>
+    <string name="title_activity_main">VIP DRAMA</string>
     <string name="package_name">com.nint.stream</string>
     <string name="custom_url_scheme">com.nint.stream</string>
 </resources>
