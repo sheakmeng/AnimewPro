@@ -2036,39 +2036,90 @@ function buildShowsFromManifest() {
   filteredItems = [...allItems];
 }
 
-// Render Spotlight Banner & Mini Thumbs
-function renderSpotlight() {
+// Render Spotlight Banner & Mini Thumbs with Auto-Slide
+let spotlightAutoSlideInterval = null;
+
+function renderSpotlight(animate = false) {
   if (allItems.length === 0) return;
+  const maxFeatured = Math.min(allItems.length, 8);
+  if (currentFeaturedIndex >= maxFeatured) currentFeaturedIndex = 0;
+
   const show = allItems[currentFeaturedIndex] || allItems[0];
   if (!show) return;
 
-  document.getElementById("hero-title").textContent = show.title;
-  document.getElementById("hero-poster-img").src = show.poster_url;
-  document.getElementById("hero-bg-art").style.backgroundImage = `url('${show.poster_url}')`;
-  document.getElementById("hero-rank-tag").textContent = `TOP #${currentFeaturedIndex + 1}`;
-  document.getElementById("hero-rating").textContent = (9.5 + (currentFeaturedIndex % 4) * 0.1).toFixed(1);
-  document.getElementById("hero-year").textContent = show.release_year || 2024;
+  const heroPoster = document.getElementById("hero-poster-img");
+  const heroTitle = document.getElementById("hero-title");
+  const heroBg = document.getElementById("hero-bg-art");
+
+  if (animate && heroPoster && heroTitle) {
+    heroPoster.style.opacity = "0.3";
+    heroTitle.style.opacity = "0.3";
+    setTimeout(() => {
+      heroTitle.textContent = show.title;
+      heroPoster.src = show.poster_url;
+      if (heroBg) heroBg.style.backgroundImage = `url('${show.poster_url}')`;
+      heroPoster.style.opacity = "1";
+      heroTitle.style.opacity = "1";
+    }, 150);
+  } else {
+    if (heroTitle) heroTitle.textContent = show.title;
+    if (heroPoster) heroPoster.src = show.poster_url;
+    if (heroBg) heroBg.style.backgroundImage = `url('${show.poster_url}')`;
+  }
+
+  const rankTag = document.getElementById("hero-rank-tag");
+  if (rankTag) rankTag.textContent = `TOP #${currentFeaturedIndex + 1}`;
+  const ratingEl = document.getElementById("hero-rating");
+  if (ratingEl) ratingEl.textContent = (9.5 + (currentFeaturedIndex % 4) * 0.1).toFixed(1);
+  const yearEl = document.getElementById("hero-year");
+  if (yearEl) yearEl.textContent = show.release_year || 2024;
 
   updateHeroAddButtonState(show);
 
-  document.getElementById("btn-hero-play").onclick = () => openModal(show);
-  document.getElementById("btn-hero-add").onclick = () => toggleWatchlist(show);
+  const playBtn = document.getElementById("btn-hero-play");
+  if (playBtn) playBtn.onclick = () => openModal(show);
+  const addBtn = document.getElementById("btn-hero-add");
+  if (addBtn) addBtn.onclick = () => toggleWatchlist(show);
 
   // Render Mini Thumbnails
   const thumbRow = document.getElementById("hero-thumbs-row");
   if (thumbRow) {
     thumbRow.innerHTML = "";
-    allItems.slice(0, 8).forEach((s, idx) => {
+    allItems.slice(0, maxFeatured).forEach((s, idx) => {
       const card = document.createElement("div");
       card.className = `hero-mini-card ${idx === currentFeaturedIndex ? 'active' : ''}`;
       card.innerHTML = `<img src="${s.poster_url}" alt="${s.title}" loading="lazy"/>`;
       card.onclick = () => {
         currentFeaturedIndex = idx;
-        renderSpotlight();
+        renderSpotlight(true);
+        restartSpotlightAutoSlide();
       };
       thumbRow.appendChild(card);
     });
+
+    // Auto-scroll the active thumbnail smoothly into view
+    const activeThumb = thumbRow.children[currentFeaturedIndex];
+    if (activeThumb) {
+      activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
   }
+}
+
+// Auto-Slide Spotlight Banner continuously every 3.5 seconds
+function startSpotlightAutoSlide() {
+  clearInterval(spotlightAutoSlideInterval);
+  spotlightAutoSlideInterval = setInterval(() => {
+    if (allItems.length > 1) {
+      const maxFeatured = Math.min(allItems.length, 8);
+      currentFeaturedIndex = (currentFeaturedIndex + 1) % maxFeatured;
+      renderSpotlight(true);
+    }
+  }, 3500);
+}
+
+function restartSpotlightAutoSlide() {
+  clearInterval(spotlightAutoSlideInterval);
+  startSpotlightAutoSlide();
 }
 
 function updateHeroAddButtonState(show) {
@@ -2728,6 +2779,7 @@ function initApp() {
   loadInstantData();
   buildShowsFromManifest();
   renderSpotlight();
+  startSpotlightAutoSlide();
   renderGrid("main-drama-grid", allItems);
   updateAccountStats();
   updateAdminSectionVisibility();
