@@ -829,9 +829,45 @@
       white-space: nowrap;
     }
     #toast.show { transform: translateX(-50%) translateY(0); }
+
+    /* Realtime Floating Notification Banner */
+    #new-backup-banner {
+      position: fixed;
+      top: max(12px, env(safe-area-inset-top));
+      left: 12px;
+      right: 12px;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.98));
+      border: 1px solid rgba(56, 189, 248, 0.5);
+      border-radius: 14px;
+      padding: 12px 14px;
+      box-shadow: 0 10px 32px rgba(0,0,0,0.7), 0 0 24px rgba(56,189,248,0.25);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transform: translateY(-180%);
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    #new-backup-banner.show {
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body>
+
+<!-- Realtime Floating Notification Banner -->
+<div id="new-backup-banner">
+  <div style="font-size:26px; filter:drop-shadow(0 0 6px rgba(56,189,248,0.6));">🔔</div>
+  <div style="flex:1; min-width:0;">
+    <div style="font-size:10.5px; font-weight:800; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">✨ ការ Backup ចូលថ្មី (New Update)</div>
+    <div id="new-backup-title" style="font-size:13px; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px;">រឿងថ្មីទើបបញ្ចូល</div>
+    <div id="new-backup-desc" style="font-size:11px; color:#cbd5e1; margin-top:1px;">ចុចដើម្បីបើកទស្សនាភ្លាមៗ ›</div>
+  </div>
+  <button id="btn-dismiss-banner" style="background:rgba(255,255,255,0.12); border:none; color:#fff; border-radius:50%; width:24px; height:24px; cursor:pointer; font-size:11px; display:flex; align-items:center; justify-content:center;">✕</button>
+</div>
 
 <header>
   <div class="nav-top">
@@ -1007,8 +1043,10 @@ const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeNw3vC
 
 const STORAGE_WATCHED_KEY = "animew_watched_shows";
 const STORAGE_EPS_KEY = "animew_watched_episodes";
-const EMBEDDED_MANIFEST = {};
+const STORAGE_MANIFEST_KEY = "animew_cached_manifest_v2";
+const STORAGE_SEEN_BACKUPS_KEY = "animew_seen_backup_ep_ids";
 
+const EMBEDDED_MANIFEST = {};
 let allItems = [];
 let showEpisodeStats = {};
 let recentUpdatesList = [];
@@ -1224,7 +1262,7 @@ async function init(silent = false) {
     // Recent Updates List for Notification Drawer
     const seenUpdates = new Set();
     recentUpdatesList = [];
-    allEpsList.slice(0, 40).forEach(ep => {
+    allEpsList.slice(0, 50).forEach(ep => {
       const show = showMap[ep.show_id];
       if (show && !seenUpdates.has(ep.show_id + "_" + ep.episode_number)) {
         seenUpdates.add(ep.show_id + "_" + ep.episode_number);
@@ -1242,6 +1280,9 @@ async function init(silent = false) {
       notifCountBadge.textContent = Math.min(recentUpdatesList.length, 99);
       notifCountBadge.style.display = "flex";
     }
+
+    // Check for Brand-New Backups to trigger Live Notification Banner
+    checkForNewBackupNotifications(allEpsList);
 
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
@@ -1908,9 +1949,114 @@ function closeModal() {
   if (actionsBar) actionsBar.innerHTML = "";
 }
 
-document.getElementById("btn-close").addEventListener("click", closeModal);
+// ==============================================================================
+// Live Realtime Backup Notification Engine
+// ==============================================================================
+let hasInitializedSeenBackups = false;
 
-// Auto-refresh when app becomes visible or every 20s
+function playChimeSound() {
+  try {
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
+    osc.frequency.setValueAtTime(880.00, audioCtx.currentTime + 0.12); // A5
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.55);
+  } catch (e) {}
+}
+
+function checkForNewBackupNotifications(allEps) {
+  if (!allEps || allEps.length === 0) return;
+
+  let seenEpIds = [];
+  try {
+    const raw = localStorage.getItem(STORAGE_SEEN_BACKUPS_KEY);
+    if (raw) seenEpIds = JSON.parse(raw);
+  } catch (e) {}
+
+  if (!Array.isArray(seenEpIds)) seenEpIds = [];
+
+  // First time app runs: register current episodes as seen
+  if (!hasInitializedSeenBackups && seenEpIds.length === 0) {
+    seenEpIds = allEps.map(e => e.id || (e.show_id + "_" + e.episode_number));
+    localStorage.setItem(STORAGE_SEEN_BACKUPS_KEY, JSON.stringify(seenEpIds));
+    hasInitializedSeenBackups = true;
+    return;
+  }
+  hasInitializedSeenBackups = true;
+
+  const seenSet = new Set(seenEpIds);
+  const brandNewEps = allEps.filter(e => {
+    const key = e.id || (e.show_id + "_" + e.episode_number);
+    return !seenSet.has(key);
+  });
+
+  if (brandNewEps.length > 0) {
+    const latestEp = brandNewEps[0];
+    const banner = document.getElementById("new-backup-banner");
+    const titleEl = document.getElementById("new-backup-title");
+    const descEl = document.getElementById("new-backup-desc");
+
+    if (banner && titleEl && descEl) {
+      titleEl.textContent = latestEp.title || "មានរឿងថ្មីទើបបញ្ចូល";
+      descEl.textContent = brandNewEps.length > 1 
+        ? `ទើប Backup ចូល ${brandNewEps.length} ភាគថ្មី! ចុចដើម្បីទស្សនា` 
+        : `ទើប Backup ចូលរួចរាល់! ចុចដើម្បីទស្សនា`;
+
+      banner.classList.add("show");
+      playChimeSound();
+
+      // Auto dismiss after 7s
+      setTimeout(() => {
+        banner.classList.remove("show");
+      }, 7000);
+    }
+
+    // Save updated seen list
+    const updatedSeen = [...seenEpIds, ...brandNewEps.map(e => e.id || (e.show_id + "_" + e.episode_number))];
+    localStorage.setItem(STORAGE_SEEN_BACKUPS_KEY, JSON.stringify(updatedSeen));
+  }
+}
+
+// Banner Click -> Open Notification Drawer
+const backupBanner = document.getElementById("new-backup-banner");
+if (backupBanner) {
+  backupBanner.addEventListener("click", (e) => {
+    if (e.target.id === "btn-dismiss-banner") {
+      backupBanner.classList.remove("show");
+      return;
+    }
+    backupBanner.classList.remove("show");
+    const notifDrawer = document.getElementById("notif-drawer");
+    if (notifDrawer) {
+      notifDrawer.classList.add("active");
+      renderNotifications();
+    }
+  });
+}
+
+const btnDismissBanner = document.getElementById("btn-dismiss-banner");
+if (btnDismissBanner) {
+  btnDismissBanner.addEventListener("click", (e) => {
+    e.stopPropagation();
+    backupBanner.classList.remove("show");
+  });
+}
+
+// Background Auto-Sync every 25 seconds for new Backups
+setInterval(async () => {
+  if (!document.hidden) {
+    await init(true);
+  }
+}, 25000);
+
+// Auto-refresh when app becomes visible
 document.addEventListener("visibilitychange", () => {
   if (!document.hidden) init(true);
 });
