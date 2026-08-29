@@ -2400,13 +2400,38 @@ function startPaymentPolling() {
   }, 2500);
 }
 
-function handlePaymentSuccess() {
+async function handlePaymentSuccess() {
   const expiryTime = Date.now() + (selectedVipMonths * 30 * 24 * 3600 * 1000);
   localStorage.setItem(STORAGE_VIP_KEY, expiryTime.toString());
   closeKhqrModal();
   showToast("🎉 សូមអបអរសាទរ! អ្នកបានក្លាយជា VIP រួចរាល់ហើយ!");
   alert(`🎉 ការទូទាត់ជោគជ័យ ១០០%!\n\nអ្នកបានទទួលសមាជិកភាព VIP រយៈពេល ${selectedVipMonths} ខែដោយជោគជ័យ។ សូមរីករាយទស្សនារឿងកម្រិត FHD ដោយគ្មានដែនកំណត់!`);
   updateAccountStats();
+
+  // 📊 Store Member Data into Google Sheet Tab "VIP_Members"
+  try {
+    const tgUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
+    const payload = {
+      action: "save_vip_member",
+      user_id: tgUser ? tgUser.id : (localStorage.getItem("vip_device_id") || ("dev_" + Date.now())),
+      username: tgUser ? (tgUser.username || "") : "",
+      first_name: tgUser ? (tgUser.first_name || "") : "User",
+      plan_name: `គម្រោង ${selectedVipMonths} ខែ`,
+      amount: parseFloat(selectedVipAmount) || 2.00,
+      currency: "USD",
+      payment_md5: currentPaymentMd5,
+      paid_at: new Date().toISOString(),
+      expires_at: new Date(expiryTime).toISOString()
+    };
+    await fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    });
+    console.log("✅ VIP Member successfully saved into Google Sheet tab 'VIP_Members'!");
+  } catch (e) {
+    console.warn("Save VIP to Google Sheets:", e);
+  }
 }
 
 document.getElementById("btn-checkout-khqr").onclick = generateKhqrPayment;

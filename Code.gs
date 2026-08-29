@@ -1,9 +1,10 @@
 // ==============================================================================
-// Google Apps Script (Code.gs) for Animew Pro Cloud Sync
+// Google Apps Script (Code.gs) for Animew Pro & VIP DRAMA Cloud Sync & VIP Members
 // Paste this code into: Extensions -> Apps Script in your Google Sheet
 // ==============================================================================
 
 const SHEET_NAME = "Manifest";
+const VIP_SHEET_NAME = "VIP_Members";
 
 function setupSheetIfNeeded(ss) {
   let sheet = ss.getSheetByName(SHEET_NAME);
@@ -29,10 +30,70 @@ function setupSheetIfNeeded(ss) {
   return sheet;
 }
 
-// 🌐 GET API: Returns all backed-up episodes as JSON for APK and Web App
+function setupVipSheetIfNeeded(ss) {
+  let sheet = ss.getSheetByName(VIP_SHEET_NAME);
+  if (!sheet) {
+    sheet = ss.insertSheet(VIP_SHEET_NAME);
+    sheet.appendRow([
+      "user_id",
+      "username",
+      "first_name",
+      "plan_name",
+      "amount",
+      "currency",
+      "payment_md5",
+      "paid_at",
+      "expires_at",
+      "status"
+    ]);
+    sheet.getRange(1, 1, 1, 10).setFontWeight("bold").setBackground("#0f172a").setFontColor("#38bdf8");
+    sheet.setFrozenRows(1);
+  }
+  return sheet;
+}
+
+// 🌐 GET API: Returns Manifest or Checks VIP Member status
 function doGet(e) {
   try {
     const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const action = e && e.parameter ? e.parameter.action : "";
+
+    // Check VIP Member Status by Telegram User ID
+    if (action === "check_vip" && e.parameter.user_id) {
+      const vipSheet = setupVipSheetIfNeeded(ss);
+      const targetUserId = String(e.parameter.user_id).trim();
+      const vipData = vipSheet.getDataRange().getValues();
+      
+      let isVip = false;
+      let vipInfo = null;
+
+      for (let i = 1; i < vipData.length; i++) {
+        if (String(vipData[i][0]).trim() === targetUserId) {
+          const expiresAt = new Date(vipData[i][8]);
+          const now = new Date();
+          if (expiresAt > now && vipData[i][9] === "ACTIVE") {
+            isVip = true;
+            vipInfo = {
+              user_id: targetUserId,
+              username: vipData[i][1],
+              plan_name: vipData[i][3],
+              amount: vipData[i][4],
+              paid_at: vipData[i][7],
+              expires_at: vipData[i][8],
+              status: "ACTIVE"
+            };
+            break;
+          }
+        }
+      }
+
+      return ContentService.createTextOutput(JSON.stringify({
+        is_vip: isVip,
+        data: vipInfo
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // Default: Return Full Drama Manifest
     const sheet = setupSheetIfNeeded(ss);
     const data = sheet.getDataRange().getValues();
     
@@ -69,15 +130,57 @@ function doGet(e) {
   }
 }
 
-// 📤 POST API: Receives new episode backup from Python (Pydroid 3)
+// 📤 POST API: Receives new episode backup or VIP Payment Records
 function doPost(e) {
   try {
     const rawContent = e.postData.contents;
     const body = JSON.parse(rawContent);
     const ss = SpreadsheetApp.getActiveSpreadsheet();
-    const sheet = setupSheetIfNeeded(ss);
     
     const now = new Date().toISOString();
+
+    // 👑 Save VIP Member Payment Record into Google Sheet Tab "VIP_Members"
+    if (body.action === "save_vip_member") {
+      const vipSheet = setupVipSheetIfNeeded(ss);
+      const userId = String(body.user_id || "").trim();
+      const vipData = vipSheet.getDataRange().getValues();
+      
+      let foundRow = -1;
+      for (let i = 1; i < vipData.length; i++) {
+        if (String(vipData[i][0]).trim() === userId) {
+          foundRow = i + 1;
+          break;
+        }
+      }
+
+      const rowData = [
+        userId,
+        body.username || "",
+        body.first_name || "",
+        body.plan_name || "គម្រោង VIP",
+        body.amount || 2.00,
+        body.currency || "USD",
+        body.payment_md5 || "",
+        body.paid_at || now,
+        body.expires_at || new Date(Date.now() + 30 * 24 * 3600 * 1000).toISOString(),
+        "ACTIVE"
+      ];
+
+      if (foundRow > 0) {
+        vipSheet.getRange(foundRow, 1, 1, 10).setValues([rowData]);
+      } else {
+        vipSheet.appendRow(rowData);
+      }
+
+      return ContentService.createTextOutput(JSON.stringify({
+        status: "success",
+        action: "save_vip_member",
+        user_id: userId,
+        expires_at: rowData[8]
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+
+    const sheet = setupSheetIfNeeded(ss);
     
     // Support Bulk Sync (all episodes in one ultra-fast batch)
     if (body.action === "bulk_sync" && body.manifest) {
@@ -157,7 +260,7 @@ function doPost(e) {
       })).setMimeType(ContentService.MimeType.JSON);
     }
     
-    // Single Episode Sync (Realtime from Pydroid 3)
+    // Single Episode Sync (Realtime from Python)
     const epId = String(body.ep_id || body.id || "").trim();
     const epData = body.data || body;
     
