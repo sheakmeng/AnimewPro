@@ -2247,7 +2247,25 @@ async function openModal(show) {
 
 const FREE_EPISODES_LIMIT = 7;
 
+// Admin Access Control & VIP Privileges
+const ADMIN_USERNAMES = ["mengsmmkh1", "sheakmeng"];
+const ADMIN_USER_IDS = ["8357847250", "684920194", "8664822430"];
+
+function checkIsAdmin() {
+  if (localStorage.getItem("animew_admin_authenticated") === "true") return true;
+  const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  if (user) {
+    const uName = (user.username || "").toLowerCase().replace("@", "");
+    if (ADMIN_USERNAMES.includes(uName)) return true;
+    if (user.id && ADMIN_USER_IDS.includes(String(user.id))) return true;
+  }
+  return false;
+}
+
 function isUserVip() {
+  // 👑 Admin has 100% Full VIP Privileges Forever (No Purchase Required!)
+  if (checkIsAdmin()) return true;
+
   const vipUntil = localStorage.getItem(STORAGE_VIP_KEY);
   if (!vipUntil) return false;
   return parseInt(vipUntil, 10) > Date.now();
