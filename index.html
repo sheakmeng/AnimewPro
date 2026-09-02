@@ -869,6 +869,114 @@
       background: #000000;
       position: relative;
       max-height: 45vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Native Fullscreen styling across all browsers */
+    .player-wrap:fullscreen,
+    .player-wrap:-webkit-full-screen,
+    .player-wrap:-moz-full-screen,
+    .player-wrap:-ms-fullscreen {
+      width: 100vw !important;
+      height: 100vh !important;
+      max-height: 100vh !important;
+      background: #000 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    .player-wrap:fullscreen video,
+    .player-wrap:-webkit-full-screen video,
+    .player-wrap:-moz-full-screen video,
+    .player-wrap:-ms-fullscreen video {
+      width: 100% !important;
+      height: 100% !important;
+      max-height: 100vh !important;
+      object-fit: contain !important;
+    }
+
+    /* 100% Guaranteed Pseudo-Fullscreen for Android & iOS (WebView / Telegram Mini App) */
+    .player-wrap.pseudo-fullscreen {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      max-height: 100vh !important;
+      aspect-ratio: unset !important;
+      z-index: 2147483647 !important;
+      background: #000000 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border-radius: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    .player-wrap.pseudo-fullscreen video {
+      width: 100% !important;
+      height: 100% !important;
+      max-height: 100vh !important;
+      object-fit: contain !important;
+    }
+
+    /* Floating Fullscreen and Exit Buttons */
+    .floating-fs-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 25;
+      transition: transform 0.15s ease, background 0.15s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .floating-fs-btn:active {
+      transform: scale(0.9);
+      background: rgba(56, 189, 248, 0.85);
+    }
+    .btn-exit-pseudo-fs {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      display: none;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      z-index: 2147483647;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    }
+    .btn-exit-pseudo-fs:active {
+      transform: scale(0.92);
+    }
+    .player-wrap.pseudo-fullscreen .btn-exit-pseudo-fs {
+      display: flex !important;
+    }
+    .player-wrap.pseudo-fullscreen .floating-fs-btn {
+      display: none !important;
     }
 
     video {
@@ -1728,12 +1836,19 @@
     <div style="width:36px;"></div>
   </div>
 
-  <div class="player-wrap">
-    <video id="player" controls playsinline webkit-playsinline></video>
+  <div class="player-wrap" id="player-wrap">
+    <video id="player" controls playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5"></video>
+    <button id="btn-floating-fs" class="floating-fs-btn" title="ពង្រីកធំ (Fullscreen)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+      </svg>
+    </button>
+    <button id="btn-exit-pseudo-fs" class="btn-exit-pseudo-fs">✕ បង្រួមមកវិញ</button>
   </div>
 
   <!-- Player Controls Row -->
   <div class="player-quick-controls">
+    <button class="ctrl-pill-btn" id="ctrl-fullscreen" style="background:rgba(56,189,248,0.2); color:#38bdf8; border-color:rgba(56,189,248,0.45); font-weight:800;">⛶ ពង្រីកធំ</button>
     <button class="ctrl-pill-btn" id="ctrl-prev">⏮ ភាគមុន</button>
     <button class="ctrl-pill-btn" id="ctrl-rewind">⏪ -10s</button>
     <button class="ctrl-pill-btn" id="ctrl-forward">+10s ⏩</button>
@@ -1985,6 +2100,11 @@ function initTelegramUser() {
 
       if (tg.BackButton) {
         tg.BackButton.onClick(() => {
+          const wrap = document.getElementById("player-wrap");
+          if (wrap && wrap.classList.contains("pseudo-fullscreen")) {
+            exitFullscreen();
+            return;
+          }
           const modal = document.getElementById("modal");
           const notifDrawer = document.getElementById("notif-drawer");
           if (modal && modal.classList.contains("active")) {
@@ -2497,6 +2617,7 @@ function playEpisode(idx) {
 }
 
 function closeModal() {
+  exitFullscreen();
   const modal = document.getElementById("modal");
   if (modal) modal.classList.remove("active");
   document.body.style.overflow = "";
@@ -2513,6 +2634,150 @@ function closeModal() {
 
 // Quick Player Controls
 document.getElementById("btn-modal-back").onclick = closeModal;
+document.getElementById("ctrl-fullscreen").onclick = toggleFullscreen;
+document.getElementById("btn-floating-fs").onclick = toggleFullscreen;
+document.getElementById("btn-exit-pseudo-fs").onclick = exitFullscreen;
+
+// Universal Fullscreen Handler (Android, iOS WebKit, Telegram Mini App)
+function toggleFullscreen() {
+  const wrap = document.getElementById("player-wrap");
+  const video = document.getElementById("player");
+  if (!wrap || !video) return;
+
+  const isNativeFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+  const isPseudoFs = wrap.classList.contains("pseudo-fullscreen");
+
+  if (isNativeFs || isPseudoFs) {
+    exitFullscreen();
+  } else {
+    enterFullscreen();
+  }
+}
+
+async function enterFullscreen() {
+  const wrap = document.getElementById("player-wrap");
+  const video = document.getElementById("player");
+  if (!wrap || !video) return;
+
+  // 1. Expand Telegram WebApp if running inside Telegram
+  try {
+    if (window.Telegram?.WebApp) {
+      if (window.Telegram.WebApp.expand) window.Telegram.WebApp.expand();
+      if (window.Telegram.WebApp.requestFullscreen) window.Telegram.WebApp.requestFullscreen();
+    }
+  } catch (e) {}
+
+  // 2. iOS Video Native Fullscreen (WebKit Specific API)
+  if (video.webkitEnterFullscreen) {
+    try {
+      video.webkitEnterFullscreen();
+      return;
+    } catch (e) {
+      console.warn("video.webkitEnterFullscreen failed:", e);
+    }
+  } else if (video.webkitEnterFullScreen) {
+    try {
+      video.webkitEnterFullScreen();
+      return;
+    } catch (e) {}
+  }
+
+  // 3. Standard HTML5 Request Fullscreen (Desktop & Android Chrome)
+  const reqFn = wrap.requestFullscreen || wrap.webkitRequestFullscreen || wrap.mozRequestFullScreen || wrap.msRequestFullscreen ||
+                video.requestFullscreen || video.webkitRequestFullscreen;
+
+  let nativeSuccess = false;
+  if (reqFn) {
+    try {
+      const res = reqFn.call(wrap);
+      if (res && res.then) {
+        await res;
+        nativeSuccess = true;
+      } else {
+        nativeSuccess = true;
+      }
+    } catch (err) {
+      console.warn("Native requestFullscreen error, falling back to pseudo fullscreen:", err);
+      nativeSuccess = false;
+    }
+  }
+
+  // 4. Fallback: Pseudo-Fullscreen for WebView / Telegram Mini App
+  if (!nativeSuccess) {
+    wrap.classList.add("pseudo-fullscreen");
+    const fsBtn = document.getElementById("ctrl-fullscreen");
+    if (fsBtn) fsBtn.textContent = "⛶ បង្រួមតូច";
+  }
+
+  // Optional sensor orientation lock if supported
+  try {
+    if (screen.orientation && screen.orientation.lock) {
+      screen.orientation.lock("any").catch(() => {});
+    }
+  } catch (e) {}
+}
+
+function exitFullscreen() {
+  const wrap = document.getElementById("player-wrap");
+  const video = document.getElementById("player");
+  if (!wrap) return;
+
+  // 1. Exit Native Fullscreen
+  const exitFn = document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen;
+  if (exitFn && (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement)) {
+    try {
+      exitFn.call(document).catch(() => {});
+    } catch (e) {}
+  }
+
+  // 2. Exit iOS WebKit Fullscreen
+  if (video && video.webkitExitFullscreen) {
+    try { video.webkitExitFullscreen(); } catch (e) {}
+  }
+
+  // 3. Exit Telegram Fullscreen
+  try {
+    if (window.Telegram?.WebApp?.exitFullscreen) {
+      window.Telegram.WebApp.exitFullscreen();
+    }
+  } catch (e) {}
+
+  // 4. Exit Pseudo Fullscreen
+  wrap.classList.remove("pseudo-fullscreen");
+  const fsBtn = document.getElementById("ctrl-fullscreen");
+  if (fsBtn) fsBtn.textContent = "⛶ ពង្រីកធំ";
+
+  try {
+    if (screen.orientation && screen.orientation.unlock) {
+      screen.orientation.unlock();
+    }
+  } catch (e) {}
+}
+
+// Fullscreen Change Listeners to sync button state
+document.addEventListener("fullscreenchange", syncFsBtn);
+document.addEventListener("webkitfullscreenchange", syncFsBtn);
+document.addEventListener("mozfullscreenchange", syncFsBtn);
+
+function syncFsBtn() {
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement);
+  const fsBtn = document.getElementById("ctrl-fullscreen");
+  if (fsBtn) fsBtn.textContent = isFs ? "⛶ បង្រួមតូច" : "⛶ ពង្រីកធំ";
+}
+
+// Double-tap on video to toggle fullscreen
+let lastTapTime = 0;
+if (playerEl) {
+  playerEl.addEventListener("touchend", (e) => {
+    const now = Date.now();
+    if (now - lastTapTime < 300 && now - lastTapTime > 0) {
+      toggleFullscreen();
+      e.preventDefault();
+    }
+    lastTapTime = now;
+  });
+}
+
 document.getElementById("ctrl-rewind").onclick = () => { if (playerEl) playerEl.currentTime -= 10; };
 document.getElementById("ctrl-forward").onclick = () => { if (playerEl) playerEl.currentTime += 10; };
 document.getElementById("ctrl-prev").onclick = () => {
