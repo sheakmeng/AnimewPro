@@ -2413,11 +2413,15 @@
     </div>
 
     <!-- Category Filter Pills -->
-    <div class="filter-pills-row">
+    <div class="filter-pills-row" id="home-filter-pills">
       <button class="filter-pill active" data-filter="all">ទាំងអស់</button>
+      <button class="filter-pill" data-filter="dramabite">⚡ DramaBite</button>
       <button class="filter-pill" data-filter="dramaora">🎬 ភាគខ្លី Dramaora</button>
+      <button class="filter-pill" data-filter="vip">👑 VIP ពិសេស</button>
       <button class="filter-pill" data-filter="chinese">🇨🇳 រឿងភាគចិន</button>
       <button class="filter-pill" data-filter="korean">🇰🇷 រឿងភាគកូរ៉េ</button>
+      <button class="filter-pill" data-filter="romance">❤️ ស្នេហា / CEO</button>
+      <button class="filter-pill" data-filter="action">⚔️ សកម្មភាព</button>
     </div>
 
     <!-- Drama Cards Grid -->
@@ -2450,10 +2454,23 @@
 <!-- ================= VIEW 3: DRAMAS ================= -->
 <div id="view-dramas" class="app-view">
   <div class="section-wrap" style="padding-top:10px;">
-    <div class="section-title" style="margin-bottom:14px;">
+    <div class="section-title" style="margin-bottom:12px;">
       <span class="section-title-icon">📺</span>
       <span>រឿងភាគទាំងអស់ (All VIP Dramas)</span>
     </div>
+
+    <!-- Platform & Category Filter Tabs for All Dramas Page -->
+    <div class="filter-pills-row" id="dramas-filter-pills">
+      <button class="filter-pill active" data-filter="all">ទាំងអស់</button>
+      <button class="filter-pill" data-filter="dramabite">⚡ DramaBite (Bypass)</button>
+      <button class="filter-pill" data-filter="dramaora">🎬 ភាគខ្លី Dramaora</button>
+      <button class="filter-pill" data-filter="vip">👑 VIP ពិសេស</button>
+      <button class="filter-pill" data-filter="chinese">🇨🇳 រឿងភាគចិន</button>
+      <button class="filter-pill" data-filter="korean">🇰🇷 រឿងភាគកូរ៉េ</button>
+      <button class="filter-pill" data-filter="romance">❤️ ស្នេហា / CEO</button>
+      <button class="filter-pill" data-filter="action">⚔️ សកម្មភាព</button>
+    </div>
+
     <div class="drama-grid" id="all-dramas-grid"></div>
     <div class="pagination-bar" id="all-dramas-grid-pagination"></div>
   </div>
@@ -4385,20 +4402,44 @@ document.getElementById("btn-clear-search").onclick = () => {
   handleSearch("");
 };
 
-// Filter Category Pills
-document.querySelectorAll(".filter-pill").forEach(pill => {
+// Universal Category & Platform Filtering Logic
+function applyCategoryFilter(cat, targetGridId = "main-drama-grid") {
+  let list = [...allItems];
+  if (cat === "all") {
+    list = [...allItems];
+  } else if (cat === "dramabite") {
+    list = allItems.filter(s => s.type === "dramabite" || s.id.includes("dramabite") || (s.source && s.source.toLowerCase().includes("dramabite")));
+  } else if (cat === "dramaora") {
+    list = allItems.filter(s => s.type === "dramaora" || s.id.includes("dramaora") || (s.source && s.source.toLowerCase().includes("dramaora")));
+  } else if (cat === "vip") {
+    list = allItems.filter(s => s.is_vip || s.category === "vip" || (s.title && s.title.toLowerCase().includes("vip")));
+  } else if (cat === "chinese") {
+    list = allItems.filter(s => s.category === "chinese" || (s.title && s.title.includes("ចិន")) || s.source === "chinese");
+  } else if (cat === "korean") {
+    list = allItems.filter(s => s.category === "korean" || (s.title && s.title.includes("កូរ៉េ")) || s.source === "korean");
+  } else if (cat === "romance") {
+    list = allItems.filter(s => s.category === "romance" || (s.title && (s.title.toLowerCase().includes("love") || s.title.toLowerCase().includes("boss") || s.title.toLowerCase().includes("bride") || s.title.toLowerCase().includes("wife") || s.title.toLowerCase().includes("husband") || s.title.toLowerCase().includes("desire"))));
+  } else if (cat === "action") {
+    list = allItems.filter(s => s.category === "action" || (s.title && (s.title.toLowerCase().includes("king") || s.title.toLowerCase().includes("fighter") || s.title.toLowerCase().includes("revenge") || s.title.toLowerCase().includes("alpha") || s.title.toLowerCase().includes("slay"))));
+  }
+  renderGrid(targetGridId, list, 1);
+}
+
+// Bind Home Filter Pills
+document.querySelectorAll("#home-filter-pills .filter-pill").forEach(pill => {
   pill.addEventListener("click", () => {
-    document.querySelectorAll(".filter-pill").forEach(p => p.classList.remove("active"));
+    document.querySelectorAll("#home-filter-pills .filter-pill").forEach(p => p.classList.remove("active"));
     pill.classList.add("active");
-    const cat = pill.dataset.filter;
-    if (cat === "all") {
-      filteredItems = [...allItems];
-    } else if (cat === "dramaora") {
-      filteredItems = allItems.filter(s => s.type === "dramaora" || s.id.includes("dramaora"));
-    } else {
-      filteredItems = allItems;
-    }
-    renderGrid("main-drama-grid", filteredItems);
+    applyCategoryFilter(pill.dataset.filter, "main-drama-grid");
+  });
+});
+
+// Bind Dramas Page Filter Pills
+document.querySelectorAll("#dramas-filter-pills .filter-pill").forEach(pill => {
+  pill.addEventListener("click", () => {
+    document.querySelectorAll("#dramas-filter-pills .filter-pill").forEach(p => p.classList.remove("active"));
+    pill.classList.add("active");
+    applyCategoryFilter(pill.dataset.filter, "all-dramas-grid");
   });
 });
 
