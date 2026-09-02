@@ -3192,9 +3192,11 @@ async function checkVipStatusFromBackend() {
         }
         return true;
       }
-    } else if (json.data && (json.data.status === "FREE" || json.data.status === "REVOKED")) {
-      // If admin revoked VIP
+    } else {
+      // ⚠️ User is NOT VIP on backend! Admin revoked or subscription expired!
       localStorage.removeItem(STORAGE_VIP_KEY);
+      localStorage.removeItem("animew_vip_plan");
+      localStorage.setItem("animew_vip_status", "FREE");
       updateAccountStats();
       if (typeof renderEpisodes === "function" && currentEpisodes && currentEpisodes.length > 0) {
         renderEpisodes();
@@ -4433,9 +4435,30 @@ async function adminSetUserVip(targetUserId, username, firstName, days = 30) {
   }
 }
 
+// Safe Telegram WebApp Confirmation Dialog Helper
+function appConfirm(message) {
+  return new Promise((resolve) => {
+    if (window.Telegram?.WebApp && typeof window.Telegram.WebApp.showConfirm === "function") {
+      try {
+        window.Telegram.WebApp.showConfirm(message, (ok) => resolve(!!ok));
+        return;
+      } catch (e) {
+        console.warn("Telegram showConfirm error:", e);
+      }
+    }
+    try {
+      resolve(window.confirm(message));
+    } catch (e) {
+      resolve(true);
+    }
+  });
+}
+
 // Admin Action: Revoke VIP
 async function adminRevokeUserVip(targetUserId) {
-  if (!confirm(`តើអ្នកពិតជាចង់ដកសិទ្ធិ VIP ពី User ${targetUserId} មែនទេ?`)) return;
+  const confirmed = await appConfirm(`តើអ្នកពិតជាចង់ដកសិទ្ធិ VIP ពី User ${targetUserId} មែនទេ?`);
+  if (!confirmed) return;
+
   showToast(`⏳ កំពុងដកសិទ្ធិ VIP ពី ID: ${targetUserId}...`);
 
   try {
@@ -4459,7 +4482,28 @@ async function adminRevokeUserVip(targetUserId) {
 
     if (json.status === "success") {
       showToast(`✅ បានដកសិទ្ធិ VIP ពី ${targetUserId} រួចរាល់!`);
+
+      // Update cached list immediately
+      const userInCache = cachedAdminUsers.find(u => String(u.user_id) === String(targetUserId));
+      if (userInCache) {
+        userInCache.status = "FREE";
+        userInCache.plan_name = "Free";
+        userInCache.expires_at = "";
+      }
+      filterAndRenderUsers();
+
+      // If current device is this user, clear local VIP
+      const currentTgId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
+      if (String(currentTgId) === String(targetUserId)) {
+        localStorage.removeItem(STORAGE_VIP_KEY);
+        localStorage.removeItem("animew_vip_plan");
+        localStorage.setItem("animew_vip_status", "FREE");
+        updateAccountStats();
+      }
+
       await fetchAndRenderAdminUsers();
+    } else {
+      showToast(`⚠️ ${json.message || "បរាជ័យក្នុងការដក VIP"}`);
     }
   } catch (err) {
     showToast("⚠️ បរាជ័យក្នុងការតភ្ជាប់ Server");
@@ -4469,7 +4513,8 @@ async function adminRevokeUserVip(targetUserId) {
 // Admin Action: Block / Unblock User
 async function adminToggleBlockUser(targetUserId, shouldBlock) {
   const actionText = shouldBlock ? "Block គណនី" : "Unblock គណនី";
-  if (!confirm(`តើអ្នកពិតជាចង់ ${actionText} ${targetUserId} មែនទេ?`)) return;
+  const confirmed = await appConfirm(`តើអ្នកពិតជាចង់ ${actionText} ${targetUserId} មែនទេ?`);
+  if (!confirmed) return;
 
   showToast(`⏳ កំពុង ${actionText}...`);
 
@@ -4494,7 +4539,14 @@ async function adminToggleBlockUser(targetUserId, shouldBlock) {
 
     if (json.status === "success") {
       showToast(`✅ បាន ${actionText} ${targetUserId} ជោគជ័យ!`);
+      const userInCache = cachedAdminUsers.find(u => String(u.user_id) === String(targetUserId));
+      if (userInCache) {
+        userInCache.status = shouldBlock ? "BLOCKED" : "FREE";
+      }
+      filterAndRenderUsers();
       await fetchAndRenderAdminUsers();
+    } else {
+      showToast(`⚠️ ${json.message || "បរាជ័យ"}`);
     }
   } catch (err) {
     showToast("⚠️ បរាជ័យក្នុងការតភ្ជាប់ Server");
