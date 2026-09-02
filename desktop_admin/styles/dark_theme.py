@@ -6,13 +6,14 @@ Designed for high elegance, modern glassmorphism, clean tables, and Khmer font s
 DARK_THEME_QSS = """
 /* ================= GLOBAL RESETS & TYPOGRAPHY ================= */
 * {
-    font-family: 'Kantumruy Pro', 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Kantumruy Pro', 'Battambang', 'Siemreap', 'Leelawadee UI', 'Khmer UI', system-ui, sans-serif;
     outline: none;
 }
 
 QWidget {
     background-color: #080c18;
     color: #f1f5f9;
+    font-family: 'Kantumruy Pro', 'Battambang', 'Siemreap', 'Leelawadee UI', 'Khmer UI', system-ui, sans-serif;
     font-size: 13px;
     selection-background-color: #6366f1;
     selection-color: #ffffff;

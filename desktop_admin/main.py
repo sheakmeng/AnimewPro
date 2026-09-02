@@ -19,7 +19,7 @@ from PyQt5.QtWidgets import (
     QPushButton, QLabel, QStackedWidget, QFrame
 )
 from PyQt5.QtCore import Qt, QSize
-from PyQt5.QtGui import QFont, QIcon
+from PyQt5.QtGui import QFont, QIcon, QFontDatabase
 
 from styles.dark_theme import DARK_THEME_QSS
 from core.manifest_bridge import ManifestBridge
@@ -188,8 +188,34 @@ class MainWindow(QMainWindow):
         self.chip_dramas.setText(f"📚 {len(self.bridge.dramas)} Shows")
         self.chip_eps.setText(f"📺 {len(self.bridge.manifest)} Episodes")
 
+def load_embedded_khmer_fonts():
+    """Load bundled Khmer fonts into QFontDatabase."""
+    fonts_dir = os.path.join(BASE_DIR, "fonts")
+    loaded_families = []
+    if os.path.isdir(fonts_dir):
+        for f in os.listdir(fonts_dir):
+            if f.lower().endswith((".ttf", ".otf")):
+                font_path = os.path.join(fonts_dir, f)
+                font_id = QFontDatabase.addApplicationFont(font_path)
+                if font_id != -1:
+                    families = QFontDatabase.applicationFontFamilies(font_id)
+                    loaded_families.extend(families)
+    
+    # Priority Khmer font list
+    for preferred in ["Kantumruy Pro", "Battambang", "Siemreap", "Leelawadee UI", "Khmer UI"]:
+        if preferred in loaded_families or preferred in QFontDatabase().families():
+            default_font = QFont(preferred, 10)
+            default_font.setStyleHint(QFont.SansSerif)
+            return default_font
+    return QFont("Segoe UI", 10)
+
 def main():
     app = QApplication(sys.argv)
+    
+    # Apply crisp embedded Khmer typography
+    app_font = load_embedded_khmer_fonts()
+    app.setFont(app_font)
+    
     app.setStyleSheet(DARK_THEME_QSS)
     
     window = MainWindow()
