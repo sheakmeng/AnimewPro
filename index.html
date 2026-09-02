@@ -1641,6 +1641,72 @@
       border: 1px solid rgba(239, 68, 68, 0.35);
     }
 
+    /* Blocked User Lockdown Screen */
+    .blocked-user-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 7, 15, 0.96);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      z-index: 2147483647;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .blocked-card {
+      background: linear-gradient(180deg, #131b2e 0%, #0c1222 100%);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      border-radius: 24px;
+      padding: 32px 24px;
+      max-width: 380px;
+      width: 100%;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(239, 68, 68, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .blocked-icon {
+      font-size: 54px;
+      line-height: 1;
+      margin-bottom: 4px;
+      animation: pulse 1.8s infinite;
+    }
+    .blocked-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #f87171;
+    }
+    .blocked-desc {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+    .blocked-note {
+      font-size: 11.5px;
+      color: #94a3b8;
+    }
+    .blocked-btn-contact {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 12px 24px;
+      border-radius: 14px;
+      margin-top: 8px;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+      transition: all 0.2s;
+    }
+    .blocked-btn-contact:active {
+      transform: scale(0.95);
+    }
+
     .modal-content-body {
       padding: 6px 14px 24px 14px;
       flex: 1;
@@ -3161,6 +3227,39 @@ function renderWatchlistView() {
   renderGrid("watchlist-grid", shows);
 }
 
+function showUserBlockedScreen(userId) {
+  let el = document.getElementById("blocked-user-overlay");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "blocked-user-overlay";
+    el.className = "blocked-user-overlay";
+    el.innerHTML = `
+      <div class="blocked-card">
+        <div class="blocked-icon">⛔</div>
+        <div class="blocked-title">គណនីត្រូវបានផ្អាកដំណើរការ</div>
+        <div class="blocked-desc">
+          គណនី Telegram ID <b style="color:#f87171;">${userId}</b> របស់អ្នកត្រូវបាន Block ដោយ Admin។
+        </div>
+        <div class="blocked-note">អ្នកមិនអាចទស្សនារឿង ឬទាញយកវីដេអូបានឡើយ។ សូមទាក់ទងមក Admin ប្រសិនបើមានចម្ងល់។</div>
+        <a href="https://t.me/mengsmmkh1" target="_blank" class="blocked-btn-contact">💬 ទាក់ទង Admin</a>
+      </div>
+    `;
+    document.body.appendChild(el);
+  }
+  el.style.display = "flex";
+  document.body.style.overflow = "hidden";
+  if (playerEl) {
+    try { playerEl.pause(); } catch(e){}
+  }
+  const modal = document.getElementById("modal");
+  if (modal) modal.classList.remove("active");
+}
+
+function hideUserBlockedScreen() {
+  const el = document.getElementById("blocked-user-overlay");
+  if (el) el.style.display = "none";
+}
+
 // 👑 Sync and Verify Live VIP Status with Google Sheets Backend
 async function checkVipStatusFromBackend() {
   const tgUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
@@ -3178,6 +3277,17 @@ async function checkVipStatusFromBackend() {
     const url = `${GOOGLE_APPS_SCRIPT_URL}?action=check_vip&user_id=${encodeURIComponent(userId)}`;
     const res = await fetch(url);
     const json = await res.json();
+
+    // 🚫 Check if User is BLOCKED
+    if (json.is_blocked || (json.data && json.data.status === "BLOCKED")) {
+      showUserBlockedScreen(userId);
+      localStorage.removeItem(STORAGE_VIP_KEY);
+      localStorage.removeItem("animew_vip_plan");
+      localStorage.setItem("animew_vip_status", "BLOCKED");
+      return false;
+    } else {
+      hideUserBlockedScreen();
+    }
 
     if (json.is_vip && json.data && json.data.expires_at) {
       const expTimestamp = new Date(json.data.expires_at).getTime();

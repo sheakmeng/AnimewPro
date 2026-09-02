@@ -109,26 +109,28 @@ function doGet(e) {
 
       for (let i = 1; i < vipData.length; i++) {
         if (String(vipData[i][0]).trim() === targetUserId) {
-          const expiresAt = new Date(vipData[i][8]);
+          const status = String(vipData[i][9] || "FREE").toUpperCase();
+          const expiresAt = vipData[i][8] ? new Date(vipData[i][8]) : null;
           const now = new Date();
-          if (expiresAt > now && vipData[i][9] === "ACTIVE") {
+          if (status === "ACTIVE" && expiresAt && expiresAt > now) {
             isVip = true;
-            vipInfo = {
-              user_id: targetUserId,
-              username: vipData[i][1],
-              plan_name: vipData[i][3],
-              amount: vipData[i][4],
-              paid_at: vipData[i][7],
-              expires_at: vipData[i][8],
-              status: "ACTIVE"
-            };
-            break;
           }
+          vipInfo = {
+            user_id: targetUserId,
+            username: vipData[i][1],
+            plan_name: vipData[i][3],
+            amount: vipData[i][4],
+            paid_at: vipData[i][7],
+            expires_at: vipData[i][8] || "",
+            status: status
+          };
+          break;
         }
       }
 
       return ContentService.createTextOutput(JSON.stringify({
         is_vip: isVip,
+        is_blocked: vipInfo ? vipInfo.status === "BLOCKED" : false,
         data: vipInfo
       })).setMimeType(ContentService.MimeType.JSON);
     }
