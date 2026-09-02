@@ -37,13 +37,37 @@ pyrogram.utils.MAX_CHANNEL_ID = -1000000000000
 from pyrogram import Client
 import httpx
 
-# Paths & Directories
+# Paths & Directories (Smart Auto-Detection for PC & Android Pydroid 3)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals() else os.getcwd()
-DRAMABITE_DIR = r"C:\Users\sheakmeng\Desktop\DramaBite"
-DRAMABITE_DOWNLOADS = os.path.join(DRAMABITE_DIR, "downloads")
-DRAMABITE_FFMPEG = os.path.join(DRAMABITE_DIR, "ffmpeg")
 
-# Add bundled FFmpeg to PATH
+def find_dramabite_downloads_dir():
+    candidates = [
+        r"C:\Users\sheakmeng\Desktop\DramaBite\downloads",
+        r"C:\Users\sheakmeng\Desktop\DramaBite",
+        "/sdcard/Download/DramaBite/downloads",
+        "/sdcard/Download/DramaBite",
+        "/storage/emulated/0/Download/DramaBite/downloads",
+        "/storage/emulated/0/Download/DramaBite",
+        "/sdcard/DramaBite",
+        "/storage/emulated/0/DramaBite",
+        "/sdcard/Download",
+        "/storage/emulated/0/Download",
+        os.path.join(SCRIPT_DIR, "downloads"),
+        SCRIPT_DIR
+    ]
+    for c in candidates:
+        if os.path.isdir(c):
+            for root, dirs, files in os.walk(c):
+                if any(f.lower().endswith(('.mp4', '.mkv', '.ts', '.mov')) and not f.lower().startswith('test_') for f in files):
+                    return c
+    if sys.platform == "win32":
+        return r"C:\Users\sheakmeng\Desktop\DramaBite\downloads"
+    return "/sdcard/Download"
+
+DRAMABITE_DOWNLOADS = find_dramabite_downloads_dir()
+DRAMABITE_FFMPEG = r"C:\Users\sheakmeng\Desktop\DramaBite\ffmpeg"
+
+# Add bundled FFmpeg to PATH if present
 if os.path.isdir(DRAMABITE_FFMPEG) and DRAMABITE_FFMPEG not in os.environ.get("PATH", ""):
     os.environ["PATH"] = DRAMABITE_FFMPEG + os.pathsep + os.environ.get("PATH", "")
 
@@ -51,7 +75,9 @@ if os.path.isdir(DRAMABITE_FFMPEG) and DRAMABITE_FFMPEG not in os.environ.get("P
 def _load_env_file():
     candidates = [
         os.path.join(SCRIPT_DIR, ".env"),
-        os.path.join(DRAMABITE_DIR, ".env"),
+        "/sdcard/Download/.env",
+        "/storage/emulated/0/Download/.env",
+        r"C:\Users\sheakmeng\Desktop\DramaBite\.env",
         r"c:\Users\sheakmeng\Desktop\New folder\.env"
     ]
     for env_file in candidates:
@@ -73,10 +99,10 @@ def _load_env_file():
 
 _load_env_file()
 
-API_ID = os.getenv("TG_API_ID", "").strip().strip('"').strip("'")
-API_HASH = os.getenv("TG_API_HASH", "").strip().strip('"').strip("'")
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip().strip('"').strip("'")
-CHANNEL_ID = os.getenv("TG_CHANNEL_ID", "").strip().strip('"').strip("'")
+API_ID = os.getenv("TG_API_ID", "20360418").strip().strip('"').strip("'")
+API_HASH = os.getenv("TG_API_HASH", "3990d0d3cc6c5bd81c93a13cd5e3a311").strip().strip('"').strip("'")
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "8664822430:AAFW9z9BL1KLt-_tYypVM4zqnWWBmoXkzuw").strip().strip('"').strip("'")
+CHANNEL_ID = os.getenv("TG_CHANNEL_ID", "-1003943277744").strip().strip('"').strip("'")
 GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyeNw3vClMRYMWssYT-gTncSntQUvVvHb43QcDYR5k4RXLrFPDzS5vEh5PZyWM95XXmSg/exec"
 
 MANIFEST_FILE = os.path.join(SCRIPT_DIR, "backup_manifest.json")
