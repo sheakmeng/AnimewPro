@@ -462,7 +462,12 @@ async def main():
     
     all_dramabite_eps = scan_dramabite_downloads(custom_dir)
     if not all_dramabite_eps:
-        print(f"⚠️ មិនទាន់មានវីដេអូទាញយកក្នុងថត DramaBite ឡើយ។", flush=True)
+        print(f"ℹ️ មិនមានវីដេអូថ្មីក្នុងម៉ាស៊ីនឡើយ។ ប្តូរទៅ Backup រឿងទាំងអស់ពី Dramaora.tv ដោយស្វ័យប្រវត្តិ...", flush=True)
+        try:
+            import backup_to_telegram
+            await backup_to_telegram.main()
+        except Exception as e:
+            print(f"Notice: {e}", flush=True)
         return
 
     # Zero-duplicate check
@@ -475,7 +480,13 @@ async def main():
     print("-" * 65, flush=True)
 
     if not pending:
-        print("🎉 គ្រប់វីដេអូទាំងអស់ពី DramaBite ត្រូវបាន Backup ចូល Telegram រួចរាល់អស់ហើយ! (All up to date)", flush=True)
+        print("🎉 គ្រប់វីដេអូទាំងអស់ពី DramaBite ត្រូវបាន Backup រួចរាល់អស់ហើយ!", flush=True)
+        print("🌐 កំពុងបន្តដំណើរការ Backup រឿងទាំងអស់ពី Dramaora.tv...", flush=True)
+        try:
+            import backup_to_telegram
+            await backup_to_telegram.main()
+        except Exception as e:
+            print(f"Notice: {e}", flush=True)
         return
 
     print("\n🤖 កំពុងតភ្ជាប់ទៅកាន់ Telegram Bot (Backup Anime)...", flush=True)
@@ -516,7 +527,17 @@ async def main():
             pass
 
     await app.stop()
-    print(f"\n🏁 បញ្ចប់ការ Backup! បាន Upload {success_count}/{len(pending)} ភាគជោគជ័យក្នុងរយៈពេល {(time.time() - start_t)/60:.1f} នាទី។", flush=True)
+    print(f"\n🏁 បញ្ចប់ការ Backup វីដេអូក្នុងម៉ាស៊ីន! ({success_count} ភាគ)", flush=True)
+
+    # Automatically continue to backup ALL online dramas from Dramaora.tv
+    print("\n" + "=" * 65, flush=True)
+    print("🌐 ដំណើរការបន្តស្វ័យប្រវត្តិ: Backup រឿងទាំងអស់ពី Dramaora.tv...", flush=True)
+    print("=" * 65, flush=True)
+    try:
+        import backup_to_telegram
+        await backup_to_telegram.main()
+    except Exception as e:
+        print(f"Notice Dramaora crawl: {e}", flush=True)
 
 if __name__ == "__main__":
     asyncio.run(main())
