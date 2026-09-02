@@ -10,7 +10,7 @@
   <!-- Telegram Web App SDK for Mini App Support -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <!-- Pre-bundled Instant Local Data Manifest (0ms Load) -->
-  <script src="data.js"></script>
+  <script src="data.js?v=2.5"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     
@@ -3596,10 +3596,7 @@ async function playEpisode(idx) {
         enableWorker: false,
         lowLatencyMode: false,
         loader: DramaBiteHlsLoader,
-        defaultAudioCodec: 'mp4a.40.2',
-        xhrSetup: (xhr) => {
-          xhr.setRequestHeader('Origin', 'https://www.dramabite.media');
-        }
+        defaultAudioCodec: 'mp4a.40.2'
       });
 
       hls.on(Hls.Events.MANIFEST_LOADED, (event, data) => {
