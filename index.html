@@ -3313,8 +3313,8 @@ function updateHeroAddButtonState(show) {
 const gridStateMap = {};
 const DRAMA_PAGE_SIZE = 18;
 
-// Render Drama Grids with Dynamic Pagination
-function renderGrid(containerId, items, page = 1) {
+// Render Drama Grids (With Optional Dynamic Pagination)
+function renderGrid(containerId, items, page = 1, usePagination = false) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
@@ -3323,7 +3323,8 @@ function renderGrid(containerId, items, page = 1) {
 
   gridStateMap[containerId] = {
     items: items || [],
-    page: page
+    page: page,
+    usePagination: usePagination
   };
 
   const list = items || [];
@@ -3333,12 +3334,44 @@ function renderGrid(containerId, items, page = 1) {
     return;
   }
 
-  const totalPages = Math.ceil(list.length / DRAMA_PAGE_SIZE);
-  if (page > totalPages) page = totalPages;
-  if (page < 1) page = 1;
+  let pageItems = list;
+  if (usePagination && list.length > DRAMA_PAGE_SIZE) {
+    const totalPages = Math.ceil(list.length / DRAMA_PAGE_SIZE);
+    if (page > totalPages) page = totalPages;
+    if (page < 1) page = 1;
 
-  const startIdx = (page - 1) * DRAMA_PAGE_SIZE;
-  const pageItems = list.slice(startIdx, startIdx + DRAMA_PAGE_SIZE);
+    const startIdx = (page - 1) * DRAMA_PAGE_SIZE;
+    pageItems = list.slice(startIdx, startIdx + DRAMA_PAGE_SIZE);
+
+    // Build Pagination Controls
+    if (pagBar) {
+      let pagHtml = `
+        <div class="page-info-pill">ទំព័រទី ${page} នៃ ${totalPages} (សរុប ${list.length} រឿង)</div>
+        <button class="page-btn" ${page === 1 ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page - 1})">
+          ◀ ថយក្រោយ
+        </button>
+      `;
+
+      for (let p = 1; p <= totalPages; p++) {
+        pagHtml += `
+          <button class="page-btn ${p === page ? 'active' : ''}" onclick="changeGridPage('${containerId}', ${p})">
+            ${p}
+          </button>
+        `;
+      }
+
+      pagHtml += `
+        <button class="page-btn" ${page === totalPages ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page + 1})">
+          បន្ទាប់ ▶
+        </button>
+      `;
+
+      pagBar.innerHTML = pagHtml;
+    }
+  } else {
+    // Show ALL items and remove pagination controls
+    if (pagBar) pagBar.innerHTML = "";
+  }
 
   container.innerHTML = pageItems.map((show) => {
     const epCount = show.episodes?.length || 1;
@@ -3358,43 +3391,12 @@ function renderGrid(containerId, items, page = 1) {
       </div>
     `;
   }).join("");
-
-  // Build Pagination Controls
-  if (pagBar) {
-    if (totalPages <= 1) {
-      pagBar.innerHTML = "";
-      return;
-    }
-
-    let pagHtml = `
-      <div class="page-info-pill">ទំព័រទី ${page} នៃ ${totalPages} (សរុប ${list.length} រឿង)</div>
-      <button class="page-btn" ${page === 1 ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page - 1})">
-        ◀ ថយក្រោយ
-      </button>
-    `;
-
-    for (let p = 1; p <= totalPages; p++) {
-      pagHtml += `
-        <button class="page-btn ${p === page ? 'active' : ''}" onclick="changeGridPage('${containerId}', ${p})">
-          ${p}
-        </button>
-      `;
-    }
-
-    pagHtml += `
-      <button class="page-btn" ${page === totalPages ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page + 1})">
-        បន្ទាប់ ▶
-      </button>
-    `;
-
-    pagBar.innerHTML = pagHtml;
-  }
 }
 
 function changeGridPage(containerId, newPage) {
   const state = gridStateMap[containerId];
   if (!state) return;
-  renderGrid(containerId, state.items, newPage);
+  renderGrid(containerId, state.items, newPage, state.usePagination);
   const el = document.getElementById(containerId);
   if (el) {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -3604,8 +3606,8 @@ function switchTab(tabName) {
     updateAccountStats();
     checkVipStatusFromBackend();
   }
-  if (tabName === "dramas") renderGrid("all-dramas-grid", allItems);
-  if (tabName === "shorts") renderGrid("shorts-dramas-grid", allItems);
+  if (tabName === "dramas") renderGrid("all-dramas-grid", allItems, 1, false);
+  if (tabName === "shorts") renderGrid("shorts-dramas-grid", allItems, 1, false);
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
