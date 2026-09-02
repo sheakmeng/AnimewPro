@@ -2860,6 +2860,7 @@ function initTelegramUser() {
           document.getElementById("account-avatar-img").src = user.photo_url;
         }
         syncCurrentUserToBackend();
+        checkVipStatusFromBackend();
         updateAdminSectionVisibility();
       }
 
@@ -3153,6 +3154,52 @@ function renderWatchlistView() {
   renderGrid("watchlist-grid", shows);
 }
 
+// 👑 Sync and Verify Live VIP Status with Google Sheets Backend
+async function checkVipStatusFromBackend() {
+  const tgUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlUserId = urlParams.get("user_id") || urlParams.get("tg_user_id") || urlParams.get("id");
+  
+  if (urlUserId) {
+    localStorage.setItem("animew_user_id", urlUserId);
+  }
+  
+  const userId = tgUser?.id ? String(tgUser.id) : localStorage.getItem("animew_user_id");
+  if (!userId) return false;
+
+  try {
+    const url = `${GOOGLE_APPS_SCRIPT_URL}?action=check_vip&user_id=${encodeURIComponent(userId)}`;
+    const res = await fetch(url);
+    const json = await res.json();
+
+    if (json.is_vip && json.data && json.data.expires_at) {
+      const expTimestamp = new Date(json.data.expires_at).getTime();
+      if (expTimestamp > Date.now()) {
+        localStorage.setItem(STORAGE_VIP_KEY, expTimestamp.toString());
+        localStorage.setItem("animew_vip_plan", json.data.plan_name || "VIP");
+        localStorage.setItem("animew_vip_status", "ACTIVE");
+        updateAccountStats();
+        // If drama episode modal is open, re-render episode pills so lock icons disappear!
+        if (typeof renderEpisodes === "function" && currentEpisodes && currentEpisodes.length > 0) {
+          renderEpisodes();
+        }
+        return true;
+      }
+    } else if (json.data && (json.data.status === "FREE" || json.data.status === "REVOKED")) {
+      // If admin revoked VIP
+      localStorage.removeItem(STORAGE_VIP_KEY);
+      updateAccountStats();
+      if (typeof renderEpisodes === "function" && currentEpisodes && currentEpisodes.length > 0) {
+        renderEpisodes();
+      }
+      return false;
+    }
+  } catch (e) {
+    console.warn("checkVipStatusFromBackend error:", e);
+  }
+  return false;
+}
+
 // Account View & Stats
 function updateAccountStats() {
   document.getElementById("stat-shows-count").textContent = allItems.length;
@@ -3242,7 +3289,10 @@ function switchTab(tabName) {
   if (activeView) activeView.classList.add("active");
 
   if (tabName === "watchlist") renderWatchlistView();
-  if (tabName === "account") updateAccountStats();
+  if (tabName === "account") {
+    updateAccountStats();
+    checkVipStatusFromBackend();
+  }
   if (tabName === "dramas") renderGrid("all-dramas-grid", allItems);
   if (tabName === "shorts") renderGrid("shorts-dramas-grid", allItems);
 
@@ -3256,6 +3306,7 @@ async function openModal(show) {
   if (!modal) return;
   modal.classList.add("active");
   document.body.style.overflow = "hidden";
+  checkVipStatusFromBackend();
 
   try {
     if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.show();
@@ -3351,10 +3402,14 @@ function isUserVip() {
   return parseInt(vipUntil, 10) > Date.now();
 }
 
-function playEpisode(idx) {
+async function playEpisode(idx) {
   if (!currentEpisodes[idx]) return;
   const ep = currentEpisodes[idx];
   const epNum = ep.episode_number || (idx + 1);
+
+  if (!isUserVip() && epNum > FREE_EPISODES_LIMIT) {
+    await checkVipStatusFromBackend();
+  }
 
   if (!isUserVip() && epNum > FREE_EPISODES_LIMIT) {
     showToast(`👑 ភាគទី ${epNum} សម្រាប់តែសមាជិក VIP! សូមជាវសមាជិកភាពដើម្បីទស្សនា។`);
@@ -3457,6 +3512,9 @@ function cancelDownload() {
 
 async function downloadSingleEpisode(epIndex = currentEpIndex) {
   if (!isUserVip()) {
+    await checkVipStatusFromBackend();
+  }
+  if (!isUserVip()) {
     showToast("👑 មុខងារ Download សម្រាប់តែសមាជិក VIP ប៉ុណ្ណោះ! សូមជាវសមាជិកភាពដើម្បីទាញយក។");
     openVipModal();
     return;
@@ -3539,6 +3597,9 @@ async function downloadSingleEpisode(epIndex = currentEpIndex) {
 }
 
 async function downloadAllEpisodes() {
+  if (!isUserVip()) {
+    await checkVipStatusFromBackend();
+  }
   if (!isUserVip()) {
     showToast("👑 មុខងារ Download គ្រប់ភាគ សម្រាប់តែសមាជិក VIP ប៉ុណ្ណោះ! សូមជាវសមាជិកភាពដើម្បីទាញយក។");
     openVipModal();
@@ -4532,6 +4593,7 @@ function initApp() {
   
   // Non-blocking silent background sync
   setTimeout(syncLiveManifestBackground, 500);
+  setTimeout(checkVipStatusFromBackend, 300);
 }
 
 window.addEventListener("DOMContentLoaded", initApp);
