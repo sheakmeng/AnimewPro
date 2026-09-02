@@ -278,6 +278,26 @@ def scan_dramabite_downloads(target_dir=None):
 
     return found
 
+async def download_thumbnail_image(poster_url: str, thumb_out_path: str):
+    """Download official drama poster image to use as Telegram video thumbnail cover."""
+    if not poster_url or not str(poster_url).startswith("http"):
+        return None
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36",
+            "Referer": "https://www.dramabite.media/"
+        }
+        async with httpx.AsyncClient(headers=headers, timeout=12.0, follow_redirects=True) as client:
+            r = await client.get(poster_url)
+            if r.status_code == 200 and len(r.content) > 500:
+                with open(thumb_out_path, "wb") as f:
+                    f.write(r.content)
+                if os.path.exists(thumb_out_path) and os.path.getsize(thumb_out_path) > 500:
+                    return thumb_out_path
+    except Exception:
+        pass
+    return None
+
 async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channel_id_int: int) -> bool:
     ep_id = ep["id"]
     show_title = ep["show_title"]
@@ -287,11 +307,23 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
     poster_path = ep.get("poster_url")
 
     thumb_temp = file_path + ".thumb.jpg"
-    duration, width, height, thumb_file = extract_video_metadata(file_path, thumb_temp)
+    thumb_file = None
+    duration, width, height, ffmpeg_thumb = extract_video_metadata(file_path, thumb_temp)
 
-    # Use folder poster image as thumbnail if ffmpeg frame was not generated
+    # 🖼️ Priority 1: Download and use Official Drama Poster as video cover thumbnail on Telegram
+    if poster_path and str(poster_path).startswith("http"):
+        downloaded_thumb = await download_thumbnail_image(poster_path, thumb_temp)
+        if downloaded_thumb:
+            thumb_file = downloaded_thumb
+            print(f"  🖼️ បានទាញយក Drama Poster Cover សម្រាប់ Thumbnail លើ Telegram!", flush=True)
+
+    # Priority 2: Local folder poster
     if not thumb_file and poster_path and os.path.isfile(poster_path):
         thumb_file = poster_path
+
+    # Priority 3: Fallback to FFmpeg extracted video frame
+    if not thumb_file and ffmpeg_thumb:
+        thumb_file = ffmpeg_thumb
 
     caption = (
         f"🎬 **{show_title}**\n"
@@ -300,6 +332,8 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
         f"📦 **Size:** {part_size_mb:.1f} MB\n"
         f"🆔 `ep_id: {ep_id}`"
     )
+    if poster_path and str(poster_path).startswith("http"):
+        caption += f"\n🖼️ **Poster:** [មើលរូបភាព Poster]({poster_path})"
 
     last_logged_pct = -1
     start_t = time.time()
