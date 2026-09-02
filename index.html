@@ -1911,14 +1911,64 @@
     }
 
     .notif-item {
-      background: #121a2e;
-      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 12px;
-      padding: 10px 12px;
+      padding: 9px 10px;
       cursor: pointer;
-      transition: background 0.2s;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .notif-item:hover { background: #1a2542; }
+    .notif-item:hover, .notif-item:active {
+      background: rgba(99, 102, 241, 0.15);
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-1px);
+    }
+    .notif-thumb {
+      width: 44px;
+      height: 60px;
+      border-radius: 7px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .notif-body {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .notif-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #f8fafc;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .notif-sub {
+      font-size: 11px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .notif-chip {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .notif-chip-purple {
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+    }
 
     /* Loading Spinner */
     .spinner {
@@ -4662,8 +4712,61 @@ document.getElementById("btn-manual-check-payment").onclick = async () => {
   }
 };
 
+// Render Dynamic Notifications for Recent Backups
+function renderNotifications() {
+  const container = document.getElementById("notif-list-container");
+  const badge = document.getElementById("header-notif-count");
+  if (!container) return;
+
+  if (!allItems || allItems.length === 0) {
+    container.innerHTML = `<div style="text-align:center; color:#64748b; padding:40px 10px; font-size:12.5px;">គ្មានការ Backup ថ្មីទេ</div>`;
+    if (badge) badge.style.display = "none";
+    return;
+  }
+
+  // Get the 12 most recent backed-up dramas
+  const recentDramas = [...allItems].slice(0, 12);
+
+  if (badge) {
+    badge.textContent = Math.min(recentDramas.length, 9);
+    badge.style.display = "block";
+  }
+
+  container.innerHTML = recentDramas.map((show) => {
+    const isBite = show.type === "dramabite" || show.id.includes("dramabite") || (show.source && show.source.toLowerCase().includes("dramabite"));
+    const srcName = isBite ? "⚡ DramaBite" : "🎬 Dramaora";
+    const srcClass = isBite ? "notif-chip" : "notif-chip notif-chip-purple";
+    const epCount = show.episodes?.length || 1;
+
+    return `
+      <div class="notif-item" onclick="handleNotifClick('${show.id}')">
+        <img class="notif-thumb" src="${show.poster_url}" alt="${show.title}" loading="lazy" />
+        <div class="notif-body">
+          <div class="notif-title">${show.title}</div>
+          <div class="notif-sub">
+            <span class="${srcClass}">${srcName}</span>
+            <span>📺 ${epCount} ភាគ</span>
+            <span style="color:#34d399;font-weight:700;">1080p FHD</span>
+          </div>
+          <div style="font-size:10px;color:#38bdf8;font-weight:600;margin-top:2px;">▶️ ចុចទស្សនាភាគថ្មីៗ</div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+function handleNotifClick(showId) {
+  const drawer = document.getElementById("notif-drawer");
+  if (drawer) drawer.classList.remove("active");
+  const show = allItems.find(s => s.id === showId);
+  if (show) {
+    openModal(show);
+  }
+}
+
 // Notification Drawer Handlers
 document.getElementById("btn-header-notif").onclick = () => {
+  renderNotifications();
   document.getElementById("notif-drawer").classList.add("active");
 };
 document.getElementById("btn-close-drawer").onclick = () => {
@@ -5133,6 +5236,7 @@ function initApp() {
   renderSpotlight();
   startSpotlightAutoSlide();
   renderGrid("main-drama-grid", allItems);
+  renderNotifications();
   updateAccountStats();
   updateAdminSectionVisibility();
   
