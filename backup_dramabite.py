@@ -214,6 +214,8 @@ class DramabiteMixin:
     def _dramabite_get_dramas(self, max_pages=12):
         dramas = []
         seen = set()
+
+        # 1. Fetch from homepage
         for page in range(max_pages):
             if getattr(self, "_cancelled", False):
                 break
@@ -241,6 +243,37 @@ class DramabiteMixin:
                     })
             if len(dramas) == before:
                 break
+
+        # 2. Fetch full catalog from /for_you feed
+        self._report_status("🔄 Fetching full DramaBite catalog from /for_you library…")
+        for page in range(0, 15):
+            if getattr(self, "_cancelled", False):
+                break
+            data = self._dramabite_api("/for_you", {"page": page, "limit": 100, "size": 100})
+            v_list = data.get("video_list") or []
+            if not v_list:
+                break
+            added = 0
+            for item in v_list:
+                cid = str(item.get("cid") or (item.get("linkInfo") or {}).get("cid") or "").strip()
+                title = str(item.get("title") or "").strip()
+                if not cid or not title or cid in seen:
+                    continue
+                seen.add(cid)
+                thumb = self._dramabite_abs_image(
+                    item.get("cover_url") or item.get("video_cover") or ((item.get("linkInfo") or {}).get("cover"))
+                )
+                dramas.append({
+                    "title": title,
+                    "url": self._dramabite_play_url(cid, item.get("vid") or 1),
+                    "thumb": thumb,
+                    "ep_count": item.get("total_episode") or "",
+                })
+                added += 1
+            if added == 0:
+                break
+
+        self._report_status(f"🎉 Total DramaBite series discovered: {len(dramas)} dramas!")
         return dramas
 
     def _dramabite_episode_list(self, cid):
