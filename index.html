@@ -3093,12 +3093,15 @@ async function syncLiveManifestBackground() {
   }
 }
 
-// Synthesize Shows and Attach Episodes
+// Synthesize Shows and Attach Episodes with Smart Interleaving & Newest-First Sorting
 function buildShowsFromManifest() {
   const showMap = {};
   Object.entries(backupManifest).forEach(([epId, item]) => {
     const showId = item.show_id || ("show_" + (item.show_title || "Unknown"));
     const resolvedPoster = item.poster_url || KNOWN_POSTERS[showId] || KNOWN_POSTERS[item.show_title] || "https://img.dramaora.tv/cover/2026/02/10/eb3fbe14ee47be59be615dbe36718d7f.jpg";
+
+    const isBite = showId.startsWith("dramabite_") || (item.source && item.source.toLowerCase().includes("dramabite"));
+    const showType = isBite ? "dramabite" : "dramaora";
 
     if (!showMap[showId]) {
       showMap[showId] = {
@@ -3109,9 +3112,15 @@ function buildShowsFromManifest() {
         banner_url: resolvedPoster,
         release_year: 2024,
         rating: 9.8,
-        type: "dramaora",
+        type: showType,
+        source: item.source || showType,
+        latest_backup_time: item.backed_up_at || "",
         episodes: []
       };
+    }
+
+    if (item.backed_up_at && (!showMap[showId].latest_backup_time || item.backed_up_at > showMap[showId].latest_backup_time)) {
+      showMap[showId].latest_backup_time = item.backed_up_at;
     }
 
     showMap[showId].episodes.push({
@@ -3119,17 +3128,57 @@ function buildShowsFromManifest() {
       show_id: showId,
       title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
       episode_number: parseInt(item.episode_number, 10) || 1,
-      video_url: item.original_url || "",
+      video_url: item.original_url || item.hls_source_url || "",
       telegram_message_id: item.telegram_message_id,
-      file_size_mb: item.file_size_mb
+      file_size_mb: item.file_size_mb,
+      backed_up_at: item.backed_up_at || ""
     });
   });
 
+  // Sort episodes inside each show
   Object.values(showMap).forEach(s => {
     s.episodes.sort((a, b) => (a.episode_number || 1) - (b.episode_number || 1));
   });
 
-  allItems = Object.values(showMap);
+  // Separate shows by source
+  const biteShows = [];
+  const oraShows = [];
+  const otherShows = [];
+
+  Object.values(showMap).forEach(s => {
+    if (s.type === "dramabite" || s.id.includes("dramabite")) {
+      biteShows.push(s);
+    } else if (s.type === "dramaora" || s.id.includes("dramaora")) {
+      oraShows.push(s);
+    } else {
+      otherShows.push(s);
+    }
+  });
+
+  // Sort each source newest-first by backup timestamp
+  const sortNewestFirst = (a, b) => {
+    const tA = a.latest_backup_time || "";
+    const tB = b.latest_backup_time || "";
+    if (tA && tB) return tB.localeCompare(tA);
+    if (tA) return -1;
+    if (tB) return 1;
+    return 0;
+  };
+
+  biteShows.sort(sortNewestFirst);
+  oraShows.sort(sortNewestFirst);
+  otherShows.sort(sortNewestFirst);
+
+  // Smart Interleaving (ឆ្លាស់គ្នា 1 DramaBite, 1 Dramaora, 1 DramaBite, 1 Dramaora...)
+  const interleaved = [];
+  const maxLen = Math.max(biteShows.length, oraShows.length);
+  for (let i = 0; i < maxLen; i++) {
+    if (i < biteShows.length) interleaved.push(biteShows[i]);
+    if (i < oraShows.length) interleaved.push(oraShows[i]);
+  }
+  otherShows.forEach(s => interleaved.push(s));
+
+  allItems = interleaved;
   filteredItems = [...allItems];
 }
 
