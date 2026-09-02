@@ -532,6 +532,57 @@
       .drama-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); }
     }
 
+    /* Modern Pagination System */
+    .pagination-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 20px 0 35px 0;
+      padding: 0 10px;
+      flex-wrap: wrap;
+    }
+    .page-btn {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+      padding: 7px 13px;
+      border-radius: 9px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .page-btn:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    .page-btn.active {
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+      color: #ffffff;
+      border-color: #818cf8;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+      font-weight: 700;
+    }
+    .page-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .page-info-pill {
+      font-size: 11.5px;
+      color: #94a3b8;
+      margin: 0 4px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
     .drama-card {
       position: relative;
       background: var(--card-bg);
@@ -2373,6 +2424,7 @@
     <div class="drama-grid" id="main-drama-grid">
       <div class="spinner"></div>
     </div>
+    <div class="pagination-bar" id="main-drama-grid-pagination"></div>
   </div>
 
 </div>
@@ -2390,6 +2442,7 @@
       <div class="drama-grid" id="search-results-grid">
         <div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">សូមវាយបញ្ចូលឈ្មោះរឿងដែលអ្នកចង់ស្វែងរក</div>
       </div>
+      <div class="pagination-bar" id="search-results-grid-pagination"></div>
     </div>
   </div>
 </div>
@@ -2402,6 +2455,7 @@
       <span>រឿងភាគទាំងអស់ (All VIP Dramas)</span>
     </div>
     <div class="drama-grid" id="all-dramas-grid"></div>
+    <div class="pagination-bar" id="all-dramas-grid-pagination"></div>
   </div>
 </div>
 
@@ -2413,6 +2467,7 @@
       <span>រឿងភាគខ្លី Dramaora (VIP 100% Unlocked)</span>
     </div>
     <div class="drama-grid" id="shorts-dramas-grid"></div>
+    <div class="pagination-bar" id="shorts-dramas-grid-pagination"></div>
   </div>
 </div>
 
@@ -3188,17 +3243,38 @@ function updateHeroAddButtonState(show) {
   }
 }
 
-// Render Drama Grids
-function renderGrid(containerId, items) {
+// Global state map for grid paginations
+const gridStateMap = {};
+const DRAMA_PAGE_SIZE = 18;
+
+// Render Drama Grids with Dynamic Pagination
+function renderGrid(containerId, items, page = 1) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  if (items.length === 0) {
+  const paginationId = containerId + "-pagination";
+  const pagBar = document.getElementById(paginationId);
+
+  gridStateMap[containerId] = {
+    items: items || [],
+    page: page
+  };
+
+  const list = items || [];
+  if (list.length === 0) {
     container.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">គ្មានទិន្នន័យ</div>`;
+    if (pagBar) pagBar.innerHTML = "";
     return;
   }
 
-  container.innerHTML = items.map((show) => {
+  const totalPages = Math.ceil(list.length / DRAMA_PAGE_SIZE);
+  if (page > totalPages) page = totalPages;
+  if (page < 1) page = 1;
+
+  const startIdx = (page - 1) * DRAMA_PAGE_SIZE;
+  const pageItems = list.slice(startIdx, startIdx + DRAMA_PAGE_SIZE);
+
+  container.innerHTML = pageItems.map((show) => {
     const epCount = show.episodes?.length || 1;
     return `
       <div class="drama-card" onclick="handleCardClick('${show.id}')">
@@ -3216,6 +3292,47 @@ function renderGrid(containerId, items) {
       </div>
     `;
   }).join("");
+
+  // Build Pagination Controls
+  if (pagBar) {
+    if (totalPages <= 1) {
+      pagBar.innerHTML = "";
+      return;
+    }
+
+    let pagHtml = `
+      <div class="page-info-pill">ទំព័រទី ${page} នៃ ${totalPages} (សរុប ${list.length} រឿង)</div>
+      <button class="page-btn" ${page === 1 ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page - 1})">
+        ◀ ថយក្រោយ
+      </button>
+    `;
+
+    for (let p = 1; p <= totalPages; p++) {
+      pagHtml += `
+        <button class="page-btn ${p === page ? 'active' : ''}" onclick="changeGridPage('${containerId}', ${p})">
+          ${p}
+        </button>
+      `;
+    }
+
+    pagHtml += `
+      <button class="page-btn" ${page === totalPages ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page + 1})">
+        បន្ទាប់ ▶
+      </button>
+    `;
+
+    pagBar.innerHTML = pagHtml;
+  }
+}
+
+function changeGridPage(containerId, newPage) {
+  const state = gridStateMap[containerId];
+  if (!state) return;
+  renderGrid(containerId, state.items, newPage);
+  const el = document.getElementById(containerId);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function handleCardClick(showId) {

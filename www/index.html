@@ -10,7 +10,7 @@
   <!-- Telegram Web App SDK for Mini App Support -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <!-- Pre-bundled Instant Local Data Manifest (0ms Load) -->
-  <script src="data.js"></script>
+  <script src="data.js?v=2.5"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
     
@@ -532,6 +532,57 @@
       .drama-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); }
     }
 
+    /* Modern Pagination System */
+    .pagination-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 20px 0 35px 0;
+      padding: 0 10px;
+      flex-wrap: wrap;
+    }
+    .page-btn {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+      padding: 7px 13px;
+      border-radius: 9px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .page-btn:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    .page-btn.active {
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+      color: #ffffff;
+      border-color: #818cf8;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+      font-weight: 700;
+    }
+    .page-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .page-info-pill {
+      font-size: 11.5px;
+      color: #94a3b8;
+      margin: 0 4px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
     .drama-card {
       position: relative;
       background: var(--card-bg);
@@ -830,7 +881,7 @@
       display: none;
       flex-direction: column;
       overflow-y: auto;
-      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
     }
     #modal.active { display: flex; }
 
@@ -1708,7 +1759,7 @@
     }
 
     .modal-content-body {
-      padding: 6px 14px 24px 14px;
+      padding: 6px 14px max(140px, calc(env(safe-area-inset-bottom) + 100px)) 14px;
       flex: 1;
       background: var(--bg);
     }
@@ -1758,9 +1809,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
       gap: 8px;
-      max-height: 280px;
-      overflow-y: auto;
-      padding-right: 2px;
+      padding-bottom: 24px;
     }
 
     .ep-pill {
@@ -2261,6 +2310,9 @@
       cursor: pointer;
     }
   </style>
+
+  <!-- HLS.js for M3U8 stream playback (Telegram WebApp / Android) -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
 </head>
 <body>
 
@@ -2372,6 +2424,7 @@
     <div class="drama-grid" id="main-drama-grid">
       <div class="spinner"></div>
     </div>
+    <div class="pagination-bar" id="main-drama-grid-pagination"></div>
   </div>
 
 </div>
@@ -2389,6 +2442,7 @@
       <div class="drama-grid" id="search-results-grid">
         <div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">សូមវាយបញ្ចូលឈ្មោះរឿងដែលអ្នកចង់ស្វែងរក</div>
       </div>
+      <div class="pagination-bar" id="search-results-grid-pagination"></div>
     </div>
   </div>
 </div>
@@ -2401,6 +2455,7 @@
       <span>រឿងភាគទាំងអស់ (All VIP Dramas)</span>
     </div>
     <div class="drama-grid" id="all-dramas-grid"></div>
+    <div class="pagination-bar" id="all-dramas-grid-pagination"></div>
   </div>
 </div>
 
@@ -2412,6 +2467,7 @@
       <span>រឿងភាគខ្លី Dramaora (VIP 100% Unlocked)</span>
     </div>
     <div class="drama-grid" id="shorts-dramas-grid"></div>
+    <div class="pagination-bar" id="shorts-dramas-grid-pagination"></div>
   </div>
 </div>
 
@@ -2569,6 +2625,9 @@
     </button>
     <button class="ctrl-pill-btn ctrl-pill-speed" id="ctrl-speed" title="ល្បឿនចាក់វីដេអូ">
       <span id="ctrl-speed-text">⚡ 1.0x</span>
+    </button>
+    <button class="ctrl-pill-btn ctrl-pill-vol active" id="ctrl-volume" title="បិទ/បើកសំឡេង">
+      <span id="ctrl-vol-text">🔊 សំឡេង</span>
     </button>
   </div>
 
@@ -3184,17 +3243,38 @@ function updateHeroAddButtonState(show) {
   }
 }
 
-// Render Drama Grids
-function renderGrid(containerId, items) {
+// Global state map for grid paginations
+const gridStateMap = {};
+const DRAMA_PAGE_SIZE = 18;
+
+// Render Drama Grids with Dynamic Pagination
+function renderGrid(containerId, items, page = 1) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  if (items.length === 0) {
+  const paginationId = containerId + "-pagination";
+  const pagBar = document.getElementById(paginationId);
+
+  gridStateMap[containerId] = {
+    items: items || [],
+    page: page
+  };
+
+  const list = items || [];
+  if (list.length === 0) {
     container.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#64748b;padding:30px 0;font-size:13px;">គ្មានទិន្នន័យ</div>`;
+    if (pagBar) pagBar.innerHTML = "";
     return;
   }
 
-  container.innerHTML = items.map((show) => {
+  const totalPages = Math.ceil(list.length / DRAMA_PAGE_SIZE);
+  if (page > totalPages) page = totalPages;
+  if (page < 1) page = 1;
+
+  const startIdx = (page - 1) * DRAMA_PAGE_SIZE;
+  const pageItems = list.slice(startIdx, startIdx + DRAMA_PAGE_SIZE);
+
+  container.innerHTML = pageItems.map((show) => {
     const epCount = show.episodes?.length || 1;
     return `
       <div class="drama-card" onclick="handleCardClick('${show.id}')">
@@ -3212,6 +3292,47 @@ function renderGrid(containerId, items) {
       </div>
     `;
   }).join("");
+
+  // Build Pagination Controls
+  if (pagBar) {
+    if (totalPages <= 1) {
+      pagBar.innerHTML = "";
+      return;
+    }
+
+    let pagHtml = `
+      <div class="page-info-pill">ទំព័រទី ${page} នៃ ${totalPages} (សរុប ${list.length} រឿង)</div>
+      <button class="page-btn" ${page === 1 ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page - 1})">
+        ◀ ថយក្រោយ
+      </button>
+    `;
+
+    for (let p = 1; p <= totalPages; p++) {
+      pagHtml += `
+        <button class="page-btn ${p === page ? 'active' : ''}" onclick="changeGridPage('${containerId}', ${p})">
+          ${p}
+        </button>
+      `;
+    }
+
+    pagHtml += `
+      <button class="page-btn" ${page === totalPages ? 'disabled' : ''} onclick="changeGridPage('${containerId}', ${page + 1})">
+        បន្ទាប់ ▶
+      </button>
+    `;
+
+    pagBar.innerHTML = pagHtml;
+  }
+}
+
+function changeGridPage(containerId, newPage) {
+  const state = gridStateMap[containerId];
+  if (!state) return;
+  renderGrid(containerId, state.items, newPage);
+  const el = document.getElementById(containerId);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function handleCardClick(showId) {
@@ -3548,9 +3669,137 @@ async function playEpisode(idx) {
   });
 
   if (playerEl && ep.video_url) {
-    playerEl.src = ep.video_url;
-    playerEl.playbackRate = speeds[playbackSpeedIdx];
-    playerEl.play().catch(e => console.warn("Auto-play:", e));
+    const url = ep.video_url;
+    const isHLS = url.includes(".m3u8") || url.includes("m3u8");
+
+    // Force player to be unmuted with full volume
+    playerEl.muted = false;
+    playerEl.volume = 1.0;
+    const volTxt = document.getElementById("ctrl-vol-text");
+    const volBtn = document.getElementById("ctrl-volume");
+    if (volTxt) volTxt.textContent = "🔊 សំឡេង";
+    if (volBtn) volBtn.classList.add("active");
+
+    // Destroy any previous HLS instance
+    if (window._hlsInstance) {
+      try { window._hlsInstance.destroy(); } catch(e) {}
+      window._hlsInstance = null;
+    }
+
+    if (isHLS && typeof Hls !== 'undefined' && Hls.isSupported()) {
+      // Custom Hls Loader to fix DramaBite's invalid audio codec string:
+      // DramaBite m3u8 uses CODECS="avc1...,mp4a.40" which Chromium/Android rejects.
+      // Rewriting it to "mp4a.40.2" forces Chromium to create the Audio SourceBuffer.
+      class DramaBiteHlsLoader extends Hls.DefaultConfig.loader {
+        constructor(config) {
+          super(config);
+          const origLoad = this.load.bind(this);
+          this.load = function(context, config, callbacks) {
+            const origSuccess = callbacks.onSuccess;
+            callbacks.onSuccess = function(response, stats, ctx, networkDetails) {
+              if (response && typeof response.data === 'string') {
+                response.data = response.data.replace(/mp4a\.40(?![.\d])/g, 'mp4a.40.2');
+              }
+              origSuccess(response, stats, ctx, networkDetails);
+            };
+            origLoad(context, config, callbacks);
+          };
+        }
+      }
+
+      const hls = new Hls({
+        enableWorker: false,
+        lowLatencyMode: false,
+        loader: DramaBiteHlsLoader,
+        defaultAudioCodec: 'mp4a.40.2'
+      });
+
+      hls.on(Hls.Events.MANIFEST_LOADED, (event, data) => {
+        if (data.levels) {
+          data.levels.forEach(lvl => {
+            if (lvl.audioCodec && lvl.audioCodec.includes('mp4a.40')) {
+              lvl.audioCodec = 'mp4a.40.2';
+            }
+          });
+        }
+        if (data.audioTracks) {
+          data.audioTracks.forEach(track => {
+            if (track.audioCodec && track.audioCodec.includes('mp4a.40')) {
+              track.audioCodec = 'mp4a.40.2';
+            }
+          });
+        }
+      });
+
+      hls.on(Hls.Events.BUFFER_CODECS, (event, data) => {
+        if (data.audio && data.audio.codec && data.audio.codec.includes('mp4a.40')) {
+          data.audio.codec = 'mp4a.40.2';
+        }
+      });
+
+      hls.loadSource(url);
+      hls.attachMedia(playerEl);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        playerEl.playbackRate = speeds[playbackSpeedIdx];
+        playerEl.muted = false;
+        playerEl.volume = 1.0;
+        const p = playerEl.play();
+        if (p !== undefined && p.catch) {
+          p.catch(() => {
+            // If browser blocks unmuted autoplay, mute and play, then unmute on first user tap
+            playerEl.muted = true;
+            if (volTxt) volTxt.textContent = "🔇 ស្ងាត់";
+            if (volBtn) volBtn.classList.remove("active");
+            playerEl.play().catch(e => console.warn("Muted autoplay:", e));
+            const unmuteOnTap = () => {
+              playerEl.muted = false;
+              playerEl.volume = 1.0;
+              if (volTxt) volTxt.textContent = "🔊 សំឡេង";
+              if (volBtn) volBtn.classList.add("active");
+            };
+            document.addEventListener('click', unmuteOnTap, { once: true });
+            document.addEventListener('touchstart', unmuteOnTap, { once: true });
+          });
+        }
+      });
+      hls.on(Hls.Events.ERROR, (event, data) => {
+        if (data.fatal) {
+          console.error("HLS fatal error:", data.type, data.details);
+          // Fallback to native src
+          playerEl.src = url;
+          playerEl.muted = false;
+          playerEl.volume = 1.0;
+          playerEl.play().catch(e => console.warn("HLS fallback:", e));
+        }
+      });
+      window._hlsInstance = hls;
+    } else if (isHLS && playerEl.canPlayType('application/vnd.apple.mpegurl')) {
+      // Safari / iOS native HLS
+      playerEl.src = url;
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
+      playerEl.playbackRate = speeds[playbackSpeedIdx];
+      const p = playerEl.play();
+      if (p !== undefined && p.catch) {
+        p.catch(() => {
+          playerEl.muted = true;
+          playerEl.play().catch(e => console.warn("Muted native HLS:", e));
+        });
+      }
+    } else {
+      // Direct MP4 or other format
+      playerEl.src = url;
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
+      playerEl.playbackRate = speeds[playbackSpeedIdx];
+      const p = playerEl.play();
+      if (p !== undefined && p.catch) {
+        p.catch(() => {
+          playerEl.muted = true;
+          playerEl.play().catch(e => console.warn("Muted direct:", e));
+        });
+      }
+    }
   }
 
   // Save Watched State
@@ -3565,6 +3814,13 @@ function closeModal() {
   const modal = document.getElementById("modal");
   if (modal) modal.classList.remove("active");
   document.body.style.overflow = "";
+
+  // Destroy HLS instance before clearing player
+  if (window._hlsInstance) {
+    try { window._hlsInstance.destroy(); } catch(e) {}
+    window._hlsInstance = null;
+  }
+
   if (playerEl) {
     playerEl.pause();
     playerEl.removeAttribute("src");
@@ -3575,6 +3831,7 @@ function closeModal() {
     if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.hide();
   } catch (e) {}
 }
+
 
 // Quick Player Controls
 document.getElementById("btn-modal-back").onclick = closeModal;
@@ -4022,7 +4279,29 @@ document.getElementById("ctrl-speed").onclick = () => {
   if (txt) txt.textContent = `⚡ ${spd}x`;
 };
 
+const volBtn = document.getElementById("ctrl-volume");
+if (volBtn) {
+  volBtn.onclick = () => {
+    if (playerEl) {
+      playerEl.muted = !playerEl.muted;
+      if (!playerEl.muted && playerEl.volume === 0) playerEl.volume = 1.0;
+      volBtn.classList.toggle("active", !playerEl.muted);
+      const txt = document.getElementById("ctrl-vol-text");
+      if (txt) txt.textContent = playerEl.muted ? "🔇 ស្ងាត់" : "🔊 សំឡេង";
+    }
+  };
+}
+
 if (playerEl) {
+  playerEl.addEventListener("click", () => {
+    if (playerEl.muted) {
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
+      if (volBtn) volBtn.classList.add("active");
+      const txt = document.getElementById("ctrl-vol-text");
+      if (txt) txt.textContent = "🔊 សំឡេង";
+    }
+  });
   playerEl.addEventListener("ended", () => {
     if (isAutoNext && currentEpIndex < currentEpisodes.length - 1) {
       const nextIdx = currentEpIndex + 1;
