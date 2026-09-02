@@ -2884,6 +2884,37 @@ async function downloadSingleEpisode(epIndex = currentEpIndex) {
   const epNum = ep.episode_number || (epIndex + 1);
   const fileName = `${showTitle}_EP${epNum}.mp4`;
 
+  // 1. Native Telegram Mini App Downloader (Saves directly to Android Gallery / Telegram Album)
+  if (window.Telegram?.WebApp && typeof window.Telegram.WebApp.downloadFile === "function") {
+    try {
+      window.Telegram.WebApp.downloadFile({
+        url: ep.video_url,
+        file_name: fileName
+      }, function(accepted) {
+        if (accepted) {
+          showToast(`📥 Telegram កំពុងទាញយកភាគ ${epNum}... វីដេអូនឹងចូលក្នុង Gallery ផ្ទាល់!`);
+        } else {
+          showToast("⏹️ បានបោះបង់ការទាញយក");
+        }
+      });
+      return;
+    } catch (e) {
+      console.warn("Telegram.WebApp.downloadFile error, using fallback:", e);
+    }
+  }
+
+  // 2. Telegram WebApp Fallback via Native Link Opener (Triggers Android System Downloader / Gallery)
+  if (window.Telegram?.WebApp?.initData && window.Telegram?.WebApp?.openLink) {
+    try {
+      showToast(`📥 កំពុងចាប់ផ្តើមទាញយកភាគ ${epNum} ចូល Gallery ទូរស័ព្ទ...`);
+      window.Telegram.WebApp.openLink(ep.video_url, { try_instant_view: false });
+      return;
+    } catch (e) {
+      console.warn("Telegram.WebApp.openLink error:", e);
+    }
+  }
+
+  // 3. For External Browsers & PC: High-speed In-Memory Blob Stream
   openDownloadModal(`ទាញយកភាគទី ${epNum}`, showTitle);
   abortDownloadController = new AbortController();
 
@@ -2934,6 +2965,36 @@ async function downloadAllEpisodes() {
   const showTitle = (currentShowObj?.title || "Drama").replace(/[\\/:*?"<>|]/g, "_");
   const totalEps = currentEpisodes.length;
 
+  // 1. In Telegram Mini App: Trigger Telegram Downloader for episodes
+  if (window.Telegram?.WebApp && typeof window.Telegram.WebApp.downloadFile === "function") {
+    showToast(`📥 កំពុងចាប់ផ្តើមទាញយក ${totalEps} ភាគតាម Telegram ចូល Gallery...`);
+    for (let i = 0; i < totalEps; i++) {
+      const ep = currentEpisodes[i];
+      const epNum = ep.episode_number || (i + 1);
+      const fileName = `${showTitle}_EP${epNum}.mp4`;
+      try {
+        window.Telegram.WebApp.downloadFile({ url: ep.video_url, file_name: fileName });
+        await new Promise(r => setTimeout(r, 600));
+      } catch (e) {}
+    }
+    showToast(`✅ បានបញ្ជូនបញ្ជីទាញយកគ្រប់ភាគចូល Telegram Download Manager រួចរាល់!`);
+    return;
+  }
+
+  // 2. Telegram WebApp openLink fallback
+  if (window.Telegram?.WebApp?.initData && window.Telegram?.WebApp?.openLink) {
+    showToast(`📥 កំពុងទាញយកភាគទី 1 ដល់ ${totalEps}...`);
+    for (let i = 0; i < Math.min(totalEps, 5); i++) {
+      const ep = currentEpisodes[i];
+      if (ep && ep.video_url) {
+        window.Telegram.WebApp.openLink(ep.video_url, { try_instant_view: false });
+        await new Promise(r => setTimeout(r, 500));
+      }
+    }
+    return;
+  }
+
+  // 3. For External Browsers: Sequential blob downloader with progress modal
   openDownloadModal(`ទាញយកគ្រប់ភាគ (${totalEps} ភាគ)`, showTitle);
   isDownloadingAll = true;
   abortDownloadController = new AbortController();
