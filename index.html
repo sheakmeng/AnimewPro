@@ -2261,6 +2261,9 @@
       cursor: pointer;
     }
   </style>
+
+  <!-- HLS.js for M3U8 stream playback (Telegram WebApp / Android) -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
 </head>
 <body>
 
@@ -3548,9 +3551,50 @@ async function playEpisode(idx) {
   });
 
   if (playerEl && ep.video_url) {
-    playerEl.src = ep.video_url;
-    playerEl.playbackRate = speeds[playbackSpeedIdx];
-    playerEl.play().catch(e => console.warn("Auto-play:", e));
+    const url = ep.video_url;
+    const isHLS = url.includes(".m3u8") || url.includes("m3u8");
+
+    // Destroy any previous HLS instance
+    if (window._hlsInstance) {
+      try { window._hlsInstance.destroy(); } catch(e) {}
+      window._hlsInstance = null;
+    }
+
+    if (isHLS && typeof Hls !== 'undefined' && Hls.isSupported()) {
+      // Use hls.js for Android / Telegram WebApp (no native HLS support)
+      const hls = new Hls({
+        enableWorker: false,
+        lowLatencyMode: false,
+        xhrSetup: (xhr) => {
+          xhr.setRequestHeader('Origin', 'https://www.dramabite.media');
+        }
+      });
+      hls.loadSource(url);
+      hls.attachMedia(playerEl);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        playerEl.playbackRate = speeds[playbackSpeedIdx];
+        playerEl.play().catch(e => console.warn("HLS play:", e));
+      });
+      hls.on(Hls.Events.ERROR, (event, data) => {
+        if (data.fatal) {
+          console.error("HLS fatal error:", data.type, data.details);
+          // Fallback to native src
+          playerEl.src = url;
+          playerEl.play().catch(e => console.warn("HLS fallback:", e));
+        }
+      });
+      window._hlsInstance = hls;
+    } else if (isHLS && playerEl.canPlayType('application/vnd.apple.mpegurl')) {
+      // Safari / iOS native HLS
+      playerEl.src = url;
+      playerEl.playbackRate = speeds[playbackSpeedIdx];
+      playerEl.play().catch(e => console.warn("Native HLS:", e));
+    } else {
+      // Direct MP4 or other format
+      playerEl.src = url;
+      playerEl.playbackRate = speeds[playbackSpeedIdx];
+      playerEl.play().catch(e => console.warn("Direct play:", e));
+    }
   }
 
   // Save Watched State
@@ -3565,6 +3609,13 @@ function closeModal() {
   const modal = document.getElementById("modal");
   if (modal) modal.classList.remove("active");
   document.body.style.overflow = "";
+
+  // Destroy HLS instance before clearing player
+  if (window._hlsInstance) {
+    try { window._hlsInstance.destroy(); } catch(e) {}
+    window._hlsInstance = null;
+  }
+
   if (playerEl) {
     playerEl.pause();
     playerEl.removeAttribute("src");
@@ -3575,6 +3626,7 @@ function closeModal() {
     if (window.Telegram?.WebApp?.BackButton) window.Telegram.WebApp.BackButton.hide();
   } catch (e) {}
 }
+
 
 // Quick Player Controls
 document.getElementById("btn-modal-back").onclick = closeModal;
