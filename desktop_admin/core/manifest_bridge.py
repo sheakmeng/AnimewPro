@@ -39,10 +39,12 @@ class ManifestBridge:
             s_id = item.get("show_id") or "unknown_show"
             if s_id not in shows:
                 source = item.get("source") or ("dramaora" if s_id.startswith("dramaora") else "dramabite")
+                category = item.get("category") or ("dramaora" if s_id.startswith("dramaora") else "dramabite")
                 shows[s_id] = {
                     "id": s_id,
                     "title": item.get("show_title", s_id),
                     "source": source,
+                    "category": category,
                     "poster_url": item.get("poster_url", ""),
                     "synopsis": item.get("synopsis", ""),
                     "is_vip": bool(item.get("is_vip", False)),
@@ -52,6 +54,8 @@ class ManifestBridge:
             # Prefer best poster
             if not shows[s_id]["poster_url"] and item.get("poster_url"):
                 shows[s_id]["poster_url"] = item.get("poster_url")
+            if not shows[s_id].get("category") and item.get("category"):
+                shows[s_id]["category"] = item.get("category")
 
             shows[s_id]["episodes"].append({
                 "id": ep_id,
@@ -92,13 +96,14 @@ class ManifestBridge:
             print(f"[ManifestBridge] Save error: {e}")
             return False
 
-    def update_show_metadata(self, show_id: str, title: str, poster_url: str, synopsis: str = ""):
-        """Update show title and poster across all its episode entries."""
+    def update_show_metadata(self, show_id: str, title: str, poster_url: str, synopsis: str = "", category: str = ""):
+        """Update show title, poster, and category across all its episode entries."""
         for ep_id, item in self.manifest.items():
             if item.get("show_id") == show_id:
                 if title: item["show_title"] = title
                 if poster_url: item["poster_url"] = poster_url
                 if synopsis is not None: item["synopsis"] = synopsis
+                if category: item["category"] = category
         self.save()
 
     def update_episode(self, ep_id: str, stream_url: str, ep_num: int = None):

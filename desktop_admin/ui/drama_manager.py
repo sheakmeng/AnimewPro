@@ -38,9 +38,19 @@ class DramaManagerWidget(QWidget):
         self.search_input.textChanged.connect(self.filter_dramas)
         top_layout.addWidget(self.search_input, 4)
 
-        # Platform Filter Dropdown
+        # Platform & Category Filter Dropdown
         self.filter_combo = QComboBox()
-        self.filter_combo.addItems(["🌐 គ្រប់ប្រភព (All Platforms)", "🟣 Dramaora", "🔵 DramaBite"])
+        self.filter_combo.addItems([
+            "🌐 គ្រប់ប្រភេទ (All Categories)",
+            "🟣 Dramaora",
+            "🔵 DramaBite",
+            "🇨🇳 រឿងភាគចិន (Chinese)",
+            "🇰🇷 រឿងភាគកូរ៉េ (Korean)",
+            "👑 VIP ផ្តាច់មុខ (VIP Only)",
+            "🔥 ពេញនិយម (Trending)",
+            "❤️ ស្នេហា / CEO (Romance)",
+            "⚔️ សកម្មភាព (Action)"
+        ])
         self.filter_combo.currentIndexChanged.connect(self.filter_dramas)
         top_layout.addWidget(self.filter_combo, 2)
 
@@ -123,11 +133,27 @@ class DramaManagerWidget(QWidget):
         input_layout.addWidget(lbl_p)
         input_layout.addWidget(self.input_poster)
 
+        lbl_c = QLabel("ប្រភេទរឿង / Category Tab:")
+        lbl_c.setStyleSheet("font-weight: 700; color: #94a3b8; font-size: 11.5px;")
+        self.input_category = QComboBox()
+        self.input_category.addItems([
+            "🎬 Dramaora",
+            "⚡ DramaBite",
+            "🇨🇳 រឿងភាគចិន (Chinese)",
+            "🇰🇷 រឿងភាគកូរ៉េ (Korean)",
+            "👑 VIP ផ្តាច់មុខ (VIP Only)",
+            "🔥 ពេញនិយម (Trending)",
+            "❤️ ស្នេហា / CEO (Romance)",
+            "⚔️ សកម្មភាព (Action)"
+        ])
+        input_layout.addWidget(lbl_c)
+        input_layout.addWidget(self.input_category)
+
         lbl_s = QLabel("សង្ខេបរឿង (Synopsis):")
         lbl_s.setStyleSheet("font-weight: 700; color: #94a3b8; font-size: 11.5px;")
         self.input_synopsis = QTextEdit()
         self.input_synopsis.setPlaceholderText("Synopsis / Story Description...")
-        self.input_synopsis.setMaximumHeight(65)
+        self.input_synopsis.setMaximumHeight(55)
         input_layout.addWidget(lbl_s)
         input_layout.addWidget(self.input_synopsis)
 
@@ -216,10 +242,23 @@ class DramaManagerWidget(QWidget):
             if search and (search not in title.lower() and search not in s_id.lower()):
                 continue
 
-            # Filter source
-            if "DramaBite" in filter_type and "dramabite" not in source.lower():
+            # Filter source & category
+            cat_val = s.get("category", "").lower()
+            if "DramaBite" in filter_type and "dramabite" not in source.lower() and "dramabite" not in cat_val:
                 continue
-            if "Dramaora" in filter_type and "dramaora" not in source.lower():
+            if "Dramaora" in filter_type and "dramaora" not in source.lower() and "dramaora" not in cat_val:
+                continue
+            if "VIP" in filter_type and not s.get("is_vip") and "vip" not in cat_val:
+                continue
+            if "Chinese" in filter_type and "chinese" not in cat_val and "ចិន" not in cat_val:
+                continue
+            if "Korean" in filter_type and "korean" not in cat_val and "កូរ៉េ" not in cat_val:
+                continue
+            if "Romance" in filter_type and "romance" not in cat_val and "ស្នេហា" not in cat_val and "ceo" not in cat_val:
+                continue
+            if "Action" in filter_type and "action" not in cat_val and "សកម្មភាព" not in cat_val and "ក្បាច់គុន" not in cat_val:
+                continue
+            if "Trending" in filter_type and "trending" not in cat_val and "ពេញនិយម" not in cat_val:
                 continue
 
             self.drama_table.insertRow(row)
@@ -278,6 +317,18 @@ class DramaManagerWidget(QWidget):
         self.input_title.setText(show.get("title", ""))
         self.input_poster.setText(show.get("poster_url", ""))
         self.input_synopsis.setPlainText(show.get("synopsis", ""))
+        
+        # Load category
+        cat = show.get("category", "")
+        if cat:
+            for idx in range(self.input_category.count()):
+                if cat.lower() in self.input_category.itemText(idx).lower() or self.input_category.itemText(idx).lower() in cat.lower():
+                    self.input_category.setCurrentIndex(idx)
+                    break
+        else:
+            is_bite = "dramabite" in show.get("source", "").lower()
+            self.input_category.setCurrentIndex(1 if is_bite else 0)
+
         self.preview_poster(show.get("poster_url", ""))
 
         # Populate episodes
@@ -335,7 +386,8 @@ class DramaManagerWidget(QWidget):
         title = self.input_title.text().strip()
         poster = self.input_poster.text().strip()
         synopsis = self.input_synopsis.toPlainText().strip()
-        self.bridge.update_show_metadata(self.current_show_id, title, poster, synopsis)
+        category = self.input_category.currentText().strip()
+        self.bridge.update_show_metadata(self.current_show_id, title, poster, synopsis, category)
         QMessageBox.information(self, "ជោគជ័យ", "✅ បានរក្សាទុកទិន្នន័យ និង Sync ចូល data.js រួចរាល់!")
         self.load_drama_table()
 
