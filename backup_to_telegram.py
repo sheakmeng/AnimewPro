@@ -781,23 +781,32 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
     video_url = ep.get("video_url") or ""
     poster_url = ep.get("poster_url") or ""
 
-    if not video_url:
+    local_file = ep.get("local_file_path")
+    is_local_file = bool(local_file and os.path.isfile(local_file))
+
+    if is_local_file:
+        temp_path = local_file
+        video_url = local_file
+    elif not video_url:
         print(f"  ⚠️ Skipping {show_title} EP {ep_num}: No stream URL.", flush=True)
         return False
-
-    with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as tf:
-        temp_path = tf.name
+    else:
+        with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as tf:
+            temp_path = tf.name
 
     thumb_path = temp_path + ".thumb.jpg"
     video_parts = [temp_path]
     is_split = False
 
     try:
-        print("  ⏳ កំពុង Download ភាគនេះពី Dramaora...", flush=True)
-        await download_video_stream(video_url, temp_path, max_retries=3)
-
-        raw_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
-        print(f"  ✅ Download រួចរាល់ ({raw_size_mb:.1f} MB). កំពុងរៀបចំ Upload...", flush=True)
+        if not is_local_file:
+            print("  ⏳ កំពុង Download ភាគនេះពី Dramaora...", flush=True)
+            await download_video_stream(video_url, temp_path, max_retries=3)
+            raw_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
+            print(f"  ✅ Download រួចរាល់ ({raw_size_mb:.1f} MB). កំពុងរៀបចំ Upload...", flush=True)
+        else:
+            raw_size_mb = os.path.getsize(temp_path) / (1024 * 1024)
+            print(f"  📂 ឯកសារក្នុងម៉ាស៊ីន: {temp_path} ({raw_size_mb:.1f} MB). កំពុងរៀបចំ Upload...", flush=True)
 
         video_parts, is_split = split_video_if_needed(temp_path, max_mb=1950.0)
         total_parts = len(video_parts)
@@ -819,7 +828,7 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
             duration, width, height, thumb_file = extract_video_metadata(part_file, part_thumb)
             
             # 🖼️ Capture & Download Official Drama Poster Thumbnail if no ffmpeg thumb
-            if not thumb_file and poster_url:
+            if not thumb_file and poster_url and str(poster_url).startswith("http"):
                 thumb_file = await download_thumbnail_image(poster_url, part_thumb)
                 if thumb_file:
                     print(f"  🖼️ បានទាញយក Drama Poster Cover សម្រាប់ Thumbnail លើ Telegram!", flush=True)
@@ -827,15 +836,16 @@ async def process_episode_backup(app: Client, ep: dict, manifest: dict, channel_
             if duration > 0:
                 print(f"  🎬 Metadata: {duration//60}m{duration%60}s | {width}x{height} | Thumb: {'Yes' if thumb_file else 'No'}", flush=True)
 
+            source_tag = "DramaBite HD (Local Upload)" if is_local_file else "Dramaora FHD (Unlocked)"
             part_suffix = f" (Part {part_idx}/{total_parts})" if total_parts > 1 else ""
             caption = (
                 f"🎬 **{show_title}**\n"
                 f"📌 **ភាគ / Episode:** {ep_num}{part_suffix}\n"
-                f"⚡ **Source:** Dramaora FHD (Unlocked)\n"
+                f"⚡ **Source:** {source_tag}\n"
                 f"📦 **Size:** {part_size_mb:.1f} MB\n"
                 f"🆔 `ep_id: {ep_id}`"
             )
-            if poster_url:
+            if poster_url and str(poster_url).startswith("http"):
                 caption += f"\n🖼️ **Poster:** [មើលរូបភាព Poster]({poster_url})"
 
             last_logged_pct = -1
@@ -941,73 +951,93 @@ async def main():
     print("🌐 កំពុងតភ្ជាប់ទៅកាន់ Dramaora.tv...", flush=True)
     await d_client.login()
 
-    # If specific drama passed in command line arguments, use it; otherwise auto-crawl all
-    target_episodes = []
-    if len(sys.argv) > 1 and sys.argv[1].strip() and not sys.argv[1].startswith("-"):
-        custom_target = sys.argv[1].strip()
-        print(f"🎯 ដំណើរការ Backup រឿងជាក់លាក់: {custom_target}", flush=True)
-        info = await d_client.get_drama_info(custom_target)
-        if info and info.get("episodes"):
-            target_episodes = info["episodes"]
-    else:
-        print("📋 កំពុងស្កេនទាញបញ្ជីរឿងទាំងអស់ពី Dramaora.tv...", flush=True)
-        catalogue = await d_client.get_all_drama_catalogue()
-        print(f"✅ រកឃើញ {len(catalogue)} រឿង។ កំពុងរៀបចំ Unlock គ្រប់ភាគ...", flush=True)
-        for d in catalogue:
-            d_info = await d_client.get_drama_info(str(d["vid"]))
-            if d_info and d_info.get("episodes"):
-                target_episodes.extend(d_info["episodes"])
-
-    # Filter out already backed-up episodes (Zero-duplication check)
-    pending = []
-    for ep in target_episodes:
-        if not is_already_backed_up(ep, manifest):
-            pending.append(ep)
-
-    print("\n" + "-" * 60, flush=True)
-    print(f"📊 ស្ថានភាពទិន្នន័យ Backup:", flush=True)
-    print(f"  • បាន Backup រួចរាល់: {len(manifest)} ភាគ", flush=True)
-    print(f"  • នៅសល់ត្រូវ Backup: {len(pending)} ភាគ", flush=True)
-    time_limit_str = "គ្មានដែនកំណត់ (Unlimited - រត់រហូតដល់ចប់)" if MAX_RUN_SECONDS <= 0 else f"{MAX_RUN_SECONDS // 60} នាទី ({MAX_RUN_SECONDS}s)"
-    print(f"  • ដែនកំណត់ម៉ោង (Time Limit): {time_limit_str}", flush=True)
-    print("-" * 60, flush=True)
-
-    if not pending:
-        print("🎉 គ្រប់ភាគទាំងអស់ត្រូវបាន Backup ចូល Telegram រួចរាល់អស់ហើយ! (All up to date)", flush=True)
-        return
-
+    # Connect to Telegram Bot at the start
     print("\n🤖 Connecting to Telegram Bot...", flush=True)
+    session_file = os.path.join(SCRIPT_DIR, "backup_session")
+    for cand in [
+        session_file,
+        "/sdcard/Download/backup_session",
+        "/storage/emulated/0/Download/backup_session"
+    ]:
+        if os.path.isfile(cand + ".session"):
+            session_file = cand
+            break
+
     app = Client(
-        "backup_session",
+        session_file,
         api_id=api_id_int,
         api_hash=API_HASH,
-        bot_token=BOT_TOKEN,
-        in_memory=True,
-        ipv6=False
+        bot_token=BOT_TOKEN
     )
     await app.start()
     print("✅ Telegram Bot connected successfully!", flush=True)
 
     success_count = 0
-    run_list = pending[:MAX_BATCH] if MAX_BATCH > 0 else pending
 
-    for i, ep in enumerate(run_list, 1):
-        elapsed = time.time() - start_time
-        
-        # Check time limit only if MAX_RUN_SECONDS is explicitly greater than 0
-        if MAX_RUN_SECONDS > 0:
-            remaining_time = MAX_RUN_SECONDS - elapsed
-            if remaining_time < 180 and i > 1:
-                print(f"\n⏰ Time limit reached ({elapsed/60:.1f}m). Gracefully pausing to save progress.", flush=True)
+    # If specific drama passed in command line arguments, use it; otherwise stream-by-stream catalogue
+    if len(sys.argv) > 1 and sys.argv[1].strip() and not sys.argv[1].startswith("-"):
+        custom_target = sys.argv[1].strip()
+        print(f"\n🎯 ដំណើរការ Unlock & Backup រឿងជាក់លាក់: {custom_target}", flush=True)
+        info = await d_client.get_drama_info(custom_target)
+        if info and info.get("episodes"):
+            pending = [ep for ep in info["episodes"] if not is_already_backed_up(ep, manifest)]
+            print(f"  🚀 រកឃើញ {len(pending)} ភាគត្រូវ Backup។ កំពុង Upload ឡើង Telegram...", flush=True)
+            for ep in pending:
+                ok = await process_episode_backup(app, ep, manifest, channel_id_int)
+                if ok:
+                    success_count += 1
+    else:
+        print("📋 កំពុងស្កេនទាញបញ្ជីរឿងពី Dramaora.tv...", flush=True)
+        catalogue = await d_client.get_all_drama_catalogue()
+        print(f"✅ រកឃើញ {len(catalogue)} រឿង។ ដំណើរការ Unlock មួយរឿង និង Backup មួយរឿងភ្លាមៗ (Streamlined Pipeline)...", flush=True)
+
+        for d_idx, d in enumerate(catalogue, 1):
+            elapsed = time.time() - start_time
+            if MAX_RUN_SECONDS > 0 and (MAX_RUN_SECONDS - elapsed) < 120 and success_count > 0:
+                print(f"\n⏰ Time limit reached ({elapsed/60:.1f}m). Gracefully stopping to save progress.", flush=True)
                 break
 
-        show_title = ep.get("show_title") or "Unknown"
-        ep_num = ep.get("episode_number", 1)
+            vid = str(d["vid"])
+            title = d.get("title", f"Drama_{vid}")
+            show_id = f"dramaora_{vid}"
 
-        print(f"\n[{i}/{len(run_list)}] 🚀 Starting: {show_title} - Episode {ep_num} ({elapsed/60:.1f}m running)", flush=True)
-        ok = await process_episode_backup(app, ep, manifest, channel_id_int)
-        if ok:
-            success_count += 1
+            # Quick check: If all episodes for this show are already backed up, skip unlocking!
+            total_expected = d.get("ep_count")
+            existing_count = sum(1 for m in manifest.values() if isinstance(m, dict) and m.get("show_id") == show_id)
+            if total_expected and str(total_expected).isdigit() and existing_count >= int(total_expected) and existing_count > 0:
+                print(f"\n[{d_idx}/{len(catalogue)}] ⏭️ រឿង '{title}' បាន Backup គ្រប់ {existing_count} ភាគរួចហើយ (Skip)", flush=True)
+                continue
+
+            print(f"\n[{d_idx}/{len(catalogue)}] 🔓 កំពុង Unlock រឿង: '{title}' (vid={vid})...", flush=True)
+            d_info = await d_client.get_drama_info(vid)
+            if not d_info or not d_info.get("episodes"):
+                continue
+
+            pending_eps = [ep for ep in d_info["episodes"] if not is_already_backed_up(ep, manifest)]
+            if not pending_eps:
+                print(f"  ✅ រឿង '{title}' គ្រប់ភាគទាំងអស់ ({len(d_info['episodes'])} ភាគ) បាន Backup រួចរាល់ហើយ!", flush=True)
+                continue
+
+            print(f"  🚀 ចាប់ផ្តើម Backup {len(pending_eps)} ភាគនៃរឿង '{title}' ឡើង Telegram ភ្លាមៗ...", flush=True)
+            for ep_idx, ep in enumerate(pending_eps, 1):
+                elapsed = time.time() - start_time
+                if MAX_RUN_SECONDS > 0 and (MAX_RUN_SECONDS - elapsed) < 120 and success_count > 0:
+                    print(f"\n⏰ Time limit reached ({elapsed/60:.1f}m). Gracefully stopping.", flush=True)
+                    break
+
+                ep_num = ep.get("episode_number", ep_idx)
+                print(f"\n  [{ep_idx}/{len(pending_eps)}] 📤 Uploading: {title} EP {ep_num} ({elapsed/60:.1f}m running)...", flush=True)
+                ok = await process_episode_backup(app, ep, manifest, channel_id_int)
+                if ok:
+                    success_count += 1
+
+                if MAX_BATCH > 0 and success_count >= MAX_BATCH:
+                    print(f"\n📦 Max batch limit reached ({MAX_BATCH} episodes).", flush=True)
+                    break
+
+            print(f"  🎉 បានបញ្ចប់ការ Backup រឿង '{title}'! កំពុងបន្តទៅរឿងបន្ទាប់...", flush=True)
+            if MAX_BATCH > 0 and success_count >= MAX_BATCH:
+                break
 
     # Send summary notification to Telegram channel
     if success_count > 0:
