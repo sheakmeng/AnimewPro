@@ -36,9 +36,68 @@ pyrogram.utils.MAX_CHANNEL_ID = -1000000000000
 
 from pyrogram import Client
 import httpx
+import tempfile
+
+# Auto-install missing packages (needed for Pydroid 3 Android)
+def _ensure_package(pkg_name, import_name=None):
+    import_name = import_name or pkg_name
+    try:
+        __import__(import_name)
+    except ImportError:
+        print(f"Installing {pkg_name}...", flush=True)
+        import subprocess
+        subprocess.run([sys.executable, "-m", "pip", "install", pkg_name, "--quiet"], check=False)
+
+_ensure_package("requests")
+_ensure_package("httpx")
+
+try:
+    import requests
+except ImportError:
+    requests = None
 
 # Paths & Directories (Smart Auto-Detection for PC & Android Pydroid 3)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals() else os.getcwd()
+
+# DramaBite platform folder - auto-detect PC or Android
+def _find_dramabite_base():
+    candidates = [
+        r"C:\Users\sheakmeng\Desktop\DramaBite",
+        "/sdcard/Download/DramaBite",
+        "/storage/emulated/0/Download/DramaBite",
+        "/sdcard/DramaBite",
+        os.path.join(SCRIPT_DIR, "DramaBite"),
+        os.path.join(os.path.dirname(SCRIPT_DIR), "DramaBite"),
+    ]
+    for c in candidates:
+        if os.path.isdir(os.path.join(c, "platforms")):
+            return c
+    return r"C:\Users\sheakmeng\Desktop\DramaBite"
+
+DRAMABITE_BASE_DIR = _find_dramabite_base()
+if os.path.isdir(os.path.join(DRAMABITE_BASE_DIR, "platforms")):
+    if DRAMABITE_BASE_DIR not in sys.path:
+        sys.path.insert(0, DRAMABITE_BASE_DIR)
+
+# Try importing the DramaBite bypass engine
+try:
+    from platforms.dramabite import DramabiteMixin
+
+    class DramaBiteBypassClient(DramabiteMixin):
+        def __init__(self):
+            import requests as rq
+            self.session = rq.Session()
+            self._cancelled = False
+            self._dramabite_detail_cache = {}
+
+        def _report_status(self, msg):
+            print(f"  [Bypass] {msg}", flush=True)
+
+    BYPASS_AVAILABLE = True
+    print("[OK] DramaBite Bypass Engine loaded! (Online Mode Enabled)", flush=True)
+except Exception as _bypass_err:
+    BYPASS_AVAILABLE = False
+    print(f"[INFO] Bypass Engine not available: {_bypass_err}", flush=True)
 
 def find_dramabite_downloads_dir():
     candidates = [
@@ -304,6 +363,291 @@ def scan_dramabite_downloads(target_dir=None):
 
     return found
 
+
+def scan_dramabite_online(manifest: dict):
+    """
+    Online Mode: Use the DramaBite Bypass Engine to crawl all dramas from the API,
+    unlock stream URLs, and return a list of episodes to backup (same format as scan_dramabite_downloads).
+    Only returns episodes NOT already in the manifest.
+    """
+    if not BYPASS_AVAILABLE:
+        print("⚠️ DramaBite Bypass Engine not available. Online Mode disabled.", flush=True)
+        return []
+
+    client = DramaBiteBypassClient()
+    print("🌐 [Online Mode] កំពុងស្កេន DramaBite API ដើម្បី Crawl រឿងទាំងអស់...", flush=True)
+
+    dramas = client._dramabite_get_dramas(max_pages=15)
+    print(f"✅ រកឃើញ {len(dramas)} រឿងលើ DramaBite។", flush=True)
+
+    pending_eps = []
+    for drama in dramas:
+        title = drama.get("title", "Unknown")
+        url = drama.get("url", "")
+        thumb = drama.get("thumb", "")
+        if not url:
+            continue
+
+        clean_slug = re.sub(r'[^a-zA-Z0-9]+', '_', title).strip('_').lower()
+        show_id = f"dramabite_online_{clean_slug}"
+
+        drama_title, episodes, drama_thumb = client._dramabite_drama_info(url)
+        if not episodes:
+            continue
+
+        poster_url = thumb or drama_thumb
+
+        for ep in episodes:
+            ep_num = ep.get("num", 1)
+            ep_id = f"dramabite_online_{clean_slug}_{ep_num}"
+            if ep_id in manifest:
+                continue  # Already backed up
+
+            ep_url = ep.get("url", "")
+            if not ep_url:
+                continue
+
+            # Resolve stream URL via bypass
+            stream_url = client._dramabite_video_url(ep_url)
+            if not stream_url:
+                print(f"  ⛔ Bypass failed: {drama_title} EP{ep_num}", flush=True)
+                continue
+
+            pending_eps.append({
+                "id": ep_id,
+                "show_id": show_id,
+                "show_title": drama_title or title,
+                "episode_number": ep_num,
+                "stream_url": stream_url,
+                "poster_url": poster_url,
+                "synopsis": f"DramaBite Online HD - {drama_title}",
+                "source": "dramabite_online",
+                "cid_url": ep_url
+            })
+
+    return pending_eps
+
+
+
+async def get_telegram_cdn_url(app: Client, file_id: str) -> str:
+    """Get direct Telegram CDN download URL from file_id (MP4 direct link for player)."""
+    try:
+        file = await app.get_file(file_id)
+        if file and file.file_path:
+            return f"https://api.telegram.org/file/bot{BOT_TOKEN}/{file.file_path}"
+    except Exception:
+        pass
+    return ""
+
+
+def convert_to_mp4(input_path: str) -> str:
+    """
+    Remux non-MP4 files (.ts, .mkv, .mov) to MP4 using FFmpeg -c copy.
+    Returns path to MP4 file. Returns input_path unchanged if already .mp4 or FFmpeg not found.
+    """
+    ext = os.path.splitext(input_path)[1].lower()
+    if ext == ".mp4":
+        return input_path
+
+    ffmpeg_bin = shutil.which("ffmpeg") or shutil.which("ffmpeg.exe")
+    if not ffmpeg_bin:
+        bundled = os.path.join(DRAMABITE_BASE_DIR, "ffmpeg", "ffmpeg.exe")
+        if os.path.isfile(bundled):
+            ffmpeg_bin = bundled
+    if not ffmpeg_bin:
+        print("  [WARN] FFmpeg not found - skipping MP4 conversion", flush=True)
+        return input_path
+
+    mp4_path = os.path.splitext(input_path)[0] + "_converted.mp4"
+    cmd = [
+        ffmpeg_bin, "-y",
+        "-i", input_path,
+        "-c:v", "copy",
+        "-c:a", "aac", "-b:a", "128k",
+        "-movflags", "+faststart",
+        mp4_path
+    ]
+    try:
+        print(f"  [MP4] Converting {ext} -> .mp4 with clean AAC audio...", flush=True)
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=600)
+        if result.returncode == 0 and os.path.isfile(mp4_path) and os.path.getsize(mp4_path) > 1024 * 50:
+            size_mb = os.path.getsize(mp4_path) / (1024 * 1024)
+            print(f"  [MP4] Conversion OK! ({size_mb:.1f} MB)", flush=True)
+            return mp4_path
+    except Exception as e:
+        print(f"  [WARN] FFmpeg convert error: {e}", flush=True)
+    return input_path
+
+
+async def download_hls_stream(stream_url: str, output_path: str) -> bool:
+    """Download HLS m3u8 stream to local file using FFmpeg with clean AAC audio or chunk-by-chunk fallback."""
+    ffmpeg_bin = shutil.which("ffmpeg") or shutil.which("ffmpeg.exe")
+    if not ffmpeg_bin:
+        # Try bundled FFmpeg from DramaBite
+        bundled = os.path.join(DRAMABITE_BASE_DIR, "ffmpeg", "ffmpeg.exe")
+        if os.path.isfile(bundled):
+            ffmpeg_bin = bundled
+
+    headers_str = (
+        "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36\r\n"
+        "Referer: https://www.dramabite.media/\r\n"
+        "Origin: https://www.dramabite.media\r\n"
+    )
+
+    if ffmpeg_bin:
+        cmd = [
+            ffmpeg_bin, "-y",
+            "-reconnect", "1", "-reconnect_at_eof", "1",
+            "-reconnect_streamed", "1", "-reconnect_delay_max", "5",
+            "-headers", headers_str,
+            "-i", stream_url,
+            "-c:v", "copy",
+            "-c:a", "aac", "-b:a", "128k",
+            "-movflags", "+faststart",
+            output_path
+        ]
+        try:
+            result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=600)
+            if result.returncode == 0 and os.path.isfile(output_path) and os.path.getsize(output_path) > 1024 * 50:
+                return True
+        except Exception as e:
+            print(f"  ⚠️ FFmpeg error: {e}", flush=True)
+
+    # Fallback: download m3u8 chunks
+    print("  🔄 FFmpeg failed, trying direct chunk download...", flush=True)
+    try:
+        hdrs = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36",
+            "Referer": "https://www.dramabite.media/",
+            "Origin": "https://www.dramabite.media"
+        }
+        r = requests.get(stream_url, headers=hdrs, timeout=15)
+        if r.status_code != 200:
+            return False
+        from urllib.parse import urljoin
+        lines = r.text.splitlines()
+        ts_urls = [urljoin(stream_url, l.strip()) for l in lines if l.strip() and not l.strip().startswith("#")]
+        if not ts_urls:
+            return False
+        with open(output_path + ".ts", "wb") as fout:
+            for i, ts in enumerate(ts_urls, 1):
+                for _ in range(3):
+                    try:
+                        chunk = requests.get(ts, headers=hdrs, timeout=12)
+                        if chunk.status_code == 200:
+                            fout.write(chunk.content)
+                            break
+                    except Exception:
+                        time.sleep(1)
+        if os.path.getsize(output_path + ".ts") > 1024 * 50:
+            os.rename(output_path + ".ts", output_path)
+            return True
+    except Exception as e:
+        print(f"  ⚠️ Chunk download error: {e}", flush=True)
+    return False
+
+
+async def backup_online_episode(app: Client, ep: dict, manifest: dict, channel_id_int: int) -> bool:
+    """Download online DramaBite episode via bypass, convert to MP4, and upload to Telegram."""
+    ep_id = ep["id"]
+    show_title = ep["show_title"]
+    ep_num = ep["episode_number"]
+    stream_url = ep["stream_url"]
+    poster_url = ep.get("poster_url", "")
+
+    print(f"  [Online] Download + Convert + Upload: {show_title} EP{ep_num}...", flush=True)
+
+    with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as tf:
+        temp_path = tf.name
+
+    thumb_path = temp_path + ".thumb.jpg"
+    converted_path = None
+
+    try:
+        ok = await download_hls_stream(stream_url, temp_path)
+        if not ok or not os.path.isfile(temp_path) or os.path.getsize(temp_path) < 1024 * 50:
+            print(f"  Download failed: {show_title} EP{ep_num}", flush=True)
+            return False
+
+        # Convert to MP4 if needed (HLS -> MP4 should already be .mp4, but double-check)
+        final_path = convert_to_mp4(temp_path)
+        if final_path != temp_path:
+            converted_path = final_path
+
+        part_size_mb = round(os.path.getsize(final_path) / (1024 * 1024), 2)
+        print(f"  Downloaded {part_size_mb:.1f} MB as MP4. Uploading to Telegram...", flush=True)
+
+        duration, width, height, ffmpeg_thumb = extract_video_metadata(final_path, thumb_path)
+        thumb_file = ffmpeg_thumb
+
+        if poster_url and str(poster_url).startswith("http"):
+            dl_thumb = await download_thumbnail_image(poster_url, thumb_path)
+            if dl_thumb:
+                thumb_file = dl_thumb
+
+        caption = (
+            f"🎬 **{show_title}**\n"
+            f"📌 **ភាគ / Episode:** {ep_num}\n"
+            f"⚡ **Source:** DramaBite Online HD (Bypass Unlock)\n"
+            f"📦 **Size:** {part_size_mb:.1f} MB\n"
+            f"🆔 `ep_id: {ep_id}`"
+        )
+        if poster_url and str(poster_url).startswith("http"):
+            caption += f"\n🖼️ **Poster:** [មើលរូបភាព Poster]({poster_url})"
+
+        last_logged_pct = -1
+        start_up = time.time()
+        def progress(current, total):
+            nonlocal last_logged_pct
+            pct = int((current / total) * 100) if total > 0 else 0
+            if pct != last_logged_pct and pct % 20 == 0:
+                last_logged_pct = pct
+                speed_mb = (current / (1024 * 1024)) / max(0.1, time.time() - start_up)
+                print(f"    Uploading: {pct}% ({current/(1024*1024):.1f}/{total/(1024*1024):.1f} MB) {speed_mb:.1f} MB/s", flush=True)
+
+        msg = await app.send_video(
+            chat_id=channel_id_int,
+            video=final_path,
+            caption=caption,
+            duration=int(duration or 0),
+            width=int(width or 1280),
+            height=int(height or 720),
+            thumb=thumb_file if (thumb_file and os.path.isfile(thumb_file)) else None,
+            supports_streaming=True,
+            progress=progress
+        )
+
+        # Get Telegram CDN URL for the uploaded MP4
+        tg_file_id = msg.video.file_id if msg.video else None
+        tg_cdn_url = ""
+        if tg_file_id:
+            tg_cdn_url = await get_telegram_cdn_url(app, tg_file_id)
+
+        manifest[ep_id] = {
+            "show_id": ep["show_id"],
+            "show_title": show_title,
+            "episode_number": ep_num,
+            "telegram_message_id": msg.id,
+            "telegram_file_id": tg_file_id,
+            "file_size_mb": part_size_mb,
+            "original_url": tg_cdn_url or stream_url,  # Prefer Telegram MP4 CDN URL
+            "hls_source_url": stream_url,               # Keep original HLS for reference
+            "poster_url": poster_url,
+            "synopsis": ep.get("synopsis", ""),
+            "source": "dramabite_online",
+            "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        }
+        save_manifest(manifest)
+        await sync_to_google_sheet(ep_id, manifest[ep_id])
+    finally:
+        for f in [temp_path, thumb_path]:
+            try:
+                if os.path.exists(f):
+                    os.remove(f)
+            except Exception:
+                pass
+
+
 async def download_thumbnail_image(poster_url: str, thumb_out_path: str):
     """Download official drama poster image to use as Telegram video thumbnail cover."""
     if not poster_url or not str(poster_url).startswith("http"):
@@ -370,12 +714,27 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
         if pct != last_logged_pct and pct % 20 == 0:
             last_logged_pct = pct
             speed_mb = (current / (1024 * 1024)) / max(0.1, time.time() - start_t)
-            print(f"    ⏳ Uploading: {pct}% ({current / (1024*1024):.1f}/{total / (1024*1024):.1f} MB) • {speed_mb:.1f} MB/s", flush=True)
+            print(f"    Uploading: {pct}% ({current/(1024*1024):.1f}/{total/(1024*1024):.1f} MB) {speed_mb:.1f} MB/s", flush=True)
 
     try:
+        # Auto-convert non-MP4 files (ts, mkv, mov) to MP4 before upload
+        upload_path = file_path
+        converted_mp4 = None
+        ext = os.path.splitext(file_path)[1].lower()
+        if ext != ".mp4":
+            print(f"  [Convert] {ext} detected - converting to MP4...", flush=True)
+            converted_mp4 = convert_to_mp4(file_path)
+            if converted_mp4 != file_path:
+                upload_path = converted_mp4
+                part_size_mb = round(os.path.getsize(upload_path) / (1024 * 1024), 2)
+                duration, width, height, ffmpeg_thumb2 = extract_video_metadata(upload_path, thumb_temp)
+                if not thumb_file and ffmpeg_thumb2:
+                    thumb_file = ffmpeg_thumb2
+                print(f"  [Convert] Ready to upload MP4: {part_size_mb:.1f} MB", flush=True)
+
         msg = await app.send_video(
             chat_id=channel_id_int,
-            video=file_path,
+            video=upload_path,
             caption=caption,
             duration=int(duration or 0),
             width=int(width or 0),
@@ -388,7 +747,12 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
         primary_msg_id = msg.id
         primary_file_id = msg.video.file_id if msg.video else None
 
-        print(f"  🎉 Upload ជោគជ័យ! (Telegram Message ID: {primary_msg_id})", flush=True)
+        # Get Telegram CDN URL (MP4 direct link) for the player
+        tg_cdn_url = ""
+        if primary_file_id:
+            tg_cdn_url = await get_telegram_cdn_url(app, primary_file_id)
+
+        print(f"  Upload OK! (Message ID: {primary_msg_id}, MP4 CDN: {'Yes' if tg_cdn_url else 'No'})", flush=True)
 
         manifest[ep_id] = {
             "show_id": ep["show_id"],
@@ -399,7 +763,8 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
             "telegram_message_ids": [primary_msg_id],
             "total_parts": 1,
             "file_size_mb": part_size_mb,
-            "original_url": file_path,
+            "original_url": tg_cdn_url or file_path,
+            "local_file": file_path,
             "poster_url": ep.get("poster_url") or "",
             "synopsis": ep.get("synopsis", ""),
             "source": "dramabite",
@@ -411,12 +776,16 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
         return True
 
     except Exception as err:
-        print(f"  ❌ Error uploading {ep_id}: {err}", flush=True)
+        print(f"  Error uploading {ep_id}: {err}", flush=True)
         return False
     finally:
         if os.path.exists(thumb_temp):
             try: os.remove(thumb_temp)
             except Exception: pass
+        if converted_mp4 and converted_mp4 != file_path and os.path.exists(converted_mp4):
+            try: os.remove(converted_mp4)
+            except Exception: pass
+
 
 def get_safe_session_path(session_name="backup_session"):
     """Safely prepare session in internal app storage to prevent Android Scoped Storage SQLite errors."""
@@ -443,7 +812,8 @@ def get_safe_session_path(session_name="backup_session"):
 async def main():
     print("=" * 65, flush=True)
     print("   🎬 DRAMABITE -> TELEGRAM AUTO BACKUP ENGINE", flush=True)
-    print(f"   📁 Scanning: {DRAMABITE_DOWNLOADS}", flush=True)
+    print(f"   📁 Local Folder: {DRAMABITE_DOWNLOADS}", flush=True)
+    print(f"   🌐 Bypass Engine: {'Ready ✅' if BYPASS_AVAILABLE else 'Not Found ❌'}", flush=True)
     print("=" * 65, flush=True)
 
     if not all([API_ID, API_HASH, BOT_TOKEN, CHANNEL_ID]):
@@ -459,26 +829,8 @@ async def main():
 
     manifest = load_manifest()
     custom_dir = sys.argv[1].strip() if (len(sys.argv) > 1 and not sys.argv[1].startswith("-")) else None
-    
-    all_dramabite_eps = scan_dramabite_downloads(custom_dir)
-    if not all_dramabite_eps:
-        print(f"⚠️ មិនទាន់រកឃើញវីដេអូក្នុងថត DramaBite ឡើយ។", flush=True)
-        print(f"💡 សូមពិនិត្យមើល Folder ផ្ទុកវីដេអូ: {DRAMABITE_DOWNLOADS}", flush=True)
-        return
 
-    # Zero-duplicate check
-    pending = [ep for ep in all_dramabite_eps if ep["id"] not in manifest]
-
-    print(f"📊 ស្ថានភាពទិន្នន័យ DramaBite:", flush=True)
-    print(f"  • រកឃើញក្នុង DramaBite: {len(all_dramabite_eps)} ភាគ", flush=True)
-    print(f"  • បាន Backup រួចរាល់: {len(all_dramabite_eps) - len(pending)} ភាគ", flush=True)
-    print(f"  • នៅសល់ត្រូវ Backup ឡើង Telegram: {len(pending)} ភាគ", flush=True)
-    print("-" * 65, flush=True)
-
-    if not pending:
-        print("🎉 គ្រប់វីដេអូទាំងអស់ពី DramaBite ត្រូវបាន Backup ចូល Telegram រួចរាល់អស់ហើយ! (All up to date)", flush=True)
-        return
-
+    # Connect Telegram Bot first
     print("\n🤖 កំពុងតភ្ជាប់ទៅកាន់ Telegram Bot (Backup Anime)...", flush=True)
     session_file = get_safe_session_path("backup_session")
     app = Client(
@@ -493,18 +845,52 @@ async def main():
     success_count = 0
     start_t = time.time()
 
-    for idx, ep in enumerate(pending, 1):
-        print(f"\n[{idx}/{len(pending)}] 🚀 Uploading: {ep['show_title']} (EP {ep['episode_number']}) - {ep['file_size_mb']} MB", flush=True)
-        ok = await backup_dramabite_episode(app, ep, manifest, channel_id_int)
-        if ok:
-            success_count += 1
-        await asyncio.sleep(1)
+    # ══════════════════════════════════════════════════
+    # Phase 1: Backup Local Downloaded Files (Offline Mode)
+    # ══════════════════════════════════════════════════
+    all_dramabite_eps = scan_dramabite_downloads(custom_dir)
+    pending_local = [ep for ep in all_dramabite_eps if ep["id"] not in manifest]
 
-    # Summary notification
+    if pending_local:
+        print(f"\n📂 Phase 1 - Local Files: រកឃើញ {len(pending_local)} ភាគថ្មីត្រូវ Backup...", flush=True)
+        for idx, ep in enumerate(pending_local, 1):
+            print(f"\n[{idx}/{len(pending_local)}] 🚀 Local Upload: {ep['show_title']} (EP {ep['episode_number']}) - {ep['file_size_mb']} MB", flush=True)
+            ok = await backup_dramabite_episode(app, ep, manifest, channel_id_int)
+            if ok:
+                success_count += 1
+            await asyncio.sleep(1)
+    else:
+        print(f"\n📂 Phase 1 - Local Files: គ្រប់ File ក្នុង Folder ត្រូវបាន Backup រួចហើយ ✅", flush=True)
+
+    # ══════════════════════════════════════════════════
+    # Phase 2: Bypass Online Mode (Crawl DramaBite API + Unlock + Upload)
+    # ══════════════════════════════════════════════════
+    if BYPASS_AVAILABLE:
+        print(f"\n🌐 Phase 2 - Online Bypass Mode: កំពុង Crawl & Bypass Unlock DramaBite API...", flush=True)
+        pending_online = scan_dramabite_online(manifest)
+
+        if pending_online:
+            print(f"\n  🔓 រកឃើញ {len(pending_online)} ភាគដែលនៅខ្វះ Backup (Online Mode).", flush=True)
+            for idx, ep in enumerate(pending_online, 1):
+                elapsed_m = (time.time() - start_t) / 60
+                show_title = ep["show_title"]
+                ep_num = ep["episode_number"]
+                print(f"\n[{idx}/{len(pending_online)}] 🔓 Online Bypass: {show_title} EP{ep_num} ({elapsed_m:.1f}m)...", flush=True)
+                ok = await backup_online_episode(app, ep, manifest, channel_id_int)
+                if ok:
+                    success_count += 1
+                await asyncio.sleep(2)
+        else:
+            print(f"  ✅ DramaBite Online: គ្រប់ភាគទាំងអស់ (Online) ត្រូវបាន Backup រួចរាល់ហើយ!", flush=True)
+    else:
+        print(f"\n⚠️ Phase 2 Skipped: DramaBite Bypass Engine not available on this device.", flush=True)
+        print(f"💡 Bypass Engine ត្រូវការ Folder: {DRAMABITE_BASE_DIR}\\platforms\\", flush=True)
+
+    # Summary
     if success_count > 0:
         try:
             summary = (
-                f"🎬 **DramaBite Local Backup Complete**\n"
+                f"🎬 **DramaBite Backup Complete**\n"
                 f"━━━━━━━━━━━━━━━━━━━\n"
                 f"✅ **ទើប Backup ថ្មី:** +{success_count} ភាគ\n"
                 f"📁 **សរុបទាំងអស់ក្នុង Archive:** {len(manifest)} ភាគ\n"
@@ -512,12 +898,14 @@ async def main():
                 f"🚀 **ស្ថានភាព:** ជោគជ័យ (Completed)"
             )
             await app.send_message(chat_id=channel_id_int, text=summary)
-            print("📢 បានផ្ញើសេចក្តីជូនដំណឹងចូល Telegram Channel រួចរាល់!", flush=True)
+            print("📢 បានផ្ញើ Summary ចូល Telegram Channel រួចរាល់!", flush=True)
         except Exception:
             pass
+    else:
+        print(f"\n🎉 DramaBite ទាំង Local + Online: គ្រប់ភាគបាន Backup រួចអស់ហើយ! (All up to date)", flush=True)
 
     await app.stop()
-    print(f"\n🏁 បញ្ចប់ការ Backup DramaBite! បាន Upload {success_count}/{len(pending)} ភាគជោគជ័យក្នុងរយៈពេល {(time.time() - start_t)/60:.1f} នាទី។", flush=True)
+    print(f"\n🏁 ចប់! (Total: {success_count} ភាគ, Time: {(time.time() - start_t)/60:.1f} min)", flush=True)
 
 if __name__ == "__main__":
     asyncio.run(main())

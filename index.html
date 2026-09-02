@@ -2573,6 +2573,9 @@
     <button class="ctrl-pill-btn ctrl-pill-speed" id="ctrl-speed" title="ល្បឿនចាក់វីដេអូ">
       <span id="ctrl-speed-text">⚡ 1.0x</span>
     </button>
+    <button class="ctrl-pill-btn ctrl-pill-vol active" id="ctrl-volume" title="បិទ/បើកសំឡេង">
+      <span id="ctrl-vol-text">🔊 សំឡេង</span>
+    </button>
   </div>
 
   <div class="modal-content-body">
@@ -3554,6 +3557,14 @@ async function playEpisode(idx) {
     const url = ep.video_url;
     const isHLS = url.includes(".m3u8") || url.includes("m3u8");
 
+    // Force player to be unmuted with full volume
+    playerEl.muted = false;
+    playerEl.volume = 1.0;
+    const volTxt = document.getElementById("ctrl-vol-text");
+    const volBtn = document.getElementById("ctrl-volume");
+    if (volTxt) volTxt.textContent = "🔊 សំឡេង";
+    if (volBtn) volBtn.classList.add("active");
+
     // Destroy any previous HLS instance
     if (window._hlsInstance) {
       try { window._hlsInstance.destroy(); } catch(e) {}
@@ -3565,6 +3576,7 @@ async function playEpisode(idx) {
       const hls = new Hls({
         enableWorker: false,
         lowLatencyMode: false,
+        defaultAudioCodec: 'mp4a.40.2',
         xhrSetup: (xhr) => {
           xhr.setRequestHeader('Origin', 'https://www.dramabite.media');
         }
@@ -3573,13 +3585,34 @@ async function playEpisode(idx) {
       hls.attachMedia(playerEl);
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         playerEl.playbackRate = speeds[playbackSpeedIdx];
-        playerEl.play().catch(e => console.warn("HLS play:", e));
+        playerEl.muted = false;
+        playerEl.volume = 1.0;
+        const p = playerEl.play();
+        if (p !== undefined && p.catch) {
+          p.catch(() => {
+            // If browser blocks unmuted autoplay, mute and play, then unmute on first user tap
+            playerEl.muted = true;
+            if (volTxt) volTxt.textContent = "🔇 ស្ងាត់";
+            if (volBtn) volBtn.classList.remove("active");
+            playerEl.play().catch(e => console.warn("Muted autoplay:", e));
+            const unmuteOnTap = () => {
+              playerEl.muted = false;
+              playerEl.volume = 1.0;
+              if (volTxt) volTxt.textContent = "🔊 សំឡេង";
+              if (volBtn) volBtn.classList.add("active");
+            };
+            document.addEventListener('click', unmuteOnTap, { once: true });
+            document.addEventListener('touchstart', unmuteOnTap, { once: true });
+          });
+        }
       });
       hls.on(Hls.Events.ERROR, (event, data) => {
         if (data.fatal) {
           console.error("HLS fatal error:", data.type, data.details);
           // Fallback to native src
           playerEl.src = url;
+          playerEl.muted = false;
+          playerEl.volume = 1.0;
           playerEl.play().catch(e => console.warn("HLS fallback:", e));
         }
       });
@@ -3587,13 +3620,29 @@ async function playEpisode(idx) {
     } else if (isHLS && playerEl.canPlayType('application/vnd.apple.mpegurl')) {
       // Safari / iOS native HLS
       playerEl.src = url;
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
       playerEl.playbackRate = speeds[playbackSpeedIdx];
-      playerEl.play().catch(e => console.warn("Native HLS:", e));
+      const p = playerEl.play();
+      if (p !== undefined && p.catch) {
+        p.catch(() => {
+          playerEl.muted = true;
+          playerEl.play().catch(e => console.warn("Muted native HLS:", e));
+        });
+      }
     } else {
       // Direct MP4 or other format
       playerEl.src = url;
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
       playerEl.playbackRate = speeds[playbackSpeedIdx];
-      playerEl.play().catch(e => console.warn("Direct play:", e));
+      const p = playerEl.play();
+      if (p !== undefined && p.catch) {
+        p.catch(() => {
+          playerEl.muted = true;
+          playerEl.play().catch(e => console.warn("Muted direct:", e));
+        });
+      }
     }
   }
 
@@ -4073,6 +4122,19 @@ document.getElementById("ctrl-speed").onclick = () => {
   const txt = document.getElementById("ctrl-speed-text");
   if (txt) txt.textContent = `⚡ ${spd}x`;
 };
+
+const volBtn = document.getElementById("ctrl-volume");
+if (volBtn) {
+  volBtn.onclick = () => {
+    if (playerEl) {
+      playerEl.muted = !playerEl.muted;
+      if (!playerEl.muted && playerEl.volume === 0) playerEl.volume = 1.0;
+      volBtn.classList.toggle("active", !playerEl.muted);
+      const txt = document.getElementById("ctrl-vol-text");
+      if (txt) txt.textContent = playerEl.muted ? "🔇 ស្ងាត់" : "🔊 សំឡេង";
+    }
+  };
+}
 
 if (playerEl) {
   playerEl.addEventListener("ended", () => {
