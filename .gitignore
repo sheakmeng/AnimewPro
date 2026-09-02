@@ -15,3 +15,9 @@ __pycache__/
 *.pyc
 
 .vercel
+.env
+.env.*
+.env.local
+test_backup_single.py
+*.session
+*.session-journal

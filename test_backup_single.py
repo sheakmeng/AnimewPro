@@ -15,10 +15,30 @@ pyrogram.utils.MAX_CHANNEL_ID = -1000000000000
 
 from pyrogram import Client
 
-API_ID = 20360418
-API_HASH = "3990d0d3cc6c5bd81c93a13cd5e3a311"
-BOT_TOKEN = "8890281595:AAGEvtsLcj_bJI1AoNQE3-BUh9-AdqzVN5g"
-CHANNEL_ID = -1003943277744
+# Auto-load .env file if present locally
+def _load_env_file():
+    env_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.isfile(env_file):
+        try:
+            with open(env_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    k, v = line.split("=", 1)
+                    k = k.strip()
+                    v = v.strip().strip('"').strip("'")
+                    if k not in os.environ:
+                        os.environ[k] = v
+        except Exception:
+            pass
+
+_load_env_file()
+
+API_ID = int(os.getenv("TG_API_ID", "0"))
+API_HASH = os.getenv("TG_API_HASH", "")
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "")
+CHANNEL_ID = int(os.getenv("TG_CHANNEL_ID", "0"))
 
 SUPABASE_URL = "https://dowjxhkijtlsdvhyuddt.supabase.co"
 ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvd2p4aGtpanRsc2R2aHl1ZGR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMjE3MTIsImV4cCI6MjEwMTc5NzcxMn0.ulxBnNG6fc6muqPrAxzEGw0VPyZpR5ug8bY713PyWGg"

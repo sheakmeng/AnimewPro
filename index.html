@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>DramaFlixHD - Telegram Cloud & Dramaora Stream</title>
+  <title>DramaFlixHD - VIP Short Drama & Movies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -2081,7 +2081,7 @@ function buildShowsFromManifest() {
       showMap[showId] = {
         id: showId,
         title: item.show_title || "VIP Drama",
-        synopsis: item.synopsis || `រឿង "${item.show_title}" បានរក្សាទុកក្នុង Telegram Cloud គុណភាព 1080p FHD រួចរាល់។`,
+        synopsis: item.synopsis || `រឿង "${item.show_title}" កម្រិតរូបភាពច្បាស់ 1080p Ultra HD ជាមួយល្បឿនលឿន និងចាក់ជូនដោយរលូនឥតទាក់។`,
         poster_url: resolvedPoster,
         banner_url: resolvedPoster,
         release_year: 2024,
@@ -2622,10 +2622,7 @@ document.querySelectorAll(".vip-plan-card").forEach(card => {
 document.getElementById("vip-modal-backdrop").onclick = closeVipModal;
 document.getElementById("btn-vip-status").onclick = openVipModal;
 
-// High-Reliability Dual-Engine KHQR Payment Handling
-const _SEC_P1 = "05437beba0ad9d527bc874c5b83ff07a";
-const _SEC_P2 = "b7a299d70a363de940c2db98e05ef5ee";
-
+// Secure Server-side KHQR Payment Handling via Google Apps Script Proxy
 async function generateKhqrPayment() {
   closeVipModal();
   const khqrModal = document.getElementById("khqr-modal");
@@ -2638,7 +2635,7 @@ async function generateKhqrPayment() {
   try {
     let paymentData = null;
 
-    // Engine 1: Try via Google Apps Script Proxy
+    // Secure Proxy via Google Apps Script (Keeps Payment Token completely hidden from client)
     try {
       const apiUrl = `${GOOGLE_APPS_SCRIPT_URL}?action=generate_khqr&amount=${selectedVipAmount}&_t=${Date.now()}`;
       const res = await fetch(apiUrl);
@@ -2648,16 +2645,6 @@ async function generateKhqrPayment() {
       }
     } catch (e) {
       console.warn("GAS Proxy error:", e);
-    }
-
-    // Engine 2: Instant Direct Auto-Fallback if Google Apps Script requires authorization
-    if (!paymentData) {
-      const directUrl = `https://mengsmm.store/api/v1/?type=generate_qr&amount=${selectedVipAmount}&currency=USD&api_token=${_SEC_P1 + _SEC_P2}`;
-      const res = await fetch(directUrl);
-      const json = await res.json();
-      if (json && json.status === "success" && json.data) {
-        paymentData = json.data;
-      }
     }
 
     if (paymentData) {
@@ -2725,7 +2712,7 @@ function startPaymentPolling() {
     try {
       let isPaid = false;
 
-      // 1. Check via GAS Proxy
+      // Check via Secure GAS Proxy
       try {
         const checkUrl = `${GOOGLE_APPS_SCRIPT_URL}?action=check_khqr&md5=${currentPaymentMd5}&_t=${Date.now()}`;
         const res = await fetch(checkUrl);
@@ -2734,18 +2721,6 @@ function startPaymentPolling() {
           isPaid = true;
         }
       } catch (e) {}
-
-      // 2. Direct Fallback Check
-      if (!isPaid) {
-        try {
-          const directCheckUrl = `https://mengsmm.store/api/v1/?type=check_md5&md5=${currentPaymentMd5}&api_token=${_SEC_P1 + _SEC_P2}`;
-          const res = await fetch(directCheckUrl);
-          const data = await res.json();
-          if (data && (data.status === "SUCCESS" || data.status === "PAID" || data.status === "COMPLETED" || (data.data && (data.data.status === "SUCCESS" || data.data.status === "PAID")))) {
-            isPaid = true;
-          }
-        } catch (e) {}
-      }
 
       if (isPaid) {
         clearInterval(paymentPollInterval);
@@ -2817,7 +2792,7 @@ document.getElementById("btn-manual-check-payment").onclick = async () => {
   try {
     let isPaid = false;
     
-    // 1. Try GAS Proxy
+    // Check via Secure GAS Proxy
     try {
       const checkUrl = `${GOOGLE_APPS_SCRIPT_URL}?action=check_khqr&md5=${currentPaymentMd5}&_t=${Date.now()}`;
       const res = await fetch(checkUrl);
@@ -2826,18 +2801,6 @@ document.getElementById("btn-manual-check-payment").onclick = async () => {
         isPaid = true;
       }
     } catch (e) {}
-
-    // 2. Direct Fallback
-    if (!isPaid) {
-      try {
-        const directCheckUrl = `https://mengsmm.store/api/v1/?type=check_md5&md5=${currentPaymentMd5}&api_token=${_SEC_P1 + _SEC_P2}`;
-        const res = await fetch(directCheckUrl);
-        const data = await res.json();
-        if (data && (data.status === "SUCCESS" || data.status === "PAID" || data.status === "COMPLETED" || (data.data && (data.data.status === "SUCCESS" || data.data.status === "PAID")))) {
-          isPaid = true;
-        }
-      } catch (e) {}
-    }
 
     if (isPaid) {
       handlePaymentSuccess();

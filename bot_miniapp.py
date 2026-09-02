@@ -1,9 +1,9 @@
 """
 Telegram Mini App Bot for Animew Pro & Dramaora Stream
-Bot Token: 8664822430:AAEPSmxJgq4CEAFp94869dhLGVEAcyScde8
 Web App URL: https://sheakmeng.github.io/AnimewPro/
 """
 
+import os
 import sys
 import time
 import requests
@@ -11,7 +11,27 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-BOT_TOKEN = "8664822430:AAEPSmxJgq4CEAFp94869dhLGVEAcyScde8"
+# Auto-load .env file if present locally
+def _load_env_file():
+    env_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.isfile(env_file):
+        try:
+            with open(env_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    k, v = line.split("=", 1)
+                    k = k.strip()
+                    v = v.strip().strip('"').strip("'")
+                    if k not in os.environ:
+                        os.environ[k] = v
+        except Exception:
+            pass
+
+_load_env_file()
+
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip().strip('"').strip("'")
 MINI_APP_URL = "https://animewpro.vercel.app"
 API_BASE = f"https://api.telegram.org/bot{BOT_TOKEN}"
 

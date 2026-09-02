@@ -46,15 +46,31 @@ pyrogram.utils.MAX_CHANNEL_ID = -1000000000000
 from pyrogram import Client
 from pyrogram.types import Message
 
-# ==============================================================================
-# CONFIGURATION & SECRETS
-# ==============================================================================
+# Auto-load .env file if present locally
+def _load_env_file():
+    env_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.isfile(env_file):
+        try:
+            with open(env_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    k, v = line.split("=", 1)
+                    k = k.strip()
+                    v = v.strip().strip('"').strip("'")
+                    if k not in os.environ:
+                        os.environ[k] = v
+        except Exception:
+            pass
 
-# Telegram Secrets (From Environment Variables or Default)
-API_ID = (os.getenv("TG_API_ID") or "20360418").strip().strip('"').strip("'")
-API_HASH = (os.getenv("TG_API_HASH") or "3990d0d3cc6c5bd81c93a13cd5e3a311").strip().strip('"').strip("'")
-BOT_TOKEN = (os.getenv("TG_BOT_TOKEN") or "8890281595:AAGEvtsLcj_bJI1AoNQE3-BUh9-AdqzVN5g").strip().strip('"').strip("'")
-CHANNEL_ID = (os.getenv("TG_CHANNEL_ID") or "-1003943277744").strip().strip('"').strip("'")
+_load_env_file()
+
+# Telegram Secrets (Safely loaded from Environment Variables or .env)
+API_ID = os.getenv("TG_API_ID", "").strip().strip('"').strip("'")
+API_HASH = os.getenv("TG_API_HASH", "").strip().strip('"').strip("'")
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip().strip('"').strip("'")
+CHANNEL_ID = os.getenv("TG_CHANNEL_ID", "").strip().strip('"').strip("'")
 
 # Performance & Unlimited Run Configuration (No Time Limit / មិនកំណត់នាទី)
 MAX_RUN_SECONDS = int(os.getenv("MAX_RUN_SECONDS", "0"))  # 0 = Unlimited (រត់រហូតដល់ចប់គ្រប់ភាគទាំងអស់)
