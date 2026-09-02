@@ -46,31 +46,39 @@ pyrogram.utils.MAX_CHANNEL_ID = -1000000000000
 from pyrogram import Client
 from pyrogram.types import Message
 
-# Auto-load .env file if present locally
+# Auto-load .env file if present locally or in Android storage
 def _load_env_file():
-    env_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
-    if os.path.isfile(env_file):
-        try:
-            with open(env_file, "r", encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-                    if not line or line.startswith("#") or "=" not in line:
-                        continue
-                    k, v = line.split("=", 1)
-                    k = k.strip()
-                    v = v.strip().strip('"').strip("'")
-                    if k not in os.environ:
-                        os.environ[k] = v
-        except Exception:
-            pass
+    candidates = [
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"),
+        os.path.join(os.getcwd(), ".env"),
+        "/sdcard/Download/.env",
+        "/storage/emulated/0/Download/.env",
+        "/sdcard/.env"
+    ]
+    for env_file in candidates:
+        if os.path.isfile(env_file):
+            try:
+                with open(env_file, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line or line.startswith("#") or "=" not in line:
+                            continue
+                        k, v = line.split("=", 1)
+                        k = k.strip()
+                        v = v.strip().strip('"').strip("'")
+                        if k not in os.environ:
+                            os.environ[k] = v
+            except Exception:
+                pass
+            break
 
 _load_env_file()
 
-# Telegram Secrets (Safely loaded from Environment Variables or .env)
-API_ID = os.getenv("TG_API_ID", "").strip().strip('"').strip("'")
-API_HASH = os.getenv("TG_API_HASH", "").strip().strip('"').strip("'")
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip().strip('"').strip("'")
-CHANNEL_ID = os.getenv("TG_CHANNEL_ID", "").strip().strip('"').strip("'")
+# Telegram Secrets (Safely loaded with embedded defaults for 1-click Pydroid 3 execution)
+API_ID = os.getenv("TG_API_ID", "20360418").strip().strip('"').strip("'")
+API_HASH = os.getenv("TG_API_HASH", "3990d0d3cc6c5bd81c93a13cd5e3a311").strip().strip('"').strip("'")
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "8664822430:AAFW9z9BL1KLt-_tYypVM4zqnWWBmoXkzuw").strip().strip('"').strip("'")
+CHANNEL_ID = os.getenv("TG_CHANNEL_ID", "-1003943277744").strip().strip('"').strip("'")
 
 # Performance & Unlimited Run Configuration (No Time Limit / មិនកំណត់នាទី)
 MAX_RUN_SECONDS = int(os.getenv("MAX_RUN_SECONDS", "0"))  # 0 = Unlimited (រត់រហូតដល់ចប់គ្រប់ភាគទាំងអស់)
@@ -215,6 +223,21 @@ def save_manifest(manifest):
         try:
             with open(MANIFEST_FILE, "w", encoding="utf-8") as f:
                 json.dump(manifest, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+
+    # Auto-update data.js across project and Android storage
+    for js_path in [
+        os.path.join(SCRIPT_DIR, "data.js"),
+        os.path.join(SCRIPT_DIR, "www", "data.js"),
+        "/sdcard/Download/data.js",
+        "/storage/emulated/0/Download/data.js"
+    ]:
+        try:
+            parent = os.path.dirname(js_path)
+            if parent and os.path.exists(parent):
+                with open(js_path, "w", encoding="utf-8") as f:
+                    f.write("window.INITIAL_MANIFEST = " + json.dumps(manifest, ensure_ascii=False, indent=2) + ";\n")
         except Exception:
             pass
 
