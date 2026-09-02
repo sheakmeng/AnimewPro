@@ -418,6 +418,28 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
             try: os.remove(thumb_temp)
             except Exception: pass
 
+def get_safe_session_path(session_name="backup_session"):
+    """Safely prepare session in internal app storage to prevent Android Scoped Storage SQLite errors."""
+    import tempfile
+    internal_dir = tempfile.gettempdir()
+    safe_target = os.path.join(internal_dir, session_name)
+    
+    candidates = [
+        f"{session_name}.session",
+        os.path.join(SCRIPT_DIR, f"{session_name}.session"),
+        f"/sdcard/Download/{session_name}.session",
+        f"/storage/emulated/0/Download/{session_name}.session",
+        r"c:\Users\sheakmeng\Desktop\New folder\backup_session.session"
+    ]
+    for cand in candidates:
+        if os.path.isfile(cand):
+            try:
+                shutil.copy2(cand, f"{safe_target}.session")
+                break
+            except Exception:
+                pass
+    return safe_target
+
 async def main():
     print("=" * 65, flush=True)
     print("   🎬 DRAMABITE -> TELEGRAM AUTO BACKUP ENGINE", flush=True)
@@ -457,11 +479,12 @@ async def main():
         return
 
     print("\n🤖 កំពុងតភ្ជាប់ទៅកាន់ Telegram Bot (Backup Anime)...", flush=True)
-    session_file = os.path.join(r"c:\Users\sheakmeng\Desktop\New folder", "backup_session")
+    session_file = get_safe_session_path("backup_session")
     app = Client(
         session_file,
         api_id=api_id_int,
-        api_hash=API_HASH
+        api_hash=API_HASH,
+        bot_token=BOT_TOKEN
     )
     await app.start()
     print("✅ Telegram Bot connected successfully to channel!", flush=True)

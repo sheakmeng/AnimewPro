@@ -953,18 +953,24 @@ async def main():
 
     # Connect to Telegram Bot at the start
     print("\n🤖 Connecting to Telegram Bot...", flush=True)
-    session_file = os.path.join(SCRIPT_DIR, "backup_session")
+    internal_dir = tempfile.gettempdir()
+    safe_session = os.path.join(internal_dir, "backup_session")
     for cand in [
-        session_file,
-        "/sdcard/Download/backup_session",
-        "/storage/emulated/0/Download/backup_session"
+        "backup_session.session",
+        os.path.join(SCRIPT_DIR, "backup_session.session"),
+        "/sdcard/Download/backup_session.session",
+        "/storage/emulated/0/Download/backup_session.session",
+        r"c:\Users\sheakmeng\Desktop\New folder\backup_session.session"
     ]:
-        if os.path.isfile(cand + ".session"):
-            session_file = cand
-            break
+        if os.path.isfile(cand):
+            try:
+                shutil.copy2(cand, f"{safe_session}.session")
+                break
+            except Exception:
+                pass
 
     app = Client(
-        session_file,
+        safe_session,
         api_id=api_id_int,
         api_hash=API_HASH,
         bot_token=BOT_TOKEN
