@@ -1158,6 +1158,377 @@
       text-align: right;
     }
 
+    /* ================= ADMIN VIP & USER DASHBOARD ================= */
+    .admin-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
+      padding: 12px;
+    }
+    .admin-modal.active {
+      display: flex;
+    }
+    .admin-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .admin-modal-container {
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+      max-height: 90vh;
+      background: #090d16;
+      border: 1px solid rgba(234, 179, 8, 0.35);
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(234, 179, 8, 0.15);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      overflow-y: auto;
+      animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .admin-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 12px;
+    }
+    .admin-title-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .admin-badge-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(245, 158, 11, 0.1));
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+    .admin-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #f8fafc;
+    }
+    .admin-sub {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .admin-close-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .admin-close-btn:active {
+      transform: scale(0.9);
+      color: #fff;
+    }
+
+    /* 4 Stats Cards */
+    .admin-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .adm-stat-card {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .adm-stat-card.stat-vip {
+      border-color: rgba(234, 179, 8, 0.35);
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.08), rgba(17, 24, 39, 0.95));
+    }
+    .adm-stat-card.stat-free {
+      border-color: rgba(56, 189, 248, 0.25);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.06), rgba(17, 24, 39, 0.95));
+    }
+    .adm-stat-card.stat-rev {
+      border-color: rgba(34, 197, 94, 0.3);
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(17, 24, 39, 0.95));
+    }
+    .adm-stat-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #94a3b8;
+    }
+    .adm-stat-val {
+      font-size: 19px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .adm-stat-card.stat-vip .adm-stat-val { color: #fde047; }
+    .adm-stat-card.stat-free .adm-stat-val { color: #38bdf8; }
+    .adm-stat-card.stat-rev .adm-stat-val { color: #4ade80; }
+    .adm-stat-sub {
+      font-size: 10px;
+      color: #64748b;
+    }
+
+    /* Quick Grant Box */
+    .adm-quick-grant-box {
+      background: rgba(17, 24, 39, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      padding: 12px 14px;
+    }
+    .adm-section-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: #fde047;
+      margin-bottom: 8px;
+    }
+    .adm-grant-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .adm-input {
+      flex: 1;
+      min-width: 140px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: #fff;
+      outline: none;
+      font-family: inherit;
+    }
+    .adm-input:focus {
+      border-color: #38bdf8;
+    }
+    .adm-select {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 11px;
+      color: #cbd5e1;
+      outline: none;
+      font-family: inherit;
+    }
+    .adm-btn-grant {
+      background: linear-gradient(135deg, #eab308, #ca8a04);
+      border: none;
+      border-radius: 10px;
+      color: #000;
+      font-weight: 800;
+      font-size: 11.5px;
+      padding: 8px 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .adm-btn-grant:active { transform: scale(0.96); }
+
+    /* Search & Filter */
+    .adm-search-filter-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .adm-search-wrap {
+      display: flex;
+      align-items: center;
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 8px 12px;
+      gap: 8px;
+    }
+    .adm-search-wrap svg { color: #64748b; }
+    .adm-search-wrap input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 12px;
+      font-family: inherit;
+    }
+    .adm-search-wrap button {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .adm-filter-chips {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+    .adm-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+      padding: 5px 10px;
+      border-radius: 14px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .adm-chip.active {
+      background: rgba(56, 189, 248, 0.2);
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.45);
+    }
+
+    /* Users List */
+    .adm-users-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 320px;
+      overflow-y: auto;
+      padding-right: 2px;
+    }
+    .adm-user-card {
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .adm-user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      min-width: 0;
+    }
+    .adm-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      color: #38bdf8;
+      flex-shrink: 0;
+    }
+    .adm-user-text {
+      flex: 1;
+      min-width: 0;
+    }
+    .adm-user-name {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .adm-user-meta {
+      font-size: 10.5px;
+      color: #94a3b8;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .adm-badge-vip {
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 5px;
+      background: rgba(234, 179, 8, 0.2);
+      color: #fde047;
+      border: 1px solid rgba(234, 179, 8, 0.35);
+    }
+    .adm-badge-free {
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 5px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .adm-badge-blocked {
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 5px;
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+    }
+    .adm-user-actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    .adm-action-btn {
+      padding: 5px 8px;
+      border-radius: 8px;
+      font-size: 10.5px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      transition: all 0.2s;
+    }
+    .adm-btn-allow {
+      background: rgba(34, 197, 94, 0.18);
+      color: #4ade80;
+      border-color: rgba(34, 197, 94, 0.35);
+    }
+    .adm-btn-revoke {
+      background: rgba(234, 179, 8, 0.15);
+      color: #fde047;
+      border-color: rgba(234, 179, 8, 0.35);
+    }
+    .adm-btn-block {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.35);
+    }
+    .adm-action-btn:active { transform: scale(0.93); }
+
     .modal-content-body {
       padding: 14px;
       flex: 1;
@@ -1920,6 +2291,12 @@
         <span>⚙️ Admin Panel (គ្រប់គ្រងរឿង)</span>
         <span>›</span>
       </div>
+      <div class="profile-menu-item" id="btn-account-user-dashboard" style="background:linear-gradient(135deg, rgba(234,179,8,0.18), rgba(99,102,241,0.18)); border:1px solid rgba(234,179,8,0.4);">
+        <span style="color:#fde047; font-weight:800; display:flex; align-items:center; gap:8px;">
+          <span>👑</span> Dashboard គ្រប់គ្រងសមាជិក & VIP
+        </span>
+        <span style="color:#fde047; font-weight:800;">បើក ›</span>
+      </div>
     </div>
   </div>
 </div>
@@ -2044,6 +2421,88 @@
     <div class="dl-actions">
       <button class="btn btn-secondary" id="dl-btn-stop" style="width:100%; border-radius:12px; padding:10px; font-weight:700;">បោះបង់ (Cancel)</button>
     </div>
+  </div>
+</div>
+
+<!-- ================= ADMIN VIP & USER DASHBOARD MODAL ================= -->
+<div id="admin-dashboard-modal" class="admin-modal">
+  <div class="admin-modal-backdrop" id="admin-modal-backdrop"></div>
+  <div class="admin-modal-container">
+    
+    <!-- Admin Header -->
+    <div class="admin-header">
+      <div class="admin-title-box">
+        <div class="admin-badge-icon">👑</div>
+        <div>
+          <h2 class="admin-title">ផ្ទាំងគ្រប់គ្រងសមាជិក (Admin)</h2>
+          <div class="admin-sub">DramaFlixHD VIP & User Directory</div>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button id="adm-btn-refresh" class="admin-close-btn" title="Refresh Data" style="font-size:16px;">🔄</button>
+        <button class="admin-close-btn" id="admin-close-btn" title="បិទ">✕</button>
+      </div>
+    </div>
+
+    <!-- 4 Stats Summary Cards -->
+    <div class="admin-stats-grid">
+      <div class="adm-stat-card stat-total">
+        <div class="adm-stat-label">👥 សរុបទាំងអស់</div>
+        <div class="adm-stat-val" id="adm-stat-total">0</div>
+        <div class="adm-stat-sub">សមាជិកក្នុងប្រព័ន្ធ</div>
+      </div>
+      <div class="adm-stat-card stat-vip">
+        <div class="adm-stat-label">👑 សមាជិក VIP</div>
+        <div class="adm-stat-val" id="adm-stat-vip">0</div>
+        <div class="adm-stat-sub">ទិញ & កំពុងដំណើរការ</div>
+      </div>
+      <div class="adm-stat-card stat-free">
+        <div class="adm-stat-label">🔓 សមាជិកធម្មតា</div>
+        <div class="adm-stat-val" id="adm-stat-free">0</div>
+        <div class="adm-stat-sub">Free Members</div>
+      </div>
+      <div class="adm-stat-card stat-rev">
+        <div class="adm-stat-label">💰 ចំណូលសរុប</div>
+        <div class="adm-stat-val" id="adm-stat-revenue">$0.00</div>
+        <div class="adm-stat-sub">ពីការទិញ VIP</div>
+      </div>
+    </div>
+
+    <!-- Quick Manual Grant VIP Box -->
+    <div class="adm-quick-grant-box">
+      <div class="adm-section-title">⚡ បើក / ដកសិទ្ធិ VIP តាម Telegram ID ឬ Username</div>
+      <div class="adm-grant-form">
+        <input type="text" id="adm-input-target-id" class="adm-input" placeholder="បញ្ចូល Telegram ID ឬ @username..." />
+        <select id="adm-select-duration" class="adm-select">
+          <option value="30">VIP 1 ខែ (30 ថ្ងៃ)</option>
+          <option value="90">VIP 3 ខែ (90 ថ្ងៃ)</option>
+          <option value="365">VIP 1 ឆ្នាំ (365 ថ្ងៃ)</option>
+          <option value="99999">VIP មួយជីវិត (Lifetime)</option>
+        </select>
+        <button id="adm-btn-grant-vip" class="adm-btn-grant">👑 បើក VIP</button>
+      </div>
+    </div>
+
+    <!-- Search and Filter Bar -->
+    <div class="adm-search-filter-row">
+      <div class="adm-search-wrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="adm-search-input" placeholder="ស្វែងរកតាមឈ្មោះ, Username ឬ User ID..." />
+        <button id="adm-search-clear" style="display:none;">✕</button>
+      </div>
+      <div class="adm-filter-chips">
+        <button class="adm-chip active" data-filter="all">ទាំងអស់ (<span id="adm-count-all">0</span>)</button>
+        <button class="adm-chip" data-filter="vip">👑 VIP (<span id="adm-count-vip">0</span>)</button>
+        <button class="adm-chip" data-filter="free">🔓 Free (<span id="adm-count-free">0</span>)</button>
+        <button class="adm-chip" data-filter="blocked">🚫 Blocked (<span id="adm-count-blocked">0</span>)</button>
+      </div>
+    </div>
+
+    <!-- User Cards List -->
+    <div class="adm-users-list" id="adm-users-list">
+      <div style="text-align:center; padding:30px; color:#64748b; font-size:13px;">កំពុងទាញទិន្នន័យសមាជិក...</div>
+    </div>
+
   </div>
 </div>
 
@@ -2273,6 +2732,8 @@ function initTelegramUser() {
           document.getElementById("user-avatar-img").src = user.photo_url;
           document.getElementById("account-avatar-img").src = user.photo_url;
         }
+        syncCurrentUserToBackend();
+        updateAdminSectionVisibility();
       }
 
       if (tg.BackButton) {
@@ -3583,6 +4044,331 @@ document.getElementById("btn-account-admin").onclick = () => {
     alert("PIN មិនត្រឹមត្រូវទេ!");
   }
 };
+
+// ==============================================================================
+// 👑 ADMIN VIP & USER DASHBOARD CONTROLLER (Admin ID / Key Protected)
+// ==============================================================================
+
+let cachedAdminUsers = [];
+let currentAdminFilter = "all";
+
+function getAdminCredentials() {
+  const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  const adminId = user?.id ? String(user.id) : "8357847250";
+  return { adminId, adminKey: "admin_secret_vip_2026" };
+}
+
+async function openAdminDashboard() {
+  if (!checkIsAdmin()) {
+    showToast("⛔ សិទ្ធិ Admin ប៉ុណ្ណោះដែលអាចបើក Dashboard នេះបាន!");
+    return;
+  }
+
+  const modal = document.getElementById("admin-dashboard-modal");
+  if (modal) modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+
+  await fetchAndRenderAdminUsers();
+}
+
+function closeAdminDashboard() {
+  const modal = document.getElementById("admin-dashboard-modal");
+  if (modal) modal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+async function fetchAndRenderAdminUsers() {
+  const listEl = document.getElementById("adm-users-list");
+  if (listEl) listEl.innerHTML = `<div style="text-align:center; padding:30px; color:#64748b; font-size:13px;">កំពុងទាញទិន្នន័យសមាជិក...</div>`;
+
+  try {
+    const { adminId, adminKey } = getAdminCredentials();
+    const url = `${GOOGLE_APPS_SCRIPT_URL}?action=admin_get_users&admin_id=${encodeURIComponent(adminId)}&admin_key=${encodeURIComponent(adminKey)}`;
+    const res = await fetch(url);
+    const json = await res.json();
+
+    if (json.status === "success") {
+      cachedAdminUsers = json.users || [];
+      const stats = json.stats || {};
+
+      // Update Stat Cards
+      document.getElementById("adm-stat-total").textContent = stats.total_users || cachedAdminUsers.length;
+      document.getElementById("adm-stat-vip").textContent = stats.total_vip || 0;
+      document.getElementById("adm-stat-free").textContent = stats.total_free || 0;
+      document.getElementById("adm-stat-revenue").textContent = `$${stats.total_revenue || "0.00"}`;
+
+      // Update Filter counts
+      document.getElementById("adm-count-all").textContent = cachedAdminUsers.length;
+      document.getElementById("adm-count-vip").textContent = stats.total_vip || 0;
+      document.getElementById("adm-count-free").textContent = stats.total_free || 0;
+      document.getElementById("adm-count-blocked").textContent = stats.total_blocked || 0;
+
+      filterAndRenderUsers();
+    } else {
+      if (listEl) listEl.innerHTML = `<div style="text-align:center; padding:30px; color:#ef4444; font-size:13px;">⚠️ ${json.message || "បរាជ័យក្នុងការទាញទិន្នន័យ"}</div>`;
+    }
+  } catch (err) {
+    console.warn("fetchAndRenderAdminUsers error:", err);
+    if (listEl) listEl.innerHTML = `<div style="text-align:center; padding:30px; color:#ef4444; font-size:13px;">⚠️ មានបញ្ហាក្នុងការតភ្ជាប់ Server</div>`;
+  }
+}
+
+function filterAndRenderUsers() {
+  const listEl = document.getElementById("adm-users-list");
+  if (!listEl) return;
+
+  const searchKeyword = (document.getElementById("adm-search-input")?.value || "").toLowerCase().trim();
+
+  let filtered = cachedAdminUsers.filter(u => {
+    // Status Filter
+    if (currentAdminFilter === "vip" && u.status !== "ACTIVE") return false;
+    if (currentAdminFilter === "free" && u.status !== "FREE") return false;
+    if (currentAdminFilter === "blocked" && u.status !== "BLOCKED") return false;
+
+    // Search Filter
+    if (searchKeyword) {
+      const matchName = (u.first_name || "").toLowerCase().includes(searchKeyword);
+      const matchUsername = (u.username || "").toLowerCase().includes(searchKeyword);
+      const matchId = String(u.user_id || "").includes(searchKeyword);
+      return matchName || matchUsername || matchId;
+    }
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = `<div style="text-align:center; padding:30px; color:#64748b; font-size:13px;">🔍 មិនមានសមាជិកដែលត្រូវនឹងការស្វែងរកឡើយ</div>`;
+    return;
+  }
+
+  listEl.innerHTML = filtered.map(u => {
+    const isVip = u.status === "ACTIVE";
+    const isBlocked = u.status === "BLOCKED";
+    const statusBadge = isBlocked 
+      ? `<span class="adm-badge-blocked">🚫 BLOCKED</span>`
+      : (isVip ? `<span class="adm-badge-vip">👑 VIP ACTIVE</span>` : `<span class="adm-badge-free">🔓 FREE</span>`);
+
+    const displayName = u.first_name || (u.username ? `@${u.username}` : `User ${u.user_id}`);
+    const subMeta = `@${u.username || 'none'} • ID: ${u.user_id} ${u.expires_at ? '• ផុតកំណត់: ' + (u.expires_at.slice(0,10)) : ''}`;
+
+    return `
+      <div class="adm-user-card" id="user-card-${u.user_id}">
+        <div class="adm-user-info">
+          <div class="adm-avatar">${(u.first_name || u.username || 'U').charAt(0).toUpperCase()}</div>
+          <div class="adm-user-text">
+            <div class="adm-user-name">
+              <span>${displayName}</span>
+              ${statusBadge}
+            </div>
+            <div class="adm-user-meta">${subMeta}</div>
+          </div>
+        </div>
+        <div class="adm-user-actions">
+          ${!isVip ? `
+            <button class="adm-action-btn adm-btn-allow" onclick="adminSetUserVip('${u.user_id}', '${u.username || ''}', '${u.first_name || ''}', 30)" title="បើក VIP 30 ថ្ងៃ">
+              👑 Allow VIP
+            </button>
+          ` : `
+            <button class="adm-action-btn adm-btn-revoke" onclick="adminRevokeUserVip('${u.user_id}')" title="ដកសិទ្ធិ VIP">
+              🟡 Revoke
+            </button>
+          `}
+          ${!isBlocked ? `
+            <button class="adm-action-btn adm-btn-block" onclick="adminToggleBlockUser('${u.user_id}', true)" title="Block User">
+              🚫 Block
+            </button>
+          ` : `
+            <button class="adm-action-btn adm-btn-allow" onclick="adminToggleBlockUser('${u.user_id}', false)" title="Unblock User">
+              🔓 Unblock
+            </button>
+          `}
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+// Admin Action: Allow VIP
+async function adminSetUserVip(targetUserId, username, firstName, days = 30) {
+  if (!checkIsAdmin()) return;
+  showToast(`⏳ កំពុងបើក VIP ជូន ID: ${targetUserId}...`);
+
+  try {
+    const { adminId, adminKey } = getAdminCredentials();
+    const payload = {
+      action: "admin_update_user_status",
+      admin_id: adminId,
+      admin_key: adminKey,
+      target_user_id: targetUserId,
+      username: username,
+      first_name: firstName,
+      new_status: "ACTIVE",
+      plan_name: days >= 9999 ? "VIP Lifetime" : `VIP (${days} ថ្ងៃ)`,
+      days: days
+    };
+
+    const res = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    });
+    const json = await res.json();
+
+    if (json.status === "success") {
+      showToast(`🎉 បានបើក VIP ជូន ${targetUserId} ជោគជ័យ!`);
+      await fetchAndRenderAdminUsers();
+    } else {
+      showToast(`⚠️ ${json.message || "បរាជ័យ"}`);
+    }
+  } catch (err) {
+    showToast("⚠️ បរាជ័យក្នុងការតភ្ជាប់ Server");
+  }
+}
+
+// Admin Action: Revoke VIP
+async function adminRevokeUserVip(targetUserId) {
+  if (!confirm(`តើអ្នកពិតជាចង់ដកសិទ្ធិ VIP ពី User ${targetUserId} មែនទេ?`)) return;
+  showToast(`⏳ កំពុងដកសិទ្ធិ VIP ពី ID: ${targetUserId}...`);
+
+  try {
+    const { adminId, adminKey } = getAdminCredentials();
+    const payload = {
+      action: "admin_update_user_status",
+      admin_id: adminId,
+      admin_key: adminKey,
+      target_user_id: targetUserId,
+      new_status: "FREE",
+      plan_name: "Free",
+      days: 0
+    };
+
+    const res = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    });
+    const json = await res.json();
+
+    if (json.status === "success") {
+      showToast(`✅ បានដកសិទ្ធិ VIP ពី ${targetUserId} រួចរាល់!`);
+      await fetchAndRenderAdminUsers();
+    }
+  } catch (err) {
+    showToast("⚠️ បរាជ័យក្នុងការតភ្ជាប់ Server");
+  }
+}
+
+// Admin Action: Block / Unblock User
+async function adminToggleBlockUser(targetUserId, shouldBlock) {
+  const actionText = shouldBlock ? "Block គណនី" : "Unblock គណនី";
+  if (!confirm(`តើអ្នកពិតជាចង់ ${actionText} ${targetUserId} មែនទេ?`)) return;
+
+  showToast(`⏳ កំពុង ${actionText}...`);
+
+  try {
+    const { adminId, adminKey } = getAdminCredentials();
+    const payload = {
+      action: "admin_update_user_status",
+      admin_id: adminId,
+      admin_key: adminKey,
+      target_user_id: targetUserId,
+      new_status: shouldBlock ? "BLOCKED" : "FREE",
+      plan_name: shouldBlock ? "BLOCKED" : "Free",
+      days: 0
+    };
+
+    const res = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    });
+    const json = await res.json();
+
+    if (json.status === "success") {
+      showToast(`✅ បាន ${actionText} ${targetUserId} ជោគជ័យ!`);
+      await fetchAndRenderAdminUsers();
+    }
+  } catch (err) {
+    showToast("⚠️ បរាជ័យក្នុងការតភ្ជាប់ Server");
+  }
+}
+
+// Auto-sync active user when opening App
+function syncCurrentUserToBackend() {
+  const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  if (!user || !user.id) return;
+
+  try {
+    fetch(GOOGLE_APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        action: "sync_user",
+        user_id: String(user.id),
+        username: user.username || "",
+        first_name: user.first_name || ""
+      })
+    }).catch(() => {});
+  } catch (e) {}
+}
+
+// Attach Admin Dashboard listeners
+const btnUserDash = document.getElementById("btn-account-user-dashboard");
+if (btnUserDash) btnUserDash.onclick = openAdminDashboard;
+
+const btnCloseAdm = document.getElementById("admin-close-btn");
+if (btnCloseAdm) btnCloseAdm.onclick = closeAdminDashboard;
+
+const admBackdrop = document.getElementById("admin-modal-backdrop");
+if (admBackdrop) admBackdrop.onclick = closeAdminDashboard;
+
+const btnRefreshAdm = document.getElementById("adm-btn-refresh");
+if (btnRefreshAdm) btnRefreshAdm.onclick = fetchAndRenderAdminUsers;
+
+const btnGrantVip = document.getElementById("adm-btn-grant-vip");
+if (btnGrantVip) {
+  btnGrantVip.onclick = async () => {
+    const inputEl = document.getElementById("adm-input-target-id");
+    const selectEl = document.getElementById("adm-select-duration");
+    const rawTarget = (inputEl.value || "").trim().replace("@", "");
+    const days = parseInt(selectEl.value || "30", 10);
+
+    if (!rawTarget) {
+      showToast("⚠️ សូមបញ្ចូល Telegram ID ឬ Username!");
+      return;
+    }
+
+    await adminSetUserVip(rawTarget, rawTarget, rawTarget, days);
+    inputEl.value = "";
+  };
+}
+
+const admSearchInput = document.getElementById("adm-search-input");
+if (admSearchInput) {
+  admSearchInput.oninput = () => {
+    const val = admSearchInput.value;
+    const clearBtn = document.getElementById("adm-search-clear");
+    if (clearBtn) clearBtn.style.display = val ? "inline-block" : "none";
+    filterAndRenderUsers();
+  };
+}
+
+const admSearchClear = document.getElementById("adm-search-clear");
+if (admSearchClear) {
+  admSearchClear.onclick = () => {
+    if (admSearchInput) admSearchInput.value = "";
+    admSearchClear.style.display = "none";
+    filterAndRenderUsers();
+  };
+}
+
+document.querySelectorAll(".adm-chip").forEach(chip => {
+  chip.onclick = () => {
+    document.querySelectorAll(".adm-chip").forEach(c => c.classList.remove("active"));
+    chip.classList.add("active");
+    currentAdminFilter = chip.getAttribute("data-filter") || "all";
+    filterAndRenderUsers();
+  };
+});
 
 // Anti-Inspect, Anti-RightClick & URL Privacy Protection
 document.addEventListener('contextmenu', e => e.preventDefault());

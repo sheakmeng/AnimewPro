@@ -133,6 +133,84 @@ function doGet(e) {
       })).setMimeType(ContentService.MimeType.JSON);
     }
 
+    // 👑 4. Admin API: Get all users & VIP statistics (Admin ID / Key Protected)
+    if (action === "admin_get_users") {
+      const adminId = String(e.parameter.admin_id || "").trim();
+      const adminKey = String(e.parameter.admin_key || "").trim();
+      const ADMIN_IDS = ["8357847250", "684920194", "8664822430"];
+      
+      if (!ADMIN_IDS.includes(adminId) && adminKey !== "admin_secret_vip_2026") {
+        return ContentService.createTextOutput(JSON.stringify({
+          status: "error",
+          message: "Unauthorized: Access restricted to Admin only"
+        })).setMimeType(ContentService.MimeType.JSON);
+      }
+
+      const vipSheet = setupVipSheetIfNeeded(ss);
+      const vipData = vipSheet.getDataRange().getValues();
+      
+      let totalVip = 0;
+      let totalFree = 0;
+      let totalBlocked = 0;
+      let totalRevenue = 0;
+      const usersList = [];
+      const now = new Date();
+
+      for (let i = 1; i < vipData.length; i++) {
+        const uId = String(vipData[i][0] || "").trim();
+        if (!uId) continue;
+        const uName = String(vipData[i][1] || "");
+        const fName = String(vipData[i][2] || "");
+        const plan = String(vipData[i][3] || "Free");
+        const amt = parseFloat(vipData[i][4]) || 0;
+        const paidAt = vipData[i][7] || "";
+        const expStr = vipData[i][8] || "";
+        const rawStatus = String(vipData[i][9] || "ACTIVE").toUpperCase();
+        
+        let isVipActive = false;
+        let isBlocked = (rawStatus === "BLOCKED");
+
+        if (expStr && rawStatus === "ACTIVE") {
+          const expDate = new Date(expStr);
+          if (expDate > now) {
+            isVipActive = true;
+          }
+        }
+
+        if (isBlocked) {
+          totalBlocked++;
+        } else if (isVipActive) {
+          totalVip++;
+          totalRevenue += amt;
+        } else {
+          totalFree++;
+        }
+
+        usersList.push({
+          user_id: uId,
+          username: uName,
+          first_name: fName,
+          plan_name: plan,
+          amount: amt,
+          paid_at: paidAt,
+          expires_at: expStr,
+          status: isBlocked ? "BLOCKED" : (isVipActive ? "ACTIVE" : "FREE")
+        });
+      }
+
+      return ContentService.createTextOutput(JSON.stringify({
+        status: "success",
+        stats: {
+          total_users: usersList.length,
+          total_vip: totalVip,
+          total_free: totalFree,
+          total_blocked: totalBlocked,
+          total_revenue: totalRevenue.toFixed(2)
+        },
+        users: usersList
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+
     // Default: Return Full Drama Manifest
     const sheet = setupSheetIfNeeded(ss);
     const data = sheet.getDataRange().getValues();
@@ -217,6 +295,98 @@ function doPost(e) {
         action: "save_vip_member",
         user_id: userId,
         expires_at: rowData[8]
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // 👤 Sync Active App User to Google Sheet (for Admin User Directory)
+    if (body.action === "sync_user" && body.user_id) {
+      const vipSheet = setupVipSheetIfNeeded(ss);
+      const userId = String(body.user_id).trim();
+      const vipData = vipSheet.getDataRange().getValues();
+      let foundRow = -1;
+      for (let i = 1; i < vipData.length; i++) {
+        if (String(vipData[i][0]).trim() === userId) {
+          foundRow = i + 1;
+          break;
+        }
+      }
+
+      if (foundRow > 0) {
+        if (body.username) vipSheet.getRange(foundRow, 2).setValue(body.username);
+        if (body.first_name) vipSheet.getRange(foundRow, 3).setValue(body.first_name);
+      } else {
+        vipSheet.appendRow([
+          userId,
+          body.username || "",
+          body.first_name || "",
+          "Free",
+          0,
+          "USD",
+          "",
+          now,
+          "",
+          "FREE"
+        ]);
+      }
+      return ContentService.createTextOutput(JSON.stringify({ status: "success", user_id: userId }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    // 👑 Admin API: Update User VIP Status (Allow / Revoke / Block)
+    if (body.action === "admin_update_user_status") {
+      const adminId = String(body.admin_id || "").trim();
+      const ADMIN_IDS = ["8357847250", "684920194", "8664822430"];
+      if (!ADMIN_IDS.includes(adminId) && body.admin_key !== "admin_secret_vip_2026") {
+        return ContentService.createTextOutput(JSON.stringify({
+          status: "error",
+          message: "Unauthorized: Admin access required"
+        })).setMimeType(ContentService.MimeType.JSON);
+      }
+
+      const vipSheet = setupVipSheetIfNeeded(ss);
+      const targetUserId = String(body.target_user_id || "").trim();
+      const newStatus = String(body.new_status || "ACTIVE").toUpperCase(); // ACTIVE, REVOKED, BLOCKED, FREE
+      const planName = String(body.plan_name || (newStatus === "ACTIVE" ? "VIP (Admin Granted)" : "Free"));
+      const days = parseInt(body.days || 30, 10);
+      const expiresAt = newStatus === "ACTIVE"
+        ? (days >= 9999 ? "2099-12-31T23:59:59.000Z" : new Date(Date.now() + days * 24 * 3600 * 1000).toISOString())
+        : (newStatus === "BLOCKED" ? "BLOCKED" : "");
+
+      const vipData = vipSheet.getDataRange().getValues();
+      let foundRow = -1;
+      for (let i = 1; i < vipData.length; i++) {
+        if (String(vipData[i][0]).trim() === targetUserId) {
+          foundRow = i + 1;
+          break;
+        }
+      }
+
+      if (foundRow > 0) {
+        vipSheet.getRange(foundRow, 4).setValue(planName);
+        vipSheet.getRange(foundRow, 9).setValue(expiresAt);
+        vipSheet.getRange(foundRow, 10).setValue(newStatus);
+        if (body.username) vipSheet.getRange(foundRow, 2).setValue(body.username);
+        if (body.first_name) vipSheet.getRange(foundRow, 3).setValue(body.first_name);
+      } else {
+        vipSheet.appendRow([
+          targetUserId,
+          body.username || "",
+          body.first_name || "",
+          planName,
+          0,
+          "USD",
+          "ADMIN_GRANT",
+          now,
+          expiresAt,
+          newStatus
+        ]);
+      }
+
+      return ContentService.createTextOutput(JSON.stringify({
+        status: "success",
+        target_user_id: targetUserId,
+        new_status: newStatus,
+        expires_at: expiresAt
       })).setMimeType(ContentService.MimeType.JSON);
     }
 
