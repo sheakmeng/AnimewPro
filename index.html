@@ -1020,6 +1020,144 @@
       border-color: transparent;
     }
 
+    /* VIP Download Buttons & Modal */
+    .btn-download-all {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.3));
+      border: 1px solid rgba(34, 197, 94, 0.5);
+      color: #4ade80;
+      padding: 6px 13px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 10px rgba(34, 197, 94, 0.15);
+    }
+    .btn-download-all:active {
+      transform: scale(0.94);
+      background: rgba(34, 197, 94, 0.35);
+    }
+
+    .download-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
+      padding: 16px;
+    }
+    .download-modal.active {
+      display: flex;
+    }
+    .download-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 6, 11, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .download-modal-card {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      background: #0f172a;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(56, 189, 248, 0.15);
+      z-index: 10;
+      animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dl-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .dl-title-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .dl-icon-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .dl-card-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #f8fafc;
+    }
+    .dl-subtitle {
+      font-size: 11px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    .dl-btn-close {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .dl-btn-close:active {
+      transform: scale(0.9);
+      color: #fff;
+    }
+    .dl-progress-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 18px;
+    }
+    .dl-progress-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 8px;
+    }
+    .dl-progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .dl-progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #38bdf8, #4ade80);
+      border-radius: 10px;
+      transition: width 0.2s ease;
+    }
+    .dl-meta-speed {
+      font-size: 11px;
+      color: #38bdf8;
+      font-weight: 600;
+      text-align: right;
+    }
+
     .modal-content-body {
       padding: 14px;
       flex: 1;
@@ -1849,6 +1987,7 @@
   <!-- Player Controls Row -->
   <div class="player-quick-controls">
     <button class="ctrl-pill-btn" id="ctrl-fullscreen" style="background:rgba(56,189,248,0.2); color:#38bdf8; border-color:rgba(56,189,248,0.45); font-weight:800;">⛶ ពង្រីកធំ</button>
+    <button class="ctrl-pill-btn" id="ctrl-download-ep" style="background:rgba(34,197,94,0.18); color:#4ade80; border-color:rgba(34,197,94,0.4); font-weight:700;">📥 Download ភាគនេះ</button>
     <button class="ctrl-pill-btn" id="ctrl-prev">⏮ ភាគមុន</button>
     <button class="ctrl-pill-btn" id="ctrl-rewind">⏪ -10s</button>
     <button class="ctrl-pill-btn" id="ctrl-forward">+10s ⏩</button>
@@ -1862,11 +2001,49 @@
     <div class="modal-meta-row" id="m-meta"></div>
     <div id="m-synopsis" style="font-size:12px; color:#cbd5e1; line-height:1.6; margin-bottom:14px;"></div>
 
-    <div class="episodes-section-title">
-      <span>បញ្ជីភាគទាំងអស់</span>
-      <span style="font-size:11px; color:#38bdf8; font-weight:700;">សរុប <span id="m-ep-count">0</span> ភាគ</span>
+    <div class="episodes-section-title" style="display:flex; align-items:center; justify-content:space-between; margin:16px 0 10px;">
+      <div>
+        <span>បញ្ជីភាគទាំងអស់</span>
+        <span style="font-size:11px; color:#38bdf8; font-weight:700; margin-left:6px;">សរុប <span id="m-ep-count">0</span> ភាគ</span>
+      </div>
+      <button id="btn-download-all-ep" class="btn-download-all" title="ទាញយកគ្រប់ភាគទាំងអស់នៃរឿងនេះ">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download គ្រប់ភាគ (VIP)</span>
+      </button>
     </div>
     <div class="ep-grid" id="m-episodes-grid"></div>
+  </div>
+</div>
+
+<!-- VIP Secure Download Progress Modal -->
+<div id="download-progress-modal" class="download-modal">
+  <div class="download-modal-backdrop" id="download-modal-backdrop"></div>
+  <div class="download-modal-card">
+    <div class="dl-card-header">
+      <div class="dl-title-box">
+        <div class="dl-icon-badge">📥</div>
+        <div>
+          <h3 class="dl-card-title" id="dl-title">កំពុងទាញយកវីដេអូ...</h3>
+          <div class="dl-subtitle" id="dl-subtitle">VIP Secure Encrypted Download</div>
+        </div>
+      </div>
+      <button class="dl-btn-close" id="dl-btn-cancel" title="បោះបង់">✕</button>
+    </div>
+
+    <div class="dl-progress-box">
+      <div class="dl-progress-info">
+        <span id="dl-ep-status">ភាគទី 1</span>
+        <span id="dl-percent-text">0%</span>
+      </div>
+      <div class="dl-progress-bar-bg">
+        <div class="dl-progress-bar-fill" id="dl-progress-bar-fill" style="width: 0%;"></div>
+      </div>
+      <div class="dl-meta-speed" id="dl-meta-speed">កំពុងតភ្ជាប់ទៅកាន់ Server...</div>
+    </div>
+
+    <div class="dl-actions">
+      <button class="btn btn-secondary" id="dl-btn-stop" style="width:100%; border-radius:12px; padding:10px; font-weight:700;">បោះបង់ (Cancel)</button>
+    </div>
   </div>
 </div>
 
@@ -2637,6 +2814,207 @@ document.getElementById("btn-modal-back").onclick = closeModal;
 document.getElementById("ctrl-fullscreen").onclick = toggleFullscreen;
 document.getElementById("btn-floating-fs").onclick = toggleFullscreen;
 document.getElementById("btn-exit-pseudo-fs").onclick = exitFullscreen;
+document.getElementById("ctrl-download-ep").onclick = () => downloadSingleEpisode();
+document.getElementById("btn-download-all-ep").onclick = () => downloadAllEpisodes();
+document.getElementById("dl-btn-cancel").onclick = cancelDownload;
+document.getElementById("dl-btn-stop").onclick = cancelDownload;
+document.getElementById("download-modal-backdrop").onclick = cancelDownload;
+
+// ==============================================================================
+// VIP SECURE VIDEO DOWNLOAD SYSTEM (Android, iOS, Telegram Desktop)
+// Encrypted In-Memory Stream - Hides & Protects Origin CDN URLs
+// ==============================================================================
+
+let isDownloadingAll = false;
+let abortDownloadController = null;
+
+function openDownloadModal(title, subtitle) {
+  const modal = document.getElementById("download-progress-modal");
+  if (!modal) return;
+  document.getElementById("dl-title").textContent = title || "កំពុងទាញយក...";
+  document.getElementById("dl-subtitle").textContent = subtitle || "VIP Secure Encrypted Download";
+  document.getElementById("dl-ep-status").textContent = "កំពុងរៀបចំ...";
+  document.getElementById("dl-percent-text").textContent = "0%";
+  document.getElementById("dl-progress-bar-fill").style.width = "0%";
+  document.getElementById("dl-meta-speed").textContent = "កំពុងតភ្ជាប់ទៅកាន់ Server...";
+  modal.classList.add("active");
+}
+
+function closeDownloadModal() {
+  const modal = document.getElementById("download-progress-modal");
+  if (modal) modal.classList.remove("active");
+}
+
+function updateDownloadProgress(statusText, percent, speedText) {
+  const statusEl = document.getElementById("dl-ep-status");
+  const pctEl = document.getElementById("dl-percent-text");
+  const barEl = document.getElementById("dl-progress-bar-fill");
+  const speedEl = document.getElementById("dl-meta-speed");
+
+  if (statusEl && statusText) statusEl.textContent = statusText;
+  if (pctEl && percent !== undefined) pctEl.textContent = `${percent}%`;
+  if (barEl && percent !== undefined) barEl.style.width = `${percent}%`;
+  if (speedEl && speedText) speedEl.textContent = speedText;
+}
+
+function cancelDownload() {
+  isDownloadingAll = false;
+  if (abortDownloadController) {
+    try { abortDownloadController.abort(); } catch (e) {}
+    abortDownloadController = null;
+  }
+  closeDownloadModal();
+  showToast("⏹️ បានបោះបង់ការទាញយក");
+}
+
+async function downloadSingleEpisode(epIndex = currentEpIndex) {
+  if (!isUserVip()) {
+    showToast("👑 មុខងារ Download សម្រាប់តែសមាជិក VIP ប៉ុណ្ណោះ! សូមជាវសមាជិកភាពដើម្បីទាញយក។");
+    openVipModal();
+    return;
+  }
+
+  const ep = currentEpisodes[epIndex];
+  if (!ep || !ep.video_url) {
+    showToast("⚠️ មិនអាចទាញយកភាគនេះបានទេ");
+    return;
+  }
+
+  const showTitle = (currentShowObj?.title || "Drama").replace(/[\\/:*?"<>|]/g, "_");
+  const epNum = ep.episode_number || (epIndex + 1);
+  const fileName = `${showTitle}_EP${epNum}.mp4`;
+
+  openDownloadModal(`ទាញយកភាគទី ${epNum}`, showTitle);
+  abortDownloadController = new AbortController();
+
+  try {
+    let lastLoaded = 0;
+    let lastTime = Date.now();
+    let speedStr = "កំពុងទាញយក...";
+
+    await performSecureBlobDownload(ep.video_url, fileName, (loaded, total) => {
+      const now = Date.now();
+      if (now - lastTime > 800) {
+        const bytesDiff = loaded - lastLoaded;
+        const secDiff = (now - lastTime) / 1000;
+        const speedMbps = ((bytesDiff * 8) / (secDiff * 1024 * 1024)).toFixed(1);
+        speedStr = `${speedMbps} Mbps • ${(loaded / (1024 * 1024)).toFixed(1)} MB / ${(total / (1024 * 1024)).toFixed(1)} MB`;
+        lastLoaded = loaded;
+        lastTime = now;
+      }
+      const pct = total > 0 ? Math.round((loaded / total) * 100) : 0;
+      updateDownloadProgress(`ភាគទី ${epNum}`, pct, speedStr);
+    }, abortDownloadController.signal);
+
+    showToast(`✅ បានទាញយកភាគ ${epNum} ជោគជ័យ!`);
+    closeDownloadModal();
+  } catch (err) {
+    if (err.name === "AbortError") {
+      showToast("⏹️ បានបញ្ឈប់ការទាញយក");
+    } else {
+      console.warn("Secure download error:", err);
+      showToast("⚠️ បរាជ័យក្នុងការទាញយក សូមព្យាយាមម្តងទៀត");
+    }
+    closeDownloadModal();
+  }
+}
+
+async function downloadAllEpisodes() {
+  if (!isUserVip()) {
+    showToast("👑 មុខងារ Download គ្រប់ភាគ សម្រាប់តែសមាជិក VIP ប៉ុណ្ណោះ! សូមជាវសមាជិកភាពដើម្បីទាញយក។");
+    openVipModal();
+    return;
+  }
+
+  if (!currentEpisodes || currentEpisodes.length === 0) {
+    showToast("⚠️ មិនមានភាគសម្រាប់ទាញយកទេ");
+    return;
+  }
+
+  const showTitle = (currentShowObj?.title || "Drama").replace(/[\\/:*?"<>|]/g, "_");
+  const totalEps = currentEpisodes.length;
+
+  openDownloadModal(`ទាញយកគ្រប់ភាគ (${totalEps} ភាគ)`, showTitle);
+  isDownloadingAll = true;
+  abortDownloadController = new AbortController();
+
+  for (let i = 0; i < totalEps; i++) {
+    if (!isDownloadingAll) break;
+    const ep = currentEpisodes[i];
+    const epNum = ep.episode_number || (i + 1);
+    const fileName = `${showTitle}_EP${epNum}.mp4`;
+
+    updateDownloadProgress(`ភាគទី ${epNum} (ភាគ ${i + 1}/${totalEps})`, 0, `កំពុងចាប់ផ្តើមទាញយកភាគទី ${epNum}...`);
+
+    try {
+      let lastLoaded = 0;
+      let lastTime = Date.now();
+      let speedStr = "កំពុងទាញយក...";
+
+      await performSecureBlobDownload(ep.video_url, fileName, (loaded, total) => {
+        const now = Date.now();
+        if (now - lastTime > 800) {
+          const bytesDiff = loaded - lastLoaded;
+          const secDiff = (now - lastTime) / 1000;
+          const speedMbps = ((bytesDiff * 8) / (secDiff * 1024 * 1024)).toFixed(1);
+          speedStr = `${speedMbps} Mbps • ${(loaded / (1024 * 1024)).toFixed(1)} MB / ${(total / (1024 * 1024)).toFixed(1)} MB`;
+          lastLoaded = loaded;
+          lastTime = now;
+        }
+        const pct = total > 0 ? Math.round((loaded / total) * 100) : 0;
+        updateDownloadProgress(`ភាគទី ${epNum} (${i + 1}/${totalEps})`, pct, speedStr);
+      }, abortDownloadController.signal);
+
+      await new Promise(r => setTimeout(r, 600));
+    } catch (err) {
+      if (err.name === "AbortError") {
+        showToast("⏹️ បានបញ្ឈប់ការទាញយកទាំងអស់");
+        break;
+      }
+      console.warn(`Error downloading ep ${epNum}:`, err);
+    }
+  }
+
+  if (isDownloadingAll) {
+    showToast(`🎉 បានទាញយកគ្រប់ភាគនៃរឿង "${currentShowObj?.title}" រួចរាល់!`);
+  }
+  closeDownloadModal();
+}
+
+async function performSecureBlobDownload(url, filename, onProgress, signal) {
+  const response = await fetch(url, { signal });
+  if (!response.ok) throw new Error("Network response not ok");
+
+  const contentLength = response.headers.get("content-length");
+  const total = contentLength ? parseInt(contentLength, 10) : 0;
+  let loaded = 0;
+
+  const reader = response.body.getReader();
+  const chunks = [];
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+    loaded += value.length;
+    if (onProgress) onProgress(loaded, total);
+  }
+
+  const blob = new Blob(chunks, { type: "video/mp4" });
+  const blobUrl = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.style.display = "none";
+  a.href = blobUrl;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(blobUrl);
+  }, 3000);
+}
 
 // Universal Fullscreen Handler (Android, iOS WebKit, Telegram Mini App)
 function toggleFullscreen() {
