@@ -1243,19 +1243,20 @@
     }
     .admin-modal-container {
       position: relative;
-      width: 100%;
-      max-width: 540px;
-      max-height: 90vh;
-      background: #090d16;
-      border: 1px solid rgba(234, 179, 8, 0.35);
+      width: 95%;
+      max-width: 520px;
+      height: 92vh;
+      max-height: 94vh;
+      background: #090e1a;
+      border: 1px solid rgba(234, 179, 8, 0.4);
       border-radius: 24px;
-      padding: 20px;
+      padding: 16px 14px 12px 14px;
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(234, 179, 8, 0.15);
       z-index: 10;
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      overflow-y: auto;
+      gap: 10px;
+      overflow: hidden;
       animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .admin-header {
@@ -1263,7 +1264,7 @@
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding-bottom: 12px;
+      padding-bottom: 10px;
     }
     .admin-title-box {
       display: flex;
@@ -1271,37 +1272,37 @@
       gap: 10px;
     }
     .admin-badge-icon {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border-radius: 12px;
       background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(245, 158, 11, 0.1));
       border: 1px solid rgba(234, 179, 8, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
+      font-size: 19px;
     }
     .admin-title {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 800;
       color: #f8fafc;
     }
     .admin-sub {
-      font-size: 11px;
+      font-size: 10.5px;
       color: #94a3b8;
     }
     .admin-close-btn {
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.12);
       color: #94a3b8;
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 13px;
       transition: all 0.2s;
     }
     .admin-close-btn:active {
@@ -1309,89 +1310,80 @@
       color: #fff;
     }
 
-    /* 4 Stats Cards */
+    /* 4 Stats Cards (Compact 4-column ribbon) */
     .admin-stats-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
     }
     .adm-stat-card {
-      background: #111827;
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 16px;
-      padding: 12px 14px;
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 6px 4px;
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      align-items: center;
+      text-align: center;
+      gap: 2px;
     }
     .adm-stat-card.stat-vip {
       border-color: rgba(234, 179, 8, 0.35);
-      background: linear-gradient(135deg, rgba(234, 179, 8, 0.08), rgba(17, 24, 39, 0.95));
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.12), rgba(17, 24, 39, 0.95));
     }
     .adm-stat-card.stat-free {
       border-color: rgba(56, 189, 248, 0.25);
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.06), rgba(17, 24, 39, 0.95));
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(17, 24, 39, 0.95));
     }
     .adm-stat-card.stat-rev {
       border-color: rgba(34, 197, 94, 0.3);
-      background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(17, 24, 39, 0.95));
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(17, 24, 39, 0.95));
     }
     .adm-stat-label {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
       color: #94a3b8;
+      white-space: nowrap;
     }
     .adm-stat-val {
-      font-size: 19px;
+      font-size: 15px;
       font-weight: 800;
       color: #fff;
     }
     .adm-stat-card.stat-vip .adm-stat-val { color: #fde047; }
     .adm-stat-card.stat-free .adm-stat-val { color: #38bdf8; }
     .adm-stat-card.stat-rev .adm-stat-val { color: #4ade80; }
-    .adm-stat-sub {
-      font-size: 10px;
-      color: #64748b;
-    }
+    .adm-stat-sub { display: none; }
 
-    /* Quick Grant Box */
+    /* Quick Grant Box (Compact Single Row) */
     .adm-quick-grant-box {
-      background: rgba(17, 24, 39, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 16px;
-      padding: 12px 14px;
-    }
-    .adm-section-title {
-      font-size: 12px;
-      font-weight: 800;
-      color: #fde047;
-      margin-bottom: 8px;
+      background: rgba(17, 24, 39, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 7px 10px;
     }
     .adm-grant-form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 6px;
+      align-items: center;
     }
     .adm-input {
-      flex: 1;
-      min-width: 140px;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 10px;
-      padding: 8px 12px;
-      font-size: 12px;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 11.5px;
       color: #fff;
       outline: none;
       font-family: inherit;
     }
-    .adm-input:focus {
-      border-color: #38bdf8;
-    }
+    .adm-input:focus { border-color: #38bdf8; }
     .adm-select {
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 10px;
-      padding: 8px 10px;
+      border-radius: 8px;
+      padding: 7px 8px;
       font-size: 11px;
       color: #cbd5e1;
       outline: none;
@@ -1400,32 +1392,33 @@
     .adm-btn-grant {
       background: linear-gradient(135deg, #eab308, #ca8a04);
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       color: #000;
       font-weight: 800;
-      font-size: 11.5px;
-      padding: 8px 14px;
+      font-size: 11px;
+      padding: 7px 12px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
+      white-space: nowrap;
       transition: all 0.2s;
     }
-    .adm-btn-grant:active { transform: scale(0.96); }
+    .adm-btn-grant:active { transform: scale(0.95); }
 
     /* Search & Filter */
     .adm-search-filter-row {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
     }
     .adm-search-wrap {
       display: flex;
       align-items: center;
       background: rgba(17, 24, 39, 0.9);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 8px 12px;
+      border-radius: 10px;
+      padding: 7px 10px;
       gap: 8px;
     }
     .adm-search-wrap svg { color: #64748b; }
@@ -1455,9 +1448,9 @@
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.08);
       color: #94a3b8;
-      padding: 5px 10px;
+      padding: 4px 10px;
       border-radius: 14px;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 700;
       cursor: pointer;
       white-space: nowrap;
@@ -1474,61 +1467,144 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      max-height: 320px;
+      flex: 1;
+      min-height: 0;
       overflow-y: auto;
-      padding-right: 2px;
+      padding-right: 4px;
     }
+    .adm-users-list::-webkit-scrollbar {
+      width: 4px;
+    }
+    .adm-users-list::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+    }
+
     .adm-user-card {
-      background: rgba(17, 24, 39, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: linear-gradient(180deg, rgba(20, 29, 47, 0.95) 0%, rgba(13, 19, 33, 0.95) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 14px;
       padding: 10px 12px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      transition: all 0.2s ease;
     }
-    .adm-user-info {
+    .adm-card-top {
       display: flex;
       align-items: center;
       gap: 10px;
-      flex: 1;
-      min-width: 0;
     }
     .adm-avatar {
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      background: #1e293b;
+      background: linear-gradient(135deg, #1e293b, #334155);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 800;
       color: #38bdf8;
       flex-shrink: 0;
     }
-    .adm-user-text {
+    .adm-card-head {
       flex: 1;
       min-width: 0;
     }
-    .adm-user-name {
-      font-size: 12.5px;
-      font-weight: 700;
-      color: #f1f5f9;
+    .adm-card-name-row {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 6px;
+      margin-bottom: 2px;
+    }
+    .adm-user-fullname {
+      font-size: 13px;
+      font-weight: 800;
+      color: #ffffff;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .adm-user-meta {
+    .adm-card-sub-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+    }
+    .adm-user-uname {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+    .adm-user-id-chip {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1px 6px;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 10.5px;
+      color: #cbd5e1;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .adm-user-id-chip:active {
+      transform: scale(0.95);
+      background: rgba(56, 189, 248, 0.2);
+    }
+
+    .adm-card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      padding-top: 6px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .adm-card-meta-info {
       font-size: 10.5px;
       color: #94a3b8;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    .adm-user-actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    .adm-action-btn {
+      padding: 4px 9px;
+      border-radius: 7px;
+      font-size: 10.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      transition: all 0.2s;
+    }
+    .adm-action-btn:active { transform: scale(0.94); }
+    .adm-btn-allow {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.25));
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.4);
+    }
+    .adm-btn-revoke {
+      background: rgba(234, 179, 8, 0.16);
+      color: #fde047;
+      border: 1px solid rgba(234, 179, 8, 0.35);
+    }
+    .adm-btn-block {
+      background: rgba(239, 68, 68, 0.16);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.35);
     }
     .adm-badge-vip {
       font-size: 9.5px;
@@ -1557,40 +1633,6 @@
       color: #f87171;
       border: 1px solid rgba(239, 68, 68, 0.35);
     }
-    .adm-user-actions {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      flex-shrink: 0;
-    }
-    .adm-action-btn {
-      padding: 5px 8px;
-      border-radius: 8px;
-      font-size: 10.5px;
-      font-weight: 700;
-      border: 1px solid transparent;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      transition: all 0.2s;
-    }
-    .adm-btn-allow {
-      background: rgba(34, 197, 94, 0.18);
-      color: #4ade80;
-      border-color: rgba(34, 197, 94, 0.35);
-    }
-    .adm-btn-revoke {
-      background: rgba(234, 179, 8, 0.15);
-      color: #fde047;
-      border-color: rgba(234, 179, 8, 0.35);
-    }
-    .adm-btn-block {
-      background: rgba(239, 68, 68, 0.15);
-      color: #f87171;
-      border-color: rgba(239, 68, 68, 0.35);
-    }
-    .adm-action-btn:active { transform: scale(0.93); }
 
     .modal-content-body {
       padding: 14px;
@@ -2529,40 +2571,35 @@
       </div>
     </div>
 
-    <!-- 4 Stats Summary Cards -->
+    <!-- 4 Stats Summary Ribbon (Compact 4-column) -->
     <div class="admin-stats-grid">
       <div class="adm-stat-card stat-total">
-        <div class="adm-stat-label">👥 សរុបទាំងអស់</div>
+        <div class="adm-stat-label">👥 សរុប</div>
         <div class="adm-stat-val" id="adm-stat-total">0</div>
-        <div class="adm-stat-sub">សមាជិកក្នុងប្រព័ន្ធ</div>
       </div>
       <div class="adm-stat-card stat-vip">
-        <div class="adm-stat-label">👑 សមាជិក VIP</div>
+        <div class="adm-stat-label">👑 VIP</div>
         <div class="adm-stat-val" id="adm-stat-vip">0</div>
-        <div class="adm-stat-sub">ទិញ & កំពុងដំណើរការ</div>
       </div>
       <div class="adm-stat-card stat-free">
-        <div class="adm-stat-label">🔓 សមាជិកធម្មតា</div>
+        <div class="adm-stat-label">🔓 Free</div>
         <div class="adm-stat-val" id="adm-stat-free">0</div>
-        <div class="adm-stat-sub">Free Members</div>
       </div>
       <div class="adm-stat-card stat-rev">
-        <div class="adm-stat-label">💰 ចំណូលសរុប</div>
-        <div class="adm-stat-val" id="adm-stat-revenue">$0.00</div>
-        <div class="adm-stat-sub">ពីការទិញ VIP</div>
+        <div class="adm-stat-label">💰 ចំណូល</div>
+        <div class="adm-stat-val" id="adm-stat-revenue">$0</div>
       </div>
     </div>
 
-    <!-- Quick Manual Grant VIP Box -->
+    <!-- Quick Manual Grant VIP Box (Compact Row) -->
     <div class="adm-quick-grant-box">
-      <div class="adm-section-title">⚡ បើក / ដកសិទ្ធិ VIP តាម Telegram ID ឬ Username</div>
       <div class="adm-grant-form">
         <input type="text" id="adm-input-target-id" class="adm-input" placeholder="បញ្ចូល Telegram ID ឬ @username..." />
         <select id="adm-select-duration" class="adm-select">
-          <option value="30">VIP 1 ខែ (30 ថ្ងៃ)</option>
-          <option value="90">VIP 3 ខែ (90 ថ្ងៃ)</option>
-          <option value="365">VIP 1 ឆ្នាំ (365 ថ្ងៃ)</option>
-          <option value="99999">VIP មួយជីវិត (Lifetime)</option>
+          <option value="30">30 ថ្ងៃ</option>
+          <option value="90">90 ថ្ងៃ</option>
+          <option value="365">1 ឆ្នាំ</option>
+          <option value="99999">មួយជីវិត</option>
         </select>
         <button id="adm-btn-grant-vip" class="adm-btn-grant">👑 បើក VIP</button>
       </div>
@@ -4237,42 +4274,54 @@ function filterAndRenderUsers() {
     const isBlocked = u.status === "BLOCKED";
     const statusBadge = isBlocked 
       ? `<span class="adm-badge-blocked">🚫 BLOCKED</span>`
-      : (isVip ? `<span class="adm-badge-vip">👑 VIP ACTIVE</span>` : `<span class="adm-badge-free">🔓 FREE</span>`);
+      : (isVip ? `<span class="adm-badge-vip">👑 VIP</span>` : `<span class="adm-badge-free">🔓 FREE</span>`);
 
     const displayName = u.first_name || (u.username ? `@${u.username}` : `User ${u.user_id}`);
-    const subMeta = `@${u.username || 'none'} • ID: ${u.user_id} ${u.expires_at ? '• ផុតកំណត់: ' + (u.expires_at.slice(0,10)) : ''}`;
+    const uName = u.username ? `@${u.username}` : "គ្មាន Username";
+    const expText = u.expires_at ? `ផុតកំណត់: ${u.expires_at.slice(0, 10)}` : `គម្រោង: ${u.plan_name || 'Free'}`;
+    const initial = (u.first_name || u.username || 'U').charAt(0).toUpperCase();
 
     return `
       <div class="adm-user-card" id="user-card-${u.user_id}">
-        <div class="adm-user-info">
-          <div class="adm-avatar">${(u.first_name || u.username || 'U').charAt(0).toUpperCase()}</div>
-          <div class="adm-user-text">
-            <div class="adm-user-name">
-              <span>${displayName}</span>
+        <div class="adm-card-top">
+          <div class="adm-avatar">${initial}</div>
+          <div class="adm-card-head">
+            <div class="adm-card-name-row">
+              <span class="adm-user-fullname">${displayName}</span>
               ${statusBadge}
             </div>
-            <div class="adm-user-meta">${subMeta}</div>
+            <div class="adm-card-sub-row">
+              <span class="adm-user-uname">${uName}</span>
+              <span class="adm-user-id-chip" onclick="navigator.clipboard?.writeText('${u.user_id}'); showToast('📋 បានចម្លង ID: ${u.user_id}')" title="ចុចចម្លង ID">
+                ID: <b>${u.user_id}</b> 📋
+              </span>
+            </div>
           </div>
         </div>
-        <div class="adm-user-actions">
-          ${!isVip ? `
-            <button class="adm-action-btn adm-btn-allow" onclick="adminSetUserVip('${u.user_id}', '${u.username || ''}', '${u.first_name || ''}', 30)" title="បើក VIP 30 ថ្ងៃ">
-              👑 Allow VIP
-            </button>
-          ` : `
-            <button class="adm-action-btn adm-btn-revoke" onclick="adminRevokeUserVip('${u.user_id}')" title="ដកសិទ្ធិ VIP">
-              🟡 Revoke
-            </button>
-          `}
-          ${!isBlocked ? `
-            <button class="adm-action-btn adm-btn-block" onclick="adminToggleBlockUser('${u.user_id}', true)" title="Block User">
-              🚫 Block
-            </button>
-          ` : `
-            <button class="adm-action-btn adm-btn-allow" onclick="adminToggleBlockUser('${u.user_id}', false)" title="Unblock User">
-              🔓 Unblock
-            </button>
-          `}
+        <div class="adm-card-bottom">
+          <div class="adm-card-meta-info">
+            <span>📅 ${expText}</span>
+          </div>
+          <div class="adm-user-actions">
+            ${!isVip ? `
+              <button class="adm-action-btn adm-btn-allow" onclick="adminSetUserVip('${u.user_id}', '${u.username || ''}', '${u.first_name || ''}', 30)" title="បើក VIP 30 ថ្ងៃ">
+                👑 Allow VIP
+              </button>
+            ` : `
+              <button class="adm-action-btn adm-btn-revoke" onclick="adminRevokeUserVip('${u.user_id}')" title="ដកសិទ្ធិ VIP">
+                🟡 Revoke
+              </button>
+            `}
+            ${!isBlocked ? `
+              <button class="adm-action-btn adm-btn-block" onclick="adminToggleBlockUser('${u.user_id}', true)" title="Block User">
+                🚫 Block
+              </button>
+            ` : `
+              <button class="adm-action-btn adm-btn-allow" onclick="adminToggleBlockUser('${u.user_id}', false)" title="Unblock User">
+                🔓 Unblock
+              </button>
+            `}
+          </div>
         </div>
       </div>
     `;
