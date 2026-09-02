@@ -213,7 +213,8 @@ class DramaManagerWidget(QWidget):
         self.ep_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeToContents)
         self.ep_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
         self.ep_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeToContents)
-        self.ep_table.horizontalHeader().setSectionResizeMode(3, QHeaderView.ResizeToContents)
+        self.ep_table.horizontalHeader().setSectionResizeMode(3, QHeaderView.Fixed)
+        self.ep_table.setColumnWidth(3, 95)
         self.ep_table.verticalHeader().setVisible(False)
         self.ep_table.setSelectionBehavior(QAbstractItemView.SelectRows)
         right_layout.addWidget(self.ep_table)
@@ -359,12 +360,19 @@ class DramaManagerWidget(QWidget):
             self.ep_table.setItem(r_idx, 2, item_size)
 
             # Action button
-            btn_del = QPushButton("🗑️")
-            btn_del.setFixedWidth(40)
+            btn_del = QPushButton("🗑️ លុប")
             btn_del.setProperty("class", "btn-danger")
+            btn_del.setFixedHeight(26)
+            btn_del.setFixedWidth(65)
             ep_id = ep.get("id")
             btn_del.clicked.connect(lambda _, eid=ep_id: self.delete_episode(eid))
-            self.ep_table.setCellWidget(r_idx, 3, btn_del)
+            
+            cell_w = QWidget()
+            cell_l = QHBoxLayout(cell_w)
+            cell_l.setContentsMargins(0, 0, 0, 0)
+            cell_l.setAlignment(Qt.AlignCenter)
+            cell_l.addWidget(btn_del)
+            self.ep_table.setCellWidget(r_idx, 3, cell_w)
 
     def preview_poster(self, url):
         url = url.strip()

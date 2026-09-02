@@ -58,8 +58,8 @@ class MainWindow(QMainWindow):
         # Brand Header Logo
         brand_box = QHBoxLayout()
         logo_icon = QLabel("🎬")
-        logo_icon.setFont(QFont("Outfit", 24))
-        logo_icon.setStyleSheet("background: linear-gradient(135deg, #6366f1, #06b6d4); padding: 4px; border-radius: 10px;")
+        logo_icon.setFont(QFont("Outfit", 20))
+        logo_icon.setStyleSheet("background-color: #1e1b4b; border: 1px solid rgba(129, 140, 248, 0.4); padding: 4px 6px; border-radius: 10px;")
         brand_box.addWidget(logo_icon)
 
         title_vbox = QVBoxLayout()

@@ -84,44 +84,66 @@ class VipManagerWidget(QWidget):
 
         self.vip_table = QTableWidget()
         self.vip_table.setColumnCount(5)
-        self.vip_table.setHorizontalHeaderLabels(["User ID", "Username", "Duration", "Status", "Actions"])
+        self.vip_table.setHorizontalHeaderLabels(["Telegram User ID", "ឈ្មោះអ្នកប្រើ (Username)", "រយៈពេល (Duration)", "ស្ថានភាព (Status)", "សកម្មភាព (Action)"])
         self.vip_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeToContents)
         self.vip_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
         self.vip_table.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeToContents)
         self.vip_table.horizontalHeader().setSectionResizeMode(3, QHeaderView.ResizeToContents)
-        self.vip_table.horizontalHeader().setSectionResizeMode(4, QHeaderView.ResizeToContents)
+        self.vip_table.horizontalHeader().setSectionResizeMode(4, QHeaderView.Fixed)
+        self.vip_table.setColumnWidth(4, 110)
+        self.vip_table.verticalHeader().setVisible(False)
         self.vip_table.setSelectionBehavior(QAbstractItemView.SelectRows)
         tbl_layout.addWidget(self.vip_table)
 
         layout.addWidget(tbl_card)
 
-        # Initial dummy populate
+        # Initial populate
         self.populate_demo_members()
 
     def populate_demo_members(self):
         demo_data = [
-            ("866482243", "@sheakmeng", "12 Months (VIP Pro)", "Active 🟢"),
-            ("192847120", "@user_vip_01", "3 Months", "Active 🟢"),
-            ("550192841", "@vip_member_kh", "1 Month", "Active 🟢")
+            ("866482243", "@sheakmeng", "12 ខែ (VIP Pro)", "Active 🟢"),
+            ("192847120", "@user_vip_01", "3 ខែ", "Active 🟢"),
+            ("550192841", "@vip_member_kh", "1 ខែ", "Active 🟢")
         ]
         self.vip_table.setRowCount(0)
         for r_idx, (uid, uname, dur, status) in enumerate(demo_data):
             self.vip_table.insertRow(r_idx)
-            self.vip_table.setItem(r_idx, 0, QTableWidgetItem(uid))
+            
+            item_uid = QTableWidgetItem(f" 👤 {uid}")
+            item_uid.setFont(QFont("Outfit", 10, QFont.Bold))
+            self.vip_table.setItem(r_idx, 0, item_uid)
+            
             self.vip_table.setItem(r_idx, 1, QTableWidgetItem(uname))
-            self.vip_table.setItem(r_idx, 2, QTableWidgetItem(dur))
+            
+            item_dur = QTableWidgetItem(dur)
+            item_dur.setTextAlignment(Qt.AlignCenter)
+            self.vip_table.setItem(r_idx, 2, item_dur)
             
             item_st = QTableWidgetItem(status)
+            item_st.setTextAlignment(Qt.AlignCenter)
             item_st.setForeground(QColor("#34d399"))
+            item_st.setFont(QFont("Outfit", 10, QFont.Bold))
             self.vip_table.setItem(r_idx, 3, item_st)
 
-            btn_rem = QPushButton("❌")
-            btn_rem.setFixedWidth(36)
+            # Clean Action Button
+            btn_rem = QPushButton("🗑️ លុប")
+            btn_rem.setProperty("class", "btn-danger")
+            btn_rem.setFixedHeight(28)
+            btn_rem.setFixedWidth(80)
             btn_rem.clicked.connect(lambda _, r=r_idx: self.remove_row(r))
-            self.vip_table.setCellWidget(r_idx, 4, btn_rem)
+            
+            cell_widget = QWidget()
+            cell_layout = QHBoxLayout(cell_widget)
+            cell_layout.setContentsMargins(0, 0, 0, 0)
+            cell_layout.setAlignment(Qt.AlignCenter)
+            cell_layout.addWidget(btn_rem)
+            self.vip_table.setCellWidget(r_idx, 4, cell_widget)
 
     def remove_row(self, row):
-        self.vip_table.removeRow(row)
+        res = QMessageBox.question(self, "បញ្ជាក់ការលុប", "តើអ្នកចង់លុបសមាជិក VIP នេះមែនទេ?", QMessageBox.Yes | QMessageBox.No)
+        if res == QMessageBox.Yes:
+            self.vip_table.removeRow(row)
 
     def sync_sheets(self):
         QMessageBox.information(self, "Synced", "✅ Google Sheets VIP database synchronized successfully!")
@@ -131,24 +153,41 @@ class VipManagerWidget(QWidget):
         name = self.input_name.text().strip()
         months = self.spin_months.value()
         if not uid:
-            QMessageBox.warning(self, "Missing", "Please enter a User ID!")
+            QMessageBox.warning(self, "ខ្វះទិន្នន័យ", "សូមបញ្ចូល Telegram User ID!")
             return
 
         row = self.vip_table.rowCount()
         self.vip_table.insertRow(row)
-        self.vip_table.setItem(row, 0, QTableWidgetItem(uid))
+        
+        item_uid = QTableWidgetItem(f" 👤 {uid}")
+        item_uid.setFont(QFont("Outfit", 10, QFont.Bold))
+        self.vip_table.setItem(row, 0, item_uid)
+        
         self.vip_table.setItem(row, 1, QTableWidgetItem(name or "@user"))
-        self.vip_table.setItem(row, 2, QTableWidgetItem(f"{months} Month(s)"))
+        
+        item_dur = QTableWidgetItem(f"{months} ខែ")
+        item_dur.setTextAlignment(Qt.AlignCenter)
+        self.vip_table.setItem(row, 2, item_dur)
         
         item_st = QTableWidgetItem("Active 🟢")
+        item_st.setTextAlignment(Qt.AlignCenter)
         item_st.setForeground(QColor("#34d399"))
+        item_st.setFont(QFont("Outfit", 10, QFont.Bold))
         self.vip_table.setItem(row, 3, item_st)
 
-        btn_rem = QPushButton("❌")
-        btn_rem.setFixedWidth(36)
+        btn_rem = QPushButton("🗑️ លុប")
+        btn_rem.setProperty("class", "btn-danger")
+        btn_rem.setFixedHeight(28)
+        btn_rem.setFixedWidth(80)
         btn_rem.clicked.connect(lambda _, r=row: self.remove_row(r))
-        self.vip_table.setCellWidget(row, 4, btn_rem)
+        
+        cell_widget = QWidget()
+        cell_layout = QHBoxLayout(cell_widget)
+        cell_layout.setContentsMargins(0, 0, 0, 0)
+        cell_layout.setAlignment(Qt.AlignCenter)
+        cell_layout.addWidget(btn_rem)
+        self.vip_table.setCellWidget(row, 4, cell_widget)
 
         self.input_uid.clear()
         self.input_name.clear()
-        QMessageBox.information(self, "Granted", f"🎉 VIP granted to {uid} for {months} month(s)!")
+        QMessageBox.information(self, "ជោគជ័យ", f"🎉 បានផ្តល់សមាជិក VIP ទៅកាន់ {uid} រយៈពេល {months} ខែ!")
