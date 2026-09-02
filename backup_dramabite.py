@@ -79,25 +79,323 @@ if os.path.isdir(os.path.join(DRAMABITE_BASE_DIR, "platforms")):
     if DRAMABITE_BASE_DIR not in sys.path:
         sys.path.insert(0, DRAMABITE_BASE_DIR)
 
-# Try importing the DramaBite bypass engine
-try:
-    from platforms.dramabite import DramabiteMixin
+# ==============================================================================
+# DRAMABITE STANDALONE BYPASS ENGINE (Self-Contained for PC & Android Pydroid 3)
+# ==============================================================================
+from urllib.parse import parse_qs, unquote, urlsplit
 
-    class DramaBiteBypassClient(DramabiteMixin):
-        def __init__(self):
-            import requests as rq
-            self.session = rq.Session()
-            self._cancelled = False
-            self._dramabite_detail_cache = {}
+class DramabiteMixin:
+    """Dramabite public API parser and preload bypass engine."""
+    _DRAMABITE_BASE = "https://www.dramabite.media"
+    _DRAMABITE_API = _DRAMABITE_BASE + "/short_video/video_svr"
+    _DRAMABITE_CDN_VIDEO = "https://cdn-video.miniepisode.media"
+    _DRAMABITE_CDN_IMAGE = "https://cdn-oss.miniepisode.media"
+    _DRAMABITE_DETAIL_CACHE_SECONDS = 120
 
-        def _report_status(self, msg):
-            print(f"  [Bypass] {msg}", flush=True)
+    def _report_status(self, msg):
+        print(f"  [Bypass] {msg}", flush=True)
 
-    BYPASS_AVAILABLE = True
-    print("[OK] DramaBite Bypass Engine loaded! (Online Mode Enabled)", flush=True)
-except Exception as _bypass_err:
-    BYPASS_AVAILABLE = False
-    print(f"[INFO] Bypass Engine not available: {_bypass_err}", flush=True)
+    @property
+    def _safe_session(self):
+        if not hasattr(self, "session") or self.session is None:
+            import requests
+            self.session = requests.Session()
+        return self.session
+
+    def _dramabite_api(self, endpoint, params=None):
+        params = params or {}
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "Origin": self._DRAMABITE_BASE,
+            "Referer": self._DRAMABITE_BASE + "/",
+        }
+        try:
+            resp = self._safe_session.get(
+                f"{self._DRAMABITE_API}{endpoint}",
+                params=params,
+                headers=headers,
+                timeout=20,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            if isinstance(data, dict):
+                for key in ("data", "result", "rsp_body"):
+                    nested = data.get(key)
+                    if isinstance(nested, dict) and nested:
+                        return nested
+                return data
+        except Exception:
+            pass
+        return {}
+
+    @staticmethod
+    def _dramabite_parse_url(url):
+        raw = str(url or "").strip()
+        for _ in range(2):
+            decoded = unquote(raw)
+            if decoded == raw:
+                break
+            raw = decoded
+        cid = None
+        vid = None
+        try:
+            parts = urlsplit(raw)
+            queries = [parts.query]
+            frag = parts.fragment or ""
+            if "?" in frag:
+                queries.append(frag.split("?", 1)[1])
+            for query in queries:
+                if not query:
+                    continue
+                parsed = parse_qs(query)
+                if not cid:
+                    vals = (
+                        parsed.get("cid")
+                        or parsed.get("content_id")
+                        or parsed.get("collection_id")
+                        or parsed.get("book_id")
+                        or []
+                    )
+                    if vals:
+                        cid = str(vals[0]).strip()
+                if vid is None:
+                    vals = parsed.get("vid") or parsed.get("episode") or parsed.get("ep") or []
+                    if vals:
+                        try:
+                            vid = int(vals[0])
+                        except (TypeError, ValueError):
+                            pass
+        except Exception:
+            pass
+
+        if not cid:
+            m = re.search(r"[?&#](?:cid|content_id|collection_id|book_id)=([a-zA-Z0-9_-]+)", raw, re.IGNORECASE)
+            if m:
+                cid = m.group(1)
+        if vid is None:
+            m = re.search(r"[?&#](?:vid|episode|ep)=(\d+)", raw, re.IGNORECASE)
+            if m:
+                try:
+                    vid = int(m.group(1))
+                except (TypeError, ValueError):
+                    pass
+
+        if not cid:
+            m = re.search(r"/(?:play|drama|series)/([a-zA-Z0-9_-]+)(?:/(\d+))?", raw, re.IGNORECASE)
+            if m:
+                cid = m.group(1)
+                if vid is None and m.group(2):
+                    vid = int(m.group(2))
+
+        if vid is None or vid < 1:
+            vid = 1
+        return cid, vid
+
+    def _dramabite_play_url(self, cid, vid=1):
+        return f"{self._DRAMABITE_BASE}/#/play?cid={cid}&vid={int(vid)}"
+
+    def _dramabite_abs_video(self, path):
+        if not path:
+            return ""
+        if str(path).startswith("http://") or str(path).startswith("https://"):
+            return str(path)
+        return f"{self._DRAMABITE_CDN_VIDEO}/{str(path).lstrip('/')}"
+
+    def _dramabite_abs_image(self, path):
+        if not path:
+            return ""
+        path = str(path)
+        if path.startswith("http://") or path.startswith("https://"):
+            return path
+        base = self._DRAMABITE_CDN_VIDEO if path.startswith("video/") else self._DRAMABITE_CDN_IMAGE
+        return f"{base}/{path.lstrip('/')}"
+
+    def _dramabite_get_dramas(self, max_pages=12):
+        dramas = []
+        seen = set()
+        for page in range(max_pages):
+            if getattr(self, "_cancelled", False):
+                break
+            self._report_status(f"🔄 Fetching Dramabite homepage page {page + 1}…")
+            data = self._dramabite_api("/homepage", {"page": page})
+            modules = data.get("module_list") or []
+            if not modules:
+                break
+            before = len(dramas)
+            for module in modules:
+                for item in module.get("video_list") or []:
+                    cid = str(item.get("cid") or (item.get("linkInfo") or {}).get("cid") or "").strip()
+                    title = str(item.get("title") or "").strip()
+                    if not cid or not title or cid in seen:
+                        continue
+                    seen.add(cid)
+                    thumb = self._dramabite_abs_image(
+                        item.get("cover_url") or item.get("video_cover") or ((item.get("linkInfo") or {}).get("cover"))
+                    )
+                    dramas.append({
+                        "title": title,
+                        "url": self._dramabite_play_url(cid, item.get("vid") or 1),
+                        "thumb": thumb,
+                        "ep_count": item.get("total_episode") or "",
+                    })
+            if len(dramas) == before:
+                break
+        return dramas
+
+    def _dramabite_episode_list(self, cid):
+        for params in ({"cid": cid, "page": 1}, {"cid": cid, "page": 0}, {"cid": cid}):
+            data = self._dramabite_api("/episode_list", params)
+            eps = data.get("episode_list") or data.get("episodes") or data.get("video_list") or []
+            if isinstance(eps, list) and eps:
+                return eps
+        return []
+
+    def _dramabite_episode_detail(self, cid, vid, force_refresh=False):
+        cache = getattr(self, "_dramabite_detail_cache", None)
+        if cache is None:
+            cache = {}
+            self._dramabite_detail_cache = cache
+        key = (str(cid), int(vid))
+        cached = cache.get(key)
+        if cached and not force_refresh:
+            if isinstance(cached, dict) and "data" in cached and "fetched_at" in cached:
+                age = time.monotonic() - float(cached.get("fetched_at") or 0)
+                if age < self._DRAMABITE_DETAIL_CACHE_SECONDS:
+                    return cached.get("data") or {}
+            elif isinstance(cached, dict):
+                cache.pop(key, None)
+        data = self._dramabite_api("/episode_detail", {"cid": cid, "vid": int(vid)})
+        if isinstance(data, dict) and data:
+            cache[key] = {"fetched_at": time.monotonic(), "data": data}
+        return data
+
+    def _dramabite_pick_stream(self, entry, target_vid):
+        if not isinstance(entry, dict):
+            return None
+        try:
+            entry_vid = int(entry.get("vid") or 0)
+        except (TypeError, ValueError):
+            entry_vid = 0
+        if target_vid and entry_vid and entry_vid != int(target_vid):
+            return None
+        path = (
+            entry.get("multi_rate_m3u8")
+            or entry.get("video_link_m3u8")
+            or entry.get("m3u8_url")
+            or entry.get("play_url")
+            or entry.get("video_link")
+            or entry.get("url")
+        )
+        if not path:
+            return None
+        return self._dramabite_abs_video(path)
+
+    def _dramabite_find_stream_in_detail(self, data, target_vid):
+        if not isinstance(data, dict):
+            return None, None
+        current = self._dramabite_pick_stream(data.get("link_info") or data.get("linkInfo"), target_vid)
+        if current:
+            return current, "link_info"
+        for key in ("next_video", "last_video", "nextVideo", "lastVideo"):
+            picked = self._dramabite_pick_stream(data.get(key), target_vid)
+            if picked:
+                return picked, key
+        for item in data.get("preload_episode_links") or data.get("preloadEpisodeLinks") or []:
+            picked = self._dramabite_pick_stream(item, target_vid)
+            if picked:
+                return picked, "preload_episode_links"
+        return None, None
+
+    def _dramabite_drama_info(self, url):
+        cid, vid = self._dramabite_parse_url(url)
+        if not cid:
+            self._report_status("⚠ Cannot find Dramabite cid in URL")
+            return "", [], ""
+        self._report_status(f"🔄 Fetching Dramabite drama info (cid={cid})…")
+        detail = self._dramabite_episode_detail(cid, vid)
+        episodes_raw = self._dramabite_episode_list(cid)
+        title = str(detail.get("video_title") or detail.get("title") or "").strip() or f"Dramabite {cid}"
+        thumbnail = self._dramabite_abs_image(
+            detail.get("video_cover") or detail.get("cover_url") or detail.get("video_poster_url")
+            or detail.get("poster") or ((detail.get("link_info") or detail.get("linkInfo") or {}).get("cover"))
+            or ((episodes_raw[0] if episodes_raw else {}).get("cover_url"))
+        )
+        episodes = []
+        for ep in episodes_raw:
+            try:
+                ep_vid = int(ep.get("vid") or ep.get("episode") or ep.get("episode_number") or 0)
+            except (TypeError, ValueError):
+                continue
+            if ep_vid < 1:
+                continue
+            episodes.append({
+                "num": ep_vid,
+                "url": self._dramabite_play_url(cid, ep_vid),
+                "title": f"{title}_EP{ep_vid:03d}",
+                "locked": bool(ep.get("status")),
+            })
+        if not episodes:
+            total = detail.get("total_episode") or detail.get("update_episode") or 0
+            try:
+                total = int(total)
+            except (TypeError, ValueError):
+                total = 0
+            for ep_vid in range(1, total + 1):
+                episodes.append({
+                    "num": ep_vid,
+                    "url": self._dramabite_play_url(cid, ep_vid),
+                    "title": f"{title}_EP{ep_vid:03d}",
+                    "locked": ep_vid > 1,
+                })
+        episodes.sort(key=lambda x: x["num"])
+        free = sum(1 for ep in episodes if not ep.get("locked"))
+        locked = len(episodes) - free
+        if locked:
+            self._report_status(f"✅ Found {len(episodes)} Dramabite episodes ({free} free, {locked} locked)")
+        else:
+            self._report_status(f"✅ Found {len(episodes)} Dramabite episodes")
+        return title, episodes, thumbnail
+
+    def _dramabite_video_url(self, episode_url, force_bypass=False):
+        cid, vid = self._dramabite_parse_url(episode_url)
+        if not cid:
+            self._report_status("⚠ Invalid Dramabite episode URL")
+            return None
+        self._report_status(f"🔄 Dramabite EP{vid:03d}: querying API…")
+        detail = self._dramabite_episode_detail(cid, vid, force_refresh=bool(force_bypass))
+        stream_url, source = self._dramabite_find_stream_in_detail(detail, vid)
+        if stream_url:
+            self._report_status(f"✅ Dramabite EP{vid:03d}: stream ready")
+            return stream_url
+        start_prev = max(1, vid - 1)
+        end_prev = max(1, vid - 8)
+        for prev_vid in range(start_prev, end_prev - 1, -1):
+            prev_detail = self._dramabite_episode_detail(cid, prev_vid, force_refresh=bool(force_bypass))
+            stream_url, source = self._dramabite_find_stream_in_detail(prev_detail, vid)
+            if stream_url:
+                self._report_status(f"🔓 Dramabite bypass: EP{vid:03d} via EP{prev_vid:03d} {source}")
+                return stream_url
+        if detail.get("need_download_app") or detail.get("status"):
+            self._report_status("⚠ Dramabite locked episode: bypass failed")
+        else:
+            self._report_status("⚠ Could not resolve Dramabite stream URL")
+        return None
+
+
+class DramaBiteBypassClient(DramabiteMixin):
+    def __init__(self):
+        import requests as rq
+        self.session = rq.Session()
+        self._cancelled = False
+        self._dramabite_detail_cache = {}
+
+    def _report_status(self, msg):
+        print(f"  [Bypass] {msg}", flush=True)
+
+BYPASS_AVAILABLE = True
+print("[OK] DramaBite Standalone Bypass Engine loaded! (Android & PC Ready)", flush=True)
+
 
 def find_dramabite_downloads_dir():
     candidates = [
@@ -441,10 +739,7 @@ async def get_telegram_cdn_url(app: Client, file_id: str) -> str:
 
 
 def convert_to_mp4(input_path: str) -> str:
-    """
-    Remux non-MP4 files (.ts, .mkv, .mov) to MP4 using FFmpeg -c copy.
-    Returns path to MP4 file. Returns input_path unchanged if already .mp4 or FFmpeg not found.
-    """
+    """Fast stream copy remux for non-MP4 files (.ts, .mkv) to .mp4 without re-encoding."""
     ext = os.path.splitext(input_path)[1].lower()
     if ext == ".mp4":
         return input_path
@@ -455,32 +750,28 @@ def convert_to_mp4(input_path: str) -> str:
         if os.path.isfile(bundled):
             ffmpeg_bin = bundled
     if not ffmpeg_bin:
-        print("  [WARN] FFmpeg not found - skipping MP4 conversion", flush=True)
         return input_path
 
-    mp4_path = os.path.splitext(input_path)[0] + "_converted.mp4"
+    mp4_path = os.path.splitext(input_path)[0] + "_fast.mp4"
     cmd = [
         ffmpeg_bin, "-y",
         "-i", input_path,
-        "-c:v", "copy",
-        "-c:a", "aac", "-b:a", "128k",
+        "-c", "copy",
+        "-bsf:a", "aac_adtstoasc",
         "-movflags", "+faststart",
         mp4_path
     ]
     try:
-        print(f"  [MP4] Converting {ext} -> .mp4 with clean AAC audio...", flush=True)
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=600)
-        if result.returncode == 0 and os.path.isfile(mp4_path) and os.path.getsize(mp4_path) > 1024 * 50:
-            size_mb = os.path.getsize(mp4_path) / (1024 * 1024)
-            print(f"  [MP4] Conversion OK! ({size_mb:.1f} MB)", flush=True)
+        res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=60)
+        if res.returncode == 0 and os.path.isfile(mp4_path) and os.path.getsize(mp4_path) > 1024 * 50:
             return mp4_path
-    except Exception as e:
-        print(f"  [WARN] FFmpeg convert error: {e}", flush=True)
+    except Exception:
+        pass
     return input_path
 
 
 async def download_hls_stream(stream_url: str, output_path: str) -> bool:
-    """Download HLS m3u8 stream to local file using FFmpeg with clean AAC audio or chunk-by-chunk fallback."""
+    """Download HLS m3u8 stream using lightning-fast stream copy (-c copy) without re-encoding."""
     ffmpeg_bin = shutil.which("ffmpeg") or shutil.which("ffmpeg.exe")
     if not ffmpeg_bin:
         # Try bundled FFmpeg from DramaBite
@@ -501,13 +792,13 @@ async def download_hls_stream(stream_url: str, output_path: str) -> bool:
             "-reconnect_streamed", "1", "-reconnect_delay_max", "5",
             "-headers", headers_str,
             "-i", stream_url,
-            "-c:v", "copy",
-            "-c:a", "aac", "-b:a", "128k",
+            "-c", "copy",
+            "-bsf:a", "aac_adtstoasc",
             "-movflags", "+faststart",
             output_path
         ]
         try:
-            result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=600)
+            result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=300)
             if result.returncode == 0 and os.path.isfile(output_path) and os.path.getsize(output_path) > 1024 * 50:
                 return True
         except Exception as e:
@@ -548,34 +839,29 @@ async def download_hls_stream(stream_url: str, output_path: str) -> bool:
 
 
 async def backup_online_episode(app: Client, ep: dict, manifest: dict, channel_id_int: int) -> bool:
-    """Download online DramaBite episode via bypass, convert to MP4, and upload to Telegram."""
+    """Download online DramaBite episode via fast stream copy and upload to Telegram."""
     ep_id = ep["id"]
     show_title = ep["show_title"]
     ep_num = ep["episode_number"]
     stream_url = ep["stream_url"]
     poster_url = ep.get("poster_url", "")
 
-    print(f"  [Online] Download + Convert + Upload: {show_title} EP{ep_num}...", flush=True)
+    print(f"  ⚡ [Online Fast] Download + Upload: {show_title} EP{ep_num}...", flush=True)
 
     with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as tf:
         temp_path = tf.name
 
     thumb_path = temp_path + ".thumb.jpg"
-    converted_path = None
 
     try:
         ok = await download_hls_stream(stream_url, temp_path)
         if not ok or not os.path.isfile(temp_path) or os.path.getsize(temp_path) < 1024 * 50:
-            print(f"  Download failed: {show_title} EP{ep_num}", flush=True)
+            print(f"  ❌ Download failed: {show_title} EP{ep_num}", flush=True)
             return False
 
-        # Convert to MP4 if needed (HLS -> MP4 should already be .mp4, but double-check)
-        final_path = convert_to_mp4(temp_path)
-        if final_path != temp_path:
-            converted_path = final_path
-
+        final_path = temp_path
         part_size_mb = round(os.path.getsize(final_path) / (1024 * 1024), 2)
-        print(f"  Downloaded {part_size_mb:.1f} MB as MP4. Uploading to Telegram...", flush=True)
+        print(f"  ✅ Fast Downloaded {part_size_mb:.1f} MB in seconds! Uploading to Telegram...", flush=True)
 
         duration, width, height, ffmpeg_thumb = extract_video_metadata(final_path, thumb_path)
         thumb_file = ffmpeg_thumb
@@ -639,6 +925,11 @@ async def backup_online_episode(app: Client, ep: dict, manifest: dict, channel_i
         }
         save_manifest(manifest)
         await sync_to_google_sheet(ep_id, manifest[ep_id])
+        print(f"  🎉 Upload ជោគជ័យ! (Message ID: {msg.id})", flush=True)
+        return True
+    except Exception as err:
+        print(f"  ❌ Error: {err}", flush=True)
+        return False
     finally:
         for f in [temp_path, thumb_path]:
             try:
