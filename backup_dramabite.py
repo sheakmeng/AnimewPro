@@ -771,10 +771,9 @@ def convert_to_mp4(input_path: str) -> str:
 
 
 async def download_hls_stream(stream_url: str, output_path: str) -> bool:
-    """Download HLS m3u8 stream using lightning-fast stream copy (-c copy) without re-encoding."""
+    """Download HLS stream via FFmpeg or robust multi-threaded TS chunk downloader for Android."""
     ffmpeg_bin = shutil.which("ffmpeg") or shutil.which("ffmpeg.exe")
     if not ffmpeg_bin:
-        # Try bundled FFmpeg from DramaBite
         bundled = os.path.join(DRAMABITE_BASE_DIR, "ffmpeg", "ffmpeg.exe")
         if os.path.isfile(bundled):
             ffmpeg_bin = bundled
@@ -801,40 +800,72 @@ async def download_hls_stream(stream_url: str, output_path: str) -> bool:
             result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=300)
             if result.returncode == 0 and os.path.isfile(output_path) and os.path.getsize(output_path) > 1024 * 50:
                 return True
-        except Exception as e:
-            print(f"  ⚠️ FFmpeg error: {e}", flush=True)
+        except Exception:
+            pass
 
-    # Fallback: download m3u8 chunks
-    print("  🔄 FFmpeg failed, trying direct chunk download...", flush=True)
+    # Native Python Fast Multi-threaded Downloader (for Android & devices without FFmpeg)
+    print("  ⚡ [Python Turbo] Multi-threaded direct chunk download...", flush=True)
     try:
         hdrs = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36",
             "Referer": "https://www.dramabite.media/",
             "Origin": "https://www.dramabite.media"
         }
-        r = requests.get(stream_url, headers=hdrs, timeout=15)
-        if r.status_code != 200:
-            return False
         from urllib.parse import urljoin
-        lines = r.text.splitlines()
-        ts_urls = [urljoin(stream_url, l.strip()) for l in lines if l.strip() and not l.strip().startswith("#")]
+        from concurrent.futures import ThreadPoolExecutor
+
+        # Fetch playlist (handle Master Playlist recursion)
+        current_url = stream_url
+        ts_urls = []
+        for _ in range(3):
+            r = requests.get(current_url, headers=hdrs, timeout=15)
+            if r.status_code != 200:
+                return False
+            lines = [l.strip() for l in r.text.splitlines() if l.strip() and not l.strip().startswith("#")]
+            if not lines:
+                return False
+            
+            # Check if lines point to sub-m3u8 or TS segments
+            if any(".m3u8" in l.lower() or "m3u8" in l.lower() for l in lines):
+                # Pick highest quality / last sub-playlist
+                sub_candidates = [l for l in lines if ".m3u8" in l.lower() or "m3u8" in l.lower()]
+                current_url = urljoin(current_url, sub_candidates[-1])
+                continue
+            else:
+                ts_urls = [urljoin(current_url, l) for l in lines]
+                break
+
         if not ts_urls:
             return False
-        with open(output_path + ".ts", "wb") as fout:
-            for i, ts in enumerate(ts_urls, 1):
-                for _ in range(3):
-                    try:
-                        chunk = requests.get(ts, headers=hdrs, timeout=12)
-                        if chunk.status_code == 200:
-                            fout.write(chunk.content)
-                            break
-                    except Exception:
-                        time.sleep(1)
-        if os.path.getsize(output_path + ".ts") > 1024 * 50:
-            os.rename(output_path + ".ts", output_path)
+
+        # Multi-threaded download
+        chunks_data = [None] * len(ts_urls)
+
+        def _fetch_chunk(idx_url):
+            idx, u = idx_url
+            for _ in range(3):
+                try:
+                    res = requests.get(u, headers=hdrs, timeout=12)
+                    if res.status_code == 200 and len(res.content) > 0:
+                        return idx, res.content
+                except Exception:
+                    time.sleep(0.5)
+            return idx, b""
+
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            for idx, content in ex.map(_fetch_chunk, enumerate(ts_urls)):
+                chunks_data[idx] = content
+
+        # Write sequentially to output file
+        with open(output_path, "wb") as fout:
+            for c in chunks_data:
+                if c:
+                    fout.write(c)
+
+        if os.path.isfile(output_path) and os.path.getsize(output_path) > 1024 * 50:
             return True
     except Exception as e:
-        print(f"  ⚠️ Chunk download error: {e}", flush=True)
+        print(f"  ❌ Direct chunk download error: {e}", flush=True)
     return False
 
 
