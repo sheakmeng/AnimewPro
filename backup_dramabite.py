@@ -173,12 +173,47 @@ def extract_video_metadata(video_path: str, thumb_out_path: str):
 
     return duration, width, height, (thumb_out_path if thumb_created else None)
 
+def fetch_dramabite_posters_map():
+    """Fetches all drama titles and their poster covers from DramaBite API."""
+    posters_cache = {}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.dramabite.media",
+        "Referer": "https://www.dramabite.media/"
+    }
+    for page in range(10):
+        try:
+            url = f"https://www.dramabite.media/short_video/video_svr/homepage?page={page}"
+            r = requests.get(url, headers=headers, timeout=10)
+            if r.status_code != 200:
+                break
+            data = r.json()
+            modules = data.get("module_list") or []
+            if not modules:
+                break
+            for mod in modules:
+                for v in mod.get("video_list") or []:
+                    title = v.get("title")
+                    cover = v.get("cover_url") or v.get("video_cover")
+                    if title and cover:
+                        clean_cover = cover.lstrip("/")
+                        full_img = f"https://cdn-oss.miniepisode.media/{clean_cover}"
+                        norm_title = re.sub(r'[^a-zA-Z0-9]', '', title).lower()
+                        posters_cache[norm_title] = full_img
+        except Exception:
+            break
+    return posters_cache
+
 def scan_dramabite_downloads(target_dir=None):
     """Recursively scan DramaBite directory for video episodes."""
     downloads_dir = target_dir or DRAMABITE_DOWNLOADS
     if not os.path.isdir(downloads_dir):
         print(f"⚠️ ថត DramaBite មិនទាន់មាននៅ: {downloads_dir}")
         return []
+
+    print("🖼️ កំពុងទាញយក Poster ផ្លូវការពីរឿងទាំងអស់លើ DramaBite API...", flush=True)
+    posters_cache = fetch_dramabite_posters_map()
 
     video_exts = {".mp4", ".mkv", ".ts", ".mov", ".m4v"}
     image_exts = {".jpg", ".jpeg", ".png", ".webp"}
@@ -207,6 +242,17 @@ def scan_dramabite_downloads(target_dir=None):
                 base_name = os.path.splitext(f)[0]
                 show_title = re.sub(r'_(?:EP|Episode|_)?\d+.*$', '', base_name, flags=re.IGNORECASE).strip() or base_name
 
+            # Match Official Poster
+            norm_show = re.sub(r'[^a-zA-Z0-9]', '', show_title).lower()
+            resolved_poster = posters_cache.get(norm_show, "")
+            if not resolved_poster:
+                for k, v in posters_cache.items():
+                    if norm_show in k or k in norm_show:
+                        resolved_poster = v
+                        break
+            if not resolved_poster and folder_poster:
+                resolved_poster = folder_poster
+
             # Episode Number
             m = re.search(r'(?:EP|Episode|[_-])\s*(\d+)', f, re.IGNORECASE)
             if not m:
@@ -225,7 +271,7 @@ def scan_dramabite_downloads(target_dir=None):
                 "episode_number": ep_num,
                 "local_file_path": full_path,
                 "file_size_mb": round(os.path.getsize(full_path) / (1024 * 1024), 2),
-                "poster_url": folder_poster,
+                "poster_url": resolved_poster,
                 "synopsis": f"រឿងភាគ {show_title} កម្រិតច្បាស់ HD ទាញយកតាមរយៈ DramaBite",
                 "source": "dramabite"
             })
@@ -294,7 +340,7 @@ async def backup_dramabite_episode(app: Client, ep: dict, manifest: dict, channe
             "total_parts": 1,
             "file_size_mb": part_size_mb,
             "original_url": file_path,
-            "poster_url": "",
+            "poster_url": ep.get("poster_url") or "",
             "synopsis": ep.get("synopsis", ""),
             "source": "dramabite",
             "backed_up_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
