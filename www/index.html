@@ -986,6 +986,15 @@
       background: #000;
     }
 
+    /* Block native browser download button & menu */
+    video::-internal-media-controls-download-button,
+    video::-webkit-media-controls-download-button {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+
     /* Video Quick Controls */
     /* Ultra-Sleek Video Quick Controls Bar */
     .player-quick-controls {
@@ -2398,7 +2407,7 @@
   </div>
 
   <div class="player-wrap" id="player-wrap">
-    <video id="player" controls playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5"></video>
+    <video id="player" controls controlslist="nodownload noplaybackrate nofullscreen" disablePictureInPicture oncontextmenu="return false;" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5"></video>
     <button id="btn-floating-fs" class="floating-fs-btn" title="ពង្រីកធំ (Fullscreen)">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
@@ -2779,6 +2788,11 @@ let playbackSpeedIdx = 0;
 const speeds = [1.0, 1.25, 1.5, 2.0];
 
 const playerEl = document.getElementById("player");
+if (playerEl) {
+  playerEl.setAttribute("controlslist", "nodownload noplaybackrate nofullscreen");
+  playerEl.setAttribute("disablePictureInPicture", "true");
+  playerEl.oncontextmenu = (e) => e.preventDefault();
+}
 
 // Telegram User Initialization
 function initTelegramUser() {
