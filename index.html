@@ -3572,15 +3572,59 @@ async function playEpisode(idx) {
     }
 
     if (isHLS && typeof Hls !== 'undefined' && Hls.isSupported()) {
-      // Use hls.js for Android / Telegram WebApp (no native HLS support)
+      // Custom Hls Loader to fix DramaBite's invalid audio codec string:
+      // DramaBite m3u8 uses CODECS="avc1...,mp4a.40" which Chromium/Android rejects.
+      // Rewriting it to "mp4a.40.2" forces Chromium to create the Audio SourceBuffer.
+      class DramaBiteHlsLoader extends Hls.DefaultConfig.loader {
+        constructor(config) {
+          super(config);
+          const origLoad = this.load.bind(this);
+          this.load = function(context, config, callbacks) {
+            const origSuccess = callbacks.onSuccess;
+            callbacks.onSuccess = function(response, stats, ctx, networkDetails) {
+              if (response && typeof response.data === 'string') {
+                response.data = response.data.replace(/mp4a\.40(?![.\d])/g, 'mp4a.40.2');
+              }
+              origSuccess(response, stats, ctx, networkDetails);
+            };
+            origLoad(context, config, callbacks);
+          };
+        }
+      }
+
       const hls = new Hls({
         enableWorker: false,
         lowLatencyMode: false,
+        loader: DramaBiteHlsLoader,
         defaultAudioCodec: 'mp4a.40.2',
         xhrSetup: (xhr) => {
           xhr.setRequestHeader('Origin', 'https://www.dramabite.media');
         }
       });
+
+      hls.on(Hls.Events.MANIFEST_LOADED, (event, data) => {
+        if (data.levels) {
+          data.levels.forEach(lvl => {
+            if (lvl.audioCodec && lvl.audioCodec.includes('mp4a.40')) {
+              lvl.audioCodec = 'mp4a.40.2';
+            }
+          });
+        }
+        if (data.audioTracks) {
+          data.audioTracks.forEach(track => {
+            if (track.audioCodec && track.audioCodec.includes('mp4a.40')) {
+              track.audioCodec = 'mp4a.40.2';
+            }
+          });
+        }
+      });
+
+      hls.on(Hls.Events.BUFFER_CODECS, (event, data) => {
+        if (data.audio && data.audio.codec && data.audio.codec.includes('mp4a.40')) {
+          data.audio.codec = 'mp4a.40.2';
+        }
+      });
+
       hls.loadSource(url);
       hls.attachMedia(playerEl);
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
@@ -4137,6 +4181,15 @@ if (volBtn) {
 }
 
 if (playerEl) {
+  playerEl.addEventListener("click", () => {
+    if (playerEl.muted) {
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
+      if (volBtn) volBtn.classList.add("active");
+      const txt = document.getElementById("ctrl-vol-text");
+      if (txt) txt.textContent = "🔊 សំឡេង";
+    }
+  });
   playerEl.addEventListener("ended", () => {
     if (isAutoNext && currentEpIndex < currentEpisodes.length - 1) {
       const nextIdx = currentEpIndex + 1;
