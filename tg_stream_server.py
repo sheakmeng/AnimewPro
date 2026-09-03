@@ -255,9 +255,7 @@ async def start_server():
     server_app.router.add_get("/", handle_home)
     server_app.router.add_get("/status", handle_home)
     server_app.router.add_get("/stream/{message_id}", handle_stream)
-    server_app.router.add_head("/stream/{message_id}", handle_stream)
     server_app.router.add_get("/stream/{channel_id}/{message_id}", handle_stream)
-    server_app.router.add_head("/stream/{channel_id}/{message_id}", handle_stream)
 
     runner = web.AppRunner(server_app)
     await runner.setup()
