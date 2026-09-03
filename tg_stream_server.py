@@ -184,7 +184,11 @@ async def handle_stream(request: web.Request) -> web.StreamResponse:
             "Content-Range": f"bytes {start}-{end}/{file_size}",
             "Content-Length": str(content_length),
             "Accept-Ranges": "bytes",
-            "Content-Disposition": f'inline; filename="{file_name}"'
+            "Content-Disposition": f'inline; filename="{file_name}"',
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+            "Access-Control-Allow-Headers": "Range, Origin, Content-Type, Accept",
+            "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges, Content-Type"
         }
     else:
         start = 0
@@ -195,7 +199,11 @@ async def handle_stream(request: web.Request) -> web.StreamResponse:
             "Content-Type": mime_type,
             "Content-Length": str(content_length),
             "Accept-Ranges": "bytes",
-            "Content-Disposition": f'inline; filename="{file_name}"'
+            "Content-Disposition": f'inline; filename="{file_name}"',
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+            "Access-Control-Allow-Headers": "Range, Origin, Content-Type, Accept",
+            "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges, Content-Type"
         }
 
     # Head request only returns headers
