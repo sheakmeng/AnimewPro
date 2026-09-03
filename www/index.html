@@ -3241,7 +3241,7 @@ function buildShowsFromManifest() {
   const pendingSyncShows = [];
 
   Object.values(showMap).forEach(s => {
-    const hasPlayableUrl = s.episodes.some(ep => ep.video_url && ep.video_url.startsWith("http") && !ep.video_url.includes("miniepisode.media"));
+    const hasPlayableUrl = s.episodes.some(ep => ep.telegram_message_id || (ep.video_url && ep.video_url.startsWith("http") && !ep.video_url.includes("miniepisode.media")));
     if (hasPlayableUrl) {
       playableShows.push(s);
     } else {
@@ -3812,11 +3812,13 @@ async function playEpisode(idx) {
     }
   }
 
-  // Check if Telegram Cloud Stream Server is active
-  const tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || "";
+  // Check if Telegram Cloud Stream Server is active (Public HTTPS Endpoint)
+  const defaultTgServer = "https://bracelet-how-penalties-heel.trycloudflare.com";
+  const tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
   let url = (ep.video_url || "").trim();
 
-  if (tgStreamServer && ep.telegram_message_id) {
+  // If episode has a backed-up Telegram message, stream directly from Telegram Cloud!
+  if (ep.telegram_message_id && tgStreamServer) {
     url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
   }
 
