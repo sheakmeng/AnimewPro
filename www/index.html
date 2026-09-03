@@ -3232,20 +3232,24 @@ function buildShowsFromManifest() {
     return 0;
   };
 
-  biteShows.sort(sortNewestFirst);
-  oraShows.sort(sortNewestFirst);
-  otherShows.sort(sortNewestFirst);
+  // Group shows by whether they have verified playable direct streaming links
+  const playableShows = [];
+  const pendingSyncShows = [];
 
-  // Smart Interleaving (ឆ្លាស់គ្នា 1 DramaBite, 1 Dramaora, 1 DramaBite, 1 Dramaora...)
-  const interleaved = [];
-  const maxLen = Math.max(biteShows.length, oraShows.length);
-  for (let i = 0; i < maxLen; i++) {
-    if (i < biteShows.length) interleaved.push(biteShows[i]);
-    if (i < oraShows.length) interleaved.push(oraShows[i]);
-  }
-  otherShows.forEach(s => interleaved.push(s));
+  Object.values(showMap).forEach(s => {
+    const hasPlayableUrl = s.episodes.some(ep => ep.video_url && ep.video_url.startsWith("http") && !ep.video_url.includes("miniepisode.media"));
+    if (hasPlayableUrl) {
+      playableShows.push(s);
+    } else {
+      pendingSyncShows.push(s);
+    }
+  });
 
-  allItems = interleaved;
+  playableShows.sort(sortNewestFirst);
+  pendingSyncShows.sort(sortNewestFirst);
+
+  // Prioritize 100% playable streaming shows FIRST so spotlight & top grid cards play instantly!
+  allItems = [...playableShows, ...pendingSyncShows];
   filteredItems = [...allItems];
 }
 
@@ -3786,9 +3790,24 @@ async function playEpisode(idx) {
     btn.classList.toggle("active", i === idx);
   });
 
-  if (playerEl && ep.video_url) {
-    const url = ep.video_url;
+  const url = (ep.video_url || "").trim();
+  if (!url || !url.startsWith("http") || url.includes("miniepisode.media")) {
+    showToast(`⚠️ ភាគទី ${epNum} មិនទាន់អាចចាក់លើ Web បានទេ (Server កំពុង Sync)។ សូមជ្រើសរើសរឿង Dramaora ដើម្បីទស្សនា!`);
+    if (playerEl) {
+      playerEl.pause();
+      playerEl.removeAttribute("src");
+      try { playerEl.load(); } catch(e) {}
+    }
+    return;
+  }
+
+  if (playerEl && url) {
     const isHLS = url.includes(".m3u8") || url.includes("m3u8");
+
+    playerEl.onerror = () => {
+      console.warn("Playback error on URL:", url);
+      showToast("⚠️ បរាជ័យក្នុងការចាក់វីដេអូ (Server Network Error) សូមសាកល្បងរឿងផ្សេងទៀត");
+    };
 
     // Force player to be unmuted with full volume
     playerEl.muted = false;

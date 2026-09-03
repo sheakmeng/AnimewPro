@@ -154,7 +154,21 @@ class BotControllerWidget(QWidget):
         self.btn_stop_bot.setEnabled(False)
 
     def set_menu_button(self):
-        bot_token = "8664822430:AAFW9z9BL1KLt-_tYypVM4zqnWWBmoXkzuw"
+        env_file = os.path.join(self.workspace_dir, ".env")
+        if os.path.isfile(env_file):
+            try:
+                with open(env_file, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line and not line.startswith("#") and "=" in line:
+                            k, v = line.split("=", 1)
+                            os.environ[k.strip()] = v.strip().strip('"').strip("'")
+            except Exception:
+                pass
+        bot_token = os.getenv("TG_BOT_TOKEN", "").strip().strip('"').strip("'")
+        if not bot_token:
+            QMessageBox.warning(self, "Error", "TG_BOT_TOKEN not found in .env!")
+            return
         url = f"https://api.telegram.org/bot{bot_token}/setChatMenuButton"
         payload = {
             "menu_button": {
