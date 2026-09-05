@@ -3999,17 +3999,52 @@ async function playEpisode(idx) {
         });
       }
     } else {
-      // Direct MP4 or other format
+      // Direct MP4 or Stream Server format
+      try { playerEl.pause(); } catch(e) {}
       playerEl.src = url;
-      playerEl.muted = false;
-      playerEl.volume = 1.0;
-      playerEl.playbackRate = speeds[playbackSpeedIdx];
-      const p = playerEl.play();
-      if (p !== undefined && p.catch) {
-        p.catch(() => {
-          playerEl.muted = true;
-          playerEl.play().catch(e => console.warn("Muted direct:", e));
-        });
+      try { playerEl.load(); } catch(e) {}
+      playerEl.playbackRate = speeds[playbackSpeedIdx] || 1.0;
+
+      const startPlayback = () => {
+        playerEl.muted = false;
+        playerEl.volume = 1.0;
+        const playPromise = playerEl.play();
+        if (playPromise !== undefined && playPromise.catch) {
+          playPromise.catch(err => {
+            console.warn("Unmuted playback restricted by browser, switching to muted autoplay:", err);
+            playerEl.muted = true;
+            const volTxt = document.getElementById("ctrl-vol-text");
+            const volBtn = document.getElementById("ctrl-volume");
+            if (volTxt) volTxt.textContent = "🔇 ស្ងាត់";
+            if (volBtn) volBtn.classList.remove("active");
+            
+            playerEl.play().catch(e => console.warn("Muted playback error:", e));
+
+            const unmuteOnInteraction = () => {
+              playerEl.muted = false;
+              playerEl.volume = 1.0;
+              if (volTxt) volTxt.textContent = "🔊 សំឡេង";
+              if (volBtn) volBtn.classList.add("active");
+            };
+            document.addEventListener('click', unmuteOnInteraction, { once: true });
+            document.addEventListener('touchstart', unmuteOnInteraction, { once: true });
+          });
+        }
+      };
+
+      if (playerEl.readyState >= 1) {
+        startPlayback();
+      } else {
+        let played = false;
+        const onReady = () => {
+          if (!played) {
+            played = true;
+            startPlayback();
+          }
+        };
+        playerEl.onloadedmetadata = onReady;
+        playerEl.oncanplay = onReady;
+        setTimeout(onReady, 250);
       }
     }
   }
