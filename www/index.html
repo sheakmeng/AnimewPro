@@ -2678,6 +2678,10 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
       <span>Telegram</span>
     </button>
+    <button class="ctrl-pill-btn" id="ctrl-server-cfg" style="background:rgba(245,158,11,0.15); border-color:rgba(245,158,11,0.4); color:#fbbf24;" title="កំណត់ Server URL (Render / Tunnel)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>Server</span>
+    </button>
     <button class="ctrl-pill-btn ctrl-pill-nav" id="ctrl-prev" title="ភាគមុន">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2.5"/></svg>
       <span>ភាគមុន</span>
@@ -3810,6 +3814,30 @@ async function playEpisode(idx) {
   const defaultTgServer = "https://bracelet-how-penalties-heel.trycloudflare.com";
   const tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
 
+  // Handle Server Cfg Button
+  const serverCfgBtn = document.getElementById("ctrl-server-cfg");
+  if (serverCfgBtn) {
+    serverCfgBtn.onclick = () => {
+      const curSrv = localStorage.getItem("TG_STREAM_SERVER") || defaultTgServer;
+      const val = prompt("🌐 បញ្ចូល Telegram Stream Server URL របស់បង (ឧទាហរណ៍ ៖ https://dramaflix-stream-server.onrender.com) ៖", curSrv);
+      if (val !== null) {
+        const trimmed = val.trim();
+        if (trimmed && trimmed.startsWith("http")) {
+          localStorage.setItem("TG_STREAM_SERVER", trimmed);
+          showToast("✅ បានរក្សាទុក Stream Server URL ថ្មី!");
+          if (typeof currentEpIndex === "number" && currentEpIndex >= 0) {
+            playEpisode(currentEpIndex);
+          }
+        } else if (!trimmed) {
+          localStorage.removeItem("TG_STREAM_SERVER");
+          showToast("🔄 បាន Reset ទៅកាន់ Server ដើម!");
+        } else {
+          alert("⚠️ សូមបញ្ចូល URL ដែលផ្តើមដោយ https:// ឬ http://");
+        }
+      }
+    };
+  }
+
   let url = "";
   if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
     url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
@@ -3833,7 +3861,7 @@ async function playEpisode(idx) {
 
     playerEl.onerror = () => {
       console.warn("Playback error on URL:", url);
-      const fallbackUrl = (ep.video_url || "").trim();
+      const fallbackUrl = (ep.video_url || ep.original_url || "").trim();
       if (url.includes("/stream/") && fallbackUrl && fallbackUrl.startsWith("http") && !fallbackUrl.includes("miniepisode.media")) {
         console.log("Switching to original CDN fallback:", fallbackUrl);
         playerEl.onerror = null;
@@ -3841,8 +3869,13 @@ async function playEpisode(idx) {
         playerEl.play().catch(e => console.warn("Fallback play error:", e));
         return;
       }
-      showToast("⚠️ បរាជ័យក្នុងការចាក់វីដេអូ (Server Network Error) សូមសាកល្បងរឿងផ្សេងទៀត");
+      if (url.includes("/stream/")) {
+        showToast("⚠️ មិនអាចភ្ជាប់ Stream Server! ចុចប៊ូតុង [Server] ឬ [Telegram] ខាងក្រោម");
+      } else {
+        showToast("⚠️ បរាជ័យក្នុងការចាក់វីដេអូ (Server Network Error) សូមសាកល្បងរឿងផ្សេងទៀត");
+      }
     };
+
 
     // Force player to be unmuted with full volume
     playerEl.muted = false;
