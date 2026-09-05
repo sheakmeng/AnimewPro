@@ -3812,7 +3812,14 @@ async function playEpisode(idx) {
   } catch(e) {}
 
   const defaultTgServer = "https://soul-negotiation-par-savings.trycloudflare.com";
-  const tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
+  let tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
+
+  // Auto-upgrade stale trycloudflare URLs in localStorage to active defaultTgServer
+  if (tgStreamServer && tgStreamServer.includes(".trycloudflare.com") && tgStreamServer !== defaultTgServer) {
+    console.log("Upgrading outdated trycloudflare URL in localStorage to:", defaultTgServer);
+    localStorage.setItem("TG_STREAM_SERVER", defaultTgServer);
+    tgStreamServer = defaultTgServer;
+  }
 
   // Handle Server Cfg Button
   const serverCfgBtn = document.getElementById("ctrl-server-cfg");
