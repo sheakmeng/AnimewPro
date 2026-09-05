@@ -3159,11 +3159,11 @@ async function syncLiveManifestBackground() {
           backupManifest = gasData;
           localStorage.setItem(STORAGE_MANIFEST_KEY, JSON.stringify(backupManifest));
           
+          buildShowsFromManifest();
+          renderSpotlight();
+          renderGrid("main-drama-grid", allItems);
+          updateAccountStats();
           if (newCount > oldCount) {
-            buildShowsFromManifest();
-            renderSpotlight();
-            renderGrid("main-drama-grid", allItems);
-            updateAccountStats();
             showToast("✨ មានការ Backup រឿងថ្មីចូល!");
           }
         }
@@ -3202,13 +3202,15 @@ function buildShowsFromManifest() {
       showMap[showId].latest_backup_time = item.backed_up_at;
     }
 
+    const resolvedMsgId = parseInt(item.telegram_message_id || item.message_id || (Array.isArray(item.telegram_message_ids) ? item.telegram_message_ids[0] : 0), 10) || null;
+
     showMap[showId].episodes.push({
       id: epId,
       show_id: showId,
       title: item.show_title ? `${item.show_title} ភាគ ${item.episode_number}` : `ភាគ ${item.episode_number}`,
       episode_number: parseInt(item.episode_number, 10) || 1,
       video_url: item.original_url || item.hls_source_url || "",
-      telegram_message_id: item.telegram_message_id,
+      telegram_message_id: resolvedMsgId,
       file_size_mb: item.file_size_mb,
       backed_up_at: item.backed_up_at || ""
     });
