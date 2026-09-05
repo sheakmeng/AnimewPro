@@ -3847,8 +3847,12 @@ async function playEpisode(idx) {
     };
   }
 
+  if (!tgStreamServer || !tgStreamServer.startsWith("http")) {
+    tgStreamServer = defaultTgServer;
+  }
+
   let url = "";
-  if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
+  if (ep.telegram_message_id) {
     url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
   } else {
     url = (ep.video_url || ep.original_url || "").trim();
