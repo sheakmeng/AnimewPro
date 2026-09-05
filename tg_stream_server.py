@@ -79,7 +79,7 @@ app = Client(
 @web.middleware
 async def cors_middleware(request, handler):
     if request.method == "OPTIONS":
-        response = web.Response()
+        response = web.Response(status=204)
     else:
         try:
             response = await handler(request)
@@ -88,8 +88,9 @@ async def cors_middleware(request, handler):
 
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Methods"] = "GET, HEAD, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "Range, Origin, Content-Type, Accept"
+    response.headers["Access-Control-Allow-Headers"] = "Range, Origin, Content-Type, Accept, User-Agent, Referer, X-Requested-With"
     response.headers["Access-Control-Expose-Headers"] = "Content-Range, Content-Length, Accept-Ranges, Content-Type"
+    response.headers["Access-Control-Max-Age"] = "86400"
     return response
 
 
