@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: dramaflix-stream-server
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python tg_stream_server.py
+    envVars:
+      - key: TG_API_ID
+        sync: false
+      - key: TG_API_HASH
+        sync: false
+      - key: TG_BOT_TOKEN
+        sync: false
+      - key: TG_CHANNEL_ID
+        sync: false
+      - key: PORT
+        value: 10000

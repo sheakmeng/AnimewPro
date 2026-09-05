@@ -3800,15 +3800,23 @@ async function playEpisode(idx) {
   }
 
   // Priority 1: Telegram Cloud Stream Server (Fastest, High-bandwidth MTProto 206 Stream)
+  try {
+    const _urlParams = new URLSearchParams(window.location.search);
+    if (_urlParams.get("stream_server")) {
+      localStorage.setItem("TG_STREAM_SERVER", _urlParams.get("stream_server"));
+    }
+  } catch(e) {}
+
   const defaultTgServer = "https://bracelet-how-penalties-heel.trycloudflare.com";
   const tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
 
   let url = "";
-  if (ep.telegram_message_id && tgStreamServer) {
+  if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
     url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
   } else {
-    url = (ep.video_url || "").trim();
+    url = (ep.video_url || ep.original_url || "").trim();
   }
+
 
   if (!url || (!url.startsWith("http") && !url.startsWith("https"))) {
     showToast(`⚠️ ភាគទី ${epNum} មិនទាន់មានវីដេអូសម្រាប់ចាក់ទេ!`);

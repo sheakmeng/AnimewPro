@@ -1,4 +1,6 @@
 pyrofork
 tgcrypto
+aiohttp
 httpx
 requests
+
