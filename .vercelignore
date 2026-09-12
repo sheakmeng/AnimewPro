@@ -1,0 +1,12 @@
+*.py
+*.session
+*.bat
+*.apk
+*.png
+requirements.txt
+Procfile
+render.yaml
+node_modules
+desktop_admin
+android
+__pycache__
