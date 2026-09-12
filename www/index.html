@@ -2655,7 +2655,7 @@
   </div>
 
   <div class="player-wrap" id="player-wrap">
-    <video id="player" controls controlslist="nodownload noplaybackrate nofullscreen" disablePictureInPicture oncontextmenu="return false;" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5"></video>
+    <video id="player" autoplay preload="auto" controls controlslist="nodownload noplaybackrate nofullscreen" disablePictureInPicture oncontextmenu="return false;" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5"></video>
     <button id="btn-floating-fs" class="floating-fs-btn" title="ពង្រីកធំ (Fullscreen)">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
@@ -3905,16 +3905,21 @@ async function playEpisode(idx) {
   }
 
   const fallbackUrl = (ep.video_url || ep.original_url || "").trim();
+  // Valid high-speed CDN: xtv.media / mp4 direct files that work without token expiry
+  const hasValidCdn = fallbackUrl && fallbackUrl.startsWith("http") && !fallbackUrl.includes("miniepisode.media");
+
   let url = "";
-  if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
+
+  // Strategy: If there is a valid high-speed direct CDN link (like xtv.media 1080p MP4), play it directly for instant start!
+  // If CDN link is expired (e.g. miniepisode.media 403) or missing, use Telegram Stream Server!
+  if (hasValidCdn) {
+    url = fallbackUrl;
+  } else if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
     const isServerUp = await checkStreamServerAlive(tgStreamServer);
     if (isServerUp) {
       url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
-    } else if (fallbackUrl && fallbackUrl.startsWith("http")) {
-      console.log("⚡ Stream server unreachable. Using instant CDN directly:", fallbackUrl);
-      url = fallbackUrl;
     } else {
-      url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
+      url = fallbackUrl;
     }
   } else {
     url = fallbackUrl;
@@ -3933,21 +3938,19 @@ async function playEpisode(idx) {
   if (playerEl && url) {
     const isHLS = url.includes(".m3u8") || url.includes("m3u8");
 
-    // Fast Watchdog: If video takes > 3.5s to start buffering from stream server, switch to CDN immediately
+    // Watchdog for Stream Server: if takes > 4s, try fallback or notify
     let watchdogTimer = null;
-    if (url.includes("/stream/") && fallbackUrl && fallbackUrl.startsWith("http") && !fallbackUrl.includes("miniepisode.media")) {
+    if (url.includes("/stream/") && hasValidCdn) {
       watchdogTimer = setTimeout(() => {
         if (playerEl && playerEl.readyState < 2 && !playerEl.ended) {
-          console.warn("⚠️ Telegram Stream buffer delayed (>3.5s). Switching to fast CDN fallback...");
+          console.warn("⚠️ Telegram Stream delayed. Switching to high-speed CDN fallback...");
           showToast("⚡ ប្តូរទៅកាន់ល្បឿនលឿន CDN ស្វ័យប្រវត្តិ...");
-          window._tgServerHealthCache.isAlive = false;
-          window._tgServerHealthCache.lastChecked = Date.now();
           playerEl.onerror = null;
           playerEl.src = fallbackUrl;
           try { playerEl.load(); } catch(e) {}
           playerEl.play().catch(e => console.warn("Fallback play err:", e));
         }
-      }, 3500);
+      }, 4000);
 
       const cancelWatchdog = () => {
         if (watchdogTimer) {
@@ -3963,17 +3966,32 @@ async function playEpisode(idx) {
     playerEl.onerror = () => {
       if (watchdogTimer) { clearTimeout(watchdogTimer); watchdogTimer = null; }
       console.warn("Playback error on URL:", url);
-      if (url.includes("/stream/") && fallbackUrl && fallbackUrl.startsWith("http") && !fallbackUrl.includes("miniepisode.media")) {
+
+      // If CDN failed and Telegram stream is available, fallback to Telegram stream!
+      if (!url.includes("/stream/") && ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
+        const streamUrl = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
+        console.log("CDN failed. Switching to Telegram Stream fallback:", streamUrl);
+        showToast("⚡ ប្តូរទៅចាក់តាម Telegram Stream...");
+        playerEl.onerror = null;
+        playerEl.src = streamUrl;
+        try { playerEl.load(); } catch(e) {}
+        playerEl.play().catch(e => console.warn("Stream fallback error:", e));
+        return;
+      }
+
+      // If Telegram Stream failed and CDN is available, fallback to CDN!
+      if (url.includes("/stream/") && hasValidCdn) {
         console.log("Switching to original CDN fallback:", fallbackUrl);
-        window._tgServerHealthCache.isAlive = false;
-        window._tgServerHealthCache.lastChecked = Date.now();
+        showToast("⚡ ប្តូរទៅកាន់ល្បឿនលឿន CDN ស្វ័យប្រវត្តិ...");
         playerEl.onerror = null;
         playerEl.src = fallbackUrl;
+        try { playerEl.load(); } catch(e) {}
         playerEl.play().catch(e => console.warn("Fallback play error:", e));
         return;
       }
-      if (url.includes("/stream/")) {
-        showToast("⚠️ មិនអាចភ្ជាប់ Stream Server! ចុចប៊ូតុង [Server] ឬ [Telegram] ខាងក្រោម");
+
+      if (ep.telegram_message_id) {
+        showToast("⚠️ Link ដើមផុតកំណត់! សូមចុចប៊ូតុង [Telegram] ខាងក្រោមដើម្បីទស្សនា");
       } else {
         showToast("⚠️ បរាជ័យក្នុងការចាក់វីដេអូ (Server Network Error) សូមសាកល្បងរឿងផ្សេងទៀត");
       }
