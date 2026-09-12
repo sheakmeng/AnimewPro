@@ -2679,7 +2679,7 @@
       <span>Telegram</span>
     </button>
     <button class="ctrl-pill-btn" id="ctrl-server-cfg" style="background:rgba(245,158,11,0.15); border-color:rgba(245,158,11,0.4); color:#fbbf24;" title="កំណត់ Server URL (Render / Tunnel)">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       <span>Server</span>
     </button>
     <button class="ctrl-pill-btn ctrl-pill-nav" id="ctrl-prev" title="ភាគមុន">
@@ -3863,22 +3863,23 @@ async function playEpisode(idx) {
     }
   } catch(e) {}
 
-  const defaultTgServer = "https://soul-negotiation-par-savings.trycloudflare.com";
-  let tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
+  // Purge any expired/dead trycloudflare tunnels from localStorage
+  try {
+    const _storedSrv = localStorage.getItem("TG_STREAM_SERVER");
+    if (_storedSrv && (_storedSrv.includes("trycloudflare.com") || _storedSrv.includes("soul-negotiation"))) {
+      localStorage.removeItem("TG_STREAM_SERVER");
+      window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
+    }
+  } catch(e) {}
 
-  // Auto-upgrade stale trycloudflare URLs in localStorage to active defaultTgServer
-  if (tgStreamServer && tgStreamServer.includes(".trycloudflare.com") && tgStreamServer !== defaultTgServer) {
-    console.log("Upgrading outdated trycloudflare URL in localStorage to:", defaultTgServer);
-    localStorage.setItem("TG_STREAM_SERVER", defaultTgServer);
-    tgStreamServer = defaultTgServer;
-    window._tgServerHealthCache.lastChecked = 0;
-  }
+  const defaultTgServer = "";
+  let tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || "";
 
   // Handle Server Cfg Button
   const serverCfgBtn = document.getElementById("ctrl-server-cfg");
   if (serverCfgBtn) {
     serverCfgBtn.onclick = () => {
-      const curSrv = localStorage.getItem("TG_STREAM_SERVER") || defaultTgServer;
+      const curSrv = localStorage.getItem("TG_STREAM_SERVER") || "";
       const val = prompt("🌐 បញ្ចូល Telegram Stream Server URL របស់បង (ឧទាហរណ៍ ៖ https://dramaflix-stream-server.onrender.com) ៖", curSrv);
       if (val !== null) {
         const trimmed = val.trim();
@@ -3892,7 +3893,10 @@ async function playEpisode(idx) {
         } else if (!trimmed) {
           localStorage.removeItem("TG_STREAM_SERVER");
           window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
-          showToast("🔄 បាន Reset ទៅកាន់ Server ដើម!");
+          showToast("🔄 បាន Reset ទៅកាន់ High-Speed CDN ដើម!");
+          if (typeof currentEpIndex === "number" && currentEpIndex >= 0) {
+            playEpisode(currentEpIndex);
+          }
         } else {
           alert("⚠️ សូមបញ្ចូល URL ដែលផ្តើមដោយ https:// ឬ http://");
         }
@@ -3900,18 +3904,14 @@ async function playEpisode(idx) {
     };
   }
 
-  if (!tgStreamServer || !tgStreamServer.startsWith("http")) {
-    tgStreamServer = defaultTgServer;
-  }
-
   const fallbackUrl = (ep.video_url || ep.original_url || "").trim();
   let url = "";
-  if (ep.telegram_message_id) {
+  if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
     const isServerUp = await checkStreamServerAlive(tgStreamServer);
     if (isServerUp) {
       url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
     } else if (fallbackUrl && fallbackUrl.startsWith("http")) {
-      console.log("⚡ Telegram Stream Server is unreachable/offline. Using instant CDN fallback:", fallbackUrl);
+      console.log("⚡ Stream server unreachable. Using instant CDN directly:", fallbackUrl);
       url = fallbackUrl;
     } else {
       url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
