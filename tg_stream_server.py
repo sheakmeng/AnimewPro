@@ -64,8 +64,16 @@ BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip().strip('"').strip("'")
 DEFAULT_CHANNEL_ID = int(os.getenv("TG_CHANNEL_ID", "-1003943277744"))
 SERVER_PORT = int(os.getenv("STREAM_PORT", os.getenv("PORT", "8080")))
 
-# In-memory cache for Telegram message metadata
+# In-memory cache for Telegram message metadata & chunk 0 for 0ms instant playback
 message_cache = {}
+chunk_0_cache = {}  # key: f"{channel_id}_{message_id}", value: bytes
+MAX_CHUNK_CACHE = 40
+
+# Cached bot & channel info for instant healthcheck without MTProto RPC delays
+cached_server_info = {
+    "bot": None,
+    "channel_status": "initializing..."
+}
 
 # Pyrogram Client
 app = Client(
@@ -94,28 +102,26 @@ async def cors_middleware(request, handler):
     return response
 
 
+async def handle_ping(request: web.Request) -> web.Response:
+    """Ultra-fast 0ms ping endpoint for frontend watchdog & UptimeRobot."""
+    return web.Response(text="pong", content_type="text/plain", headers={"Access-Control-Allow-Origin": "*"})
+
+
+async def handle_healthz(request: web.Request) -> web.Response:
+    """Lightweight health endpoint."""
+    return web.json_response({"status": "ok", "service": "DramaFlixHD Video Streamer"}, headers={"Access-Control-Allow-Origin": "*"})
+
+
 async def handle_home(request: web.Request) -> web.Response:
-    """Server status & healthcheck endpoint."""
-    bot_info = None
-    try:
-        me = await app.get_me()
-        bot_info = {"id": me.id, "username": me.username, "first_name": me.first_name}
-    except Exception as e:
-        bot_info = {"error": str(e)}
-
-    channel_status = "unknown"
-    try:
-        chat = await app.get_chat(DEFAULT_CHANNEL_ID)
-        channel_status = f"Connected: {chat.title} ({chat.id})"
-    except Exception as e:
-        channel_status = f"Error: {e} (Please ensure bot is Admin in channel {DEFAULT_CHANNEL_ID})"
-
+    """Server status & healthcheck endpoint using cached connection state."""
     return web.json_response({
         "service": "DramaFlixHD Telegram Video Stream Server",
         "status": "online",
-        "bot": bot_info,
+        "bot": cached_server_info["bot"],
         "default_channel": DEFAULT_CHANNEL_ID,
-        "channel_status": channel_status,
+        "channel_status": cached_server_info["channel_status"],
+        "cached_videos": len(message_cache),
+        "cached_initial_chunks": len(chunk_0_cache),
         "stream_endpoint": "/stream/{message_id}"
     })
 
@@ -220,22 +226,45 @@ async def handle_stream(request: web.Request) -> web.StreamResponse:
     skip_initial_bytes = start % CHUNK_SIZE
     total_to_send = content_length
     bytes_sent = 0
+    cache_key = f"{channel_id}_{message_id}"
 
     try:
-        async for chunk in app.stream_media(msg, offset=offset_chunk):
-            if skip_initial_bytes > 0:
-                chunk = chunk[skip_initial_bytes:]
-                skip_initial_bytes = 0
+        # Fast-Path: If chunk 0 is in memory and requested, serve directly with 0ms MTProto latency!
+        is_first_chunk = (offset_chunk == 0)
+        if is_first_chunk and cache_key in chunk_0_cache:
+            cached_c0 = chunk_0_cache[cache_key]
+            to_send_from_cache = cached_c0[skip_initial_bytes:] if skip_initial_bytes > 0 else cached_c0
+            if len(to_send_from_cache) > total_to_send:
+                to_send_from_cache = to_send_from_cache[:total_to_send]
+            if to_send_from_cache:
+                await response.write(to_send_from_cache)
+                bytes_sent += len(to_send_from_cache)
+            offset_chunk = 1
+            skip_initial_bytes = 0
 
-            if bytes_sent + len(chunk) > total_to_send:
-                chunk = chunk[: total_to_send - bytes_sent]
+        if bytes_sent < total_to_send:
+            async for chunk in app.stream_media(msg, offset=offset_chunk):
+                # Save chunk 0 into RAM cache if not already cached
+                if offset_chunk == 0 and cache_key not in chunk_0_cache and chunk:
+                    if len(chunk_0_cache) >= MAX_CHUNK_CACHE:
+                        # Evict oldest key
+                        oldest_k = next(iter(chunk_0_cache))
+                        chunk_0_cache.pop(oldest_k, None)
+                    chunk_0_cache[cache_key] = chunk
 
-            if chunk:
-                await response.write(chunk)
-                bytes_sent += len(chunk)
+                if skip_initial_bytes > 0:
+                    chunk = chunk[skip_initial_bytes:]
+                    skip_initial_bytes = 0
 
-            if bytes_sent >= total_to_send:
-                break
+                if bytes_sent + len(chunk) > total_to_send:
+                    chunk = chunk[: total_to_send - bytes_sent]
+
+                if chunk:
+                    await response.write(chunk)
+                    bytes_sent += len(chunk)
+
+                if bytes_sent >= total_to_send:
+                    break
     except (asyncio.CancelledError, ConnectionResetError):
         # Client closed video tab or sought to another point
         pass
@@ -251,17 +280,22 @@ async def start_server():
     logger.info("Connecting Telegram Client...")
     await app.start()
     me = await app.get_me()
+    cached_server_info["bot"] = {"id": me.id, "username": me.username, "first_name": me.first_name}
     logger.info(f"✅ Bot connected: @{me.username} (ID: {me.id})")
 
     try:
         chat = await app.get_chat(DEFAULT_CHANNEL_ID)
+        cached_server_info["channel_status"] = f"Connected: {chat.title} ({chat.id})"
         logger.info(f"✅ Channel connected: '{chat.title}' (ID: {chat.id})")
     except Exception as e:
+        cached_server_info["channel_status"] = f"Error: {e} (Please ensure bot is Admin in channel {DEFAULT_CHANNEL_ID})"
         logger.warning(f"⚠️ Channel connection notice: {e}")
         logger.warning(f"👉 Please make sure @{me.username} is added as Administrator in channel {DEFAULT_CHANNEL_ID}")
 
     server_app = web.Application(middlewares=[cors_middleware])
     server_app.router.add_get("/", handle_home)
+    server_app.router.add_get("/ping", handle_ping)
+    server_app.router.add_get("/healthz", handle_healthz)
     server_app.router.add_get("/status", handle_home)
     server_app.router.add_get("/stream/{message_id}", handle_stream)
     server_app.router.add_get("/stream/{channel_id}/{message_id}", handle_stream)

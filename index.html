@@ -3805,11 +3805,61 @@ async function playEpisode(idx) {
     }
   }
 
+  // Global Stream Server Health Cache & Fast Probe
+  if (typeof window._tgServerHealthCache === "undefined") {
+    window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
+  }
+
+  async function checkStreamServerAlive(serverUrl) {
+    if (!serverUrl || !serverUrl.startsWith("http")) return false;
+    // Expired quick tunnel check: fail fast with 0s delay
+    if (serverUrl.includes("trycloudflare.com") && serverUrl.includes("soul-negotiation-par-savings")) {
+      return false;
+    }
+    const now = Date.now();
+    if (window._tgServerHealthCache.url === serverUrl && (now - window._tgServerHealthCache.lastChecked) < 30000) {
+      return window._tgServerHealthCache.isAlive;
+    }
+    try {
+      const ctrl = new AbortController();
+      const tid = setTimeout(() => ctrl.abort(), 2000); // 2s fast probe
+      const res = await fetch(`${serverUrl.replace(/\/+$/, '')}/ping`, {
+        method: 'GET',
+        signal: ctrl.signal,
+        mode: 'cors',
+        cache: 'no-cache'
+      });
+      clearTimeout(tid);
+      const alive = res.ok || res.status === 200;
+      window._tgServerHealthCache = { url: serverUrl, isAlive: alive, lastChecked: now };
+      return alive;
+    } catch (e) {
+      try {
+        const ctrl2 = new AbortController();
+        const tid2 = setTimeout(() => ctrl2.abort(), 1500);
+        const res2 = await fetch(`${serverUrl.replace(/\/+$/, '')}/status`, {
+          method: 'GET',
+          signal: ctrl2.signal,
+          mode: 'cors',
+          cache: 'no-cache'
+        });
+        clearTimeout(tid2);
+        const alive2 = res2.ok || res2.status === 200;
+        window._tgServerHealthCache = { url: serverUrl, isAlive: alive2, lastChecked: now };
+        return alive2;
+      } catch(err2) {
+        window._tgServerHealthCache = { url: serverUrl, isAlive: false, lastChecked: now };
+        return false;
+      }
+    }
+  }
+
   // Priority 1: Telegram Cloud Stream Server (Fastest, High-bandwidth MTProto 206 Stream)
   try {
     const _urlParams = new URLSearchParams(window.location.search);
     if (_urlParams.get("stream_server")) {
       localStorage.setItem("TG_STREAM_SERVER", _urlParams.get("stream_server"));
+      window._tgServerHealthCache.lastChecked = 0;
     }
   } catch(e) {}
 
@@ -3821,6 +3871,7 @@ async function playEpisode(idx) {
     console.log("Upgrading outdated trycloudflare URL in localStorage to:", defaultTgServer);
     localStorage.setItem("TG_STREAM_SERVER", defaultTgServer);
     tgStreamServer = defaultTgServer;
+    window._tgServerHealthCache.lastChecked = 0;
   }
 
   // Handle Server Cfg Button
@@ -3833,12 +3884,14 @@ async function playEpisode(idx) {
         const trimmed = val.trim();
         if (trimmed && trimmed.startsWith("http")) {
           localStorage.setItem("TG_STREAM_SERVER", trimmed);
+          window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
           showToast("✅ បានរក្សាទុក Stream Server URL ថ្មី!");
           if (typeof currentEpIndex === "number" && currentEpIndex >= 0) {
             playEpisode(currentEpIndex);
           }
         } else if (!trimmed) {
           localStorage.removeItem("TG_STREAM_SERVER");
+          window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
           showToast("🔄 បាន Reset ទៅកាន់ Server ដើម!");
         } else {
           alert("⚠️ សូមបញ្ចូល URL ដែលផ្តើមដោយ https:// ឬ http://");
@@ -3851,13 +3904,21 @@ async function playEpisode(idx) {
     tgStreamServer = defaultTgServer;
   }
 
+  const fallbackUrl = (ep.video_url || ep.original_url || "").trim();
   let url = "";
   if (ep.telegram_message_id) {
-    url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
+    const isServerUp = await checkStreamServerAlive(tgStreamServer);
+    if (isServerUp) {
+      url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
+    } else if (fallbackUrl && fallbackUrl.startsWith("http")) {
+      console.log("⚡ Telegram Stream Server is unreachable/offline. Using instant CDN fallback:", fallbackUrl);
+      url = fallbackUrl;
+    } else {
+      url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
+    }
   } else {
-    url = (ep.video_url || ep.original_url || "").trim();
+    url = fallbackUrl;
   }
-
 
   if (!url || (!url.startsWith("http") && !url.startsWith("https"))) {
     showToast(`⚠️ ភាគទី ${epNum} មិនទាន់មានវីដេអូសម្រាប់ចាក់ទេ!`);
@@ -3872,11 +3933,40 @@ async function playEpisode(idx) {
   if (playerEl && url) {
     const isHLS = url.includes(".m3u8") || url.includes("m3u8");
 
+    // Fast Watchdog: If video takes > 3.5s to start buffering from stream server, switch to CDN immediately
+    let watchdogTimer = null;
+    if (url.includes("/stream/") && fallbackUrl && fallbackUrl.startsWith("http") && !fallbackUrl.includes("miniepisode.media")) {
+      watchdogTimer = setTimeout(() => {
+        if (playerEl && playerEl.readyState < 2 && !playerEl.ended) {
+          console.warn("⚠️ Telegram Stream buffer delayed (>3.5s). Switching to fast CDN fallback...");
+          showToast("⚡ ប្តូរទៅកាន់ល្បឿនលឿន CDN ស្វ័យប្រវត្តិ...");
+          window._tgServerHealthCache.isAlive = false;
+          window._tgServerHealthCache.lastChecked = Date.now();
+          playerEl.onerror = null;
+          playerEl.src = fallbackUrl;
+          try { playerEl.load(); } catch(e) {}
+          playerEl.play().catch(e => console.warn("Fallback play err:", e));
+        }
+      }, 3500);
+
+      const cancelWatchdog = () => {
+        if (watchdogTimer) {
+          clearTimeout(watchdogTimer);
+          watchdogTimer = null;
+        }
+      };
+      playerEl.addEventListener('loadeddata', cancelWatchdog, { once: true });
+      playerEl.addEventListener('canplay', cancelWatchdog, { once: true });
+      playerEl.addEventListener('playing', cancelWatchdog, { once: true });
+    }
+
     playerEl.onerror = () => {
+      if (watchdogTimer) { clearTimeout(watchdogTimer); watchdogTimer = null; }
       console.warn("Playback error on URL:", url);
-      const fallbackUrl = (ep.video_url || ep.original_url || "").trim();
       if (url.includes("/stream/") && fallbackUrl && fallbackUrl.startsWith("http") && !fallbackUrl.includes("miniepisode.media")) {
         console.log("Switching to original CDN fallback:", fallbackUrl);
+        window._tgServerHealthCache.isAlive = false;
+        window._tgServerHealthCache.lastChecked = Date.now();
         playerEl.onerror = null;
         playerEl.src = fallbackUrl;
         playerEl.play().catch(e => console.warn("Fallback play error:", e));
