@@ -928,6 +928,33 @@
       justify-content: center;
     }
 
+    .center-play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 62px;
+      height: 62px;
+      background: rgba(37, 99, 235, 0.9);
+      border: 2.5px solid rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 20;
+      box-shadow: 0 0 30px rgba(37, 99, 235, 0.7);
+      transition: transform 0.15s ease, background 0.15s ease;
+      pointer-events: auto;
+    }
+    .center-play-btn:active {
+      transform: translate(-50%, -50%) scale(0.92);
+      background: rgba(29, 78, 216, 0.95);
+    }
+    .center-play-btn.hidden {
+      display: none !important;
+    }
+
     /* Native Fullscreen styling across all browsers */
     .player-wrap:fullscreen,
     .player-wrap:-webkit-full-screen,
@@ -2656,6 +2683,9 @@
 
   <div class="player-wrap" id="player-wrap">
     <video id="player" autoplay preload="auto" controls controlslist="nodownload noplaybackrate nofullscreen" disablePictureInPicture oncontextmenu="return false;" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5"></video>
+    <div id="center-play-btn" class="center-play-btn hidden" title="Play Video">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffffff" style="margin-left: 3px;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    </div>
     <button id="btn-floating-fs" class="floating-fs-btn" title="ពង្រីកធំ (Fullscreen)">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
@@ -3863,24 +3893,24 @@ async function playEpisode(idx) {
     }
   } catch(e) {}
 
+  const defaultTgServer = "https://pray-relay-genius-how.trycloudflare.com";
   // Purge dead trycloudflare tunnels (except active live one)
   try {
     const _storedSrv = localStorage.getItem("TG_STREAM_SERVER");
-    if (_storedSrv && (_storedSrv.includes("soul-negotiation") || _storedSrv.includes("bracelet-how"))) {
-      localStorage.removeItem("TG_STREAM_SERVER");
+    if (_storedSrv && _storedSrv.includes("trycloudflare.com") && !_storedSrv.includes("pray-relay-genius-how")) {
+      localStorage.setItem("TG_STREAM_SERVER", defaultTgServer);
       window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
     }
   } catch(e) {}
 
-  const defaultTgServer = "https://pray-relay-genius-how.trycloudflare.com";
   let tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
 
   // Handle Server Cfg Button
   const serverCfgBtn = document.getElementById("ctrl-server-cfg");
   if (serverCfgBtn) {
     serverCfgBtn.onclick = () => {
-      const curSrv = localStorage.getItem("TG_STREAM_SERVER") || "";
-      const val = prompt("🌐 បញ្ចូល Telegram Stream Server URL របស់បង (ឧទាហរណ៍ ៖ https://dramaflix-stream-server.onrender.com) ៖", curSrv);
+      const curSrv = localStorage.getItem("TG_STREAM_SERVER") || defaultTgServer;
+      const val = prompt("🌐 បញ្ចូល Telegram Stream Server URL របស់បង (ឧទាហរណ៍ ៖ https://pray-relay-genius-how.trycloudflare.com) ៖", curSrv);
       if (val !== null) {
         const trimmed = val.trim();
         if (trimmed && trimmed.startsWith("http")) {
@@ -3893,7 +3923,7 @@ async function playEpisode(idx) {
         } else if (!trimmed) {
           localStorage.removeItem("TG_STREAM_SERVER");
           window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
-          showToast("🔄 បាន Reset ទៅកាន់ High-Speed CDN ដើម!");
+          showToast("🔄 បាន Reset ទៅកាន់ Server ដើម!");
           if (typeof currentEpIndex === "number" && currentEpIndex >= 0) {
             playEpisode(currentEpIndex);
           }
@@ -3910,17 +3940,14 @@ async function playEpisode(idx) {
 
   let url = "";
 
-  // Strategy: If there is a valid high-speed direct CDN link (like xtv.media 1080p MP4), play it directly for instant start!
-  // If CDN link is expired (e.g. miniepisode.media 403) or missing, use Telegram Stream Server!
+  // Fast direct stream strategy:
+  // 1. If valid fast direct CDN (xtv.media), play directly for instant start!
+  // 2. If DramaBite (miniepisode.media 403) or no CDN, stream immediately from Telegram Stream Server!
+  // 3. Fallback to fallbackUrl
   if (hasValidCdn) {
     url = fallbackUrl;
   } else if (ep.telegram_message_id && tgStreamServer && tgStreamServer.startsWith("http")) {
-    const isServerUp = await checkStreamServerAlive(tgStreamServer);
-    if (isServerUp) {
-      url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
-    } else {
-      url = fallbackUrl;
-    }
+    url = `${tgStreamServer.replace(/\/+$/, '')}/stream/${ep.telegram_message_id}`;
   } else {
     url = fallbackUrl;
   }
@@ -4654,7 +4681,46 @@ if (volBtn) {
 }
 
 if (playerEl) {
+  const cpBtn = document.getElementById("center-play-btn");
+
+  if (cpBtn) {
+    cpBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      playerEl.muted = false;
+      playerEl.volume = 1.0;
+      if (volBtn) volBtn.classList.add("active");
+      const txt = document.getElementById("ctrl-vol-text");
+      if (txt) txt.textContent = "🔊 សំឡេង";
+      
+      const p = playerEl.play();
+      if (p !== undefined && p.catch) {
+        p.catch(() => {
+          playerEl.muted = true;
+          playerEl.play().catch(e => console.warn(e));
+        });
+      }
+      cpBtn.classList.add("hidden");
+    });
+  }
+
+  playerEl.addEventListener("play", () => {
+    if (cpBtn) cpBtn.classList.add("hidden");
+  });
+
+  playerEl.addEventListener("playing", () => {
+    if (cpBtn) cpBtn.classList.add("hidden");
+  });
+
+  playerEl.addEventListener("pause", () => {
+    if (!playerEl.ended && cpBtn) {
+      cpBtn.classList.remove("hidden");
+    }
+  });
+
   playerEl.addEventListener("click", () => {
+    if (playerEl.paused) {
+      playerEl.play().catch(() => {});
+    }
     if (playerEl.muted) {
       playerEl.muted = false;
       playerEl.volume = 1.0;
@@ -4663,6 +4729,7 @@ if (playerEl) {
       if (txt) txt.textContent = "🔊 សំឡេង";
     }
   });
+
   playerEl.addEventListener("ended", () => {
     if (isAutoNext && currentEpIndex < currentEpisodes.length - 1) {
       const nextIdx = currentEpIndex + 1;

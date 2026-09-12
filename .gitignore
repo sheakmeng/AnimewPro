@@ -21,3 +21,4 @@ __pycache__/
 test_backup_single.py
 *.session
 *.session-journal
+.env*
