@@ -3863,17 +3863,17 @@ async function playEpisode(idx) {
     }
   } catch(e) {}
 
-  // Purge any expired/dead trycloudflare tunnels from localStorage
+  // Purge dead trycloudflare tunnels (except active live one)
   try {
     const _storedSrv = localStorage.getItem("TG_STREAM_SERVER");
-    if (_storedSrv && (_storedSrv.includes("trycloudflare.com") || _storedSrv.includes("soul-negotiation"))) {
+    if (_storedSrv && (_storedSrv.includes("soul-negotiation") || _storedSrv.includes("bracelet-how"))) {
       localStorage.removeItem("TG_STREAM_SERVER");
       window._tgServerHealthCache = { url: null, isAlive: false, lastChecked: 0 };
     }
   } catch(e) {}
 
-  const defaultTgServer = "";
-  let tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || "";
+  const defaultTgServer = "https://pray-relay-genius-how.trycloudflare.com";
+  let tgStreamServer = localStorage.getItem("TG_STREAM_SERVER") || window.TG_STREAM_SERVER || defaultTgServer;
 
   // Handle Server Cfg Button
   const serverCfgBtn = document.getElementById("ctrl-server-cfg");
@@ -4073,11 +4073,11 @@ async function playEpisode(idx) {
       hls.on(Hls.Events.ERROR, (event, data) => {
         if (data.fatal) {
           console.error("HLS fatal error:", data.type, data.details);
-          // Fallback to native src
-          playerEl.src = url;
-          playerEl.muted = false;
-          playerEl.volume = 1.0;
-          playerEl.play().catch(e => console.warn("HLS fallback:", e));
+          if (ep.telegram_message_id) {
+            showToast("⚠️ Link ដើមផុតកំណត់! សូមចុចប៊ូតុង [Telegram] ខាងក្រោមដើម្បីទស្សនា");
+          } else {
+            showToast("⚠️ បរាជ័យក្នុងការចាក់វីដេអូ (Network Error) សូមសាកល្បងរឿងផ្សេងទៀត");
+          }
         }
       });
       window._hlsInstance = hls;
