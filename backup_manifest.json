@@ -28014,5 +28014,22 @@
     "synopsis": "DramaBite Online HD - Wake Up",
     "source": "dramabite_online",
     "backed_up_at": "2026-09-02T11:40:22Z"
+  },
+  "dramaora_52022527068_1": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 1,
+    "telegram_message_id": 10730,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIp6mq1KM_H3ZTVkXJVcvVfnhGxhK2QAAKFJAACtP-pVcqqnn_9qCxrHgQ",
+    "telegram_message_ids": [
+      10730
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.35,
+    "original_url": "https://v4.xtv.media/video/20260409/9303a727f2d945639d43cb1cef07c301/cloudv-transfer/5555555569034r1s5556q465r3q16762_7c6ab01766fa458388322d32307632b6_0_4.mp4?wsSecret=584fee180788927771c834aa3b9b0744&wsTime=1790264536",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T13:42:41Z"
   }
 }

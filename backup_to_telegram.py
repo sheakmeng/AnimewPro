@@ -22,6 +22,7 @@ import logging
 import tempfile
 import subprocess
 import shutil
+import re
 from urllib.parse import urlparse, parse_qs
 
 import httpx
@@ -563,35 +564,6 @@ class DramaoraClient:
                 "episodes": episodes
             }
 
-            poster_image = video_info.get("verticpic") or video_info.get("cover") or ""
-            drama_intro = video_info.get("intro") or ""
-
-            # Construct finalized episodes list
-            episodes = []
-            for ep in unique_list:
-                ord_num = ep.get("episodeorder", 1)
-                ep_id_unique = f"dramaora_{vid}_{ord_num}"
-                episodes.append({
-                    "id": ep_id_unique,
-                    "show_id": f"dramaora_{vid}",
-                    "show_title": title,
-                    "episode_number": ord_num,
-                    "video_url": streams.get(ord_num, ""),
-                    "eid": ep.get("eid"),
-                    "poster_url": poster_image,
-                    "synopsis": drama_intro,
-                    "source": "dramaora"
-                })
-
-            unlocked_count = sum(1 for e in episodes if e["video_url"])
-            print(f"✅ បាន Unlock ជោគជ័យ {unlocked_count}/{len(episodes)} ភាគ សម្រាប់ '{title}'!", flush=True)
-
-            return {
-                "title": title,
-                "vid": vid,
-                "episodes": episodes
-            }
-
 # ==============================================================================
 # STREAM & FILE DOWNLOADER (Auto Retry & Chunk Streaming)
 # ==============================================================================
@@ -951,32 +923,18 @@ async def main():
     print("🌐 កំពុងតភ្ជាប់ទៅកាន់ Dramaora.tv...", flush=True)
     await d_client.login()
 
-    # Connect to Telegram Bot at the start
+    # Connect to Telegram Bot directly with in-memory session (avoids stale/deactivated session files)
     print("\n🤖 Connecting to Telegram Bot...", flush=True)
-    internal_dir = tempfile.gettempdir()
-    safe_session = os.path.join(internal_dir, "backup_session")
-    for cand in [
-        "backup_session.session",
-        os.path.join(SCRIPT_DIR, "backup_session.session"),
-        "/sdcard/Download/backup_session.session",
-        "/storage/emulated/0/Download/backup_session.session",
-        r"c:\Users\sheakmeng\Desktop\New folder\backup_session.session"
-    ]:
-        if os.path.isfile(cand):
-            try:
-                shutil.copy2(cand, f"{safe_session}.session")
-                break
-            except Exception:
-                pass
-
     app = Client(
-        safe_session,
+        "dramaflix_bot_session",
+        in_memory=True,
         api_id=api_id_int,
         api_hash=API_HASH,
         bot_token=BOT_TOKEN
     )
     await app.start()
-    print("✅ Telegram Bot connected successfully!", flush=True)
+    bot_info = await app.get_me()
+    print(f"✅ Telegram Bot connected successfully: {bot_info.first_name} (@{bot_info.username})", flush=True)
 
     success_count = 0
 
@@ -1008,10 +966,12 @@ async def main():
             show_id = f"dramaora_{vid}"
 
             # Quick check: If all episodes for this show are already backed up, skip unlocking!
-            total_expected = d.get("ep_count")
+            total_expected_raw = d.get("ep_count")
+            ep_match = re.search(r"\d+", str(total_expected_raw or ""))
+            total_expected = int(ep_match.group()) if ep_match else 0
             existing_count = sum(1 for m in manifest.values() if isinstance(m, dict) and m.get("show_id") == show_id)
-            if total_expected and str(total_expected).isdigit() and existing_count >= int(total_expected) and existing_count > 0:
-                print(f"\n[{d_idx}/{len(catalogue)}] ⏭️ រឿង '{title}' បាន Backup គ្រប់ {existing_count} ភាគរួចហើយ (Skip)", flush=True)
+            if total_expected > 0 and existing_count >= total_expected:
+                print(f"\n[{d_idx}/{len(catalogue)}] ⏭️ រឿង '{title}' បាន Backup គ្រប់ {existing_count}/{total_expected} ភាគរួចហើយ (Skip Quick)", flush=True)
                 continue
 
             print(f"\n[{d_idx}/{len(catalogue)}] 🔓 កំពុង Unlock រឿង: '{title}' (vid={vid})...", flush=True)
