@@ -29051,5 +29051,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
     "source": "dramaora",
     "backed_up_at": "2026-09-24T18:02:38Z"
+  },
+  "dramaora_52022527068_62": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 62,
+    "telegram_message_id": 10793,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqKWq1jdWS4kUfh8EXgNvYJYA1DkxaAAILJQACtP-pVQHv2Z2whYveHgQ",
+    "telegram_message_ids": [
+      10793
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.33,
+    "original_url": "https://v4.xtv.media/video/20260409/9252ec0f45b84dd19492e696bb2f4149/cloudv-transfer/55555555242q20985556q4652s505862_0af8336fcbae4d6bb0fa3e970d9951c1_0_4.mp4?wsSecret=df17cb3fe1fa1c4302bdc734816a1d85&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:53:43Z"
+  },
+  "dramaora_52022527068_63": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 63,
+    "telegram_message_id": 10794,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqKmq1jeINiPp0fEe-ZZJ6fK2PuqV2AAIMJQACtP-pVS8CTe_LicakHgQ",
+    "telegram_message_ids": [
+      10794
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.03,
+    "original_url": "https://v4.xtv.media/video/20260409/07416ab3d399494cb479153ac9473a5e/cloudv-transfer/55555555n2o45r675556q4657o025862_d0f1d569c6d345f39f98af2814596850_0_4.mp4?wsSecret=7d03352f983be15dfd86aa71c0458105&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:53:56Z"
+  },
+  "dramaora_52022527068_64": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 64,
+    "telegram_message_id": 10795,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqK2q1jfDhNtOZPXd3kJ7uLLtWygVNAAINJQACtP-pVZo1yolbxgW1HgQ",
+    "telegram_message_ids": [
+      10795
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.04,
+    "original_url": "https://v4.xtv.media/video/20260409/6aa6c7e552864a23bc9780f4556a2d95/cloudv-transfer/555555557os5n4nn5556q465694n5862_7058e2dc0a054537b95b9c47a60d83b4_0_4.mp4?wsSecret=49fc6ab5cb869dc521fecb25b0b584c7&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:54:11Z"
+  },
+  "dramaora_52022527068_65": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 65,
+    "telegram_message_id": 10796,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqLGq1jf52dF6jVka-XNnZJON1sghwAAIOJQACtP-pVfvFYM4pf7hmHgQ",
+    "telegram_message_ids": [
+      10796
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.61,
+    "original_url": "https://v4.xtv.media/video/20260409/775c8e777da74c59b0e7d2aa24db2762/cloudv-transfer/5555555565420rrn5556q465220q5862_2fe5b9b814d94038b43a2adca9fd0457_0_4.mp4?wsSecret=658bded94353bf642932ce84b295565a&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:54:25Z"
+  },
+  "dramaora_52022527068_66": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 66,
+    "telegram_message_id": 10797,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqLWq1jg36_37Dk3fOkeWqrIKjr78AAw8lAAK0_6lVckf63JnycFQeBA",
+    "telegram_message_ids": [
+      10797
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.39,
+    "original_url": "https://v4.xtv.media/video/20260409/3b7fcb4b87aa4841b7ef4dbf36d8022d/cloudv-transfer/5555555582r98q325556q46579186862_476e833508c149d9ae85b65d2e5ef76d_0_4.mp4?wsSecret=536be18b4341f8faed3f01badd89b349&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:54:39Z"
+  },
+  "dramaora_52022527068_67": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 67,
+    "telegram_message_id": 10798,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqLmq1jhtmKo6udtUndwKme-OLpPhqAAIQJQACtP-pVT8n-awvAhJyHgQ",
+    "telegram_message_ids": [
+      10798
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.56,
+    "original_url": "https://v4.xtv.media/video/20260409/75a0f5ad158b46d7a2754d95a1c5746d/cloudv-transfer/55555555o7o2qo8q5556q4650p5n6862_5c5d1755448d48a7b5f40f0368deb123_0_4.mp4?wsSecret=c85c11201e60b2841f267f5fff59ee6d&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:54:54Z"
+  },
+  "dramaora_52022527068_68": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 68,
+    "telegram_message_id": 10799,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqL2q1jinfQ49ZJYx0dKyy8oZjok0FAAIRJQACtP-pVf5SWWvxnQqFHgQ",
+    "telegram_message_ids": [
+      10799
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.31,
+    "original_url": "https://v4.xtv.media/video/20260409/927221ff68a24270b05b1daee4f24639/cloudv-transfer/555555557nrnr9895556q46560r57862_529972e4f5814e249269a0fa01d27273_0_4.mp4?wsSecret=03c57c3c832d3d45cb68bfea01860326&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:55:08Z"
+  },
+  "dramaora_52022527068_69": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 69,
+    "telegram_message_id": 10800,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqMGq1jji-DOsC_x_6CfTDOljnZJNPAAISJQACtP-pVYhzkw10cZJCHgQ",
+    "telegram_message_ids": [
+      10800
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.99,
+    "original_url": "https://v4.xtv.media/video/20260409/cdf2e8f9cbfb49c4ba9db8ed436c311b/cloudv-transfer/55555555477008305556q465p2027862_1b7eda16800d4c14b0da62e67200d9c4_0_4.mp4?wsSecret=65429dc71fa5ddc1c2f3b2a86c71eb8a&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:55:23Z"
+  },
+  "dramaora_52022527068_70": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 70,
+    "telegram_message_id": 10801,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqMWq1jkj-Txj_TTEGRy57dLhURUqNAAITJQACtP-pVTMsrQ_kiDeWHgQ",
+    "telegram_message_ids": [
+      10801
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.18,
+    "original_url": "https://v4.xtv.media/video/20260409/bf4033f148464251ae2f6e84e0032d38/cloudv-transfer/55555555p8r526n25556q4656pqq7862_733c6a5a3349468885c693d242f13601_0_4.mp4?wsSecret=818974a88c7135ed2fcc069acb36c305&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:55:39Z"
+  },
+  "dramaora_52022527068_71": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 71,
+    "telegram_message_id": 10802,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqMmq1jltdwUcmnCaDUSP-lUTx86lsAAIUJQACtP-pVYv3ziwa9_OIHgQ",
+    "telegram_message_ids": [
+      10802
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.75,
+    "original_url": "https://v4.xtv.media/video/20260409/d509abae9ae24ebe9a1e513502b1986f/cloudv-transfer/55555555nqqn01rq5556q46571n58862_ed7b747ea47c4bd8a20f0f828c11054f_0_4.mp4?wsSecret=81d0e532df1aa62cdf1f108af28d9e71&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:55:58Z"
+  },
+  "dramaora_52022527068_72": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 72,
+    "telegram_message_id": 10803,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqM2q1jmnBTSYaxDIvqMcgvR255NpFAAIVJQACtP-pVQ1okAvAwF6_HgQ",
+    "telegram_message_ids": [
+      10803
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.83,
+    "original_url": "https://v4.xtv.media/video/20260409/6748389c74254ce5a2ca17ae6842f958/cloudv-transfer/555555551s23r6815556q465sn698862_fa6da89261f94ac0948a3c1956c2e8b4_0_4.mp4?wsSecret=10d403fed5fa672c53c28999233b1296&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:56:11Z"
+  },
+  "dramaora_52022527068_73": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 73,
+    "telegram_message_id": 10804,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqNGq1jngEuqfTJnzGXjKJU1cOQvwJAAIXJQACtP-pVTuam3onQHBWHgQ",
+    "telegram_message_ids": [
+      10804
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.96,
+    "original_url": "https://v4.xtv.media/video/20260409/e81393de735f401894b300989cdce66d/cloudv-transfer/55555555q258o5855556q46580s28862_0b8832e1ee9c4c94b1360c17ff41b306_0_4.mp4?wsSecret=17d5506b2f9dbec7a62c17c145251666&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:56:26Z"
+  },
+  "dramaora_52022527068_74": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 74,
+    "telegram_message_id": 10805,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqNWq1jorMGsHlaqRLvPrikRyHhY2OAAIYJQACtP-pVdHyRYcp6a0DHgQ",
+    "telegram_message_ids": [
+      10805
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.34,
+    "original_url": "https://v4.xtv.media/video/20260409/b7a6e93a9c6241ee84f5ddf6bd02fffb/cloudv-transfer/555555556sprn6495556q4652n7p8862_c317f4fabd3d4aa1b37ce4d7af331e2e_0_4.mp4?wsSecret=a9f88bc4e51837bc3f9dfa9179675b80&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:56:44Z"
+  },
+  "dramaora_52022527068_75": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 75,
+    "telegram_message_id": 10806,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqNmq1jp6M1fVHkm1r9_NtPDe63M00AAIZJQACtP-pVfJM9l8Q0TgIHgQ",
+    "telegram_message_ids": [
+      10806
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.01,
+    "original_url": "https://v4.xtv.media/video/20260409/20aefb5cfad74825935ce0d8a4a632e3/cloudv-transfer/555555555r1o82n55556q46571qr8862_99ca1ca6ec244585a57ec4843c9435bc_0_4.mp4?wsSecret=3b2b92714f52ed6dd697799bcdc6d005&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:57:04Z"
+  },
+  "dramaora_52022527068_76": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 76,
+    "telegram_message_id": 10807,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqN2q1jq7W_UdBoMBXdCEAAeOAmr05twACGiUAArT_qVU1y76SeYxkAAEeBA",
+    "telegram_message_ids": [
+      10807
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.89,
+    "original_url": "https://v4.xtv.media/video/20260409/f8842a3ac82445ef915cf2f8987119f7/cloudv-transfer/55555555qp0r45q55556q4654o169862_c9fd0484ba1347abbb3ce327f4a2453a_0_4.mp4?wsSecret=d2fcf3dcb9adee9f2f045f2b951be5f1&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:57:20Z"
+  },
+  "dramaora_52022527068_77": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 77,
+    "telegram_message_id": 10808,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqOGq1jr8fhKviEn4pc9ChKfqfKJANAAIbJQACtP-pVXYy2wpKA8SSHgQ",
+    "telegram_message_ids": [
+      10808
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.64,
+    "original_url": "https://v4.xtv.media/video/20260409/7dc46b7ef3614ffab1637d8cc8677961/cloudv-transfer/555555552r5295s05556q46559709862_d3b54354db4042569e9d320788c309be_0_4.mp4?wsSecret=1bade60b5a84c9cec3bfbb0e3a3590cf&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:57:37Z"
+  },
+  "dramaora_52022527068_78": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 78,
+    "telegram_message_id": 10809,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqOWq1jtydDz0_6t3HIt5MUix7plEqAAIcJQACtP-pVd_VA_Mg2sbzHgQ",
+    "telegram_message_ids": [
+      10809
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.06,
+    "original_url": "https://v4.xtv.media/video/20260409/64d3fa8e3a3346eab44504959bfd5913/cloudv-transfer/55555555r3nr22n55556q46542749862_8fb1ecde9d0a4540b5c9be68d28b042c_0_4.mp4?wsSecret=dc84802ce29bffb180074c85febb375d&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:58:06Z"
+  },
+  "dramaora_52022527068_79": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 79,
+    "telegram_message_id": 10810,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqOmq1jvD3TBbN2W59R2wepqXgZqBLAAIdJQACtP-pVUTm_hsinhBqHgQ",
+    "telegram_message_ids": [
+      10810
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.54,
+    "original_url": "https://v4.xtv.media/video/20260409/9836f6de89ae4b38bbf3a14476f302b7/cloudv-transfer/55555555o4q2p87n5556q465po5q9862_bee1c5d7554942b387b0a89a22880889_0_4.mp4?wsSecret=ae717bf95ba4d22aa9c3226b3c9af065&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:58:26Z"
+  },
+  "dramaora_52022527068_80": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 80,
+    "telegram_message_id": 10811,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqO2q1jwq0tSWYXL8DhBDHUYXVPfYYAAIeJQACtP-pVQ4H_VlK4da0HgQ",
+    "telegram_message_ids": [
+      10811
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.15,
+    "original_url": "https://v4.xtv.media/video/20260409/7d182ecef3c340fd9ffdce3a4f1466f0/cloudv-transfer/555555556q9p5p955556q465p7150862_3416bc4b78f24be9b9d0440b71132639_0_4.mp4?wsSecret=c0a3dcc6bb7e73844bcf8703e769d949&wsTime=1790290409",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:58:52Z"
+  },
+  "dramaora_52022527068_81": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 81,
+    "telegram_message_id": 10812,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqPGq1jyBVCpONzlsaf1X3PnNa4m00AAIfJQACtP-pVfNMK-p4LkjcHgQ",
+    "telegram_message_ids": [
+      10812
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.66,
+    "original_url": "https://v4.xtv.media/video/20260409/9efb571611bd4c1e808bca349492b49a/cloudv-transfer/5555555557nr598o5556q46567680862_6509629b2ac94d00b6532950b2041fe7_0_4.mp4?wsSecret=ec188ed2a82a4ef2750edce43f7fc9dd&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:59:15Z"
+  },
+  "dramaora_52022527068_82": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 82,
+    "telegram_message_id": 10813,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqPWq1jzcR48unv3BfV65GQ0eFsK0cAAIgJQACtP-pVepVmGUTapyiHgQ",
+    "telegram_message_ids": [
+      10813
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.73,
+    "original_url": "https://v4.xtv.media/video/20260409/58b111831fa847968494b0a21fcd1ad3/cloudv-transfer/55555555318o022n5556q465r5n10862_c36669336e3d46648433f64643aa0601_0_4.mp4?wsSecret=2385d513d18070db7d60fe2fe41630a9&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:59:37Z"
+  },
+  "dramaora_52022527068_83": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 83,
+    "telegram_message_id": 10814,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqPmq1j0R912JP5_6jelQn5ExA8jXXAAIhJQACtP-pVctsIjhrYXx0HgQ",
+    "telegram_message_ids": [
+      10814
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.64,
+    "original_url": "https://v4.xtv.media/video/20260409/7747f947c63242af81daccf7d91f5c2f/cloudv-transfer/55555555q47o64135556q465r65o0862_2062f77f23ee46dc9782d8b5b395efe1_0_4.mp4?wsSecret=9fda4ee07c8e73fdff62cd3ff0fc5de1&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T20:59:50Z"
+  },
+  "dramaora_52022527068_84": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 84,
+    "telegram_message_id": 10815,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqP2q1j1If9MSPpKaGxFythVAyCntJAAIiJQACtP-pVasWVSsJrshhHgQ",
+    "telegram_message_ids": [
+      10815
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.94,
+    "original_url": "https://v4.xtv.media/video/20260409/4efe16f9132f45d59c9fcd5575f2df69/cloudv-transfer/555555552o43sp055556q4652o1s0862_59ad546a5fbe4491b2360a153189fcc7_0_4.mp4?wsSecret=ee2a6416b358a1b42c2888001e65061b&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:00:04Z"
+  },
+  "dramaora_52022527068_85": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 85,
+    "telegram_message_id": 10816,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqQGq1j2H7c8-wjmN2mMZH9aV059hvAAIjJQACtP-pVWELXwK_22fcHgQ",
+    "telegram_message_ids": [
+      10816
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.54,
+    "original_url": "https://v4.xtv.media/video/20260409/41ec5c83a940483fbd62f809bee11b05/cloudv-transfer/555555552p3pp2p95556q46545881862_cfe681943fb145b48ae9371297e4d961_0_4.mp4?wsSecret=47f0d896443d32afc004c0e423e9fa0d&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:00:19Z"
+  },
+  "dramaora_52022527068_86": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 86,
+    "telegram_message_id": 10817,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqQWq1j23MHlWyS0smaJn5jm13fRGbAAIkJQACtP-pVflt8a7bUseUHgQ",
+    "telegram_message_ids": [
+      10817
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.12,
+    "original_url": "https://v4.xtv.media/video/20260409/964a1097ce2f49d5af254d88d5ff158b/cloudv-transfer/5555555584nr839o5556q46500p21862_4eb42e2b53d040c4a4000d84e2d673e6_0_4.mp4?wsSecret=a24712be41a396c9996761ed20d2e0bd&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:00:31Z"
+  },
+  "dramaora_52022527068_87": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 87,
+    "telegram_message_id": 10818,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqQmq1j3lWBvjJG8g6jgLK_nbTF-3qAAIlJQACtP-pVcMhjVIbDhArHgQ",
+    "telegram_message_ids": [
+      10818
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.46,
+    "original_url": "https://v4.xtv.media/video/20260409/ed06193cbac643bd95d9f8ec54eac701/cloudv-transfer/5555555546pnr8475556q465565p1862_5f09fc5a6c9145908ef382cdb3527764_0_4.mp4?wsSecret=fdb9f9792ddc1b5a23e1d57ce588484e&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:00:44Z"
+  },
+  "dramaora_52022527068_88": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 88,
+    "telegram_message_id": 10819,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqQ2q1j4Ybi0sAAVa-JZs6YINvQbgUMgACJiUAArT_qVX7Nt4LAAG514weBA",
+    "telegram_message_ids": [
+      10819
+    ],
+    "total_parts": 1,
+    "file_size_mb": 6.96,
+    "original_url": "https://v4.xtv.media/video/20260409/56e24a1514594f83871cfd01113aeeb0/cloudv-transfer/55555555r18s2q855556q465r8ss1862_7622c0bd3729492b850b7a7e16218ed1_0_4.mp4?wsSecret=ca110583d75063bde90bc958b3747534&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:00:56Z"
+  },
+  "dramaora_52022527068_89": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 89,
+    "telegram_message_id": 10820,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqRGq1j5N4OHBNxsW6UXPejqbVcDjkAAInJQACtP-pVVc_zMenZUm6HgQ",
+    "telegram_message_ids": [
+      10820
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.82,
+    "original_url": "https://v4.xtv.media/video/20260409/e5f234f6436a40b3b74bb98758b290bc/cloudv-transfer/555555554s9s7p325556q4654q582862_c54fafdca0db481eb0fa11675aa9a852_0_4.mp4?wsSecret=8ab8541afcb566c5c0f484125250c4bc&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:01:09Z"
+  },
+  "dramaora_52022527068_90": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 90,
+    "telegram_message_id": 10821,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqRWq1j54M0T9l7vhC68QRjsnT3ihkAAIoJQACtP-pVaBNnmSmhwp8HgQ",
+    "telegram_message_ids": [
+      10821
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.99,
+    "original_url": "https://v4.xtv.media/video/20260409/108986d1fd4141f3aaa09853f0762e91/cloudv-transfer/555555556rr99r8n5556q46598822862_470d2e7a38a948f2a5ce5f70ec91c62e_0_4.mp4?wsSecret=6d897f23f85a3d2b86041c6b607ebbe5&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:01:21Z"
+  },
+  "dramaora_52022527068_91": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 91,
+    "telegram_message_id": 10822,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqRmq1j6k0egpE9HWSnQRAI3fXckn0AAIpJQACtP-pVWQWO1zKXhvaHgQ",
+    "telegram_message_ids": [
+      10822
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.52,
+    "original_url": "https://v4.xtv.media/video/20260409/8f0c9763a0e741b49329e850583350af/cloudv-transfer/55555555477r38nn5556q465or0o2862_990525684c4e44acaa7db6289d5d4b3e_0_4.mp4?wsSecret=73283507f8066882abc0d790596301a0&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:01:32Z"
+  },
+  "dramaora_52022527068_92": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 92,
+    "telegram_message_id": 10823,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqR2q1j7ZECEBEDsmt3ynHtZfZJx-7AAIqJQACtP-pVS73ZhApFQ0aHgQ",
+    "telegram_message_ids": [
+      10823
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.94,
+    "original_url": "https://v4.xtv.media/video/20260409/40842e41ba764fbb9b62e8fd5397a52b/cloudv-transfer/55555555p4r9q5835556q465n0nr2862_519962606f6744eda6ec20e9825400f4_0_4.mp4?wsSecret=e689ca68e606c46e0b817b27a425ab6b&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:01:45Z"
+  },
+  "dramaora_52022527068_93": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 93,
+    "telegram_message_id": 10824,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqSGq1j8NuEJZsrjTAmoBFK_Hf1iQGAAIrJQACtP-pVSlrSMu988wCHgQ",
+    "telegram_message_ids": [
+      10824
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.29,
+    "original_url": "https://v4.xtv.media/video/20260409/0012719080e14741bf772415513d6428/cloudv-transfer/55555555rps496np5556q465qos63862_43e0f23f4c5d4d98b538ad237f6452da_0_4.mp4?wsSecret=95c706b7ea096d401d340332b845d9e0&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:01:58Z"
+  },
+  "dramaora_52022527068_94": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 94,
+    "telegram_message_id": 10825,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqSWq1j9od1LmoIxNxlvjv0wcqDJjXAAIsJQACtP-pVUWR_oeA2Te4HgQ",
+    "telegram_message_ids": [
+      10825
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.99,
+    "original_url": "https://v4.xtv.media/video/20260409/2b4386fe948b46adae20e66a4b38c2e9/cloudv-transfer/555555552245p6p75556q46538603862_2db08420d5a74d2d9510ea89fa59eb75_0_4.mp4?wsSecret=615f38c9b5a84ad1db7949f32fb89d29&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:02:21Z"
+  },
+  "dramaora_52022527068_95": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 95,
+    "telegram_message_id": 10826,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqSmq1j-YSjPLmdPhGlzzLwqCWNrRoAAItJQACtP-pVblR6_gjGY_cHgQ",
+    "telegram_message_ids": [
+      10826
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.91,
+    "original_url": "https://v4.xtv.media/video/20260409/3346c64783034e5a9f47619b0b71f514/cloudv-transfer/55555555r48s0n805556q46525943862_87f1cfad48474071a98278492e2910af_0_4.mp4?wsSecret=8fcbd5c4240480c44a277e292e7ac578&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:02:33Z"
+  },
+  "dramaora_52022527068_96": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 96,
+    "telegram_message_id": 10827,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqS2q1j_JIrfCb9c_Ox_YpngdsJIfGAAIuJQACtP-pVXA03yE0wrqPHgQ",
+    "telegram_message_ids": [
+      10827
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.78,
+    "original_url": "https://v4.xtv.media/video/20260409/f03e4d46a39a4fb0bd40e78b1e10ca07/cloudv-transfer/55555555397n2sns5556q465s37q3862_34a4bb37dd124a22905c36dd00300130_0_4.mp4?wsSecret=1ab4c74574080b97051ae2eca642afd8&wsTime=1790290410",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:02:45Z"
+  },
+  "dramaora_52022527068_97": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 97,
+    "telegram_message_id": 10828,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqTGq1j_4toMph_z3EVgtsbQuK5mxSAAIvJQACtP-pVXIElWOH4eVcHgQ",
+    "telegram_message_ids": [
+      10828
+    ],
+    "total_parts": 1,
+    "file_size_mb": 6.13,
+    "original_url": "https://v4.xtv.media/video/20260409/14a79d4e7a764dc99ee66d716dc9b71b/cloudv-transfer/555555556p610n7p5556q465o0554862_a37f5d5585964f9fb921d2fd761be7ac_0_4.mp4?wsSecret=cc76945e3f7b93592e1ac684fb489380&wsTime=1790290411",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:02:57Z"
+  },
+  "dramaora_52022527068_98": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 98,
+    "telegram_message_id": 10829,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqTWq1kApku2DwZUj9ZrS7nVoUtKBGAAIwJQACtP-pVXfq2N9mPwnHHgQ",
+    "telegram_message_ids": [
+      10829
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.49,
+    "original_url": "https://v4.xtv.media/video/20260409/00e0b5b28159478f9ee0cc980b221b58/cloudv-transfer/55555555s9rq2s555556q4655rn74862_827e30447d3f498ba436f99be36540d3_0_4.mp4?wsSecret=357b02bde0682887487307113517132d&wsTime=1790290411",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:03:08Z"
+  },
+  "dramaora_52022527068_99": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 99,
+    "telegram_message_id": 10830,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqTmq1kBe2vtTRn75hBdYXSkAUH2hfAAIxJQACtP-pVRtqJP86veYcHgQ",
+    "telegram_message_ids": [
+      10830
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.1,
+    "original_url": "https://v4.xtv.media/video/20260409/7da05dc7660249ed8a8ab6caf6808733/cloudv-transfer/55555555qns847225556q4654op04862_fe8894ae8a21495d9bc7b30d3786f09d_0_4.mp4?wsSecret=a73a6c92288d16a357c69041d69ea0ef&wsTime=1790290411",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:03:22Z"
+  },
+  "dramaora_52022527068_100": {
+    "show_id": "dramaora_52022527068",
+    "show_title": "Lilian Doesn't Deserve a Second Chance",
+    "episode_number": 100,
+    "telegram_message_id": 10831,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqT2q1kCVADim_5sc1SddMsgG4b0NsAAIyJQACtP-pVYsXHMWmVot5HgQ",
+    "telegram_message_ids": [
+      10831
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.75,
+    "original_url": "https://v4.xtv.media/video/20260409/4d2ea9ded6624a64abda6a3036e88c19/cloudv-transfer/55555555n4n033035556q46587334862_bb041aa100f4405a86868a3715e55d66_0_4.mp4?wsSecret=cdeb6fe5f5965759fa91740cc5e16b45&wsTime=1790290411",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260409/711efd15019d10005573032200000000.jpg",
+    "synopsis": "Kay Chase, who used to be Big Bold in the Song Dynasty, wakes up to find that he is in the modern times. In the past life, he was set up by his wife Lilian and his friend Quentin. Now he will rise up with his own skills and efforts, a true friend by his side, and a woman who genuinely loves him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:03:35Z"
+  },
+  "dramaora_52022190184_1": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 1,
+    "telegram_message_id": 10832,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqUGq1kDcT9lOhookUqXls5_Y51N4ZAAIzJQACtP-pVc1wZtpBWm4hHgQ",
+    "telegram_message_ids": [
+      10832
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.17,
+    "original_url": "https://v4.xtv.media/video/20260224/d167dbda5fee42e7a839ae2f43ada280/cloudv-transfer/55555555s90397n05556p4654552q1r3_f4c7956ba81d483eb7b9f996ef82098b_0_4.mp4?wsSecret=686200f785853b89e80471752e5812dc&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:03:53Z"
+  },
+  "dramaora_52022190184_2": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 2,
+    "telegram_message_id": 10833,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqUWq1kEJzJ13JNfe-Y15zIoB4ojQdAAI0JQACtP-pVbVXluvbPiguHgQ",
+    "telegram_message_ids": [
+      10833
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.66,
+    "original_url": "https://v4.xtv.media/video/20260224/62fd8eee9487451580a7d368614f51c9/cloudv-transfer/55555555s2q8q86q5556p465n31qq1r3_97bd5ca2a94c4b7a9d88c4c443b0ad77_0_4.mp4?wsSecret=221fa9a2facbd648a6439f3f4fcb36e3&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:04:04Z"
+  },
+  "dramaora_52022190184_3": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 3,
+    "telegram_message_id": 10834,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqUmq1kE53mQECsP3EDQhl1Q1KiKxGAAI1JQACtP-pVfRyr2rR8iNrHgQ",
+    "telegram_message_ids": [
+      10834
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.89,
+    "original_url": "https://v4.xtv.media/video/20260224/e0ffcd8f28554c1fac0195ecf6bab717/cloudv-transfer/55555555pnprnq855556p465oo99r1r3_8a111ccf9c1d4f58a2f53049f115d7dc_0_4.mp4?wsSecret=64959592370e0cb3b9bd03c24c363e6d&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:04:16Z"
+  },
+  "dramaora_52022190184_4": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 4,
+    "telegram_message_id": 10835,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqU2q1kF7pm2AM91ArBFy0wBtlD4mpAAI2JQACtP-pVSyvJDlPYxHXHgQ",
+    "telegram_message_ids": [
+      10835
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.71,
+    "original_url": "https://v4.xtv.media/video/20260224/b7a8ac658478490ea9867223800439d4/cloudv-transfer/5555555547q2184s5556p465nn3or1r3_5103f139f49546e38a0a140644308f60_0_4.mp4?wsSecret=a49e65feb47c772cd737fe99283d2b3d&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:04:32Z"
+  },
+  "dramaora_52022190184_5": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 5,
+    "telegram_message_id": 10836,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqVGq1kGtp3VOF1DQZdD5sUs0rkcYmAAI3JQACtP-pVYedA7qE_Y6kHgQ",
+    "telegram_message_ids": [
+      10836
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.12,
+    "original_url": "https://v4.xtv.media/video/20260224/a19faa26387747cf9a5101ee209eaf27/cloudv-transfer/5555555535qp03465556p4656297s1r3_f8778689166945e88e981a31607cb01f_0_4.mp4?wsSecret=405953153d1532c8b3ed6d43daa35f62&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:04:46Z"
+  },
+  "dramaora_52022190184_6": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 6,
+    "telegram_message_id": 10837,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqVWq1kHmDzbrk6TDgFqdyTRks4y2JAAI4JQACtP-pVVb9_-NP5Pv8HgQ",
+    "telegram_message_ids": [
+      10837
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.24,
+    "original_url": "https://v4.xtv.media/video/20260224/a252c5d048f84de2bb7329b8534fc85e/cloudv-transfer/555555552p8o26735556p4654sr4s1r3_23ca06e7d46a431684010f128d38126f_0_4.mp4?wsSecret=00f90ed47c01743a2ce32391f1880bd4&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:04:59Z"
+  },
+  "dramaora_52022190184_7": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 7,
+    "telegram_message_id": 10838,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqVmq1kIR5-nq31BISl_MElKMfImKUAAI5JQACtP-pVV474NsodczGHgQ",
+    "telegram_message_ids": [
+      10838
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.35,
+    "original_url": "https://v4.xtv.media/video/20260224/b3edff5fbb8c415682b17fa4f007a9bf/cloudv-transfer/55555555r818n4695556p4650rn652r3_50ec96ed61d846b2b26bffbf2617d968_0_4.mp4?wsSecret=54e57821af1e1158387753d96592e935&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:05:10Z"
+  },
+  "dramaora_52022190184_8": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 8,
+    "telegram_message_id": 10839,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqV2q1kJro-2ljycoTLhYbG753zsD4AAI6JQACtP-pVfMOwL2qRGJDHgQ",
+    "telegram_message_ids": [
+      10839
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://v4.xtv.media/video/20260224/8566be9f445f44a5800238edafaa5179/cloudv-transfer/55555555ror7orq55556p46531qp52r3_8a38ed3f61f348af88f8414e08fcc82a_0_4.mp4?wsSecret=943a38f3191ad39acdaa27ccb5b59dab&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:05:33Z"
+  },
+  "dramaora_52022190184_9": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 9,
+    "telegram_message_id": 10840,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqWGq1kLFaAzPdM9BQf2SRyROsNgGGAAI7JQACtP-pVcnAqOQnm29dHgQ",
+    "telegram_message_ids": [
+      10840
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.37,
+    "original_url": "https://v4.xtv.media/video/20260224/4dd06a74e43d4fecb78eb61a1c511705/cloudv-transfer/5555555588791o3p5556p4659o1662r3_100d9e3f2cdb46c9b019a864301cce74_0_4.mp4?wsSecret=bed2e0f8a4b157cda2ac0a41539cd404&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:05:56Z"
+  },
+  "dramaora_52022190184_10": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 10,
+    "telegram_message_id": 10841,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqWWq1kMn2Dexkq6hU06oDjF2tqtGGAAI8JQACtP-pVdgYIF4BNDWrHgQ",
+    "telegram_message_ids": [
+      10841
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.63,
+    "original_url": "https://v4.xtv.media/video/20260224/4cae6a087c834fc48ea3d01602de8d36/cloudv-transfer/555555552984r93q5556p4651o2062r3_6bc10d1cbccf45d4b9af086e93f990b3_0_4.mp4?wsSecret=d2a6a44f3f5b6930d505beac0b7f015c&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:06:20Z"
+  },
+  "dramaora_52022190184_11": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 11,
+    "telegram_message_id": 10842,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqWmq1kNq4eC1KJS8j5srLey0t5ButAAI9JQACtP-pVYH1vsfn86GHHgQ",
+    "telegram_message_ids": [
+      10842
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.82,
+    "original_url": "https://v4.xtv.media/video/20260224/75cf570f1cb148dda243f363a849ee66/cloudv-transfer/555555556p3pq5595556p4655oon62r3_864e5eac326b47a799c882e9da6c6d47_0_4.mp4?wsSecret=97352555645c0ba847a074de65982f81&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:06:37Z"
+  },
+  "dramaora_52022190184_12": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 12,
+    "telegram_message_id": 10843,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqW2q1kPEh6YdefOV6sqNX02hAfiJOAAI-JQACtP-pVV12ZByyGKLlHgQ",
+    "telegram_message_ids": [
+      10843
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.98,
+    "original_url": "https://v4.xtv.media/video/20260224/2f94d13e3f564e96abf4285f7613cb6c/cloudv-transfer/5555555581so71865556p4654sp572r3_15372e02bc8e404b9c8bd86ceb4bfe41_0_4.mp4?wsSecret=1d7762abce21edf5596ce32f2ff25e68&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:06:59Z"
+  },
+  "dramaora_52022190184_13": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 13,
+    "telegram_message_id": 10844,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqXGq1kQVjnRVEbFtvM29CUttgbZgwAAI_JQACtP-pVTewZoou95drHgQ",
+    "telegram_message_ids": [
+      10844
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.05,
+    "original_url": "https://v4.xtv.media/video/20260224/0f5ea5f9978348a795f9c2f6abbbafbe/cloudv-transfer/55555555s3pp9s2p5556p46560q072r3_92881bbb3a9d40e988fbec9a6a4c0085_0_4.mp4?wsSecret=f76c835dc2ed068ec0e397cdb440d61e&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:07:19Z"
+  },
+  "dramaora_52022190184_14": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 14,
+    "telegram_message_id": 10845,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqXWq1kRaCQdAI8tKz5F_WM_sla62tAAJAJQACtP-pVaZaK9NEvirNHgQ",
+    "telegram_message_ids": [
+      10845
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.61,
+    "original_url": "https://v4.xtv.media/video/20260224/36c0abf47f59430eb2e032be25fd297f/cloudv-transfer/55555555o335s3415556p465813q72r3_cef1d428ee7a401d84adc3c06bba6718_0_4.mp4?wsSecret=c4ea13d1eb1ba11458ba2ad38935d2cf&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:07:36Z"
+  },
+  "dramaora_52022190184_15": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 15,
+    "telegram_message_id": 10846,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqXmq1kS7BQ9AbhY-fozDdW1M59WbzAAJBJQACtP-pVRZmlDth0uHsHgQ",
+    "telegram_message_ids": [
+      10846
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.72,
+    "original_url": "https://v4.xtv.media/video/20260224/32cc428584484bb182d72cf51c1d03a2/cloudv-transfer/55555555p8o51ss55556p4659n1982r3_8a732d30f8eb457d82e5386492a2dc3c_0_4.mp4?wsSecret=99e4b54e845ebfb551d0bcbb342427b7&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:08:00Z"
+  },
+  "dramaora_52022190184_16": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 16,
+    "telegram_message_id": 10847,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqX2q1kTr7z_Q4oyp2XLKe8x6xvj38AAJCJQACtP-pVTpeZrdIw9xaHgQ",
+    "telegram_message_ids": [
+      10847
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.26,
+    "original_url": "https://v4.xtv.media/video/20260224/651396e5bf8a4d668581d3ac150a0860/cloudv-transfer/555555559no8n8s65556p465po4482r3_771703c9c66c4e238ad6a29bb8d3b9d9_0_4.mp4?wsSecret=bfc50f6ce8a3886f54b2254015194381&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:08:12Z"
+  },
+  "dramaora_52022190184_17": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 17,
+    "telegram_message_id": 10848,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqYGq1kUV9WMzg09H4O7u_8uZYq2N3AAJDJQACtP-pVWbR08_FJVeHHgQ",
+    "telegram_message_ids": [
+      10848
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.5,
+    "original_url": "https://v4.xtv.media/video/20260224/8a0731229a9b48c3bc5fbe885135a341/cloudv-transfer/555555558472q2605556p4656nor82r3_b303276bdf3b4a5fb40de1757c8a0861_0_4.mp4?wsSecret=bff63d9da4a779a2ae418bd87aae40fb&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:08:24Z"
+  },
+  "dramaora_52022190184_18": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 18,
+    "telegram_message_id": 10849,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqYWq1kVEfoyJncOJUZj3TWTXABo_aAAJEJQACtP-pVQSzHxU2lQU8HgQ",
+    "telegram_message_ids": [
+      10849
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.17,
+    "original_url": "https://v4.xtv.media/video/20260224/f3cb73c8b9e94e43aec24d4c22d7a729/cloudv-transfer/5555555590922q7q5556p465os9992r3_eb9aa58e36e44a66ae255129fd5e8277_0_4.mp4?wsSecret=6d54531ee0b580c3a984932f0187dcb8&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:08:35Z"
+  },
+  "dramaora_52022190184_19": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 19,
+    "telegram_message_id": 10850,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqYmq1kV1-sBu-0fRkW9kozVrLasH7AAJFJQACtP-pVRbwvnoUE1vgHgQ",
+    "telegram_message_ids": [
+      10850
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.48,
+    "original_url": "https://v4.xtv.media/video/20260224/2bfbca2942ac472ea79f578bea1eab14/cloudv-transfer/555555556qnsnrq85556p4659ssn92r3_a6638f95d2214711bde1bf44cecff67c_0_4.mp4?wsSecret=f35c8dcadb602e7436705c448c96b12c&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:08:47Z"
+  },
+  "dramaora_52022190184_20": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 20,
+    "telegram_message_id": 10851,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqY2q1kWr6eeqpFw5N6SY2oRMrGdVOAAJGJQACtP-pVdvANm4zMV14HgQ",
+    "telegram_message_ids": [
+      10851
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.69,
+    "original_url": "https://v4.xtv.media/video/20260224/b3ac2b5df13547b7a358eb8e81c05e20/cloudv-transfer/55555555651868p15556p465qps702r3_531471352a3044cb8dec4f84bc730027_0_4.mp4?wsSecret=afc004f6c48852e91e1d13d8c1db6f42&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:09:01Z"
+  },
+  "dramaora_52022190184_21": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 21,
+    "telegram_message_id": 10852,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqZGq1kXhefog_xLt3NKleVbYWCmMgAAJHJQACtP-pVUK7hJtOq6GFHgQ",
+    "telegram_message_ids": [
+      10852
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.01,
+    "original_url": "https://v4.xtv.media/video/20260224/263cbd61502b4fd1a3e3a09dee558bde/cloudv-transfer/5555555505p5s9n75556p465014n02r3_bf2ccdc9cb08458e842df73e0c59dbb2_0_4.mp4?wsSecret=9646ffd6c92c16c49b0668a6443e5f3b&wsTime=1790291021",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-24T21:09:14Z"
   }
 };
