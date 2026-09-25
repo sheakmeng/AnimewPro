@@ -31091,5 +31091,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
     "source": "dramaora",
     "backed_up_at": "2026-09-24T23:52:51Z"
+  },
+  "dramaora_52022190184_82": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 82,
+    "telegram_message_id": 10915,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqo2q12ad30-_6AAEss6O2M-0JyKDnwQAC6x8AAqxMsFVFMVIUgo4Rfh4E",
+    "telegram_message_ids": [
+      10915
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.98,
+    "original_url": "https://v4.xtv.media/video/20260224/f17fae2137b24b0ea090384ebc4ce367/cloudv-transfer/55555555q82nr5245556p465731974r3_d10b65a72b29469fad3c6bced099bbf7_0_4.mp4?wsSecret=f8849eed9ce0ccf799f6cd13e7a7dcca&wsTime=1790309823",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:17:13Z"
+  },
+  "dramaora_52022190184_83": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 83,
+    "telegram_message_id": 10916,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqpGq12beLy1bIumBZ-T8uS5OJLZQ_AALtHwACrEywVRagOLnjE5yRHgQ",
+    "telegram_message_ids": [
+      10916
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.95,
+    "original_url": "https://v4.xtv.media/video/20260224/e778f9e9a39c4d5bb9acac8c52bf13ab/cloudv-transfer/55555555s8op44n35556p465123274r3_b25af353e0ff4e9090b3d6019e295bfa_0_4.mp4?wsSecret=2a8073ca70188652d13ff2d8921efc18&wsTime=1790309823",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:17:30Z"
+  },
+  "dramaora_52022190184_84": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 84,
+    "telegram_message_id": 10917,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqpWq12cX9XJLcdMgAAaxS0L-7WaVSkQAC7h8AAqxMsFUG9poE1S2COR4E",
+    "telegram_message_ids": [
+      10917
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.94,
+    "original_url": "https://v4.xtv.media/video/20260224/6fa35f14d1ba4517aedf11ad94025478/cloudv-transfer/555555556r0991r55556p465s50n74r3_f64032004d754ad986bdb182a1a7676d_0_4.mp4?wsSecret=fdef2292426e85faac02514fbd848b64&wsTime=1790309823",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:17:43Z"
+  },
+  "dramaora_52022190184_85": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 85,
+    "telegram_message_id": 10918,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqpmq12ddre4yh_FuwqiKgD_t2HrbQAALvHwACrEywVQ5V38ZykXo-HgQ",
+    "telegram_message_ids": [
+      10918
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.91,
+    "original_url": "https://v4.xtv.media/video/20260224/009d770936ce43d998c62f01e0deb652/cloudv-transfer/55555555231n050n5556p465p2sp74r3_46801f7211154d96925282ea719fae5d_0_4.mp4?wsSecret=8325c650998d8a5ea5678bb611516426&wsTime=1790309823",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:18:01Z"
+  },
+  "dramaora_52022190184_86": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 86,
+    "telegram_message_id": 10919,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqp2q12e8LusOh21CZfvRyECnnPR8nAALwHwACrEywVWIoGiYZzQEsHgQ",
+    "telegram_message_ids": [
+      10919
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.61,
+    "original_url": "https://v4.xtv.media/video/20260224/b6e567b2ff854f06b797bc886373dc36/cloudv-transfer/555555557356q7465556p4658rnr74r3_7b66195101d340bdafedfa3f1db08483_0_4.mp4?wsSecret=2aaafbefe17cc10944c7ea7aea43e1b5&wsTime=1790309823",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:18:26Z"
+  },
+  "dramaora_52022190184_87": {
+    "show_id": "dramaora_52022190184",
+    "show_title": "Charles' Revenge and Passion",
+    "episode_number": 87,
+    "telegram_message_id": 10920,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqqGq12gGq3XuFdhVaoIONv95SPO9vAALzHwACrEywVVwmSgINoanEHgQ",
+    "telegram_message_ids": [
+      10920
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.09,
+    "original_url": "https://v4.xtv.media/video/20260224/ecd000880268481eb510d37953680f6b/cloudv-transfer/55555555q6qro9805556p465o4qs74r3_56e49a4b08e74686912a1d56f1d3454b_0_4.mp4?wsSecret=b05625a4d5a04e1acb7851e44bd3bf37&wsTime=1790309823",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260224/8e6a4c8b019c100029ee9fd000000000.jpg",
+    "synopsis": "After catching his boss cheating with his wife, Charles plots revenge by targeting the boss's wife. Unexpectedly, genuine feelings blossom between them. As he retaliates, he discovers new passions and gradually seizes more power.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:18:43Z"
+  },
+  "dramaora_52023974107_1": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 1,
+    "telegram_message_id": 10921,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqqWq12hK0W1WDDaGAg2AwpMbEcV9GAAL0HwACrEywVfv-UQNpxfuSHgQ",
+    "telegram_message_ids": [
+      10921
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.0,
+    "original_url": "https://v4.xtv.media/video/20260210/d02f5ad2625f4f3289d9551f757b88a6/cloudv-transfer/55555555rrq6r3235556p46554060619_d70b8c00cd35435c94d1997927027b30_0_4.mp4?wsSecret=267883351eac10fa2c11dd7f9d7e2bc0&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:19:01Z"
+  },
+  "dramaora_52023974107_2": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 2,
+    "telegram_message_id": 10922,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqqmq12iBVomAnbtphuEn_JGsIN-iWAAL2HwACrEywVeCYEz22PTIcHgQ",
+    "telegram_message_ids": [
+      10922
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.89,
+    "original_url": "https://v4.xtv.media/video/20260210/4b46415a32f74728a1c0be2cc6037019/cloudv-transfer/555555552ropo4145556p46513590619_9d2d46ef338e430299cd8bc849eb3ca8_0_4.mp4?wsSecret=e5fdad5bdeb0e5fa9304be3eff374862&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:19:16Z"
+  },
+  "dramaora_52023974107_3": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 3,
+    "telegram_message_id": 10923,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqq2q12i_HC6K8jP29QINGqkZWBBbqAAL4HwACrEywVduCN3FGzfOhHgQ",
+    "telegram_message_ids": [
+      10923
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.12,
+    "original_url": "https://v4.xtv.media/video/20260210/673eaa24edc24040a7dcaa0fca8f2c39/cloudv-transfer/555555551op1r8pn5556p4650r200619_eb63ffe2490d40ef9c21783da38f2cdd_0_4.mp4?wsSecret=4bdf093eb5998abaccdf7ff078615ced&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:19:29Z"
+  },
+  "dramaora_52023974107_4": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 4,
+    "telegram_message_id": 10924,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqrGq12jxdzyrtMBERICfsLZkggWvcAAL6HwACrEywVe1imFi62NqXHgQ",
+    "telegram_message_ids": [
+      10924
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.54,
+    "original_url": "https://v4.xtv.media/video/20260210/161b64b75f3544db998e973c7a615c3b/cloudv-transfer/555555550503rn925556p46528430619_be074bc4e91e432e804b4adaf70aa8eb_0_4.mp4?wsSecret=75efe022707902f0e21d43e7216c275e&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:19:42Z"
+  },
+  "dramaora_52023974107_5": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 5,
+    "telegram_message_id": 10925,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqrWq12lGzhN9rybO_hCBohV-Kms16AAL8HwACrEywVWPPFTk7hdI5HgQ",
+    "telegram_message_ids": [
+      10925
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.51,
+    "original_url": "https://v4.xtv.media/video/20260210/e87261cb60284614bc51e82f6808e63a/cloudv-transfer/555555553op54p6s5556p4658snn0619_d8fc2c967ae34b299bfbb217d7232496_0_4.mp4?wsSecret=bdbc50528b8724ed15d6acdb0968b302&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:20:03Z"
+  },
+  "dramaora_52023974107_6": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 6,
+    "telegram_message_id": 10926,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqrmq12mDxKmd7le8NHZJDaph3uT3AAAL9HwACrEywVfwOYEFlxJaWHgQ",
+    "telegram_message_ids": [
+      10926
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.2,
+    "original_url": "https://v4.xtv.media/video/20260210/3297726d48d34efc997da7d546781d42/cloudv-transfer/555555554211qosr5556p46591oq0619_ece99e321cea4f6186d3731d4b502a01_0_4.mp4?wsSecret=e3891dfccbd79d9cc13deb429b87beb6&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:20:18Z"
+  },
+  "dramaora_52023974107_7": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 7,
+    "telegram_message_id": 10927,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqr2q12m_bHe_HfTjGwVCgzZY2abICAAL-HwACrEywVRKggbsI-xJkHgQ",
+    "telegram_message_ids": [
+      10927
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.99,
+    "original_url": "https://v4.xtv.media/video/20260210/27ebda2f7c65457eaf29dcf090963e75/cloudv-transfer/555555555qn6010s5556p4653ros0619_e09bb1eb37b64926a261046ed5da6614_0_4.mp4?wsSecret=5a06d53a93669fc9d9091569003af4b2&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:20:33Z"
+  },
+  "dramaora_52023974107_8": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 8,
+    "telegram_message_id": 10928,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqsGq12nzM5EaF3Gv4Texv0MiZCWxkAAIBIAACrEywVQ_DiiP7cK8kHgQ",
+    "telegram_message_ids": [
+      10928
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.72,
+    "original_url": "https://v4.xtv.media/video/20260210/9be999233b534b83aea34908a6659eef/cloudv-transfer/555555554prqs9q45556p4659rs61619_be327dd092914512ae8d09a926e30c54_0_4.mp4?wsSecret=92e195511c49153beccf81058bdbfbc7&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:20:46Z"
+  },
+  "dramaora_52023974107_9": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 9,
+    "telegram_message_id": 10929,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqsWq12o1vwUlsC3xGkhuw_1rjzzYKAAIDIAACrEywVR_6usvThpnCHgQ",
+    "telegram_message_ids": [
+      10929
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.32,
+    "original_url": "https://v4.xtv.media/video/20260210/fb494ba771b3437aaaac84de5277dec9/cloudv-transfer/55555555789237935556p4651r991619_d30e0d8d46334414899a97064e48d92c_0_4.mp4?wsSecret=9c78f58a65fd278d2082ad07ec19a918&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:21:03Z"
+  },
+  "dramaora_52023974107_10": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 10,
+    "telegram_message_id": 10930,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqsmq12qBZrhv--qK3Z_tZRJqUTrUAAwQgAAKsTLBVBqkk-8kDC8IeBA",
+    "telegram_message_ids": [
+      10930
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.67,
+    "original_url": "https://v4.xtv.media/video/20260210/df4df62ffb9741f08e79ce072d1182a4/cloudv-transfer/555555557q6q46885556p4650n711619_5559cd8d29284e14968f2af7eaf45c39_0_4.mp4?wsSecret=4a2d086ef330e17665bf08eeaec90d9e&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:21:22Z"
+  },
+  "dramaora_52023974107_11": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 11,
+    "telegram_message_id": 10931,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqs2q12qtXIxKrhakXkBeRa83REMQyAAIFIAACrEywVZsHewsJskhbHgQ",
+    "telegram_message_ids": [
+      10931
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.24,
+    "original_url": "https://v4.xtv.media/video/20260210/820b6a320c474f3fb779b796f9a4a027/cloudv-transfer/555555551391qq9s5556p46556931619_69b65f9a98934cd69f53c30bfcb88d45_0_4.mp4?wsSecret=c7d3770aa516c00baa2ab93ad5aa8cad&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:21:33Z"
+  },
+  "dramaora_52023974107_12": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 12,
+    "telegram_message_id": 10932,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqtGq12rdktl1Eb00rX8x7-0LBwC7_AAIHIAACrEywVdlfke8bgj3xHgQ",
+    "telegram_message_ids": [
+      10932
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.75,
+    "original_url": "https://v4.xtv.media/video/20260210/e3fd19b5c5054b6683e7afa5ffeaa10c/cloudv-transfer/55555555sqrr05o35556p4658q7n1619_a19d584b411f444da014df9edc4ce161_0_4.mp4?wsSecret=5175531437c1a19e12fcb7c4d21eea8c&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:21:45Z"
+  },
+  "dramaora_52023974107_13": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 13,
+    "telegram_message_id": 10933,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqtWq12sJnA9jHrel-ZpfCPBY_TOPZAAIKIAACrEywVZLO7PItZe0VHgQ",
+    "telegram_message_ids": [
+      10933
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://v4.xtv.media/video/20260210/4edff368c48c4114a4d4113da40fee39/cloudv-transfer/5555555583qpnsr45556p4652s1p1619_bf49b1b55bc14ca4b6dbaaf547d90af1_0_4.mp4?wsSecret=5175e87153c721feade2f8eea2e34958&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:21:56Z"
+  },
+  "dramaora_52023974107_14": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 14,
+    "telegram_message_id": 10934,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqtmq12tUQUt2OlT37uQz_Zb0FWYaPAAILIAACrEywVYeF3jFupWWDHgQ",
+    "telegram_message_ids": [
+      10934
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.94,
+    "original_url": "https://v4.xtv.media/video/20260210/a5b3e4541a424801b4c6bd30d390b0c2/cloudv-transfer/55555555900q8s505556p46569oq1619_6bd5503b4dbd4f34bd58505602882889_0_4.mp4?wsSecret=958bfaecc2c105535aa36dd36fff2ffa&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:22:15Z"
+  },
+  "dramaora_52023974107_15": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 15,
+    "telegram_message_id": 10935,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqt2q12uPvld3bRsSFET1nZbj1D1b0AAIMIAACrEywVQrqqNA0Srx-HgQ",
+    "telegram_message_ids": [
+      10935
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.94,
+    "original_url": "https://v4.xtv.media/video/20260210/5c4b40f2d9cd46768715a01deae8bddd/cloudv-transfer/55555555p628s5r05556p4654p4s1619_50d9d0da9a9540b5997e17f62099d472_0_4.mp4?wsSecret=edf5e00bb87580eabe09a42380154dcc&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:22:29Z"
+  },
+  "dramaora_52023974107_16": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 16,
+    "telegram_message_id": 10936,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIquGq12vA2ApxzQ7IiNooFXUma1GDxAAINIAACrEywVeOst837eChoHgQ",
+    "telegram_message_ids": [
+      10936
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.15,
+    "original_url": "https://v4.xtv.media/video/20260210/47bb3149d5dd4fa39b15bb1c7eb53468/cloudv-transfer/555555550os7sqon5556p46573n62619_3c1185e5f066451bbc899bcfa0a76500_0_4.mp4?wsSecret=276d8b74a04a70d6ff321bdf041a513e&wsTime=1790309927",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:22:42Z"
+  },
+  "dramaora_52023974107_17": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 17,
+    "telegram_message_id": 10937,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIquWq12wABy5lfbcJqyB66jNEpDwABhwIAAg4gAAKsTLBVmFeeMkXgb48eBA",
+    "telegram_message_ids": [
+      10937
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.43,
+    "original_url": "https://v4.xtv.media/video/20260210/ded6a97960cd4a7b8d070e9c06b061c2/cloudv-transfer/555555553q29r44n5556p46554182619_0e9014f81e0745f38e62906be524cafb_0_4.mp4?wsSecret=78d97f9b7c6a1df202226894528bc9b3&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:22:58Z"
+  },
+  "dramaora_52023974107_18": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 18,
+    "telegram_message_id": 10938,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqumq12wyh-da6QjH3UdGBvq2StQfOAAIPIAACrEywVVi5LZgFtwAB8R4E",
+    "telegram_message_ids": [
+      10938
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.08,
+    "original_url": "https://v4.xtv.media/video/20260210/abd53c7f89264b70b4cf14c5ed29f0e4/cloudv-transfer/555555559nnoqs2n5556p4654n102619_1bea1d5e3eea4c33a8f3281c5d1f375b_0_4.mp4?wsSecret=b9de7cd2b50ae007bf2168490d76a8ff&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:23:10Z"
+  },
+  "dramaora_52023974107_19": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 19,
+    "telegram_message_id": 10939,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqu2q12xnkPRm9IaIwoHb3R5BVMZheAAIQIAACrEywVRlNFI2_76jkHgQ",
+    "telegram_message_ids": [
+      10939
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.73,
+    "original_url": "https://v4.xtv.media/video/20260210/e47e97fc8b3e4f579c6885a52973272a/cloudv-transfer/55555555n96oo8985556p465p8522619_d0f260545c5e4089ab63a6775c800fa2_0_4.mp4?wsSecret=b6ee5a1242f7a1fe31a277e433043d03&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:23:23Z"
+  },
+  "dramaora_52023974107_20": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 20,
+    "telegram_message_id": 10940,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqvGq12yb173oJejiy9PgXWjq_WaNIAAIRIAACrEywVbrK0a4DrLqJHgQ",
+    "telegram_message_ids": [
+      10940
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.01,
+    "original_url": "https://v4.xtv.media/video/20260210/f1d28070201844a2a08cee25d3721d45/cloudv-transfer/55555555866492ns5556p4659s332619_e91d810c4b0e49468234938f0fc55dda_0_4.mp4?wsSecret=b1d031732303a2a8a147598d4d71eb75&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:23:36Z"
+  },
+  "dramaora_52023974107_21": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 21,
+    "telegram_message_id": 10941,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqvWq12zQr5UakEFgZkXekAAHveOpW1gACEiAAAqxMsFXis-RVMj1LYx4E",
+    "telegram_message_ids": [
+      10941
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.33,
+    "original_url": "https://v4.xtv.media/video/20260210/98dd19d18af5455db8defb2318dd1913/cloudv-transfer/55555555663n17395556p465sn4n2619_c6edac1894a542d7a71d9b856de8bf32_0_4.mp4?wsSecret=b8575c0465a2b432b94170de3ca0f681&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:23:51Z"
+  },
+  "dramaora_52023974107_22": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 22,
+    "telegram_message_id": 10942,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqvmq120IlcrPLuxT8XzXXdXipetewAAITIAACrEywVdrylMvJowywHgQ",
+    "telegram_message_ids": [
+      10942
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.33,
+    "original_url": "https://v4.xtv.media/video/20260210/bcb31d10ded842e5b1a749bea4620794/cloudv-transfer/55555555qo52790r5556p46586sq2619_73dae2db35a54afe8d3bd4c2ea30dcbb_0_4.mp4?wsSecret=662dc568a82f0bccb2bb039cccd6cd23&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:24:04Z"
+  },
+  "dramaora_52023974107_23": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 23,
+    "telegram_message_id": 10943,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqv2q121iRDNwmUmskwyuyrCE7QE3TAAIUIAACrEywVcb_v7LFlnVOHgQ",
+    "telegram_message_ids": [
+      10943
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.05,
+    "original_url": "https://v4.xtv.media/video/20260210/9bcf220a5f2c4f43a41457f27b332d4c/cloudv-transfer/55555555858p3o065556p465p9os2619_2932a7bef43a4cc88640619b1ee4d709_0_4.mp4?wsSecret=72e4cf7588822dd80036e9a58f32d0d1&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:24:27Z"
+  },
+  "dramaora_52023974107_24": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 24,
+    "telegram_message_id": 10944,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqwGq122OKJ8QVFNgrNCY4cIPXpqu1AAIVIAACrEywVWVAJWBRMwMlHgQ",
+    "telegram_message_ids": [
+      10944
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.27,
+    "original_url": "https://v4.xtv.media/video/20260210/93b3c6ef0eae4d6baae9f8b9bbff1e7b/cloudv-transfer/55555555r1so9n825556p46593o63619_f8b4d0c578d94754a7e5bf56eb8bbcd7_0_4.mp4?wsSecret=cb44821984d6f191babb369d5608992a&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:24:37Z"
+  },
+  "dramaora_52023974107_25": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 25,
+    "telegram_message_id": 10945,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqwWq123SXKNQkOjIURlDjDhT7khlzAAIYIAACrEywVWupd6kZ5v-nHgQ",
+    "telegram_message_ids": [
+      10945
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.9,
+    "original_url": "https://v4.xtv.media/video/20260210/f7cf40e8d29c417c90d577490397e7ee/cloudv-transfer/55555555ps4q89p65556p465o4883619_546ed3bf160e43e8b0149c9fdc0eed52_0_4.mp4?wsSecret=481a52a0ec5c82bafd8217248c5446b3&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:24:54Z"
+  },
+  "dramaora_52023974107_26": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 26,
+    "telegram_message_id": 10946,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqwmq124oGbl_f-AwGviVoDy0LVdqkAAIZIAACrEywVSRyP9bHnVrIHgQ",
+    "telegram_message_ids": [
+      10946
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.3,
+    "original_url": "https://v4.xtv.media/video/20260210/5acc311a956e49f69a70175719cb3842/cloudv-transfer/55555555sqo21oq65556p46542o93619_353f0654714c4e3987be92ca465ccef6_0_4.mp4?wsSecret=63c8de9ba0201cfa2d9b7138799205c2&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:25:17Z"
+  },
+  "dramaora_52023974107_27": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 27,
+    "telegram_message_id": 10947,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqw2q126RgcqBINKfyIUSY12aZ49eOAAIaIAACrEywVTFbVaGqQ-nCHgQ",
+    "telegram_message_ids": [
+      10947
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.53,
+    "original_url": "https://v4.xtv.media/video/20260210/382766e1dc654c81a7a13b4866ed2d75/cloudv-transfer/555555550posnpo95556p4653r513619_579f5887440142448be2f8b5585a5a9d_0_4.mp4?wsSecret=42b04f8096a0991f932cb3ec34a37c51&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:25:43Z"
+  },
+  "dramaora_52023974107_28": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 28,
+    "telegram_message_id": 10948,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqxGq127rfHu4VG8BgUL708UU1g3_NAAIcIAACrEywVc6NBmgFDxsCHgQ",
+    "telegram_message_ids": [
+      10948
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.08,
+    "original_url": "https://v4.xtv.media/video/20260210/f913cce419954a91a38f448b743664dd/cloudv-transfer/55555555r540r1n95556p465r8p23619_dcdb688591a74675adc893f981a17a7e_0_4.mp4?wsSecret=649a1455bc1ea4ceed853844e4c19327&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:26:04Z"
+  },
+  "dramaora_52023974107_29": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 29,
+    "telegram_message_id": 10949,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqxWq128gXRewVp0cQGuhTD7DjdBInAAIdIAACrEywVR2hb2SZbCl2HgQ",
+    "telegram_message_ids": [
+      10949
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.79,
+    "original_url": "https://v4.xtv.media/video/20260210/401afa531fae45d6974a82363c2fd756/cloudv-transfer/555555557102676o5556p46516oo3619_53e599c8a0e04eadaceed43e75a1bd23_0_4.mp4?wsSecret=2b6b82e608fda5cb893e7c8c58d8ec4c&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:26:18Z"
+  },
+  "dramaora_52023974107_30": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 30,
+    "telegram_message_id": 10950,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqxmq1291cHBZ0E3lIefiJsH0qVUvIAAIeIAACrEywVa315iHZVeV1HgQ",
+    "telegram_message_ids": [
+      10950
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.34,
+    "original_url": "https://v4.xtv.media/video/20260210/61d1971c57da43c8908ad89feac9c28d/cloudv-transfer/555555554r69onr25556p46556oq3619_5c914fe4d45a4966bd81d73365461d7b_0_4.mp4?wsSecret=f6b44d6b907bb73acfe51f7e1bbe0520&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:26:39Z"
+  },
+  "dramaora_52023974107_31": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 31,
+    "telegram_message_id": 10951,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqx2q12-r7tmm8kGrvPnLlb2z1nWphAAIfIAACrEywVSvf2lbPG2aXHgQ",
+    "telegram_message_ids": [
+      10951
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.46,
+    "original_url": "https://v4.xtv.media/video/20260210/6760cc1178c443e8802ae15a69306e5a/cloudv-transfer/555555553ro642s05556p46576qs3619_398a7726fe134d41bb767b647a30f96a_0_4.mp4?wsSecret=6aa9a1763dbee939ef0fbbb1939a92f7&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:26:53Z"
+  },
+  "dramaora_52023974107_32": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 32,
+    "telegram_message_id": 10952,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqyGq13AY_ed_Jf5KTi3Gd7ay4azNYAAIhIAACrEywVV-tdNMn3Ek6HgQ",
+    "telegram_message_ids": [
+      10952
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.06,
+    "original_url": "https://v4.xtv.media/video/20260210/ddb915fa72b141dfac772b8830c107e8/cloudv-transfer/555555551pprn4655556p465r6q64619_cf47732b068746b7b409a8643b28855d_0_4.mp4?wsSecret=2168e5e506f627fac17114db0780a9a6&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:27:20Z"
+  },
+  "dramaora_52023974107_33": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 33,
+    "telegram_message_id": 10953,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqyWq13BTzZ39Rqmk0eAI5T3Ykshb0AAIjIAACrEywVeAvyAWZjOmxHgQ",
+    "telegram_message_ids": [
+      10953
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.24,
+    "original_url": "https://v4.xtv.media/video/20260210/2e86095e5dce47d7b3379b5b93aba5c4/cloudv-transfer/55555555r7o7177n5556p4654sn94619_dbee9b37cf5e40aa9540bb207aebb85f_0_4.mp4?wsSecret=9f4b3cf8d2a4022485c37e9e7cf4fbe1&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:27:35Z"
+  },
+  "dramaora_52023974107_34": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 34,
+    "telegram_message_id": 10954,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqymq13CJqMFDFpNbv4IEoDWzTPgZnAAIlIAACrEywVZ6e4zxKMl_wHgQ",
+    "telegram_message_ids": [
+      10954
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.47,
+    "original_url": "https://v4.xtv.media/video/20260210/4e7da89c01f44937a0ca9b38a71eb535/cloudv-transfer/55555555374s67o45556p4654oo14619_b4f777d2d5514142a3cf9038a0974579_0_4.mp4?wsSecret=5f2b836346e0e81e4aed526bcaffbafc&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:27:48Z"
+  },
+  "dramaora_52023974107_35": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 35,
+    "telegram_message_id": 10955,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqy2q13C1DsfQRDAWpOL2hlg1ZN_3EAAImIAACrEywVd8CnJpDsNmXHgQ",
+    "telegram_message_ids": [
+      10955
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.89,
+    "original_url": "https://v4.xtv.media/video/20260210/5e225cb9ed75469bbb4ba5e6305539d8/cloudv-transfer/55555555qrp0nn095556p46533834619_af2ff5e894064e14a9d55904b7492c98_0_4.mp4?wsSecret=8c3a3c37509d89b2dbcf659e7565579d&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:28:00Z"
+  },
+  "dramaora_52023974107_36": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 36,
+    "telegram_message_id": 10956,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqzGq13D11uN3-7liT4kVQqfGwVoEnAAIoIAACrEywVQX6U-eZDeMDHgQ",
+    "telegram_message_ids": [
+      10956
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.42,
+    "original_url": "https://v4.xtv.media/video/20260210/a93e5fe1ea8f4ddfa5a2a6d7ca352887/cloudv-transfer/55555555n86o83275556p4659pp44619_a203d762cca4457a8642e05a9cea26c3_0_4.mp4?wsSecret=736da71ecc9c6586eeef4c6a1a6f1906&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:28:15Z"
+  },
+  "dramaora_52023974107_37": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 37,
+    "telegram_message_id": 10957,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqzWq13EsjVG3tcCJNmhv04pU2qpJlAAIpIAACrEywVTHMLWSd6It1HgQ",
+    "telegram_message_ids": [
+      10957
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.69,
+    "original_url": "https://v4.xtv.media/video/20260210/1c10040c6e1d4ec79d405f0d02dff7d9/cloudv-transfer/555555554r8o70365556p465p7rn4619_d1e34cbea3ef41088e68e6c20f8e8d69_0_4.mp4?wsSecret=387a4ddb4144cee32bd5825d76942cf5&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:28:30Z"
+  },
+  "dramaora_52023974107_38": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 38,
+    "telegram_message_id": 10958,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqzmq13FirZcM5s1bjY5OV-9W8STS3AAIqIAACrEywVd9t8yHPLzZSHgQ",
+    "telegram_message_ids": [
+      10958
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.74,
+    "original_url": "https://v4.xtv.media/video/20260210/c4cf68bb8ca24db1afcf0b4adf3a9372/cloudv-transfer/55555555221s013p5556p4659n6p4619_ea6993f6673d4f3c89fb3378e8c4c928_0_4.mp4?wsSecret=cdb9b4205f6075c0cd8d4ec42f7b9098&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:28:43Z"
+  },
+  "dramaora_52023974107_39": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 39,
+    "telegram_message_id": 10959,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIqz2q13Ge4UVQhPBpuA6D7bSM3YVppAAIrIAACrEywVdteCMHtkjseHgQ",
+    "telegram_message_ids": [
+      10959
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.68,
+    "original_url": "https://v4.xtv.media/video/20260210/a7aa52bfd0af462caa705e1a661acbef/cloudv-transfer/555555550403n9335556p465001q4619_2d306a54f1bf4997ac73dffe1586be08_0_4.mp4?wsSecret=c812fb5660ca1ba8b73ce71cd9ff0110&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:28:57Z"
+  },
+  "dramaora_52023974107_40": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 40,
+    "telegram_message_id": 10960,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq0Gq13HPtSgN2MX0bRGYPFnz_KkmHAAItIAACrEywVWM1Nn8CNwABwB4E",
+    "telegram_message_ids": [
+      10960
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.64,
+    "original_url": "https://v4.xtv.media/video/20260210/51e381f475414abf947bf57f872861e0/cloudv-transfer/55555555r06257995556p46594pr4619_22837fa2305d4ff88c935274deac9fa2_0_4.mp4?wsSecret=a824581c1113728956505094e72b9c88&wsTime=1790309928",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:29:10Z"
+  },
+  "dramaora_52023974107_41": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 41,
+    "telegram_message_id": 10961,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq0Wq13IJBV8UyFk0g5OIHIUDqOKaFAAIuIAACrEywVZUVRQI-WDiiHgQ",
+    "telegram_message_ids": [
+      10961
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.66,
+    "original_url": "https://v4.xtv.media/video/20260210/888afb52044645fdaf8a9d18997127f1/cloudv-transfer/55555555p9293nos5556p4654on5n619_901e7a8f9c4e488e98f0d7426ef35481_0_4.mp4?wsSecret=836582916a708166a1cb6c587d9aab0e&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:29:24Z"
+  },
+  "dramaora_52023974107_42": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 42,
+    "telegram_message_id": 10962,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq0mq13I-UdF5P7TsJ34gu05jHPv0UAAIvIAACrEywVZIoDxqOooXgHgQ",
+    "telegram_message_ids": [
+      10962
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.22,
+    "original_url": "https://v4.xtv.media/video/20260210/29ca630991c844f0871b1ca0d27a527b/cloudv-transfer/55555555173rs4pp5556p4653q47n619_22c11ef5c727499baab73753ee62f593_0_4.mp4?wsSecret=2b13432a7a8d0340869e0db761ee3365&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:29:37Z"
+  },
+  "dramaora_52023974107_43": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 43,
+    "telegram_message_id": 10963,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq02q13KlnN1FOc8dkAAEJDjNjQqlDtQACMSAAAqxMsFVLsxERiwSWFR4E",
+    "telegram_message_ids": [
+      10963
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.09,
+    "original_url": "https://v4.xtv.media/video/20260210/bda9f43116af4f31af8d3d2060b66d62/cloudv-transfer/555555553o6q1np65556p46515n9n619_c80f19a8e82a495a96b67f522b45efdc_0_4.mp4?wsSecret=2c532cf648f6c85187c653435a5b243c&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:30:03Z"
+  },
+  "dramaora_52023974107_44": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 44,
+    "telegram_message_id": 10964,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq1Gq13LfEtvoOdnnNKA8uZc5Fl9NVAAIzIAACrEywVbF3r6TGAAGy_R4E",
+    "telegram_message_ids": [
+      10964
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.35,
+    "original_url": "https://v4.xtv.media/video/20260210/0f1b12fe3151416294e3f50a0f8e3edb/cloudv-transfer/55555555qq49n1r25556p465o9s1n619_9e0422060df74a5682b2028c1a902330_0_4.mp4?wsSecret=dd9f0be372b5b19017b2ee891b954a7b&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:30:18Z"
+  },
+  "dramaora_52023974107_45": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 45,
+    "telegram_message_id": 10965,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq1Wq13Mfe_XgCJjEjc2SbkN5Z4cUsAAI0IAACrEywVcEwwBjqjqYGHgQ",
+    "telegram_message_ids": [
+      10965
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.24,
+    "original_url": "https://v4.xtv.media/video/20260210/0fc3746a0f0e4dcda4ec5549169eacc3/cloudv-transfer/55555555139nq3q35556p46507s3n619_32ce405f39dc4c688804ef985511677d_0_4.mp4?wsSecret=cafce7a03703ddddcf62bdbf5f59d037&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:30:34Z"
+  },
+  "dramaora_52023974107_46": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 46,
+    "telegram_message_id": 10966,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq1mq13NVb6l1tpR-ds8ROgzWR_fc5AAI1IAACrEywVTdQi09fQSJdHgQ",
+    "telegram_message_ids": [
+      10966
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.44,
+    "original_url": "https://v4.xtv.media/video/20260210/37e343cd27e9440ba8979eda83153478/cloudv-transfer/55555555srn3657p5556p465pp8nn619_77895b1efd85477db459ee988cae8a2f_0_4.mp4?wsSecret=076aff74e2cfd187db2cdbf357741651&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:30:47Z"
+  },
+  "dramaora_52023974107_47": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 47,
+    "telegram_message_id": 10967,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq12q13OBfhpodWOwFcLT0Zb8kjpbIAAI2IAACrEywVeS05xYLNAW_HgQ",
+    "telegram_message_ids": [
+      10967
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.98,
+    "original_url": "https://v4.xtv.media/video/20260210/050254ade9da4a43a0918d542a49f2f6/cloudv-transfer/5555555585n94q085556p46576non619_d328ae16b1374e0eb6eaad4e0b9b34f0_0_4.mp4?wsSecret=c16c3ec954baf259fd4161e718d06d70&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:30:59Z"
+  },
+  "dramaora_52023974107_48": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 48,
+    "telegram_message_id": 10968,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq2Gq13Oz8yMCd1zjRe2wN_SglRJY0AAI3IAACrEywVWcjHZfx-jEKHgQ",
+    "telegram_message_ids": [
+      10968
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.22,
+    "original_url": "https://v4.xtv.media/video/20260210/ed59c5a05a3f415ba7517a9bf5ec9469/cloudv-transfer/5555555566r2531n5556p465pp8qn619_8753b2a0ac7d401e947a83e64485a9cf_0_4.mp4?wsSecret=90c808fa4f717769b8dea8e1ba55002a&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:31:10Z"
+  },
+  "dramaora_52023974107_49": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 49,
+    "telegram_message_id": 10969,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq2Wq13Psky7v4UmAtJXAntUTuN5M4AAI4IAACrEywVR4Udq6JTKuRHgQ",
+    "telegram_message_ids": [
+      10969
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.4,
+    "original_url": "https://v4.xtv.media/video/20260210/8f009b2b16ce46cd844b3091d5791ce6/cloudv-transfer/55555555506p56995556p46588rrn619_42d7bbd63025431ab09654f9a99fd1ab_0_4.mp4?wsSecret=6acebb66613c2760e57f6a66869404ef&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:31:25Z"
+  },
+  "dramaora_52023974107_50": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 50,
+    "telegram_message_id": 10970,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq2mq13Qm8LlKXyNB6sjs2efW04UfdAAI5IAACrEywVcib-hj4O9D4HgQ",
+    "telegram_message_ids": [
+      10970
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.33,
+    "original_url": "https://v4.xtv.media/video/20260210/d04a275992994913b4d56334611e2c1b/cloudv-transfer/555555554n28o1745556p465rq95o619_b2c88a69949744e09c8e2d32f2eacb55_0_4.mp4?wsSecret=cb8b1fc5bdea721eeacb835d1a497347&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:31:39Z"
+  },
+  "dramaora_52023974107_51": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 51,
+    "telegram_message_id": 10971,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq22q13Rd4y7bkmn26AAGs8MbCH8ymggACOiAAAqxMsFUiKsFWOWy2yh4E",
+    "telegram_message_ids": [
+      10971
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.32,
+    "original_url": "https://v4.xtv.media/video/20260210/8ac0686483db4e468580e30e28f7be0a/cloudv-transfer/5555555557026sp35556p465s347o619_2e59303bf90d47299f7cdaeb0f8475c9_0_4.mp4?wsSecret=270e38946c75a655450009e76b9ca601&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:31:53Z"
+  },
+  "dramaora_52023974107_52": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 52,
+    "telegram_message_id": 10972,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq3Gq13Se89UAQiM-Ahv1aSauA0pbFAAI7IAACrEywVdb4WAx2MDgNHgQ",
+    "telegram_message_ids": [
+      10972
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.39,
+    "original_url": "https://v4.xtv.media/video/20260210/e7007b4e713a42d2a453f019407ea66b/cloudv-transfer/55555555q95ss8pr5556p465oqo9o619_5fddb3adbaa544c89caac00e98c01b6a_0_4.mp4?wsSecret=5f247b344ca506ec78d00778f3265850&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:32:09Z"
+  },
+  "dramaora_52023974107_53": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 53,
+    "telegram_message_id": 10973,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq3Wq13TSzZ3UMcLTLAAE0cmxhaxvU_QACPCAAAqxMsFUAASjezq851GAeBA",
+    "telegram_message_ids": [
+      10973
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.11,
+    "original_url": "https://v4.xtv.media/video/20260210/595762d40842487894bb05b67a562de9/cloudv-transfer/555555552631207r5556p4656092o619_a1949ed998d849678a9664efdd068609_0_4.mp4?wsSecret=ab48ae24f40121d1fb597f8b815dcb7c&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:32:23Z"
+  },
+  "dramaora_52023974107_54": {
+    "show_id": "dramaora_52023974107",
+    "show_title": "Hurney's Wonderful City Life",
+    "episode_number": 54,
+    "telegram_message_id": 10974,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIq3mq13UFQBxAFSTDS1b-iCDSeApGqAAI9IAACrEywVTC0YmJa2k-RHgQ",
+    "telegram_message_ids": [
+      10974
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.82,
+    "original_url": "https://v4.xtv.media/video/20260210/9ec47194bd5d458f8e047e36f999d998/cloudv-transfer/55555555nq2q421p5556p46584n4o619_49562cc3f7ec472797d593e58356fe1d_0_4.mp4?wsSecret=759b75a4e46e6e48b2fc8b76cca60bc4&wsTime=1790309929",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260210/461372c0019c1000e706a74200000000.jpg",
+    "synopsis": "Hurney was originally a manual labor who, after being unfairly fired by his company's administrative manager, fell into a life low. Vowing to change his fate and make something of himself, he accidentally got caught up in a series of bizarre events, embarking on a fantastical adventure with his boss and a group of ladies around him.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-25T02:32:35Z"
   }
 };
