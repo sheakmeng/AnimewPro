@@ -36191,5 +36191,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
     "source": "dramaora",
     "backed_up_at": "2026-09-25T22:19:32Z"
+  },
+  "dramaora_52022156374_45": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 45,
+    "telegram_message_id": 11220,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr1Gq3GcpWQsEhBHr3ey4sl27wik2_AAKWJAACNP7AVROSkgmScJwpHgQ",
+    "telegram_message_ids": [
+      11220
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.64,
+    "original_url": "https://v4.xtv.media/video/20260124/3ec143802c1c4b3190c59606709ce30e/cloudv-transfer/55555555o3q9r9q85556o465pn93n1sr_e3be1a85b8184b1d9756cd2afe5ae9aa_0_4.mp4?wsSecret=d560bd0fee954c5467709e5a26f1ac50&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:03:09Z"
+  },
+  "dramaora_52022156374_46": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 46,
+    "telegram_message_id": 11221,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr1Wq3Gdpa4xzgmbnG_RSXp2Aap2NZAAKXJAACNP7AVU9InOFCwPB2HgQ",
+    "telegram_message_ids": [
+      11221
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.23,
+    "original_url": "https://v4.xtv.media/video/20260124/e041524c68ef44f1ae1cc622c1bfa1c7/cloudv-transfer/55555555p29o7o785556o4653r79o1sr_7289da18392e4f639d64dca04bd58be7_0_4.mp4?wsSecret=1589a85b08d1290ca98721699a32bdc8&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:03:24Z"
+  },
+  "dramaora_52022156374_47": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 47,
+    "telegram_message_id": 11222,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr1mq3GecmLPTqo8bXQJUx8vNs-jmHAAKYJAACNP7AVTkXFgNgmVfpHgQ",
+    "telegram_message_ids": [
+      11222
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.9,
+    "original_url": "https://v4.xtv.media/video/20260124/00af5c4592154eb6b42749137304a431/cloudv-transfer/55555555084n64sn5556o4657072p1sr_ba7812bf22dd48568a9b4c305511a0ec_0_4.mp4?wsSecret=8c464efe95956a67658ee3d73eaacfda&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:03:37Z"
+  },
+  "dramaora_52022156374_48": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 48,
+    "telegram_message_id": 11223,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr12q3GgABTnwx8-UDbitharg5S7px6AACmSQAAjT-wFW3RezIe27MHR4E",
+    "telegram_message_ids": [
+      11223
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.49,
+    "original_url": "https://v4.xtv.media/video/20260124/54a3cb567766473399bbef9f0522ea74/cloudv-transfer/555555551prssn7r5556o465n65qq1sr_f8647ba116944c1d91875b03f96fb0d0_0_4.mp4?wsSecret=c758107bb5e3cd4cd76771a31b04e720&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:04:02Z"
+  },
+  "dramaora_52022156374_49": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 49,
+    "telegram_message_id": 11224,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr2Gq3GhBUX6-57rW7PdYAATiBRWGffAACmiQAAjT-wFUXu8s0zQGbfx4E",
+    "telegram_message_ids": [
+      11224
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.59,
+    "original_url": "https://v4.xtv.media/video/20260124/18e704a781ee453fa75d5ce0bfd98c84/cloudv-transfer/5555555565r27o085556o46517r7s1sr_52cde4ff8265458dac73d65c85391150_0_4.mp4?wsSecret=a81554fdc95254ab06b9e519d19b13db&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:04:18Z"
+  },
+  "dramaora_52022156374_50": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 50,
+    "telegram_message_id": 11225,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr2Wq3Gh_ldtdx0Q6oSM0aFBUrzGvxAAKbJAACNP7AVZihb4V6JBgjHgQ",
+    "telegram_message_ids": [
+      11225
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.14,
+    "original_url": "https://v4.xtv.media/video/20260124/c9d8a4342c444bd8980e959123309f21/cloudv-transfer/55555555pp1o3o835556o465884952sr_e3c1906c77134c5c89964fed56385602_0_4.mp4?wsSecret=61066d67d593f9e0d858d24bf0627910&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:04:34Z"
+  },
+  "dramaora_52022156374_51": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 51,
+    "telegram_message_id": 11226,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr2mq3Gi1g2_nxyarWLj18nhffIUTAAAKcJAACNP7AVd0SrsUW85xyHgQ",
+    "telegram_message_ids": [
+      11226
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.98,
+    "original_url": "https://v4.xtv.media/video/20260124/111a5bc1d6ee454fbcfe52c600e2d16f/cloudv-transfer/555555555o629nqo5556o465qq7572sr_a9501f54bbb04d8488c8992eda906df4_0_4.mp4?wsSecret=90415a77bb252410d9554c18610969f3&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:04:47Z"
+  },
+  "dramaora_52022156374_52": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 52,
+    "telegram_message_id": 11227,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr22q3GkY8W9T5fmspVFd6f9ydzloXAAKdJAACNP7AVRmJlHkepq-3HgQ",
+    "telegram_message_ids": [
+      11227
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.06,
+    "original_url": "https://v4.xtv.media/video/20260124/0524f46340504b4eb5635f2af4be58ba/cloudv-transfer/55555555p10pn5o35556o465847282sr_4184f7d4ad414628b34d68fe9391799c_0_4.mp4?wsSecret=59a91e4d17984dc2e15ad16dc1d3690a&wsTime=1790391772",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:05:13Z"
+  },
+  "dramaora_52022156374_53": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 53,
+    "telegram_message_id": 11228,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr3Gq3Glkti7mOvGazX9a4FwIzzbsPAAKeJAACNP7AVVuUz3nXgCS2HgQ",
+    "telegram_message_ids": [
+      11228
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.92,
+    "original_url": "https://v4.xtv.media/video/20260124/67fde1c0c9f942afbb99f538897e3700/cloudv-transfer/55555555s3spprrp5556o4656s3r92sr_2d3d404328154d2096018532fd4bc0c3_0_4.mp4?wsSecret=beea9e75c2f916077ef2b2e81aee4ae9&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:05:31Z"
+  },
+  "dramaora_52022156374_54": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 54,
+    "telegram_message_id": 11229,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr3Wq3Gpepr-b_REQdP7DO-rSnGoV3AAKfJAACNP7AVaUok0BHzXilHgQ",
+    "telegram_message_ids": [
+      11229
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.5,
+    "original_url": "https://v4.xtv.media/video/20260124/ebd295fc600d499690bb69208cf4e955/cloudv-transfer/55555555798q73q55556o4653r2912sr_72fe9ec96f554c74be2b87563b80f06f_0_4.mp4?wsSecret=212fd0cec658d818ad59c434bcfc8f81&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:06:34Z"
+  },
+  "dramaora_52022156374_55": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 55,
+    "telegram_message_id": 11230,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr3mq3GqMepQ1k3PU-nBxz958yZ1EeAAKgJAACNP7AVfLDf0ksVpcOHgQ",
+    "telegram_message_ids": [
+      11230
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.44,
+    "original_url": "https://v4.xtv.media/video/20260124/7c43565cb79448bbbc854060a7b0b1ed/cloudv-transfer/55555555920553po5556o46509r222sr_66bb6e200d434c69a1720c6c2dd5ada6_0_4.mp4?wsSecret=d982ff1ca261e0d2ff34f3848addc062&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:06:46Z"
+  },
+  "dramaora_52022156374_56": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 56,
+    "telegram_message_id": 11231,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr32q3GrNUgBo6OqDTCqkIlKEZAAFnUAACoSQAAjT-wFXgnquABZMKYB4E",
+    "telegram_message_ids": [
+      11231
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.22,
+    "original_url": "https://v4.xtv.media/video/20260124/74c0b2232b144197873d88daf8760a6d/cloudv-transfer/5555555522s816485556o46508so32sr_9b58c698c8c64c3785f21edef7e03d89_0_4.mp4?wsSecret=f3f4eaceb5b7021b3d2461591d554373&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:07:01Z"
+  },
+  "dramaora_52022156374_57": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 57,
+    "telegram_message_id": 11232,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr4Gq3GsEuJBn_C72iCdKg05ZtwfkYAAKiJAACNP7AVcKWw8dnPY9hHgQ",
+    "telegram_message_ids": [
+      11232
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.08,
+    "original_url": "https://v4.xtv.media/video/20260124/419d2525fc2e4447ba44a72bfb1800ff/cloudv-transfer/55555555257q181p5556o4654q00n2sr_1f7f68d1e2bd43c09e021dd51299677b_0_4.mp4?wsSecret=310c9b6c6cafbdc39f3132df5be243d1&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:07:15Z"
+  },
+  "dramaora_52022156374_58": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 58,
+    "telegram_message_id": 11233,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr4Wq3Gs-09Pc2C9f1Nbak51aU1gqSAAKjJAACNP7AVYCXYgjV6bwbHgQ",
+    "telegram_message_ids": [
+      11233
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.97,
+    "original_url": "https://v4.xtv.media/video/20260124/7376c6946f114259bcc2cdd1385f11a3/cloudv-transfer/55555555ns5o25705556o4654qqoo2sr_3fe81c167148427cb54591a4560fc0b0_0_4.mp4?wsSecret=d56bcb9aae7859c74f1e18dcfe2096b0&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:07:30Z"
+  },
+  "dramaora_52022156374_59": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 59,
+    "telegram_message_id": 11234,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr4mq3Gt8naJSMxA22FpmYGwinAbs2AAKkJAACNP7AVV12xnvSGcjYHgQ",
+    "telegram_message_ids": [
+      11234
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.21,
+    "original_url": "https://v4.xtv.media/video/20260124/8f4ee1fe8e064d819e40d6e39c0756fc/cloudv-transfer/55555555p7npq1ps5556o46582psp2sr_af7d4cc3741b4a868338b5c762e2190a_0_4.mp4?wsSecret=a0589720cc7059fe6ad6f824f502381e&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:07:45Z"
+  },
+  "dramaora_52022156374_60": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 60,
+    "telegram_message_id": 11235,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr42q3GvIfEmK_IIVMVUEzei-4TSwoAAKlJAACNP7AVbGZ1uVDNNZyHgQ",
+    "telegram_message_ids": [
+      11235
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.78,
+    "original_url": "https://v4.xtv.media/video/20260124/e3b7b4178c5847078a440be9cae35391/cloudv-transfer/555555550pq188rr5556o465oq29r2sr_c4533c48345042bca9e53c4aa66196b4_0_4.mp4?wsSecret=b84d30311489fc24bc022e9ed5d99cdd&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:08:05Z"
+  },
+  "dramaora_52022156374_61": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 61,
+    "telegram_message_id": 11236,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr5Gq3GwMSRcWZtVUfdStnsfOR1NwRAAKmJAACNP7AVUToT3zz57RlHgQ",
+    "telegram_message_ids": [
+      11236
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.64,
+    "original_url": "https://v4.xtv.media/video/20260124/d3ab04dd0ca149d18fa0b49becf467f9/cloudv-transfer/555555551q33qpo55556o465s19qr2sr_391a3801709141c984c1ffe40b9a50d9_0_4.mp4?wsSecret=8ef77747af880c51bd863a948ae827d5&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:08:21Z"
+  },
+  "dramaora_52022156374_62": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 62,
+    "telegram_message_id": 11237,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr5Wq3GxBddwG34tiIsUVgA3_RoK2XAAKnJAACNP7AVZEz4VgBXa96HgQ",
+    "telegram_message_ids": [
+      11237
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.55,
+    "original_url": "https://v4.xtv.media/video/20260124/264135a7b40f47a1981331da4599d541/cloudv-transfer/55555555p1r8r47r5556o465qo1553sr_5546aedda38340c4a40636639756bbd1_0_4.mp4?wsSecret=c33663c3a8c7ca1d32d68bdbcb9b052c&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:08:34Z"
+  },
+  "dramaora_52022156374_63": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 63,
+    "telegram_message_id": 11238,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr5mq3Gx2NonXcg1sZFvyjy10Vd56lAAKoJAACNP7AVX_QYtXr_SB0HgQ",
+    "telegram_message_ids": [
+      11238
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.64,
+    "original_url": "https://v4.xtv.media/video/20260124/7c86ce9281f64a8b8dcdd6ecde7e2dc5/cloudv-transfer/5555555532r90p6s5556o465573763sr_b9fcc221f8304dd8ae8b42ce2da2d459_0_4.mp4?wsSecret=10a4a4dea3b75915b59a72b72a1942ca&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:08:47Z"
+  },
+  "dramaora_52022156374_64": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 64,
+    "telegram_message_id": 11239,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr52q3GzDAfWXg46WQ4K4GJEwBlS-yAAKpJAACNP7AVQ_JaqSlzfhCHgQ",
+    "telegram_message_ids": [
+      11239
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.41,
+    "original_url": "https://v4.xtv.media/video/20260124/4fe43a81b0d244cda5bfdf73cf34c0b0/cloudv-transfer/555555557sr4n2q35556o46567r373sr_fa45445176f14711b36ebef4be5c7239_0_4.mp4?wsSecret=4a53590d59a87c068b13ff787026e1e5&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:09:06Z"
+  },
+  "dramaora_52022156374_65": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 65,
+    "telegram_message_id": 11240,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr6Gq3GzzJFqUH7dS3b_DWGdOZofpBAAKqJAACNP7AVT5UxjHtBDp0HgQ",
+    "telegram_message_ids": [
+      11240
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.4,
+    "original_url": "https://v4.xtv.media/video/20260124/9b5bbf6ac6ea4441a5c64db6f3bd82b5/cloudv-transfer/55555555p044s2pr5556o465259383sr_95467571f751460e97b4bc8721ccb713_0_4.mp4?wsSecret=c4e17c6d7de386a66e58b30f036add24&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:09:18Z"
+  },
+  "dramaora_52022156374_66": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 66,
+    "telegram_message_id": 11241,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr6Wq3G0tYE4VXV5Wlw1A4bXEieJUjAAKrJAACNP7AVbbfwyi41JdaHgQ",
+    "telegram_message_ids": [
+      11241
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.0,
+    "original_url": "https://v4.xtv.media/video/20260124/6bd324173dfe4f4dba9e8e51775bb1d1/cloudv-transfer/5555555574s7q8095556o465s75893sr_f6ac484604594852a6955c9328d06a52_0_4.mp4?wsSecret=a016d9e966fcdd18d28e718959cc6dfa&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:09:33Z"
+  },
+  "dramaora_52022156374_67": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 67,
+    "telegram_message_id": 11242,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr6mq3G1ta8MYhWk5jmkOcpvrpMDqxAAKsJAACNP7AVRgooayxZvn_HgQ",
+    "telegram_message_ids": [
+      11242
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.71,
+    "original_url": "https://v4.xtv.media/video/20260124/44060d498f4a4f5eb5c44d43018e7052/cloudv-transfer/5555555556s161p05556o465p07503sr_7b2e01bbc267463a88b08abdaf5ca6ce_0_4.mp4?wsSecret=ed2916fcab76509d0fb411aac0d0b9aa&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:09:50Z"
+  },
+  "dramaora_52022156374_68": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 68,
+    "telegram_message_id": 11243,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr62q3G2ninYJ9gTX7TLXACRGfcnpsAAKtJAACNP7AVbNIgXqXgKxFHgQ",
+    "telegram_message_ids": [
+      11243
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.69,
+    "original_url": "https://v4.xtv.media/video/20260124/dffe610db1cc40cabcb1ae4c9afd742c/cloudv-transfer/55555555177n168r5556o465064s03sr_2ab842d59f704c6fa5aeb36d249d67e3_0_4.mp4?wsSecret=78fce147275c66f230e56cd6a2d4e538&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:10:03Z"
+  },
+  "dramaora_52022156374_69": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 69,
+    "telegram_message_id": 11244,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr7Gq3G3kFD00hr_T276xOSxYjCqEDAAKuJAACNP7AVbvJRCmTblzYHgQ",
+    "telegram_message_ids": [
+      11244
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.68,
+    "original_url": "https://v4.xtv.media/video/20260124/aa381692b8a34f1e8e9c48a0c30ea01d/cloudv-transfer/555555552o4396n35556o4655s6313sr_e457579262454580beb8c112a3c87b1d_0_4.mp4?wsSecret=39b2b42b7e6efd8e885dd67af7ddb743&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:10:20Z"
+  },
+  "dramaora_52022156374_70": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 70,
+    "telegram_message_id": 11245,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr7Wq3G4lX75M0_ZJjFBeFDtYOr3hbAAKvJAACNP7AVTCCkHyouzz5HgQ",
+    "telegram_message_ids": [
+      11245
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.68,
+    "original_url": "https://v4.xtv.media/video/20260124/f3c422e5119e4b989e3110b34c563371/cloudv-transfer/555555559qo7rp9q5556o465183p13sr_861103715e1846e9b4ab239e5c1b5bed_0_4.mp4?wsSecret=36c0593bad64f3673346515a1a2b3bc6&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:10:36Z"
+  },
+  "dramaora_52022156374_71": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 71,
+    "telegram_message_id": 11246,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr7mq3G6AIkKekS8MFa1ooy-2m0UnyAAKwJAACNP7AVe_jIg-PtdP0HgQ",
+    "telegram_message_ids": [
+      11246
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.54,
+    "original_url": "https://v4.xtv.media/video/20260124/587a5e53c14a4f94be0d6f86812b8e3c/cloudv-transfer/555555554s0q751r5556o465r38623sr_668f8742bd964ece9adc0fc257657a53_0_4.mp4?wsSecret=90d4553df101a5dd3d929dea18987b81&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:10:58Z"
+  },
+  "dramaora_52022156374_72": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 72,
+    "telegram_message_id": 11247,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr72q3G6xhzPodnfpK6ri_sMDTTJdZAAKxJAACNP7AVTk6I8hsFMmRHgQ",
+    "telegram_message_ids": [
+      11247
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.68,
+    "original_url": "https://v4.xtv.media/video/20260124/80b49f616d1d4c89a19e4d08a3188089/cloudv-transfer/55555555q5orqr605556o465po2323sr_700af8d46e5e4ef0ac35863e95efdf17_0_4.mp4?wsSecret=a53729582748bdaf5ac9a6b481320f05&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:11:10Z"
+  },
+  "dramaora_52022156374_73": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 73,
+    "telegram_message_id": 11248,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr8Gq3G8UCVvVbXqiHnIpqmQNmdO9tAAKyJAACNP7AVcJO5bj63wF4HgQ",
+    "telegram_message_ids": [
+      11248
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.46,
+    "original_url": "https://v4.xtv.media/video/20260124/bcc8c416c6e541ce8cebbaba7adb3fbb/cloudv-transfer/55555555p7srp5on5556o465q3n643sr_75636e1b93174d76a69518c44d2994e1_0_4.mp4?wsSecret=60cdf0fe76a25f93666c54fbdc1689ae&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:11:35Z"
+  },
+  "dramaora_52022156374_74": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 74,
+    "telegram_message_id": 11249,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr8Wq3G9XZ9kJnyrtzAv9CnRPLBJYHAAKzJAACNP7AVepivSwD1WfzHgQ",
+    "telegram_message_ids": [
+      11249
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.86,
+    "original_url": "https://v4.xtv.media/video/20260124/5635c705b3bb4fd3a1a19782307672bd/cloudv-transfer/55555555p61o9p195556o465s58614sr_1846a281c3cd49c388dc69f2b908f95b_0_4.mp4?wsSecret=0cf524126ea2be8a9d43d0ebc9b20dec&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:11:51Z"
+  },
+  "dramaora_52022156374_75": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 75,
+    "telegram_message_id": 11250,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr8mq3G-KvWMhdnOrU1E0b6yBG_yv8AAK0JAACNP7AVVIw6319n_qrHgQ",
+    "telegram_message_ids": [
+      11250
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.43,
+    "original_url": "https://v4.xtv.media/video/20260124/f24d9f4d17ea42e98f81d196a26cc1f8/cloudv-transfer/55555555s357norp5556o465s92524sr_aa14405da2b140a6b9a15fae4fd4ec5b_0_4.mp4?wsSecret=a871022d638035c175cf184d7e2e1d40&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:12:04Z"
+  },
+  "dramaora_52022156374_76": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 76,
+    "telegram_message_id": 11251,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr82q3G_XNNXtDufQJlCRCpObqJbcxAAK1JAACNP7AVe_vw6nJBoAKHgQ",
+    "telegram_message_ids": [
+      11251
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.78,
+    "original_url": "https://v4.xtv.media/video/20260124/4b893ab42ac24ad2af0065387e0864a0/cloudv-transfer/55555555q3ss853q5556o465o22o24sr_a893109b2fa74b0083fd69d258478368_0_4.mp4?wsSecret=c5927b580fe9eab6a51313efac35fba3&wsTime=1790391773",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:12:23Z"
+  },
+  "dramaora_52022156374_77": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 77,
+    "telegram_message_id": 11252,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr9Gq3HANdNn1XPlw9dZsY2LKtD0UEAAK2JAACNP7AVZsCH3AXTNDaHgQ",
+    "telegram_message_ids": [
+      11252
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.82,
+    "original_url": "https://v4.xtv.media/video/20260124/17b8d612947c4d62a251e24972cef537/cloudv-transfer/55555555o1o4pq455556o4655n1734sr_37a05a40a2df49dd876b5d6760ad7df3_0_4.mp4?wsSecret=b9c33cf34abd1625e299e1fa9d32decd&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:12:38Z"
+  },
+  "dramaora_52022156374_78": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 78,
+    "telegram_message_id": 11253,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr9Wq3HBeQz9LL9K7sm0aZIU02-e9jAAK3JAACNP7AVXCLO7dMCAY0HgQ",
+    "telegram_message_ids": [
+      11253
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.1,
+    "original_url": "https://v4.xtv.media/video/20260124/93b69a191d2149e289c27e6cef08355f/cloudv-transfer/55555555152468655556o465r3r434sr_3eaf4fbb603a4997bd89c9b660feb113_0_4.mp4?wsSecret=f3b11c7034426c903aea47b5297b95de&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:12:57Z"
+  },
+  "dramaora_52022156374_79": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 79,
+    "telegram_message_id": 11254,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr9mq3HCRXHwxlCTv7dh77l4_fKNEHAAK4JAACNP7AVREWhivrtCuMHgQ",
+    "telegram_message_ids": [
+      11254
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.66,
+    "original_url": "https://v4.xtv.media/video/20260124/978d839d8f204392815049d68d65fabd/cloudv-transfer/555555559r4orn9n5556o46507s544sr_5230df3d3ee24a939c85224aef7aaa6c_0_4.mp4?wsSecret=ebc65c54427149a00a0b75c7ed7cb50f&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:13:10Z"
+  },
+  "dramaora_52022156374_80": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 80,
+    "telegram_message_id": 11255,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr92q3HDaM4Xqk0VImNc_B2zezyALjAAK5JAACNP7AVZEuFp5m3yGjHgQ",
+    "telegram_message_ids": [
+      11255
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.4,
+    "original_url": "https://v4.xtv.media/video/20260124/29d46234dfaf48d5bfc2505cbbab2914/cloudv-transfer/5555555532q7rs395556o4657o7n44sr_368747043a744faa8251987becabd9b5_0_4.mp4?wsSecret=645eeb6f976bac745a613a7badc40fad&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:13:29Z"
+  },
+  "dramaora_52022156374_81": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 81,
+    "telegram_message_id": 11256,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr-Gq3HEp5XQ0YzkJWTGi7BNtA-DLAAAK6JAACNP7AVQ8-SR-fPcD1HgQ",
+    "telegram_message_ids": [
+      11256
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.14,
+    "original_url": "https://v4.xtv.media/video/20260124/83a03098001b4fb8a517e373230db1b1/cloudv-transfer/555555551q69snq25556o4651q78n4sr_e4a783a86aa64062bbea928d7d0dcb60_0_4.mp4?wsSecret=964a6db6ba74b1ea56d232815a5110cc&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:13:48Z"
+  },
+  "dramaora_52022156374_82": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 82,
+    "telegram_message_id": 11257,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr-Wq3HFrbSYQPROriv1zu30IiASdtAAK7JAACNP7AVdhjEqGTVV2FHgQ",
+    "telegram_message_ids": [
+      11257
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.01,
+    "original_url": "https://v4.xtv.media/video/20260124/f5b97d0bff784aaab48a8212df44e802/cloudv-transfer/555555552p40r4o05556o4651p7qn4sr_df0a914073ef47e99fd2d951341cccbd_0_4.mp4?wsSecret=539f707489b0a20c6e9797eca884ea7b&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:14:04Z"
+  },
+  "dramaora_52022156374_83": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 83,
+    "telegram_message_id": 11258,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr-mq3HGnw4J7-o4hp11tOXK-69j8hAAK8JAACNP7AVcHC0JmgnRVLHgQ",
+    "telegram_message_ids": [
+      11258
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.76,
+    "original_url": "https://v4.xtv.media/video/20260124/a36bd11cb1424729b9207d84c78049c2/cloudv-transfer/55555555q2qo1q185556o465q742o4sr_dd9be2ad5fdc4558bea9e6ff4fd954d2_0_4.mp4?wsSecret=8c11f49abb5c5ae22e5ecbdbeb26027e&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:14:19Z"
+  },
+  "dramaora_52022156374_84": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 84,
+    "telegram_message_id": 11259,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr-2q3HHgr5MgafSMaYqf__wJN_dkKAAK9JAACNP7AVdXrLkJdadTgHgQ",
+    "telegram_message_ids": [
+      11259
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.95,
+    "original_url": "https://v4.xtv.media/video/20260124/18c6ab555e604254b2fa5dfd80810eef/cloudv-transfer/555555555670s58q5556o465qpsso4sr_a8a7d8f9e98344778ad668d0b5c6ac82_0_4.mp4?wsSecret=5580846b769a82d65f5a6e929a4a54e8&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:14:34Z"
+  },
+  "dramaora_52022156374_85": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 85,
+    "telegram_message_id": 11260,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr_Gq3HIgr_C_oAugaxD2zezq7-ENeAAK-JAACNP7AVc1VtdlhbfzUHgQ",
+    "telegram_message_ids": [
+      11260
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.79,
+    "original_url": "https://v4.xtv.media/video/20260124/840b59bd9ab442d08863c666bc97ca86/cloudv-transfer/55555555317893075556o465s2s1p4sr_6bc3613bba6d490dbcf7316fd28d32cb_0_4.mp4?wsSecret=adf91036bb475e4755bfe0f56fd9ef7d&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:14:50Z"
+  },
+  "dramaora_52022156374_86": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 86,
+    "telegram_message_id": 11261,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr_Wq3HJc8X2s4rdty5a-2tuJ7jI3eAAK_JAACNP7AVfF000KvSpDtHgQ",
+    "telegram_message_ids": [
+      11261
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.94,
+    "original_url": "https://v4.xtv.media/video/20260124/4829dbd6b1444161b85a82606152c760/cloudv-transfer/55555555629995595556o465110op4sr_554bbd7290244f7690444d2fcb8b15f1_0_4.mp4?wsSecret=3f5430f7566fd0248665dc66f85702aa&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:15:05Z"
+  },
+  "dramaora_52022156374_87": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 87,
+    "telegram_message_id": 11262,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr_mq3HLCxw-799S2kYiDXfGGlWezXAALAJAACNP7AVeGWIMy5rcm-HgQ",
+    "telegram_message_ids": [
+      11262
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.28,
+    "original_url": "https://v4.xtv.media/video/20260124/780e4ac5106e4c00b50973039d3504e2/cloudv-transfer/55555555po313r615556o465s2n5q4sr_ced9c0dc6f394fc9be00221bf4bdae7b_0_4.mp4?wsSecret=bfdacf39a50a391f8d9dec434d2f1e71&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:15:30Z"
+  },
+  "dramaora_52022156374_88": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 88,
+    "telegram_message_id": 11263,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIr_2q3HMR95VC-B3I5OAznxpmIQtb1AALBJAACNP7AVYfkC11_lWCiHgQ",
+    "telegram_message_ids": [
+      11263
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.5,
+    "original_url": "https://v4.xtv.media/video/20260124/f384d50e3ea94c3290db5ed036f6fb3d/cloudv-transfer/555555556n1p8s9s5556o465q481q4sr_dbb760cd81bc45a2b6a1e868d1f1b322_0_4.mp4?wsSecret=e6c54a27a82b65ea9622839bd715efcc&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:15:51Z"
+  },
+  "dramaora_52022156374_89": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 89,
+    "telegram_message_id": 11264,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsAAFqtxzd_UT1RZKXDkfBp_NdMtOpEAACwiQAAjT-wFUNeeJRXok6JR4E",
+    "telegram_message_ids": [
+      11264
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.19,
+    "original_url": "https://v4.xtv.media/video/20260124/ad10cccc88644afaa1ebcf0016f3168f/cloudv-transfer/5555555594740r535556o4659rsnq4sr_75baa53a175148ba957ad95c33685933_0_4.mp4?wsSecret=e02c8d3673942e7bab20dd966966ead1&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:16:15Z"
+  },
+  "dramaora_52022156374_90": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 90,
+    "telegram_message_id": 11265,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsAWq3HOhVdvU41UWn974ZFn2FMEaRAALDJAACNP7AVesZLUM8jbz1HgQ",
+    "telegram_message_ids": [
+      11265
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.43,
+    "original_url": "https://v4.xtv.media/video/20260124/0996269d937542d19bbbd24c86a6399c/cloudv-transfer/55555555905pq9315556o465s38sq4sr_fa3fdd152b5b44a5bed02d47c8619951_0_4.mp4?wsSecret=6b4cde2c3e41e6f3f3991f6d274353bc&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:16:26Z"
+  },
+  "dramaora_52022156374_91": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 91,
+    "telegram_message_id": 11266,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsAmq3HQLWeiZZo7-uLLv-TrXqf3pzAALEJAACNP7AVYuaMpxlKF6BHgQ",
+    "telegram_message_ids": [
+      11266
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.87,
+    "original_url": "https://v4.xtv.media/video/20260124/30f89c65cafa4c29886e105e3eff9f16/cloudv-transfer/5555555564159ss05556o465s488r4sr_11cd3f59574c48d3b4f6fd8f2899e9b1_0_4.mp4?wsSecret=78a2c7170da74d9ade8679d04922b26d&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:16:52Z"
+  },
+  "dramaora_52022156374_92": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 92,
+    "telegram_message_id": 11267,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsA2q3HRSQLZBVZON5TUQIzMibWSBYAALFJAACNP7AVXpl7qXyaSw2HgQ",
+    "telegram_message_ids": [
+      11267
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.2,
+    "original_url": "https://v4.xtv.media/video/20260124/d8b7bfaa419246c9bc95dde005be2c07/cloudv-transfer/5555555511orsn055556o4653r53r4sr_12d05729381147149b9ac81ff7c306ec_0_4.mp4?wsSecret=1cfdc4c176d1f642873055334ff6b61e&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:17:10Z"
+  },
+  "dramaora_52022156374_93": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 93,
+    "telegram_message_id": 11268,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsBGq3HScohIiQAh4lDhYLSUIEWVYnAALGJAACNP7AVV5HYOlDD-7UHgQ",
+    "telegram_message_ids": [
+      11268
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.33,
+    "original_url": "https://v4.xtv.media/video/20260124/93589567a3fa4709aa1e47a5a18b850a/cloudv-transfer/55555555pn2ons245556o46534orr4sr_32763cb99bc04707bd5a81b7daa84674_0_4.mp4?wsSecret=df3c6f379c1765ca1d6c6dcdc610c7ad&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:17:30Z"
+  },
+  "dramaora_52022156374_94": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 94,
+    "telegram_message_id": 11269,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsBWq3HT8SG968jkK4oD7dCQZFW0WzAALHJAACNP7AVXccGAUtcOcZHgQ",
+    "telegram_message_ids": [
+      11269
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.22,
+    "original_url": "https://v4.xtv.media/video/20260124/8da70468042e492da31de7ad31699cce/cloudv-transfer/5555555596159n0n5556o4653671s4sr_4ff7559dbbd14dd4a5dd83b88c6abd12_0_4.mp4?wsSecret=4d6c849e7a6df116ad27031c6ca41ab9&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:17:54Z"
+  },
+  "dramaora_52022156374_95": {
+    "show_id": "dramaora_52022156374",
+    "show_title": "The Big Luther",
+    "episode_number": 95,
+    "telegram_message_id": 11270,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsBmq3HVIJnx1HQkE3KG5eWyWnXQypAALIJAACNP7AVcUEsL6BDfWhHgQ",
+    "telegram_message_ids": [
+      11270
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.36,
+    "original_url": "https://v4.xtv.media/video/20260124/6c058168422d47e5af4aa1a954ece799/cloudv-transfer/55555555610934195556o465282ns4sr_3a7e51a79b414a56b140d10cb5b71b54_0_4.mp4?wsSecret=5f13bdc065ed9f851a246b4ba8b2a7d0&wsTime=1790391774",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260124/ef42492c019b10002d16116600000000.jpg",
+    "synopsis": "Travelling back to the Republic Era by accident, Quin Luther finds himself one of the local forces when foreign invasions are going on around the homeland. He must adapt to the \"old and new\" surroundings of the time as soon as possible and fight for his own country.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:18:12Z"
+  },
+  "dramaora_52028762760_1": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 1,
+    "telegram_message_id": 11271,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsB2q3HWJBgRnlBVoOODlB9ep9yT3WAALJJAACNP7AVW3T6f717LRfHgQ",
+    "telegram_message_ids": [
+      11271
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.59,
+    "original_url": "https://v4.xtv.media/video/20260106/a73168dc51ae409ba7b0d497036c402d/cloudv-transfer/5555555503s3r4s05556o465q6765864_46a7a3cbb9fe411480cfab3104e5cdb4_0_4.mp4?wsSecret=78cb1bcab23bc969c9bcaed2107e4d7e&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:18:28Z"
+  },
+  "dramaora_52028762760_2": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 2,
+    "telegram_message_id": 11272,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsCGq3HW6ur4z-Lxd2UM6e5VCbVWJ1AALKJAACNP7AVZNxjS1EAAEx4B4E",
+    "telegram_message_ids": [
+      11272
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.84,
+    "original_url": "https://v4.xtv.media/video/20260106/61017142165c45668afa106723853f5b/cloudv-transfer/55555555q14n42p95556o46542n25864_3e7668ef13604eb28cc3177e48e5a459_0_4.mp4?wsSecret=99263b28a5393d07e69d4cf4f89bc96a&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:18:40Z"
+  },
+  "dramaora_52028762760_3": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 3,
+    "telegram_message_id": 11273,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsCWq3HXrZrqS7R-nbYLdZ0HPQZB99AALLJAACNP7AVSkvUmbRx_pHHgQ",
+    "telegram_message_ids": [
+      11273
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.72,
+    "original_url": "https://v4.xtv.media/video/20260106/41d59cc7a46e448b8d54ffe0e467a047/cloudv-transfer/5555555582qp50q45556o465824o5864_d3c8c8f30b9d4e4480bbe9a339102583_0_4.mp4?wsSecret=31eab75554dc11482a44e8846a5a5166&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:18:52Z"
+  },
+  "dramaora_52028762760_4": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 4,
+    "telegram_message_id": 11274,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsCmq3HYZ_RcaADdk3moKkcKEYIkXAAALMJAACNP7AVb8V4e7FCgHBHgQ",
+    "telegram_message_ids": [
+      11274
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.35,
+    "original_url": "https://v4.xtv.media/video/20260106/60da793957f3404b9c4eca040a22ba21/cloudv-transfer/555555554qso6s665556o4651r3q5864_2c7c63c71d4e4f1eb2bc114abf4ac951_0_4.mp4?wsSecret=ad63a9a7cca07e9cf7b7a1bdb215a94f&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:19:04Z"
+  },
+  "dramaora_52028762760_5": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 5,
+    "telegram_message_id": 11275,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsC2q3HZyTCn7_AXV7pxPzrvoUoVjUAALNJAACNP7AVYMs5ugDPduBHgQ",
+    "telegram_message_ids": [
+      11275
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.03,
+    "original_url": "https://v4.xtv.media/video/20260106/ce2bca00720942bfaf072bd891791956/cloudv-transfer/55555555p1oq131s5556o4651pq66864_a8285a08d63449259fcbfd6397d5e7a3_0_4.mp4?wsSecret=13374df5595857bf36638173a4be258b&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:19:26Z"
+  },
+  "dramaora_52028762760_6": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 6,
+    "telegram_message_id": 11276,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsDGq3HanwY7H_W8yBo4IMwQcwXK6FAALOJAACNP7AVcGmVRPD1gSlHgQ",
+    "telegram_message_ids": [
+      11276
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.51,
+    "original_url": "https://v4.xtv.media/video/20260106/c85e530029154726848f07dd98371daf/cloudv-transfer/555555557qn0o0985556o4655np86864_a4f781d4f6a041aea5634be80fd82aa6_0_4.mp4?wsSecret=396108605a71af9695e996220131111b&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:19:39Z"
+  },
+  "dramaora_52028762760_7": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 7,
+    "telegram_message_id": 11277,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsDWq3HbcOkawG5IeP4v_H-i8F8ZSoAALPJAACNP7AVYUpPdjZFqY3HgQ",
+    "telegram_message_ids": [
+      11277
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.69,
+    "original_url": "https://v4.xtv.media/video/20260106/341e7b8d592a49cc94b02ca6c9b8019b/cloudv-transfer/55555555nopp3nn85556o46508o16864_2b56bb61911a45d182d557416f6fd1d0_0_4.mp4?wsSecret=5958cc24bfe048e7484ad636d5d87206&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:19:54Z"
+  },
+  "dramaora_52028762760_8": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 8,
+    "telegram_message_id": 11278,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsDmq3HcO0V1ZUpBs57o3p9O9w1LlbAALQJAACNP7AVSSCd354jYMDHgQ",
+    "telegram_message_ids": [
+      11278
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.7,
+    "original_url": "https://v4.xtv.media/video/20260106/febc84ae57584d858b6f0fae5c6c9668/cloudv-transfer/5555555570253n3o5556o4650p546864_91ddca29379e4dffac3bc286d5f57d76_0_4.mp4?wsSecret=402d80fbae5d82a417cdaafdb95d38b6&wsTime=1790392696",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:20:05Z"
+  },
+  "dramaora_52028762760_9": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 9,
+    "telegram_message_id": 11279,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsD2q3HdF6nz6Sxz45iDmqsYC3rjh6AALRJAACNP7AVRVr5HIODYi_HgQ",
+    "telegram_message_ids": [
+      11279
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.51,
+    "original_url": "https://v4.xtv.media/video/20260106/a333c3d20a1240c6b3d80dcd72c4bab3/cloudv-transfer/555555555n360q685556o46532sn6864_5251a5c47dea456c9d69bafa78096229_0_4.mp4?wsSecret=503170f27e772213063e1160d8cbe32f&wsTime=1790392697",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T01:20:19Z"
   }
 };
