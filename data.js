@@ -37211,5 +37211,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
     "source": "dramaora",
     "backed_up_at": "2026-09-26T01:20:19Z"
+  },
+  "dramaora_52028762760_10": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 10,
+    "telegram_message_id": 11281,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsEWq3appTkNiD5y8ybnaQxs-7ThcjAAKEJQACNP7AVXC05oqlCzrUHgQ",
+    "telegram_message_ids": [
+      11281
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.51,
+    "original_url": "https://v4.xtv.media/video/20260106/39b77c875f7148b8b94da73ffe011a42/cloudv-transfer/555555551r1rpq8n5556o46502sr6864_387dbf9e78ab4e0da1c89c0d9f365c6d_0_4.mp4?wsSecret=19fd34fde208d5c0797fdba69ccdcab1&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:47:57Z"
+  },
+  "dramaora_52028762760_11": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 11,
+    "telegram_message_id": 11282,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsEmq3aqgYaH99YLpDKklhkBnw2xP6AAKFJQACNP7AVbcxFt7xshXpHgQ",
+    "telegram_message_ids": [
+      11282
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.75,
+    "original_url": "https://v4.xtv.media/video/20260106/50d8abaa76694674a815c1c81c5c629c/cloudv-transfer/555555554pr3orq15556o46596967864_d5c9d5997f5043eabed905cb18a83427_0_4.mp4?wsSecret=9387f161bd8d3b6c72f164d3cd39e4a6&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:48:10Z"
+  },
+  "dramaora_52028762760_12": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 12,
+    "telegram_message_id": 11283,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsE2q3arXSfJ7yclm_9eUcQNPjcuC0AAKGJQACNP7AVQ0MiUeflSlUHgQ",
+    "telegram_message_ids": [
+      11283
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.55,
+    "original_url": "https://v4.xtv.media/video/20260106/226f6389b9e341c1b1b93e801869ca9f/cloudv-transfer/55555555sp80p4q15556o46514o87864_2eeb4c16732e4fb3b75fa75cfd3cf026_0_4.mp4?wsSecret=80b85f22ef9d875c7fbbff7b756775ef&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:48:23Z"
+  },
+  "dramaora_52028762760_13": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 13,
+    "telegram_message_id": 11284,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsFGq3asLakSzGg4PsNI-fu14K25QJAAKHJQACNP7AVTpCKSQ2LeiAHgQ",
+    "telegram_message_ids": [
+      11284
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.86,
+    "original_url": "https://v4.xtv.media/video/20260106/d1a0a2352fc1496da1903760ec1b9700/cloudv-transfer/555555552rqsq8rr5556o465s7017864_908c4cfb91a5474aae308aedbf8ec80a_0_4.mp4?wsSecret=687cea5b19215117b763597d931b1982&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:48:36Z"
+  },
+  "dramaora_52028762760_14": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 14,
+    "telegram_message_id": 11285,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsFWq3atXF8FLzgrQrx2LidB43yWoQAAKIJQACNP7AVXric7TrBTTfHgQ",
+    "telegram_message_ids": [
+      11285
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.12,
+    "original_url": "https://v4.xtv.media/video/20260106/757f1663d32240a8b46f71ec7e664af6/cloudv-transfer/555555552n82n7355556o46519r37864_67af699dc2214bb09f54267bfcd81ff0_0_4.mp4?wsSecret=9928a6800d943cdfa2c5a5a391fd0086&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:48:56Z"
+  },
+  "dramaora_52028762760_15": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 15,
+    "telegram_message_id": 11286,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsFmq3auMsONCWL3f-B75-eWHksrT4AAKJJQACNP7AVfDz0sVyte_0HgQ",
+    "telegram_message_ids": [
+      11286
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.56,
+    "original_url": "https://v4.xtv.media/video/20260106/1ed0a0513e9946948382a2545af7e2b0/cloudv-transfer/55555555q5r4qr165556o465r7pn7864_3c7fdaf7fbff41188eb94d4978ac7c2e_0_4.mp4?wsSecret=62754933900493891de67eb0aad1dd5e&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:49:10Z"
+  },
+  "dramaora_52028762760_16": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 16,
+    "telegram_message_id": 11287,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsF2q3axwhGGvvzgdVmSzy9x83z0NTAAKLJQACNP7AVTR9ELavXcsaHgQ",
+    "telegram_message_ids": [
+      11287
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.08,
+    "original_url": "https://v4.xtv.media/video/20260106/974ae36dc16c41e1a0e1ceb672b6b499/cloudv-transfer/55555555058r372r5556o465s23p7864_33ad5797acf14f56aa34b4e4a9a794d2_0_4.mp4?wsSecret=a02f4e973caf99f67c287843e2d26adc&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:50:06Z"
+  },
+  "dramaora_52028762760_17": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 17,
+    "telegram_message_id": 11288,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsGGq3a3IgwF1hvOKk1JQ9vFnk_WOLAAKMJQACNP7AVVt87HpuoGirHgQ",
+    "telegram_message_ids": [
+      11288
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.59,
+    "original_url": "https://v4.xtv.media/video/20260106/6296b0a0a7e944e5888bd92b7fdee8e7/cloudv-transfer/555555550o3o484q5556o465ps9r7864_045c221804b948ddbd0c578e3924d2c4_0_4.mp4?wsSecret=308de9e23ec949a4e83cadc1547c738b&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:51:32Z"
+  },
+  "dramaora_52028762760_18": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 18,
+    "telegram_message_id": 11289,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsGWq3a4BVrz0eyFP9vq3k2NlOqaatAAKNJQACNP7AVeNzcJpg0d_vHgQ",
+    "telegram_message_ids": [
+      11289
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.18,
+    "original_url": "https://v4.xtv.media/video/20260106/77f3849ea1c942e4ad4f398696f6d548/cloudv-transfer/555555550r5o236r5556o4653p668864_2441173d939146cab93c3047d583af0b_0_4.mp4?wsSecret=75083d0f67cfb92a48931eb81d8f50db&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:51:46Z"
+  },
+  "dramaora_52028762760_19": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 19,
+    "telegram_message_id": 11290,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsGmq3a4wQL5qp_PAU-IZ-4Krxmi0vAAKOJQACNP7AVZ_O8i0evpPjHgQ",
+    "telegram_message_ids": [
+      11290
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.86,
+    "original_url": "https://v4.xtv.media/video/20260106/a6bcb88b1e2748b7b7215535552b9332/cloudv-transfer/5555555509826p805556o465rss78864_18e03f9dad0046c086c9debf2d4f2316_0_4.mp4?wsSecret=d9a8c0252b8264d12cf65be50679116d&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:51:58Z"
+  },
+  "dramaora_52028762760_20": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 20,
+    "telegram_message_id": 11291,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsG2q3a5ieSpzkUdVzx2Ruv0uOGD5qAAKPJQACNP7AVZBnX4_bTqJHHgQ",
+    "telegram_message_ids": [
+      11291
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.96,
+    "original_url": "https://v4.xtv.media/video/20260106/1c60496274a24955b86da6f516f7afff/cloudv-transfer/555555552pr896o65556o465p9608864_9d3e040b0ea5464ea92ff373c6ea3b4d_0_4.mp4?wsSecret=a1730f43c5f0a3bc0b1d8f0629e7a667&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:52:10Z"
+  },
+  "dramaora_52028762760_21": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 21,
+    "telegram_message_id": 11292,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsHGq3a6MaCH0woy3oB2qyHD5tV36DAAKQJQACNP7AVfMaryaZoC26HgQ",
+    "telegram_message_ids": [
+      11292
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.68,
+    "original_url": "https://v4.xtv.media/video/20260106/1623b16560dc436d8524e7e302513bec/cloudv-transfer/55555555p33ro9965556o46577528864_8b1f5922e9b144d7aac1b2cc9876183c_0_4.mp4?wsSecret=6268a25940e9fc4767eac0e0dde01206&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:52:21Z"
+  },
+  "dramaora_52028762760_22": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 22,
+    "telegram_message_id": 11293,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsHWq3a7ieEExwIe0MKxqitFclaH9fAAKRJQACNP7AVWxXT9_0eTP0HgQ",
+    "telegram_message_ids": [
+      11293
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.89,
+    "original_url": "https://v4.xtv.media/video/20260106/1cd379c4fa4543a4962f7a8e1c4e0d98/cloudv-transfer/555555554o82pn705556o46523o48864_4b562ebf34684bb7b267988df7a8e0cf_0_4.mp4?wsSecret=1f546b14b40aa68e8d127883e771b6ca&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:52:42Z"
+  },
+  "dramaora_52028762760_23": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 23,
+    "telegram_message_id": 11294,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsHmq3a8QTmeKbq4XNMylaC0Cg77W2AAKSJQACNP7AVYVVI9W1kHeCHgQ",
+    "telegram_message_ids": [
+      11294
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.41,
+    "original_url": "https://v4.xtv.media/video/20260106/df9ef15a6bf9422f8c5f4e77969e2883/cloudv-transfer/55555555qps169335556o465610o8864_5ca54953d2184331ba1aae485d4b1258_0_4.mp4?wsSecret=231cf418df861233adb431a14037a0cc&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:52:55Z"
+  },
+  "dramaora_52028762760_24": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 24,
+    "telegram_message_id": 11295,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsH2q3a-F8sjsKpzTkpYpIoF2Xg0NTAAKTJQACNP7AVdJQKibuumMnHgQ",
+    "telegram_message_ids": [
+      11295
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.38,
+    "original_url": "https://v4.xtv.media/video/20260106/fd06f54bcbba47f6a3490278939114c4/cloudv-transfer/55555555qrs466565556o46581qp8864_41ad44dd670c4dfd8ea691c02e06be5f_0_4.mp4?wsSecret=a0ecfc1c8d4dc950b874cb4dbc47671d&wsTime=1790412464",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:53:23Z"
+  },
+  "dramaora_52028762760_25": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 25,
+    "telegram_message_id": 11296,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsIGq3a_ikNL44xjzGdAZq9_sWAAH19gAClCUAAjT-wFX-yKjoZ2kEQx4E",
+    "telegram_message_ids": [
+      11296
+    ],
+    "total_parts": 1,
+    "file_size_mb": 24.14,
+    "original_url": "https://v4.xtv.media/video/20260106/04d788c626374c4eab45701f7c700f92/cloudv-transfer/55555555q37950425556o465856r8864_7947b76a23374eef92b5460c1b1af388_0_4.mp4?wsSecret=06239f36ad61a804bae0ec2bb868d3c2&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:53:46Z"
+  },
+  "dramaora_52028762760_26": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 26,
+    "telegram_message_id": 11297,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsIWq3bAeCW0rlnLyA8EEqhNbKi_L-AAKWJQACNP7AVVpuZRpBGqvYHgQ",
+    "telegram_message_ids": [
+      11297
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.85,
+    "original_url": "https://v4.xtv.media/video/20260106/106b74261a2d4a0ba750aea90c0099a6/cloudv-transfer/55555555s40r1r825556o46539579864_8dbca143fb9e4d9a8b57c9c9ba6eec6d_0_4.mp4?wsSecret=1cddf288ed3b51ea5e4e0354eb8876d1&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:54:02Z"
+  },
+  "dramaora_52028762760_27": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 27,
+    "telegram_message_id": 11298,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsImq3bBflo5I8d3u02s843pH2t6sWAAKXJQACNP7AVcV-lyuQ7uwFHgQ",
+    "telegram_message_ids": [
+      11298
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.68,
+    "original_url": "https://v4.xtv.media/video/20260106/71ed15a9709b4b6188f2cff1d2426bfe/cloudv-transfer/555555557qro551p5556o4657q799864_4ad80278a49945ec9ed3d2095ff85a5f_0_4.mp4?wsSecret=d435623553028f79f06ae2a735b3dfb5&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:54:19Z"
+  },
+  "dramaora_52028762760_28": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 28,
+    "telegram_message_id": 11299,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsI2q3bCbylmifhZNV2Zt9JYLIL3e7AAKYJQACNP7AVRSsl7CXB46SHgQ",
+    "telegram_message_ids": [
+      11299
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.4,
+    "original_url": "https://v4.xtv.media/video/20260106/9936131d159b4148a7d8b006470342cd/cloudv-transfer/5555555532o00o635556o465nns09864_28f1067464614c3b83b7c18d22c38985_0_4.mp4?wsSecret=795bbb6853f1226eb14a0acb6530b5c7&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:54:33Z"
+  },
+  "dramaora_52028762760_29": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 29,
+    "telegram_message_id": 11300,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsJGq3bDOF-AXP7tH9Cn_-rm2PgX20AAKZJQACNP7AVa0_uomZcRsXHgQ",
+    "telegram_message_ids": [
+      11300
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.57,
+    "original_url": "https://v4.xtv.media/video/20260106/1aa55f647b394edbadee07c21c8073ce/cloudv-transfer/555555558nn70sr85556o4656o539864_59e4d23667cd42959679c12a1ee40992_0_4.mp4?wsSecret=4091825006add4676adb0f97190d60ed&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:54:46Z"
+  },
+  "dramaora_52028762760_30": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 30,
+    "telegram_message_id": 11301,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsJWq3bEJsTGeApfoAAYT_inEIqg1OhQACmiUAAjT-wFUFl0Q49MR5AAEeBA",
+    "telegram_message_ids": [
+      11301
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.81,
+    "original_url": "https://v4.xtv.media/video/20260106/2d6ba90d39544aa384e585832624e697/cloudv-transfer/555555556467990q5556o46585rp9864_23753cfc0a31423db7521c3f74f3e4ed_0_4.mp4?wsSecret=8075a2dac3112be9dcbff21069b74269&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:55:00Z"
+  },
+  "dramaora_52028762760_31": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 31,
+    "telegram_message_id": 11302,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsJmq3bE7UPioOencr_rtQnQ0-Z5mSAAKbJQACNP7AVQ2fVLXkpvBtHgQ",
+    "telegram_message_ids": [
+      11302
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.64,
+    "original_url": "https://v4.xtv.media/video/20260106/b14bbaadda2a48cc8ef11a8162379d31/cloudv-transfer/5555555565n095005556o465r84s9864_41f3e7b26bc041dc8524ce3eb6118160_0_4.mp4?wsSecret=4c5cf57669dce4e2b6452fef5cf90e3a&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:55:12Z"
+  },
+  "dramaora_52028762760_32": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 32,
+    "telegram_message_id": 11303,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsJ2q3bFoLvUEZLCtlsQ500a5yGx8NAAKcJQACNP7AVXBycpRp1CqZHgQ",
+    "telegram_message_ids": [
+      11303
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.9,
+    "original_url": "https://v4.xtv.media/video/20260106/d606b45db3da45c2bdb4f0fb7c41b6d9/cloudv-transfer/55555555711sq7085556o46583460864_43de4638fb694a73949294da42b19869_0_4.mp4?wsSecret=34c98366d9cb68e16546648ef927faf8&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:55:25Z"
+  },
+  "dramaora_52028762760_33": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 33,
+    "telegram_message_id": 11304,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsKGq3bGfyf-IocggaOfb6iaxHfTg4AAKdJQACNP7AVXrSMHA2fnfmHgQ",
+    "telegram_message_ids": [
+      11304
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.88,
+    "original_url": "https://v4.xtv.media/video/20260106/84a7b288009d453d991fbcb082f1c583/cloudv-transfer/5555555560ro78635556o46569s80864_cc63e1fd28284599901dc45247386aad_0_4.mp4?wsSecret=a3487359e9598118b6ae5f33ac1657f2&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:55:38Z"
+  },
+  "dramaora_52028762760_34": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 34,
+    "telegram_message_id": 11305,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsKWq3bHQjy2nAiip63ZKOZKQq5O-6AAKeJQACNP7AVS8ZnctPf3ndHgQ",
+    "telegram_message_ids": [
+      11305
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.78,
+    "original_url": "https://v4.xtv.media/video/20260106/cade297c040842528aa9ee9471b213e1/cloudv-transfer/55555555p2739s695556o4655n510864_ff52c8d070c943cc82e939d5869c8fad_0_4.mp4?wsSecret=07d476017cff2cc682527d811f0c4575&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:55:50Z"
+  },
+  "dramaora_52028762760_35": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 35,
+    "telegram_message_id": 11306,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsKmq3bIMEcYQO0S6NdUSq4weu60TrAAKfJQACNP7AVXDQ19hVCPHeHgQ",
+    "telegram_message_ids": [
+      11306
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.85,
+    "original_url": "https://v4.xtv.media/video/20260106/a6156f9cf9534e0ab803f4ebc75d02e6/cloudv-transfer/55555555373s85955556o465oss40864_508b888fe2594b59ba394ec5fc980acb_0_4.mp4?wsSecret=36cd25031f35d3b17e2965704bad3405&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:56:05Z"
+  },
+  "dramaora_52028762760_36": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 36,
+    "telegram_message_id": 11307,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsK2q3bJCSfjkWm6KdIJl04RmfcOyEAAKgJQACNP7AVcE5qcI9b1aGHgQ",
+    "telegram_message_ids": [
+      11307
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.34,
+    "original_url": "https://v4.xtv.media/video/20260106/e33934cdc9424ab79969b9acb58d977c/cloudv-transfer/555555552r95n8r45556o465s6ro0864_179eceb41b0a4184896fb296dc6d864b_0_4.mp4?wsSecret=01f7b921c18e8682dacfd35ab1d2eb11&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:56:18Z"
+  },
+  "dramaora_52028762760_37": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 37,
+    "telegram_message_id": 11308,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsLGq3bJznNoHz_Q9H8nmVmsmWuvH6AAKhJQACNP7AVSqm1ktuUHpEHgQ",
+    "telegram_message_ids": [
+      11308
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.68,
+    "original_url": "https://v4.xtv.media/video/20260106/6dd3009f7b104b8498064aecc73f1d8a/cloudv-transfer/55555555805r2s2n5556o465oppq0864_365068ebc2a84f32b688c3a6d6874fc0_0_4.mp4?wsSecret=acd0af4be5bc8d76b5bead395104a728&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:56:31Z"
+  },
+  "dramaora_52028762760_38": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 38,
+    "telegram_message_id": 11309,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsLWq3bKnKykmf3omBu6h8bawm5gH7AAKiJQACNP7AVeZ3QXS5E_XJHgQ",
+    "telegram_message_ids": [
+      11309
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.67,
+    "original_url": "https://v4.xtv.media/video/20260106/abed968404a441a5afe5831514e2b8df/cloudv-transfer/55555555rs7182n25556o465ro4s0864_5a87e78a87cc454d96558792451ccc36_0_4.mp4?wsSecret=a9b6f2ce6403830b7b981e4b9e5e9a61&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:56:43Z"
+  },
+  "dramaora_52028762760_39": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 39,
+    "telegram_message_id": 11310,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsLmq3bLbUWrG6EfncVIAoNrOtbtQIAAKjJQACNP7AVQpz5LnFssHOHgQ",
+    "telegram_message_ids": [
+      11310
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.74,
+    "original_url": "https://v4.xtv.media/video/20260106/f9f956f7d44948c5b25b2fa6b02857bb/cloudv-transfer/55555555222p41n95556o465oo171864_476794ce89e1472c9641fe5afdaaa62e_0_4.mp4?wsSecret=85d6f64b374709cc0289e1988fc6c1ae&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:56:57Z"
+  },
+  "dramaora_52028762760_40": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 40,
+    "telegram_message_id": 11311,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsL2q3bMVl42cdqQ_XFgNqBegnpL1rAAKkJQACNP7AVfOWl3UuehWOHgQ",
+    "telegram_message_ids": [
+      11311
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.2,
+    "original_url": "https://v4.xtv.media/video/20260106/4e96d17cfb8d4c2f8bf124bd845856da/cloudv-transfer/55555555q22psq5n5556o46585991864_94349149ea7e43d38fe6acae674d78cb_0_4.mp4?wsSecret=49d0e0047ead65a91e24737fc31b294f&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:57:11Z"
+  },
+  "dramaora_52028762760_41": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 41,
+    "telegram_message_id": 11312,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsMGq3bNG9kTJ8psGKHf-Yry0gAk0eAAKlJQACNP7AVc6na9vdWGzKHgQ",
+    "telegram_message_ids": [
+      11312
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.4,
+    "original_url": "https://v4.xtv.media/video/20260106/219a985531a7405b9da67af67ad4bbcd/cloudv-transfer/555555551qq2714q5556o46531531864_82ddb9c910ef4df79f8c4fc7fe754cf2_0_4.mp4?wsSecret=e1c55e4c8557b36e1718399cdb1570f5&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:57:24Z"
+  },
+  "dramaora_52028762760_42": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 42,
+    "telegram_message_id": 11313,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsMWq3bN7NfedQ9QXD-LfX531W-T6sAAKmJQACNP7AVeNcMfqZ2_ABHgQ",
+    "telegram_message_ids": [
+      11313
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.69,
+    "original_url": "https://v4.xtv.media/video/20260106/e3af2c4b7be043bdb1cd0fddaaf5de9d/cloudv-transfer/55555555q4s463375556o465q18o1864_08380e3e6b834ddf92c7249070b01151_0_4.mp4?wsSecret=62c0a43cd865fe7d1c946b762b8e98b2&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:57:37Z"
+  },
+  "dramaora_52028762760_43": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 43,
+    "telegram_message_id": 11314,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsMmq3bOvNAv4cRVLsAxlzyXF4KnFFAAKnJQACNP7AVa8htVLlLDL7HgQ",
+    "telegram_message_ids": [
+      11314
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.04,
+    "original_url": "https://v4.xtv.media/video/20260106/c709a3696abb4ddf8daa5c58e9641926/cloudv-transfer/555555555r573n785556o465s97q1864_4d4a2088176f446c8dc6f2380bcb4f29_0_4.mp4?wsSecret=8092ce7f1ac9622d16903e26cc82f738&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:57:49Z"
+  },
+  "dramaora_52028762760_44": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 44,
+    "telegram_message_id": 11315,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsM2q3bPknIMl0POTU0jq85G0TVEYcAAKoJQACNP7AVcOcZSB8fxB_HgQ",
+    "telegram_message_ids": [
+      11315
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.28,
+    "original_url": "https://v4.xtv.media/video/20260106/4f39ab7eda2f41beb702a6c709166298/cloudv-transfer/555555550n64s74s5556o46510o62864_b2074474359c406d8307052bf3deb48a_0_4.mp4?wsSecret=9d59f6f0d502b4353b9ee04a692a2db9&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:58:04Z"
+  },
+  "dramaora_52028762760_45": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 45,
+    "telegram_message_id": 11316,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsNGq3bQc6JwtGs1iEZtGi-IugMUfsAAKpJQACNP7AVQ1lSp_ksdi4HgQ",
+    "telegram_message_ids": [
+      11316
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.83,
+    "original_url": "https://v4.xtv.media/video/20260106/acc617ccd14c42e28ddec7335d6813ab/cloudv-transfer/55555555s3r9r8655556o4650oo82864_e570dac355b847efb8eea3f82cd30d99_0_4.mp4?wsSecret=d51a200776828612583b503cb7ba7b18&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:58:18Z"
+  },
+  "dramaora_52028762760_46": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 46,
+    "telegram_message_id": 11317,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsNWq3bRXLprepYNnqqZdVUm3s2PhLAAKqJQACNP7AVVCXWQ0e73svHgQ",
+    "telegram_message_ids": [
+      11317
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.16,
+    "original_url": "https://v4.xtv.media/video/20260106/0f2c0ecdc67a4b1ca63855a6fc2b7805/cloudv-transfer/555555553rn113905556o46522002864_1e883cd70714467b893468b3805200a0_0_4.mp4?wsSecret=4963f9fbed5627afae0569920631934f&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:58:31Z"
+  },
+  "dramaora_52028762760_47": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 47,
+    "telegram_message_id": 11318,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsNmq3bSHwexVmtOT-iIH3XcU-h7atAAKrJQACNP7AVVXvcgSvcfF0HgQ",
+    "telegram_message_ids": [
+      11318
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.08,
+    "original_url": "https://v4.xtv.media/video/20260106/8f3d43c805b949a9852c75bcc8d39913/cloudv-transfer/5555555585qqrn325556o465s8s12864_0902d36e40b64b7495faf7417b585446_0_4.mp4?wsSecret=8fde9e9118f7286ef2ab414770beabcb&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:58:43Z"
+  },
+  "dramaora_52028762760_48": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 48,
+    "telegram_message_id": 11319,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsN2q3bS256SoBn_Dj34E--A1BmwFTAAKtJQACNP7AVWYDBoyZnAVmHgQ",
+    "telegram_message_ids": [
+      11319
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.57,
+    "original_url": "https://v4.xtv.media/video/20260106/18637061d392477e9fed5655409c6a41/cloudv-transfer/55555555856746o65556o46519642864_4d8d0d71a00747af8fa9d1e7ac09533b_0_4.mp4?wsSecret=fb13962609f8959929162019c0372408&wsTime=1790412465",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:58:55Z"
+  },
+  "dramaora_52028762760_49": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 49,
+    "telegram_message_id": 11320,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsOGq3bTpItnRNotRRzLRMY4LlebWTAAKuJQACNP7AVWURhDT2AewKHgQ",
+    "telegram_message_ids": [
+      11320
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.55,
+    "original_url": "https://v4.xtv.media/video/20260106/3e3fb10dfdab4443aa3ac09df586b4bf/cloudv-transfer/55555555p7441o5p5556o46506rn2864_64b1a30f58c240799cdbfda79f850df7_0_4.mp4?wsSecret=7559a1fdb4cf03db3a3c657872b5d095&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:59:09Z"
+  },
+  "dramaora_52028762760_50": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 50,
+    "telegram_message_id": 11321,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsOWq3bVSJWdgMxnTvVeM0tP4TeHM0AAKvJQACNP7AVa4seZa_3NfkHgQ",
+    "telegram_message_ids": [
+      11321
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.11,
+    "original_url": "https://v4.xtv.media/video/20260106/3e27a64855864602823370f47f0e63c8/cloudv-transfer/5555555591n423005556o465170p2864_db514c0b89014bc9b12616a0c5a2fd8f_0_4.mp4?wsSecret=16ea2ab13481cf66cc87f432142035f0&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:59:35Z"
+  },
+  "dramaora_52028762760_51": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 51,
+    "telegram_message_id": 11322,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsOmq3bWokVpF0nx-tkv2R4vdpK3SPAAKwJQACNP7AVai5OQp2s7UhHgQ",
+    "telegram_message_ids": [
+      11322
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.81,
+    "original_url": "https://v4.xtv.media/video/20260106/5387c892e59c474ca82b96552ed91334/cloudv-transfer/55555555132oo4r15556o46530qq2864_3ad374eb228f4fb7a57b5408ec861818_0_4.mp4?wsSecret=8635ecbf588645728ee1bbf07fdb5ef9&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T06:59:56Z"
+  },
+  "dramaora_52028762760_52": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 52,
+    "telegram_message_id": 11323,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsO2q3bXbJ9ftuoM0-iEyK9h1ksf6QAAKxJQACNP7AVZYrvHPYZpwaHgQ",
+    "telegram_message_ids": [
+      11323
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.22,
+    "original_url": "https://v4.xtv.media/video/20260106/e7ea33eb60554e4fac9bf05f5629de6b/cloudv-transfer/55555555qs56p80o5556o46514rs2864_8734b730409b499caa5072538f6dda0a_0_4.mp4?wsSecret=d42e0bf87c0b62702a7f03707d9564fa&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:00:08Z"
+  },
+  "dramaora_52028762760_53": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 53,
+    "telegram_message_id": 11324,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsPGq3bYXSjfPxW_PehMt1ryAwfZh6AAKyJQACNP7AVcQ0me4cFW-iHgQ",
+    "telegram_message_ids": [
+      11324
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.61,
+    "original_url": "https://v4.xtv.media/video/20260106/7674a6c890fc46048caa3395e860e190/cloudv-transfer/555555558ns4qq695556o46554773864_85bb34f039014821b10b9f4e303e4ad9_0_4.mp4?wsSecret=b80b02262c85f43a187711d9e382785e&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:00:24Z"
+  },
+  "dramaora_52028762760_54": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 54,
+    "telegram_message_id": 11325,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsPWq3bZTFrZMAAWYcQer_ZKbHbvA99QACsyUAAjT-wFUSN4gmbBT2Kx4E",
+    "telegram_message_ids": [
+      11325
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.21,
+    "original_url": "https://v4.xtv.media/video/20260106/39bcac0fd89d4883af47eef94049e2b7/cloudv-transfer/5555555543p8qq3n5556o4655qq83864_bbb8f5e014b0437ca0f77b7f80d27c7e_0_4.mp4?wsSecret=799996d179a11f492ca2a306501bbc17&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:00:39Z"
+  },
+  "dramaora_52028762760_55": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 55,
+    "telegram_message_id": 11326,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsPmq3baKDedp7hTE_zgejnCbmSZ0gAAK0JQACNP7AVQ0jie87RHzGHgQ",
+    "telegram_message_ids": [
+      11326
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.72,
+    "original_url": "https://v4.xtv.media/video/20260106/a06aa339e8454a3a8ba9051a57ae7274/cloudv-transfer/55555555695r1op55556o46597r03864_72a33b1a01c94b7d9a73e32956607a95_0_4.mp4?wsSecret=83a83eb8baaa755aefa27edeca30f950&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:00:52Z"
+  },
+  "dramaora_52028762760_56": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 56,
+    "telegram_message_id": 11327,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsP2q3bbXKCCr4_RZyInNG-iYdN_sFAAK1JQACNP7AVe-RLgl9u8rOHgQ",
+    "telegram_message_ids": [
+      11327
+    ],
+    "total_parts": 1,
+    "file_size_mb": 6.77,
+    "original_url": "https://v4.xtv.media/video/20260106/b39337653d0f4ea6af2ff4b765cdc0e4/cloudv-transfer/555555555r3079s65556o4650oq23864_72bb08bf41194c8b83dcd39a2f815425_0_4.mp4?wsSecret=33b7799d47cb97c6fc84db60bca6b5af&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:01:13Z"
+  },
+  "dramaora_52028762760_57": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 57,
+    "telegram_message_id": 11328,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsQGq3bchc-pYcwKGht_UxGuparoKtAAK2JQACNP7AVY7stl_CXDZgHgQ",
+    "telegram_message_ids": [
+      11328
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.79,
+    "original_url": "https://v4.xtv.media/video/20260106/e077dbaa750c473d9ea8f8afc3965123/cloudv-transfer/555555551q45p6q15556o46521r33864_5f153fb6a37b47ac9e24a9a7b24ad650_0_4.mp4?wsSecret=41e77bc88d76401910856c1e89cae546&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:01:30Z"
+  },
+  "dramaora_52028762760_58": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 58,
+    "telegram_message_id": 11329,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsQWq3bdlGNKL1slyxuUS1GOKevwzPAAK3JQACNP7AVZlMU2yQWFAqHgQ",
+    "telegram_message_ids": [
+      11329
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.38,
+    "original_url": "https://v4.xtv.media/video/20260106/940db3cf36284f04921ea7912e67496a/cloudv-transfer/55555555srs5nrs75556o465911o3864_204912cbd5384a2cb34889c788fc97fd_0_4.mp4?wsSecret=1bd9b86b7d906e583b36944e72226426&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:01:47Z"
+  },
+  "dramaora_52028762760_59": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 59,
+    "telegram_message_id": 11330,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsQmq3bfDJMfEsa4Ev5dlC4KH-HmweAAK4JQACNP7AVXOd8pv4BVSrHgQ",
+    "telegram_message_ids": [
+      11330
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.07,
+    "original_url": "https://v4.xtv.media/video/20260106/bc02fd689eb44ae58fa00af8050d4f2a/cloudv-transfer/5555555519rp0r655556o465168r3864_4c0ac8b813204f4c883793878e78504b_0_4.mp4?wsSecret=56203454541fae335342071547fdbb16&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:02:10Z"
+  },
+  "dramaora_52028762760_60": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 60,
+    "telegram_message_id": 11331,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsQ2q3bgHtbhTkf-cBk7jaUdQjR2EvAAK5JQACNP7AVai0lo2TNqcTHgQ",
+    "telegram_message_ids": [
+      11331
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.23,
+    "original_url": "https://v4.xtv.media/video/20260106/d5a38dead0674b3998da650bb46e1810/cloudv-transfer/5555555570n2301q5556o465r3p54864_940f73e3cf4c4c8994cff9c0965f6f4b_0_4.mp4?wsSecret=f7b430bf71c4022373ebb7b53cecb789&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:02:28Z"
+  },
+  "dramaora_52028762760_61": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 61,
+    "telegram_message_id": 11332,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsRGq3bhPKZGzs4kxm65KAkyBlIvuLAAK6JQACNP7AVfoG8Pz08ke6HgQ",
+    "telegram_message_ids": [
+      11332
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.28,
+    "original_url": "https://v4.xtv.media/video/20260106/bceae54f323b4763b9095d1de838e7ec/cloudv-transfer/5555555556n8os1q5556o46595684864_92a0cd3a3e914173aeac664d1d8da146_0_4.mp4?wsSecret=9bcca83f8a1070c86da93a4b132947fc&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:02:45Z"
+  },
+  "dramaora_52028762760_62": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 62,
+    "telegram_message_id": 11333,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsRWq3biaGYwEaV7HkF9xQ0bFRsHYBAAK7JQACNP7AVS93moPXedPBHgQ",
+    "telegram_message_ids": [
+      11333
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.19,
+    "original_url": "https://v4.xtv.media/video/20260106/2284fdfa5811496a9e59492f6f6c5e1d/cloudv-transfer/55555555r66p885n5556o4657sn04864_6e70eeb5c8944f8bb0790aefba28bbcc_0_4.mp4?wsSecret=d37ff4d973f64a2147168c13977f76e7&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:03:04Z"
+  },
+  "dramaora_52028762760_63": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 63,
+    "telegram_message_id": 11334,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsRmq3bjm-A-1RdlNIsA94UJhyZSdSAAK8JQACNP7AVd7NSdcZOUt5HgQ",
+    "telegram_message_ids": [
+      11334
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.58,
+    "original_url": "https://v4.xtv.media/video/20260106/8dec8e63cc0b4214816f319fe8996ae4/cloudv-transfer/55555555n1n13nn95556o465r2934864_cada9d2ca4b94129b22758956a197290_0_4.mp4?wsSecret=3633db8305c06c6b9e4f306f1f521174&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:03:23Z"
+  },
+  "dramaora_52028762760_64": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 64,
+    "telegram_message_id": 11335,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsR2q3blaAHHxvKakhyx-fV7UvIlUnAAK9JQACNP7AVVHHv8vmOIs3HgQ",
+    "telegram_message_ids": [
+      11335
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.08,
+    "original_url": "https://v4.xtv.media/video/20260106/69a7bf7c343c40a499c2b04b655b878e/cloudv-transfer/555555555nps98p45556o465050o4864_46e7fa461b174695beb5b0291c712899_0_4.mp4?wsSecret=a7656ac9b98269be833d5ef6f8d69453&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:03:52Z"
+  },
+  "dramaora_52028762760_65": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 65,
+    "telegram_message_id": 11336,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsSGq3bmvyUkZqFFdU-AZ6DPheTmdTAAK-JQACNP7AVSAV7qO8Ds4GHgQ",
+    "telegram_message_ids": [
+      11336
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.77,
+    "original_url": "https://v4.xtv.media/video/20260106/ce32d0bc2c364c5c883d0e30a6aaeaa2/cloudv-transfer/55555555o76op7q85556o465347r4864_5ae7dcfaa4004c1aaeaae968aeed234a_0_4.mp4?wsSecret=af90fa311ebdd99ad9dcc6c16ddb65d8&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:04:14Z"
+  },
+  "dramaora_52028762760_66": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 66,
+    "telegram_message_id": 11337,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsSWq3boGJMk0lnEZ6si9JtKUXjtRxAAK_JQACNP7AVYE3jB3oq9FdHgQ",
+    "telegram_message_ids": [
+      11337
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.32,
+    "original_url": "https://v4.xtv.media/video/20260106/4c8b4cce2c1842969ec10bc2dc30788f/cloudv-transfer/555555551nq4psn75556o465r1qs4864_b8a3786856d04acfb2ffa7c831423973_0_4.mp4?wsSecret=8e1db8a9dd34fd9f79374d06bf589ba1&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:04:35Z"
+  },
+  "dramaora_52028762760_67": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 67,
+    "telegram_message_id": 11338,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsSmq3bo8X_86LhTjH33D5PJemHVyNAALAJQACNP7AVSj6Zk_ltaYxHgQ",
+    "telegram_message_ids": [
+      11338
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.37,
+    "original_url": "https://v4.xtv.media/video/20260106/eacf1c6e90c240e88efb15d4bd922a69/cloudv-transfer/55555555587623s95556o4655q87n864_7b7380ef7ade4a0793749776f08230d6_0_4.mp4?wsSecret=240d975c4704f250b79a4772c3b41e52&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:04:49Z"
+  },
+  "dramaora_52028762760_68": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 68,
+    "telegram_message_id": 11339,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsS2q3bqKYqCaNp2HFBgbDQuCPW2hBAALBJQACNP7AVWOhzKR_4SP4HgQ",
+    "telegram_message_ids": [
+      11339
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.11,
+    "original_url": "https://v4.xtv.media/video/20260106/2a4acb8b24144c01a8515d229b19b4ed/cloudv-transfer/55555555798s0sn45556o4656n29n864_c460220906474b91860a5fa0b2781963_0_4.mp4?wsSecret=8facc3e3f15ee902f84332853e269e8d&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:05:08Z"
+  },
+  "dramaora_52028762760_69": {
+    "show_id": "dramaora_52028762760",
+    "show_title": "Bikinis in Game",
+    "episode_number": 69,
+    "telegram_message_id": 11340,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIsTGq3bq-OhFewTwWdiGf5YbuOmDTgAALCJQACNP7AVcg1HHU3z7aqHgQ",
+    "telegram_message_ids": [
+      11340
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.38,
+    "original_url": "https://v4.xtv.media/video/20260106/af9de5405b4b435aad6cd421051d3e26/cloudv-transfer/55555555r29s91r65556o4658o11n864_edc9747dcea24b12ba325b55da7f2745_0_4.mp4?wsSecret=3158b95b1944571b943ec7bdd6c0ebf6&wsTime=1790412466",
+    "poster_url": "https://v4.xtv.media/cloudv-material/20260106/912eb75d019b1000bb0f748a00000000.jpg",
+    "synopsis": "In a bikini competition, Shane brought two of his models and determined to win the championship this time. A billionaire sponsor and a guy with ulterior motives came in his way, while a number of beauties are gathered around the competition, each carrying their own thoughts and plans.",
+    "source": "dramaora",
+    "backed_up_at": "2026-09-26T07:05:21Z"
   }
 };
