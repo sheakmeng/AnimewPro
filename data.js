@@ -40832,5 +40832,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Visting and staying at cousin's home, Julian gradually has a thing for his cousin's wife, Shanoe, while discovering that she has been mistreated by his cousin. Being the righteous man, Julian decides to be the hero and win her over. When their life settles down, Shanoe's mother joins them, then ends up giving in to  Julian's charisma as well.",
     "source": "dramaora",
     "backed_up_at": "2026-09-26T18:56:37Z"
+  },
+  "dramaora_52022080869_1": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 1,
+    "telegram_message_id": 12978,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIysmrrgKe1wzrUPjEsV1RGRW37uRRJAALHLwACQhhYV9x7CdPOkKV7HgQ",
+    "telegram_message_ids": [
+      12978
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.18,
+    "original_url": "https://media.vidivo.me/video/20260831/9bf472d9e49e4d188d254628744529e5/cloudv-transfer/5555555528sn8n7655565n65785r1r10_3fa2c9e384624cc2b09fa1c848f67f60_0_4.mp4?wsSecret=8d4543d6cc14df43e337b753d9faba66&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T18:59:54Z"
+  },
+  "dramaora_52022080869_2": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 2,
+    "telegram_message_id": 12979,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIys2rrgLtQt8wTQf_hbZNXioA8yu0cAALILwACQhhYV0G6TvMOf1-4HgQ",
+    "telegram_message_ids": [
+      12979
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.76,
+    "original_url": "https://media.vidivo.me/video/20260831/52ae3aa031cb48b785000ac1fea3700c/cloudv-transfer/5555555524rq41op55565n65rp552r10_82a7abfa29f948f390597ab40f6e9aaf_0_4.mp4?wsSecret=c2f1dd9cb3fda3ab84b49d1749a96345&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:00:14Z"
+  },
+  "dramaora_52022080869_3": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 3,
+    "telegram_message_id": 12980,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIytGrrgNGv8LV8Oa2TNgneRzjj_9ofAALJLwACQhhYV88bJffpAAGzXB4E",
+    "telegram_message_ids": [
+      12980
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.74,
+    "original_url": "https://media.vidivo.me/video/20260831/a0677fd9885244d4ab839eef870f779c/cloudv-transfer/555555558nq12rn455565n65qr582r10_eb219a64c172493581631313c87a1066_0_4.mp4?wsSecret=f7e33bae192d6e4fea4635fed2175b36&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:00:36Z"
+  },
+  "dramaora_52022080869_4": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 4,
+    "telegram_message_id": 12981,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIytWrrgOJGAszDiioHDdRlhFRD3LRRAALLLwACQhhYV3JKzvIEhO73HgQ",
+    "telegram_message_ids": [
+      12981
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.12,
+    "original_url": "https://media.vidivo.me/video/20260831/176f49e102804ec0965491e07b4a23ef/cloudv-transfer/55555555pq3s469q55565n656rr02r10_1428544894e74f448856eb3b943c5795_0_4.mp4?wsSecret=10f383e7664db4ef35050deeb07590d7&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:00:53Z"
+  },
+  "dramaora_52022080869_5": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 5,
+    "telegram_message_id": 12982,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIytmrrgPMIv_n2adFwmpZMFr8uHVy2AALNLwACQhhYV8-iE3f690zeHgQ",
+    "telegram_message_ids": [
+      12982
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.25,
+    "original_url": "https://media.vidivo.me/video/20260831/fce496eb103149fe8279fa4eadfafd39/cloudv-transfer/55555555p5o3oss555565n6566132r10_4e8d2585a7e047e18064bea394e3180a_0_4.mp4?wsSecret=c4fc4167c42ba62ab6ec86c36d59d5b4&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:01:09Z"
+  },
+  "dramaora_52022080869_6": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 6,
+    "telegram_message_id": 12983,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyt2rrgQVG4C4kzCCRzqH7nyxkzeb3AALOLwACQhhYV1Ptbo98LdeMHgQ",
+    "telegram_message_ids": [
+      12983
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.56,
+    "original_url": "https://media.vidivo.me/video/20260831/1b3067f8ffb244ce99689e009e32e3a4/cloudv-transfer/555555551854ns8155565n65nqpn2r10_de8b16b1d8ad4ebcbbb2406bde9fe871_0_4.mp4?wsSecret=1585da6508c0d6531545301a5eea1b50&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:01:28Z"
+  },
+  "dramaora_52022080869_7": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 7,
+    "telegram_message_id": 12984,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyuGrrgRtcMkz3bievfC8NQVW1arciAALQLwACQhhYV7Jze6tMnVZAHgQ",
+    "telegram_message_ids": [
+      12984
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.94,
+    "original_url": "https://media.vidivo.me/video/20260831/b32d38b7f4d24159b6857582e42916e9/cloudv-transfer/55555555nr3on7sq55565n65776p2r10_9fc37243121746f1991d4c40aea02ff3_0_4.mp4?wsSecret=8af206aa2cdc9ac89248a302e7a504ac&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:01:50Z"
+  },
+  "dramaora_52022080869_8": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 8,
+    "telegram_message_id": 12985,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyuWrrgS4-sW03isXlaREhIn9UYxILAALRLwACQhhYV2l8dsjbM1OYHgQ",
+    "telegram_message_ids": [
+      12985
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.89,
+    "original_url": "https://media.vidivo.me/video/20260831/e519dd26fb9e4cf681de7ee117af3b9b/cloudv-transfer/55555555p4n5r1oo55565n65qn7q2r10_34a6093c49444889935a8c56022f0bc7_0_4.mp4?wsSecret=307e9c2b57ba01c2f4c0aadf0ee99d0d&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:02:09Z"
+  },
+  "dramaora_52022080869_9": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 9,
+    "telegram_message_id": 12986,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyumrrgUK1jymxQ_7JBN4OwO8i6oXIAALTLwACQhhYV35PIG2o6sOFHgQ",
+    "telegram_message_ids": [
+      12986
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.96,
+    "original_url": "https://media.vidivo.me/video/20260831/2e7981354b39413a8dad6c2daaf4ccde/cloudv-transfer/55555555p00o6p1355565n6575053r10_a389659972a64b0fad7a1f98a8b78127_0_4.mp4?wsSecret=e9a1a17d5d848f33723de0e873328f65&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:02:28Z"
+  },
+  "dramaora_52022080869_10": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 10,
+    "telegram_message_id": 12987,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyu2rrgVWnVZFa8IQhuOR6-IGHpDFOAALULwACQhhYV6gkbOA_DBF2HgQ",
+    "telegram_message_ids": [
+      12987
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.95,
+    "original_url": "https://media.vidivo.me/video/20260831/0b7388ae367c40ec82180d7e0c4e84d4/cloudv-transfer/55555555q9708q5p55565n65so983r10_e29f494718c04791974c0de4dc305227_0_4.mp4?wsSecret=52c71f5561d13405093bc31f3978de54&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:02:48Z"
+  },
+  "dramaora_52022080869_11": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 11,
+    "telegram_message_id": 12988,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyvGrrgWputKEqhyRb9E_n5MHgjx0sAALVLwACQhhYVzHRUQHQgysAAR4E",
+    "telegram_message_ids": [
+      12988
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.54,
+    "original_url": "https://media.vidivo.me/video/20260831/3d13510354034b1599e2a56ad5b5e7ae/cloudv-transfer/55555555n35o971o55565n655n723r10_b6d33563df384d59b9aef549a65f5f50_0_4.mp4?wsSecret=985d40041d44b740ad7e8a0c245b75ef&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:03:08Z"
+  },
+  "dramaora_52022080869_12": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 12,
+    "telegram_message_id": 12989,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyvWrrgXwmOTFiehGQS9sZMrWQNXjVAALYLwACQhhYVz_b0zOlS-KOHgQ",
+    "telegram_message_ids": [
+      12989
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.76,
+    "original_url": "https://media.vidivo.me/video/20260831/3264a7ac08a3451b808fca0ecb25bf93/cloudv-transfer/555555552q6ppqsp55565n65677p3r10_7eb294d6eee244bcafdb3d079bcd6ee1_0_4.mp4?wsSecret=9a6dff4378ce430b412b1f3bfb206313&wsTime=1793825972",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:03:26Z"
+  },
+  "dramaora_52022080869_13": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 13,
+    "telegram_message_id": 12990,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyvmrrgZsuhxoTPOF-X5gyFZogMj2pAALZLwACQhhYV5nf8dqGp8_hHgQ",
+    "telegram_message_ids": [
+      12990
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.36,
+    "original_url": "https://media.vidivo.me/video/20260831/3f65f83699d744c6b8587cd0e5b11ce9/cloudv-transfer/55555555sr313so055565n65734s3r10_5f9addaaa18c4450a4e381cd7bcb9e25_0_4.mp4?wsSecret=a9fc00a8e1cb72ea427e9b2bac1d1f2c&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:03:57Z"
+  },
+  "dramaora_52022080869_14": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 14,
+    "telegram_message_id": 12991,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyv2rrgawUIR-tb92Agzg1HUBXdeD7AALbLwACQhhYV6x8U28NGazTHgQ",
+    "telegram_message_ids": [
+      12991
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.92,
+    "original_url": "https://media.vidivo.me/video/20260831/b7ac4fda42fb4a30b780dcaa07d13dd2/cloudv-transfer/55555555q54n5s3355565n65q3p54r10_ceae57132df24f77a5f69e5ac6656e56_0_4.mp4?wsSecret=e65c08e2ffaab10ad54951d7aa8d2209&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:04:14Z"
+  },
+  "dramaora_52022080869_15": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 15,
+    "telegram_message_id": 12992,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIywGrrgcC9S8SZ_oVWcAMzynqu5O2iAALcLwACQhhYV21MBUdito5rHgQ",
+    "telegram_message_ids": [
+      12992
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.04,
+    "original_url": "https://media.vidivo.me/video/20260831/280f0ac1a6f14f36937db98deb9e45a6/cloudv-transfer/555555557q59n1o655565n651ss64r10_9bb61098d0dd46439c7c7fcc64ea20b3_0_4.mp4?wsSecret=51b7c8d00662855d5001dd7a47870816&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:04:34Z"
+  },
+  "dramaora_52022080869_16": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 16,
+    "telegram_message_id": 12993,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIywWrrgdYI_AbGlL9A-QXo4k3hOJgiAALeLwACQhhYV9pxUTXZMX55HgQ",
+    "telegram_message_ids": [
+      12993
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.21,
+    "original_url": "https://media.vidivo.me/video/20260831/a2b5868acea043249cc57b1e4e9eb2ca/cloudv-transfer/55555555so172r4p55565n65nn484r10_97ca85b2e5de4d0f9190b23fccbe9903_0_4.mp4?wsSecret=4c9f1a7f32834275a0a7a25359b181d6&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:04:56Z"
+  },
+  "dramaora_52022080869_17": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 17,
+    "telegram_message_id": 12994,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIywmrrgelisMKcRvrxGGHcFTQu3v34AALfLwACQhhYV4x-ypwdvygSHgQ",
+    "telegram_message_ids": [
+      12994
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.17,
+    "original_url": "https://media.vidivo.me/video/20260831/1bd8a0c954164c59af6e4b7f4295ff9c/cloudv-transfer/55555555p1q5791355565n6533104r10_5fc7e62f284e4ed3ae009e1df6601744_0_4.mp4?wsSecret=7cb091512ab4d17e286cae70875f6ff5&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:05:15Z"
+  },
+  "dramaora_52022080869_18": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 18,
+    "telegram_message_id": 12995,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyw2rrgfq9ibiEHCItw4eRiTMGvqE5AALgLwACQhhYV7RWgsI3lzyuHgQ",
+    "telegram_message_ids": [
+      12995
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.66,
+    "original_url": "https://media.vidivo.me/video/20260831/a9fafed12e8642948be861c962f77285/cloudv-transfer/55555555s8r6344s55565n65qsp14r10_0a23a8d83a564fb4a6125f98d1adb8a6_0_4.mp4?wsSecret=fbc9a6bfc032de14d7c04cc3bfb63b29&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:05:33Z"
+  },
+  "dramaora_52022080869_19": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 19,
+    "telegram_message_id": 12996,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyxGrrgg7S6DReE0bE3fK7Kw6nnZzdAALiLwACQhhYV9j_6f3tVyukHgQ",
+    "telegram_message_ids": [
+      12996
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.69,
+    "original_url": "https://media.vidivo.me/video/20260831/2121803c9ffa48b29ac0b69444ea9aee/cloudv-transfer/555555557qosq1o855565n65rnr34r10_fcf827a858034d26bb8be665b6b34813_0_4.mp4?wsSecret=f008b5b02633168f31fb51826bb9ffbf&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:05:53Z"
+  },
+  "dramaora_52022080869_20": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 20,
+    "telegram_message_id": 12997,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyxWrrgiQ6rB3cWE0Xr0ACjO23alLUAALkLwACQhhYV5oQNHbU4mLIHgQ",
+    "telegram_message_ids": [
+      12997
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.14,
+    "original_url": "https://media.vidivo.me/video/20260831/9ff8f9f085f54c09bccaca8cb60abafc/cloudv-transfer/55555555n0so6ro855565n659rpn4r10_225ea75ba39d4ebe985241972b5e37b6_0_4.mp4?wsSecret=4235690e1b214ca62c0b6f2a12565ae9&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:06:14Z"
+  },
+  "dramaora_52022080869_21": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 21,
+    "telegram_message_id": 12998,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyxmrrgjbCTKOWXIBnOsKdVZ0M0vexAALlLwACQhhYVwKAF5ougw1hHgQ",
+    "telegram_message_ids": [
+      12998
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.17,
+    "original_url": "https://media.vidivo.me/video/20260831/3c754d79115545cf8531f67189f6743b/cloudv-transfer/55555555ns7s3n1n55565n65s83p4r10_ab245e3dd17f49fc80d153faa156343a_0_4.mp4?wsSecret=fedc290c40bd64f4ed72c42b0aeed1df&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:06:33Z"
+  },
+  "dramaora_52022080869_22": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 22,
+    "telegram_message_id": 12999,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyx2rrgknrgmjH9jrm93EjYAWSo-WoAALnLwACQhhYV2A_bwIWjJK1HgQ",
+    "telegram_message_ids": [
+      12999
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.0,
+    "original_url": "https://media.vidivo.me/video/20260831/626a1ab4c40b44fb9ebdf51bc0ac6327/cloudv-transfer/55555555op73qq8255565n6574nq4r10_01dc914a322149af8d59df057f88343a_0_4.mp4?wsSecret=56de620ca4b09d79ac0e10cb84224adf&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:06:51Z"
+  },
+  "dramaora_52022080869_23": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 23,
+    "telegram_message_id": 13000,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyyGrrgnjblV-kdVpsQVKw-GCz53qsAALpLwACQhhYV5PmJ6q6LqUcHgQ",
+    "telegram_message_ids": [
+      13000
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.85,
+    "original_url": "https://media.vidivo.me/video/20260831/9689342158d44561b35317ffc718b330/cloudv-transfer/555555559n358n1q55565n65435s4r10_923a9858d9b84ce0802a700ef0feb47e_0_4.mp4?wsSecret=90227e0f259f64f0ee29e156b88c6e34&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:07:38Z"
+  },
+  "dramaora_52022080869_24": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 24,
+    "telegram_message_id": 13001,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyyWrrgo0AAfX7OSWx4cpkeQ4pi_iJwwAC6i8AAkIYWFdNzoam69kCrx4E",
+    "telegram_message_ids": [
+      13001
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.37,
+    "original_url": "https://media.vidivo.me/video/20260831/84a3f504eb6d437ea9629be04fb1d79d/cloudv-transfer/55555555574s5n5955565n653325nr10_3713b2dcfef24d76961512bfa232b9b0_0_4.mp4?wsSecret=f37a13f63a79abecedee8cb72156b0ad&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:07:59Z"
+  },
+  "dramaora_52022080869_25": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 25,
+    "telegram_message_id": 13002,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyymrrgqgdaMdSChaWC6FGmNv0L1GSAALsLwACQhhYV5x0tf7TxPm6HgQ",
+    "telegram_message_ids": [
+      13002
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.79,
+    "original_url": "https://media.vidivo.me/video/20260831/27adfc806ebe4ae8961379fd1ff2e881/cloudv-transfer/55555555ro1599q955565n65qn87nr10_93ae54be324c4f728b60df84501d9e9f_0_4.mp4?wsSecret=9e116c4e27c493213ee1d209d7b607f5&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:08:26Z"
+  },
+  "dramaora_52022080869_26": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 26,
+    "telegram_message_id": 13003,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyy2rrgrpJN5SwYD75ROY33xNlObkWAALtLwACQhhYV5B4kJZmtNWgHgQ",
+    "telegram_message_ids": [
+      13003
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.31,
+    "original_url": "https://media.vidivo.me/video/20260831/0d9aaa85a09a49e9ba6355e1b352fe1b/cloudv-transfer/555555558p4q525s55565n653o19nr10_0fdf11f5f2cd4785b1c3b109adaaa604_0_4.mp4?wsSecret=f531dace83c2bf3cd15d585cf54c4f3f&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:08:44Z"
+  },
+  "dramaora_52022080869_27": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 27,
+    "telegram_message_id": 13004,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyzGrrgs5_JrIVgAuEnp8Q-Jk33HObAALvLwACQhhYV7hMvr18R5ipHgQ",
+    "telegram_message_ids": [
+      13004
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.52,
+    "original_url": "https://media.vidivo.me/video/20260831/533be44d3cc549e2b7b665091d42b346/cloudv-transfer/55555555nopo1oss55565n65r491nr10_0a5d8f635f134e7cbe4d3e752d55ddcc_0_4.mp4?wsSecret=89aac1195fb12765e641ca30aa908c75&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:09:04Z"
+  },
+  "dramaora_52022080869_28": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 28,
+    "telegram_message_id": 13005,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyzWrrguA6iI7AYO1CV0h4REZUAfaeAALwLwACQhhYV0Ya_GTSezw6HgQ",
+    "telegram_message_ids": [
+      13005
+    ],
+    "total_parts": 1,
+    "file_size_mb": 6.7,
+    "original_url": "https://media.vidivo.me/video/20260831/4483f185c01c4f039fa116f33d183816/cloudv-transfer/55555555q5qo9r7q55565n65pn53nr10_f2165432e64247ff9f733e4da7f8f553_0_4.mp4?wsSecret=b88ede67cddf17565fdb25c34d267340&wsTime=1793825973",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:09:23Z"
+  },
+  "dramaora_52022080869_29": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 29,
+    "telegram_message_id": 13006,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyzmrrgv8l3aHT0vsiaQch7SYHGVt9AALyLwACQhhYVyGXYh7zBuAiHgQ",
+    "telegram_message_ids": [
+      13006
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.4,
+    "original_url": "https://media.vidivo.me/video/20260831/71d5352fb072445f82adced39803f17b/cloudv-transfer/5555555588s4qr5455565n6541n4nr10_d179e6b62ba14d769bd2be3cc41072c3_0_4.mp4?wsSecret=7a6791828847ede7e043c91bdda0617b&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:09:54Z"
+  },
+  "dramaora_52022080869_30": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 30,
+    "telegram_message_id": 13007,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIyz2rrgxIOs1gQG5Hpqma-Zu3Z7bwgAALzLwACQhhYVx9KKYecRcHyHgQ",
+    "telegram_message_ids": [
+      13007
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.32,
+    "original_url": "https://media.vidivo.me/video/20260831/779830c146c24dd790060290910accc2/cloudv-transfer/5555555587o9r6r655565n651o0onr10_59d3ee7f587c48219d72f54a6109a46e_0_4.mp4?wsSecret=91453a59e40fd809a32422d872aafce6&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:10:12Z"
+  },
+  "dramaora_52022080869_31": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 31,
+    "telegram_message_id": 13008,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy0GrrgyQqKA-pHd73MdyIa3UJce5wAAL0LwACQhhYV8qQY6Y__DpaHgQ",
+    "telegram_message_ids": [
+      13008
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.4,
+    "original_url": "https://media.vidivo.me/video/20260831/12a0ab9df1d44a2196537754497667a7/cloudv-transfer/55555555o11499n755565n657o4pnr10_e5fc8ede69714d50859faabcdd60723b_0_4.mp4?wsSecret=60c3e281b38acbecc008efc63ae5992f&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:10:31Z"
+  },
+  "dramaora_52022080869_32": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 32,
+    "telegram_message_id": 13009,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy0Wrrgzcv9hnh0vS_QEERpU_wtt_-AAL2LwACQhhYV2C53kvQxmdoHgQ",
+    "telegram_message_ids": [
+      13009
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.91,
+    "original_url": "https://media.vidivo.me/video/20260831/193731ae607e4522b2dcf5e67b14cb13/cloudv-transfer/5555555556o4303655565n6568qqnr10_d42c4ff5920e488db1065331915c9c7a_0_4.mp4?wsSecret=dc0e8555215121f8e2de4df649a8ddde&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:10:50Z"
+  },
+  "dramaora_52022080869_33": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 33,
+    "telegram_message_id": 13010,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy0mrrg0wikptZzAni16IcVOS_7YYqAAL3LwACQhhYV9vULl37VUzWHgQ",
+    "telegram_message_ids": [
+      13010
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.64,
+    "original_url": "https://media.vidivo.me/video/20260831/6ecf2b959f7747ff9aa6ba859bd8c95c/cloudv-transfer/555555558pr6n69855565n6590qsnr10_58b0735b91f540d49c6603e1dad1748a_0_4.mp4?wsSecret=92414ebc88180f82a555f64dac2ff246&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:11:10Z"
+  },
+  "dramaora_52022080869_34": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 34,
+    "telegram_message_id": 13011,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy02rrg2BU5iJAppabEwT2hh4wds0JAAL5LwACQhhYV2XuqA4HRGfXHgQ",
+    "telegram_message_ids": [
+      13011
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.65,
+    "original_url": "https://media.vidivo.me/video/20260831/680afa7b553049aca2b91fc0164c287f/cloudv-transfer/5555555510npp13n55565n65noo5or10_6e1219daabe54f989f87f37f9630045d_0_4.mp4?wsSecret=705980576cd7afb16764be2e6e5e19c7&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:11:31Z"
+  },
+  "dramaora_52022080869_35": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 35,
+    "telegram_message_id": 13012,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy1Grrg4Kt44I3Aen9Xbe--AeHXASIAAL7LwACQhhYVwyp_mDaw2tuHgQ",
+    "telegram_message_ids": [
+      13012
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.73,
+    "original_url": "https://media.vidivo.me/video/20260831/97335c480205485695e513caea2ac8d4/cloudv-transfer/5555555570q5s2r355565n65q0s6or10_de87168b62a04e199b737732773bd6d5_0_4.mp4?wsSecret=58809ab9ab8cd340f7de9220bab11bba&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:12:04Z"
+  },
+  "dramaora_52022080869_36": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 36,
+    "telegram_message_id": 13013,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy1Wrrg5NtHu0sPokitKEgVzIbqtCxAAL8LwACQhhYV1y_1W3h-DVtHgQ",
+    "telegram_message_ids": [
+      13013
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.58,
+    "original_url": "https://media.vidivo.me/video/20260831/709e8e070c20498a9a41d04196a6357b/cloudv-transfer/55555555r66s0n1555565n657179or10_90236a3793054178bd977fb4da82953f_0_4.mp4?wsSecret=4d4ea539401dada1282210d4cb7122ad&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:12:21Z"
+  },
+  "dramaora_52022080869_37": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 37,
+    "telegram_message_id": 13014,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy1mrrg6WOMg4DOYWX1yEv4BR3hAUrAAL-LwACQhhYV0VnXvvbmlMuHgQ",
+    "telegram_message_ids": [
+      13014
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.7,
+    "original_url": "https://media.vidivo.me/video/20260831/4bc95d9a180b475cbd031b91d92ec4bf/cloudv-transfer/555555553r7n363p55565n65sr70or10_13c5e1a1fbde4ebe87dec8a5d83423e5_0_4.mp4?wsSecret=b5f633257a33c64fc36a8b4d6a6bdf71&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:12:39Z"
+  },
+  "dramaora_52022080869_38": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 38,
+    "telegram_message_id": 13015,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy12rrg7dJN5txUPVqE4yqMAQGlP94AAL_LwACQhhYVwbpGkgSNkkvHgQ",
+    "telegram_message_ids": [
+      13015
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.07,
+    "original_url": "https://media.vidivo.me/video/20260831/b2ca94433a8a41d99bcc3e880a1396c2/cloudv-transfer/5555555542rs878r55565n65oq91or10_9dab54b2a3744f2dbc00bf47c14a7b6f_0_4.mp4?wsSecret=e0895b5409e95b3d04fbd49ee020c9b2&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:12:58Z"
+  },
+  "dramaora_52022080869_39": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 39,
+    "telegram_message_id": 13016,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy2Grrg8ulSdcQhXXuCqyR6hsSnQf7AAMwAAJCGFhXQjrnj4TsWLoeBA",
+    "telegram_message_ids": [
+      13016
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.42,
+    "original_url": "https://media.vidivo.me/video/20260831/d9004af26b464229b4991f13f446af72/cloudv-transfer/55555555o85rr99655565n65o362or10_33adaf5aa1e3440790e330bfa3f0d6cc_0_4.mp4?wsSecret=9f6bd886e9ab1483b09e2bcb31255ea8&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:13:17Z"
+  },
+  "dramaora_52022080869_40": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 40,
+    "telegram_message_id": 13017,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy2Wrrg-GI4vGJ0vtP0p0P4ALh3dspAAICMAACQhhYV9wvWIPcRKLKHgQ",
+    "telegram_message_ids": [
+      13017
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.41,
+    "original_url": "https://media.vidivo.me/video/20260831/d11dd292d64c4ccfa8a048ef67d5b92f/cloudv-transfer/555555555sn9r1p755565n650183or10_97c3d48b6508430ea9466240a7059cde_0_4.mp4?wsSecret=71f2aa5c4ab78a7c8c2c068839b8e54e&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:13:39Z"
+  },
+  "dramaora_52022080869_41": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 41,
+    "telegram_message_id": 13018,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy2mrrg_ddKxl_vpvpqLvRURHDDlp5AAIEMAACQhhYVzHnrv8B4UYKHgQ",
+    "telegram_message_ids": [
+      13018
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.27,
+    "original_url": "https://media.vidivo.me/video/20260831/7f7414f475914e088f4877c35fe41f7f/cloudv-transfer/5555555540q4q21n55565n65o024or10_0ebf75c593144f7a80086d3c45536099_0_4.mp4?wsSecret=de8f82edaf2293dbe32a5a4bcaff9cf6&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:14:01Z"
+  },
+  "dramaora_52022080869_42": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 42,
+    "telegram_message_id": 13019,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy22rrhAhBD8wCjnVPUL7gctyl39SOAAIFMAACQhhYV6IiMXz0P0ibHgQ",
+    "telegram_message_ids": [
+      13019
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://media.vidivo.me/video/20260831/5165ddc2632244549d9d157b261fe759/cloudv-transfer/55555555pn051nrn55565n650o4oor10_a957dd7928fb48b08616227a45fbb6b7_0_4.mp4?wsSecret=6204b6099870f32d55e0f5b47fa05801&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:14:18Z"
+  },
+  "dramaora_52022080869_43": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 43,
+    "telegram_message_id": 13020,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy3GrrhB4FVoVL1qcEG2_3sKUmkx06AAIIMAACQhhYV6EXMEkgToNMHgQ",
+    "telegram_message_ids": [
+      13020
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.02,
+    "original_url": "https://media.vidivo.me/video/20260831/1af3488e6f9048d3ae9428e0f3221ed0/cloudv-transfer/55555555sr1002o455565n65ps3por10_06974341f47d4e908959bb745616bf00_0_4.mp4?wsSecret=a8a7c7ee1a5353d3486668b6680cfd3e&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:14:40Z"
+  },
+  "dramaora_52022080869_44": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 44,
+    "telegram_message_id": 13021,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy3WrrhDfpa--_NNQlRfOMLY4KvM7eAAIKMAACQhhYV-umHQxqMUDcHgQ",
+    "telegram_message_ids": [
+      13021
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.86,
+    "original_url": "https://media.vidivo.me/video/20260831/3913685bc48d43ca84ef49432328eba5/cloudv-transfer/55555555n2q51n8455565n65s93qor10_5deedb2a1e114a6598da27eff98c91ac_0_4.mp4?wsSecret=dd5b096a9bc739fc713ee8809f58db34&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:15:05Z"
+  },
+  "dramaora_52022080869_45": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 45,
+    "telegram_message_id": 13022,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy3mrrhEkOAAG86hCmF7td2bcSZXpHNwACCzAAAkIYWFeLppIOjMfqux4E",
+    "telegram_message_ids": [
+      13022
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.61,
+    "original_url": "https://media.vidivo.me/video/20260831/4aba04fe48df4064b38d5856f3472c3a/cloudv-transfer/55555555579os4n055565n655n4sor10_593dae4cf38a4977953365f7903b5eda_0_4.mp4?wsSecret=3f70f51c48116370bf6786d8f686dbda&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:15:23Z"
+  },
+  "dramaora_52022080869_46": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 46,
+    "telegram_message_id": 13023,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy32rrhF6RIIYNvQRJjqViL486J2GzAAINMAACQhhYV3gFsugsVF1bHgQ",
+    "telegram_message_ids": [
+      13023
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.46,
+    "original_url": "https://media.vidivo.me/video/20260831/9708111317e3459d8c4276e604ae176e/cloudv-transfer/5555555587s2p9oq55565n656q45pr10_55c28a3ca67a4f1fb2102bb2c3d5f456_0_4.mp4?wsSecret=c0c8bd6da5c7c1da9e28f30a44de660a&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:15:44Z"
+  },
+  "dramaora_52022080869_47": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 47,
+    "telegram_message_id": 13024,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy4GrrhHmLlbWRvwmYhnYlkZQJtENQAAIOMAACQhhYVyqtJHHEx6dlHgQ",
+    "telegram_message_ids": [
+      13024
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.4,
+    "original_url": "https://media.vidivo.me/video/20260831/e8d4f4b607204f27988f2b624808490b/cloudv-transfer/5555555557nrn87p55565n65n558pr10_e9ddbb8694b94492a42f2448d11662e1_0_4.mp4?wsSecret=871155c6144bfa6cf1d578eb9fc20968&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:16:11Z"
+  },
+  "dramaora_52022080869_48": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 48,
+    "telegram_message_id": 13025,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy4WrrhI9hRSeam34D2QAB23pYSxRhYAACEDAAAkIYWFffK9mFydVPCh4E",
+    "telegram_message_ids": [
+      13025
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.21,
+    "original_url": "https://media.vidivo.me/video/20260831/b6c59bdcca3a4db99ea00847ae93d330/cloudv-transfer/55555555rn80pq1r55565n658459pr10_d6e9eda22b2d44aab925eddb140e23c1_0_4.mp4?wsSecret=928fe43130fa8a23181cd83c3045fa6b&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:16:33Z"
+  },
+  "dramaora_52022080869_49": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 49,
+    "telegram_message_id": 13026,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy4mrrhKQshKI4EHImeHkFq63LtBR4AAIRMAACQhhYV058YK2onN90HgQ",
+    "telegram_message_ids": [
+      13026
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.84,
+    "original_url": "https://media.vidivo.me/video/20260831/b955b86c4411486e8eaa857a8f2423d8/cloudv-transfer/55555555qo2q6onp55565n652290pr10_9380109422864de09a02315290f46eed_0_4.mp4?wsSecret=733b647cf65c8a043d49954ecb559138&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:16:54Z"
+  },
+  "dramaora_52022080869_50": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 50,
+    "telegram_message_id": 13027,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy42rrhLc5Gu7X-i4m_Dryo0soAUEnAAIUMAACQhhYVwrYeDRFVamkHgQ",
+    "telegram_message_ids": [
+      13027
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.71,
+    "original_url": "https://media.vidivo.me/video/20260831/d5a44210718942c086d89381c1174456/cloudv-transfer/555555557119nspq55565n65o4s0pr10_65474efc768b469c9cb8bc9cb5f7f229_0_4.mp4?wsSecret=c10aa25dd88418cd00e875b955a76ef5&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:17:14Z"
+  },
+  "dramaora_52022080869_51": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 51,
+    "telegram_message_id": 13028,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy5GrrhMf91V7EdOoeeGZCE6sT1oMxAAIVMAACQhhYVx7sslplESA3HgQ",
+    "telegram_message_ids": [
+      13028
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.79,
+    "original_url": "https://media.vidivo.me/video/20260831/8251d7f21a974dbeacfeb2adc3eebf0a/cloudv-transfer/55555555s87n03r955565n659sq1pr10_5be84072e95d47c99d3fc2622ec28aa4_0_4.mp4?wsSecret=17d15d6782adf790fbc91ffe7ba375af&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:17:30Z"
+  },
+  "dramaora_52022080869_52": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 52,
+    "telegram_message_id": 13029,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy5WrrhNw_DB2tVdXz2OZrgao0nzi5AAIWMAACQhhYV9h8CVGp1B6RHgQ",
+    "telegram_message_ids": [
+      13029
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.42,
+    "original_url": "https://media.vidivo.me/video/20260831/fa1be7e4b4e847beb9f9b8612f14f7ba/cloudv-transfer/555555559r99n1or55565n657qr2pr10_a219e2e9a2ce40bfb11da44a931d81d5_0_4.mp4?wsSecret=675e07888b75088f747d9819fc357a48&wsTime=1793825974",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:17:50Z"
+  },
+  "dramaora_52022080869_53": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 53,
+    "telegram_message_id": 13030,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy5mrrhO3bvhAguakhU0TvArWUucs3AAIYMAACQhhYV4F5WDS8wFRbHgQ",
+    "telegram_message_ids": [
+      13030
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.95,
+    "original_url": "https://media.vidivo.me/video/20260831/b8ebebf7146847c9950df50de8254038/cloudv-transfer/5555555544p594r155565n65pno3pr10_ec48d2780fe14858b819ae14d8161364_0_4.mp4?wsSecret=059533e7fdf99c18ff9d94c8e9d7765d&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:18:08Z"
+  },
+  "dramaora_52022080869_54": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 54,
+    "telegram_message_id": 13031,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy52rrhQFDoaxsitDNBzR9w4yKDSpHAAIZMAACQhhYV0DLnZJ5Z1xmHgQ",
+    "telegram_message_ids": [
+      13031
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.18,
+    "original_url": "https://media.vidivo.me/video/20260831/e9097ab8043a4818bede3b0c0126e948/cloudv-transfer/555555556845n16455565n6543q4pr10_afa1bd3ae0ca4c7f9726cc4dbdfb9892_0_4.mp4?wsSecret=be2bca523f8498c45e2586f7ed904faa&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:18:27Z"
+  },
+  "dramaora_52022080869_55": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 55,
+    "telegram_message_id": 13032,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy6GrrhViW8G2DurFOKCnWejuFKqzNAAIcMAACQhhYV87Qma0MDzmbHgQ",
+    "telegram_message_ids": [
+      13032
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.59,
+    "original_url": "https://media.vidivo.me/video/20260831/a4f5817ea2db4527846ba7957f886df8/cloudv-transfer/5555555592o1q46r55565n65n3pnpr10_ed1daf3097004c3d80a7fd35089d378a_0_4.mp4?wsSecret=a8628f4ffa818cb76163fb3eb46465c2&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:19:55Z"
+  },
+  "dramaora_52022080869_56": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 56,
+    "telegram_message_id": 13033,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy6WrrhWySzpdkamxw1DPeBdraqWA0AAIdMAACQhhYV-aHRSDE5tSIHgQ",
+    "telegram_message_ids": [
+      13033
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.8,
+    "original_url": "https://media.vidivo.me/video/20260831/e36f21ed5d214f5fb08dd798b1eb55c8/cloudv-transfer/555555558772pr5655565n6517ropr10_46509b46229d4416bd84373d367beed5_0_4.mp4?wsSecret=2634e0c71c3bf517ee40a8ba83f07bc5&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:20:15Z"
+  },
+  "dramaora_52022080869_57": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 57,
+    "telegram_message_id": 13034,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy6mrrhYECyq3CKSlYoSOYqaE2LWmrAAIfMAACQhhYVwZfbx29U9ktHgQ",
+    "telegram_message_ids": [
+      13034
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.8,
+    "original_url": "https://media.vidivo.me/video/20260831/b411945ff8b24c7eb78a22cc88d4bd39/cloudv-transfer/555555550o87ro4155565n65q56qpr10_76b8614cb2f548449d57b6f9939017bf_0_4.mp4?wsSecret=c2348a5f644a121c5fe5c82749228f9b&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:20:35Z"
+  },
+  "dramaora_52022080869_58": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 58,
+    "telegram_message_id": 13035,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy62rrhZNu7HB9UYS8QfedIvv_QDP6AAIgMAACQhhYV1Qup3aww7d4HgQ",
+    "telegram_message_ids": [
+      13035
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.22,
+    "original_url": "https://media.vidivo.me/video/20260831/0c14e1ec7e0040e8972c1bb46775fd64/cloudv-transfer/5555555516qr4p2055565n65n5oqpr10_6774e8c449664b59b5bde62d839ae600_0_4.mp4?wsSecret=4f87d2eea9f24c4bfd21cdc4af77a58f&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:20:53Z"
+  },
+  "dramaora_52022080869_59": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 59,
+    "telegram_message_id": 13036,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy7GrrhaYjhoxS1q5sr9kZpoVxV6iyAAIjMAACQhhYV5IDKJePYRcAAR4E",
+    "telegram_message_ids": [
+      13036
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.69,
+    "original_url": "https://media.vidivo.me/video/20260831/cd1fedd46a394451b0b23eeda93c0906/cloudv-transfer/55555555903o99r055565n65orqrpr10_c3d7987334734daaa28b5b331d8a0e50_0_4.mp4?wsSecret=047521ac983f7b4cc22bec0f204270cb&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:21:13Z"
+  },
+  "dramaora_52022080869_60": {
+    "show_id": "dramaora_52022080869",
+    "show_title": "When a Trickster Falls",
+    "episode_number": 60,
+    "telegram_message_id": 13037,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIy7WrrhbqiJuoy7M4ez2z7jVyMQwRdAAIlMAACQhhYV-5tCBXb-CHCHgQ",
+    "telegram_message_ids": [
+      13037
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.43,
+    "original_url": "https://media.vidivo.me/video/20260831/311e33d6401143da89b091a470d3ae6f/cloudv-transfer/55555555081o7q3s55565n6565rspr10_213d3081034a4776b97c5591e439ef5e_0_4.mp4?wsSecret=9b4f0c7c6db7f1fd621985e277092c57&wsTime=1793825975",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260831/56e5eb3801a010005dcbe72300000000.jpg",
+    "synopsis": "Tired of eternal life and endless scheming in the divine realm, the God of Tricks abandoned his godhood and descended to Earth as Wyatt Hale. He stroke a deal with the pure-hearted Sia Elowen to pretend to be her boyfriend and fended off her family's marriage pressure. Their playful fake relationship was filled with hilarious misunderstandings, and Wyatt's centuries-old icy heart gradually melted. As Sia unknowingly fell for the mysterious man, the trickster god gave up his manipulative games and fell deeply in love. Finally, he chose to leave his divine powers behind forever and spent the rest of his mortal days happily with Sia.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-04T19:21:33Z"
   }
 };
