@@ -42872,5 +42872,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
     "source": "dramaora",
     "backed_up_at": "2026-11-05T00:31:24Z"
+  },
+  "dramaora_52028462187_2": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 2,
+    "telegram_message_id": 13100,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzLGrsMLJs0fTJeQtXDfV9ac3zwMSZAALDHgAC4BdgV9XEZGHH3ajtHgQ",
+    "telegram_message_ids": [
+      13100
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.16,
+    "original_url": "https://media.vidivo.me/video/20250804/0c38a71fd8084c82aa7d4066041bed07/cloudv-transfer/5555555592586rnn55563465p0o19782_9f81967b35e24c18ba67051f90a8bbfa_0_4.mp4?wsSecret=e611ba8076e292d7d01119ab54c93abe&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:31:00Z"
+  },
+  "dramaora_52028462187_3": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 3,
+    "telegram_message_id": 13101,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzLWrsMMjxGa6VVmKsrHA86nMDUxrWAALFHgAC4BdgVzd_bvnsDyb_HgQ",
+    "telegram_message_ids": [
+      13101
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.61,
+    "original_url": "https://media.vidivo.me/video/20250804/90f898372d5243148e41d4c6d1358a6c/cloudv-transfer/5555555583q615r85556346564s29782_2156c26ff933433888b15990a373a895_0_4.mp4?wsSecret=2dd01cf8a8d056dbfd82c88ea8c6277b&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:31:22Z"
+  },
+  "dramaora_52028462187_4": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 4,
+    "telegram_message_id": 13102,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzLmrsMNzc1KCa32TFJjnIQ4v_NM1MAALGHgAC4BdgV1dYROrPUvcIHgQ",
+    "telegram_message_ids": [
+      13102
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.7,
+    "original_url": "https://media.vidivo.me/video/20250804/cd14cac9807b4c32bcab432cabe5b1e7/cloudv-transfer/55555555328036555556346569r39782_7d3347a553884668b7f5f33f3ae93d58_0_4.mp4?wsSecret=cd51f95f249a19ad714b74c5aeb73131&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:31:43Z"
+  },
+  "dramaora_52028462187_5": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 5,
+    "telegram_message_id": 13103,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzL2rsMO5FBMjEn3XDoKwtoB-9C5UzAALHHgAC4BdgVwE-LrPFLHOyHgQ",
+    "telegram_message_ids": [
+      13103
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.76,
+    "original_url": "https://media.vidivo.me/video/20250804/8cc1406aece34b0db740b1ae3e411c86/cloudv-transfer/555555551o5026q45556346538n49782_867cfb07a44a4c97848290f5687c491a_0_4.mp4?wsSecret=7cacc7609112f9672768291fe748bd5d&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:32:00Z"
+  },
+  "dramaora_52028462187_6": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 6,
+    "telegram_message_id": 13104,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzMGrsMQSQ5Wo4wV5F4U7g718vYhfVAALIHgAC4BdgVxLagCA9E238HgQ",
+    "telegram_message_ids": [
+      13104
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.36,
+    "original_url": "https://media.vidivo.me/video/20250804/22b664a269b5467bb591048970e1fbbd/cloudv-transfer/555555556o67n8r55556346563qn9782_bdb649321f0548849afcf05a140004c1_0_4.mp4?wsSecret=4fdeba227a5bdf6363c3ec0af93cb8f7&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:32:22Z"
+  },
+  "dramaora_52028462187_7": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 7,
+    "telegram_message_id": 13105,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzMWrsMRbsZEJ-2aPhvXQFMYs3Dwo3AALJHgAC4BdgVwJd0DWBH6RqHgQ",
+    "telegram_message_ids": [
+      13105
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.07,
+    "original_url": "https://media.vidivo.me/video/20250804/ab05cd5cbbdb42aab68d70136db8e153/cloudv-transfer/55555555ps2qonp9555634656oqo9782_696c4b54666f43129d737cf79ebbf5e9_0_4.mp4?wsSecret=a07d309724d3f95dc3fb5df0b6cee2a8&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:32:41Z"
+  },
+  "dramaora_52028462187_8": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 8,
+    "telegram_message_id": 13106,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzMmrsMS1D8WmJhjvPQQ0egQHSTbhjAALKHgAC4BdgVwEnARuR7GaeHgQ",
+    "telegram_message_ids": [
+      13106
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.11,
+    "original_url": "https://media.vidivo.me/video/20250804/0fe6e7d5a05a46a388072b61c84cbc18/cloudv-transfer/55555555395r5ss355563465s73p9782_d36ede6b58454088b8ee047d42424b57_0_4.mp4?wsSecret=64c7f60194d4835c6078db0e757e4983&wsTime=1793871037",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:33:03Z"
+  },
+  "dramaora_52028462187_9": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 9,
+    "telegram_message_id": 13107,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzM2rsMUeV2oiwGUuKPVzJwE5VXFY-AALNHgAC4BdgV7F6NlHT--u1HgQ",
+    "telegram_message_ids": [
+      13107
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.28,
+    "original_url": "https://media.vidivo.me/video/20250804/83adecd2120b452eaeb5109b125a7d40/cloudv-transfer/555555559937p9np55563465o99q9782_4dd654cb8125406aaa923e7bfb0733b2_0_4.mp4?wsSecret=2c949d9832718394844a4c61b0e51eba&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:33:30Z"
+  },
+  "dramaora_52028462187_10": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 10,
+    "telegram_message_id": 13108,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzNGrsMVoTL64uW9AgdZuXlVlC200iAALOHgAC4BdgV8osthrp9t2vHgQ",
+    "telegram_message_ids": [
+      13108
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.84,
+    "original_url": "https://media.vidivo.me/video/20250804/73b7bb06f7f6452ab74e2da941fa2290/cloudv-transfer/55555555o7r3p88855563465sspq9782_3eb1ac45060d4cfb8f0bd246ace4c239_0_4.mp4?wsSecret=5ba40db77021ce7fe0e9bcd4c7ea0a6d&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:33:48Z"
+  },
+  "dramaora_52028462187_11": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 11,
+    "telegram_message_id": 13109,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzNWrsMW9LfQ4qDFX9KUiVll-0gNqMAALPHgAC4BdgVyyLdEpWDDRiHgQ",
+    "telegram_message_ids": [
+      13109
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.02,
+    "original_url": "https://media.vidivo.me/video/20250804/4b18ec2a278245839544022ece4ba0c1/cloudv-transfer/55555555n9r931n355563465644r9782_7ee2695ddc364b77b2d8574801e6c545_0_4.mp4?wsSecret=3f22653e95abdcebb49dfb732c72caeb&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:34:09Z"
+  },
+  "dramaora_52028462187_12": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 12,
+    "telegram_message_id": 13110,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzNmrsMYQIO43-VOLMI-5f2P7keiJ8AALQHgAC4BdgV2MK3A_j3cmEHgQ",
+    "telegram_message_ids": [
+      13110
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.77,
+    "original_url": "https://media.vidivo.me/video/20250804/e1bbce5ec5a4497d8ff2d547c064ae11/cloudv-transfer/5555555559r685o755563465013s9782_343076d00ae8478db93450f1cc0c916e_0_4.mp4?wsSecret=1189e5d6c196818127b2e08feabb3c36&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:34:31Z"
+  },
+  "dramaora_52028462187_13": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 13,
+    "telegram_message_id": 13111,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzN2rsMZ5_zrIcyzWhOYpZ_GV8RcpaAALRHgAC4BdgV434GBpoVBU5HgQ",
+    "telegram_message_ids": [
+      13111
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.54,
+    "original_url": "https://media.vidivo.me/video/20250804/5b320f2361e04508bf53d44c2be21fa3/cloudv-transfer/555555550rns999o55563465q7850782_6bd378782ede4734b3284a97867129d3_0_4.mp4?wsSecret=8ee3b82906f235ab797578a9fc39daed&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:34:56Z"
+  },
+  "dramaora_52028462187_14": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 14,
+    "telegram_message_id": 13112,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzOGrsMbSeOMNWB4LhRCgs3qFiCvorAALSHgAC4BdgV0WnMbg_SazBHgQ",
+    "telegram_message_ids": [
+      13112
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.53,
+    "original_url": "https://media.vidivo.me/video/20250804/f43ac9517f4d48f3b2f862f31dea86a3/cloudv-transfer/55555555q5nn010p555634657q760782_b2b92a52847743d88edb4e60e6b44a25_0_4.mp4?wsSecret=4dad2c801aae02de8527c763bb679f06&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:35:19Z"
+  },
+  "dramaora_52028462187_15": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 15,
+    "telegram_message_id": 13113,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzOWrsMdDSZVvpX4km-BpspoQt8cZUAALTHgAC4BdgV8S5f2-sD-hUHgQ",
+    "telegram_message_ids": [
+      13113
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.52,
+    "original_url": "https://media.vidivo.me/video/20250804/5d446a532ec447e68124aa298a100391/cloudv-transfer/55555555o071n52p5556346560n70782_d25ef1a7a2ad4dd7b487e7412430074d_0_4.mp4?wsSecret=33d38e7fff41dcd37a66103f551305df&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:35:47Z"
+  },
+  "dramaora_52028462187_16": {
+    "show_id": "dramaora_52028462187",
+    "show_title": "Love’s Hostage",
+    "episode_number": 16,
+    "telegram_message_id": 13114,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzOmrsMeOmgNqSIvZtNLkMYqcK5MqmAALUHgAC4BdgV2zZGMYbtgQuHgQ",
+    "telegram_message_ids": [
+      13114
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.46,
+    "original_url": "https://media.vidivo.me/video/20250804/40665699acb1453d8ba34b1b0237a766/cloudv-transfer/55555555pr1928s25556346548380782_d6092eeefbcf402abd26f853e4e3f226_0_4.mp4?wsSecret=18817c8b0b995ec8626fe9035d124a07&wsTime=1793871038",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250804/7322857401981000d1988d1600000000.jpg",
+    "synopsis": "A mother abandons all for her daughter's top college dream, but pressure erupts during an early exam—clashing fates unfold.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:36:05Z"
+  },
+  "dramaora_52022803688_1": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 1,
+    "telegram_message_id": 13115,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzO2rsMfxqyEbUc93TJEBRRFT4WaMdAALVHgAC4BdgV5snmyvBPJ9THgQ",
+    "telegram_message_ids": [
+      13115
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.47,
+    "original_url": "https://media.vidivo.me/video/20250703/3027d195ba9047b5b5f022788c84c325/cloudv-transfer/55555555q77sqq2r55562465o6q62qsp_f985feb0df954a839978d7bf6b86dfd9_0_4.mp4?wsSecret=a22efd8c0a9c28192b73d616a61d7cfd&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:36:31Z"
+  },
+  "dramaora_52022803688_2": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 2,
+    "telegram_message_id": 13116,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzPGrsMhCyrBYNAUNi4NsDCO2e4--5AALWHgAC4BdgV6sTq2_6EFkBHgQ",
+    "telegram_message_ids": [
+      13116
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.12,
+    "original_url": "https://media.vidivo.me/video/20250703/ecd7a9624e6b44298816bb2cb01394d0/cloudv-transfer/55555555r855n385555624651p2q3qsp_0416dbbeceac4b6191532ad5805459d1_0_4.mp4?wsSecret=0e441256eaf2612eec46a7eb9008f175&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:36:50Z"
+  },
+  "dramaora_52022803688_3": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 3,
+    "telegram_message_id": 13117,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzPWrsMiQL6hkAASTf9UjDzDNT-gd2swAC1x4AAuAXYFdkdSSlFiV-eB4E",
+    "telegram_message_ids": [
+      13117
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.98,
+    "original_url": "https://media.vidivo.me/video/20250703/d27ff6703c314ab1aa6e3bef402b3cd5/cloudv-transfer/555555556930934n555624650949oqsp_e8c8e50164d74bd291a66f51cd2aa9aa_0_4.mp4?wsSecret=00f8acd7248c8650d3064875cab8c9a1&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:37:10Z"
+  },
+  "dramaora_52022803688_4": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 4,
+    "telegram_message_id": 13118,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzPmrsMjo2HeqDGcugcCL6w-LK2sylAALYHgAC4BdgV_iXbWenS6EzHgQ",
+    "telegram_message_ids": [
+      13118
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.3,
+    "original_url": "https://media.vidivo.me/video/20250703/91c12bf6e36048efb3c1adc138cef646/cloudv-transfer/55555555882546o7555624651s4qoqsp_f4fe95e8547043e092d0c60665d2c6b6_0_4.mp4?wsSecret=b9769821b22ae155a2080acacc42ed40&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:37:32Z"
+  },
+  "dramaora_52022803688_5": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 5,
+    "telegram_message_id": 13119,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzP2rsMlMeTW5IRxcOouP_u828FMblAALZHgAC4BdgVwABSLgcJ0hRix4E",
+    "telegram_message_ids": [
+      13119
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.44,
+    "original_url": "https://media.vidivo.me/video/20250703/61fc6d1423db47eda868c08684871943/cloudv-transfer/55555555990s4s6655562465n845pqsp_9b3c09d338a3427988b8717bc6a32c50_0_4.mp4?wsSecret=eeecef1f5d716d0647421fd00ac3ac97&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:37:57Z"
+  },
+  "dramaora_52022803688_6": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 6,
+    "telegram_message_id": 13120,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzQGrsMmqX2NqBXf-tkhUoZ7Rn6IGhAALaHgAC4BdgV6uhtKzsctilHgQ",
+    "telegram_message_ids": [
+      13120
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.34,
+    "original_url": "https://media.vidivo.me/video/20250703/dee51912969d493aadf1643afdbc6a06/cloudv-transfer/5555555521p6sq6255562465s579pqsp_d27345268ac14a78ac07b3cd652be87b_0_4.mp4?wsSecret=485e274d5b3b967a4b89c463035df6a4&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:38:20Z"
+  },
+  "dramaora_52022803688_7": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 7,
+    "telegram_message_id": 13121,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzQWrsMoazSBJp-XF6i4bb1zcTDdw2AALcHgAC4BdgVwrhY7hhSuQxHgQ",
+    "telegram_message_ids": [
+      13121
+    ],
+    "total_parts": 1,
+    "file_size_mb": 26.03,
+    "original_url": "https://media.vidivo.me/video/20250703/a4aeb22189774e68b1e32626a79b986c/cloudv-transfer/555555554nor67r055562465q051pqsp_930da9ddf0f5476e8d9f3e5de284fc37_0_4.mp4?wsSecret=efa968b8aba9b202ead5b3b419bed28b&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:38:48Z"
+  },
+  "dramaora_52022803688_8": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 8,
+    "telegram_message_id": 13122,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzQmrsMpg1X7o7XLc7fUL5OB4rCUoJAALdHgAC4BdgV3NroQ1eEyL0HgQ",
+    "telegram_message_ids": [
+      13122
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.98,
+    "original_url": "https://media.vidivo.me/video/20250703/4dd6521cfcd1479eb607aaa55ca63abd/cloudv-transfer/55555555n4642s4s555624656s84pqsp_ee3d0e82e28c4e989616ee7752b6c245_0_4.mp4?wsSecret=646e3a2157c8846dac549a79db26a4c1&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:39:06Z"
+  },
+  "dramaora_52022803688_9": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 9,
+    "telegram_message_id": 13123,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzQ2rsMrD46AahAgIbPUykGUqXqoswAALeHgAC4BdgV5nuGle2xIhIHgQ",
+    "telegram_message_ids": [
+      13123
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.26,
+    "original_url": "https://media.vidivo.me/video/20250703/81905dd7afd14384aead7bfe5f1328d6/cloudv-transfer/5555555550p1p8n855562465s0snpqsp_bd7a3a04f7d6408c99d48ebf9a61299a_0_4.mp4?wsSecret=971a232b868f65823a2c8e7c8eb24114&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:39:30Z"
+  },
+  "dramaora_52022803688_10": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 10,
+    "telegram_message_id": 13124,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzRGrsMsvjrT9LMt7MRjAjnLhGgfpPAALfHgAC4BdgVwNoT7sdexyCHgQ",
+    "telegram_message_ids": [
+      13124
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.87,
+    "original_url": "https://media.vidivo.me/video/20250703/bf16f8f979524622856385d58f069453/cloudv-transfer/555555559s6n19sn55562465611qpqsp_d2d4a78a33934736b8456d1fc2509a40_0_4.mp4?wsSecret=b31f89b6c79f0a93e0621c592660157e&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:39:57Z"
+  },
+  "dramaora_52022803688_11": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 11,
+    "telegram_message_id": 13125,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzRWrsMt_XJJSStNn2_KaQ9X_EI5vZAALgHgAC4BdgV19gHWeSbvypHgQ",
+    "telegram_message_ids": [
+      13125
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.44,
+    "original_url": "https://media.vidivo.me/video/20250703/39d0784182a54f338536a799b8214e70/cloudv-transfer/5555555518qrs12255562465on05qqsp_d03d8ec23e4e41118361a723d4cd5058_0_4.mp4?wsSecret=c2edaac18dbd79f44f6ed7c52d2e6b42&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:40:17Z"
+  },
+  "dramaora_52022803688_12": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 12,
+    "telegram_message_id": 13126,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzRmrsMvw6iSlSnaEZmLReoPYjYo67AALiHgAC4BdgV0WUv2SLP5VWHgQ",
+    "telegram_message_ids": [
+      13126
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.76,
+    "original_url": "https://media.vidivo.me/video/20250703/efc5d6141ebf45b2992fe354a407f312/cloudv-transfer/555555556p273171555624653rn6qqsp_4b09780e9526495f879d874e40f660b9_0_4.mp4?wsSecret=2bde472ca4a5162c575b0ca6e0859234&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:40:47Z"
+  },
+  "dramaora_52022803688_13": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 13,
+    "telegram_message_id": 13127,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzR2rsMxzF7jeH4WwSiSvR5ss-iaXCAALjHgAC4BdgVzZK9p6oHwKaHgQ",
+    "telegram_message_ids": [
+      13127
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.71,
+    "original_url": "https://media.vidivo.me/video/20250703/ab70ec2945e34a9981f86c284fc6a65d/cloudv-transfer/55555555415s251855562465pp90qqsp_bb9b28ab14ec4b9789e8cb6c8683d5b3_0_4.mp4?wsSecret=2ea4af4f486072d9efe86c54ae6f17e7&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:41:18Z"
+  },
+  "dramaora_52022803688_14": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 14,
+    "telegram_message_id": 13128,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzSGrsMyygdH8Kvie6RstLA4OWCZBCAALkHgAC4BdgV7GkJfCiCz_bHgQ",
+    "telegram_message_ids": [
+      13128
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.87,
+    "original_url": "https://media.vidivo.me/video/20250703/eecb209923bb4885b8862026b6785fda/cloudv-transfer/555555551s36q6s4555624653442qqsp_d9ea2e560a954059bb7ad00bb8363a5f_0_4.mp4?wsSecret=b5d08aaa7f954d9cc284cf280bba9488&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:41:34Z"
+  },
+  "dramaora_52022803688_15": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 15,
+    "telegram_message_id": 13129,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzSWrsMz-CVIBgdXIZ_QABME962ccWqAAC5R4AAuAXYFfwLdfAobXSvR4E",
+    "telegram_message_ids": [
+      13129
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.11,
+    "original_url": "https://media.vidivo.me/video/20250703/1ad68153baf946eebdd70663c1a300b8/cloudv-transfer/55555555r0825879555624653854qqsp_ff9b0f651ea94b41bc3ae0401a6dd160_0_4.mp4?wsSecret=7fff2c7b5a7b57789d5cb8bfb106beee&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:41:53Z"
+  },
+  "dramaora_52022803688_16": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 16,
+    "telegram_message_id": 13130,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzSmrsM1SCmy6ZDH5M6J7-u-vA3kwtAALmHgAC4BdgVzXoP3utCogvHgQ",
+    "telegram_message_ids": [
+      13130
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.03,
+    "original_url": "https://media.vidivo.me/video/20250703/7bb14d7d075f40ca9c7f7dcdd4be41f0/cloudv-transfer/55555555no65nqnn555624656r3nqqsp_8c6c64c7f84b457c86d6d5bbdb3f9ca6_0_4.mp4?wsSecret=2143f2fb81f13ae3b2df8d78f6d206e2&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:42:14Z"
+  },
+  "dramaora_52022803688_17": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 17,
+    "telegram_message_id": 13131,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzS2rsM2cXzsolGwR1eFtpjYFnJFfVAALnHgAC4BdgV2U2YwABXhTGFx4E",
+    "telegram_message_ids": [
+      13131
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.4,
+    "original_url": "https://media.vidivo.me/video/20250703/6c266fb1ef4e42a3967c7008ff99b2a9/cloudv-transfer/5555555573nr4nq75556246545poqqsp_d6856f3dd20041a6a70de394776b7f72_0_4.mp4?wsSecret=22db986bf69e0375371d8b88121f2d96&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:42:33Z"
+  },
+  "dramaora_52022803688_18": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 18,
+    "telegram_message_id": 13132,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzTGrsM3zZaPDkR_Qy9Sm75xEEO1tcAALoHgAC4BdgVynXwsrpdokAAR4E",
+    "telegram_message_ids": [
+      13132
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.85,
+    "original_url": "https://media.vidivo.me/video/20250703/6d9588db17c44cc2b58b55b9d8fb1a06/cloudv-transfer/555555553s9r761o55562465n4sqqqsp_41ed4c2cfe80420eb68b731d179c03c0_0_4.mp4?wsSecret=359bf2d057fd80e6c44fb34cfbb85e95&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:42:54Z"
+  },
+  "dramaora_52022803688_19": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 19,
+    "telegram_message_id": 13133,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzTWrsM4thVW959j3bBuuFpz3mI2YdAALpHgAC4BdgV9sW325G4cdNHgQ",
+    "telegram_message_ids": [
+      13133
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.82,
+    "original_url": "https://media.vidivo.me/video/20250703/9e61431df9424a11b58a0a925ef2e069/cloudv-transfer/5555555584o67op055562465r70sqqsp_9d298a6a61ec4e41beb70b4d650b58c2_0_4.mp4?wsSecret=dc6164495fe630a72aa4bd1589449c23&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:43:10Z"
+  },
+  "dramaora_52022803688_20": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 20,
+    "telegram_message_id": 13134,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzTmrsM6jt7A956K1_aR-1w6KLmCKFAALqHgAC4BdgV4DD7G2SKd8OHgQ",
+    "telegram_message_ids": [
+      13134
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.13,
+    "original_url": "https://media.vidivo.me/video/20250703/17e14a686ee448b59fc465967b195c81/cloudv-transfer/5555555537n373s755562465s376rqsp_d6702de5a55b475dbcb97d15158e1db6_0_4.mp4?wsSecret=2b29a853cb48d99100e89207587cad7e&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:43:38Z"
+  },
+  "dramaora_52022803688_21": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 21,
+    "telegram_message_id": 13135,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzT2rsM8G6rUq4CtRnxPKOivTwhsPkAALrHgAC4BdgV4kjRWyOPxPCHgQ",
+    "telegram_message_ids": [
+      13135
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.18,
+    "original_url": "https://media.vidivo.me/video/20250703/16c6c71f9fe849dca28629893b134fa3/cloudv-transfer/55555555pn4o8n3555562465po18rqsp_44dddf7a24fd40c49e78c265a7c853e4_0_4.mp4?wsSecret=d17b0ce26fb13772306393450cbcc070&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:44:03Z"
+  },
+  "dramaora_52022803688_22": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 22,
+    "telegram_message_id": 13136,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzUGrsM9ZHJfMzApn5w5PqdxZcjK0CAALsHgAC4BdgVx3U0A_OvDHIHgQ",
+    "telegram_message_ids": [
+      13136
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.48,
+    "original_url": "https://media.vidivo.me/video/20250703/358f9a9ff52b423b85ea6d103a16502b/cloudv-transfer/555555555nn7q87155562465or82rqsp_5cb6299eab14415f8ae85041bbf9c177_0_4.mp4?wsSecret=a885b9632d9d866f1594d5bba013363a&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:44:25Z"
+  },
+  "dramaora_52022803688_23": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 23,
+    "telegram_message_id": 13137,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzUWrsM-_1JpboQZJjvH6sihPZuLJiAALtHgAC4BdgV1JXyw871aSuHgQ",
+    "telegram_message_ids": [
+      13137
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.78,
+    "original_url": "https://media.vidivo.me/video/20250703/b1b39fabc906482eb551745a67d2466c/cloudv-transfer/55555555p124r668555624655664rqsp_78db7c26398148d5bfd089d4808ee9ef_0_4.mp4?wsSecret=55897805f00c497413a41755c27287b0&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:44:49Z"
+  },
+  "dramaora_52022803688_24": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 24,
+    "telegram_message_id": 13138,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzUmrsNAmBKdJeXgABY1Md6kqCxDOT6AAC7h4AAuAXYFcgEJoX3SHvFx4E",
+    "telegram_message_ids": [
+      13138
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.88,
+    "original_url": "https://media.vidivo.me/video/20250703/f6111b32d29343e988013a6e22a752e0/cloudv-transfer/555555553380rr1q5556246507porqsp_eb1488c8a6b9414dae39dcbec9f63d15_0_4.mp4?wsSecret=21ae56abeaa9175547a2326fc6ac5280&wsTime=1793871369",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:45:15Z"
+  },
+  "dramaora_52022803688_25": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 25,
+    "telegram_message_id": 13139,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzU2rsNCSPMirrFeYuwHHvVlBvmeeDAALxHgAC4BdgV7LcIq_umLjZHgQ",
+    "telegram_message_ids": [
+      13139
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.84,
+    "original_url": "https://media.vidivo.me/video/20250703/3ff5d544b07748919de936cf387e7cd9/cloudv-transfer/55555555s58462765556246579nrrqsp_41090dde012e4c0a9950fcab2cf9f506_0_4.mp4?wsSecret=34a0e4884b320adb0077c81129b4d1ee&wsTime=1793871370",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:45:43Z"
+  },
+  "dramaora_52022803688_26": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 26,
+    "telegram_message_id": 13140,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzVGrsNDudyKfJWJ-Mc17fVwkDl6zWAALyHgAC4BdgV-t0W_vOCmm4HgQ",
+    "telegram_message_ids": [
+      13140
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.53,
+    "original_url": "https://media.vidivo.me/video/20250703/b2d95d0772e54839a16c2319e80dfb76/cloudv-transfer/55555555n4ornp00555624655q86sqsp_cf26c97634934cec99567a3813ce77e6_0_4.mp4?wsSecret=531e7a304a3b7bf24ec4157825696b95&wsTime=1793871370",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:46:05Z"
+  },
+  "dramaora_52022803688_27": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 27,
+    "telegram_message_id": 13141,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzVWrsNE_dCPlaacvm_VAMhVHayuSYAALzHgAC4BdgV-lSWJx1oF8bHgQ",
+    "telegram_message_ids": [
+      13141
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.43,
+    "original_url": "https://media.vidivo.me/video/20250703/09fc67c86a954ff5b9f426bf5f721bd2/cloudv-transfer/55555555s740qr01555624656q27sqsp_55a5ef90f1294325957d43e2e30b8eb9_0_4.mp4?wsSecret=8c5538a244175e13049f0d3c27c25187&wsTime=1793871370",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:46:25Z"
+  },
+  "dramaora_52022803688_28": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 28,
+    "telegram_message_id": 13142,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzVmrsNGVZc3KxGre8Rlgc0zmt99JuAAL0HgAC4BdgV1V_-3MauGADHgQ",
+    "telegram_message_ids": [
+      13142
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.92,
+    "original_url": "https://media.vidivo.me/video/20250703/2a105752851446a4831973144d96433e/cloudv-transfer/55555555s20n342655562465r119sqsp_e7fc0a38f96d4a2e85d0ea8320bfca56_0_4.mp4?wsSecret=7fef8b7bd0967222d64b835b081b05d4&wsTime=1793871370",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:46:47Z"
+  },
+  "dramaora_52022803688_29": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 29,
+    "telegram_message_id": 13143,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzV2rsNHrncr4wo4fpBjH6KYjwwfagAAL1HgAC4BdgV_y5pFDR8fwiHgQ",
+    "telegram_message_ids": [
+      13143
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.61,
+    "original_url": "https://media.vidivo.me/video/20250703/d21faca2a16047eba6ce3b8c7907f351/cloudv-transfer/55555555716685ns55562465q361sqsp_3ea43cead3c84e879c187255a619dda5_0_4.mp4?wsSecret=98b5dea9f68c5caaa69a7a498c3e5f34&wsTime=1793871370",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:47:10Z"
+  },
+  "dramaora_52022803688_30": {
+    "show_id": "dramaora_52022803688",
+    "show_title": "The Billionaire's Captive Love",
+    "episode_number": 30,
+    "telegram_message_id": 13144,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzWGrsNJB6bBEBdIIpNKIoOKSz06hNAAL2HgAC4BdgV64tMTJkLllXHgQ",
+    "telegram_message_ids": [
+      13144
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.89,
+    "original_url": "https://media.vidivo.me/video/20250703/9628b8f34798446b9e970056a4945c34/cloudv-transfer/55555555r9870721555624652qp2sqsp_a61d948cc8e3442fbda8d7b6aee01353_0_4.mp4?wsSecret=f9dd983d9a922bc1487f878da06177ce&wsTime=1793871370",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260302/ade6b3bd019c1000b4a4b0b000000000.jpg",
+    "synopsis": "The female lead was originally an ordinary girl striving to make a living in an ordinary world, but due to a sudden family 变故 (family misfortune), she was thrown into the world of the tycoon. The tycoon, who dominates the business world and controls billions of wealth, possesses a powerful aura, and his world is cold and full of calculations.\nBy chance, the female lead 闯入 (stumbled into) the tycoon's field of vision due to a last-resort act, and the tycoon developed a deep interest in her. From then on, the female lead's life underwent earth-shattering changes. In the name of love, the tycoon imprisoned the female lead by his side, and since then, he has launched a series of methods to pursue her.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:47:31Z"
+  },
+  "dramaora_52026429699_1": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 1,
+    "telegram_message_id": 13145,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzWWrsNKd2m8K_Ixh9CqHEiSAqE2JNAAL3HgAC4BdgV6zLzb-rvBzSHgQ",
+    "telegram_message_ids": [
+      13145
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.92,
+    "original_url": "https://media.vidivo.me/video/20250603/05879a5ace1e4c6992fea7836667f8cf/cloudv-transfer/5555555588no2r5755562465709pqn98_d7dfd3dbb8774d7eb3105989dcd19fc4_0_4.mp4?wsSecret=1d9ea84f3b3aacf73f9c355a3dda0928&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:47:54Z"
+  },
+  "dramaora_52026429699_2": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 2,
+    "telegram_message_id": 13146,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzWmrsNLwuKkcT2D7O7-ljlajc_c2lAAL4HgAC4BdgV3UFv8AtRqsoHgQ",
+    "telegram_message_ids": [
+      13146
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.92,
+    "original_url": "https://media.vidivo.me/video/20250603/808c7c70751c41478c19246eb8a1b0ba/cloudv-transfer/55555555444q1871555624655058qn98_0e38289d2a904576889dcedec4a391d3_0_4.mp4?wsSecret=b3a6c4044c547fb9179fd64fa591b472&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:48:14Z"
+  },
+  "dramaora_52026429699_3": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 3,
+    "telegram_message_id": 13147,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzW2rsNNSAU31eMtpeVOn8scIdEOzTAAL6HgAC4BdgV8sH1d7M-pFsHgQ",
+    "telegram_message_ids": [
+      13147
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.14,
+    "original_url": "https://media.vidivo.me/video/20250603/cc6b44f365894ad8a903ab2b8e80ddf8/cloudv-transfer/5555555572p9o99n5556246538q9qn98_f1b4a1c47c9b45f2928b197118680437_0_4.mp4?wsSecret=7393c4e1e77a0f49887f1a30ef75f220&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:48:38Z"
+  },
+  "dramaora_52026429699_4": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 4,
+    "telegram_message_id": 13148,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzXGrsNOZ8txVF09f7unzkltHF54MRAAL7HgAC4BdgV-QhX9ETTHheHgQ",
+    "telegram_message_ids": [
+      13148
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.24,
+    "original_url": "https://media.vidivo.me/video/20250603/2318abd3a2c34459a098d588209885dd/cloudv-transfer/55555555224noq2q5556246581s0qn98_ae328c23c0b24888889f6ad8364e4071_0_4.mp4?wsSecret=18f781d35158536057aeaeed5ed23b15&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:48:56Z"
+  },
+  "dramaora_52026429699_5": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 5,
+    "telegram_message_id": 13149,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzXWrsNPirKSQFY1ttArxl492eTyi2AAL8HgAC4BdgV6_wfLn0XnxLHgQ",
+    "telegram_message_ids": [
+      13149
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://media.vidivo.me/video/20250603/2b4ab016bfe44b789b845c1dd851edf5/cloudv-transfer/55555555r2sr28q555562465s812qn98_14cf5c935dd045618d714dc01022991d_0_4.mp4?wsSecret=a665f0d3cac488509be0030a04d5a6ef&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:49:14Z"
+  },
+  "dramaora_52026429699_6": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 6,
+    "telegram_message_id": 13150,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzXmrsNQu8HmlgIvupNpuP2l4FebOyAAL9HgAC4BdgVws8dfIoxCVEHgQ",
+    "telegram_message_ids": [
+      13150
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://media.vidivo.me/video/20250603/fceb18824cae43d0808a82e66685b6aa/cloudv-transfer/5555555512qr6o6755562465q0n4qn98_01616da69cb34071a0000a4092185191_0_4.mp4?wsSecret=a2298f16a0435bbcbc18f3b8f8bccfc3&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:49:33Z"
+  },
+  "dramaora_52026429699_7": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 7,
+    "telegram_message_id": 13151,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzX2rsNR9m1sVJK_DLvvDjOMSTvBqzAAL-HgAC4BdgV6-RQSpWApkTHgQ",
+    "telegram_message_ids": [
+      13151
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.87,
+    "original_url": "https://media.vidivo.me/video/20250603/e8c9e00c0f1f4a438fca4c3a5f666f40/cloudv-transfer/55555555p186op775556246538onqn98_8e75df38f3fe47cbb308edf802e9ac75_0_4.mp4?wsSecret=6e1f795d4c9ab9862d94e5f498280dee&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:49:54Z"
+  },
+  "dramaora_52026429699_8": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 8,
+    "telegram_message_id": 13152,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzYGrsNTOSpnYyqTdCKTKRixrnc5JnAAL_HgAC4BdgVxtys6FRL7nYHgQ",
+    "telegram_message_ids": [
+      13152
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.08,
+    "original_url": "https://media.vidivo.me/video/20250603/6aa84e254fef45f09dfc5d093cac5b45/cloudv-transfer/555555557s2r129355562465r1s8sn98_1c922281ee04461b8537d7bf8ff22220_0_4.mp4?wsSecret=21c2f6c4e9e20adb620d426064f098f6&wsTime=1793872055",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:50:13Z"
+  },
+  "dramaora_52026429699_9": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 9,
+    "telegram_message_id": 13153,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzYWrsNUUWIYWZOv-IaEq4b-5Y_8LRAAMfAALgF2BXGu3izeOJn1UeBA",
+    "telegram_message_ids": [
+      13153
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.98,
+    "original_url": "https://media.vidivo.me/video/20250603/0287122d6ab343d5980ba90270ebb788/cloudv-transfer/55555555q866s4845556246513o9sn98_0ffadcfe64254fac89abe06cbe7d48ba_0_4.mp4?wsSecret=b3655e28707047aa03748f682be1272e&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:50:32Z"
+  },
+  "dramaora_52026429699_10": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 10,
+    "telegram_message_id": 13154,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzYmrsNVo4OsndyfQT6Bhty6F-nhPaAAIBHwAC4BdgVxFs9kM4rPOLHgQ",
+    "telegram_message_ids": [
+      13154
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.93,
+    "original_url": "https://media.vidivo.me/video/20250603/b423e154eefa43838285b1244e17fb5b/cloudv-transfer/555555557sorq7s35556246515oqqn98_b9acfc600a5d4302b50f83c8aa0625dd_0_4.mp4?wsSecret=67a9d1836923d6f641075d872a368098&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:50:53Z"
+  },
+  "dramaora_52026429699_11": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 11,
+    "telegram_message_id": 13155,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzY2rsNW0a4fxJ2M3vRbSdlCt34g9oAAICHwAC4BdgV0ShnY5cC6u2HgQ",
+    "telegram_message_ids": [
+      13155
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.25,
+    "original_url": "https://media.vidivo.me/video/20250603/aa50417a2dbf4599905fc288911fff1c/cloudv-transfer/55555555584r79n95556246572rrqn98_0d86b50577ea4297b8e4ef8d03d6336c_0_4.mp4?wsSecret=2af59c8939abf4104f787472ce28359a&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:51:12Z"
+  },
+  "dramaora_52026429699_12": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 12,
+    "telegram_message_id": 13156,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzZGrsNX8og-mA46nl-EfpKPdYfQdEAAIDHwAC4BdgV-MghF6NX9kJHgQ",
+    "telegram_message_ids": [
+      13156
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.82,
+    "original_url": "https://media.vidivo.me/video/20250603/fb74ce3ee7fd4860ad32279181c107bd/cloudv-transfer/55555555o3q449q55556246502qsqn98_9ac5fda7ca2d48438a0cf27701ce0609_0_4.mp4?wsSecret=1a5423e2e464e7945646e619c7585731&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:51:29Z"
+  },
+  "dramaora_52026429699_13": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 13,
+    "telegram_message_id": 13157,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzZWrsNZDFiuBX3bYWRUqSKFG85yQfAAIEHwAC4BdgV2nYOfZ_Cuj6HgQ",
+    "telegram_message_ids": [
+      13157
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.82,
+    "original_url": "https://media.vidivo.me/video/20250603/5738ab1ed89b44aaba3667788ddc2ee1/cloudv-transfer/55555555q733o313555624651686rn98_1e09eeb6339743969f2af9545d1f7d98_0_4.mp4?wsSecret=db76e28ccd37807a991b9d2d174e0315&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:51:46Z"
+  },
+  "dramaora_52026429699_14": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 14,
+    "telegram_message_id": 13158,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzZmrsNaSAUo458Z_Aa9ljLhF6W-KsAAIGHwAC4BdgV0PEkQ6rQOfMHgQ",
+    "telegram_message_ids": [
+      13158
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.97,
+    "original_url": "https://media.vidivo.me/video/20250603/6a7335bf1e51487a81b1404aaff493c4/cloudv-transfer/555555558r678085555624658977rn98_9a2e798c7fb54fae98b0d2827cf881b8_0_4.mp4?wsSecret=687c0987d5854840fa2540dd237c53d3&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:52:07Z"
+  },
+  "dramaora_52026429699_15": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 15,
+    "telegram_message_id": 13159,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzZ2rsNbfYrXwwmCQW5sVZU80uEHNpAAIHHwAC4BdgV06IPfc3pPaDHgQ",
+    "telegram_message_ids": [
+      13159
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.74,
+    "original_url": "https://media.vidivo.me/video/20250603/a88d2af6285948858f19f15869c83f8e/cloudv-transfer/55555555s50p48qq55562465r188rn98_90b96e764489405f8803a7672d1f1bc5_0_4.mp4?wsSecret=a48ff780f4fd1eb772ce3447f4c748b7&wsTime=1793872056",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T07:52:25Z"
   }
 };
