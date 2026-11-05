@@ -44912,5 +44912,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
     "source": "dramaora",
     "backed_up_at": "2026-11-05T16:16:10Z"
+  },
+  "dramaora_52024390680_45": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 45,
+    "telegram_message_id": 13222,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzpmrs97ASr_chIyeCPjGky4JVHIAiAAJnIAAC4BdoV8YUTQdodClvHgQ",
+    "telegram_message_ids": [
+      13222
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.12,
+    "original_url": "https://media.vidivo.me/video/20250331/e67f169682a14c2eb2cdbe4814df1250/cloudv-transfer/55555555no456355555604655532nnor_1a15e2f0c0f741b7bbcfe5af936ab38f_0_4.mp4?wsSecret=79627cd63b80c261d5e86a408da3e42a&wsTime=1793921987",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:40:02Z"
+  },
+  "dramaora_52024390680_46": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 46,
+    "telegram_message_id": 13223,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzp2rs98jCSbdl5ODFXPUqcP5KOkfpAAJoIAAC4BdoV_j4cesYEjMUHgQ",
+    "telegram_message_ids": [
+      13223
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.44,
+    "original_url": "https://media.vidivo.me/video/20250331/e4acc6bcd75c4e1ba556984d330f4893/cloudv-transfer/55555555sn1nnoo755560465978nnnor_19ba386fbe0e47d8951493d46447db22_0_4.mp4?wsSecret=ec6a45520cb00794c86312af634d0761&wsTime=1793921987",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:40:26Z"
+  },
+  "dramaora_52024390680_47": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 47,
+    "telegram_message_id": 13224,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzqGrs99z9UDuSrcoYBUYpyyxmjMkZAAJpIAAC4BdoV3MHLsRK4SD7HgQ",
+    "telegram_message_ids": [
+      13224
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.79,
+    "original_url": "https://media.vidivo.me/video/20250331/c4d730ce28e545bb988241cb2db17e58/cloudv-transfer/55555555rn2860r8555604654n4pnnor_29ae44183bc443c8b5cf7b38326b92e3_0_4.mp4?wsSecret=c1cb6493bfad1fed83c703ab6347353d&wsTime=1793921987",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:40:47Z"
+  },
+  "dramaora_52024390680_48": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 48,
+    "telegram_message_id": 13225,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzqWrs9_Dcb80oLPbdRfh0im6engRSAAJqIAAC4BdoV5o51I43_OOqHgQ",
+    "telegram_message_ids": [
+      13225
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.36,
+    "original_url": "https://media.vidivo.me/video/20250331/a0eee9918415457581ea78ce5f94eb31/cloudv-transfer/55555555s296921n555604657n55onor_ea11d946fb134076be4e4b49c09d7783_0_4.mp4?wsSecret=72c59d1215a22ae87a5adaab7af6de0d&wsTime=1793921987",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:41:06Z"
+  },
+  "dramaora_52022186323_1": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 1,
+    "telegram_message_id": 13226,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzqmrs-A5bKJw7tkMuP8DUCZLG4XxvAAJrIAAC4BdoV2KF1Ma6-BHsHgQ",
+    "telegram_message_ids": [
+      13226
+    ],
+    "total_parts": 1,
+    "file_size_mb": 24.51,
+    "original_url": "https://media.vidivo.me/video/20250331/e2e413c5fe1244ef864018756526f0ac/cloudv-transfer/55555555262p34255556046541pnn1pr_d6b02cc0c32c4f08ba4c749c078e7fdb_0_4.mp4?wsSecret=3ea5ad32576dec24a8d4f144fdf42d5b&wsTime=1793922070",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:41:36Z"
+  },
+  "dramaora_52022186323_2": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 2,
+    "telegram_message_id": 13227,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzq2rs-CUahlkNTSZ-1v8AAZN02ffTLAACbCAAAuAXaFdtJBll3gzuxh4E",
+    "telegram_message_ids": [
+      13227
+    ],
+    "total_parts": 1,
+    "file_size_mb": 23.0,
+    "original_url": "https://media.vidivo.me/video/20250331/e0703d0c5f2b42f49f1e51b4a5446db3/cloudv-transfer/555555555173o1oo555604656r1rn1pr_11b07afbca944038bd42c554559b9e72_0_4.mp4?wsSecret=b349c5a83904039a1d22b1edfeab62f8&wsTime=1793922070",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:41:59Z"
+  },
+  "dramaora_52022186323_3": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 3,
+    "telegram_message_id": 13228,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzrGrs-DXcz-RK5Xt5JhiQQ0mMDgy8AAJtIAAC4BdoV3TpnyrZ-jGqHgQ",
+    "telegram_message_ids": [
+      13228
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.63,
+    "original_url": "https://media.vidivo.me/video/20250331/d1a1df49db16423992b041bc8f0bf542/cloudv-transfer/55555555pq164619555604652s97o1pr_044a96b903cd4dc9a1c2bdb32c085f42_0_4.mp4?wsSecret=a85a9eea8e224e86463ea1c5b269cc1b&wsTime=1793922070",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:42:15Z"
+  },
+  "dramaora_52022186323_4": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 4,
+    "telegram_message_id": 13229,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzrWrs-EkJjEWnedM4VKezJzo6DSOWAAJuIAAC4BdoV2PjS3Mxa9PPHgQ",
+    "telegram_message_ids": [
+      13229
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.63,
+    "original_url": "https://media.vidivo.me/video/20250331/beaa3ce633b9485bb3e76d727dc54eaf/cloudv-transfer/5555555588p6r8q555560465r790o1pr_03cd13a2db0747528e0531e667f7358d_0_4.mp4?wsSecret=492328b5d9eb119a023b1709e6befc03&wsTime=1793922070",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:42:36Z"
+  },
+  "dramaora_52022186323_5": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 5,
+    "telegram_message_id": 13230,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzrmrs-GBFFWlIy48AAXtW9y7V2FY6AgACbyAAAuAXaFfca0_r0Xok3R4E",
+    "telegram_message_ids": [
+      13230
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.31,
+    "original_url": "https://media.vidivo.me/video/20250331/6fbc34a240ab4dba80c1b7298d8bf6cf/cloudv-transfer/55555555570q616055560465p7o3o1pr_850ef2682f4a4f18a363c2156a226db4_0_4.mp4?wsSecret=1c05b2153a683c2c0199f8aa9ed0606a&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:42:58Z"
+  },
+  "dramaora_52022186323_6": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 6,
+    "telegram_message_id": 13231,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzr2rs-HEphLCgLNA-okrP3O022qDTAAJwIAAC4BdoV6-s_Rlv2fBBHgQ",
+    "telegram_message_ids": [
+      13231
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.08,
+    "original_url": "https://media.vidivo.me/video/20250331/2dd9b0f9ac7c4c54a93f5dc0440b41cf/cloudv-transfer/55555555o0q2s7o5555604656n7po1pr_ae744ee5f27f47da9c08952c663ee258_0_4.mp4?wsSecret=bdf2a438af55693f86ffa8a3f643adab&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:43:15Z"
+  },
+  "dramaora_52022186323_7": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 7,
+    "telegram_message_id": 13232,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzsGrs-I4k2ufl14Hb6ow0_9is8cxLAAJxIAAC4BdoV5YNHW61__wnHgQ",
+    "telegram_message_ids": [
+      13232
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.58,
+    "original_url": "https://media.vidivo.me/video/20250331/af205aa5f2624944abf27af808e3e408/cloudv-transfer/555555558893879855560465psqso1pr_bb56906975b9407480471ce81a741f49_0_4.mp4?wsSecret=d44b0314725ae89969b04bce9c8d5352&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:43:44Z"
+  },
+  "dramaora_52022186323_8": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 8,
+    "telegram_message_id": 13233,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzsWrs-KNOKkoYh3fxqO1rqbw5KnxxAAJyIAAC4BdoV12R7DjLns1GHgQ",
+    "telegram_message_ids": [
+      13233
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.09,
+    "original_url": "https://media.vidivo.me/video/20250331/15adde7171634d4fa3f81cbeb3166902/cloudv-transfer/555555552114s4n255560465o8n8p1pr_9d27eae066f3414388bd7db607604c60_0_4.mp4?wsSecret=92af5a5d7ee1da638f1e5756ec081b35&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:44:06Z"
+  },
+  "dramaora_52022186323_9": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 9,
+    "telegram_message_id": 13234,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzsmrs-LrzevETBkMzQ1BeE9l_34XlAAJzIAAC4BdoV4RYuEeb5k8eHgQ",
+    "telegram_message_ids": [
+      13234
+    ],
+    "total_parts": 1,
+    "file_size_mb": 24.57,
+    "original_url": "https://media.vidivo.me/video/20250331/1b3a1b1c54564105853ecddbc48b6e1d/cloudv-transfer/55555555465r5s1r555604655sr3p1pr_2d42d876b3954393a742641a846181f6_0_4.mp4?wsSecret=e70883c52ef64e0ce55087ce51faac78&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:44:28Z"
+  },
+  "dramaora_52022186323_10": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 10,
+    "telegram_message_id": 13235,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzs2rs-Mwrc1_2c7W8Lhj2tetC0Zj2AAJ0IAAC4BdoV1eqHGktBDUmHgQ",
+    "telegram_message_ids": [
+      13235
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.03,
+    "original_url": "https://media.vidivo.me/video/20250331/7ba0d36c677741bc976e509ac2dda827/cloudv-transfer/5555555539orr06355560465368pp1pr_6f344a53ba544bf2bf74874b01e33971_0_4.mp4?wsSecret=93b28a8f95f7687dfcc3bac6e4e322b1&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:44:47Z"
+  },
+  "dramaora_52022186323_11": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 11,
+    "telegram_message_id": 13236,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIztGrs-N9v-1RuoDdkWQ-pDpcHBUKyAAJ1IAAC4BdoV-oRuCFmqcnmHgQ",
+    "telegram_message_ids": [
+      13236
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.47,
+    "original_url": "https://media.vidivo.me/video/20250331/d36cd967eb8d4012958bca9013c49c4b/cloudv-transfer/55555555o7841q33555604655prrp1pr_becc5576aa4e41178959efc571c4018b_0_4.mp4?wsSecret=6489a6342b3dddc138ef709d1000d7e0&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:45:05Z"
+  },
+  "dramaora_52022186323_12": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 12,
+    "telegram_message_id": 13237,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIztWrs-PFDq6DvlabcTkMKFVZUVm9_AAJ2IAAC4BdoVwG3QBlvMji0HgQ",
+    "telegram_message_ids": [
+      13237
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.1,
+    "original_url": "https://media.vidivo.me/video/20250331/fdf3ebf7793b4dc7b09eac71e4ffad4d/cloudv-transfer/555555550rn6ro5755560465q2p7q1pr_332c37fc3d74434f993a799f8c3fa175_0_4.mp4?wsSecret=3f98c459757bafeb91360f707360b8f3&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:45:24Z"
+  },
+  "dramaora_52022186323_13": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 13,
+    "telegram_message_id": 13238,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIztmrs-QVvxrj9wXRBt2ZR3MDo0KCrAAJ3IAAC4BdoVzVrLVbKzNfUHgQ",
+    "telegram_message_ids": [
+      13238
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.87,
+    "original_url": "https://media.vidivo.me/video/20250331/ae97790dd38b45d9a46818b2b83ccd76/cloudv-transfer/555555555579181955560465p3o0q1pr_18c8ce858abc4c06b5edfba9db035457_0_4.mp4?wsSecret=75d86e555a4c4cb141282b8175b0e055&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:45:43Z"
+  },
+  "dramaora_52022186323_14": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 14,
+    "telegram_message_id": 13239,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzt2rs-RhhipH3BuQvQPeHSLA-dH1CAAJ4IAAC4BdoVxQvE078z6pxHgQ",
+    "telegram_message_ids": [
+      13239
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.15,
+    "original_url": "https://media.vidivo.me/video/20250331/1248cfa51f39431e8f03690f49ae8d9a/cloudv-transfer/5555555535n072n6555604654654q1pr_983d17cecfe94d20872d713e7de82700_0_4.mp4?wsSecret=84dd4a534f6a2214af1ce17dc3ba3cbc&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:46:02Z"
+  },
+  "dramaora_52022186323_15": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 15,
+    "telegram_message_id": 13240,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzuGrs-Sn-i0QYeOuC4wt9RdDaw-UmAAJ5IAAC4BdoV6KgSsciC3zwHgQ",
+    "telegram_message_ids": [
+      13240
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.04,
+    "original_url": "https://media.vidivo.me/video/20250331/0ebad17368dd4fa69e58aeffb98276c7/cloudv-transfer/55555555521qo308555604651n9pq1pr_a76397a6bfa14c42858d43e72f977b62_0_4.mp4?wsSecret=f02fef2ff4bb0ba36365c233a71828cd&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:46:19Z"
+  },
+  "dramaora_52022186323_16": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 16,
+    "telegram_message_id": 13241,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzuWrs-TsnNPtIo0xrmQFRg1FOZu8CAAJ6IAAC4BdoVyXspjpzT-X_HgQ",
+    "telegram_message_ids": [
+      13241
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.35,
+    "original_url": "https://media.vidivo.me/video/20250331/6e340c6cff6d4d4d911477bcc23debc4/cloudv-transfer/555555553n850s7855560465qs8sq1pr_92202b43012e46ffad705c5f8d1e71d4_0_4.mp4?wsSecret=094aaac8c67029d0c58671cb8da5ce07&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:46:38Z"
+  },
+  "dramaora_52022186323_17": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 17,
+    "telegram_message_id": 13242,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzumrs-U8Leezb0mX8u6lm3UqP-twyAAJ7IAAC4BdoV_Ja2k2KuBt4HgQ",
+    "telegram_message_ids": [
+      13242
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.39,
+    "original_url": "https://media.vidivo.me/video/20250331/c426602b34f84410968bb308225d8476/cloudv-transfer/55555555roo4q3n35556046532q7r1pr_728e256010b344f6a0eed39e0b572e3d_0_4.mp4?wsSecret=3e9c843a61e385d24693b61daa33fbe5&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:46:57Z"
+  },
+  "dramaora_52022186323_18": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 18,
+    "telegram_message_id": 13243,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzu2rs-WQEsl1x-qxmkf19RVywRItIAAJ8IAAC4BdoV14JPVW6J6s_HgQ",
+    "telegram_message_ids": [
+      13243
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.27,
+    "original_url": "https://media.vidivo.me/video/20250331/eaba91b405504b929670b7b3f0239d04/cloudv-transfer/555555555893oos955560465r291r1pr_61a68f01e2554b1e8b00dd4379457243_0_4.mp4?wsSecret=ae0f22b0d2562bfc1921151bf342a2a7&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:47:18Z"
+  },
+  "dramaora_52022186323_19": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 19,
+    "telegram_message_id": 13244,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzvGrs-XbIczbQIoMgu2d5V12dLr3DAAJ9IAAC4BdoVwT3156aNto1HgQ",
+    "telegram_message_ids": [
+      13244
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.0,
+    "original_url": "https://media.vidivo.me/video/20250331/f343f1d2a47b4618893b6b5496f22c5b/cloudv-transfer/55555555r2125osr55560465r724r1pr_4aac8cf24e4747118c199e4beda6ad50_0_4.mp4?wsSecret=024417d6ce0e029e4c9af093cd647c40&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:47:36Z"
+  },
+  "dramaora_52022186323_20": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 20,
+    "telegram_message_id": 13245,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzvWrs-Yxkl7OT0bDFZj08bibvz8BNAAJ-IAAC4BdoVzXLHDM-iUvKHgQ",
+    "telegram_message_ids": [
+      13245
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.16,
+    "original_url": "https://media.vidivo.me/video/20250331/1915addeed0144279ea39b1829d1003d/cloudv-transfer/55555555r799rn005556046545spr1pr_9585e0d4f20540a8a368a94ca85705b3_0_4.mp4?wsSecret=1d7c332e39c67eb54caab50293f4eb7c&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:47:59Z"
+  },
+  "dramaora_52022186323_21": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 21,
+    "telegram_message_id": 13246,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzvmrs-Z378ggdENGoFmwcymKnarl6AAJ_IAAC4BdoV-xq8W-j4A90HgQ",
+    "telegram_message_ids": [
+      13246
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.8,
+    "original_url": "https://media.vidivo.me/video/20250331/e04028c036bf4aab8189cd26aded9eca/cloudv-transfer/55555555346178o65556046530n5s1pr_8a11b5fe0efe4a0d92d3994f49a5fdcb_0_4.mp4?wsSecret=92ff4d20ad36b894626ddfb44486d28f&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:48:15Z"
+  },
+  "dramaora_52022186323_22": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 22,
+    "telegram_message_id": 13247,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzv2rs-bDoxH8I9xhZ_v3Q4PRAv6YQAAKAIAAC4BdoV7jmOEuvdwXDHgQ",
+    "telegram_message_ids": [
+      13247
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.61,
+    "original_url": "https://media.vidivo.me/video/20250331/5b02fedcac0043fdb2cc85bed069373c/cloudv-transfer/5555555587q9997p55560465p999s1pr_499c2d0aee584e8693b8925be2fa4d1b_0_4.mp4?wsSecret=51c7ce52f3dc2f97dcc27b75e7de56dc&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:48:35Z"
+  },
+  "dramaora_52022186323_23": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 23,
+    "telegram_message_id": 13248,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzwGrs-cd7uB3scCT4weZrwB7pTTKSAAKBIAAC4BdoV4CeXviBBfrRHgQ",
+    "telegram_message_ids": [
+      13248
+    ],
+    "total_parts": 1,
+    "file_size_mb": 27.09,
+    "original_url": "https://media.vidivo.me/video/20250331/2a402e6245be4297830c07969e531d19/cloudv-transfer/555555552pnp224o55560465r0o2s1pr_9def6364d4194fafb055af47c135980b_0_4.mp4?wsSecret=52fd4b8ec4f20da33a2ce34c78a34511&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:48:57Z"
+  },
+  "dramaora_52022186323_24": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 24,
+    "telegram_message_id": 13249,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzwWrs-detbaHRzXb8i_xcY1mLjuWyAAKCIAAC4BdoV7rn3c-8lm8fHgQ",
+    "telegram_message_ids": [
+      13249
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.56,
+    "original_url": "https://media.vidivo.me/video/20250331/55c29b46d9ce4bd89caf41ae93796a12/cloudv-transfer/55555555474r227355560465sp9ps1pr_50768ef47ec44e618c460f086dfe81bf_0_4.mp4?wsSecret=be059a187e3014b2c6f40b6a9a3c0816&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:49:14Z"
+  },
+  "dramaora_52022186323_25": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 25,
+    "telegram_message_id": 13250,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzwmrs-fDTsPQYVX7d_OhYw-rQ67ymAAKDIAAC4BdoV_SIG7XxBljEHgQ",
+    "telegram_message_ids": [
+      13250
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.49,
+    "original_url": "https://media.vidivo.me/video/20250331/2af1056d963343e8ad72620d3a87687c/cloudv-transfer/5555555569s0rr735556046583qss1pr_bbb5ba37e38c4249ba1761f91524152f_0_4.mp4?wsSecret=ccd967a5ed76f37e2f375539ecb01c68&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:49:39Z"
+  },
+  "dramaora_52022186323_26": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 26,
+    "telegram_message_id": 13251,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzw2rs-gMBFELmh3ks-ivKwufLj-u6AAKEIAAC4BdoV_Ipe3DQi-9qHgQ",
+    "telegram_message_ids": [
+      13251
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.09,
+    "original_url": "https://media.vidivo.me/video/20250331/95bae932e896492db83609f5829cc514/cloudv-transfer/55555555568nr51855560465055952pr_d0ed84ba9b8a42588217f4c985944e52_0_4.mp4?wsSecret=2eeed2709adb51270d3747a156483720&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:49:57Z"
+  },
+  "dramaora_52022186323_27": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 27,
+    "telegram_message_id": 13252,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzxGrs-hbpyyJtu5xzktEip11m2OP0AAKFIAAC4BdoV-OCRNalT2wTHgQ",
+    "telegram_message_ids": [
+      13252
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.36,
+    "original_url": "https://media.vidivo.me/video/20250331/5d07cf72f24a404fa37e0bd231408c37/cloudv-transfer/55555555so65471155560465634252pr_9e790a02673e4e408ce146592a923348_0_4.mp4?wsSecret=4b5f33d3cb35bc5637af6568443b9857&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:50:16Z"
+  },
+  "dramaora_52022186323_28": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 28,
+    "telegram_message_id": 13253,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzxWrs-jAfxFP1TKxInH87N2XqbmrmAAKGIAAC4BdoV8HwPhscT3uAHgQ",
+    "telegram_message_ids": [
+      13253
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.83,
+    "original_url": "https://media.vidivo.me/video/20250331/b78bb343a8e04eb4bc0473484fc4f419/cloudv-transfer/555555556sr3587155560465425o52pr_671fdd932a5548d2914165555957f722_0_4.mp4?wsSecret=44b11533318108165270ac9d8f11adb4&wsTime=1793922071",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:50:42Z"
+  },
+  "dramaora_52022186323_29": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 29,
+    "telegram_message_id": 13254,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzxmrs-kFZJCm2fsHIJiocWCL5Y9ZEAAKHIAAC4BdoVw283Xi_iisnHgQ",
+    "telegram_message_ids": [
+      13254
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.5,
+    "original_url": "https://media.vidivo.me/video/20250331/62155edd59ca49fd92419383eb0a022a/cloudv-transfer/555555551rp7086q555604652s7r52pr_9d887d7894a34df0968a601d1a2b12dc_0_4.mp4?wsSecret=48b7a2a8bf8fdae795753933030c157c&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:50:59Z"
+  },
+  "dramaora_52022186323_30": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 30,
+    "telegram_message_id": 13255,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzx2rs-lZb3Fq5fGV-RSHyWia0WdtCAAKIIAAC4BdoVyo9SuLzgmPuHgQ",
+    "telegram_message_ids": [
+      13255
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.74,
+    "original_url": "https://media.vidivo.me/video/20250331/ff538191784f4c51b9aa62dc5f3be830/cloudv-transfer/5555555569696o6955560465n66662pr_97c1cceb68d444aca04fb18c95ee5831_0_4.mp4?wsSecret=ca16f1a603ab0e0328dff7a87319486d&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:51:21Z"
+  },
+  "dramaora_52022186323_31": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 31,
+    "telegram_message_id": 13256,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzyGrs-mntR0llzTKTfKwKoB3NFdmjAAKJIAAC4BdoV7Na9yuMAuPOHgQ",
+    "telegram_message_ids": [
+      13256
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.72,
+    "original_url": "https://media.vidivo.me/video/20250331/98e3f68900dd4ba2b7589dad51950d9d/cloudv-transfer/555555551p4p979655560465071962pr_3378d5cbb46d4b1f8cfac19799b5c96b_0_4.mp4?wsSecret=f7a4858e1d44bdb054aa5d6f887ce895&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:51:40Z"
+  },
+  "dramaora_52022186323_32": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 32,
+    "telegram_message_id": 13257,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzyWrs-n32Jgrogsk4m924TnkGG3zMAAKKIAAC4BdoV6lWBHoKzcIAAR4E",
+    "telegram_message_ids": [
+      13257
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.52,
+    "original_url": "https://media.vidivo.me/video/20250331/d4795962379a4320a6048587f290366f/cloudv-transfer/5555555542so54pq55560465s9p262pr_050531397edd4e45b6b3c3658a3e3e7d_0_4.mp4?wsSecret=7ad160a901583cdea07cb54ddf1d3c72&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:51:59Z"
+  },
+  "dramaora_52022186323_33": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 33,
+    "telegram_message_id": 13258,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzymrs-o8KfHgedsRcr2_hHdPGlJ9LAAKLIAAC4BdoV5RLMu8p_AkFHgQ",
+    "telegram_message_ids": [
+      13258
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.73,
+    "original_url": "https://media.vidivo.me/video/20250331/edea3896d52344b1904165a5ef77b3cb/cloudv-transfer/55555555o28ns13r5556046562no62pr_f8df115864664106a1cd331323b2c1f0_0_4.mp4?wsSecret=ee901eaf853a9327162c685d8109b5fb&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:52:18Z"
+  },
+  "dramaora_52022186323_34": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 34,
+    "telegram_message_id": 13259,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzy2rs-qXR3CtHeW5sozFC_UzijtcgAAKMIAAC4BdoV3M5oh3cn0KbHgQ",
+    "telegram_message_ids": [
+      13259
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.99,
+    "original_url": "https://media.vidivo.me/video/20250331/19c7d8c097954d1aa8733363d13392bc/cloudv-transfer/555555556o4ppq1r55560465r8pr62pr_8616d96cce7e45c2b9aef1a0da7d6d72_0_4.mp4?wsSecret=92cff0b3f5ccbc95ccb11a654119b9e9&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:52:39Z"
+  },
+  "dramaora_52022186323_35": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 35,
+    "telegram_message_id": 13260,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzzGrs-rywWf40nMnh7UZtu4Ud4vbnAAKNIAAC4BdoV75sdcQdiNOrHgQ",
+    "telegram_message_ids": [
+      13260
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.87,
+    "original_url": "https://media.vidivo.me/video/20250331/72c44536e0f6499cb6ee03c14de6c32c/cloudv-transfer/555555550810nrn355560465n18772pr_5b803e4240ac477ca87f21e2e78dfd14_0_4.mp4?wsSecret=0c4fecb37f80717f0d250a1ef1b61493&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:53:03Z"
+  },
+  "dramaora_52022186323_36": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 36,
+    "telegram_message_id": 13261,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzzWrs-s5DQ7fku35ESc3sbdm51jMhAAKOIAAC4BdoV_CcZ4I9cfJAHgQ",
+    "telegram_message_ids": [
+      13261
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.08,
+    "original_url": "https://media.vidivo.me/video/20250331/2de22ed907434a3087d850f84c694b83/cloudv-transfer/555555552053581455560465p7q972pr_b747912e3ee140528ce8c51dfef5387a_0_4.mp4?wsSecret=a0efb14a388b584e803885546b5e1c6f&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:53:20Z"
+  },
+  "dramaora_52022186323_37": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 37,
+    "telegram_message_id": 13262,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzzmrs-uHjEv4lAYvL6ulmlhSJKY5fAAKPIAAC4BdoV8qWYj7_V6fDHgQ",
+    "telegram_message_ids": [
+      13262
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.22,
+    "original_url": "https://media.vidivo.me/video/20250331/e98802a098154918a20a08614f8ca9c4/cloudv-transfer/5555555541pp80q355560465oqr272pr_b8728ab0f25b4d9db199b3025ea41fb9_0_4.mp4?wsSecret=c1d1c503f8f8f5cdc36a5cd61fdf2e01&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:53:39Z"
+  },
+  "dramaora_52022186323_38": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 38,
+    "telegram_message_id": 13263,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzz2rs-vdhoMnT_oa0EsvGT89A2ZZHAAKQIAAC4BdoV9rs4zESyEE6HgQ",
+    "telegram_message_ids": [
+      13263
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.63,
+    "original_url": "https://media.vidivo.me/video/20250331/326b5abb4fa54b83bd8cd7047afcab7a/cloudv-transfer/5555555598670s0o555604653roo72pr_41d9ba908d594feebe287fc244e94ca7_0_4.mp4?wsSecret=b34dec33689063b22c3ada794782a761&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:54:01Z"
+  },
+  "dramaora_52022186323_39": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 39,
+    "telegram_message_id": 13264,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz0Grs-wcwlC1XhPByDCM00p9lY8QCAAKRIAAC4BdoV-SwRuFyevsHHgQ",
+    "telegram_message_ids": [
+      13264
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.07,
+    "original_url": "https://media.vidivo.me/video/20250331/19bace6b57dc4a9894f530440eabf24e/cloudv-transfer/55555555764on06755560465ss7s72pr_61a7cfb5f4d94f8ea6948697998e276b_0_4.mp4?wsSecret=030c84a4774e8e1007aaa615f7b045e9&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:54:17Z"
+  },
+  "dramaora_52022186323_40": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 40,
+    "telegram_message_id": 13265,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz0Wrs-xnz080alAkGQadf0VBijEpaAAKSIAAC4BdoV7XmlUwCeTzHHgQ",
+    "telegram_message_ids": [
+      13265
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.19,
+    "original_url": "https://media.vidivo.me/video/20250331/84a9e155ee8e4d0b82ab4bf4e16b20b0/cloudv-transfer/555555550pno6s2r55560465o88782pr_d772281c78bb4e0fb12dc28ab58e31bd_0_4.mp4?wsSecret=5a78a20f0b606e6ba457f692d1b71f64&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:54:35Z"
+  },
+  "dramaora_52022186323_41": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 41,
+    "telegram_message_id": 13266,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz0mrs-ywz7r_BXfe2TYu5LxC59ZVSAAKTIAAC4BdoV1oBsKZL_DxOHgQ",
+    "telegram_message_ids": [
+      13266
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.05,
+    "original_url": "https://media.vidivo.me/video/20250331/636c612fae83492ba55305ad26d25cc5/cloudv-transfer/55555555rp0051q05556046522n082pr_7a6d26d1175a4223a47b39fe75f19b77_0_4.mp4?wsSecret=5aa115798af6df8016f5dc2c7f434845&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:54:54Z"
+  },
+  "dramaora_52022186323_42": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 42,
+    "telegram_message_id": 13267,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz02rs-z-n8FQaxlNeGZsus6ABmon2AAKUIAAC4BdoV7zQyf6WRtlsHgQ",
+    "telegram_message_ids": [
+      13267
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.0,
+    "original_url": "https://media.vidivo.me/video/20250331/49fae84b9a6d4b9f9510d5b4202427fd/cloudv-transfer/55555555795n5noo5556046597r382pr_8da9e338ebae4c0e85ff53a68c94b4b4_0_4.mp4?wsSecret=e9af395dadd8c8ec06693d1831763f56&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:55:13Z"
+  },
+  "dramaora_52022186323_43": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 43,
+    "telegram_message_id": 13268,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz1Grs-1J9GlFfZVnk9-PVJDjyaby7AAKVIAAC4BdoVzBRCqdwiLdyHgQ",
+    "telegram_message_ids": [
+      13268
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.87,
+    "original_url": "https://media.vidivo.me/video/20250331/b1e208aa53d64d7f9ccbcb7715f511d9/cloudv-transfer/5555555508sr5s8p5556046553qo82pr_7a20ec1647994815863e140ed36dfaf0_0_4.mp4?wsSecret=b5de61a465fd3ac5cc1bc93a3317d126&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:55:33Z"
+  },
+  "dramaora_52022186323_44": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 44,
+    "telegram_message_id": 13269,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz1Wrs-2Pd3zmsGItbxt45s2iHrOgpAAKWIAAC4BdoV5q8OxVQuB1YHgQ",
+    "telegram_message_ids": [
+      13269
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.31,
+    "original_url": "https://media.vidivo.me/video/20250331/5bafae04dcde4afe9b645d6593ddb116/cloudv-transfer/555555550p166s0s55560465posr82pr_903c33854c844e79b5c2d1da7cc68fb2_0_4.mp4?wsSecret=e2edb9230fd8a875b9abf4d20b37e250&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:55:50Z"
+  },
+  "dramaora_52022186323_45": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 45,
+    "telegram_message_id": 13270,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz1mrs-3cNbhaTVBIzTgLyH6QwdHhYAAKXIAAC4BdoV2e31eAW5jTvHgQ",
+    "telegram_message_ids": [
+      13270
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.11,
+    "original_url": "https://media.vidivo.me/video/20250331/b61cf22cc12b49ab999f82ba2d935d30/cloudv-transfer/5555555510o8nnp055560465rs9792pr_c2a53ba420fa4959b0b0f2f0387fed84_0_4.mp4?wsSecret=60169a38274ec433a88cff62571358f3&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:56:09Z"
+  },
+  "dramaora_52022186323_46": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 46,
+    "telegram_message_id": 13271,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz12rs-42LoMxxvQRSORtm8VysM0AWAAKYIAAC4BdoV-FOnqV9q3maHgQ",
+    "telegram_message_ids": [
+      13271
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.43,
+    "original_url": "https://media.vidivo.me/video/20250331/23b98dbe2f4e47bd906fe484fc48179f/cloudv-transfer/555555552ons5876555604653r1092pr_dbf8df96aade4e9abdf5d25d80449ec2_0_4.mp4?wsSecret=f6df215b473415f829bbcde12c5696ca&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:56:31Z"
+  },
+  "dramaora_52022186323_47": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 47,
+    "telegram_message_id": 13272,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz2Grs-6HtAAFCkUh75WuMNmtsjGolLwACmSAAAuAXaFeg9dh-SklMSx4E",
+    "telegram_message_ids": [
+      13272
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.57,
+    "original_url": "https://media.vidivo.me/video/20250331/fd5d013a0b5141cdb976d5ff161764b4/cloudv-transfer/55555555ns4n12995556046551n392pr_358412f28c6a482e9327e1666df1f1b1_0_4.mp4?wsSecret=e1836bd5666c450ce937b0e2b4974edd&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:56:52Z"
+  },
+  "dramaora_52022186323_48": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 48,
+    "telegram_message_id": 13273,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz2Wrs-7bHl1b3CEkSugVsfR1kPqp6AAKaIAAC4BdoV2OS229pDaPJHgQ",
+    "telegram_message_ids": [
+      13273
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.04,
+    "original_url": "https://media.vidivo.me/video/20250331/c3727b6737e44c559575e22555fb8b9f/cloudv-transfer/55555555n3297o1455560465009o92pr_e1e2cbbd8f794bafa74ea5f48ffe9c53_0_4.mp4?wsSecret=94995f45618af3235003a4986f7e6c43&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:57:12Z"
+  },
+  "dramaora_52022186323_49": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 49,
+    "telegram_message_id": 13274,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz2mrs-8rnVSncghvYQe6CeFcFcyo2AAKbIAAC4BdoV-2emTusC4OfHgQ",
+    "telegram_message_ids": [
+      13274
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.73,
+    "original_url": "https://media.vidivo.me/video/20250331/347122e3bb064e5da0672a6ebe392a41/cloudv-transfer/555555555703onnn555604655n4r92pr_c3bf0192469e4e89880a4071587e75c3_0_4.mp4?wsSecret=f932ae3f41f027697c540cd8b83d71fa&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:57:32Z"
+  },
+  "dramaora_52022186323_50": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 50,
+    "telegram_message_id": 13275,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz22rs-97CUlF-EhxQ-B-lFD2Rq9p0AAKcIAAC4BdoV9qKqbokRlAcHgQ",
+    "telegram_message_ids": [
+      13275
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.37,
+    "original_url": "https://media.vidivo.me/video/20250331/13bc5d532fd842f2b46e31c8fa0c0ade/cloudv-transfer/5555555592qs07s555560465755702pr_35e2c958f5994268b719faf8c3afc422_0_4.mp4?wsSecret=5aff6b7cde77c20592058f87eb2ebc95&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:57:52Z"
+  },
+  "dramaora_52022186323_51": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 51,
+    "telegram_message_id": 13276,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz3Grs-_GWBvECDv4_00l2nqrdr2PSAAKdIAAC4BdoV8Ad9NHfPz83HgQ",
+    "telegram_message_ids": [
+      13276
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.54,
+    "original_url": "https://media.vidivo.me/video/20250331/b34286a20a0744409bb2dfe8c075752a/cloudv-transfer/55555555qr1s7on955560465260002pr_3f6eace0751a457ab73d4e9e088749d4_0_4.mp4?wsSecret=8b72e09b5c9d8035f93f80023f6beb66&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:58:11Z"
+  },
+  "dramaora_52022186323_52": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 52,
+    "telegram_message_id": 13277,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz3Wrs_ALkCK_vSIwtFONRvQ14Cc2kAAKeIAAC4BdoV7tHt-vSBdFtHgQ",
+    "telegram_message_ids": [
+      13277
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.78,
+    "original_url": "https://media.vidivo.me/video/20250331/8945c353a94d4018b6b2290858935d3b/cloudv-transfer/5555555512189n0o55560465671302pr_3a0373cc13184f39a235367b8011d39d_0_4.mp4?wsSecret=bccc4441c9f43505a7a33539ee2b6b52&wsTime=1793922072",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:58:28Z"
+  },
+  "dramaora_52022186323_53": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 53,
+    "telegram_message_id": 13278,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz3mrs_COR6GpiOQxQSu7C_6LND5PEAAKfIAAC4BdoV8IWSV66_CbqHgQ",
+    "telegram_message_ids": [
+      13278
+    ],
+    "total_parts": 1,
+    "file_size_mb": 27.61,
+    "original_url": "https://media.vidivo.me/video/20250331/4c9717f301e844bbb2c2d99dbfa1b80c/cloudv-transfer/55555555r94o028p555604650n4o02pr_d85a1438dc4c4f87b6ab160f60629634_0_4.mp4?wsSecret=75bf88968649baecde8c4858001c7ec0&wsTime=1793922073",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:59:01Z"
+  },
+  "dramaora_52022186323_54": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 54,
+    "telegram_message_id": 13279,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz32rs_DTeU4MRn5UWJfuTt_i-v2MhAAKgIAAC4BdoVwUBu20NgmOyHgQ",
+    "telegram_message_ids": [
+      13279
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.37,
+    "original_url": "https://media.vidivo.me/video/20250331/8847198a2a2f4005b0d63f0dbecdda3f/cloudv-transfer/5555555528o53n2p555604656r4612pr_98d37cf491be4a0f9ceba991c8e4cd51_0_4.mp4?wsSecret=17b51356f87e470e64f267b466c5f20f&wsTime=1793922073",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:59:19Z"
+  },
+  "dramaora_52022186323_55": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 55,
+    "telegram_message_id": 13280,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz4Grs_ERLo_oxZB_XNhRsAswS6MNeAAKhIAAC4BdoV9I7HkOBfV-UHgQ",
+    "telegram_message_ids": [
+      13280
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.49,
+    "original_url": "https://media.vidivo.me/video/20250331/6a116a0aaa564a0c8135deb91ff7a6dd/cloudv-transfer/55555555546pps55555604657so912pr_0c3eb7ebc8314cf8bddf33bf419f28be_0_4.mp4?wsSecret=699f0a4f8b71bd7904cb3698135e9e70&wsTime=1793922073",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:59:35Z"
+  },
+  "dramaora_52022186323_56": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 56,
+    "telegram_message_id": 13281,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz4Wrs_FcDrlUdDasvuj0jk0r56xXRAAKjIAAC4BdoVw1VxbjhKz-eHgQ",
+    "telegram_message_ids": [
+      13281
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.78,
+    "original_url": "https://media.vidivo.me/video/20250331/2f06c1e9fd9544efbe7f6b4b23e2d929/cloudv-transfer/5555555591q936rs555604659pr212pr_a70a3f102980425a905ca031f12c39dd_0_4.mp4?wsSecret=b714319ce9e6db2b1fd8a6ad8dd15e94&wsTime=1793922073",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T21:59:53Z"
   }
 };
