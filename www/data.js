@@ -43892,5 +43892,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
     "source": "dramaora",
     "backed_up_at": "2026-11-05T07:52:25Z"
+  },
+  "dramaora_52026429699_16": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 16,
+    "telegram_message_id": 13161,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzaWrspqBrHI1IGItzD2SEGj6anOV9AAJvIAAC4BdgV-_KlN_ddldRHgQ",
+    "telegram_message_ids": [
+      13161
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.48,
+    "original_url": "https://media.vidivo.me/video/20250603/8bf875d42a38468abaa8b76f8dd86484/cloudv-transfer/5555555566q18086555624652699rn98_3f39a91464b34d3384fdeff0016d9632_0_4.mp4?wsSecret=72d01d691952179da7738a2d8254d8c2&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:54:10Z"
+  },
+  "dramaora_52026429699_17": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 17,
+    "telegram_message_id": 13162,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzamrsprJ6VVMDDJ7brLjdVxvN4UplAAJwIAAC4BdgVwS7ZG1ACm_1HgQ",
+    "telegram_message_ids": [
+      13162
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.77,
+    "original_url": "https://media.vidivo.me/video/20250603/ddad7c7c124541159eb2172669baf0fd/cloudv-transfer/55555555o7po9216555624657050rn98_e63f11b83a5a414a871e9c8fd669c545_0_4.mp4?wsSecret=28c822aed7e0e721784506961464c2fd&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:54:29Z"
+  },
+  "dramaora_52026429699_18": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 18,
+    "telegram_message_id": 13163,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIza2rspsaloHp0gyzTba6day1z18zhAAJyIAAC4BdgV14ThJY5YJ85HgQ",
+    "telegram_message_ids": [
+      13163
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://media.vidivo.me/video/20250603/4a4c40b386d84beba459fccd36c20b3c/cloudv-transfer/5555555568s8p27655562465oq31rn98_4d00820000c0405fb35a9f7ba6c17c36_0_4.mp4?wsSecret=f26460f813de88c45315f1f78bfcf808&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:54:49Z"
+  },
+  "dramaora_52026429699_19": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 19,
+    "telegram_message_id": 13164,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzbGrsptc7xF2YnP-W7y-Bh8yhcldEAAJzIAAC4BdgVxF_2PE3PwgKHgQ",
+    "telegram_message_ids": [
+      13164
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.13,
+    "original_url": "https://media.vidivo.me/video/20250603/58e657b1022d434e9edd41034915b4ba/cloudv-transfer/555555551o69541855562465or92rn98_3f98c944963145b08a119c6b4700d554_0_4.mp4?wsSecret=54809522783bc549b809228572ff95a0&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:55:05Z"
+  },
+  "dramaora_52026429699_20": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 20,
+    "telegram_message_id": 13165,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzbWrspuce_EFMGZ9tZwho-fadjL1eAAJ0IAAC4BdgV9noikha7vyFHgQ",
+    "telegram_message_ids": [
+      13165
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.76,
+    "original_url": "https://media.vidivo.me/video/20250603/a50fa1aee5c4456babf7a6fcdb24147c/cloudv-transfer/5555555584425or9555624655863rn98_f9d9fbdaac4a46cf80f13ca1f16836e2_0_4.mp4?wsSecret=fa595c4d9d057578604d2db4b9305fb6&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:55:22Z"
+  },
+  "dramaora_52026429699_21": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 21,
+    "telegram_message_id": 13166,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzbmrspvoZd-oxgtTrsXq8TMu5pl1LAAJ1IAAC4BdgV45SKFZWH8Q8HgQ",
+    "telegram_message_ids": [
+      13166
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.25,
+    "original_url": "https://media.vidivo.me/video/20250603/6d6d7f607e59472da349f1f2d406185d/cloudv-transfer/5555555515oo0n8n55562465s8q3rn98_244f8f2d0cd94a979832b8fcac1a884b_0_4.mp4?wsSecret=7fda61fc460768db5da74a6cca244c86&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:55:40Z"
+  },
+  "dramaora_52026429699_22": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 22,
+    "telegram_message_id": 13167,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzb2rspwtfG5WU1nHyZabDHMLo2Zs7AAJ2IAAC4BdgV5KruX3tgiY4HgQ",
+    "telegram_message_ids": [
+      13167
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.97,
+    "original_url": "https://media.vidivo.me/video/20250603/78e249a3005048dcbd6822ceb0907c80/cloudv-transfer/555555559p5s04s055562465on5nrn98_94de60a514d742f3aa184889219d6eaf_0_4.mp4?wsSecret=ee3d5d7fa343c00747c9458471ac6315&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:55:58Z"
+  },
+  "dramaora_52026429699_23": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 23,
+    "telegram_message_id": 13168,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzcGrspxpy0L333LZN5mfOzG4eby1lAAJ3IAAC4BdgV2Ze2xpXJwkTHgQ",
+    "telegram_message_ids": [
+      13168
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.83,
+    "original_url": "https://media.vidivo.me/video/20250603/89e4aa5661dd4ac19600fd67f5d7390a/cloudv-transfer/55555555617341p8555624650rqnrn98_e83c1a24e31f43aebde206a49a549154_0_4.mp4?wsSecret=be9fbf1682cf4f4f46f875dce854b01a&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:56:12Z"
+  },
+  "dramaora_52026429699_24": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 24,
+    "telegram_message_id": 13169,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzcWrspzC_18E8CMK02zu0bX3as6qnAAJ4IAAC4BdgV3m18OrXbJEEHgQ",
+    "telegram_message_ids": [
+      13169
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.59,
+    "original_url": "https://media.vidivo.me/video/20250603/bf32a5bb8b404c7c83b3315d6e987bdc/cloudv-transfer/555555553p0639985556246582rorn98_29670e33c6de4ffd8bd729d758109431_0_4.mp4?wsSecret=8eea412280fa86a3c1ead55abc712308&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:56:34Z"
+  },
+  "dramaora_52026429699_25": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 25,
+    "telegram_message_id": 13170,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzcmrsp0FzjK6R4OoeFUEIWKjQqbjLAAJ5IAAC4BdgV53ETNul1W9ZHgQ",
+    "telegram_message_ids": [
+      13170
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.42,
+    "original_url": "https://media.vidivo.me/video/20250603/6eeeedd8c33349ec89d8e8e6a52aa22d/cloudv-transfer/5555555538n6p22n5556246595qprn98_e7924e06c7e64731a160fc6e9d371459_0_4.mp4?wsSecret=07728d857493f54f05214d2b307c1549&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:56:52Z"
+  },
+  "dramaora_52026429699_26": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 26,
+    "telegram_message_id": 13171,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzc2rsp1VmECmnfqmg97A0IW1taW_1AAJ6IAAC4BdgVxgtqQ6KjrVMHgQ",
+    "telegram_message_ids": [
+      13171
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.83,
+    "original_url": "https://media.vidivo.me/video/20250603/87bd25138ff745abb727bf2f27b3fb16/cloudv-transfer/5555555553pn34rn5556246555sqrn98_65bb498d7e64416abc1710b95d683d5e_0_4.mp4?wsSecret=4e0783ac022a0fbbe320e992704e3493&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:57:11Z"
+  },
+  "dramaora_52026429699_27": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 27,
+    "telegram_message_id": 13172,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzdGrsp2pDIUo83IuQ0vq7uSP0O2lOAAJ7IAAC4BdgVw1snnpiBr9qHgQ",
+    "telegram_message_ids": [
+      13172
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://media.vidivo.me/video/20250603/560f8cb0e04b43be86a38326a36e01fc/cloudv-transfer/555555559nq4083n5556246568qrrn98_e6cc69ceb9734b37b1b6895d37dd4cdf_0_4.mp4?wsSecret=5756989f40e96c3f1de444c8b06ef2c4&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:57:33Z"
+  },
+  "dramaora_52026429699_28": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 28,
+    "telegram_message_id": 13173,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzdWrsp3_vdp4PtFbvyBNR9IMVQMHYAAJ8IAAC4BdgVxCtxqDzJfCOHgQ",
+    "telegram_message_ids": [
+      13173
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.52,
+    "original_url": "https://media.vidivo.me/video/20250603/062552ed905e478680a762e8d78bbed9/cloudv-transfer/5555555579178on45556246575rsrn98_113fcfca8d2247788c0e639fe652bfd3_0_4.mp4?wsSecret=b36fb5bacf258468536c36195543790f&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:57:53Z"
+  },
+  "dramaora_52026429699_29": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 29,
+    "telegram_message_id": 13174,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzdmrsp5TMDpQ9SPnIBhXW2gyOAAH6pwACfSAAAuAXYFdupdVFyhDZgB4E",
+    "telegram_message_ids": [
+      13174
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.11,
+    "original_url": "https://media.vidivo.me/video/20250603/664c4ae9d17a47aeb75dd8e813a0cdbb/cloudv-transfer/555555559s536r47555624656q45sn98_3d25ccadf8d34c8580a8334213501830_0_4.mp4?wsSecret=c1fd2839cae4e3c4687984db54848756&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:58:14Z"
+  },
+  "dramaora_52026429699_30": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 30,
+    "telegram_message_id": 13175,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzd2rsp6RqH7I2FZiylGXHCCsSci9eAAJ-IAAC4BdgVw4fe7nJd-jjHgQ",
+    "telegram_message_ids": [
+      13175
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.34,
+    "original_url": "https://media.vidivo.me/video/20250603/0770b7c3f03c4843aa50cc7add1f91b2/cloudv-transfer/55555555os64p4nr5556246522r6sn98_68f217e78c334cfb97d6daba4fab2423_0_4.mp4?wsSecret=56f19dcee663d98fc4589ea201573229&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:58:30Z"
+  },
+  "dramaora_52026429699_31": {
+    "show_id": "dramaora_52026429699",
+    "show_title": "Tea fragrance is as warm as spring",
+    "episode_number": 31,
+    "telegram_message_id": 13176,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzeGrsp7YffuE_sCpqXKMNOJF3oByzAAJ_IAAC4BdgV4lxHWmEKyJ2HgQ",
+    "telegram_message_ids": [
+      13176
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.91,
+    "original_url": "https://media.vidivo.me/video/20250603/2343844c1eaf4d198cdbeaec637cf644/cloudv-transfer/55555555o7p5q66055562465s2q7sn98_c18f4e8cbbce40c68079d03b22cbb565_0_4.mp4?wsSecret=bd3cf31eff6cd75f46a1c4e28f3a540f&wsTime=1793901237",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250527/12326d470197100096c0c25700000000.jpg",
+    "synopsis": "This story revolves around the hypnotist Lin Xiyue, telling of her struggles in emotional and professional dilemmas, as well as a series of complex stories triggered thereby.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:58:48Z"
+  },
+  "dramaora_52024390680_1": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 1,
+    "telegram_message_id": 13177,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzeWrsp-HIHL9S-k3tNbangLL229v-AAKAIAAC4BdgV3Jm6BRrNtn3HgQ",
+    "telegram_message_ids": [
+      13177
+    ],
+    "total_parts": 1,
+    "file_size_mb": 41.87,
+    "original_url": "https://media.vidivo.me/video/20250331/400e1aa4a3dd4d4f853635a9de69b1c0/cloudv-transfer/5555555522q20n165556046551r06nor_6fe0d56901b648d1b6dd2695ba4a2a3f_0_4.mp4?wsSecret=27d4cb14ed637e608da7ddaa9211fb80&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T15:59:32Z"
+  },
+  "dramaora_52024390680_2": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 2,
+    "telegram_message_id": 13178,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzemrsp_6D217A695UBfuvrJj9oGa1AAKBIAAC4BdgV1yDi2DFysGXHgQ",
+    "telegram_message_ids": [
+      13178
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.61,
+    "original_url": "https://media.vidivo.me/video/20250331/cf7381ad0f594aad8070d08b472759e4/cloudv-transfer/55555555r7q5r86455560465645o6nor_6b6149de4de24599ba9bc1d6b5f27508_0_4.mp4?wsSecret=c2d174a4712dc52aae661476d26ba9cb&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:00:00Z"
+  },
+  "dramaora_52024390680_3": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 3,
+    "telegram_message_id": 13179,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIze2rsqBmRY00SahR7-IEmz7CgrNBcAAKDIAAC4BdgV0m9J55vJr_MHgQ",
+    "telegram_message_ids": [
+      13179
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.58,
+    "original_url": "https://media.vidivo.me/video/20250331/993223d763994c93afdae3b7dd0e6f00/cloudv-transfer/55555555r4o7p8op555604650nsq6nor_9e84f3aeb1734eb99f017d3b6d0d8760_0_4.mp4?wsSecret=48014c66e555a61f53f54192589a8f67&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:00:27Z"
+  },
+  "dramaora_52024390680_4": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 4,
+    "telegram_message_id": 13180,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzfGrsqDAEtgqKKDwVEhiZLajbgFe7AAKEIAAC4BdgV98eKVtyR0EbHgQ",
+    "telegram_message_ids": [
+      13180
+    ],
+    "total_parts": 1,
+    "file_size_mb": 27.14,
+    "original_url": "https://media.vidivo.me/video/20250331/58791180779a49ad94e46fcc93c5cefd/cloudv-transfer/55555555pr3629845556046581867nor_0a63ef2bc31b4dba879c950fa4091c5e_0_4.mp4?wsSecret=4416d7152d000857cd80fb43a4048270&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:00:50Z"
+  },
+  "dramaora_52024390680_5": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 5,
+    "telegram_message_id": 13181,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzfWrsqEXEKfNqh0KyvTpG7UOaUW2oAAKFIAAC4BdgV6hwL0qox8B5HgQ",
+    "telegram_message_ids": [
+      13181
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.74,
+    "original_url": "https://media.vidivo.me/video/20250331/748fbbd48dd04dc6b1dd640fc85095bb/cloudv-transfer/55555555pn0428pn55560465np217nor_1953b29896d746e98421cb8ddbf737d7_0_4.mp4?wsSecret=da0576ff65e58cf91b704631fed98049&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:01:12Z"
+  },
+  "dramaora_52024390680_6": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 6,
+    "telegram_message_id": 13182,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzfmrsqGAxdlzzyS2RfAZ9t8Qh6FIlAAKGIAAC4BdgV8UclHQq3ZLKHgQ",
+    "telegram_message_ids": [
+      13182
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.13,
+    "original_url": "https://media.vidivo.me/video/20250331/0b3e7649b4704e868668c85e166ac6a7/cloudv-transfer/5555555568q2p08p55560465p8947nor_354a4ad676f445f69e202cac0e80355b_0_4.mp4?wsSecret=bc8bc88c2f33658ecf5f9fd391f02029&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:01:38Z"
+  },
+  "dramaora_52024390680_7": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 7,
+    "telegram_message_id": 13183,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzf2rsqH6XDi0DeTarkrnTXQxPdCRgAAKHIAAC4BdgVzQeGnNLE4VTHgQ",
+    "telegram_message_ids": [
+      13183
+    ],
+    "total_parts": 1,
+    "file_size_mb": 28.88,
+    "original_url": "https://media.vidivo.me/video/20250331/3e4bd08300dd41f9b2694ea34b2089e7/cloudv-transfer/555555550p5s0p8255560465085p7nor_d3d1303b7fa94eb3826b0487004b9674_0_4.mp4?wsSecret=c7291614b68420a45e889f2c92bbceae&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:02:08Z"
+  },
+  "dramaora_52024390680_8": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 8,
+    "telegram_message_id": 13184,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzgGrsqJldnxjWDBLr-V2GD9lbj7-9AAKIIAAC4BdgV-Q0UUrorJnrHgQ",
+    "telegram_message_ids": [
+      13184
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.29,
+    "original_url": "https://media.vidivo.me/video/20250331/ca85c4ec389b4c53a1404af704e246d6/cloudv-transfer/5555555505996s90555604658op58nor_b1ac98f99f1e49b09e03736e8a1ae599_0_4.mp4?wsSecret=9a2a61548fcc85a4695d772fc998a7b5&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:02:35Z"
+  },
+  "dramaora_52024390680_9": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 9,
+    "telegram_message_id": 13185,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzgWrsqLV6eQWxm8r43mRICQQCU_eLAAKJIAAC4BdgV955GOHta2DjHgQ",
+    "telegram_message_ids": [
+      13185
+    ],
+    "total_parts": 1,
+    "file_size_mb": 24.22,
+    "original_url": "https://media.vidivo.me/video/20250331/fa9b05e79606426581dba1d7ee3528d9/cloudv-transfer/5555555516n5160s55560465spn88nor_20f40c8631024614820f03cc38570068_0_4.mp4?wsSecret=f7c4988fd22bfdf8a30e058c4dc9b8de&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:03:03Z"
+  },
+  "dramaora_52024390680_10": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 10,
+    "telegram_message_id": 13186,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzgmrsqNXUMqS9l2VF5gk2CTnhXigVAAKKIAAC4BdgV9d97kDpG_nbHgQ",
+    "telegram_message_ids": [
+      13186
+    ],
+    "total_parts": 1,
+    "file_size_mb": 30.19,
+    "original_url": "https://media.vidivo.me/video/20250331/77b0d06186f94af8a284021d07ee6eb0/cloudv-transfer/55555555qp0572p155560465nsn38nor_9a7cda3514c84b17938ef2770e50dba0_0_4.mp4?wsSecret=5a7573b1da615cdd95fc32e5ddc97a80&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:03:35Z"
+  },
+  "dramaora_52024390680_11": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 11,
+    "telegram_message_id": 13187,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzg2rsqO1NSjSwi0jOURiIuczK1tMcAAKLIAAC4BdgV3JZHbXmeZTTHgQ",
+    "telegram_message_ids": [
+      13187
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.13,
+    "original_url": "https://media.vidivo.me/video/20250331/f0881e760512404b9109d54b11775bb1/cloudv-transfer/5555555530r1ps1q55560465q9nq8nor_822f8aa71c03495c93e12b7f11ed01d6_0_4.mp4?wsSecret=8fd6baddd25f0a7c851aeb423aa3b6da&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:03:59Z"
+  },
+  "dramaora_52024390680_12": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 12,
+    "telegram_message_id": 13188,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzhGrsqQH0AihlrlhDrvXPmiqRy6vTAAKMIAAC4BdgV9vKD36MeS06HgQ",
+    "telegram_message_ids": [
+      13188
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.65,
+    "original_url": "https://media.vidivo.me/video/20250331/d15f73e680b740bbb310e6db7edc43a6/cloudv-transfer/555555554q3rr06o555604654n759nor_b0a67a0c1ee84fd099a87ea8c0c3f225_0_4.mp4?wsSecret=25207af8bdf2f9a5b153868752bc07c9&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:04:19Z"
+  },
+  "dramaora_52024390680_13": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 13,
+    "telegram_message_id": 13189,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzhWrsqR72bxLY61ZJbgkAAU-bWPT-EAACjSAAAuAXYFetlLN3QVGIxB4E",
+    "telegram_message_ids": [
+      13189
+    ],
+    "total_parts": 1,
+    "file_size_mb": 25.46,
+    "original_url": "https://media.vidivo.me/video/20250331/a5d78a18361540a79c24bb3029729e2e/cloudv-transfer/55555555rq4ss5145556046518689nor_99a582daf1244c5581a124615f6ad009_0_4.mp4?wsSecret=b3c763a8c7e9ec267b4178cf53f61074&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:04:50Z"
+  },
+  "dramaora_52024390680_14": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 14,
+    "telegram_message_id": 13190,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzhmrsqTfyIhbg1WQAAXr-uZjCm2IxNQACjyAAAuAXYFfpcxCwccbK5x4E",
+    "telegram_message_ids": [
+      13190
+    ],
+    "total_parts": 1,
+    "file_size_mb": 25.25,
+    "original_url": "https://media.vidivo.me/video/20250331/2260c3f0aef2414290c9d70136da2ad9/cloudv-transfer/5555555552p1194o5556046596r19nor_f3f5c5cd3842492dae3f4b8e8b1cce2c_0_4.mp4?wsSecret=ece71811282dd6fe8ba4a8e8082f470a&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:05:13Z"
+  },
+  "dramaora_52024390680_15": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 15,
+    "telegram_message_id": 13191,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzh2rsqUzcHzMeyfvr9CzjsfWX_c5VAAKQIAAC4BdgVzb4AAEOXPldTx4E",
+    "telegram_message_ids": [
+      13191
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.42,
+    "original_url": "https://media.vidivo.me/video/20250331/bcabf66cede94a679226373fc36796f6/cloudv-transfer/55555555n8p9sqs155560465p48p9nor_a7ab06e4dbce4a308ff52916678279fe_0_4.mp4?wsSecret=95f4866dc770af6c0317787fd51084ed&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:05:35Z"
+  },
+  "dramaora_52024390680_16": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 16,
+    "telegram_message_id": 13192,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIziGrsqWSYv30jF3lHmRzxmhtKH_SoAAKSIAAC4BdgV8JBTH10hnLtHgQ",
+    "telegram_message_ids": [
+      13192
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.32,
+    "original_url": "https://media.vidivo.me/video/20250331/e802d0c9088e4bd2ae0e5b126a325b2c/cloudv-transfer/55555555p73o7842555604655sor9nor_f0131c9818b14afeb6deab501377eb82_0_4.mp4?wsSecret=5a35b096493c536fede3dc0bd3816c2c&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:05:58Z"
+  },
+  "dramaora_52024390680_17": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 17,
+    "telegram_message_id": 13193,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIziWrsqYMZ9eHAZpnid0wqFoegl04mAAKTIAAC4BdgV1iHd2ToMSzUHgQ",
+    "telegram_message_ids": [
+      13193
+    ],
+    "total_parts": 1,
+    "file_size_mb": 29.27,
+    "original_url": "https://media.vidivo.me/video/20250331/63d9126a8b8e4e44bce81d7654147cfe/cloudv-transfer/5555555555n6q88955560465o7n60nor_696c2eefc4b94fff8688037212442a7a_0_4.mp4?wsSecret=a1097ac0ccb3ce9e0ae8aaf9ba449228&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:06:29Z"
+  },
+  "dramaora_52024390680_18": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 18,
+    "telegram_message_id": 13194,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzimrsqZpty9jUOjI9ej2KpLrI4QwnAAKUIAAC4BdgVx7vLzb-Yu49HgQ",
+    "telegram_message_ids": [
+      13194
+    ],
+    "total_parts": 1,
+    "file_size_mb": 23.66,
+    "original_url": "https://media.vidivo.me/video/20250331/7aeab6d935bd4586a165c0485cfa1cb2/cloudv-transfer/55555555909q253o55560465q6s00nor_e513684b47364181b70c044be85fc0c6_0_4.mp4?wsSecret=4bd2f3ac1ccdce76ff79844744f301e6&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:06:52Z"
+  },
+  "dramaora_52024390680_19": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 19,
+    "telegram_message_id": 13195,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzi2rsqa8Vtw4Co-geC3fgB46jm3jBAAKVIAAC4BdgV-09AZQyTe80HgQ",
+    "telegram_message_ids": [
+      13195
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.13,
+    "original_url": "https://media.vidivo.me/video/20250331/70ee5268d5654c499678054d7692fbc1/cloudv-transfer/5555555594r75nr35556046524340nor_0b664ac4403d41698188de134b6ee5bc_0_4.mp4?wsSecret=3f27b676f3387d562767aae1ae462548&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:07:13Z"
+  },
+  "dramaora_52024390680_20": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 20,
+    "telegram_message_id": 13196,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzjGrsqcV-nsaoYtW_uqbWxPYNy9mGAAKWIAAC4BdgV6YzCcYxXh3-HgQ",
+    "telegram_message_ids": [
+      13196
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.16,
+    "original_url": "https://media.vidivo.me/video/20250331/96cf74346ed549deaa72f6a89c8f6c02/cloudv-transfer/55555555qn86poos55560465386p0nor_02a769ce2b3144c4b0414c6ae0deb9a6_0_4.mp4?wsSecret=8acccecdae8ee203b8213a6fd53be4f2&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:07:36Z"
+  },
+  "dramaora_52024390680_21": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 21,
+    "telegram_message_id": 13197,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzjWrsqdt8IOV__y3efcKOeAOGzBXhAAKXIAAC4BdgV1XN1fO3LNIEHgQ",
+    "telegram_message_ids": [
+      13197
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.29,
+    "original_url": "https://media.vidivo.me/video/20250331/4bfc9f1364594a37b471e1b1d2af7551/cloudv-transfer/55555555rs16nsn4555604656p8s0nor_22adfc477526419e8170533cb7ba9395_0_4.mp4?wsSecret=0c461b49b153347b5cbffa1f5d0cefce&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:07:58Z"
+  },
+  "dramaora_52024390680_22": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 22,
+    "telegram_message_id": 13198,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzjmrsqfC-Iy9BoKHLV4qa_VpZZzbPAAKYIAAC4BdgV0c8_xvn97KGHgQ",
+    "telegram_message_ids": [
+      13198
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.9,
+    "original_url": "https://media.vidivo.me/video/20250331/6de035d5ff714b3289bbf19cb9aa25a7/cloudv-transfer/55555555ssq909p55556046500o71nor_de3fd32ac6dc4f08bd988dc38772c943_0_4.mp4?wsSecret=94547f5065130ec85057865c4c604567&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:08:18Z"
+  },
+  "dramaora_52024390680_23": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 23,
+    "telegram_message_id": 13199,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzj2rsqgK4fa7tgLeepoCMArKfcbXRAAKZIAAC4BdgV5tzilJtM0T1HgQ",
+    "telegram_message_ids": [
+      13199
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.86,
+    "original_url": "https://media.vidivo.me/video/20250331/f345a88f81a147a19fc13360b13cb4b2/cloudv-transfer/55555555545qp2005556046533201nor_e040668245524eb2ae96290f7e37f469_0_4.mp4?wsSecret=46b624a756e003c6d02c9b18f27f1131&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:08:37Z"
+  },
+  "dramaora_52024390680_24": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 24,
+    "telegram_message_id": 13200,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzkGrsqhhmmQiSRFpPE-EN1B11st58AAKaIAAC4BdgV-8kKjDvWkkUHgQ",
+    "telegram_message_ids": [
+      13200
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.4,
+    "original_url": "https://media.vidivo.me/video/20250331/473d9debe1ac4233939b79075e5cbfe1/cloudv-transfer/5555555527qqsr325556046522531nor_d5434ddf9ec54272aca9b167027c3745_0_4.mp4?wsSecret=185214cf2faeafc517cc0af9b079c4c7&wsTime=1793901534",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:08:59Z"
+  },
+  "dramaora_52024390680_25": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 25,
+    "telegram_message_id": 13201,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzkWrsqjT-sXu2cmVhaad3xOsinfEKAAKbIAAC4BdgV7QjbFfVWgRSHgQ",
+    "telegram_message_ids": [
+      13201
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.46,
+    "original_url": "https://media.vidivo.me/video/20250331/073c6e8dffd74998afa3322151f70f70/cloudv-transfer/55555555r90rq5q25556046529sn1nor_3ed6e3d64240455db88a76853950730b_0_4.mp4?wsSecret=9283125c3829fb45aee63090eedcf0e9&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:09:26Z"
+  },
+  "dramaora_52024390680_26": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 26,
+    "telegram_message_id": 13202,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzkmrsqkbwNMphqytug3CUzGXTNk-MAAKcIAAC4BdgV4L_pg_RH1XsHgQ",
+    "telegram_message_ids": [
+      13202
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.23,
+    "original_url": "https://media.vidivo.me/video/20250331/573ac80706294d5f817101ec4f28ee19/cloudv-transfer/555555558o9p45rp55560465n8pq1nor_771c6499821a4d06a8045f564b4a95d1_0_4.mp4?wsSecret=f7e2f95c2bef236a0c245385dd3fa10c&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:09:44Z"
+  },
+  "dramaora_52024390680_27": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 27,
+    "telegram_message_id": 13203,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzk2rsqmAM7Z515EHnomRy_O8yQ7EnAAKdIAAC4BdgV9hta09ClaB9HgQ",
+    "telegram_message_ids": [
+      13203
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.34,
+    "original_url": "https://media.vidivo.me/video/20250331/3974447768194bffa74ed48b7e858e93/cloudv-transfer/555555559s2r38pn555604656qr52nor_18da4a63430b4cd588007e0eac364064_0_4.mp4?wsSecret=ecd456c5bd54993be0b330db82b37b19&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:10:10Z"
+  },
+  "dramaora_52024390680_28": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 28,
+    "telegram_message_id": 13204,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzlGrsqnRFVRzlUFWx3G0LjfNL4Yg6AAKeIAAC4BdgV9oino9KbXm2HgQ",
+    "telegram_message_ids": [
+      13204
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.66,
+    "original_url": "https://media.vidivo.me/video/20250331/b2146fbaaaa644b593899974ebccc432/cloudv-transfer/55555555189s9p0p555604650s982nor_f9d957e90d0a492aa7234df98672ed9d_0_4.mp4?wsSecret=35b6559bcb04672e34f7f6b154d6ca11&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:10:30Z"
+  },
+  "dramaora_52024390680_29": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 29,
+    "telegram_message_id": 13205,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzlWrsqoZeRYkC7kGNdNXqUgi4XIgTAAKfIAAC4BdgVx9wWWrrTLCEHgQ",
+    "telegram_message_ids": [
+      13205
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.94,
+    "original_url": "https://media.vidivo.me/video/20250331/47b9afec49b644d2aefa3c5aa25ccaa6/cloudv-transfer/555555553pnno49p5556046505p12nor_49ea7b7ec1564545a68b4de73847aa3b_0_4.mp4?wsSecret=1990c8dfc4ea50763b7d655c86fc895f&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:10:48Z"
+  },
+  "dramaora_52024390680_30": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 30,
+    "telegram_message_id": 13206,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzlmrsqpal9n3K0thFWgEk8B33MUTiAAKgIAAC4BdgV3y1h5XwfHP-HgQ",
+    "telegram_message_ids": [
+      13206
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.05,
+    "original_url": "https://media.vidivo.me/video/20250331/6f01b9389d304bdeaff4c14dc4cc5246/cloudv-transfer/555555554347n46755560465q8n42nor_11cb3ec0f2284aae85bd8c69ec78d892_0_4.mp4?wsSecret=0d6fb13666c035dbcbf66f49e3e9f5b4&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:11:04Z"
+  },
+  "dramaora_52024390680_31": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 31,
+    "telegram_message_id": 13207,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzl2rsqqrBLNPjG5-gsDa77pFynAOfAAKhIAAC4BdgV7azYNeBIsnRHgQ",
+    "telegram_message_ids": [
+      13207
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.08,
+    "original_url": "https://media.vidivo.me/video/20250331/3f61f578b6be4a9dab3164c57e715a59/cloudv-transfer/55555555o7949r92555604654q0q2nor_ca41dcfaa52e40798fc8b9bccf0caedc_0_4.mp4?wsSecret=886abc0f7f14627dfe63b59524afbe36&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:11:25Z"
+  },
+  "dramaora_52024390680_32": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 32,
+    "telegram_message_id": 13208,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzmGrsqsNo9nme1YYX8l3jVtRjB-76AAKiIAAC4BdgV9lEWvVOsZn7HgQ",
+    "telegram_message_ids": [
+      13208
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.32,
+    "original_url": "https://media.vidivo.me/video/20250331/f220ce3217974dc38f2b2160ca706056/cloudv-transfer/555555553s5po8o25556046512qs2nor_8bb913cccb9444a48400628cdd0207ed_0_4.mp4?wsSecret=d029025513cffb03b58dc88c2038d558&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:11:49Z"
+  },
+  "dramaora_52024390680_33": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 33,
+    "telegram_message_id": 13209,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzmWrsqtXkaZaaSwJvPb6zUxSoN1OqAAKjIAAC4BdgVwu9Yqd9bx7IHgQ",
+    "telegram_message_ids": [
+      13209
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.83,
+    "original_url": "https://media.vidivo.me/video/20250331/27afe00c9377444ebfff615bce2cef84/cloudv-transfer/55555555r6o9s5nn5556046512r73nor_006a317fa02543de989db1d60effcff8_0_4.mp4?wsSecret=4c90fa3f9169e7b94bf7568d3e743f5e&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:12:07Z"
+  },
+  "dramaora_52024390680_34": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 34,
+    "telegram_message_id": 13210,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzmmrsquz1PhHGu5xFvWMV1bVR9S0qAAKkIAAC4BdgV2MYtle1iBkGHgQ",
+    "telegram_message_ids": [
+      13210
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.41,
+    "original_url": "https://media.vidivo.me/video/20250331/feddd233df19488bb82100152e1b85d4/cloudv-transfer/5555555557or823655560465osp03nor_79421369f5114bafa39f6f4fd84ede78_0_4.mp4?wsSecret=a7cc4419dfada47234b626b72415e769&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:12:30Z"
+  },
+  "dramaora_52024390680_35": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 35,
+    "telegram_message_id": 13211,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzm2rsqvwRVYI-T_c4Nem2VnocbnAEAAKlIAAC4BdgVyx0wTRV43iDHgQ",
+    "telegram_message_ids": [
+      13211
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.16,
+    "original_url": "https://media.vidivo.me/video/20250331/13f6f02f8ec74ca6be0f3ded4c2403be/cloudv-transfer/5555555567938369555604654rp33nor_ff1c782f356f4c07a4c3c17fefe9b420_0_4.mp4?wsSecret=f966b46356c1d021c62a2e97f1ea259c&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:12:46Z"
+  },
+  "dramaora_52024390680_36": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 36,
+    "telegram_message_id": 13212,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIznGrsqw8jk9B23cCl8sjyQnGCogEsAAKmIAAC4BdgV3yo5ZHjT4k3HgQ",
+    "telegram_message_ids": [
+      13212
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.3,
+    "original_url": "https://media.vidivo.me/video/20250331/d5e53614d3f54eb3b864c81d2e4408bc/cloudv-transfer/555555550p4o01r255560465504o3nor_b86cae35ce6646acb4352ddbbf3d8ac5_0_4.mp4?wsSecret=e9a14f84fd2b435c57611c0f22ccf6fc&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:13:06Z"
+  },
+  "dramaora_52024390680_37": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 37,
+    "telegram_message_id": 13213,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIznWrsqyKNZj6Xus6-35YSvjDSPAn1AAKnIAAC4BdgV3VnGWeFY0NmHgQ",
+    "telegram_message_ids": [
+      13213
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.68,
+    "original_url": "https://media.vidivo.me/video/20250331/0915e571c3554d0c821ab7475ba3ba29/cloudv-transfer/5555555567p5119055560465qr4r3nor_14474bdaadca4877b0dd12f9b134198a_0_4.mp4?wsSecret=80c765fb9b71676b80fdf17b329b004b&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:13:25Z"
+  },
+  "dramaora_52024390680_38": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 38,
+    "telegram_message_id": 13214,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIznmrsqzeSOQABxoqfSUstt8YqnQEaNgACqCAAAuAXYFckkmjk0Q9mOh4E",
+    "telegram_message_ids": [
+      13214
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.64,
+    "original_url": "https://media.vidivo.me/video/20250331/57456a435caa4536b024726e18ddac5e/cloudv-transfer/555555554o19sr7q55560465oon64nor_9451ee387260430c99e0cfd73c70afe7_0_4.mp4?wsSecret=2aaf12213c80d4af9733b30512b1f2c7&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:13:46Z"
+  },
+  "dramaora_52024390680_39": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 39,
+    "telegram_message_id": 13215,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzn2rsq00xE264G3DkKNAqkWhUZM7lAAKpIAAC4BdgV3qmHiGLipzbHgQ",
+    "telegram_message_ids": [
+      13215
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.34,
+    "original_url": "https://media.vidivo.me/video/20250331/5169b4ddc98145fa95a839f9056e5800/cloudv-transfer/555555555rq5q5015556046577n94nor_d6198dc160b34756bacd122ea2399091_0_4.mp4?wsSecret=e4632b51ece904035aa1c57b3d859d64&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:14:07Z"
+  },
+  "dramaora_52024390680_40": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 40,
+    "telegram_message_id": 13216,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzoGrsq2ZwkDtjNLC8heV-k4Fk3-BxAAKqIAAC4BdgVyppY0v5SWSIHgQ",
+    "telegram_message_ids": [
+      13216
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.72,
+    "original_url": "https://media.vidivo.me/video/20250331/b959480cfa494e50bfe998e0b2eb789e/cloudv-transfer/55555555pq9848o155560465n9o24nor_93c76fc5e5ee48669cfd30ce503e21d3_0_4.mp4?wsSecret=e89371d9a02cf8d6ecea84a37037b1d8&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:14:32Z"
+  },
+  "dramaora_52024390680_41": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 41,
+    "telegram_message_id": 13217,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzoWrsq4La-wOwCntF6AHXjBRH4tZwAAKrIAAC4BdgV_VY2vmwMT1IHgQ",
+    "telegram_message_ids": [
+      13217
+    ],
+    "total_parts": 1,
+    "file_size_mb": 23.67,
+    "original_url": "https://media.vidivo.me/video/20250331/03611ee791664a02864f291941e31d83/cloudv-transfer/5555555558ns9382555604659p2n4nor_6911b284e2854ab9b2dda685c142c7ea_0_4.mp4?wsSecret=143c9381ab76c6b9a837500c5caf0e1c&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:15:00Z"
+  },
+  "dramaora_52024390680_42": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 42,
+    "telegram_message_id": 13218,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzomrsq56YmFYxERkGCmLYKlGB9VTvAAKsIAAC4BdgV8r7cSml7b6iHgQ",
+    "telegram_message_ids": [
+      13218
+    ],
+    "total_parts": 1,
+    "file_size_mb": 24.12,
+    "original_url": "https://media.vidivo.me/video/20250331/0368b2085d9d47ac894b0171b01879f0/cloudv-transfer/5555555597o2q9o3555604651n5r4nor_244c13b01ddc43b0bfa754eece72c45a_0_4.mp4?wsSecret=b2d00f0be0814a517c881d08df7c81f9&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:15:28Z"
+  },
+  "dramaora_52024390680_43": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 43,
+    "telegram_message_id": 13219,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzo2rsq7OxkwzQHHGQmCRZTim8G7XYAAKtIAAC4BdgV2WzDJqau1dnHgQ",
+    "telegram_message_ids": [
+      13219
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.93,
+    "original_url": "https://media.vidivo.me/video/20250331/70bce1781cca4dd491ae8f4b75deb3ca/cloudv-transfer/5555555516o58766555604652s36nnor_95d93262c9094cb0ac4606b981e39fb4_0_4.mp4?wsSecret=b9aeb891359afde21d15591445cef60f&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:15:50Z"
+  },
+  "dramaora_52024390680_44": {
+    "show_id": "dramaora_52024390680",
+    "show_title": "Queen of the Courtroom",
+    "episode_number": 44,
+    "telegram_message_id": 13220,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIzpGrsq8iylQ9mAAGIQVRIeaNKYCTuowACriAAAuAXYFdyRYICcpekqh4E",
+    "telegram_message_ids": [
+      13220
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.76,
+    "original_url": "https://media.vidivo.me/video/20250331/e706852378954214a8d7980688bd782e/cloudv-transfer/55555555p5r45r245556046548p9nnor_26a3aa3cf6f94a6eaa27ef0dfcace614_0_4.mp4?wsSecret=466d85981d5309f98ef53908f547726a&wsTime=1793901535",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04fb9d1019510007a0c88ec00000000.jpg",
+    "synopsis": "Elena was once a promising law student with a bright future, but she set aside her career aspirations to support her lover, Asher, in his startup, devoting herself to being his pillar of strength. She poured all her passion into their shared dream, hoping for a blissful future together. However, her selfless dedication was met with betrayal, as Zhao's repeated infidelity shattered her trust.\n\nDespite her deep love, Elena initially chose forgiveness, attempting to salvage their crumbling relationship. Yet, faced with unrepentant betrayal, she came to a hard realization: only by reclaiming herself could she find true freedom and purpose. Resolutely, she severed ties with Asher and embarked on a journey of rebirth.\n\nReturning to her legal roots, she rebuilt her career and crossed paths with a former senior who had long admired her. Though his renewed affection was sincere, Elena focused on her work, striving to fulfill the aspirations she once set aside. As she ascended the ranks and achieved professional excellence, Asher finally recognized what he had lost. But by then, Elena had transformed into the indomitable \"Queen of the Courtroom\", radiating strength and independence in her renewed life.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-05T16:16:10Z"
   }
 };
