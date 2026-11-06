@@ -47972,5 +47972,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
     "source": "dramaora",
     "backed_up_at": "2026-11-06T09:00:48Z"
+  },
+  "dramaora_52022002019_7": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 7,
+    "telegram_message_id": 13405,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0XWrt_9qbp72noE7_L5xcZE4RhtjDAAKnJgACd-JwVw6DS7-_ETpmHgQ",
+    "telegram_message_ids": [
+      13405
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.78,
+    "original_url": "https://media.vidivo.me/video/20260213/809c4442d7b24798a29ca777a551bb66/cloudv-transfer/55555555q95409725556p4653no65o10_e1f0c78232f4431896108d1c14501d2f_0_4.mp4?wsSecret=3074a26e3da92d2e40e4990b43477208&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:27:08Z"
+  },
+  "dramaora_52022002019_8": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 8,
+    "telegram_message_id": 13406,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0Xmrt__-pBNaWDr-OYIcn5VJQkreSAAKoJgACd-JwVyAX7I8jqQABxR4E",
+    "telegram_message_ids": [
+      13406
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.8,
+    "original_url": "https://media.vidivo.me/video/20260213/616e3d6e194e4f5faf9536b440114cb0/cloudv-transfer/5555555590nq98055556p465so685o10_1b8cb7a1e1b44adaa6b8586d392a54c9_0_4.mp4?wsSecret=87ba0f0116f543404e527b3bb04f31b8&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:27:45Z"
+  },
+  "dramaora_52022002019_9": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 9,
+    "telegram_message_id": 13407,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0X2ruAAEVRP3EBNobFzwBSi7BnFjhVQACqSYAAnficFfgbA8qLFVFch4E",
+    "telegram_message_ids": [
+      13407
+    ],
+    "total_parts": 1,
+    "file_size_mb": 26.38,
+    "original_url": "https://media.vidivo.me/video/20260213/ddf63ea0d3ac480fbfa1c0642ac686c2/cloudv-transfer/5555555581so4p6p5556p465r4395o10_3058d28716fa4905995a352c4b950122_0_4.mp4?wsSecret=4f0fd89defa132164f29786a9fede38e&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:28:07Z"
+  },
+  "dramaora_52022002019_10": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 10,
+    "telegram_message_id": 13408,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0YGruAAEnqND_DR7pqOGIlqP-cVBRoAACqiYAAnficFci_t_X7Q94sh4E",
+    "telegram_message_ids": [
+      13408
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.75,
+    "original_url": "https://media.vidivo.me/video/20260213/df3da59d4b964c10b250fd49808bd275/cloudv-transfer/5555555552o683pp5556p46582625o10_47db8079bba64f6f884ca23a26b1c5ec_0_4.mp4?wsSecret=64cb51973846a983b20c11c810cdf913&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:28:26Z"
+  },
+  "dramaora_52022002019_11": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 11,
+    "telegram_message_id": 13409,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0YWruAAE5a3aBMFjP3PvNKeHd0hh1ywACqyYAAnficFcxyayRcLBmCx4E",
+    "telegram_message_ids": [
+      13409
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.98,
+    "original_url": "https://media.vidivo.me/video/20260213/b4a51a3112004247ae6ceb3f05979480/cloudv-transfer/55555555p22ons655556p465q8p35o10_e51f64ce52ec40948633d5aecfe3d38f_0_4.mp4?wsSecret=3a7fb5ecc5abe56f251e32f1737dac08&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:28:44Z"
+  },
+  "dramaora_52022002019_12": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 12,
+    "telegram_message_id": 13410,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0YmruAAFLZQZoVS3GhBv3O5SeBQPI8AACrCYAAnficFd-nHeYwOhrKh4E",
+    "telegram_message_ids": [
+      13410
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.57,
+    "original_url": "https://media.vidivo.me/video/20260213/bd955df9f9bd497084f71bd6e5c9df76/cloudv-transfer/5555555578715s415556p465p01n5o10_8873013c332a4e79a897537e4de1170e_0_4.mp4?wsSecret=d5e2ff3328455f3c59f6a00d102f2e06&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:29:01Z"
+  },
+  "dramaora_52022002019_13": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 13,
+    "telegram_message_id": 13411,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0Y2ruAAFsTXrsTPlQ7s90nyxZ-uXBawACrSYAAnficFdmdk4Jak83qh4E",
+    "telegram_message_ids": [
+      13411
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.95,
+    "original_url": "https://media.vidivo.me/video/20260213/44b88af8d5e047cdaf8a3361e1627c1d/cloudv-transfer/5555555596q31q1n5556p465o2so5o10_493a9ea4cd5e4f4ba96abd124d97dea4_0_4.mp4?wsSecret=4b48e730ec00e1e568625de4e25883a6&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:29:35Z"
+  },
+  "dramaora_52022002019_14": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 14,
+    "telegram_message_id": 13412,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0ZGruAAF-8kjHuu5O3oYDMlFFPAwPIgACriYAAnficFf86O_Ks2vgqB4E",
+    "telegram_message_ids": [
+      13412
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.75,
+    "original_url": "https://media.vidivo.me/video/20260213/1ca4306b262443eea52d20609d312e48/cloudv-transfer/555555551o36r06p5556p4654s2q5o10_b08c30b1962c45a2a5a02e246101daac_0_4.mp4?wsSecret=cd054c3544678fc58e9644ffa2fdb14d&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:29:52Z"
+  },
+  "dramaora_52022002019_15": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 15,
+    "telegram_message_id": 13413,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0ZWruAAGRjV-9Lhiw8fmBneCjN4wKgQACryYAAnficFeV4o24J2u70R4E",
+    "telegram_message_ids": [
+      13413
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.75,
+    "original_url": "https://media.vidivo.me/video/20260213/9633ba6afcee40a0b8de787b1459dc6b/cloudv-transfer/5555555504os15p35556p465n1sr5o10_d28b315ef8834d70bd7fd4584ef58703_0_4.mp4?wsSecret=9e8d5f8f8678592d220b482af787631e&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:30:12Z"
+  },
+  "dramaora_52022002019_16": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 16,
+    "telegram_message_id": 13414,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0ZmruAAGjAo2cVrG8gGA8LxIsC76_jwACsCYAAnficFet6sFFJF3fMx4E",
+    "telegram_message_ids": [
+      13414
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.32,
+    "original_url": "https://media.vidivo.me/video/20260213/c80ac25a448249e9b91cbcf4fed081db/cloudv-transfer/5555555572116os55556p465s9ss5o10_8d0c90519da14d5396d34df734381304_0_4.mp4?wsSecret=50a9e78be38d415a8df02eb710199355&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:30:29Z"
+  },
+  "dramaora_52022002019_17": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 17,
+    "telegram_message_id": 13415,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0Z2ruAAG0XkaidKhi2yFgDCpgb7MwSwACsSYAAnficFfwJYZKvgmgkh4E",
+    "telegram_message_ids": [
+      13415
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.59,
+    "original_url": "https://media.vidivo.me/video/20260213/c5af18c46ee54c4b815d1562e2f9500b/cloudv-transfer/55555555p00183so5556p465r5566o10_7c506189ff3a4c04b9ba3a2bc2c6d4ef_0_4.mp4?wsSecret=4ad83de8dd57ada7feed1b68bb734b94&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:30:46Z"
+  },
+  "dramaora_52022002019_18": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 18,
+    "telegram_message_id": 13416,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0aGruAAHEdiraQHpQt6_podB1OgO8dgACsiYAAnficFfAElgGaWun6B4E",
+    "telegram_message_ids": [
+      13416
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.84,
+    "original_url": "https://media.vidivo.me/video/20260213/4df5af55d4824e4cae7beccc2c5cf35a/cloudv-transfer/55555555p4s0o9pp5556p46599676o10_5f3a16f1df964e50b853bb56dd3fcaed_0_4.mp4?wsSecret=1a4119e2b666a52cccb0bb2d5975c5c6&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:31:02Z"
+  },
+  "dramaora_52022002019_19": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 19,
+    "telegram_message_id": 13417,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0aWruAAHXD3iRxBvnSj1LK9M-HrBUUQACsyYAAnficFd4Q4FtoobbJx4E",
+    "telegram_message_ids": [
+      13417
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.17,
+    "original_url": "https://media.vidivo.me/video/20260213/a801d71473394f279e90c18415a7ed7c/cloudv-transfer/555555551so8s3r35556p4652p986o10_74ccdbe1d9c74276a81cf4d33ae67fda_0_4.mp4?wsSecret=a329a9c0d50883737beb668101dcce0d&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:31:21Z"
+  },
+  "dramaora_52022002019_20": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 20,
+    "telegram_message_id": 13418,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0amruAAHmn-x7V_L1GUFtB8JuykHVhQACtCYAAnficFe66olnZKbRlh4E",
+    "telegram_message_ids": [
+      13418
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.16,
+    "original_url": "https://media.vidivo.me/video/20260213/a9a845cf643b4206b77f42b0f7fd0305/cloudv-transfer/5555555506n6r5n55556p46520p96o10_75b73ab4e3bf4e569de388751ec4efa9_0_4.mp4?wsSecret=5feee63e52ba508cc93be086c600a8b6&wsTime=1793989611",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:31:37Z"
+  },
+  "dramaora_52022002019_21": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 21,
+    "telegram_message_id": 13419,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0a2ruAAH7UUXSV_2jHe6cMoagLeb5-wACtSYAAnficFevXfZHUAPEpR4E",
+    "telegram_message_ids": [
+      13419
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.96,
+    "original_url": "https://media.vidivo.me/video/20260213/3ea19396a71445acb77f618cbf78527a/cloudv-transfer/55555555544291s95556p46562716o10_a6c9ff5f9f9149d583d2844bd908e772_0_4.mp4?wsSecret=859e572d09c9dd3747d99cdc46999bd5&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:31:57Z"
+  },
+  "dramaora_52022002019_22": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 22,
+    "telegram_message_id": 13420,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0bGruARd7wERLRSAqcf1YdaqzjLcHAAK2JgACd-JwV-ZLnlxfniI6HgQ",
+    "telegram_message_ids": [
+      13420
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.89,
+    "original_url": "https://media.vidivo.me/video/20260213/7a81a1e617cb4b8dbcabf27ba8799250/cloudv-transfer/55555555o2455oqn5556p465nor26o10_af5272e8574247198be3550b913dc5a3_0_4.mp4?wsSecret=f9d862c58ae01c0ba60c37617d4b323d&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:32:25Z"
+  },
+  "dramaora_52022002019_23": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 23,
+    "telegram_message_id": 13421,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0bWruASkPKYH4zH0GlcQDgJcg4CrfAAK3JgACd-JwV2RzbeKSVNxZHgQ",
+    "telegram_message_ids": [
+      13421
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.29,
+    "original_url": "https://media.vidivo.me/video/20260213/ab7430d960ce445ca2a99efce1e6f954/cloudv-transfer/55555555648p7n665556p4651o246o10_ca106da00d5b4c7c86099c0441d1c8e3_0_4.mp4?wsSecret=4ea74811f71cf1b4b722dcee9547e3bd&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:32:43Z"
+  },
+  "dramaora_52022002019_24": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 24,
+    "telegram_message_id": 13422,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0bmruATyazQABZNeXBiw-XTncp8qwkwACuCYAAnficFfxfdNDs78l0B4E",
+    "telegram_message_ids": [
+      13422
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.01,
+    "original_url": "https://media.vidivo.me/video/20260213/7fa3ba60e6844b7aa48d1ff6b86a3515/cloudv-transfer/55555555n6323n715556p46562sn6o10_9432ea866b624bdcbfa1717a2f4b42ec_0_4.mp4?wsSecret=6191d658b3672e6c449657aa55c3c470&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:33:02Z"
+  },
+  "dramaora_52022002019_25": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 25,
+    "telegram_message_id": 13423,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0b2ruAU-718ZZf9JvPSTz-iEZkhI3AAK5JgACd-JwVwL81fraZ4DlHgQ",
+    "telegram_message_ids": [
+      13423
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.61,
+    "original_url": "https://media.vidivo.me/video/20260213/4964403986f447d3b8f488c4671b6cef/cloudv-transfer/55555555o4s2p7rr5556p465701p6o10_d66e6f5a112a4f7597f8fb61bbeaea7b_0_4.mp4?wsSecret=a11d27ed4d91c2c734b81d8ac55115e4&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:33:22Z"
+  },
+  "dramaora_52022002019_26": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 26,
+    "telegram_message_id": 13424,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0cGruAW0_VHabHzsprT9G4fdFwhhoAAK6JgACd-JwV38ipBrTjnjdHgQ",
+    "telegram_message_ids": [
+      13424
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.01,
+    "original_url": "https://media.vidivo.me/video/20260213/001fbff2a94248c7b5906623ff545bc2/cloudv-transfer/555555553ro1s4s05556p4656q4q6o10_95d99e1704414c93996997fed923a335_0_4.mp4?wsSecret=04089a9b77b549c69d73c17a03d26fc1&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:33:51Z"
+  },
+  "dramaora_52022002019_27": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 27,
+    "telegram_message_id": 13425,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0cWruAYF0Uwf-PrThC131f78XDjiTAAK7JgACd-JwV8jUApWH0C8nHgQ",
+    "telegram_message_ids": [
+      13425
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.05,
+    "original_url": "https://media.vidivo.me/video/20260213/6438518cb8514792bfc6f10c120d669f/cloudv-transfer/55555555412420425556p465128s6o10_22e2f3b7d784408a8450f3198a95b4c1_0_4.mp4?wsSecret=d6d626392c7377ab561ef8785bcfa912&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:34:11Z"
+  },
+  "dramaora_52022002019_28": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 28,
+    "telegram_message_id": 13426,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0cmruAZR8LPXFBda1hIY-DRSnU0e-AAK8JgACd-JwV8Wg-EVLG7NHHgQ",
+    "telegram_message_ids": [
+      13426
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.35,
+    "original_url": "https://media.vidivo.me/video/20260213/e9dbb1d7b06f4a2e959565a26d86def0/cloudv-transfer/55555555s4036o1s5556p465o6767o10_f53234aed7b54111b7fedc5822c6a570_0_4.mp4?wsSecret=d0bdc74655f0da24afe6e9784722b413&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:34:30Z"
+  },
+  "dramaora_52022002019_29": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 29,
+    "telegram_message_id": 13427,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0c2ruAaXYD3NAA6y8jsEidY8zaeYhAAK9JgACd-JwV-SMgGgrNnCRHgQ",
+    "telegram_message_ids": [
+      13427
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.07,
+    "original_url": "https://media.vidivo.me/video/20260213/af1b989e221d4ed39bb2110085230c43/cloudv-transfer/55555555773120s05556p465r0687o10_dc8a326cac1b4f92b82247cb06550af6_0_4.mp4?wsSecret=d33eb56c5c4d3134daaf6caa0814f80f&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:34:47Z"
+  },
+  "dramaora_52022002019_30": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 30,
+    "telegram_message_id": 13428,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0dGruAbabM2qyBjz4Y6TINF2GhuyKAAK-JgACd-JwV24CVRd-40GMHgQ",
+    "telegram_message_ids": [
+      13428
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.94,
+    "original_url": "https://media.vidivo.me/video/20260213/104084e873ca43f68797b92ed91c7ca1/cloudv-transfer/55555555530o805r5556p46587397o10_af7ead8f9a25467eb1b94129d7e94354_0_4.mp4?wsSecret=9ad34132fa253fead5afe95ef29ab474&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:35:05Z"
+  },
+  "dramaora_52022002019_31": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 31,
+    "telegram_message_id": 13429,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0dWruAc6OYCeEsUBhm_BepIcPuvYtAAK_JgACd-JwV1srIEpWsHtgHgQ",
+    "telegram_message_ids": [
+      13429
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.1,
+    "original_url": "https://media.vidivo.me/video/20260213/7b62ad6cf5eb4d58b304103af558b0ad/cloudv-transfer/55555555872155915556p4659no07o10_096004b1fe004445a875d7e2296fa99b_0_4.mp4?wsSecret=af2042ab83d35b35cb2eb4370cd4a74a&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:35:28Z"
+  },
+  "dramaora_52022002019_32": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 32,
+    "telegram_message_id": 13430,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0dmruAeH-5pbFZGvX16Vwxc6NOquTAALAJgACd-JwVyj9IMvA7hAtHgQ",
+    "telegram_message_ids": [
+      13430
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.72,
+    "original_url": "https://media.vidivo.me/video/20260213/8d42f55462b84dd8b9ff9720e2c6d2b2/cloudv-transfer/55555555qs52n9q85556p4655q327o10_1f7df9c47e7e40f48fc1d97813137ae3_0_4.mp4?wsSecret=886df37bfbd09db5da94be267767d08d&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:35:47Z"
+  },
+  "dramaora_52022002019_33": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 33,
+    "telegram_message_id": 13431,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0d2ruAfOFaLIpxC80ocpWr6-IF_9_AALBJgACd-JwVxNA-XBGkub-HgQ",
+    "telegram_message_ids": [
+      13431
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.18,
+    "original_url": "https://media.vidivo.me/video/20260213/466a381c9d9a410e83a6665ba7782f98/cloudv-transfer/555555550q53o4715556p46593747o10_c1c1177c842b42d7b51215f5937cae80_0_4.mp4?wsSecret=dbc41737d724f7bf149585d2e52554af&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:36:06Z"
+  },
+  "dramaora_52022002019_34": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 34,
+    "telegram_message_id": 13432,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0eGruAga1jMOZlyGAlYqLPfswCYnkAALCJgACd-JwV7aqc6zw_3-5HgQ",
+    "telegram_message_ids": [
+      13432
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.16,
+    "original_url": "https://media.vidivo.me/video/20260213/de9c44e5b07648fa85cbaf8d71896e3d/cloudv-transfer/55555555n57n21215556p4652n8o7o10_cf4d919539664c65a39a5c6d9f1d0abd_0_4.mp4?wsSecret=52fa6ed1c5e4ffc4f8d2f35453126c88&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:36:24Z"
+  },
+  "dramaora_52022002019_35": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 35,
+    "telegram_message_id": 13433,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0eWruAhc2p2vyIo6ecGSCyYOpdulBAALDJgACd-JwV3HUIFROA0nIHgQ",
+    "telegram_message_ids": [
+      13433
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.17,
+    "original_url": "https://media.vidivo.me/video/20260213/1a8f55d3a7c94773b627b806db161101/cloudv-transfer/555555551q0206395556p4653snp7o10_d16e231e6f884876ac466902b09054b5_0_4.mp4?wsSecret=1a55ed1a004150970a95ce2e2909151f&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:36:41Z"
+  },
+  "dramaora_52022002019_36": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 36,
+    "telegram_message_id": 13434,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0emruAicVO_dmPB9dHtwX5x_QeiLsAALEJgACd-JwVzCMoXVe5SVPHgQ",
+    "telegram_message_ids": [
+      13434
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.28,
+    "original_url": "https://media.vidivo.me/video/20260213/9019ce6ae9ac42d9a95c33da30464e27/cloudv-transfer/5555555515rs25795556p465s4rq7o10_4cf385f0af704b749d267e111c5b4d48_0_4.mp4?wsSecret=44663794e7ba5b4e86589a4b4f1c955c&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:36:57Z"
+  },
+  "dramaora_52022002019_37": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 37,
+    "telegram_message_id": 13435,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0e2ruAjoET0V4GujehYHgpNZ14IDTAALFJgACd-JwV0cTVhJfWCk4HgQ",
+    "telegram_message_ids": [
+      13435
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.46,
+    "original_url": "https://media.vidivo.me/video/20260213/d206d923f21f408ba9a86cf7ab24c51e/cloudv-transfer/555555559o7806445556p465726s7o10_5bf59f6587ec46fe9ac0cf8aa42f7fb2_0_4.mp4?wsSecret=02a07b0902ad4d3ba689b90778945d9b&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:37:16Z"
+  },
+  "dramaora_52022002019_38": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 38,
+    "telegram_message_id": 13436,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0fGruAk_Naaldbc_8Fy8RLe0nDmozAALGJgACd-JwV9MBlYhciP1LHgQ",
+    "telegram_message_ids": [
+      13436
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.63,
+    "original_url": "https://media.vidivo.me/video/20260213/1a17d62c7fad4c7bb6470543f6746bdb/cloudv-transfer/55555555sqnrs9rp5556p465r4058o10_3e2d4eee84c24487b1f6bb0415176c3c_0_4.mp4?wsSecret=ca3a97c082f6cc31017417f878726254&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:37:37Z"
+  },
+  "dramaora_52022002019_39": {
+    "show_id": "dramaora_52022002019",
+    "show_title": "Cherished Love After Rebirth",
+    "episode_number": 39,
+    "telegram_message_id": 13437,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0fWruAmjgaH_eeqNRI5tebxc6ZJd2AALHJgACd-JwV_criCPcErCFHgQ",
+    "telegram_message_ids": [
+      13437
+    ],
+    "total_parts": 1,
+    "file_size_mb": 23.07,
+    "original_url": "https://media.vidivo.me/video/20260213/a78c81fbec904897a279bca48b3ce88c/cloudv-transfer/5555555555o53rs55556p46501878o10_df0027b79dc0475199aa7fedce03c082_0_4.mp4?wsSecret=0727a54dfcf9d76ceef2c6d44334b097&wsTime=1793989612",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260213/56ab5662019c1000e611add000000000.jpg",
+    "synopsis": "F Group's heiress Fann Fendal is reborn to the day of her parents' funeral. In her previous life, her most trusted lover and her sister colluded to murder her parents, seize her family fortune, and throw her into the deep sea. This time, she has returned for revenge. She will reclaim everything and shine brighter once again. At the funeral, billionaire Ian Somberland suddenly appears, stepping forward to protect her... This time, she is not fighting alone!",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:38:03Z"
+  },
+  "dramaora_52023336905_1": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 1,
+    "telegram_message_id": 13438,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0fmruAoD_-ZKwV6VD6viQU-Msze3IAALIJgACd-JwV2w89nbyOARkHgQ",
+    "telegram_message_ids": [
+      13438
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.31,
+    "original_url": "https://media.vidivo.me/video/20260126/161a63e356114f4989b660eb14667a4c/cloudv-transfer/55555555492o904s5556o4653154n03s_f4fe904e585a4e0080a188da1462b040_0_4.mp4?wsSecret=965b4fb2cf4ddcd9bd871abb77d64579&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:38:26Z"
+  },
+  "dramaora_52023336905_2": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 2,
+    "telegram_message_id": 13439,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0f2ruApFNNGJ4KrNxc2JR9udG6MwJAALJJgACd-JwVxcNZW0wxuQdHgQ",
+    "telegram_message_ids": [
+      13439
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.87,
+    "original_url": "https://media.vidivo.me/video/20260126/1b312bbcd13f4bf7915794a891579d1a/cloudv-transfer/55555555oqqo86np5556o4656n6sn03s_bf0cbd8d81c34e6cb9283e5765d2ab06_0_4.mp4?wsSecret=cb5b26a8ef153c4532f1503cf0104fef&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:38:44Z"
+  },
+  "dramaora_52023336905_3": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 3,
+    "telegram_message_id": 13440,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0gGruAqNteY861iioaK1JbfekkoNCAALKJgACd-JwV62vbIyChacfHgQ",
+    "telegram_message_ids": [
+      13440
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.65,
+    "original_url": "https://media.vidivo.me/video/20260126/14293d3373d445279ecba6d5cb48323d/cloudv-transfer/555555559no139475556o4653p89o03s_7cef4e54eb22446aa852b55ef34d8169_0_4.mp4?wsSecret=f0a798736f0ee598dce1f63f896c0a40&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:39:01Z"
+  },
+  "dramaora_52023336905_4": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 4,
+    "telegram_message_id": 13441,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0gWruArYTgPiwy08wP4DMMGgEco-8AALLJgACd-JwV8TeyfPAF27cHgQ",
+    "telegram_message_ids": [
+      13441
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.83,
+    "original_url": "https://media.vidivo.me/video/20260126/67ac9fbe5e614aacafd0a3c7ad38ed08/cloudv-transfer/555555551oo7nsp45556o465s4sno03s_ee5d2d9a0dc7438081b383a6ff37ccfa_0_4.mp4?wsSecret=7d030819081f74b7dbe68ca39573ebad&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:39:21Z"
+  },
+  "dramaora_52023336905_5": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 5,
+    "telegram_message_id": 13442,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0gmruAskNaonZN3vl8aokixKYR0ZbAALMJgACd-JwVy2M3hqQZ7UtHgQ",
+    "telegram_message_ids": [
+      13442
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.46,
+    "original_url": "https://media.vidivo.me/video/20260126/3c653248acc9417a90d7c926a20705cf/cloudv-transfer/55555555q9q840o35556o4655936p03s_76f41774650d46ea93004a5994b054bb_0_4.mp4?wsSecret=81fbfe58d7e25dd465cadd0d447a0d74&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:39:40Z"
+  },
+  "dramaora_52023336905_6": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 6,
+    "telegram_message_id": 13443,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0g2ruAt7z0CuKAYYVXf45crPc5nA1AALOJgACd-JwV9HJJHWLtVtnHgQ",
+    "telegram_message_ids": [
+      13443
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.26,
+    "original_url": "https://media.vidivo.me/video/20260126/a113a32eeeaa4aa9bf430330cda7dbb4/cloudv-transfer/55555555os413ssr5556o465s910p03s_3c0b8370d44149f7b81c5d591c4eefd4_0_4.mp4?wsSecret=442812ff4af549becdd6872526a334a8&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:40:00Z"
+  },
+  "dramaora_52023336905_7": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 7,
+    "telegram_message_id": 13444,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0hGruAvPxsiFkfKIIonjofiEggX-RAALPJgACd-JwV6KfEkbEPqjOHgQ",
+    "telegram_message_ids": [
+      13444
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.13,
+    "original_url": "https://media.vidivo.me/video/20260126/3df40563f6af4e6f85c53b539cc74c47/cloudv-transfer/555555551238029n5556o4657qsop03s_9190d8733a1246cda3a1887048a61468_0_4.mp4?wsSecret=8b0e9de058e17914ae823e4f906138b7&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:40:21Z"
+  },
+  "dramaora_52023336905_8": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 8,
+    "telegram_message_id": 13445,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0hWruAwWKWbhjeOo9Ddh30UKlTx_1AALQJgACd-JwV3UpY2r2jlImHgQ",
+    "telegram_message_ids": [
+      13445
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.82,
+    "original_url": "https://media.vidivo.me/video/20260126/cbdf79524e7b451aa5c64e2f110ecbf1/cloudv-transfer/555555553pr482r05556o465s988q03s_8a78c9634a02453f8d5c3d9486259b7b_0_4.mp4?wsSecret=f35cd16b778bcbd17bb08c1d93c9a7c2&wsTime=1793990286",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:40:39Z"
+  },
+  "dramaora_52023336905_9": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 9,
+    "telegram_message_id": 13446,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0hmruAxbVTdJJLRe_q6vrmp8xmeLSAALRJgACd-JwV8yfWfG7hrWFHgQ",
+    "telegram_message_ids": [
+      13446
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.59,
+    "original_url": "https://media.vidivo.me/video/20260126/e8200bd6855c4c8c8a9fab88216fa161/cloudv-transfer/555555557s2o29445556o465n00nq03s_310e2ce6f6b04de9a9185cce8387e051_0_4.mp4?wsSecret=a452a612adf6b6f49370a0765af0ca71&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:40:57Z"
+  },
+  "dramaora_52023336905_10": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 10,
+    "telegram_message_id": 13447,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0h2ruAyvJI3SQtgEFX08YiZEjSOcUAALSJgACd-JwV40HQrUol0vQHgQ",
+    "telegram_message_ids": [
+      13447
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.57,
+    "original_url": "https://media.vidivo.me/video/20260126/13355bc7778b430789421f52e57fbbc8/cloudv-transfer/55555555rrspn4p55556o465pp17r03s_84931c6c30414dde95c640f59fa36e03_0_4.mp4?wsSecret=704f56150a93ece00d608b3a386f4a03&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:41:18Z"
+  },
+  "dramaora_52023336905_11": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 11,
+    "telegram_message_id": 13448,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0iGruA0HL6TYUcK7BQQABYggZBtIMmgAC0yYAAnficFePcBH52NITVB4E",
+    "telegram_message_ids": [
+      13448
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.08,
+    "original_url": "https://media.vidivo.me/video/20260126/a088f2aa2ed54d428635e1aec2edbbc7/cloudv-transfer/555555552q1s8nr25556o4652qs3r03s_12266ba2c1ed45078aadf60086837192_0_4.mp4?wsSecret=390de5810f9c86b0a8c6cd2c6d179fb0&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:41:39Z"
+  },
+  "dramaora_52023336905_12": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 12,
+    "telegram_message_id": 13449,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0iWruA1Pn9swJfyDD7Mx9VokOKzRUAALUJgACd-JwV2Jow98bwMmDHgQ",
+    "telegram_message_ids": [
+      13449
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.69,
+    "original_url": "https://media.vidivo.me/video/20260126/2bb62f18daed425cad29c25dfc6e17fa/cloudv-transfer/555555555s6sq21q5556o4655pnsr03s_ca1db6383f11487d8258c66f594ff875_0_4.mp4?wsSecret=098adc64a8f9005a7121679eee3e909a&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:41:57Z"
+  },
+  "dramaora_52023336905_13": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 13,
+    "telegram_message_id": 13450,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0imruA2NHMILMgt-HHFznb94e1RsKAALVJgACd-JwV2UyqKZsICQvHgQ",
+    "telegram_message_ids": [
+      13450
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.95,
+    "original_url": "https://media.vidivo.me/video/20260126/1b5e7823a84346c791283ea27e9320bf/cloudv-transfer/55555555071943n75556o4657p91s03s_a789e38f9c704c43b1ef743b3c750687_0_4.mp4?wsSecret=df4230fe78559605f491e8345537c582&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:42:13Z"
+  },
+  "dramaora_52023336905_14": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 14,
+    "telegram_message_id": 13451,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0i2ruA3IJdFsy9ezzfXGy0q9IsUvyAALWJgACd-JwV2iaMi1s4t_uHgQ",
+    "telegram_message_ids": [
+      13451
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.22,
+    "original_url": "https://media.vidivo.me/video/20260126/e7d905e5d5394d198ff7f3328bc642f5/cloudv-transfer/5555555511r9r25r5556o4651n5qs03s_08f5c75353bc4f1faedeff7542477887_0_4.mp4?wsSecret=930807432b7c6c90dfe00de2e197d385&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:42:29Z"
+  },
+  "dramaora_52023336905_15": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 15,
+    "telegram_message_id": 13452,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0jGruA4Upi-EaiCxDF51WSDvsZ4VWAALXJgACd-JwVxChYqhzr9XcHgQ",
+    "telegram_message_ids": [
+      13452
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.87,
+    "original_url": "https://media.vidivo.me/video/20260126/f1882806cd73411a8dd9a625980de868/cloudv-transfer/55555555p45r0p9o5556o465p3p8513s_130aecbb53db43df85d8633f7d0cd1ea_0_4.mp4?wsSecret=bb700f754d32d9ebe79ddf930c115af8&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:42:47Z"
+  },
+  "dramaora_52023336905_16": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 16,
+    "telegram_message_id": 13453,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0jWruA5cUX0jKopuQWy336FLC8BfJAALYJgACd-JwV970SO9_G5obHgQ",
+    "telegram_message_ids": [
+      13453
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.31,
+    "original_url": "https://media.vidivo.me/video/20260126/f21f8766de6340c2a398ec6bf38de4f8/cloudv-transfer/55555555pqopro0n5556o4654o0n513s_3cd43e406d164ff19c1bd7e418b95df8_0_4.mp4?wsSecret=75d3d1f90c09f534f06d4c6925e2e77c&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:43:06Z"
+  },
+  "dramaora_52023336905_17": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 17,
+    "telegram_message_id": 13454,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0jmruA6m0p8oYKp46mfRWgbFcGpUSAALZJgACd-JwVxVBTjRzMn05HgQ",
+    "telegram_message_ids": [
+      13454
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.14,
+    "original_url": "https://media.vidivo.me/video/20260126/74eab420d8b244b4838c587d995eecb6/cloudv-transfer/55555555n55n5r425556o46552n8613s_401d2d8715fa4e168d78f97a4bd7a69b_0_4.mp4?wsSecret=7277e40a18032f0034b66ac08bfa2b59&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:43:23Z"
+  },
+  "dramaora_52023336905_18": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 18,
+    "telegram_message_id": 13455,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0j2ruA77HRbUSi6mWMqAMykjWz7EtAALaJgACd-JwV3_xqFdCU0LqHgQ",
+    "telegram_message_ids": [
+      13455
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.46,
+    "original_url": "https://media.vidivo.me/video/20260126/a1f35279b4454619943b83021ebf305b/cloudv-transfer/555555550pn61p505556o46536s3613s_31be782e68f54b35b2ae98eb2f5576c2_0_4.mp4?wsSecret=e2f5127741a4d5646a79ec6524cb2800&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:43:44Z"
+  },
+  "dramaora_52023336905_19": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 19,
+    "telegram_message_id": 13456,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0kGruA9DvLlp--aTMUzEt4ZtIM9_lAALbJgACd-JwV9fF-29eCjeVHgQ",
+    "telegram_message_ids": [
+      13456
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.48,
+    "original_url": "https://media.vidivo.me/video/20260126/ad6592cec27e4768b75a163b90f2d4e4/cloudv-transfer/5555555588ssp8s25556o465974s613s_be433917b27a48fda12fb69973e3d77e_0_4.mp4?wsSecret=e2998aa2c8c4dcaab2a4a95baa87ca96&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:44:03Z"
+  },
+  "dramaora_52023336905_20": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 20,
+    "telegram_message_id": 13457,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0kWruA-VCiPDfAAHbDHcOnmv3abWnBQAC3CYAAnficFf67paovkwF4R4E",
+    "telegram_message_ids": [
+      13457
+    ],
+    "total_parts": 1,
+    "file_size_mb": 30.7,
+    "original_url": "https://media.vidivo.me/video/20260126/c5960177e3114a53ad693407b0b75dac/cloudv-transfer/55555555o408q79o5556o4656o81713s_0f5845d955114f8fac2a3fdbed7f4bad_0_4.mp4?wsSecret=72614e1a26d02109985aee4191bc610f&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:44:25Z"
+  },
+  "dramaora_52023336905_21": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 21,
+    "telegram_message_id": 13458,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0kmruA_zNVbmBHyQ9hp3YTcWTnkhOAALdJgACd-JwV9nEO8UI2fAgHgQ",
+    "telegram_message_ids": [
+      13458
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.82,
+    "original_url": "https://media.vidivo.me/video/20260126/3b1d1073c7404b2895339bc64d80fe2a/cloudv-transfer/5555555508p3o1rs5556o46534pp713s_838427467d974e659d6e0f75e7dcbb5c_0_4.mp4?wsSecret=7aeb9d47709322427e95ff4ba57822ee&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:44:46Z"
+  },
+  "dramaora_52023336905_22": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 22,
+    "telegram_message_id": 13459,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0k2ruBBMJiQYUNTcMPp1meJTQ4ot0AALeJgACd-JwVxkyi0hTaYmLHgQ",
+    "telegram_message_ids": [
+      13459
+    ],
+    "total_parts": 1,
+    "file_size_mb": 23.92,
+    "original_url": "https://media.vidivo.me/video/20260126/9ea16c2441ac4987859e7ebfa712c3e6/cloudv-transfer/55555555982q43385556o465o9s8813s_e474f0bbaffc4d24877f78ede319a9a3_0_4.mp4?wsSecret=d56446d3ec733befe83c60130186de71&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:45:09Z"
+  },
+  "dramaora_52023336905_23": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 23,
+    "telegram_message_id": 13460,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0lGruBCSbO73zAAF4ObzdVlqOKEm18AAC3yYAAnficFcYKpKLK67a8h4E",
+    "telegram_message_ids": [
+      13460
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.66,
+    "original_url": "https://media.vidivo.me/video/20260126/a4d078e5ced1426eb08576d72dfb3e64/cloudv-transfer/55555555962n17p45556o465n43n813s_58480af40c9c4555ac33e8be0c4892a1_0_4.mp4?wsSecret=cf00305d797df2052c3112d05346c778&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:45:27Z"
+  },
+  "dramaora_52023336905_24": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 24,
+    "telegram_message_id": 13461,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0lWruBDZlVtC6P_XJ3EuvIyFzM6bhAALgJgACd-JwV6Uyk2UJEi1IHgQ",
+    "telegram_message_ids": [
+      13461
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.93,
+    "original_url": "https://media.vidivo.me/video/20260126/4a7208547bea4076b603d7eb7fae81f9/cloudv-transfer/55555555q8r6r53q5556o4658q35913s_42bdfa6e889443ec96ddb18ddeda83ab_0_4.mp4?wsSecret=1fd9dd3b7589eee1b7d219775e35533b&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:45:45Z"
+  },
+  "dramaora_52023336905_25": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 25,
+    "telegram_message_id": 13462,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0lmruBEgvCR7T7xE3ZAWVIprGXXLXAALhJgACd-JwV1aJIQkvJ9KhHgQ",
+    "telegram_message_ids": [
+      13462
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.36,
+    "original_url": "https://media.vidivo.me/video/20260126/ac35c365132e47f588c3d2ba731c2560/cloudv-transfer/5555555509p583265556o4659778913s_d6c5ec4ffe9244d3badbf31c199f0036_0_4.mp4?wsSecret=6e6037ea6cdfddc3c21f19ebca6f724d&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:46:02Z"
+  },
+  "dramaora_52023336905_26": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 26,
+    "telegram_message_id": 13463,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0l2ruBFk6y4srj3SrmmO_LJNcRET8AALiJgACd-JwV4XE7Z7ResweHgQ",
+    "telegram_message_ids": [
+      13463
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.76,
+    "original_url": "https://media.vidivo.me/video/20260126/100fa3c6cc494762a1e159126ba3f905/cloudv-transfer/55555555qs85r6375556o465qnn0913s_5b3cb4f0d7c940bd8ab33ea1cb895a1e_0_4.mp4?wsSecret=6591b4fc56071687132a69f6b2540fad&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:46:19Z"
+  },
+  "dramaora_52023336905_27": {
+    "show_id": "dramaora_52023336905",
+    "show_title": "The Business Titan's Return in Redemption",
+    "episode_number": 27,
+    "telegram_message_id": 13464,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0mGruBGpeubkjJrLD2zmC85Rq8bSvAALjJgACd-JwV0k_zQkGe5qSHgQ",
+    "telegram_message_ids": [
+      13464
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.68,
+    "original_url": "https://media.vidivo.me/video/20260126/37529b4f0fcd40e9aefa3e0434274e3b/cloudv-transfer/55555555828203265556o46528o2913s_65a04ad0934746c5a84ef875fba6b886_0_4.mp4?wsSecret=69accc9db1db7e78ef2c21daf0830834&wsTime=1793990287",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260124/ef7b52da019b10007a7f516600000000.jpg",
+    "synopsis": "After Shaw Group's oversea collapse, the head of the house, Nick, investigates abroad while entrusting domestic affairs to his prodigal son, Zack—a hidden genius who truly revives the empire.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T16:46:37Z"
   }
 };
