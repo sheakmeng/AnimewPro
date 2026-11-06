@@ -45932,5 +45932,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
     "source": "dramaora",
     "backed_up_at": "2026-11-05T21:59:53Z"
+  },
+  "dramaora_52022186323_57": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 57,
+    "telegram_message_id": 13283,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz42rtOd_tmznqCmJE5FdgzDkoxRE8AAJiIQAC4BdoV88miP-EAAH2qh4E",
+    "telegram_message_ids": [
+      13283
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.73,
+    "original_url": "https://media.vidivo.me/video/20250331/e3c048e99abf450ea34d8d7cc06177cd/cloudv-transfer/55555555865q348n5556046534rn12pr_02046ebf41c24d529f7084c19766f047_0_4.mp4?wsSecret=c655024acc1d09fa086b4e4091fedf24&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:22:26Z"
+  },
+  "dramaora_52022186323_58": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 58,
+    "telegram_message_id": 13284,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz5GrtOfBCdiB-L59Mi6BLXIIDowABSQACYyEAAuAXaFd6opjTQdefVh4E",
+    "telegram_message_ids": [
+      13284
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.25,
+    "original_url": "https://media.vidivo.me/video/20250331/e980d10b1a3446b68d5fc3d10bec0562/cloudv-transfer/5555555503o8q51r555604652r5r12pr_17d94bc675d54eff92e257a12b0fd11b_0_4.mp4?wsSecret=d1054083e3930a4bf7a4ac9e4d2145f4&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:22:43Z"
+  },
+  "dramaora_52022186323_59": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 59,
+    "telegram_message_id": 13285,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz5WrtOgHYx_-S0V_rkojloy772WznAAJkIQAC4BdoV3-clj9k_NSyHgQ",
+    "telegram_message_ids": [
+      13285
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.43,
+    "original_url": "https://media.vidivo.me/video/20250331/0415f035997749939cb6e61d1958fcee/cloudv-transfer/55555555118on27r5556046500s522pr_805842a39ba24d0d88e97207d337c8a7_0_4.mp4?wsSecret=358e7fc7d54e3e338f77f41a658ef00b&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:22:59Z"
+  },
+  "dramaora_52022186323_60": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 60,
+    "telegram_message_id": 13286,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz5mrtOhYsdJOZK-aYiWnQPG4bX-oqAAJmIQAC4BdoV2CHTZAE1OCIHgQ",
+    "telegram_message_ids": [
+      13286
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.29,
+    "original_url": "https://media.vidivo.me/video/20250331/dde432b1d9674d47a12f7d98539050cc/cloudv-transfer/55555555020so54955560465185922pr_067e150506254724a6af60a04fa31929_0_4.mp4?wsSecret=fcd49170354b217b5b66826678b31123&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:23:20Z"
+  },
+  "dramaora_52022186323_61": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 61,
+    "telegram_message_id": 13287,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz52rtOi6LJNbURpBWUgpyq3gClQ7SAAJoIQAC4BdoV-BgyHzMJxF9HgQ",
+    "telegram_message_ids": [
+      13287
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.75,
+    "original_url": "https://media.vidivo.me/video/20250331/e7d8f75ef76940f98e716b8b27fcd53f/cloudv-transfer/55555555qno83nrr55560465rrs122pr_773ce6b92a86441fb14535a3ac4e2714_0_4.mp4?wsSecret=9efe6abcea996989128433d7f6e82f6d&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:23:44Z"
+  },
+  "dramaora_52022186323_62": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 62,
+    "telegram_message_id": 13288,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz6GrtOkMJbnGPaEj7s5voHrkDT7VOAAJpIQAC4BdoV5oCHLKoYMkmHgQ",
+    "telegram_message_ids": [
+      13288
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.37,
+    "original_url": "https://media.vidivo.me/video/20250331/1a1daf99775c470d8ab1cc5949ba8551/cloudv-transfer/555555559o87254p55560465q5s422pr_eadff898d53642c588a053a91f00062d_0_4.mp4?wsSecret=e9742a191f105c65075f8f4a99e42a97&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:24:05Z"
+  },
+  "dramaora_52022186323_63": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 63,
+    "telegram_message_id": 13289,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz6WrtOmF2g2LH7LJZzKuWPW6pc4pxAAJqIQAC4BdoV4xfM5_cBSHTHgQ",
+    "telegram_message_ids": [
+      13289
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.79,
+    "original_url": "https://media.vidivo.me/video/20250331/52a09df4b3534f59bbf8d38a23345d23/cloudv-transfer/55555555s9rrnp7p5556046586rp22pr_22a33bf55a204a1ba7d8c8b0ef4c906b_0_4.mp4?wsSecret=8d649b7a53912938986fa63c86e69814&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:24:35Z"
+  },
+  "dramaora_52022186323_64": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 64,
+    "telegram_message_id": 13290,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz6mrtOn9tOSTHcsuYhCvM5BlHSIdCAAJrIQAC4BdoV0qZ2kw1Z_E-HgQ",
+    "telegram_message_ids": [
+      13290
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.08,
+    "original_url": "https://media.vidivo.me/video/20250331/336169d3bbbe49e6ba9f2371557895fb/cloudv-transfer/555555551qn718on55560465236532pr_25257a17766247929fe70d51cfd8e3f3_0_4.mp4?wsSecret=5c07dc9419bf1b4d3c42b9b11fd94df2&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:25:05Z"
+  },
+  "dramaora_52022186323_65": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 65,
+    "telegram_message_id": 13291,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz62rtOpUNvPieqX_VujjdkalbHFtQAAJsIQAC4BdoV9Wo3PTBHF2YHgQ",
+    "telegram_message_ids": [
+      13291
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.34,
+    "original_url": "https://media.vidivo.me/video/20250331/2669348cb1204cbc83496bbd789a1973/cloudv-transfer/555555553no3qn9n555604653p0832pr_756ce34184a04408a433904300945440_0_4.mp4?wsSecret=51977cc66487bbc1faaf8ef5e1e26d80&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:25:27Z"
+  },
+  "dramaora_52022186323_66": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 66,
+    "telegram_message_id": 13292,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz7GrtOqpBVyllqJs5KKayyC7YQ8dOAAJtIQAC4BdoV_4_pxJTXolFHgQ",
+    "telegram_message_ids": [
+      13292
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.05,
+    "original_url": "https://media.vidivo.me/video/20250331/00852c5e52594d2a902eb578dbb4aec4/cloudv-transfer/555555553p73on76555604650r5132pr_3b0da33bb3564445a90439c8ffb5cf54_0_4.mp4?wsSecret=cd006087f79d03e3e4f14afc3743d8c5&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:25:48Z"
+  },
+  "dramaora_52022186323_67": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 67,
+    "telegram_message_id": 13293,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz7WrtOsPVvzzr0nhE9afvFfjLDnrcAAJuIQAC4BdoVyaDgqS2gz5lHgQ",
+    "telegram_message_ids": [
+      13293
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.99,
+    "original_url": "https://media.vidivo.me/video/20250331/7154bd68a3db49188b0abcc5c41bb78e/cloudv-transfer/555555553r0nq3p055560465221432pr_3477e7269b43407e954c687228c06690_0_4.mp4?wsSecret=13e408349cc4142f79152aaa93627b8d&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:26:13Z"
+  },
+  "dramaora_52022186323_68": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 68,
+    "telegram_message_id": 13294,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz7mrtOuDcri2AHqXOLqgdiQwkypzXAAJvIQAC4BdoV01dxVpyD6xFHgQ",
+    "telegram_message_ids": [
+      13294
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.63,
+    "original_url": "https://media.vidivo.me/video/20250331/86e9f8a5f43d46e5915af5230f266115/cloudv-transfer/55555555o8661209555604654rpo32pr_3e406032ddeb45889d0f3620c6a5ef06_0_4.mp4?wsSecret=ff48c1ebbf6a6bd0cfe2e14272a59a3b&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:26:42Z"
+  },
+  "dramaora_52022186323_69": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 69,
+    "telegram_message_id": 13295,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz72rtOvOylmufWkpYZy1Q3l22TyG3AAJxIQAC4BdoV3ftXV3RNXNNHgQ",
+    "telegram_message_ids": [
+      13295
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.56,
+    "original_url": "https://media.vidivo.me/video/20250331/42bf9f9a3d2a4dfab92c00b40d61e12c/cloudv-transfer/555555559r1521n2555604651n0s32pr_e976c34c9fd3492ab72fd29318c96c48_0_4.mp4?wsSecret=65e8f971dac5776f390dbb92a2cbbefe&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:27:01Z"
+  },
+  "dramaora_52022186323_70": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 70,
+    "telegram_message_id": 13296,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz8GrtOw9fN3LFLf1K6t-dZXdwMuAjAAJyIQAC4BdoV__gXfDa5oiSHgQ",
+    "telegram_message_ids": [
+      13296
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.49,
+    "original_url": "https://media.vidivo.me/video/20250331/79d15bd54c2c4627b1eb48ee0feaefb7/cloudv-transfer/555555557or95r3255560465890742pr_463bacba803146c891786da3372ec2d1_0_4.mp4?wsSecret=e4b99652b8e82d8bae941b711940c97c&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:27:29Z"
+  },
+  "dramaora_52022186323_71": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 71,
+    "telegram_message_id": 13297,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz8WrtOyLEKB7h40qldzWystqFUfVHAAJzIQAC4BdoV3bLbjoYzdOMHgQ",
+    "telegram_message_ids": [
+      13297
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.59,
+    "original_url": "https://media.vidivo.me/video/20250331/2118bc3acce24b99917aace9836c6ce7/cloudv-transfer/5555555586q11o8855560465361042pr_13e8179419814e629262a3beff56f506_0_4.mp4?wsSecret=984f320f4d66b0222118027536a440e2&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:27:48Z"
+  },
+  "dramaora_52022186323_72": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 72,
+    "telegram_message_id": 13298,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz8mrtOzth148ieZIKcthVKzi_-tIPAAJ0IQAC4BdoV_mMNyh5TezyHgQ",
+    "telegram_message_ids": [
+      13298
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.03,
+    "original_url": "https://media.vidivo.me/video/20250331/5b06ea9c23f345b0b78ed51cdaf6afd3/cloudv-transfer/55555555s7s85q4355560465122342pr_3a1affba25694eaaa28cad07b740a445_0_4.mp4?wsSecret=5e96ddbe404c0ed9f3bd661c9397481f&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:28:13Z"
+  },
+  "dramaora_52022186323_73": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 73,
+    "telegram_message_id": 13299,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz82rtO1Pg6ZqshStpawvnB8RkPBMOAAJ1IQAC4BdoVxk5h0Q1kbj8HgQ",
+    "telegram_message_ids": [
+      13299
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.36,
+    "original_url": "https://media.vidivo.me/video/20250331/72277011d4be4ce2ab73fdef61fe8d55/cloudv-transfer/555555551r0365785556046548np42pr_f0c2e35b1e3d4f59aeaaf33b7f44b342_0_4.mp4?wsSecret=4d3c4c1d454e6784f4bafa8c223c80f1&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:28:37Z"
+  },
+  "dramaora_52022186323_74": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 74,
+    "telegram_message_id": 13300,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz9GrtO3CdgNs7w8IWkmR1rfuM2ombAAJ2IQAC4BdoVwbDeErZzgvAHgQ",
+    "telegram_message_ids": [
+      13300
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.24,
+    "original_url": "https://media.vidivo.me/video/20250331/562f7110e17d4cab82e637b67d691489/cloudv-transfer/55555555sp3985235556046515rs42pr_458412eb99954ac58aa839d63b8f37b8_0_4.mp4?wsSecret=592cde09c7d7fcba876b09248a774044&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:29:06Z"
+  },
+  "dramaora_52022186323_75": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 75,
+    "telegram_message_id": 13301,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz9WrtO4KtH_hUfcYdE0ksN6rpLcdvAAJ3IQAC4BdoV97s88Pj_LsFHgQ",
+    "telegram_message_ids": [
+      13301
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.33,
+    "original_url": "https://media.vidivo.me/video/20250331/1b7aabccf05d4df0b2edfce14bd83c09/cloudv-transfer/555555551osop7o755560465osp7n2pr_c4c3b9f5437a41aab39fab1f798ef308_0_4.mp4?wsSecret=e6d5e8c5daab4e419f2a777db82ffb00&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:29:25Z"
+  },
+  "dramaora_52022186323_76": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 76,
+    "telegram_message_id": 13302,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz9mrtO5m06SVNTyILuXCGT5UV-YQxAAJ4IQAC4BdoV7w3ytmYDVfUHgQ",
+    "telegram_message_ids": [
+      13302
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.33,
+    "original_url": "https://media.vidivo.me/video/20250331/ac25e34e39404f7c89340305181d0f90/cloudv-transfer/5555555501q4r32p55560465q050n2pr_d4aa921afa8a4f218b4bfa3e69cbd637_0_4.mp4?wsSecret=5fa98d0206aa514fd66c3dc2da2c7744&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:29:47Z"
+  },
+  "dramaora_52022186323_77": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 77,
+    "telegram_message_id": 13303,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz92rtO6yPhjuOGGgVyvtX8i-Z03aCAAJ5IQAC4BdoV2C5fTUrXf-BHgQ",
+    "telegram_message_ids": [
+      13303
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.8,
+    "original_url": "https://media.vidivo.me/video/20250331/de3da901146f408f8097ae1f9a69e960/cloudv-transfer/55555555717r4s2255560465o4q2n2pr_37cef9f569e845d989eb2cb9307e8954_0_4.mp4?wsSecret=ad29cd79c9eee18fe7aa88fcecc9fe56&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:30:06Z"
+  },
+  "dramaora_52022186323_78": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 78,
+    "telegram_message_id": 13304,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz-GrtO7_Xns4_v1ft2AOAmGBRzf_6AAJ6IQAC4BdoV4ZIq77t5RttHgQ",
+    "telegram_message_ids": [
+      13304
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.53,
+    "original_url": "https://media.vidivo.me/video/20250331/c6539034184048009687459c7ca988e6/cloudv-transfer/55555555250134q555560465np5pn2pr_02844a2f822c43089202a4ede555450e_0_4.mp4?wsSecret=728bf7be03a9c24d9b84b9c7c60b3eb6&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:30:26Z"
+  },
+  "dramaora_52022186323_79": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 79,
+    "telegram_message_id": 13305,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz-WrtO9SsSjc1G1TGvawzvKdhfXBCAAJ8IQAC4BdoVzxAB4K_-pETHgQ",
+    "telegram_message_ids": [
+      13305
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.93,
+    "original_url": "https://media.vidivo.me/video/20250331/cd05c9817e25473a8a7322f0749d88d4/cloudv-transfer/555555556qq87o70555604654s6sn2pr_fd9de491607f45168d3ecc5d06e96d5c_0_4.mp4?wsSecret=7ae3850bbdecb16d5063e95ffe2e7378&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:30:46Z"
+  },
+  "dramaora_52022186323_80": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 80,
+    "telegram_message_id": 13306,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz-mrtO-essme_PmTznVyIKp-EWV0jAAJ9IQAC4BdoV2RpOG8z4DPsHgQ",
+    "telegram_message_ids": [
+      13306
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.99,
+    "original_url": "https://media.vidivo.me/video/20250331/ddc6e0d2bda34c428c5523c8dca9321b/cloudv-transfer/5555555514o664n8555604657147o2pr_6bb2a0c73a0b4b07b6aa7c26bbc17f3a_0_4.mp4?wsSecret=3a15c5df4ef69ba72c5a39abfa9e509b&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:31:05Z"
+  },
+  "dramaora_52022186323_81": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 81,
+    "telegram_message_id": 13307,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz-2rtPBGVuSdy0YlHzAxPGB2Z0cgjAAJ-IQAC4BdoV91ibEw5jxaqHgQ",
+    "telegram_message_ids": [
+      13307
+    ],
+    "total_parts": 1,
+    "file_size_mb": 25.03,
+    "original_url": "https://media.vidivo.me/video/20250331/a317071cde314dfaa86f86a47a691a7d/cloudv-transfer/55555555s57p6os0555604650q51o2pr_de03840d2b134048b3bf1cf0add10233_0_4.mp4?wsSecret=ce65617384a619eb6fd27fe5f4076d9b&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:31:47Z"
+  },
+  "dramaora_52022186323_82": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 82,
+    "telegram_message_id": 13308,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz_GrtPCXN6Z8McVnthrx2JY4C6d1mAAJ_IQAC4BdoV5_DCcGqrxD_HgQ",
+    "telegram_message_ids": [
+      13308
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.02,
+    "original_url": "https://media.vidivo.me/video/20250331/28f764a9485646808550b712735540a1/cloudv-transfer/5555555599o9spp855560465n97oo2pr_dde4c4c524564d8db8b5f8406046c75d_0_4.mp4?wsSecret=7d195641950294929feb1750b713a8d1&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:32:07Z"
+  },
+  "dramaora_52022186323_83": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 83,
+    "telegram_message_id": 13309,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz_WrtPDo0HuJoXAf4vFAoQX6DXZcHAAKAIQAC4BdoV-cBUy7B3AHtHgQ",
+    "telegram_message_ids": [
+      13309
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.38,
+    "original_url": "https://media.vidivo.me/video/20250331/6a77e892ee6e4f28985ecaf3ee6e954e/cloudv-transfer/55555555p7sr810o555604657ppqo2pr_54ad6a02cbf8465ba47b174f1f664259_0_4.mp4?wsSecret=7ef1d426b419cd924f9e79e4720b10c3&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:32:28Z"
+  },
+  "dramaora_52022186323_84": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 84,
+    "telegram_message_id": 13310,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz_mrtPEhjhqHGAZJUOReeLP234ZmdAAKCIQAC4BdoV415IhERFPh-HgQ",
+    "telegram_message_ids": [
+      13310
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.08,
+    "original_url": "https://media.vidivo.me/video/20250331/605754599f2944f4b2f91ef24d241708/cloudv-transfer/555555550qpr5pro55560465q8q5p2pr_957f016204a545eaab4cf360c9109608_0_4.mp4?wsSecret=b22f1be2fd781e14ec12a35c272464e8&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:32:43Z"
+  },
+  "dramaora_52022186323_85": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 85,
+    "telegram_message_id": 13311,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAIz_2rtPFzFyMQPqISLEH-0-z_oE2baAAKDIQAC4BdoV_2BaCR4Gx42HgQ",
+    "telegram_message_ids": [
+      13311
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.85,
+    "original_url": "https://media.vidivo.me/video/20250331/7e6ad59b6344441bb72bbb2071d206fe/cloudv-transfer/55555555n236041o55560465ps48p2pr_21b92d0214884cde987db8174c1b2001_0_4.mp4?wsSecret=36eea145ba1af9ab230e79afbd83b771&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:33:02Z"
+  },
+  "dramaora_52022186323_86": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 86,
+    "telegram_message_id": 13312,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0AAFq7Txw0mWD2OrPNabHwde_9U3RQAAChCEAAuAXaFfNOCSYt26e2h4E",
+    "telegram_message_ids": [
+      13312
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.92,
+    "original_url": "https://media.vidivo.me/video/20250331/0f7206d3a01648f6923f324deb0b768c/cloudv-transfer/55555555864sq7925556046597s1p2pr_1812ffa910d349c48da65df71abb0331_0_4.mp4?wsSecret=b76ce3161842072133594d302dbb16f3&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:33:23Z"
+  },
+  "dramaora_52022186323_87": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 87,
+    "telegram_message_id": 13313,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0AWrtPIUTz23pfsJlbQuJnRYbGo-DAAKFIQAC4BdoV_cIFTWBeKw8HgQ",
+    "telegram_message_ids": [
+      13313
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.08,
+    "original_url": "https://media.vidivo.me/video/20250331/2d097513cfa946c090834f1dd4a04b99/cloudv-transfer/55555555q627140q555604657o2np2pr_6485ea594f4c4a7bbebdc0009bd474d9_0_4.mp4?wsSecret=13382ae65a875bf7d4f71ce589f10038&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:33:43Z"
+  },
+  "dramaora_52022186323_88": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 88,
+    "telegram_message_id": 13314,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0AmrtPJqZH4bcUJ9AoHugi6pYYlziAAKGIQAC4BdoV1xv1R0TYRRTHgQ",
+    "telegram_message_ids": [
+      13314
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.82,
+    "original_url": "https://media.vidivo.me/video/20250331/1b95fcc2693647d0b330452c430dcdd3/cloudv-transfer/55555555onno828955560465603qp2pr_be7135c1e16748c9b9b0172fab72b78f_0_4.mp4?wsSecret=916d64bc5772b132a5403866c6f39a0c&wsTime=1793938925",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:34:04Z"
+  },
+  "dramaora_52022186323_89": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 89,
+    "telegram_message_id": 13315,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0A2rtPKu4PAZLu0pwFuKRJ4SahUdcAAKHIQAC4BdoV3-Z0mStI7v8HgQ",
+    "telegram_message_ids": [
+      13315
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.07,
+    "original_url": "https://media.vidivo.me/video/20250331/cad24899915740c0a7eb699c19733c74/cloudv-transfer/55555555prs0r83155560465p3rsp2pr_b6a3e0bf2e2240ddbada719b81e3055e_0_4.mp4?wsSecret=9d22292fd35618391a6148dd8b65ebdd&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:34:22Z"
+  },
+  "dramaora_52022186323_90": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 90,
+    "telegram_message_id": 13316,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0BGrtPL9_P6PG9N75ts1ka5EbQ1RmAAKIIQAC4BdoV2FyFP5CV-0iHgQ",
+    "telegram_message_ids": [
+      13316
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.48,
+    "original_url": "https://media.vidivo.me/video/20250331/2f4c96fc95db427a87dcef264778a998/cloudv-transfer/55555555748o9nq55556046553o7q2pr_42c48b250da04af3bec9a5e88585c1cb_0_4.mp4?wsSecret=d7ee9246a04840ce5a7a3863ee4b341e&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:34:41Z"
+  },
+  "dramaora_52022186323_91": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 91,
+    "telegram_message_id": 13317,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0BWrtPNXat5YeVOxackLt0c0uvpX-AAKJIQAC4BdoV71wtKcMLzMeHgQ",
+    "telegram_message_ids": [
+      13317
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.3,
+    "original_url": "https://media.vidivo.me/video/20250331/0f2d33d5618e477c9d0453b5da2edf2f/cloudv-transfer/555555558n4n343355560465o1n0q2pr_15800e93e1c74b99a0acaa7d993b610c_0_4.mp4?wsSecret=4e3d901d3fbbf6bb9671e273971ef5df&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:35:03Z"
+  },
+  "dramaora_52022186323_92": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 92,
+    "telegram_message_id": 13318,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0BmrtPOohq0cWzwABFZs86N6nA_R77wACiiEAAuAXaFfMLcG1nVDxQh4E",
+    "telegram_message_ids": [
+      13318
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.76,
+    "original_url": "https://media.vidivo.me/video/20250331/a7916b78ff9b4259874d420e8d994e6f/cloudv-transfer/555555555q91924r555604658313q2pr_1a6acf8c58004c088a62c9c0a6c687eb_0_4.mp4?wsSecret=6d2be06759d6d202fe683d4d9089e5a1&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:35:24Z"
+  },
+  "dramaora_52022186323_93": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 93,
+    "telegram_message_id": 13319,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0B2rtPPsOJE7Vok1cr8UBlbkb6YLmAAKLIQAC4BdoV8ymnxxRjdRYHgQ",
+    "telegram_message_ids": [
+      13319
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.91,
+    "original_url": "https://media.vidivo.me/video/20250331/c494f0c14e1747798c3b64b83c67ee1b/cloudv-transfer/5555555530848s07555604658n4oq2pr_3a5a1890bf5b4361ba5b7ec7ab929631_0_4.mp4?wsSecret=cc946d71c7506bda196dc3a0675ab10a&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:35:41Z"
+  },
+  "dramaora_52022186323_94": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 94,
+    "telegram_message_id": 13320,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0CGrtPRCwwL-P3rxd2Ros0GkTkoO3AAKMIQAC4BdoV6WC0_aI6ltTHgQ",
+    "telegram_message_ids": [
+      13320
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.99,
+    "original_url": "https://media.vidivo.me/video/20250331/c2a3006388d542bbad22318e990a5db5/cloudv-transfer/55555555r77ooq6955560465nqprq2pr_b37878681ab74be289614d6ffe345b62_0_4.mp4?wsSecret=31091ee6ec565c6a09266b90892a4f1d&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:36:02Z"
+  },
+  "dramaora_52022186323_95": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 95,
+    "telegram_message_id": 13321,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0CWrtPSfWZV_gv-KJ5i6GwDOCJYruAAKNIQAC4BdoV4_LFnfoxubNHgQ",
+    "telegram_message_ids": [
+      13321
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.29,
+    "original_url": "https://media.vidivo.me/video/20250331/5f216294fc1c499f904cec33a9c20f17/cloudv-transfer/55555555o5s2o13s555604653o57r2pr_a983dcb33d0c4d1a86be3369a5e8d4ba_0_4.mp4?wsSecret=7a3afb2c4de13aa4de12a1ff6d322eef&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:36:25Z"
+  },
+  "dramaora_52022186323_96": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 96,
+    "telegram_message_id": 13322,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0CmrtPTwtPrOX9hfU6xcojZetoEnFAAKPIQAC4BdoV5CtI0NIgaffHgQ",
+    "telegram_message_ids": [
+      13322
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.98,
+    "original_url": "https://media.vidivo.me/video/20250331/ce4d072674ef41ceadb714e7d6ab8683/cloudv-transfer/55555555o0909641555604653q39r2pr_2c60cbd970a040feac802b190f03631d_0_4.mp4?wsSecret=320dc624e41403a265ab26ef75be5d2d&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:36:46Z"
+  },
+  "dramaora_52022186323_97": {
+    "show_id": "dramaora_52022186323",
+    "show_title": "Suffocating love",
+    "episode_number": 97,
+    "telegram_message_id": 13323,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0C2rtPVJTwUaNPaDCASvkKJkuqJ9TAAKQIQAC4BdoV0WeHgLWfOU3HgQ",
+    "telegram_message_ids": [
+      13323
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.63,
+    "original_url": "https://media.vidivo.me/video/20250331/1a3d4db676614eefb785186c3f92c632/cloudv-transfer/55555555r1123n835556046531r2r2pr_ce1ee4111c9c41828a3c438edf2fcdca_0_4.mp4?wsSecret=e29771c9a741a80a25ddc005e7529589&wsTime=1793938926",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f053eaf601951000142d065200000000.jpg",
+    "synopsis": "Wendy has been tirelessly searching for her missing lover, but the amnesia caused by a car accident prevents her from recalling his face. Then, her adoptive brother, Zane, appears, speaking with a familiar tone and claiming he will protect her. Convinced she has found her long-lost love, her certainty is shattered when Ryan, the CEO of the Chen Corporation, suddenly shows up. Zane is forced to jump from a building, and the Zhou family is engulfed in scandal. Trapped like a caged bird, Wendy desperately seeks her true lover, only to discover that the familiar tenderness she craves has been with her all along.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:37:08Z"
+  },
+  "dramaora_52022184597_1": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 1,
+    "telegram_message_id": 13324,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0DGrtPWcfWkx96QRs6q7hXwRmV_P-AAKRIQAC4BdoV6ZoW_bYCfWtHgQ",
+    "telegram_message_ids": [
+      13324
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.93,
+    "original_url": "https://media.vidivo.me/video/20250331/ec16312031884bf2a58d4032a15c6edb/cloudv-transfer/5555555528sn0s1o555604655s205qor_50a3d659354e4fd78093e5952a830b7e_0_4.mp4?wsSecret=30bc1def8526e49c852bc6940cefe4fa&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:37:29Z"
+  },
+  "dramaora_52022184597_2": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 2,
+    "telegram_message_id": 13325,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0DWrtPX8gnZKZNcoLTjIKkRb3rQyVAAKVIQAC4BdoV8kBU70vTdycHgQ",
+    "telegram_message_ids": [
+      13325
+    ],
+    "total_parts": 1,
+    "file_size_mb": 25.0,
+    "original_url": "https://media.vidivo.me/video/20250331/adf1fd1e44564a3abaff8de23119e11d/cloudv-transfer/5555555589q9s80455560465s4s25qor_2a643b620ced4e4c8fc813480934c8cd_0_4.mp4?wsSecret=3a75c4524a2029df0d987e63496b7bf7&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:37:53Z"
+  },
+  "dramaora_52022184597_3": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 3,
+    "telegram_message_id": 13326,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0DmrtPZdeqVBpQPTRFddNel1MegqNAAKYIQAC4BdoV9lzfgLQuyuHHgQ",
+    "telegram_message_ids": [
+      13326
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.2,
+    "original_url": "https://media.vidivo.me/video/20250331/063a2ccab7774a7e953a0c5ca017a87e/cloudv-transfer/55555555ros529p6555604656nsn5qor_ddfa49df1f574e659a46af0de97d2a47_0_4.mp4?wsSecret=a3679d7966ab0eb94f3bd18d6ee1aa52&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:38:17Z"
+  },
+  "dramaora_52022184597_4": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 4,
+    "telegram_message_id": 13327,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0D2rtPbI8ByfAmOEDIZY-t5aHvRnsAAKaIQAC4BdoVweWIa1HQ6yOHgQ",
+    "telegram_message_ids": [
+      13327
+    ],
+    "total_parts": 1,
+    "file_size_mb": 25.59,
+    "original_url": "https://media.vidivo.me/video/20250331/d2e08ecd820146f49b3b9668775d3827/cloudv-transfer/555555550223476655560465p4rq5qor_2402b1b200eb4097b5ec6249cbed53c0_0_4.mp4?wsSecret=d38ea5cc6ee0e0a5c4ff75473491f485&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:38:44Z"
+  },
+  "dramaora_52022184597_5": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 5,
+    "telegram_message_id": 13328,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0EGrtPcXO2h-EykkM6U9d6n4L4O9aAAKbIQAC4BdoV4YtqHtb3iYHHgQ",
+    "telegram_message_ids": [
+      13328
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.58,
+    "original_url": "https://media.vidivo.me/video/20250331/a9fe0b1df5134520b1ba128c55ecc691/cloudv-transfer/555555553r3qono25556046559s56qor_107c7c24cb534bc2aec8f0d162dd9f0d_0_4.mp4?wsSecret=83efc59d5507213b96fa30af3ee99613&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:39:04Z"
+  },
+  "dramaora_52022184597_6": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 6,
+    "telegram_message_id": 13329,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0EWrtPdv6KHeG-c45gkwpfArvWcXrAAKdIQAC4BdoVz5ght22lDgQHgQ",
+    "telegram_message_ids": [
+      13329
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.58,
+    "original_url": "https://media.vidivo.me/video/20250331/7ffda68250c24185a438394082cdb858/cloudv-transfer/555555557q69687555560465o6176qor_d290a1212b6b4286a3b197f7afa883e7_0_4.mp4?wsSecret=cfded1ddb29b3bac3ffeae6bfc9b45e8&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:39:25Z"
+  },
+  "dramaora_52022184597_7": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 7,
+    "telegram_message_id": 13330,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0EmrtPfVCAUOCWlYDbd2A_NsVnlu1AAKeIQAC4BdoVxYLpxzGrh7nHgQ",
+    "telegram_message_ids": [
+      13330
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.47,
+    "original_url": "https://media.vidivo.me/video/20250331/533f7ec801754f56898904b08cc04ad5/cloudv-transfer/5555555587ono2s65556046543906qor_3004f64f48f441dfb39091c2a30b9911_0_4.mp4?wsSecret=caa7187da29d7b1ece81a6bc07e71d76&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:39:51Z"
+  },
+  "dramaora_52022184597_8": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 8,
+    "telegram_message_id": 13331,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0E2rtPgtdwZLOGJE2zSW7Mdx0byJ7AAKfIQAC4BdoV95q5NIWsVQuHgQ",
+    "telegram_message_ids": [
+      13331
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.33,
+    "original_url": "https://media.vidivo.me/video/20250331/5639434886ac4935be4e3ff9cce99203/cloudv-transfer/55555555pr6r42ss55560465qq536qor_b783f4ca8e1c4db18f7c3c0b788de64c_0_4.mp4?wsSecret=686c97c739c7784ec127ca21e1af7ced&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:40:14Z"
+  },
+  "dramaora_52022184597_9": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 9,
+    "telegram_message_id": 13332,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0FGrtPh1rdrkRgIrh1y5jbp2YIrXIAAKhIQAC4BdoV66zXRkQKlO9HgQ",
+    "telegram_message_ids": [
+      13332
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.68,
+    "original_url": "https://media.vidivo.me/video/20250331/260b94ed137c4444aea3c185bf1fd97e/cloudv-transfer/55555555qoqr80rr5556046578446qor_00d1179846664bd79e517bdc997396af_0_4.mp4?wsSecret=c24edd2782da67305ae3f5ea8071ebf1&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:40:31Z"
+  },
+  "dramaora_52022184597_10": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 10,
+    "telegram_message_id": 13333,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0FWrtPjU-P547UhZVDdUvY6kFSt9sAAKkIQAC4BdoV0piCTH9xFdCHgQ",
+    "telegram_message_ids": [
+      13333
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.79,
+    "original_url": "https://media.vidivo.me/video/20250331/f95624d01e0e44a3b867616603f57645/cloudv-transfer/555555558072r4ss5556046506qn6qor_2a152beacc6642989fc0ff48c42f73b8_0_4.mp4?wsSecret=c3f62fb2b42ee18f0d0854335442fc4d&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:40:55Z"
+  },
+  "dramaora_52022184597_11": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 11,
+    "telegram_message_id": 13334,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0FmrtPkwp5ZpYl7n83y_WRwwQGM7uAAKlIQAC4BdoVwMu4KA3pdJ1HgQ",
+    "telegram_message_ids": [
+      13334
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.15,
+    "original_url": "https://media.vidivo.me/video/20250331/9feeb4e2f4dc4e3ba4d69b3fbc53fdae/cloudv-transfer/555555555qr7rr8q55560465ro4q6qor_bbf4b2bb3653428da227c19b17766364_0_4.mp4?wsSecret=b8dd5f6c0a02a375d819143978def81c&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:41:18Z"
+  },
+  "dramaora_52022184597_12": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 12,
+    "telegram_message_id": 13335,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0F2rtPmOC1TmCDQy8VWoEV8M2Gk-MAAKmIQAC4BdoV4Xt0EHX3X5UHgQ",
+    "telegram_message_ids": [
+      13335
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.81,
+    "original_url": "https://media.vidivo.me/video/20250331/de8127edfbcf48e2a3f7fc8882f4f4f1/cloudv-transfer/5555555517rqn43155560465qn057qor_4d74552a25c6456eae3b8e169b8ed348_0_4.mp4?wsSecret=58d526e6ea808ddb322a67d18cd32ab9&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:41:41Z"
+  },
+  "dramaora_52022184597_13": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 13,
+    "telegram_message_id": 13336,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0GGrtPne4PqkNPmT-2wql6gTGbEqoAAKnIQAC4BdoVw4hfT-6ix2DHgQ",
+    "telegram_message_ids": [
+      13336
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.58,
+    "original_url": "https://media.vidivo.me/video/20250331/af15a7d40a684ecda65a0461bf333a3d/cloudv-transfer/555555550n6nrrp255560465q2o77qor_50ebbfd5e9e14976ab4445ede3244be1_0_4.mp4?wsSecret=9b5323d8df206f8a2bd4c130e4aeb1e9&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:42:01Z"
+  },
+  "dramaora_52022184597_14": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 14,
+    "telegram_message_id": 13337,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0GWrtPpF2vTepx15lsDUsmXWImx7JAAKoIQAC4BdoV5WLCxbmnx-NHgQ",
+    "telegram_message_ids": [
+      13337
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.59,
+    "original_url": "https://media.vidivo.me/video/20250331/4c3abc63511e4688852587a7b1bd6893/cloudv-transfer/555555550pn5nqn6555604655q707qor_c1e07f92ca4a42b09a40a9bcde7877ef_0_4.mp4?wsSecret=2b07e0adea14349b06ccfb524cee7958&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:42:27Z"
+  },
+  "dramaora_52022184597_15": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 15,
+    "telegram_message_id": 13338,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0GmrtPqaiVCTxht-dXHMDsJ2TI-PJAAKrIQAC4BdoV2_x9MtmC8OfHgQ",
+    "telegram_message_ids": [
+      13338
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.14,
+    "original_url": "https://media.vidivo.me/video/20250331/270992a1a5c7473187521fd9f60940c0/cloudv-transfer/55555555n22n60pn555604654s337qor_0d7068db0d4a41eca1565224aa47f9ce_0_4.mp4?wsSecret=0175f30c6e42822663b0060eea5426a8&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:42:48Z"
+  },
+  "dramaora_52022184597_16": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 16,
+    "telegram_message_id": 13339,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0G2rtPrroKDYmdI2FYv4QPro9sMyUAAKsIQAC4BdoV-OyrrQvWr5rHgQ",
+    "telegram_message_ids": [
+      13339
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.11,
+    "original_url": "https://media.vidivo.me/video/20250331/f493ea3646a5456cab36c9f3a55727f4/cloudv-transfer/55555555089068r75556046570po7qor_8acf0066a9ee48588dba8fb8b2836a4b_0_4.mp4?wsSecret=e36524a8ad08e410cc32730c2d39297a&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:43:08Z"
+  },
+  "dramaora_52022184597_17": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 17,
+    "telegram_message_id": 13340,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0HGrtPtAL26QpFzRGtI82g7axxWYkAAKtIQAC4BdoV1gB4lBhvGSDHgQ",
+    "telegram_message_ids": [
+      13340
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.72,
+    "original_url": "https://media.vidivo.me/video/20250331/c062c123fd2348beb0143b55bef7bfbc/cloudv-transfer/55555555op4609n85556046522nr7qor_a86afc7749d74acb9509f876200c786b_0_4.mp4?wsSecret=a524c8a6672f3ac0bc632a432b9e6320&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:43:31Z"
+  },
+  "dramaora_52022184597_18": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 18,
+    "telegram_message_id": 13341,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0HWrtPuKq4OAewIodxOxlGhm3mAxyAAKvIQAC4BdoVxPbNt2VhAIRHgQ",
+    "telegram_message_ids": [
+      13341
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.77,
+    "original_url": "https://media.vidivo.me/video/20250331/6755a063d9fa4664bbf27ccdfcfe06d7/cloudv-transfer/55555555p231179555560465onn68qor_02374d6f4dac4c2dbffae5683836b9a9_0_4.mp4?wsSecret=b299792e61597ac27760d5576188da6a&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:43:48Z"
+  },
+  "dramaora_52022184597_19": {
+    "show_id": "dramaora_52022184597",
+    "show_title": "The Fox Spirit's Revenge",
+    "episode_number": 19,
+    "telegram_message_id": 13342,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI0HmrtPvpk5zsPsY4zuI1dVhD3wbMAA7AhAALgF2hXSf6PUgbAbgseBA",
+    "telegram_message_ids": [
+      13342
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.2,
+    "original_url": "https://media.vidivo.me/video/20250331/dcc8bc5a209f411894724da4fcb1f5ec/cloudv-transfer/555555558qnrnn1n5556046503r88qor_6f969b5776d94e2cbd034a5a74dd93aa_0_4.mp4?wsSecret=7d931bc2e9df78e47ec0841d25c94a67&wsTime=1793939833",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f05719e201951000ce72133300000000.jpg",
+    "synopsis": "Devastated by the tragic destruction of her family, Su Dan seeks release through suicide, unwittingly awakening the lingering spirit of Daji. Determined to wield the sword of vengeance for Su Dan, Daji reincarnates within her body, using her unparalleled allure to manipulate three men: Du Tianlin—husband of Gu Yi, Gu Jiucheng—her son, and Mr. Huang—Gu Yi's lover, turning them all into pawns under her control.  \nIn a battle of seduction and wits, Su Dan and Gu Yi engage in an intense rivalry for dominance over the men in their lives. Gu Yi, desperate to protect her position, resorts to extreme measures but falls deeper into the intricate traps set by Su Dan. Ultimately, Su Dan's meticulously executed revenge leaves Gu Yi disgraced, exiled from her former world, and utterly alone.  \nHowever, in this tale fueled by hatred, even victory feels hollow—there are no true winners in a war of vengeance.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-06T02:44:12Z"
   }
 };
