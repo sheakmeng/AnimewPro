@@ -54092,5 +54092,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
     "source": "dramaora",
     "backed_up_at": "2026-11-07T19:28:05Z"
+  },
+  "dramaora_52026009705_26": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 26,
+    "telegram_message_id": 13771,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1y2rvsGrNuMg6fJk1rsteSxNAZwUIAAJfIgACd-KAV1tBNjnXItwyHgQ",
+    "telegram_message_ids": [
+      13771
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.7,
+    "original_url": "https://media.vidivo.me/video/20251020/c2768a61456a4bc98bf73b19387b3741/cloudv-transfer/55555555n2502q56555644655op2q1ss_a22865684d3146a290a65320539fbfd8_0_4.mp4?wsSecret=71ba2eca02716dd3f9263cc0215e0407&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:12:44Z"
+  },
+  "dramaora_52026009705_27": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 27,
+    "telegram_message_id": 13772,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1zGrvsIRrF8F-Ox4iuRcmOuVR5iSqAAJgIgACd-KAV4DYjOcqzU3fHgQ",
+    "telegram_message_ids": [
+      13772
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.36,
+    "original_url": "https://media.vidivo.me/video/20251020/9b5c52ba8bb242b08a59b49ac6eb51f2/cloudv-transfer/5555555547rs4q37555644655np3q1ss_8ea2d004849c4ae4a3408b736844f965_0_4.mp4?wsSecret=ae6bd1c739a0a72646e3352842b2fd38&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:13:10Z"
+  },
+  "dramaora_52026009705_28": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 28,
+    "telegram_message_id": 13773,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1zWrvsJZMJXPzxXJrzFbFXyW6Z0PhAAJhIgACd-KAV_5aIxjH3lObHgQ",
+    "telegram_message_ids": [
+      13773
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.2,
+    "original_url": "https://media.vidivo.me/video/20251020/55c934dc2560467b9a02727d8c20e2e0/cloudv-transfer/55555555p4o8q12355564465q25nq1ss_bb8c132cb1f940beb904844b571668f0_0_4.mp4?wsSecret=abc8414a9e7555109d5ce90ef81b7ca8&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:13:28Z"
+  },
+  "dramaora_52026009705_29": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 29,
+    "telegram_message_id": 13774,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1zmrvsKZF6IchG938Ip7-ttGFIt_dAAJiIgACd-KAV9ySBV_9gpFGHgQ",
+    "telegram_message_ids": [
+      13774
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.06,
+    "original_url": "https://media.vidivo.me/video/20251020/be70fa27b17946559e8b70796e7ea6eb/cloudv-transfer/5555555599186so35556446564snq1ss_3b4c09beb1184c8e908533a3f0c3e006_0_4.mp4?wsSecret=c0c0c9e58e20b553e9e1acc21f04a3c5&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:13:44Z"
+  },
+  "dramaora_52026009705_30": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 30,
+    "telegram_message_id": 13775,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1z2rvsL5KX4u7gWej7xdg1Z2lksG_AAJjIgACd-KAV22Eq-L0PF0oHgQ",
+    "telegram_message_ids": [
+      13775
+    ],
+    "total_parts": 1,
+    "file_size_mb": 23.8,
+    "original_url": "https://media.vidivo.me/video/20251020/d7b1744ee2c24bed97c48626f0b256b3/cloudv-transfer/55555555104pr2n055564465p1soq1ss_6cf0886f757a4c29865f92f34f9679e9_0_4.mp4?wsSecret=bf407aba1d1114806999a397414d53fe&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:14:09Z"
+  },
+  "dramaora_52026009705_31": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 31,
+    "telegram_message_id": 13776,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI10GrvsNAUlhxD-QFnH01ZYOoS5ouEAAJkIgACd-KAV5TUb0N-Z0QEHgQ",
+    "telegram_message_ids": [
+      13776
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.98,
+    "original_url": "https://media.vidivo.me/video/20251020/f919ca0dd7aa4d35bb2137c413e4b7df/cloudv-transfer/55555555210029p455564465n69qq1ss_be8b61613cf94ac78494ca44c6e6d24d_0_4.mp4?wsSecret=c577fa9ab6803d7871bc4778b7e2ddda&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:14:26Z"
+  },
+  "dramaora_52026009705_32": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 32,
+    "telegram_message_id": 13777,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI10WrvsOLGsJaI9yi5EehJhsgb9wWJAAJlIgACd-KAV3pABie1bfEkHgQ",
+    "telegram_message_ids": [
+      13777
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.25,
+    "original_url": "https://media.vidivo.me/video/20251020/6d878a37e39d4656ba1674e07c3b7621/cloudv-transfer/55555555on1055n655564465on2rq1ss_279a4975246e46658528c63db38e1493_0_4.mp4?wsSecret=1b2c38450b24da941b955cb043386644&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:14:45Z"
+  },
+  "dramaora_52026009705_33": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 33,
+    "telegram_message_id": 13778,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI10mrvsPOg_NzfJRxXMvENROiUQmfkAAJmIgACd-KAV9K7i0wiRgwzHgQ",
+    "telegram_message_ids": [
+      13778
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.49,
+    "original_url": "https://media.vidivo.me/video/20251020/be68e99da7224bf898d70b4ce74c8ee6/cloudv-transfer/55555555pqor8o4955564465078sq1ss_d1b511b1a6c645d1b4b0e988fef5e774_0_4.mp4?wsSecret=f761d86c7d0426a10e477a3c3f6f43f4&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:15:02Z"
+  },
+  "dramaora_52026009705_34": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 34,
+    "telegram_message_id": 13779,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI102rvsQV2r-q7EDZ64uYVOpICwQaPAAJnIgACd-KAV2Qfvc_PT_AZHgQ",
+    "telegram_message_ids": [
+      13779
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.01,
+    "original_url": "https://media.vidivo.me/video/20251020/e083364a38ff4a02b86fa81d7a504787/cloudv-transfer/555555555nr741n655564465pp85r1ss_396b0e68175d40e49ae664b9ab0b5846_0_4.mp4?wsSecret=4b515103932b73d15e880a40750afb0c&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:15:19Z"
+  },
+  "dramaora_52026009705_35": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 35,
+    "telegram_message_id": 13780,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI11GrvsRfMujDu6EWPWWYBGuZzkPcdAAJoIgACd-KAVx2rhMVC5wqTHgQ",
+    "telegram_message_ids": [
+      13780
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.9,
+    "original_url": "https://media.vidivo.me/video/20251020/7fc5a0cca07e4364bdcc57f628cfc319/cloudv-transfer/555555558qos69sq555644656r76r1ss_897203b2adfa458a9b467d8b3050b4b5_0_4.mp4?wsSecret=ea427fb6ea9d343b34ad5e767f42026e&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:15:38Z"
+  },
+  "dramaora_52026009705_36": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 36,
+    "telegram_message_id": 13781,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI11WrvsS45mmrAte5u01zt2BTwvIePAAJpIgACd-KAV7LQOsCzeWzAHgQ",
+    "telegram_message_ids": [
+      13781
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.0,
+    "original_url": "https://media.vidivo.me/video/20251020/0afd8d7d4d284934b4f726a7341f124c/cloudv-transfer/55555555p23n327p55564465s7n7r1ss_caa80f89c38d45fa9bad845b29640d72_0_4.mp4?wsSecret=be913a4337f0132b163ad51f4efe14c4&wsTime=1794100343",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:16:01Z"
+  },
+  "dramaora_52026009705_37": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 37,
+    "telegram_message_id": 13782,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI11mrvsUCfrpUOP2v5ubp7Awzj21PwAAJqIgACd-KAV3oIN2WQAAF6xB4E",
+    "telegram_message_ids": [
+      13782
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.75,
+    "original_url": "https://media.vidivo.me/video/20251020/83409fdfa4d84a3f9fcb9c213c9b4a02/cloudv-transfer/555555554o15709o555644657p49r1ss_b96704b03b8545fdb5ef4dcc84f24550_0_4.mp4?wsSecret=97ccbf09638f2111d4a635fc079925ef&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:16:19Z"
+  },
+  "dramaora_52026009705_38": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 38,
+    "telegram_message_id": 13783,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI112rvsVGxJ847_VgyyKTjLefGpcd-AAJrIgACd-KAV6_laaPsCrEGHgQ",
+    "telegram_message_ids": [
+      13783
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.96,
+    "original_url": "https://media.vidivo.me/video/20251020/67ce4d4a7afb4a0ea7ff2772f2f7ba32/cloudv-transfer/55555555o8qq4q99555644650oo0r1ss_7101c8800897461dad3083e1fe568a51_0_4.mp4?wsSecret=ab416509012d8ddb7dbe02f8a11e6ed7&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:16:35Z"
+  },
+  "dramaora_52026009705_39": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 39,
+    "telegram_message_id": 13784,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI12GrvsWFEwsTvsVEJfqXZEceuRQAB7gACbCIAAnfigFdcIplwsM7aZB4E",
+    "telegram_message_ids": [
+      13784
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.64,
+    "original_url": "https://media.vidivo.me/video/20251020/627321e412f248a3aa90828bbc373b2f/cloudv-transfer/555555554n928071555644656sp1r1ss_b63b1a4f13684519924f4a621d63939e_0_4.mp4?wsSecret=094cd54331040e31a0f77bb9003038a5&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:16:51Z"
+  },
+  "dramaora_52026009705_40": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 40,
+    "telegram_message_id": 13785,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI12WrvsXWzE0MiFkZd6JMrisMxlX83AAJtIgACd-KAVz0ITAw-9hPuHgQ",
+    "telegram_message_ids": [
+      13785
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.35,
+    "original_url": "https://media.vidivo.me/video/20251020/cb6169fdbd8e41b2b5f134957134e19f/cloudv-transfer/5555555505104nq15556446537r2r1ss_6755c86e75804eb093d23aaee8efac7f_0_4.mp4?wsSecret=430d896910f4d8066c3ece19d6be0b22&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:17:11Z"
+  },
+  "dramaora_52026009705_41": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 41,
+    "telegram_message_id": 13786,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI12mrvsYdPRGVumRo8Hu0d5kRYgF7DAAJuIgACd-KAV2zBGGtS7oZ-HgQ",
+    "telegram_message_ids": [
+      13786
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.96,
+    "original_url": "https://media.vidivo.me/video/20251020/d30fcbc1c85045f98b577a122104a045/cloudv-transfer/5555555521p7o7r5555644653s04r1ss_b3dec8aa01a24b1b881bdf6763153bce_0_4.mp4?wsSecret=9a28391aca598ba3b3795848a83f96cc&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:17:29Z"
+  },
+  "dramaora_52026009705_42": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 42,
+    "telegram_message_id": 13787,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI122rvsZsIxM6lTFLv6aZ8f5j3844iAAJvIgACd-KAV1BvJIdBHuDEHgQ",
+    "telegram_message_ids": [
+      13787
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.1,
+    "original_url": "https://media.vidivo.me/video/20251020/fed2f592551c4b28bbc9a8987f6742da/cloudv-transfer/55555555op5o48235556446556onr1ss_921045d9575e4d4898e8f004140fa4f4_0_4.mp4?wsSecret=60300dcf0c5a5b3a509c940d6a3b07a6&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:17:50Z"
+  },
+  "dramaora_52026009705_43": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 43,
+    "telegram_message_id": 13788,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI13Grvsa7G13mFUn2uZqCksLckatwyAAJwIgACd-KAV5xWyxXlbDg8HgQ",
+    "telegram_message_ids": [
+      13788
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.64,
+    "original_url": "https://media.vidivo.me/video/20251020/6994888835084276a6c94565c6a555d9/cloudv-transfer/555555559qs9073s5556446537ror1ss_faaca71a257e4d86bcc9487a8ec9992f_0_4.mp4?wsSecret=cd9eb8533cf524d1f4dcd638d276466a&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:18:08Z"
+  },
+  "dramaora_52026009705_44": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 44,
+    "telegram_message_id": 13789,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI13Wrvsb66v0MEgghFenyvE09yAsITAAJxIgACd-KAVyUDmrJyuhneHgQ",
+    "telegram_message_ids": [
+      13789
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.44,
+    "original_url": "https://media.vidivo.me/video/20251020/113d0a7b02a142feaa95d8ccb2f2b519/cloudv-transfer/55555555p7p0097o5556446505rpr1ss_e9b251f0ca7e40d791deac85d32db39d_0_4.mp4?wsSecret=7ffd8fa23b25fff8653f6925438704ad&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:18:24Z"
+  },
+  "dramaora_52026009705_45": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 45,
+    "telegram_message_id": 13790,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI13mrvsdBpz5Czp9FqBef51hOI9MwiAAJyIgACd-KAV4Hy4CSjqgg7HgQ",
+    "telegram_message_ids": [
+      13790
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.2,
+    "original_url": "https://media.vidivo.me/video/20251020/7ed92b512c71493bb30b8fb9064d939f/cloudv-transfer/55555555o092n4rr55564465598rr1ss_8740e3a0fb6c46899e1a57250ef710d3_0_4.mp4?wsSecret=e078129623dd8b27e8086bc111015a83&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:18:43Z"
+  },
+  "dramaora_52026009705_46": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 46,
+    "telegram_message_id": 13791,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI132rvseaLZ3jX6_huTx865Shc-qlWAAJzIgACd-KAV4oTfpY4wGb4HgQ",
+    "telegram_message_ids": [
+      13791
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.84,
+    "original_url": "https://media.vidivo.me/video/20251020/d3ebbccdd45e47878858f1d49a47a093/cloudv-transfer/55555555s9n34n2o55564465os1sr1ss_be5daf9a78064d27a177659343a91663_0_4.mp4?wsSecret=78dcd2209e7147a6f7452f8214358260&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:19:04Z"
+  },
+  "dramaora_52026009705_47": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 47,
+    "telegram_message_id": 13792,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI14GrvsfiUxDdci2XyHxV5QyOw5YIHAAJ0IgACd-KAV__Z9LFMm9InHgQ",
+    "telegram_message_ids": [
+      13792
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.89,
+    "original_url": "https://media.vidivo.me/video/20251020/e9a4a9c910e640d6b8da86091df10d2f/cloudv-transfer/55555555rr2pnqo655564465prq5s1ss_439cb70eae78403c9295c87706a1da02_0_4.mp4?wsSecret=7f40ff7165644373a4b0616b09081b6a&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:19:22Z"
+  },
+  "dramaora_52026009705_48": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 48,
+    "telegram_message_id": 13793,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI14Wrvsg5PN_61eaPUeh6J8cXh1hNeAAJ1IgACd-KAV3natiEhtsd3HgQ",
+    "telegram_message_ids": [
+      13793
+    ],
+    "total_parts": 1,
+    "file_size_mb": 26.34,
+    "original_url": "https://media.vidivo.me/video/20251020/bcf7ea082d8c456d8f8e090e456d8e5f/cloudv-transfer/555555550s1rqos455564465pqp6s1ss_60bfbc50cdbb4d388de931cf34cc3652_0_4.mp4?wsSecret=63e0c522815ed98d2f0789ba95c62881&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:19:44Z"
+  },
+  "dramaora_52026009705_49": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 49,
+    "telegram_message_id": 13794,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI14mrvsh44jjUjhtn1Y0QTjfhCZcMzAAJ2IgACd-KAV4vphw8vkMEJHgQ",
+    "telegram_message_ids": [
+      13794
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.75,
+    "original_url": "https://media.vidivo.me/video/20251020/2f44467b057648b090f1aeceb6ad307c/cloudv-transfer/5555555524s3q9qn5556446517p9s1ss_8ede7494cb1f4d5e96e13916ae15896d_0_4.mp4?wsSecret=fcd38574e55e4b1ef3dade4d298abe28&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:20:01Z"
+  },
+  "dramaora_52026009705_50": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 50,
+    "telegram_message_id": 13795,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI142rvsjF2d9GTZr_nU60dDJs2xxksAAJ3IgACd-KAV65lLgjNxfLSHgQ",
+    "telegram_message_ids": [
+      13795
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.32,
+    "original_url": "https://media.vidivo.me/video/20251020/4b9bfc36413b4641ad6c7f6cae016031/cloudv-transfer/555555559or027nq555644653381s1ss_17033a6188de4c519cfced9f57a55ba2_0_4.mp4?wsSecret=6a48eb8d2afc8601951b5b53f29ed3c8&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:20:19Z"
+  },
+  "dramaora_52026009705_51": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 51,
+    "telegram_message_id": 13796,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI15GrvskJczcsrHkhB9YIr-kiOD0bSAAJ4IgACd-KAV2Abq0m6TtjTHgQ",
+    "telegram_message_ids": [
+      13796
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.73,
+    "original_url": "https://media.vidivo.me/video/20251020/8b5e6fa37daa4f338c6ed9c391e1254b/cloudv-transfer/55555555p685rro555564465r2s1s1ss_940dd3621e8a4d4eb77b1ee469f8138d_0_4.mp4?wsSecret=e536db67dd59ca4e7104fbe6425333ad&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:20:36Z"
+  },
+  "dramaora_52026009705_52": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 52,
+    "telegram_message_id": 13797,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI15WrvslZW6rFBpr6BRxJpIs4EVeBrAAJ5IgACd-KAV3eTiRNn-rlFHgQ",
+    "telegram_message_ids": [
+      13797
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.95,
+    "original_url": "https://media.vidivo.me/video/20251020/6dba7a6156974156890ae1d0e2d91e55/cloudv-transfer/555555556939s0q055564465srq2s1ss_75ecd4bdd0b04585a2e7f543e909c541_0_4.mp4?wsSecret=ea929fd0dcf7da8b08abdf77465c5a70&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:20:56Z"
+  },
+  "dramaora_52026009705_53": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 53,
+    "telegram_message_id": 13798,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI15mrvsmmy_RFfBwoN9cIWszb6KPsGAAJ6IgACd-KAV1qxVxIyECuQHgQ",
+    "telegram_message_ids": [
+      13798
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.27,
+    "original_url": "https://media.vidivo.me/video/20251020/4a736359f57f456bacf435376e3328a1/cloudv-transfer/555555553qon9s6r5556446536o3s1ss_047fa5447c3749fca2d76ef225bb723c_0_4.mp4?wsSecret=573b7772f740dc9491961587b969fd49&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:21:15Z"
+  },
+  "dramaora_52026009705_54": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 54,
+    "telegram_message_id": 13799,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI152rvsn1NqxXFiO0xdcAa7GSghtNMAAJ7IgACd-KAV21qi6-5KSG-HgQ",
+    "telegram_message_ids": [
+      13799
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.44,
+    "original_url": "https://media.vidivo.me/video/20251020/24911dcf7b3d46be8c8a903a7c6ba3b9/cloudv-transfer/5555555585o6s10555564465op14s1ss_62770c5f676346f4a500dec323be156f_0_4.mp4?wsSecret=4612f964f53078b9f0701d685a07ac2e&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:21:35Z"
+  },
+  "dramaora_52026009705_55": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 55,
+    "telegram_message_id": 13800,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI16Grvso5gpZ75qznkH16fCwf_gizkAAJ8IgACd-KAV37B0mXQ2trBHgQ",
+    "telegram_message_ids": [
+      13800
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.64,
+    "original_url": "https://media.vidivo.me/video/20251020/8865d2fce91e4daaa6ee645562cf11b1/cloudv-transfer/555555556p49q40355564465233ns1ss_c09fb1319a8c4ac38ad4409232472d43_0_4.mp4?wsSecret=681e4d03805189f754538d410e6f31af&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:21:53Z"
+  },
+  "dramaora_52026009705_56": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 56,
+    "telegram_message_id": 13801,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI16WrvsqHfXqyzPuLwb5L-rV0g1KBdAAJ9IgACd-KAV-AcL_7lw9dAHgQ",
+    "telegram_message_ids": [
+      13801
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.94,
+    "original_url": "https://media.vidivo.me/video/20251020/754bfe54982b4ea393020e2e8d35cf23/cloudv-transfer/55555555061sssp055564465838os1ss_56e0e766dfea4c56887671a8325043bf_0_4.mp4?wsSecret=b3c52f311326f1722ef7ccc2a9af91c8&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:22:11Z"
+  },
+  "dramaora_52026009705_57": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 57,
+    "telegram_message_id": 13802,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI16mrvsrLVmAFJrtWa0lN_XoJGZr--AAJ-IgACd-KAV8A3FQUfdocsHgQ",
+    "telegram_message_ids": [
+      13802
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.64,
+    "original_url": "https://media.vidivo.me/video/20251020/15ca3c725d82429da3f86d46d8d8be02/cloudv-transfer/55555555spq35n4p55564465p56ps1ss_80e0c2aafbf44e3c95183a6bfe4a61eb_0_4.mp4?wsSecret=8ce59f51d12380503dd6da568c4392d4&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:22:28Z"
+  },
+  "dramaora_52026009705_58": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 58,
+    "telegram_message_id": 13803,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI162rvssdyUvo7H-Gq9aYoVMlgalPqAAJ_IgACd-KAVw7u7xtixKSJHgQ",
+    "telegram_message_ids": [
+      13803
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.79,
+    "original_url": "https://media.vidivo.me/video/20251020/665d1660ee4d484e84a540104145411d/cloudv-transfer/5555555542589rr855564465555qs1ss_1e454b6f21a943e59ecd3e79c60f4773_0_4.mp4?wsSecret=7f62f705284f1cc4d20071fbf070ad14&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:22:50Z"
+  },
+  "dramaora_52026009705_59": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 59,
+    "telegram_message_id": 13804,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI17Grvstgjw95uboAW-9BTZCUsQZN2AAKAIgACd-KAV31S-sBvzXQJHgQ",
+    "telegram_message_ids": [
+      13804
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.0,
+    "original_url": "https://media.vidivo.me/video/20251020/c31b0f4ac67242abbac604d121effd47/cloudv-transfer/55555555n1519n4r55564465oo1rs1ss_0ebb97fc25494f61bac03eee6ad72975_0_4.mp4?wsSecret=820678f6b717f444bf3ebf89405070fd&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:23:06Z"
+  },
+  "dramaora_52026009705_60": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 60,
+    "telegram_message_id": 13805,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI17WrvsumgRKPbFbweSM0xcIjBnh3pAAKBIgACd-KAV4wi08K6ChIIHgQ",
+    "telegram_message_ids": [
+      13805
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.38,
+    "original_url": "https://media.vidivo.me/video/20251020/a6cfd867fd694e82a552769d217421be/cloudv-transfer/555555551472ro0n555644657o7ss1ss_30a14342924c4b4a9aec129fdd69807d_0_4.mp4?wsSecret=ed910e80937a4c61f4eac6f2c3a4acce&wsTime=1794100344",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:23:23Z"
+  },
+  "dramaora_52026009705_61": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 61,
+    "telegram_message_id": 13806,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI17mrvsvyC5rg0babJj_QBt7hmtPogAAKCIgACd-KAV-9Ojg6czcbQHgQ",
+    "telegram_message_ids": [
+      13806
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.03,
+    "original_url": "https://media.vidivo.me/video/20251020/297e0b359e9349ceacdeca571bbb47b2/cloudv-transfer/555555551q40r0q35556446576rss1ss_9fbf2d3c491a49849d4da99a4b3c04b3_0_4.mp4?wsSecret=b6afd66ae1124766b4ada89014245528&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:23:42Z"
+  },
+  "dramaora_52026009705_62": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 62,
+    "telegram_message_id": 13807,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI172rvsxMvn4li0Vfz6rictvotOw4qAAKDIgACd-KAV2H-epJZgMnOHgQ",
+    "telegram_message_ids": [
+      13807
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.04,
+    "original_url": "https://media.vidivo.me/video/20251020/157dbdbe867e4162981685e4c3860096/cloudv-transfer/5555555541905q5r5556446596o552ss_27eadb99271e4194a9c67dd2b2bf79d9_0_4.mp4?wsSecret=9c4e18a6262c627888d309274d81bf05&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:24:06Z"
+  },
+  "dramaora_52026009705_63": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 63,
+    "telegram_message_id": 13808,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI18GrvsyWrhA-93oJOUV9-Ou1fZVGwAAKEIgACd-KAV34WZorJ7E2_HgQ",
+    "telegram_message_ids": [
+      13808
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.01,
+    "original_url": "https://media.vidivo.me/video/20251020/dcc3bcaa10454f61b962c42b67c07ce7/cloudv-transfer/55555555151q5rq655564465964752ss_507b37bcd74b4926a65fff3507cc2dfe_0_4.mp4?wsSecret=3cfd93440839a5f11523596a8351158c&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:24:23Z"
+  },
+  "dramaora_52026009705_64": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 64,
+    "telegram_message_id": 13809,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI18WrvszYIdXVbzeRP4GUm2Xv7sPPAAAKFIgACd-KAV97ijJ-TP5GwHgQ",
+    "telegram_message_ids": [
+      13809
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.94,
+    "original_url": "https://media.vidivo.me/video/20251020/90fa8eb4633a4df68d35abe9c7bdc0d4/cloudv-transfer/555555553n191q7555564465so3852ss_1291225e4e954120b4cbe305947f3254_0_4.mp4?wsSecret=1d7714d026658d18e6cfc5944b04c805&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:24:40Z"
+  },
+  "dramaora_52026009705_65": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 65,
+    "telegram_message_id": 13810,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI18mrvs0jn0_fi2S7GZf3CubXN1c-jAAKGIgACd-KAV2JjMogqBqFyHgQ",
+    "telegram_message_ids": [
+      13810
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.11,
+    "original_url": "https://media.vidivo.me/video/20251020/3c2231a22f7f4b7b99b65f9747011c29/cloudv-transfer/555555555594pqqr55564465721952ss_bacb42a25d49448697f9044495f22aa2_0_4.mp4?wsSecret=13a140253b954c1f711c6f6a6a9506b6&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:24:59Z"
+  },
+  "dramaora_52026009705_66": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 66,
+    "telegram_message_id": 13811,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI182rvs1tvwiwwnebAIyIumjtbEmNMAAKHIgACd-KAV59J3VFut1tuHgQ",
+    "telegram_message_ids": [
+      13811
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.41,
+    "original_url": "https://media.vidivo.me/video/20251020/5c393f68df414f62a1d70a7720cb36ab/cloudv-transfer/555555556n694o1655564465320052ss_e1d9131be24a4413abbcdc342dab70ad_0_4.mp4?wsSecret=008056e44be62d86c6abe2a37487577b&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:25:18Z"
+  },
+  "dramaora_52026009705_67": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 67,
+    "telegram_message_id": 13812,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI19Grvs3EKmmG5V0XRSm4yDmzyyIWOAAKIIgACd-KAV3hfLxUouZYJHgQ",
+    "telegram_message_ids": [
+      13812
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.57,
+    "original_url": "https://media.vidivo.me/video/20251020/bb0b04f292ef4c37bad121881b14d02e/cloudv-transfer/55555555ro3q6s6855564465552152ss_2e6e8a5f4449456e81966a31f99bb58e_0_4.mp4?wsSecret=3d4223e1e7172295cc6dc7e0ec6a2d14&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:25:39Z"
+  },
+  "dramaora_52026009705_68": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 68,
+    "telegram_message_id": 13813,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI19Wrvs4XV4xRjfgIppjLmxvdtfmNZAAKJIgACd-KAVy8eBrAMlc10HgQ",
+    "telegram_message_ids": [
+      13813
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.29,
+    "original_url": "https://media.vidivo.me/video/20251020/35806c82dd6a40b6aa0b750bdf925d96/cloudv-transfer/55555555r8p1784p555644650r0252ss_2777c522be554dc0bd8236de1b5a5254_0_4.mp4?wsSecret=bcc85f01f4a9af985dee90fd0de1bffc&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:25:59Z"
+  },
+  "dramaora_52026009705_69": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 69,
+    "telegram_message_id": 13814,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI19mrvs5ciDFo8EgEHQ7qAXa8Q4lwGAAKMIgACd-KAVzX2do3fExkNHgQ",
+    "telegram_message_ids": [
+      13814
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.25,
+    "original_url": "https://media.vidivo.me/video/20251020/5ee1a1708427420a82ede2d9472b0a0c/cloudv-transfer/55555555496p270r555644658p9352ss_1827915d303f43b1a8f53a303c3ac20a_0_4.mp4?wsSecret=d2dd2ddcfe4065c6c2d06467fc0c9c96&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:26:17Z"
+  },
+  "dramaora_52026009705_70": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 70,
+    "telegram_message_id": 13815,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI192rvs6oPCnlbYpurfuBlr_MV_r-7AAKNIgACd-KAVwewjB72U9SxHgQ",
+    "telegram_message_ids": [
+      13815
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.3,
+    "original_url": "https://media.vidivo.me/video/20251020/09e9959433754818b909299664efbf65/cloudv-transfer/55555555803r7s0s55564465401452ss_db5fa9c489ad42d98b5c0d71c0356b1f_0_4.mp4?wsSecret=bc519ff8815de123a8dfd148b7ebe61a&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:26:36Z"
+  },
+  "dramaora_52026009705_71": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 71,
+    "telegram_message_id": 13816,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1-Grvs7_JvG9K-hla7Y5zGH7hdiLyAAKOIgACd-KAV5FqWGEd_Ze5HgQ",
+    "telegram_message_ids": [
+      13816
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.76,
+    "original_url": "https://media.vidivo.me/video/20251020/53621b24d18e4766baa6f411d9f53347/cloudv-transfer/5555555570np471155564465312n52ss_94bbf61fd47f4354977126a0d8e9580e_0_4.mp4?wsSecret=941c5d9bfb598f409eba4e439cd537f8&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:26:57Z"
+  },
+  "dramaora_52026009705_72": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 72,
+    "telegram_message_id": 13817,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1-Wrvs9apv-Pe-f7FNUc3kvrPVoLxAAKPIgACd-KAV9pqNmCPLDkZHgQ",
+    "telegram_message_ids": [
+      13817
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.19,
+    "original_url": "https://media.vidivo.me/video/20251020/948cefaf95714053b6ad2baaa2073104/cloudv-transfer/555555556p6n84q655564465s12o52ss_14d07167932b485696ca9a1755e4779d_0_4.mp4?wsSecret=124d197a6a10c674db6a6034124d3380&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:27:20Z"
+  },
+  "dramaora_52026009705_73": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 73,
+    "telegram_message_id": 13818,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1-mrvs-uNNC6Kt0a9nRWEufWWhBRTAAKQIgACd-KAVyB_VWRexikUHgQ",
+    "telegram_message_ids": [
+      13818
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.42,
+    "original_url": "https://media.vidivo.me/video/20251020/80c574178c9c4326b52dea91663aa604/cloudv-transfer/5555555533q9pon855564465n15q52ss_a1665593cef64b37a041eedbce98aa38_0_4.mp4?wsSecret=fe10b0f5fa4657f59b1430eb2feb5975&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:27:41Z"
+  },
+  "dramaora_52026009705_74": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 74,
+    "telegram_message_id": 13819,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1-2rvs_396Pede0Y2n-jDt0fpN3HQAAKRIgACd-KAV07MzgpEHo-zHgQ",
+    "telegram_message_ids": [
+      13819
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.85,
+    "original_url": "https://media.vidivo.me/video/20251020/ce9c1ae78fef44d8b08a620b44a0f5da/cloudv-transfer/555555557pn9or9955564465798r52ss_f17b7214bb37465a84e3fb93f122b2c6_0_4.mp4?wsSecret=0c8e9021c879dd7b15188f67cedf0e2e&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:28:00Z"
+  },
+  "dramaora_52026009705_75": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 75,
+    "telegram_message_id": 13820,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1_GrvtA6M6Fj6t5_oLWq84D0QIwVSAAKSIgACd-KAVzff3MtwdZKlHgQ",
+    "telegram_message_ids": [
+      13820
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.69,
+    "original_url": "https://media.vidivo.me/video/20251020/913529c5f0ec4139b9cc66da06843bdf/cloudv-transfer/55555555o212o74955564465365s52ss_33f7ab1abb9146d2bd00df7ca1e0854b_0_4.mp4?wsSecret=4273808242e9c1564d288c485280070c&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:28:16Z"
+  },
+  "dramaora_52026009705_76": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 76,
+    "telegram_message_id": 13821,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1_WrvtB5Ua8x7FbpJSHyMn7wqdLheAAKTIgACd-KAV7TIgbVd070uHgQ",
+    "telegram_message_ids": [
+      13821
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.25,
+    "original_url": "https://media.vidivo.me/video/20251020/3edf4ce80a144aacaf7c4ebfe89d5a3f/cloudv-transfer/555555555p0rn25r555644654oos52ss_4110d261b8cf4cc3b87698a5fb18c2d3_0_4.mp4?wsSecret=4f29ae914c638d94ef9132a003c2bc3a&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:28:32Z"
+  },
+  "dramaora_52026009705_77": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 77,
+    "telegram_message_id": 13822,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1_mrvtC_Y1ZDdQrv4x55W6qO30DzwAAKUIgACd-KAV8nShqerD2gNHgQ",
+    "telegram_message_ids": [
+      13822
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.61,
+    "original_url": "https://media.vidivo.me/video/20251020/6809ecc69a6b498a94c137c42ef0d62e/cloudv-transfer/55555555os5742015556446535n562ss_a007036fc53e4a76a3579a74862c400f_0_4.mp4?wsSecret=69ddbf3fbbdd751e73e0259597cf7d17&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:28:49Z"
+  },
+  "dramaora_52026009705_78": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 78,
+    "telegram_message_id": 13823,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1_2rvtEEkHDTrdpHJOR50oGzu5RwVAAKVIgACd-KAV5qrUNl67j95HgQ",
+    "telegram_message_ids": [
+      13823
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.37,
+    "original_url": "https://media.vidivo.me/video/20251020/2400191693234b13b8061f0516a98195/cloudv-transfer/555555555580670p55564465nn4662ss_40eb3852cef943de9b5402c3ad1e7cc8_0_4.mp4?wsSecret=4602f527e29920b06d044db7e1447b65&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:29:07Z"
+  },
+  "dramaora_52026009705_79": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 79,
+    "telegram_message_id": 13824,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2AAFq77RR7FGwFBwLx1Y-Y65REiErSAACliIAAnfigFeyc-s6dNGpNB4E",
+    "telegram_message_ids": [
+      13824
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.19,
+    "original_url": "https://media.vidivo.me/video/20251020/a4b1bf527e924962a0fa1d2fdf45f40e/cloudv-transfer/55555555591qr1r6555644654np762ss_6cd82c13efed4115a300bab57ed1d11c_0_4.mp4?wsSecret=829d98bdf3f48e50a7c3d3132859ef30&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:29:24Z"
+  },
+  "dramaora_52026009705_80": {
+    "show_id": "dramaora_52026009705",
+    "show_title": "Mask of Betrayal: A Warrior Princess's Descen",
+    "episode_number": 80,
+    "telegram_message_id": 13825,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2AWrvtHukL4UK4ypC_9p_KdoIwGwDAAKXIgACd-KAV05WJImer0XuHgQ",
+    "telegram_message_ids": [
+      13825
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.12,
+    "original_url": "https://media.vidivo.me/video/20251020/8429fbd65efc41f2ad226b5d16441be2/cloudv-transfer/55555555q28r6o8455564465q4n862ss_68a49ff308f64269806c5f2aec991bf1_0_4.mp4?wsSecret=d3151ee43e894d0e7ab5696fde62bf08&wsTime=1794100345",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251020/ff69d1c101991000d413d9fe00000000.jpg",
+    "synopsis": "A fallen warrior princess, her face stolen and memories erased, must endure cruel betrayal while her impostor reigns—until one desperate leap changes everything.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:30:06Z"
+  },
+  "dramaora_52022238608_1": {
+    "show_id": "dramaora_52022238608",
+    "show_title": "I Chose You: The Kiln’s Echo",
+    "episode_number": 1,
+    "telegram_message_id": 13826,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2AmrvtJH-0ulflwTL4ffq9u2rtcn1AAKYIgACd-KAV9cKFXoQVL0ZHgQ",
+    "telegram_message_ids": [
+      13826
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.03,
+    "original_url": "https://media.vidivo.me/video/20250905/a7f202d6fb344853a484ee348338a84b/cloudv-transfer/55555555196s3p4855564465558pr046_fa279d783e6e4ab5b4d14587bfad2d4f_0_4.mp4?wsSecret=9d1b73e479d870889e5c760756446168&wsTime=1794101412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250905/18bda117019910000ee39b0d00000000.jpg",
+    "synopsis": "Alex and Evelyn were master and apprentice in ancient times, deeply in love but misunderstood by the world. They suffered persecution, yet Evelyn somehow lived on—unbeknownst to her—until the modern era. Now, she seeks to find the long-lost Alex, and so she arrives at a ceramic shop called Lateborn Porcelain...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:30:27Z"
+  },
+  "dramaora_52022238608_2": {
+    "show_id": "dramaora_52022238608",
+    "show_title": "I Chose You: The Kiln’s Echo",
+    "episode_number": 2,
+    "telegram_message_id": 13827,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2A2rvtKY5nqXOyne7b0q5ockKVqn2AAKZIgACd-KAV6v8FDgRbxElHgQ",
+    "telegram_message_ids": [
+      13827
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.67,
+    "original_url": "https://media.vidivo.me/video/20250905/cacb06395d744f29926f92c45f9cf6c5/cloudv-transfer/5555555545335q0n55564465pp6rr046_896bff0dd471470aa4bddb7e55cdc0b1_0_4.mp4?wsSecret=8c7ef095c40e341d3453b5cdc982d901&wsTime=1794101412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250905/18bda117019910000ee39b0d00000000.jpg",
+    "synopsis": "Alex and Evelyn were master and apprentice in ancient times, deeply in love but misunderstood by the world. They suffered persecution, yet Evelyn somehow lived on—unbeknownst to her—until the modern era. Now, she seeks to find the long-lost Alex, and so she arrives at a ceramic shop called Lateborn Porcelain...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:30:49Z"
+  },
+  "dramaora_52022238608_3": {
+    "show_id": "dramaora_52022238608",
+    "show_title": "I Chose You: The Kiln’s Echo",
+    "episode_number": 3,
+    "telegram_message_id": 13828,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2BGrvtLkh8VCbHNzUXIxfQJDgZuL3AAKaIgACd-KAVwjWHLRrSfghHgQ",
+    "telegram_message_ids": [
+      13828
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.32,
+    "original_url": "https://media.vidivo.me/video/20250905/d46094e8a06c4debb9b618590e9242c4/cloudv-transfer/55555555r3805o6255564465790sr046_e0c2a84e6cc641ffabbaa57db849c089_0_4.mp4?wsSecret=d1c07ff5e585dd0f58d06ef0aebcc10f&wsTime=1794101412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250905/18bda117019910000ee39b0d00000000.jpg",
+    "synopsis": "Alex and Evelyn were master and apprentice in ancient times, deeply in love but misunderstood by the world. They suffered persecution, yet Evelyn somehow lived on—unbeknownst to her—until the modern era. Now, she seeks to find the long-lost Alex, and so she arrives at a ceramic shop called Lateborn Porcelain...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:31:07Z"
+  },
+  "dramaora_52022238608_4": {
+    "show_id": "dramaora_52022238608",
+    "show_title": "I Chose You: The Kiln’s Echo",
+    "episode_number": 4,
+    "telegram_message_id": 13829,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2BWrvtMqDmeUGW-gSKHx6hYiT95spAAKbIgACd-KAV9EGJXtsebYLHgQ",
+    "telegram_message_ids": [
+      13829
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.62,
+    "original_url": "https://media.vidivo.me/video/20250905/0963fc7d71344e36ae11205000b5c9d1/cloudv-transfer/555555551ro90osn55564465q055s046_a9b978b99ef84f5b921f04735adaa4ea_0_4.mp4?wsSecret=9e559c1d83cb17f4c72d2a7ec372e05b&wsTime=1794101412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250905/18bda117019910000ee39b0d00000000.jpg",
+    "synopsis": "Alex and Evelyn were master and apprentice in ancient times, deeply in love but misunderstood by the world. They suffered persecution, yet Evelyn somehow lived on—unbeknownst to her—until the modern era. Now, she seeks to find the long-lost Alex, and so she arrives at a ceramic shop called Lateborn Porcelain...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:31:24Z"
+  },
+  "dramaora_52022238608_5": {
+    "show_id": "dramaora_52022238608",
+    "show_title": "I Chose You: The Kiln’s Echo",
+    "episode_number": 5,
+    "telegram_message_id": 13830,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2BmrvtNytB_oXLEZdOyLhznAfoNQlAAKcIgACd-KAVx1ZyjnmG7OeHgQ",
+    "telegram_message_ids": [
+      13830
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.98,
+    "original_url": "https://media.vidivo.me/video/20250905/8fa873b6aa7845b283f0a143ed85bb90/cloudv-transfer/55555555n6p96p375556446523s5s046_92de2be7d5d74be09a64ab64ea81e4ed_0_4.mp4?wsSecret=fe7ccd06d87ef840bb7c0dc54ab46f2f&wsTime=1794101412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250905/18bda117019910000ee39b0d00000000.jpg",
+    "synopsis": "Alex and Evelyn were master and apprentice in ancient times, deeply in love but misunderstood by the world. They suffered persecution, yet Evelyn somehow lived on—unbeknownst to her—until the modern era. Now, she seeks to find the long-lost Alex, and so she arrives at a ceramic shop called Lateborn Porcelain...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T23:31:42Z"
   }
 };
