@@ -52052,5 +52052,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
     "source": "dramaora",
     "backed_up_at": "2026-11-07T08:15:07Z"
+  },
+  "dramaora_52029171870_69": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 69,
+    "telegram_message_id": 13649,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1UWrvNlvynOG2MxBpaNLBgL3DQfQMAAJNIQACd-KAV436CCLxZjFOHgQ",
+    "telegram_message_ids": [
+      13649
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.1,
+    "original_url": "https://media.vidivo.me/video/20260104/a232aebb493b480eb4fc9e3a4fabc39f/cloudv-transfer/55555555rqn3no4n5556o4659n609333_02d19baf36a946e48ac87e5a7578d78b_0_4.mp4?wsSecret=159ece20a7d9c2943353a580feba4fb2&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:31:57Z"
+  },
+  "dramaora_52029171870_70": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 70,
+    "telegram_message_id": 13650,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1UmrvNm32IFZaU9RZMfhNJKBnr50EAAJQIQACd-KAV9HUR6Vum0ldHgQ",
+    "telegram_message_ids": [
+      13650
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.04,
+    "original_url": "https://media.vidivo.me/video/20260104/b0c5dfef33d044269850ae4db32d634f/cloudv-transfer/55555555525q46705556o465r2s62333_465db34670304d96a80d641f5459077f_0_4.mp4?wsSecret=8646d2532f6367e15f5c612ce7568cca&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:32:16Z"
+  },
+  "dramaora_52029171870_71": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 71,
+    "telegram_message_id": 13651,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1U2rvNoE-EWyD5oWjmKX334ITRYHrAAJRIQACd-KAVyIbC8IWjl5WHgQ",
+    "telegram_message_ids": [
+      13651
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.89,
+    "original_url": "https://media.vidivo.me/video/20260104/c512a46373b3465ca0a454ea59b687c5/cloudv-transfer/555555553p43n43r5556o465o6482333_497e34462a2345f5899fa9f1d804fb00_0_4.mp4?wsSecret=53aaa2450712bf172a260c442e93a8aa&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:32:35Z"
+  },
+  "dramaora_52029171870_72": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 72,
+    "telegram_message_id": 13652,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1VGrvNpH8ZNvZYsED62p9BMHQ-2b4AAJSIQACd-KAVxJ-Y_W8tFfFHgQ",
+    "telegram_message_ids": [
+      13652
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.85,
+    "original_url": "https://media.vidivo.me/video/20260104/6491c07640cb47faa05828f0b8f434f8/cloudv-transfer/55555555r8n7220r5556o4650op12333_71e2fd03b17c49f6a3048fdc5f29cc15_0_4.mp4?wsSecret=84117a839aa1cfa6a1873f29e3112175&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:32:51Z"
+  },
+  "dramaora_52029171870_73": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 73,
+    "telegram_message_id": 13653,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1VWrvNqbyQXs69G13V6T0kRnnHP2jAAJUIQACd-KAVwvU0FaIMbzrHgQ",
+    "telegram_message_ids": [
+      13653
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.95,
+    "original_url": "https://media.vidivo.me/video/20260104/cc1cba22ad6c473cb7d74e5aded02967/cloudv-transfer/55555555o0841q1q5556o465005n2333_ca069c1a3f7940b48524c8bcf4ecfeba_0_4.mp4?wsSecret=03619fb95290f5ef036ce8a64e39560e&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:33:13Z"
+  },
+  "dramaora_52029171870_74": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 74,
+    "telegram_message_id": 13654,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1VmrvNrr4YCuiyXkjRr8WKF7fKKKRAAJVIQACd-KAVyWaHjIgD-RBHgQ",
+    "telegram_message_ids": [
+      13654
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.92,
+    "original_url": "https://media.vidivo.me/video/20260104/66f1860daa0848c59708a83c2470b9c2/cloudv-transfer/55555555936pp3045556o465357p2333_55089c4bb8c84e41add252400217403e_0_4.mp4?wsSecret=f82ddf59c3068a7e4c6e4b56fb26c968&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:33:33Z"
+  },
+  "dramaora_52029171870_75": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 75,
+    "telegram_message_id": 13655,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1V2rvNsxq8prPrNnDDGxPeHDwjFdJAAJWIQACd-KAV1ZDlnMZsNLkHgQ",
+    "telegram_message_ids": [
+      13655
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.6,
+    "original_url": "https://media.vidivo.me/video/20260104/40894508e301466db76442b2d45ba89e/cloudv-transfer/55555555n26665nr5556o465n7sq2333_3a3a38ea64a74ce284fd4d9ce6227f06_0_4.mp4?wsSecret=6d36e0404173f55050269464414366da&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:33:50Z"
+  },
+  "dramaora_52029171870_76": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 76,
+    "telegram_message_id": 13656,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1WGrvNtxaGF2WpGlexiWpRG0m7aGDAAJXIQACd-KAV1Ws_gge1AulHgQ",
+    "telegram_message_ids": [
+      13656
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.51,
+    "original_url": "https://media.vidivo.me/video/20260104/5f3ecf55618649ed8eb554064c4a03e9/cloudv-transfer/55555555p5o0on215556o46540ns2333_aefc8df6e9704455a7cb959338b5e0fc_0_4.mp4?wsSecret=de6e0e13fbc45af7a48cdbdb1afbe721&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:34:06Z"
+  },
+  "dramaora_52029171870_77": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 77,
+    "telegram_message_id": 13657,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1WWrvNu4dgZIQvjPpCAIoJBjFEAlPAAJYIQACd-KAV_jk3rds_4DiHgQ",
+    "telegram_message_ids": [
+      13657
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.1,
+    "original_url": "https://media.vidivo.me/video/20260104/263d647640614b36896dc57b8575caf4/cloudv-transfer/55555555q751o04q5556o46571s63333_ef77e9b8afda4037b0030ee7027dd6d2_0_4.mp4?wsSecret=77bc92fe82f460b3187501fb8c01df43&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:34:24Z"
+  },
+  "dramaora_52029171870_78": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 78,
+    "telegram_message_id": 13658,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1WmrvNwABpDZkpMaL7UcxGx8ECxARaAACWSEAAnfigFcGRHfu2S0LRB4E",
+    "telegram_message_ids": [
+      13658
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.67,
+    "original_url": "https://media.vidivo.me/video/20260104/9b8455369ef54815b0e55f354271d72f/cloudv-transfer/5555555502p0s4no5556o4657qq83333_a7395a0796e149f99f25eaf6c7fac06d_0_4.mp4?wsSecret=9730f0fcbd454543538e94e8fd54a41a&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:34:42Z"
+  },
+  "dramaora_52029171870_79": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 79,
+    "telegram_message_id": 13659,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1W2rvNxBf7DcPmdYmajfKhoVtRtmmAAJaIQACd-KAVwXYkvxeG3EIHgQ",
+    "telegram_message_ids": [
+      13659
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.69,
+    "original_url": "https://media.vidivo.me/video/20260104/fe9454a67ee043ff9e8a0effdfb5c40e/cloudv-transfer/55555555qo717r7n5556o465rs333333_4b116733c50a49c38e66dc64869eb335_0_4.mp4?wsSecret=29620d457431c5f71a21bb0b418eaf3f&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:34:59Z"
+  },
+  "dramaora_52029171870_80": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 80,
+    "telegram_message_id": 13660,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1XGrvNyUEXlAe61DR27PMkXJxcJn_AAJbIQACd-KAVwS-vEk3nVC7HgQ",
+    "telegram_message_ids": [
+      13660
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.85,
+    "original_url": "https://media.vidivo.me/video/20260104/58f203f4ba6245c9a8cb8ab5e290253a/cloudv-transfer/555555558o72q7q85556o465s70r3333_61f698024fc04a3e981defc2a7234aa1_0_4.mp4?wsSecret=4319caf2b92ada2e9c7d932655ce1a3c&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:35:20Z"
+  },
+  "dramaora_52029171870_81": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 81,
+    "telegram_message_id": 13661,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1XWrvNzjVzAABinNwRLht7rO_jVRn6gACXCEAAnfigFcaHKP8kcIlDx4E",
+    "telegram_message_ids": [
+      13661
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.09,
+    "original_url": "https://media.vidivo.me/video/20260104/5e1797e765944d44851913636d0b03d3/cloudv-transfer/555555550n98p2205556o46569064333_a6af43fc30c940a58e5141e99eb7c14c_0_4.mp4?wsSecret=9b5ff1be6e11bf8b203441d288f906d1&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:35:38Z"
+  },
+  "dramaora_52029171870_82": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 82,
+    "telegram_message_id": 13662,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1XmrvN0gOa2Fo-WBKsITJdYM_OFY6AAJdIQACd-KAV6cE1xMoPiePHgQ",
+    "telegram_message_ids": [
+      13662
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.64,
+    "original_url": "https://media.vidivo.me/video/20260104/1acb3faa72b64d8eaacea41187960010/cloudv-transfer/55555555p6n1s0575556o465rp614333_44459daeb01342ed9ff8d4c174c4dc93_0_4.mp4?wsSecret=1d8294b79f5e8655e31be6e3911d0c94&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:35:54Z"
+  },
+  "dramaora_52029171870_83": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 83,
+    "telegram_message_id": 13663,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1X2rvN1qndzAQQ7cbBvSYcewn6oXZAAJhIQACd-KAV0xd_NfzKySzHgQ",
+    "telegram_message_ids": [
+      13663
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.92,
+    "original_url": "https://media.vidivo.me/video/20260104/f4ceeb7b990f42b082524f6df74cae6e/cloudv-transfer/55555555qro4o2r95556o465q5644333_bfc4b62e3daa4f07b83ce756d1cf2b49_0_4.mp4?wsSecret=1ddb416d37cb5369d6bf4298dde697a0&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:36:12Z"
+  },
+  "dramaora_52029171870_84": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 84,
+    "telegram_message_id": 13664,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1YGrvN2vP_HfPRgzpOPMJ9P-o1MatAAJkIQACd-KAV0HuQEg9qUqDHgQ",
+    "telegram_message_ids": [
+      13664
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.74,
+    "original_url": "https://media.vidivo.me/video/20260104/d05949b5924e4815b5f262623eaf61d5/cloudv-transfer/555555553op20n265556o465636o4333_c285cce452d94ff38dbf4bde2902035f_0_4.mp4?wsSecret=950fb039309af6b9c9a2c7d61ec33035&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:36:29Z"
+  },
+  "dramaora_52029171870_85": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 85,
+    "telegram_message_id": 13665,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1YWrvN3zepuhHy0xYo1vGihl05l_FAAJnIQACd-KAV1zhncq4w1_bHgQ",
+    "telegram_message_ids": [
+      13665
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.49,
+    "original_url": "https://media.vidivo.me/video/20260104/3ecde3d4d1c44a38b61526a06d3e0bbd/cloudv-transfer/5555555587q9oorn5556o465345q4333_d07ea8d94b1e422db8f5a4ee0bc97e57_0_4.mp4?wsSecret=193cebf156302d9a07a5e340370e8373&wsTime=1794069100",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:36:46Z"
+  },
+  "dramaora_52029998924_1": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 1,
+    "telegram_message_id": 13666,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1YmrvN4-Q9D1EOydY5dYh-KEf-UH8AAJrIQACd-KAV3uiq025ed3WHgQ",
+    "telegram_message_ids": [
+      13666
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.58,
+    "original_url": "https://media.vidivo.me/video/20251021/00baf47a6e1e4815b9934209e89ec7a7/cloudv-transfer/5555555574r988qr5556n4657p16q005_834272df25554998bd3e1d7d08309515_0_4.mp4?wsSecret=be8c701459ea501675e445e5dad443d4&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:37:05Z"
+  },
+  "dramaora_52029998924_2": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 2,
+    "telegram_message_id": 13667,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Y2rvN8y9t1cP4RDErxd6rxdaYBvAAAJ1IQACd-KAV6axrcISxYCtHgQ",
+    "telegram_message_ids": [
+      13667
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.89,
+    "original_url": "https://media.vidivo.me/video/20251021/7bd67d4240914fd2aa07d390c867cebb/cloudv-transfer/55555555388nq0815556n465r818q005_a22793936ac0446bb3d097599a835917_0_4.mp4?wsSecret=756b42a315675e089200d0b516fb8e96&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:38:06Z"
+  },
+  "dramaora_52029998924_3": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 3,
+    "telegram_message_id": 13668,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1ZGrvN-M8nz9Wbw3s_X3AW_sQaTL5AAJ3IQACd-KAV3vS7e418VsjHgQ",
+    "telegram_message_ids": [
+      13668
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.12,
+    "original_url": "https://media.vidivo.me/video/20251021/4699f7b2d41441b685b0ddca45070a18/cloudv-transfer/55555555no2qp32p5556n4655229q005_ff18afd18c434196bd4e389e01d9c426_0_4.mp4?wsSecret=1869b7fb5ae23741f3d05a0b37e4064f&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:38:29Z"
+  },
+  "dramaora_52029998924_4": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 4,
+    "telegram_message_id": 13669,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1ZWrvN_SBcLRuoKUXO6xgZbzy2Kz4AAJ6IQACd-KAV6_m9oRrCSn2HgQ",
+    "telegram_message_ids": [
+      13669
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.09,
+    "original_url": "https://media.vidivo.me/video/20251021/831bd7ce3d294407bb68bc739a647694/cloudv-transfer/55555555566srnrr5556n4654p00q005_5b59bcbf6fc246958ebf37d06881c700_0_4.mp4?wsSecret=9f12e8f3fabf23c43c13a81c4133faa4&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:38:47Z"
+  },
+  "dramaora_52029998924_5": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 5,
+    "telegram_message_id": 13670,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1ZmrvOAXXTw9Y0dg4TZPRBC70b1i_AAJ9IQACd-KAV3Gx8SAzE6ixHgQ",
+    "telegram_message_ids": [
+      13670
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.36,
+    "original_url": "https://media.vidivo.me/video/20251021/1b1b8ff26a144c3aa1c8793a564580b3/cloudv-transfer/555555557p3601445556n465oo51q005_3ea8f462c397461dad16f688b664b297_0_4.mp4?wsSecret=a6c2d3793b224552f6a438831e0de0d9&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:39:03Z"
+  },
+  "dramaora_52029998924_6": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 6,
+    "telegram_message_id": 13671,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Z2rvOBhbsaeg8IHIDwG9tseB_8PoAAJ-IQACd-KAV-LjIuLVmAX7HgQ",
+    "telegram_message_ids": [
+      13671
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.96,
+    "original_url": "https://media.vidivo.me/video/20251021/32fd755012ce4709a9257c4f6548354a/cloudv-transfer/55555555316qn2rs5556n465nqp1q005_5e9abb64f123461db448cda52c08244a_0_4.mp4?wsSecret=fe23c8ceff6713df0e0484d9a4385d97&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:39:22Z"
+  },
+  "dramaora_52029998924_7": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 7,
+    "telegram_message_id": 13672,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1aGrvOCkydivGeFyiA9kYgooP9fSqAAKAIQACd-KAVz9GIPgCWleIHgQ",
+    "telegram_message_ids": [
+      13672
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.59,
+    "original_url": "https://media.vidivo.me/video/20251021/c6dc1d5216f7438a84c70b88e42fb189/cloudv-transfer/55555555s570o5n15556n465qoo2q005_eedda0d73e06492abf48d168c852283f_0_4.mp4?wsSecret=1e1974ae3924dfd400acb0811202e25a&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:39:39Z"
+  },
+  "dramaora_52029998924_8": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 8,
+    "telegram_message_id": 13673,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1aWrvOEMOtDB3kAMjf1a34rd04YCBAAKFIQACd-KAV6r9JiGjs0BrHgQ",
+    "telegram_message_ids": [
+      13673
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.36,
+    "original_url": "https://media.vidivo.me/video/20251021/5cbc14dac9684d3fadd441b39c84d890/cloudv-transfer/55555555qp43ssro5556n4656733q005_aec5b0c0dedd4e0bb315ba26ddf966b5_0_4.mp4?wsSecret=657629d9ad400088dabb279b6c43fb1f&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:40:05Z"
+  },
+  "dramaora_52029998924_9": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 9,
+    "telegram_message_id": 13674,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1amrvOHhog9Ldqn2AWqCcxOsiRt56AAKHIQACd-KAVyiD1kvs_43ZHgQ",
+    "telegram_message_ids": [
+      13674
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.59,
+    "original_url": "https://media.vidivo.me/video/20251021/018741398e1a4888b249a4115aee1283/cloudv-transfer/55555555362prn4s5556n4650774q005_e287185478814f02a3b505cb5a5a8bb5_0_4.mp4?wsSecret=f549ab7afb0e1475c84dd9b11318e41e&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:40:58Z"
+  },
+  "dramaora_52029998924_10": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 10,
+    "telegram_message_id": 13675,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1a2rvOIqPMzcTeIDo779NNwWxR2s6AAKIIQACd-KAV3X4TFg3BfdLHgQ",
+    "telegram_message_ids": [
+      13675
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.6,
+    "original_url": "https://media.vidivo.me/video/20251021/4c186e66fde4494d863195d8c1314b58/cloudv-transfer/5555555507o69p1o5556n4654qo4q005_b8485bf44aa5473d8adb80ad90906e6d_0_4.mp4?wsSecret=6ef4fd447a864bbc7e8857245fcbec3f&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:41:17Z"
+  },
+  "dramaora_52029998924_11": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 11,
+    "telegram_message_id": 13676,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1bGrvOJ5EJhfRPilGVCQSei-14RE3AAKKIQACd-KAVxZKHnqC31I2HgQ",
+    "telegram_message_ids": [
+      13676
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.57,
+    "original_url": "https://media.vidivo.me/video/20251021/11eb381c4763489882457ff6c434bdb2/cloudv-transfer/5555555501q8sr915556n465631nq005_45d2c5b75ae14a35aeebd59cc902be16_0_4.mp4?wsSecret=90322e750eae1dc06013c73b3d6df315&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:41:36Z"
+  },
+  "dramaora_52029998924_12": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 12,
+    "telegram_message_id": 13677,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1bWrvOLFjXA1XIVePM24Mj54nSSpWAAKMIQACd-KAV0a8ird6H47AHgQ",
+    "telegram_message_ids": [
+      13677
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.72,
+    "original_url": "https://media.vidivo.me/video/20251021/d52dc3ca464d470fb8be50aa649de899/cloudv-transfer/5555555549297oro5556n465159oq005_403d16d9a2984c3d8e8d6d3332face76_0_4.mp4?wsSecret=1eff29f296790b5e95f84ea5c542da9b&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:41:55Z"
+  },
+  "dramaora_52029998924_13": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 13,
+    "telegram_message_id": 13678,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1bmrvOMH2b-u6bm0vnNDCCVpIpLrDAAKOIQACd-KAVxJQgXjPAf1MHgQ",
+    "telegram_message_ids": [
+      13678
+    ],
+    "total_parts": 1,
+    "file_size_mb": 4.75,
+    "original_url": "https://media.vidivo.me/video/20251021/1320f72d08ad4977bbf749600c8132da/cloudv-transfer/55555555q4pn6snq5556n465p3qoq005_4d3cec03b1d240e7b591143866b6ea27_0_4.mp4?wsSecret=3098599fe81388e9110a12414f45cddf&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:42:12Z"
+  },
+  "dramaora_52029998924_14": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 14,
+    "telegram_message_id": 13679,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1b2rvONLCgZFYN0QI37MMp5_fkW27AAKSIQACd-KAVzUKBYBS92e9HgQ",
+    "telegram_message_ids": [
+      13679
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.07,
+    "original_url": "https://media.vidivo.me/video/20251021/23e0903d3131441692e95f0c3acabf1c/cloudv-transfer/55555555prn696945556n4659q9pq005_141a6be711454681a64ffe23139a82e0_0_4.mp4?wsSecret=f47903de85bf7e02518cf1801b652747&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:42:28Z"
+  },
+  "dramaora_52029998924_15": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 15,
+    "telegram_message_id": 13680,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1cGrvOOQ9y48TJOIVkP-O4G1YyA6DAAKTIQACd-KAVzXgwBqZnIAjHgQ",
+    "telegram_message_ids": [
+      13680
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.35,
+    "original_url": "https://media.vidivo.me/video/20251021/b83e07e0eccc4e8f8190cb55ba26f904/cloudv-transfer/5555555567n9189p5556n4655sppq005_96e6f1bf1dc44e4b95bdb983a996258c_0_4.mp4?wsSecret=5c42b4caf3336a9e1a2150dce1e5e7fc&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:42:46Z"
+  },
+  "dramaora_52029998924_16": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 16,
+    "telegram_message_id": 13681,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1cWrvOPgrTQ5_cECl7AVmjUPDbIdYAAKUIQACd-KAV9UM9Db7wXS_HgQ",
+    "telegram_message_ids": [
+      13681
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.13,
+    "original_url": "https://media.vidivo.me/video/20251021/92caac4b76354c8db01cc87a9c873f1b/cloudv-transfer/55555555s737q3115556n4653n4qq005_59b65d5d63a14d80b2f1058a7108d223_0_4.mp4?wsSecret=d0252f76736f301f8ab2a3d99b134eaa&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:43:06Z"
+  },
+  "dramaora_52029998924_17": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 17,
+    "telegram_message_id": 13682,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1cmrvOTDF-d82EH0Is3k4lFJhSwAB8wACliEAAnfigFeo5cUAAaO6AZkeBA",
+    "telegram_message_ids": [
+      13682
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.42,
+    "original_url": "https://media.vidivo.me/video/20251021/a10b219edc404768ab02c5ecca4b116a/cloudv-transfer/55555555s63501r45556n465p24rq005_68aa99be9bd84da494b9a15b13272c95_0_4.mp4?wsSecret=cad0e84d8fa0a5fb64ccd96fe1ba3298&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:44:02Z"
+  },
+  "dramaora_52029998924_18": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 18,
+    "telegram_message_id": 13683,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1c2rvOUL75n8_yH7rDP3txR5LHd-MAAKYIQACd-KAV3FwXlTfSVYbHgQ",
+    "telegram_message_ids": [
+      13683
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.79,
+    "original_url": "https://media.vidivo.me/video/20251021/267c21b173b44a468279a66773fcf27c/cloudv-transfer/55555555p3s280155556n465q0osq005_94df2ce2d46a49599fa5ecb2847dbe62_0_4.mp4?wsSecret=fb7f600a9a94c20f7e1ab6fb9d3c011a&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:44:21Z"
+  },
+  "dramaora_52029998924_19": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 19,
+    "telegram_message_id": 13684,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1dGrvOVQ3vHxtypjxioIRRJ6mwBUeAAKZIQACd-KAV06kbnsNTrY5HgQ",
+    "telegram_message_ids": [
+      13684
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.16,
+    "original_url": "https://media.vidivo.me/video/20251021/17eae89de3e8418f81b863d308959179/cloudv-transfer/55555555447sq3sn5556n4656825r005_13abe78d996d4b6094f1741449fff917_0_4.mp4?wsSecret=9881bad3e8471588ea00f0cc00952926&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:44:39Z"
+  },
+  "dramaora_52029998924_20": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 20,
+    "telegram_message_id": 13685,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1dWrvOWqdK12iRGurLuSaqzio0kjWAAKaIQACd-KAV8p8YEs_JvT1HgQ",
+    "telegram_message_ids": [
+      13685
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.5,
+    "original_url": "https://media.vidivo.me/video/20251021/d78a81d90c1548c68042c1423901431f/cloudv-transfer/55555555p3p967595556n4655866r005_f93a70923aed4829b34a50b346fbf0ec_0_4.mp4?wsSecret=fa2946c6e32777f1180c69bc25063fcd&wsTime=1794069411",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:45:00Z"
+  },
+  "dramaora_52029998924_21": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 21,
+    "telegram_message_id": 13686,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1dmrvOYBeStgTkvNpbftFLPhpmfyQAAKbIQACd-KAV8t0Gcz9TgaNHgQ",
+    "telegram_message_ids": [
+      13686
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.92,
+    "original_url": "https://media.vidivo.me/video/20251021/af62250465de4e5cb46f57c870e513ad/cloudv-transfer/5555555532r04rp35556n46595q6r005_140868b6a14349a09712e2fd978cbd00_0_4.mp4?wsSecret=a6a2205d3062e4dce48bec9518714655&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:45:22Z"
+  },
+  "dramaora_52029998924_22": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 22,
+    "telegram_message_id": 13687,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1d2rvOZQtfqlx027ZgznFdUwnq7YbAAKcIQACd-KAVz04o0NKym7tHgQ",
+    "telegram_message_ids": [
+      13687
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.52,
+    "original_url": "https://media.vidivo.me/video/20251021/942a82dea84849be84473a1c5b1edab8/cloudv-transfer/5555555513n50s4n5556n465snn7r005_0aff51b1e05041e9a6636e18b8556d8d_0_4.mp4?wsSecret=22fbd27127c75d14a6ab4d5161570e4b&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:45:42Z"
+  },
+  "dramaora_52029998924_23": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 23,
+    "telegram_message_id": 13688,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1eGrvOaUOD4zgVCt1bJz2tFrRf6Q4AAKdIQACd-KAV_K_Wsw60SKrHgQ",
+    "telegram_message_ids": [
+      13688
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.07,
+    "original_url": "https://media.vidivo.me/video/20251021/a75be3e1a8ae465993edde1762a5ec79/cloudv-transfer/5555555510934po65556n465nq88r005_c34b72502e694262a07e1b4e3db680ea_0_4.mp4?wsSecret=97348e60e9b46dedc110107721407e78&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:45:59Z"
+  },
+  "dramaora_52029998924_24": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 24,
+    "telegram_message_id": 13689,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1eWrvObi-p3DXpYgaK8dmumkoDQABzAACniEAAnfigFcymwNvoeaRBx4E",
+    "telegram_message_ids": [
+      13689
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.81,
+    "original_url": "https://media.vidivo.me/video/20251021/a62c4ae556c847c99672d3d444d2f212/cloudv-transfer/55555555o29809p35556n4656559r005_8019ad4f563a429b8574cca8b254a5d3_0_4.mp4?wsSecret=c64ba73e6e044c1432879f5eb0da4e42&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:46:19Z"
+  },
+  "dramaora_52029998924_25": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 25,
+    "telegram_message_id": 13690,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1emrvOcjYLO3A_dIK4WES6Z4jSpWcAAKfIQACd-KAV2oKo6i--XoFHgQ",
+    "telegram_message_ids": [
+      13690
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.72,
+    "original_url": "https://media.vidivo.me/video/20251021/c17c0cea3bcf4bca95ddaacec48ee629/cloudv-transfer/555555554onp55o85556n4653549r005_c33f82e5489146b39b5bddc0172717a2_0_4.mp4?wsSecret=031233581afab52f98582451ec267cc2&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:46:35Z"
+  },
+  "dramaora_52029998924_26": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 26,
+    "telegram_message_id": 13691,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1e2rvOdzd0F4flDT7WNlIgARkIyHnAAKgIQACd-KAVwnA-_N0gLM6HgQ",
+    "telegram_message_ids": [
+      13691
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.91,
+    "original_url": "https://media.vidivo.me/video/20251021/10dd56cd655c457daf8b8061f1d6b183/cloudv-transfer/555555553s9n4q9q5556n465qs90r005_9f07e87562a3477d8146ac3c101affb5_0_4.mp4?wsSecret=68e28fff08a371b08afdb2d813bbf628&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:46:54Z"
+  },
+  "dramaora_52029998924_27": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 27,
+    "telegram_message_id": 13692,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1fGrvOfAJXmxgYPOGfgg2uZxqAAFcHwACoSEAAnfigFcBwU3upGNu2B4E",
+    "telegram_message_ids": [
+      13692
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.09,
+    "original_url": "https://media.vidivo.me/video/20251021/09d6d9283c2b49d3a19261102a6e534a/cloudv-transfer/555555556969p8185556n4655n31r005_100dc9adcf934720ab93fd664a151fe9_0_4.mp4?wsSecret=175928c4e6cca3fe267ea0271a2e1490&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:47:14Z"
+  },
+  "dramaora_52029998924_28": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 28,
+    "telegram_message_id": 13693,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1fWrvOgFckqR29KW9ia2RrWbvuBasAAKiIQACd-KAVzRAvybwNTiHHgQ",
+    "telegram_message_ids": [
+      13693
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.98,
+    "original_url": "https://media.vidivo.me/video/20251021/944fa500c8ab4364a35738165fec1668/cloudv-transfer/555555556o2rq5565556n4651292r005_a8102d7b0323403c964b50e65c9cfe1c_0_4.mp4?wsSecret=31f2d80e5de451b87e2d93b6e520d83b&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:47:31Z"
+  },
+  "dramaora_52029998924_29": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 29,
+    "telegram_message_id": 13694,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1fmrvOhQGHY9JcTivzhEeuZMFZbYTAAKjIQACd-KAV-zOWA38zKUPHgQ",
+    "telegram_message_ids": [
+      13694
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.73,
+    "original_url": "https://media.vidivo.me/video/20251021/a9b7503131554eec9c0646037b8aaf93/cloudv-transfer/55555555810n02325556n465q2s2r005_4eca78d18649479891ed2457d898bd12_0_4.mp4?wsSecret=266ff0060335016d53fb73bdce71cf29&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:47:51Z"
+  },
+  "dramaora_52029998924_30": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 30,
+    "telegram_message_id": 13695,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1f2rvOiTVNunx8GwQ39DRNK0tWufNAAKkIQACd-KAV2yjY1_44HDxHgQ",
+    "telegram_message_ids": [
+      13695
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.21,
+    "original_url": "https://media.vidivo.me/video/20251021/9c3868aba7714ffbb92b16b08c47eca0/cloudv-transfer/55555555n69q7r2q5556n465ppp4r005_24981ebaae954a7ebb103d07ef26296c_0_4.mp4?wsSecret=12ebd5cb4375ec22d9b501ffab25e66b&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:48:06Z"
+  },
+  "dramaora_52029998924_31": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 31,
+    "telegram_message_id": 13696,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1gGrvOj0tkw_pBQ-e6Da0vtbJumSFAAKlIQACd-KAV8Lg2IyxPqOnHgQ",
+    "telegram_message_ids": [
+      13696
+    ],
+    "total_parts": 1,
+    "file_size_mb": 22.26,
+    "original_url": "https://media.vidivo.me/video/20251021/a6d4b7f90816402496219a7252947d25/cloudv-transfer/5555555592on64s75556n465017or005_7d8949627ee24c4e913626ee6b21ac2e_0_4.mp4?wsSecret=d41e1d7c887324e46fa3a7e098f3d48b&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:48:31Z"
+  },
+  "dramaora_52029998924_32": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 32,
+    "telegram_message_id": 13697,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1gWrvOkzdGVsL_5NmA0Vp5Gom65NEAAKmIQACd-KAVxy-vLITna0uHgQ",
+    "telegram_message_ids": [
+      13697
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.72,
+    "original_url": "https://media.vidivo.me/video/20251021/66d9f7b3d22c415ca63ddad6652e2df3/cloudv-transfer/55555555no260s7r5556n465o47pr005_5b9a3e7f827d40a1899e35f8311cffc0_0_4.mp4?wsSecret=5c81b28d5cddaa730c5549b2325997fa&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:48:47Z"
+  },
+  "dramaora_52029998924_33": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 33,
+    "telegram_message_id": 13698,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1gmrvOlxOvAqFC8DxDDTNN-wRnAScAAKoIQACd-KAVxJYJ3NDSUU-HgQ",
+    "telegram_message_ids": [
+      13698
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.38,
+    "original_url": "https://media.vidivo.me/video/20251021/3bd9d0a950f64760a85a2546bc19ef1a/cloudv-transfer/55555555q0rrr2145556n465rpspr005_b6c59f9207ba4f6e9dece7c5fd7a82bf_0_4.mp4?wsSecret=86a34544ae496406e13a71a48d88f5da&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:49:02Z"
+  },
+  "dramaora_52029998924_34": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 34,
+    "telegram_message_id": 13699,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1g2rvOmt9KfGb_vQSk9KqyWqZpzYlAAKpIQACd-KAV80wcvE3Q8mcHgQ",
+    "telegram_message_ids": [
+      13699
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.35,
+    "original_url": "https://media.vidivo.me/video/20251021/cd2d9749bbfe4d8a96ea4015e7a06cf0/cloudv-transfer/555555557q5q23015556n465r5nqr005_5639cd4936e94be8ae351d03410934a5_0_4.mp4?wsSecret=00f4abc876d395991d6881b44ad6ad00&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:49:18Z"
+  },
+  "dramaora_52029998924_35": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 35,
+    "telegram_message_id": 13700,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1hGrvOoChpH15xCAUjMPvBSVjW3MTAAKqIQACd-KAV2vuZkgkxKPVHgQ",
+    "telegram_message_ids": [
+      13700
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.85,
+    "original_url": "https://media.vidivo.me/video/20251021/981babdc797041b39c8fb5001971d759/cloudv-transfer/55555555n4p46p765556n465469rr005_ab57c1e20979491d9773d6c49ba7eea5_0_4.mp4?wsSecret=7f2e42e8b6089b2b80bd1579121e109b&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:49:38Z"
+  },
+  "dramaora_52029998924_36": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 36,
+    "telegram_message_id": 13701,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1hWrvOpODWw4QfR5L3Rikp2XrrvA8AAKrIQACd-KAV2sqY6OPx7qzHgQ",
+    "telegram_message_ids": [
+      13701
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.3,
+    "original_url": "https://media.vidivo.me/video/20251021/ef3aeab6f00d4978971263cc1372238f/cloudv-transfer/55555555q7o84rn25556n465892sr005_fb38b611374d44ab8e524d5108cfd049_0_4.mp4?wsSecret=221780c02aec602bf7416fe44161ab1e&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:49:57Z"
+  },
+  "dramaora_52029998924_37": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 37,
+    "telegram_message_id": 13702,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1hmrvOqtCo4Fc88_1WraUjx5ThRaTAAKtIQACd-KAVxAJWyO0k-bfHgQ",
+    "telegram_message_ids": [
+      13702
+    ],
+    "total_parts": 1,
+    "file_size_mb": 20.34,
+    "original_url": "https://media.vidivo.me/video/20251021/5499f41c86324f0fa752c023eba7348e/cloudv-transfer/555555559nr7rnn75556n4656915s005_b5b4091bc48b4491a02f51d8340b096a_0_4.mp4?wsSecret=f28c9e20b7824ebc65409720f34f4af2&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:50:21Z"
+  },
+  "dramaora_52029998924_38": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 38,
+    "telegram_message_id": 13703,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1h2rvOr_vK9POesv__RJXgn7XewhhAAKuIQACd-KAV8IAAba2iKEohR4E",
+    "telegram_message_ids": [
+      13703
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.44,
+    "original_url": "https://media.vidivo.me/video/20251021/9b7a79b760364a228b52e9b1bd6a5d0d/cloudv-transfer/55555555042110035556n465sp86s005_016a7d33c2d1459e8d00efa4a1806f29_0_4.mp4?wsSecret=91db7dd7c27ad7f415fbd7f11525093b&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:50:42Z"
+  },
+  "dramaora_52029998924_39": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 39,
+    "telegram_message_id": 13704,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1iGrvOs8H92rWcT9ATNhGF0KwGJgRAAKwIQACd-KAVyOIfWCm2wmLHgQ",
+    "telegram_message_ids": [
+      13704
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.68,
+    "original_url": "https://media.vidivo.me/video/20251021/1c12f02707e1436f998878ea99570064/cloudv-transfer/55555555oqrp85rp5556n4650967s005_7393f5bdd8f8488ba8b0e60a2f0ca52b_0_4.mp4?wsSecret=e3ddb3765c6591bbe693e3f24f7290b5&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:50:57Z"
+  },
+  "dramaora_52029998924_40": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 40,
+    "telegram_message_id": 13705,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1iWrvOuGWFli7JULLqcXrrcV4-KgSAAKzIQACd-KAVyoDdec8OaxuHgQ",
+    "telegram_message_ids": [
+      13705
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.21,
+    "original_url": "https://media.vidivo.me/video/20251021/4d77cd435423435c87533d7895ee552f/cloudv-transfer/555555552677604p5556n465p5o7s005_1fa635634ffa403fb1d1785da94991aa_0_4.mp4?wsSecret=30818f1d71d00fa7d8a6980d035303be&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:51:15Z"
+  },
+  "dramaora_52029998924_41": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 41,
+    "telegram_message_id": 13706,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1imrvOzBY7ObS6HaB3RYNUsbxZgW4AAK1IQACd-KAV4Uvo-9aXMNPHgQ",
+    "telegram_message_ids": [
+      13706
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.29,
+    "original_url": "https://media.vidivo.me/video/20251021/3a246005315f43b68947803d3e65ff9e/cloudv-transfer/555555555nr2so515556n4659r28s005_ced35168d8f14e50833b429da9860617_0_4.mp4?wsSecret=6e68ef27eaa9cbc496b496071324d0e9&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:52:35Z"
+  },
+  "dramaora_52029998924_42": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 42,
+    "telegram_message_id": 13707,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1i2rvO_SHwh_TO7v4WhkqFo8Pw6D_AAK2IQACd-KAV78oVTPMyyPuHgQ",
+    "telegram_message_ids": [
+      13707
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.35,
+    "original_url": "https://media.vidivo.me/video/20251021/010e3117b67445f58db6fc01e2cd95b5/cloudv-transfer/555555551n11o5855556n465sn19s005_7f5a2233bc0d43a2bf23abad728820bb_0_4.mp4?wsSecret=6bd71b98aeaff02760acdb15fb51295c&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:55:50Z"
+  },
+  "dramaora_52029998924_43": {
+    "show_id": "dramaora_52029998924",
+    "show_title": "My Cold-Hearted Husband is a Wife-Obsessed Tycoon",
+    "episode_number": 43,
+    "telegram_message_id": 13708,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1jGrvPAlLIFrO8joLkJMcCsvQuVZhAAK3IQACd-KAVxU8QYfKngABcR4E",
+    "telegram_message_ids": [
+      13708
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.58,
+    "original_url": "https://media.vidivo.me/video/20251021/21d16c12d2174b8a908778e02c69c350/cloudv-transfer/5555555596q743pr5556n46559p0s005_881f77bfa31c40b1a1dac3bf42cb6750_0_4.mp4?wsSecret=43caf351f4f1e888d33d1b73f25e5773&wsTime=1794069412",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20251021/055b0202019a1000e8f94c7400000000.jpg",
+    "synopsis": "Heiress Jasmine survives abduction, falls for her rescuer, then discovers her savior has shocking ties to her fiancé in a battle for her family empire. ",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T14:56:11Z"
   }
 };
