@@ -51032,5 +51032,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
     "source": "dramaora",
     "backed_up_at": "2026-11-07T01:45:55Z"
+  },
+  "dramaora_52029171870_9": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 9,
+    "telegram_message_id": 13588,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1FGru2ck90h6fdthudnMlUbgOIaXsAALIIAACd-J4V0ZGxB7nr0sxHgQ",
+    "telegram_message_ids": [
+      13588
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.74,
+    "original_url": "https://media.vidivo.me/video/20260104/6f374c5d5cc340759db8a2f2044dc00c/cloudv-transfer/555555554osq5n895556o4650p79ns23_61668a5d1fff4e5d92e6119cd57a4ff7_0_4.mp4?wsSecret=5c92019d4be8a63435e649cbdd1c6b3d&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:56:59Z"
+  },
+  "dramaora_52029171870_10": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 10,
+    "telegram_message_id": 13589,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1FWru2duzHodFS2X1_1yI31df0Kg4AALLIAACd-J4V1aMtcQRR2uTHgQ",
+    "telegram_message_ids": [
+      13589
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.28,
+    "original_url": "https://media.vidivo.me/video/20260104/caab161aef984d35b68ce2ec773fc7c4/cloudv-transfer/55555555po1n7s215556o465qnosns23_b141b63dac8648e5a3d7a9b296e62fef_0_4.mp4?wsSecret=92f2e98af12f3a8ac82efebd78c6074b&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:57:17Z"
+  },
+  "dramaora_52029171870_11": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 11,
+    "telegram_message_id": 13590,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Fmru2et0LnZ1QTp95tFfUMTrBkNyAALMIAACd-J4V3j8oQfHzd9UHgQ",
+    "telegram_message_ids": [
+      13590
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.63,
+    "original_url": "https://media.vidivo.me/video/20260104/f1c2db581265444fb579436c967f3328/cloudv-transfer/55555555on062spn5556o4651ns5rs23_13e5192a7fcc47ce840576c92e81dd0e_0_4.mp4?wsSecret=8d0797f77bba6f8c30ced96206d20473&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:57:33Z"
+  },
+  "dramaora_52029171870_12": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 12,
+    "telegram_message_id": 13591,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1F2ru2f2m7KirOLoXo5fyE8V3vw9MAALNIAACd-J4Vzxl6cmyyo7fHgQ",
+    "telegram_message_ids": [
+      13591
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.22,
+    "original_url": "https://media.vidivo.me/video/20260104/a08c05454bbf4068801649592d90cd58/cloudv-transfer/5555555586063noq5556o465pq95ss23_84f8ef9731a343669d227c2309168409_0_4.mp4?wsSecret=7c5426ba514c8e65531174e2a898bcc9&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:57:51Z"
+  },
+  "dramaora_52029171870_13": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 13,
+    "telegram_message_id": 13592,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1GGru2hR2KvtkHs0c1cG7XOLxNFUbAALOIAACd-J4VyuYYHtLQWljHgQ",
+    "telegram_message_ids": [
+      13592
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.11,
+    "original_url": "https://media.vidivo.me/video/20260104/d726b132f2854f92b6bb02108ecd67e6/cloudv-transfer/555555551s6958935556o46530285533_20889db11eba4f46a2d9a7bb2fa7eebf_0_4.mp4?wsSecret=6d682b5d62a36add5fb57617514c6a51&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:58:14Z"
+  },
+  "dramaora_52029171870_14": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 14,
+    "telegram_message_id": 13593,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1GWru2iYEc1q1C__UhTzV2vBVp-tmAALPIAACd-J4VxQ7sB5vfUzEHgQ",
+    "telegram_message_ids": [
+      13593
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.02,
+    "original_url": "https://media.vidivo.me/video/20260104/e1ca717395df4bbbbae2c7b94d7c42da/cloudv-transfer/555555552q0504625556o46554879533_8747e0f4bf7b4cf2b932e37e439138bf_0_4.mp4?wsSecret=3dfdc1f8e9cb37bbf7501ddd734f233e&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:58:32Z"
+  },
+  "dramaora_52029171870_15": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 15,
+    "telegram_message_id": 13594,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Gmru2jcVktmCdip4BiKjiqVL_vRJAALQIAACd-J4VyXojUfvN5gAAR4E",
+    "telegram_message_ids": [
+      13594
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.31,
+    "original_url": "https://media.vidivo.me/video/20260104/d3bfa1dd406a483fa7e29610034a43b2/cloudv-transfer/5555555514oo91935556o465r1n10533_38cb887caf1a4fd0824b70ad1de5e47f_0_4.mp4?wsSecret=414bbb44a33624942c659cecab3aecab&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:58:50Z"
+  },
+  "dramaora_52029171870_16": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 16,
+    "telegram_message_id": 13595,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1G2ru2kjKjCdovA2kDU4-FDbo9c0CAALRIAACd-J4V5nc7GdveO1UHgQ",
+    "telegram_message_ids": [
+      13595
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.52,
+    "original_url": "https://media.vidivo.me/video/20260104/26a5c144ac3648f3b7c9c4163f83763a/cloudv-transfer/55555555r66s42255556o4656no03533_dda932c2011a4e81975a370d327ee037_0_4.mp4?wsSecret=fb8919bbfd1425d67282d8e44c9c2e33&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:59:06Z"
+  },
+  "dramaora_52029171870_17": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 17,
+    "telegram_message_id": 13596,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1HGru2lsWljnp231ewDNiYKiF76aSAALSIAACd-J4V6wG5bFjeJ0UHgQ",
+    "telegram_message_ids": [
+      13596
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.66,
+    "original_url": "https://media.vidivo.me/video/20260104/a00d2b61adb34c08b5c26d52060e3675/cloudv-transfer/5555555531936non5556o465qr094533_7667ece6d7d24d26a7e738c930aaa774_0_4.mp4?wsSecret=45dcff5c4f1038bf3471680840854bd0&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:59:25Z"
+  },
+  "dramaora_52029171870_18": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 18,
+    "telegram_message_id": 13597,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1HWru2m0ePzTa_rwy4dNoP8paSa6UAALTIAACd-J4V3BZnGkc6wPdHgQ",
+    "telegram_message_ids": [
+      13597
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.62,
+    "original_url": "https://media.vidivo.me/video/20260104/9344d421ea04481e97d16754929d12d5/cloudv-transfer/555555555729674n5556o465o22np533_8c173ebeaceb415c94106c9468319d1f_0_4.mp4?wsSecret=7cfb776396048cefe90ddbfb810a0f0e&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T07:59:43Z"
+  },
+  "dramaora_52029171870_19": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 19,
+    "telegram_message_id": 13598,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Hmru2n9YStdQX4PAdIVhqYON5j-YAALUIAACd-J4V4bw-SP7_CGtHgQ",
+    "telegram_message_ids": [
+      13598
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.68,
+    "original_url": "https://media.vidivo.me/video/20260104/e51d0036a9f544fc9a5cad652c972551/cloudv-transfer/555555557sr0n0s35556o465o3q45633_3e29f872f0544b5a8b15186cb36a6b60_0_4.mp4?wsSecret=adbdaf01827f133cb36a3827aac47d93&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:00:01Z"
+  },
+  "dramaora_52029171870_20": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 20,
+    "telegram_message_id": 13599,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1H2ru2o_jQNThyZbxyNO1yD6u9mkZAALVIAACd-J4V_TO5Sxw6lsCHgQ",
+    "telegram_message_ids": [
+      13599
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.94,
+    "original_url": "https://media.vidivo.me/video/20260104/787a8d793fd54c5b8f258bbb8dddea96/cloudv-transfer/5555555531546s255556o46577206633_f0bc629d4ce24258929130c4927a0ebf_0_4.mp4?wsSecret=1c63ecc72ff3b7dd95741f4241505cca&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:00:18Z"
+  },
+  "dramaora_52029171870_21": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 21,
+    "telegram_message_id": 13600,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1IGru2qK5hqshoS2NNBuFX-Uyo7S2AALWIAACd-J4VyrgnHeOUXkEHgQ",
+    "telegram_message_ids": [
+      13600
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.89,
+    "original_url": "https://media.vidivo.me/video/20260104/a3dc5aa12d4345caaa7cffef3c2fa763/cloudv-transfer/55555555811n0on45556o465s8n80633_1e9bd79a867f48a3b929c9f4e00db833_0_4.mp4?wsSecret=a2ac266f2753adbea94f117733263d52&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:00:37Z"
+  },
+  "dramaora_52029171870_22": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 22,
+    "telegram_message_id": 13601,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1IWru2rUzQqlO3Yd1_Vs6GFucbSn_AALYIAACd-J4VwbNAAEBKJIyjR4E",
+    "telegram_message_ids": [
+      13601
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.47,
+    "original_url": "https://media.vidivo.me/video/20260104/17e3d96c3c4d456cad702d71ab3d31af/cloudv-transfer/55555555q15653005556o465r66n3633_e1bab0b553db421fbb136f218e85bff0_0_4.mp4?wsSecret=85d558075b453816c43cba93636a5c8b&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:00:55Z"
+  },
+  "dramaora_52029171870_23": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 23,
+    "telegram_message_id": 13602,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Imru2saDzpNkeZbDgwT_loU9frpRAALaIAACd-J4V_zVRI5NWcHwHgQ",
+    "telegram_message_ids": [
+      13602
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.65,
+    "original_url": "https://media.vidivo.me/video/20260104/5591ac1e631a48588f834059b2152121/cloudv-transfer/555555552n17p20q5556o465193rn633_4511730ccb544d0ab08a56abc618186d_0_4.mp4?wsSecret=24597ff6b129d47db30a01898d945f8a&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:01:13Z"
+  },
+  "dramaora_52029171870_24": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 24,
+    "telegram_message_id": 13603,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1I2ru2tmjA24NTRl-TxGrrl3foSXmAALbIAACd-J4V2z8Ftgku2OpHgQ",
+    "telegram_message_ids": [
+      13603
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.12,
+    "original_url": "https://media.vidivo.me/video/20260104/8a019b50ae5242599979dfe5545e13cb/cloudv-transfer/5555555501915ro75556o465pqq0q633_d4704f2b35504706b5cc87d57b4584dc_0_4.mp4?wsSecret=7ff8116ac57d9d6a26fcc6988774d6f9&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:01:32Z"
+  },
+  "dramaora_52029171870_25": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 25,
+    "telegram_message_id": 13604,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1JGru2uo-YXS2N9t8eT5lsnjaOA0HAALcIAACd-J4V5SZI6z9Y3QTHgQ",
+    "telegram_message_ids": [
+      13604
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.83,
+    "original_url": "https://media.vidivo.me/video/20260104/ddf16dc7b0d243b29713669d18e48145/cloudv-transfer/55555555290r75325556o46556o0r633_435c337ed46942bab561f8cc4c5f6efc_0_4.mp4?wsSecret=3b4c08119c2fe2aaf7f89368f9e087b6&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:01:49Z"
+  },
+  "dramaora_52029171870_26": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 26,
+    "telegram_message_id": 13605,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1JWru2v0Iwx8C_fk8wgEj4peAe240AALdIAACd-J4V8uPslCThw54HgQ",
+    "telegram_message_ids": [
+      13605
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.34,
+    "original_url": "https://media.vidivo.me/video/20260104/919f2f47b2f5413a8a70df90f74290b1/cloudv-transfer/55555555non849r05556o465sn5n6733_976c46ce96bb491b8e1126ba90eac5c6_0_4.mp4?wsSecret=023a88678a9b0004e2f61a424b15c801&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:02:07Z"
+  },
+  "dramaora_52029171870_27": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 27,
+    "telegram_message_id": 13606,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Jmru2w3h3LlFtjYFeJYtcbLH4jCPAALfIAACd-J4VyFnLpjHm2m9HgQ",
+    "telegram_message_ids": [
+      13606
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.65,
+    "original_url": "https://media.vidivo.me/video/20260104/dcffdea5fbce4e84b6f7429c4dfd2da1/cloudv-transfer/555555557077p3sp5556o4659q427733_35de98da11a643f9a20bbf57d80ddfd1_0_4.mp4?wsSecret=adaf1c43c13c3e386e554a3ab82d0215&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:02:23Z"
+  },
+  "dramaora_52029171870_28": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 28,
+    "telegram_message_id": 13607,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1J2ru2x7xTkQYBF2dekn3lYEJ-BJHAALgIAACd-J4V0kmiCnd5DA2HgQ",
+    "telegram_message_ids": [
+      13607
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.96,
+    "original_url": "https://media.vidivo.me/video/20260104/ac68b4bd109740d09379be32f01c11a6/cloudv-transfer/555555558qs0opo05556o465n8o28733_3894d334581643daaadb92a250ef6873_0_4.mp4?wsSecret=697ee65fe33254210e4d5e3fa6492440&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:02:40Z"
+  },
+  "dramaora_52029171870_29": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 29,
+    "telegram_message_id": 13608,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1KGru2zF0crH1xs4JNiFHL5kSobfcAALhIAACd-J4V5FrsIebGJ6fHgQ",
+    "telegram_message_ids": [
+      13608
+    ],
+    "total_parts": 1,
+    "file_size_mb": 21.39,
+    "original_url": "https://media.vidivo.me/video/20260104/a941c9c4e5e64cf1b598841f125e0fed/cloudv-transfer/5555555575n7no625556o4650nn51733_3d49398846f74d94ac8e4e3dfb5bea8b_0_4.mp4?wsSecret=be8b57c5287004f51639402f1a289e9d&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:02:59Z"
+  },
+  "dramaora_52029171870_30": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 30,
+    "telegram_message_id": 13609,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1KWru20I3YgXQ9b5CJ1-lYTMTg2V7AALiIAACd-J4VzQJJ8ZPi7mjHgQ",
+    "telegram_message_ids": [
+      13609
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.08,
+    "original_url": "https://media.vidivo.me/video/20260104/7cf6fa5654a545b2a0a61db267f3c09d/cloudv-transfer/555555553n028o365556o4650r36p733_624a0c87c1c94d1dbe569a3c6994639d_0_4.mp4?wsSecret=fe9f4cd7af904ef5271e64d75835f576&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:03:16Z"
+  },
+  "dramaora_52029171870_31": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 31,
+    "telegram_message_id": 13610,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Kmru21XQWMxHOJWs6ZtOazIbldKRAALjIAACd-J4V2wOR1fq5XwLHgQ",
+    "telegram_message_ids": [
+      13610
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.24,
+    "original_url": "https://media.vidivo.me/video/20260104/2de285319617432f8dc4b39b744aa5bb/cloudv-transfer/555555550218pqo05556o4655r58q733_4bd679d9c9384b28aa4545d28d8b52cd_0_4.mp4?wsSecret=8a642b7cbe47b8bf5d13ee65f9ce0a33&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:03:35Z"
+  },
+  "dramaora_52029171870_32": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 32,
+    "telegram_message_id": 13611,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1K2ru22cFzdCxsV3_cIxevDRI_XzFAALkIAACd-J4VwABVkbLZd5QKB4E",
+    "telegram_message_ids": [
+      13611
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.29,
+    "original_url": "https://media.vidivo.me/video/20260104/00bfcb02b2094b76ab20b8d88aef8419/cloudv-transfer/55555555soo74r255556o465s51ns733_08ef478234ce458f8d7d299ab2a680b2_0_4.mp4?wsSecret=0fbb960527b076442817a8cec44a0fe0&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:03:53Z"
+  },
+  "dramaora_52029171870_33": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 33,
+    "telegram_message_id": 13612,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1LGru23hHStOjuHxiZXETlVs9csRvAALlIAACd-J4Vwff556mOzGWHgQ",
+    "telegram_message_ids": [
+      13612
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.13,
+    "original_url": "https://media.vidivo.me/video/20260104/f771ce88a8cf4c2b952077347295f7af/cloudv-transfer/5555555561878s4q5556o4656o9ps733_e126ff131aaf4ff28ac8ca91fa543b27_0_4.mp4?wsSecret=935347dd152e5b4fb00e1d1b049b38bf&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:04:10Z"
+  },
+  "dramaora_52029171870_34": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 34,
+    "telegram_message_id": 13613,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1LWru24kao9iuBMAx6s9WuU9MBlkyAALmIAACd-J4Vw-LkYW9GGZ8HgQ",
+    "telegram_message_ids": [
+      13613
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.66,
+    "original_url": "https://media.vidivo.me/video/20260104/83aa272ea3344b628d281c0d807fefba/cloudv-transfer/555555553r9q20p95556o4652q247833_306dda60f62942eb864eb4ff153049a6_0_4.mp4?wsSecret=cf28938b5e78db4517afa0518d644bfe&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:04:27Z"
+  },
+  "dramaora_52029171870_35": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 35,
+    "telegram_message_id": 13614,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Lmru25moca3plA_zCivVYB1LWyDYAALnIAACd-J4V_Fxd_UYKhnVHgQ",
+    "telegram_message_ids": [
+      13614
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.32,
+    "original_url": "https://media.vidivo.me/video/20260104/3df7234e18f84915b03a7ba614a8a068/cloudv-transfer/555555555r32s5445556o4650r681833_4e019615e7bc41a19bb7bb9f25c27f4b_0_4.mp4?wsSecret=f752a4ef44da766cf90630b5d8e83900&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:04:43Z"
+  },
+  "dramaora_52029171870_36": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 36,
+    "telegram_message_id": 13615,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1L2ru26zf0WAG0BJChqkKAAGsuFuXKAAC6CAAAnfieFcf6gg1pvtb5h4E",
+    "telegram_message_ids": [
+      13615
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.24,
+    "original_url": "https://media.vidivo.me/video/20260104/cec210b41bff4b1f91032a95d64581ec/cloudv-transfer/55555555np78p7455556o4650o721833_ddcc6b95a82b44dcbbb99e3041ec3064_0_4.mp4?wsSecret=02738cb628b4af6e495d00df56c4ec9c&wsTime=1794045398",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:05:02Z"
+  },
+  "dramaora_52029171870_37": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 37,
+    "telegram_message_id": 13616,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1MGru27wl5lGSpq2JanujTRxSTeXNAALqIAACd-J4V_Q8TUMpvLBRHgQ",
+    "telegram_message_ids": [
+      13616
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.36,
+    "original_url": "https://media.vidivo.me/video/20260104/8e3d30dd02dd48bb9db5a9eb2230b54a/cloudv-transfer/55555555op32777p5556o46540654833_2706f3431aff4f799c35d048e9a72027_0_4.mp4?wsSecret=03b495b02e46c84b35d05228f68b6484&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:05:18Z"
+  },
+  "dramaora_52029171870_38": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 38,
+    "telegram_message_id": 13617,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1MWru286OidA99LGeNA9m05sfqhwWAALrIAACd-J4VzRb-tBwxaPVHgQ",
+    "telegram_message_ids": [
+      13617
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.17,
+    "original_url": "https://media.vidivo.me/video/20260104/8ba8d5b72feb4a5d895f25e6b52e6da6/cloudv-transfer/55555555r50p23325556o465360qn833_7784072177de43748baef3294162c16d_0_4.mp4?wsSecret=661814d83142817dc21780bcfef616bf&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:05:36Z"
+  },
+  "dramaora_52029171870_39": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 39,
+    "telegram_message_id": 13618,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Mmru2-HyN00shH5L_p_mssHKvSilAALsIAACd-J4V26UY3fy48SXHgQ",
+    "telegram_message_ids": [
+      13618
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.68,
+    "original_url": "https://media.vidivo.me/video/20260104/e4f94d16829b45f9926b1a607fa4755d/cloudv-transfer/5555555553sqoss75556o465nr6sn833_9340943b18044b90a24d859e91b114f5_0_4.mp4?wsSecret=a97bb41a356c531227b01969af7f1d8c&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:05:56Z"
+  },
+  "dramaora_52029171870_40": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 40,
+    "telegram_message_id": 13619,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1M2ru2_QsIe8CZImhvNzQZU77E2sxAALuIAACd-J4V2aP54UAAUVi9B4E",
+    "telegram_message_ids": [
+      13619
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.45,
+    "original_url": "https://media.vidivo.me/video/20260104/3940534fabd54fcfb07f849605dde178/cloudv-transfer/5555555502r23nqp5556o46558s4s833_b77fb0d7a3da4a74b75f04ed15bf02ec_0_4.mp4?wsSecret=a7e5c98521e9ee759a6ec1c5beb414ba&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:06:14Z"
+  },
+  "dramaora_52029171870_41": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 41,
+    "telegram_message_id": 13620,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1NGru3BUFr5hlu_1LNqZKhYKt9nKEAALvIAACd-J4V9KGZS5M0jqXHgQ",
+    "telegram_message_ids": [
+      13620
+    ],
+    "total_parts": 1,
+    "file_size_mb": 18.83,
+    "original_url": "https://media.vidivo.me/video/20260104/66d6e09967a14144888f1be7ca590f85/cloudv-transfer/555555554371654p5556o4655s7q0933_e1ad85b23d544a96b1609c7d6f5955d1_0_4.mp4?wsSecret=142554152f60f155dd6aad6d241407e8&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:06:47Z"
+  },
+  "dramaora_52029171870_42": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 42,
+    "telegram_message_id": 13621,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1NWru3CYcsT1xvmlLZQ-eMbCM76h2AALxIAACd-J4V6Foj3f-qsM5HgQ",
+    "telegram_message_ids": [
+      13621
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.18,
+    "original_url": "https://media.vidivo.me/video/20260104/870c78f5e6b44aee83fa6d3af3bb67ed/cloudv-transfer/55555555psqq6s235556o465o8164933_bf486951ed8d4f7db71b18bc18448013_0_4.mp4?wsSecret=3eb7e53de06e448142d424ff95c1c904&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:07:04Z"
+  },
+  "dramaora_52029171870_43": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 43,
+    "telegram_message_id": 13622,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Nmru3DVdsfxLLHGeXjk__XcasswfAALzIAACd-J4VzhVoWkizxJzHgQ",
+    "telegram_message_ids": [
+      13622
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.97,
+    "original_url": "https://media.vidivo.me/video/20260104/9fcb5a2276724f609152fa934ea029ab/cloudv-transfer/55555555qq4p78ns5556o46506r34933_b5333a283e0a4e928d23eadb782e7288_0_4.mp4?wsSecret=5b200ec8b231256565587e5d6bda5d29&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:07:19Z"
+  },
+  "dramaora_52029171870_44": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 44,
+    "telegram_message_id": 13623,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1N2ru3Ed8mX3VSJNv1WdNzWv4mVjMAAL0IAACd-J4V0DTtZOoLNlvHgQ",
+    "telegram_message_ids": [
+      13623
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.96,
+    "original_url": "https://media.vidivo.me/video/20260104/8290e1994c9541289a833075b4efb09a/cloudv-transfer/555555553n0o31rr5556o4653596q933_ad7cb189847c41ab82e5a7ec35167143_0_4.mp4?wsSecret=fce2e92e4b2386f8a9438155910e5dba&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:07:37Z"
+  },
+  "dramaora_52029171870_45": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 45,
+    "telegram_message_id": 13624,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1OGru3FkIoEH0ydRNI_Xux3PZSMW0AAL2IAACd-J4V87LQyXm5zU1HgQ",
+    "telegram_message_ids": [
+      13624
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.56,
+    "original_url": "https://media.vidivo.me/video/20260104/91013dbd8fb3441eafdc3b4e51750904/cloudv-transfer/5555555583o7q71r5556o465789r7033_1b27b2b6c87f4e91b10ab4a03aa599d9_0_4.mp4?wsSecret=99b1c76f9d8a8e0c21051a9475e6adef&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:07:56Z"
+  },
+  "dramaora_52029171870_46": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 46,
+    "telegram_message_id": 13625,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1OWru3G42TZwwDhIKaiEHWZdl0FsmAAL4IAACd-J4VwIaULwGknoZHgQ",
+    "telegram_message_ids": [
+      13625
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.03,
+    "original_url": "https://media.vidivo.me/video/20260104/c3c043e6a3654a7db391a9779bce1241/cloudv-transfer/5555555509q5pr5q5556o46523878033_3bbd499b42b946c99852c4e0163c5915_0_4.mp4?wsSecret=701d9e1f7d90e899dcead71a7466cd92&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:08:16Z"
+  },
+  "dramaora_52029171870_47": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 47,
+    "telegram_message_id": 13626,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Omru3H_zQ_GP9fwMpoHXFHNM5oW3AAL7IAACd-J4V_SxhXMTtFX4HgQ",
+    "telegram_message_ids": [
+      13626
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.58,
+    "original_url": "https://media.vidivo.me/video/20260104/6fb9b27f99e14eb89305101c88e33c64/cloudv-transfer/555555557736o3915556o465n0828033_0ac2dc3e5dfc414abd8bc8ab849098ec_0_4.mp4?wsSecret=98188b4590383372f9cf807d25791457&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:08:34Z"
+  },
+  "dramaora_52029171870_48": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 48,
+    "telegram_message_id": 13627,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1O2ru3JObn8AChRoEIg15swABouaVrwAC_CAAAnfieFfj6XeGlETlCx4E",
+    "telegram_message_ids": [
+      13627
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.9,
+    "original_url": "https://media.vidivo.me/video/20260104/51c69b5d866e4a22ad1fb3c04559364c/cloudv-transfer/555555554r7pn1r05556o465no500033_33a6444e539e492abce696e761cb049e_0_4.mp4?wsSecret=1ef042f0b077b0abe7ca12b9721d6a48&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:08:53Z"
+  },
+  "dramaora_52029171870_49": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 49,
+    "telegram_message_id": 13628,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1PGru3KYccwABq3P67IFzZh4pRbUVaAAC_SAAAnfieFcdqX1isfO2hh4E",
+    "telegram_message_ids": [
+      13628
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.24,
+    "original_url": "https://media.vidivo.me/video/20260104/88cc04687f084c82a7afcba8c3e395b4/cloudv-transfer/555555550p5208315556o465r922n033_c898853cb554495d9b8135f208e78040_0_4.mp4?wsSecret=063d4dcf90709fa5149c46d4b1d7afc0&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:09:12Z"
+  },
+  "dramaora_52029171870_50": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 50,
+    "telegram_message_id": 13629,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1PWru3LiMLb1_SwUMIjj0T4d5Q8gGAAL-IAACd-J4VzyfeufV_zq_HgQ",
+    "telegram_message_ids": [
+      13629
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.0,
+    "original_url": "https://media.vidivo.me/video/20260104/4fea50085b4e4404a8f23b696adbf267/cloudv-transfer/55555555pos8n32o5556o465qr55q033_f9f0d0fa2d15429da32807efdf8c4b00_0_4.mp4?wsSecret=41b43d7601f28f94919d788e5e3c1eb1&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:09:30Z"
+  },
+  "dramaora_52029171870_51": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 51,
+    "telegram_message_id": 13630,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Pmru3MtGoYnAuLhG4nYvKXquHvx_AAIDIQACd-J4V9h7gDEkLo1qHgQ",
+    "telegram_message_ids": [
+      13630
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.48,
+    "original_url": "https://media.vidivo.me/video/20260104/adb3ce080933479eae0d202e3c915220/cloudv-transfer/55555555985957o75556o4659o8n8133_88de7232b7794b6ea5702ceecc15c8e4_0_4.mp4?wsSecret=81219807a76b985fb47e2df74ef0132a&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:09:49Z"
+  },
+  "dramaora_52029171870_52": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 52,
+    "telegram_message_id": 13631,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1P2ru3Nw287aCKtHhFVbgRXl5nOB0AAIFIQACd-J4V3VUlrWfWRxjHgQ",
+    "telegram_message_ids": [
+      13631
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.58,
+    "original_url": "https://media.vidivo.me/video/20260104/4e466ff9f33d48aeaa5c9b1480e34728/cloudv-transfer/555555551779p2p45556o465504r0133_1dd0116f423f4aafb954b34474e2f695_0_4.mp4?wsSecret=686d956ad79c395cdb845b5c4f5a0676&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:10:06Z"
+  },
+  "dramaora_52029171870_53": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 53,
+    "telegram_message_id": 13632,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1QGru3O1xVxS20D1EmfGuDEQcGZjAAAIHIQACd-J4V-WWjBJL6wjuHgQ",
+    "telegram_message_ids": [
+      13632
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.27,
+    "original_url": "https://media.vidivo.me/video/20260104/22fb1405de0545e4bbcb54a4ba5a73f5/cloudv-transfer/555555554ss301705556o4654q612133_bee7dc1203cc4a878df065ab3f5ecde2_0_4.mp4?wsSecret=fb717ca3a50455f2c7b61685344ab8b4&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:10:23Z"
+  },
+  "dramaora_52029171870_54": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 54,
+    "telegram_message_id": 13633,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1QWru3P-wo74lOXQX3Jbkb18R8PqpAAIIIQACd-J4V5wVffQovZj0HgQ",
+    "telegram_message_ids": [
+      13633
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.35,
+    "original_url": "https://media.vidivo.me/video/20260104/7f4ec5246d15437c841d39f185edb0ff/cloudv-transfer/55555555q29617015556o4653rp42133_29323735f60b468aae2802000f18d5b3_0_4.mp4?wsSecret=7fb429091906fdb3e2b7cb193ca532af&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:10:42Z"
+  },
+  "dramaora_52029171870_55": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 55,
+    "telegram_message_id": 13634,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Qmru3RBwznzYtcpw6eXsbJkpugy0AAIJIQACd-J4V1uOBdCO4OhHHgQ",
+    "telegram_message_ids": [
+      13634
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.97,
+    "original_url": "https://media.vidivo.me/video/20260104/0b21183274c74bf687702d285f203352/cloudv-transfer/55555555r281360r5556o46550p43133_226000e804f842829e8e6772c2d6a58e_0_4.mp4?wsSecret=f6fb7fc1e2fc167c64a1e90bf7f64bf5&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:10:58Z"
+  },
+  "dramaora_52029171870_56": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 56,
+    "telegram_message_id": 13635,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Q2ru3SLqrkXULEAsSnB-SCEqKCwIAAIKIQACd-J4V-U2UQTSkh4MHgQ",
+    "telegram_message_ids": [
+      13635
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.23,
+    "original_url": "https://media.vidivo.me/video/20260104/4873b94a7b0b4c25b5634cc7f09d1dd7/cloudv-transfer/555555555n2296rs5556o4655o23o133_92e83a8147d541399ac89ef29bbc1f21_0_4.mp4?wsSecret=7566035c1e72b776a037d3e959861807&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:11:16Z"
+  },
+  "dramaora_52029171870_57": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 57,
+    "telegram_message_id": 13636,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1RGru3TS85KUu1fdb6PxB1gGje3uoAAIMIQACd-J4V18g-gleT05mHgQ",
+    "telegram_message_ids": [
+      13636
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.63,
+    "original_url": "https://media.vidivo.me/video/20260104/77f9e6e38f32486fa5f4bc482a5c5b82/cloudv-transfer/55555555729so7995556o46507n3q133_925a6b8802224a6e88f289c07ee90072_0_4.mp4?wsSecret=07e7ee839aeea7f418315fa9bc37b5bf&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:11:35Z"
+  },
+  "dramaora_52029171870_58": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 58,
+    "telegram_message_id": 13637,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1RWru3Uef5uqJ1a_NyHbr8cPv9UcFAAIPIQACd-J4VxpGGNEOX6GmHgQ",
+    "telegram_message_ids": [
+      13637
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.12,
+    "original_url": "https://media.vidivo.me/video/20260104/bd13a6fba6fb4f31969f31562daf0271/cloudv-transfer/55555555474018on5556o465q468r133_7de04729bfef4428909bfa78df34ffdb_0_4.mp4?wsSecret=2c977cbd97479f604ee29fada065b553&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:11:54Z"
+  },
+  "dramaora_52029171870_59": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 59,
+    "telegram_message_id": 13638,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Rmru3VqA87CU0bO1hSqU5pYMMqqDAAIRIQACd-J4V58Nk5Yp-mq3HgQ",
+    "telegram_message_ids": [
+      13638
+    ],
+    "total_parts": 1,
+    "file_size_mb": 19.7,
+    "original_url": "https://media.vidivo.me/video/20260104/5ece44c319084a65954a64fd6fa53fb6/cloudv-transfer/55555555rs5781355556o465np00r133_e32f84daea404c95a64404e0cb329749_0_4.mp4?wsSecret=80cb7cba90d4db8b2c677e3eb050c9d4&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:12:12Z"
+  },
+  "dramaora_52029171870_60": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 60,
+    "telegram_message_id": 13639,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1R2ru3Wsff9SzxF196v5l03B9fPz_AAISIQACd-J4V3HDsEe9JFEiHgQ",
+    "telegram_message_ids": [
+      13639
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.49,
+    "original_url": "https://media.vidivo.me/video/20260104/df94036b2750463096b0bc6e59adc5f4/cloudv-transfer/5555555559p4o3455556o465n9q16233_cd218bfa85254ca9a70542d8ea60062f_0_4.mp4?wsSecret=0b3a17f02947056e593d49e242c9a856&wsTime=1794045399",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:12:30Z"
+  },
+  "dramaora_52029171870_61": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 61,
+    "telegram_message_id": 13640,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1SGru3YHkHkBUmGUYaiwPsTYXx9RgAAITIQACd-J4VzYWPoYb0QUcHgQ",
+    "telegram_message_ids": [
+      13640
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.68,
+    "original_url": "https://media.vidivo.me/video/20260104/b5d13e3e856b4db6bb4c3224ce23b841/cloudv-transfer/55555555np9q0s095556o46522228233_5e621eca892f4a7aaf04007aa18b5dbf_0_4.mp4?wsSecret=466f8da81bd994f51a7b8ac671013474&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:12:51Z"
+  },
+  "dramaora_52029171870_62": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 62,
+    "telegram_message_id": 13641,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1SWru3ZHOVZ_xhWlo8eVZD7j_6cY-AAIUIQACd-J4V_KPaGCwzi_SHgQ",
+    "telegram_message_ids": [
+      13641
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.25,
+    "original_url": "https://media.vidivo.me/video/20260104/c1470f0f552e470f8db946d2a8bc3fe9/cloudv-transfer/55555555sps64op05556o46504921233_2c2af00b4c064da0942ebdf116ea8c68_0_4.mp4?wsSecret=18d3e3c240e7013082ea5293e8d8e445&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:13:07Z"
+  },
+  "dramaora_52029171870_63": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 63,
+    "telegram_message_id": 13642,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Smru3bByEh46JAJbvbU_82MitTe_AAIWIQACd-J4Vx6RwB6edB-YHgQ",
+    "telegram_message_ids": [
+      13642
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.39,
+    "original_url": "https://media.vidivo.me/video/20260104/55a0c561cae34b36acaa2bc9e047ce8c/cloudv-transfer/5555555585q0q7165556o465ss294233_11f6c86172774129aad2828dcbfa8f3c_0_4.mp4?wsSecret=f956f683a44a4a17b6993be4f07734c5&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:13:38Z"
+  },
+  "dramaora_52029171870_64": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 64,
+    "telegram_message_id": 13643,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1S2ru3cOznusFTnYLzTxdE4qe8O_sAAIXIQACd-J4Vw8l78AMbG-mHgQ",
+    "telegram_message_ids": [
+      13643
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.42,
+    "original_url": "https://media.vidivo.me/video/20260104/6beac2124dec4b73a4abb7a3b89825aa/cloudv-transfer/555555555p7s60575556o4654rrpr233_b9e06ebfe13a45e18dc1f27518fb0369_0_4.mp4?wsSecret=e0fe3603b5cfdba330e14bf772e6cb98&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:13:58Z"
+  },
+  "dramaora_52029171870_65": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 65,
+    "telegram_message_id": 13644,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1TGru3dMTYFx_gcd-_aXPsfy8U9v0AAIYIQACd-J4VybcdmHAYngAAR4E",
+    "telegram_message_ids": [
+      13644
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.55,
+    "original_url": "https://media.vidivo.me/video/20260104/bcf8f36b148d43e6828bfde4a29b9662/cloudv-transfer/55555555oq086p135556o46568r0s233_44136400aa6948829af16ada3c89379f_0_4.mp4?wsSecret=ab3db10aa4214fe39f1892171dae737a&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:14:14Z"
+  },
+  "dramaora_52029171870_66": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 66,
+    "telegram_message_id": 13645,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1TWru3eIjvLcWZvsMsgV30c7qnW2rAAIZIQACd-J4VwUc9IieaUxLHgQ",
+    "telegram_message_ids": [
+      13645
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.91,
+    "original_url": "https://media.vidivo.me/video/20260104/3ff02e5983db4e66ac3be6a08d53f29b/cloudv-transfer/55555555ss65q1r55556o46569955333_ee01506027bb4e4f857ecb1d41d9e869_0_4.mp4?wsSecret=2743213241e7520ab6267188239273f4&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:14:29Z"
+  },
+  "dramaora_52029171870_67": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 67,
+    "telegram_message_id": 13646,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1Tmru3fnggl7NRqgG75HzuENtuZtiAAIaIQACd-J4Vxq_bVxitZrGHgQ",
+    "telegram_message_ids": [
+      13646
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.43,
+    "original_url": "https://media.vidivo.me/video/20260104/9d0e8aab9b604313a7fb02c010f81bdb/cloudv-transfer/55555555r3rr55895556o46573875333_2bd63d1b62f24805a1dedc3f4fb6536c_0_4.mp4?wsSecret=f600bad605f48f945428f26f17fd0a72&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:14:51Z"
+  },
+  "dramaora_52029171870_68": {
+    "show_id": "dramaora_52029171870",
+    "show_title": "Junior's Revenge",
+    "episode_number": 68,
+    "telegram_message_id": 13647,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI1T2ru3gnr-VOdVpT3hX50bGK0x6J5AAIbIQACd-J4V64W_903d0eMHgQ",
+    "telegram_message_ids": [
+      13647
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.88,
+    "original_url": "https://media.vidivo.me/video/20260104/224091ed711f40059b1f226900397760/cloudv-transfer/555555553op2155q5556o465q4769333_c653da0767314d689bc6d66fe658b57c_0_4.mp4?wsSecret=75ea624e17c81685fb32cb83b55369e4&wsTime=1794045400",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20260104/87db8e4e019b1000499cfc1200000000.jpg",
+    "synopsis": "Sevan Liam, trained for many years under the company of his senior sister, descends the mountain to seek revenge for his family's massacre, while also needing to find a woman of pure yin body to cure the poison he's been afflicted with, leading to emotional entanglements along the way.",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-07T08:15:07Z"
   }
 };
