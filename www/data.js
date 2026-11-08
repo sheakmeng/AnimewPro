@@ -57152,5 +57152,1025 @@ window.INITIAL_MANIFEST = {
     "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
     "source": "dramaora",
     "backed_up_at": "2026-11-08T11:09:58Z"
+  },
+  "dramaora_52022194900_27": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 27,
+    "telegram_message_id": 13954,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2gmrwqDXjKAygYi9e43IOxszV8WqLAAKjJAAC5vmIV1PexL77nczVHgQ",
+    "telegram_message_ids": [
+      13954
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.52,
+    "original_url": "https://media.vidivo.me/video/20250331/91825faea9444b32ae27beadde16f20e/cloudv-transfer/5555555542q7563955560465nr949sor_01da1ff95bc041798cb7719d889e6e29_0_4.mp4?wsSecret=c4a0fdccafe367500f6813f8fe1a1893&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:49:59Z"
+  },
+  "dramaora_52022194900_28": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 28,
+    "telegram_message_id": 13955,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2g2rwqFGhOV6UfPP08E-KfMF81DhQAAKkJAAC5vmIV6yJqV7d3O0dHgQ",
+    "telegram_message_ids": [
+      13955
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.46,
+    "original_url": "https://media.vidivo.me/video/20250331/21b12992660941958bd6a7bd475fd79f/cloudv-transfer/55555555pso41po755560465r85p9sor_8711e5a2b26745ebb4a83b5fa8ec1613_0_4.mp4?wsSecret=d20b958d53d6dad4fb7d89e5b716b464&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:50:27Z"
+  },
+  "dramaora_52022194900_29": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 29,
+    "telegram_message_id": 13956,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2hGrwqGa-yMuoa5jilOhOF01DPfhBAAKlJAAC5vmIV6rmrVeEgHzxHgQ",
+    "telegram_message_ids": [
+      13956
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.13,
+    "original_url": "https://media.vidivo.me/video/20250331/0105c248093f43f7ac1b857fdfd1b590/cloudv-transfer/555555552904q3s85556046510rr9sor_a5329f2dd6294f5cb7f3df098df76155_0_4.mp4?wsSecret=c900d6fc036bd162776d2319cd1f5f2d&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:50:49Z"
+  },
+  "dramaora_52022194900_30": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 30,
+    "telegram_message_id": 13957,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2hWrwqH7gq5qZLfg8pIZT-KPkjShAAAKmJAAC5vmIV9bzh1fA9W27HgQ",
+    "telegram_message_ids": [
+      13957
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.47,
+    "original_url": "https://media.vidivo.me/video/20250331/5b469e80a59c4e37b2934633edd0e570/cloudv-transfer/55555555qq51n7r55556046538960sor_dd6c985cb75c40bd9932aa7da5c473a4_0_4.mp4?wsSecret=3e5c067f99b203238f4d3b55d93790cb&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:51:13Z"
+  },
+  "dramaora_52022194900_31": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 31,
+    "telegram_message_id": 13958,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2hmrwqJS2eBYiaewAAY9h8UA5rSSgKgACpyQAAub5iFeVt9fiJ-vj7x4E",
+    "telegram_message_ids": [
+      13958
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.69,
+    "original_url": "https://media.vidivo.me/video/20250331/f13aada036234481b7a495cccdfa3cd1/cloudv-transfer/555555552rs5s7415556046507990sor_8179f0dbb1214927879c635d4195f135_0_4.mp4?wsSecret=09cb1ee7a78423e9beb3bd5b74ecc9ae&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:51:34Z"
+  },
+  "dramaora_52022194900_32": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 32,
+    "telegram_message_id": 13959,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2h2rwqKdRBta6tRedh2s9uLAI2jkmAAKoJAAC5vmIVzA6wQujvgZTHgQ",
+    "telegram_message_ids": [
+      13959
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.25,
+    "original_url": "https://media.vidivo.me/video/20250331/a5875cdb3cdf449d86a56aac379a0625/cloudv-transfer/55555555018s29n15556046552920sor_04dc431cad4a4264af184d54626ce7cc_0_4.mp4?wsSecret=1f1ac8b04225828d77700005afc42e38&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:51:53Z"
+  },
+  "dramaora_52022194900_33": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 33,
+    "telegram_message_id": 13960,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2iGrwqLv3kYDSu3nkvFt8s0hPaHuIAAKpJAAC5vmIV3vtccA_KCxgHgQ",
+    "telegram_message_ids": [
+      13960
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.67,
+    "original_url": "https://media.vidivo.me/video/20250331/eef2936059764208a25ff92261b23d69/cloudv-transfer/555555557snns52o55560465405n0sor_c365d78f7f7740e2a719b8ce35264973_0_4.mp4?wsSecret=56ccb0aa95fe85f83fea7f6b101a0c02&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:52:13Z"
+  },
+  "dramaora_52022194900_34": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 34,
+    "telegram_message_id": 13961,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2iWrwqNcXwz2sMGsyolyxEjEdB7nHAAKqJAAC5vmIV-tOrPbNB_PMHgQ",
+    "telegram_message_ids": [
+      13961
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.21,
+    "original_url": "https://media.vidivo.me/video/20250331/0a0c6dff7f1f43728bf09a797adce22d/cloudv-transfer/5555555593o2sqn355560465n0qp0sor_7d6d077643dc4d3399f5f6fba3b815de_0_4.mp4?wsSecret=de3b1654328e5790d35a416fc0a8d3e6&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:52:41Z"
+  },
+  "dramaora_52022194900_35": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 35,
+    "telegram_message_id": 13962,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2imrwqOppd5rdf1JfLo-rmRclXi7WAAKrJAAC5vmIV_Mm35vpL4FPHgQ",
+    "telegram_message_ids": [
+      13962
+    ],
+    "total_parts": 1,
+    "file_size_mb": 15.59,
+    "original_url": "https://media.vidivo.me/video/20250331/f2d1558c94bd4ef98d9daf2b3fe9cbbb/cloudv-transfer/5555555541o41rp255560465189s0sor_96a6e834ed134e2496441a7345f1d5e7_0_4.mp4?wsSecret=6eddf1b2c50fc5449ac6c1c0a95083a0&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:53:00Z"
+  },
+  "dramaora_52022194900_36": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 36,
+    "telegram_message_id": 13963,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2i2rwqP7u7FkUc-pg1Q96QXlvPBFGAAKsJAAC5vmIVzAh5E69J9EjHgQ",
+    "telegram_message_ids": [
+      13963
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.48,
+    "original_url": "https://media.vidivo.me/video/20250331/2af580757bfd4fc0bff82ad7a800b46b/cloudv-transfer/555555557r3375725556046518171sor_b9d9c1f509ad4089bf5e3802e42f5d42_0_4.mp4?wsSecret=f20c9e0ff351681ee91163694b23d0dc&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:53:20Z"
+  },
+  "dramaora_52022194900_37": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 37,
+    "telegram_message_id": 13964,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2jGrwqRIMxOUAAUeoFyV2xB-7iTdCVgACrSQAAub5iFf8NVuInVkRTh4E",
+    "telegram_message_ids": [
+      13964
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.2,
+    "original_url": "https://media.vidivo.me/video/20250331/cc916e79089041bcaf315914bb0bf615/cloudv-transfer/555555557r4862o0555604656qo91sor_44e367aa1b3e434e8c67e1f4173c836c_0_4.mp4?wsSecret=0c88245d0a819bdc56677f39114e8549&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:53:41Z"
+  },
+  "dramaora_52022194900_38": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 38,
+    "telegram_message_id": 13965,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2jWrwqSXKwn3dr1_icondYWNfh-qqAAKuJAAC5vmIV1BCq8q9DZ6VHgQ",
+    "telegram_message_ids": [
+      13965
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.21,
+    "original_url": "https://media.vidivo.me/video/20250331/66457da1f1c3428e87720fca30c2c7ad/cloudv-transfer/55555555ss5p6779555604652nn21sor_f6b50bbf5389402faaf68cfe18fea426_0_4.mp4?wsSecret=b304e83e21d25c2bf65bdab45f21bc1f&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:54:00Z"
+  },
+  "dramaora_52022194900_39": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 39,
+    "telegram_message_id": 13966,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2jmrwqTcs66jSwHx0wSLRW9QlkeVfAAKvJAAC5vmIV2VhL83qD6LyHgQ",
+    "telegram_message_ids": [
+      13966
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.48,
+    "original_url": "https://media.vidivo.me/video/20250331/bbed9c5910444a3a8de38c827933839b/cloudv-transfer/555555551063r28n5556046531o41sor_f4d84e53708142c49093a4338c5de050_0_4.mp4?wsSecret=188dacbc9b7aa41cf0312e0a249587c5&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:54:17Z"
+  },
+  "dramaora_52022194900_40": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 40,
+    "telegram_message_id": 13967,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2j2rwqUp639j0SRqx5UnPiRbE1KrvAAKwJAAC5vmIV2i8H6jzAtTfHgQ",
+    "telegram_message_ids": [
+      13967
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.9,
+    "original_url": "https://media.vidivo.me/video/20250331/29e649c3fb1d4e229a10654d127e90ad/cloudv-transfer/5555555507psqr57555604654sqp1sor_1fab790eda104dc89a116f18d126eb92_0_4.mp4?wsSecret=71f8f9ff31d5f7fd09d004c4855ffb8f&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:54:36Z"
+  },
+  "dramaora_52022194900_41": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 41,
+    "telegram_message_id": 13968,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2kGrwqV_AvhMHEKhknBY8CIklqc8eAAKxJAAC5vmIV1ew1YMK0owTHgQ",
+    "telegram_message_ids": [
+      13968
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.86,
+    "original_url": "https://media.vidivo.me/video/20250331/28e5234d136944b38469c1d4d2fe4da5/cloudv-transfer/55555555psrnr1315556046585752sor_f8f0751e47fb47d88c53cab7a14e38e5_0_4.mp4?wsSecret=a2d67add23d85ce6aebb8be647227d3a&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:54:57Z"
+  },
+  "dramaora_52022194900_42": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 42,
+    "telegram_message_id": 13969,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2kWrwqabiLUlXuJzuyocT6RfBhM8MAAKyJAAC5vmIV_BMUTvvxNgmHgQ",
+    "telegram_message_ids": [
+      13969
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.42,
+    "original_url": "https://media.vidivo.me/video/20250331/e6d01181522a4554ad15ad4124d0a83b/cloudv-transfer/555555559pp3p8085556046532792sor_4978a497eddb4025a504c514930b15fe_0_4.mp4?wsSecret=c6d14f546addb23c36cbd4fa33700f32&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:56:08Z"
+  },
+  "dramaora_52022194900_43": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 43,
+    "telegram_message_id": 13970,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2kmrwqbmW9Uxd7T7Nr5AIjEcOusKeAAKzJAAC5vmIV7ly33kXyEAeHgQ",
+    "telegram_message_ids": [
+      13970
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.5,
+    "original_url": "https://media.vidivo.me/video/20250331/8e61072670114e46be603a03cfc7172d/cloudv-transfer/55555555n3po4n4755560465pnq12sor_a1444780c3d843ff94135b1cf5ad7995_0_4.mp4?wsSecret=4956f69503b00f6e5c76f9bee3c3f1d0&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:56:27Z"
+  },
+  "dramaora_52022194900_44": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 44,
+    "telegram_message_id": 13971,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2k2rwqc-oX0yv4GNhmSF8TahofQ3YAAK0JAAC5vmIVyYo-kjmUgO8HgQ",
+    "telegram_message_ids": [
+      13971
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.04,
+    "original_url": "https://media.vidivo.me/video/20250331/7114e3516cdc4a3894fb1876ef5e07b0/cloudv-transfer/555555556o38qq6r55560465s7342sor_3c82a285bf164332969d75a85fc05b1b_0_4.mp4?wsSecret=13c2bacce565f0fca49127acc61cc7b4&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:56:50Z"
+  },
+  "dramaora_52022194900_45": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 45,
+    "telegram_message_id": 13972,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2lGrwqg8CkkGFJSyVqIsAAUw1DilJyAACtSQAAub5iFfilu-7X015Qx4E",
+    "telegram_message_ids": [
+      13972
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.44,
+    "original_url": "https://media.vidivo.me/video/20250331/f8ad2ab460eb4777924a12a4e5900727/cloudv-transfer/55555555nsn173r055560465216p2sor_c8f628fd55da4fc5bc8748f1a1d441c1_0_4.mp4?wsSecret=a33a529763bc67dc4541bf5a1fb14bdb&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:57:53Z"
+  },
+  "dramaora_52022194900_46": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 46,
+    "telegram_message_id": 13973,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2lWrwqiOhf4_IqlvIltAeOJ4JsezoAAK2JAAC5vmIV7b3vyV-MWiuHgQ",
+    "telegram_message_ids": [
+      13973
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.63,
+    "original_url": "https://media.vidivo.me/video/20250331/aa014accc127413a9930a66f235a742f/cloudv-transfer/55555555sn7os9nq5556046501ps2sor_8763d9a1c77449f193bdf68831c8db17_0_4.mp4?wsSecret=d5a3a53896a9e0b910cb46aa8cf1a9b8&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:58:13Z"
+  },
+  "dramaora_52022194900_47": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 47,
+    "telegram_message_id": 13974,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2lmrwqjerYz9rnYnNtSpsGdD_SoFxAAK3JAAC5vmIV6noMgErabfMHgQ",
+    "telegram_message_ids": [
+      13974
+    ],
+    "total_parts": 1,
+    "file_size_mb": 8.74,
+    "original_url": "https://media.vidivo.me/video/20250331/78d20ac9e8a5458f94b301a79b4885a4/cloudv-transfer/55555555qs59r78o5556046596373sor_cdeb2c61f79c436f934e930dd7e1a77b_0_4.mp4?wsSecret=35acc6d68d7632976d37f882944af2e3&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:58:34Z"
+  },
+  "dramaora_52022194900_48": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 48,
+    "telegram_message_id": 13975,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2l2rwqk3Wh1SIVjfchDaRmgIP9LAkAAK4JAAC5vmIVzJyf1sMatfvHgQ",
+    "telegram_message_ids": [
+      13975
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.14,
+    "original_url": "https://media.vidivo.me/video/20250331/03f8ee46e04f4a9282328ba732136b94/cloudv-transfer/55555555oo8p776655560465pp303sor_cd7e8531cbd242a3a0f2161027e339c2_0_4.mp4?wsSecret=515f0452c502686c30e23b49f63d3bac&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:58:55Z"
+  },
+  "dramaora_52022194900_49": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 49,
+    "telegram_message_id": 13976,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2mGrwqmEZKteDRVEC1SUbIDnjK2HNAAK5JAAC5vmIV5yj_CaNxCyWHgQ",
+    "telegram_message_ids": [
+      13976
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.56,
+    "original_url": "https://media.vidivo.me/video/20250331/8c772ef4e10d41cca762ab0bc58f0e58/cloudv-transfer/555555557p584qq25556046512233sor_982fc3fe2eb64ea894ca94c92831cb04_0_4.mp4?wsSecret=67984bffad8e6b7707537229360aea9e&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:59:15Z"
+  },
+  "dramaora_52022194900_50": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 50,
+    "telegram_message_id": 13977,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2mWrwqnc8KZhnQtd_NBw-ykmWDGasAAK6JAAC5vmIVyXR7oqZ_IcqHgQ",
+    "telegram_message_ids": [
+      13977
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.76,
+    "original_url": "https://media.vidivo.me/video/20250331/7fb27fd56cdc495bb88dee079a9d3f36/cloudv-transfer/5555555586r562s655560465o71o3sor_258a4a2895a149459c0e4e61db173e09_0_4.mp4?wsSecret=2a1ff7312e043dacfab0e545ffa9f304&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:59:38Z"
+  },
+  "dramaora_52022194900_51": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 51,
+    "telegram_message_id": 13978,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2mmrwqozp9mOZx3TO1svwc0S9CW7uAAK7JAAC5vmIV9yH5Sj1zQWCHgQ",
+    "telegram_message_ids": [
+      13978
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.22,
+    "original_url": "https://media.vidivo.me/video/20250331/6eea7976a139430295cde605044f81b2/cloudv-transfer/555555558r189sp655560465qr2r3sor_95701e49e403436bad8001c828a487f9_0_4.mp4?wsSecret=d60b6b555455fdd0839a10fb565fe51a&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T16:59:58Z"
+  },
+  "dramaora_52022194900_52": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 52,
+    "telegram_message_id": 13979,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2m2rwqqZBnYUF3qQVt8RG-STqndz1AAK9JAAC5vmIV6z89OTpN7NwHgQ",
+    "telegram_message_ids": [
+      13979
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.92,
+    "original_url": "https://media.vidivo.me/video/20250331/8a44934fe46d45d485a67be7bed41d20/cloudv-transfer/55555555471q0p385556046560p54sor_c7e9d63a0d0145119cff0fe47440a918_0_4.mp4?wsSecret=89deac4bbe58e4a84aec225f7a4dd5a5&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:00:24Z"
+  },
+  "dramaora_52022194900_53": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 53,
+    "telegram_message_id": 13980,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2nGrwqr6K3hdW8JWfc5sI6ODoc4bEAAK_JAAC5vmIV_MIENxTpfOcHgQ",
+    "telegram_message_ids": [
+      13980
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.68,
+    "original_url": "https://media.vidivo.me/video/20250331/ec1464931f454aff9a2b768f4d7d4cdd/cloudv-transfer/55555555oq26r9p055560465r7o84sor_68a2a5cd3db24f9981592b04104ac558_0_4.mp4?wsSecret=8316279e01f83354ca229e931bfbe48f&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:00:48Z"
+  },
+  "dramaora_52022194900_54": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 54,
+    "telegram_message_id": 13981,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2nWrwqtF7yKjvZJDhpMn9YsdvmcpgAALAJAAC5vmIV7InNWNvI0TKHgQ",
+    "telegram_message_ids": [
+      13981
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.84,
+    "original_url": "https://media.vidivo.me/video/20250331/593cc92c701246388c07038101664512/cloudv-transfer/555555554r1072205556046580r14sor_a05dd23fae1a4b9aaf04d0db269bc58a_0_4.mp4?wsSecret=a90d47ca25f3e3ed3ef4973071b41e40&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:01:08Z"
+  },
+  "dramaora_52022194900_55": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 55,
+    "telegram_message_id": 13982,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2nmrwquQAAR_mNV05GVn61tLj_eVPWwACwSQAAub5iFerO4uHIf3F2h4E",
+    "telegram_message_ids": [
+      13982
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.1,
+    "original_url": "https://media.vidivo.me/video/20250331/dfdaa3e8492941b9a32c713b3c1fa2db/cloudv-transfer/555555557836op375556046531344sor_f649dbef303d49cb9a996d3d19e6e1a2_0_4.mp4?wsSecret=b08b453299846560b78d0dd33165b384&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:01:27Z"
+  },
+  "dramaora_52022194900_56": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 56,
+    "telegram_message_id": 13983,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2n2rwqvveerPvWbI-8XxwGaIcwfzdAALCJAAC5vmIV38cnNM6puD5HgQ",
+    "telegram_message_ids": [
+      13983
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.55,
+    "original_url": "https://media.vidivo.me/video/20250331/8bf9b8fabc734ed199dbdaf50b2fc8b0/cloudv-transfer/55555555n01q1nn255560465rs5p4sor_2eee7eebbfe042308e7827771ef17e11_0_4.mp4?wsSecret=8b83b41a4411284d6321f4b1f6fb5deb&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:01:49Z"
+  },
+  "dramaora_52022194900_57": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 57,
+    "telegram_message_id": 13984,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2oGrwqxZHKX1fJnduFrcB3bhb8QfiAALDJAAC5vmIV28fGRajv7TCHgQ",
+    "telegram_message_ids": [
+      13984
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.93,
+    "original_url": "https://media.vidivo.me/video/20250331/29704572845744b7ba345e9ef3ded191/cloudv-transfer/55555555q638s9no55560465ropr4sor_18e00550f5cf4aa098f60c60d50fd168_0_4.mp4?wsSecret=e0d80cf960e38c35328a1342129d9822&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:02:17Z"
+  },
+  "dramaora_52022194900_58": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 58,
+    "telegram_message_id": 13985,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2oWrwqyyKvmt9VioyyjpRRRFmHCdTAALEJAAC5vmIVwnOjwSV5WJlHgQ",
+    "telegram_message_ids": [
+      13985
+    ],
+    "total_parts": 1,
+    "file_size_mb": 17.73,
+    "original_url": "https://media.vidivo.me/video/20250331/dfcbb30594b0426cb61d708b0546cc84/cloudv-transfer/55555555637150p655560465on06nsor_e7a000f809d44d2fb615346ccee23e9e_0_4.mp4?wsSecret=5b4fa0bd790fc21e8fe86e714151fd39&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:02:38Z"
+  },
+  "dramaora_52022194900_59": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 59,
+    "telegram_message_id": 13986,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2omrwq2WxFh1H23_zCF8AAU4fGf21GQACxSQAAub5iFeObxRhQHV8MR4E",
+    "telegram_message_ids": [
+      13986
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.47,
+    "original_url": "https://media.vidivo.me/video/20250331/16e8d3127636403dbdc09d50521e9e11/cloudv-transfer/5555555540n9n689555604655349nsor_a5d9cb97ff47470cab18678edda56b44_0_4.mp4?wsSecret=39f506f13a473176ca859c27966c7a2d&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:03:35Z"
+  },
+  "dramaora_52022194900_60": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 60,
+    "telegram_message_id": 13987,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2o2rwq4J17c27Q6dC05-R0002jZ5uAALGJAAC5vmIV8hLk2hJZrj0HgQ",
+    "telegram_message_ids": [
+      13987
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.78,
+    "original_url": "https://media.vidivo.me/video/20250331/9c3afb99b2f44af194b2428111eff502/cloudv-transfer/55555555s28p78q6555604654902nsor_bd970c638cc2467f9c824478a50409d2_0_4.mp4?wsSecret=f04bfa2f4c20ef610b708b6a0c5e40a0&wsTime=1794163780",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:04:04Z"
+  },
+  "dramaora_52022194900_61": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 61,
+    "telegram_message_id": 13988,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2pGrwq5e0ozDRvlNQ7DDSwMJX98p_AALHJAAC5vmIV3aTRExkZftuHgQ",
+    "telegram_message_ids": [
+      13988
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.76,
+    "original_url": "https://media.vidivo.me/video/20250331/34c308a1f939410bbc78e98f97db56d3/cloudv-transfer/555555554s443s8o555604658p6nnsor_17294a5aec9f48a1af1a0aabd13f4e24_0_4.mp4?wsSecret=fbad45f39705e17318c02aaa10743373&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:04:25Z"
+  },
+  "dramaora_52022194900_62": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 62,
+    "telegram_message_id": 13989,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2pWrwq6ijCBZys-E6--mHlJOGfbFjAALJJAAC5vmIVw65Dj6FUTZPHgQ",
+    "telegram_message_ids": [
+      13989
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.26,
+    "original_url": "https://media.vidivo.me/video/20250331/66455349c7db4eaa8a38e115531cdc74/cloudv-transfer/555555556ppo06r95556046505npnsor_490f8df152d84beda2d494d3d5f816cc_0_4.mp4?wsSecret=5f8d0db256c8494b3c97b3741e1b895f&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:04:42Z"
+  },
+  "dramaora_52022194900_63": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 63,
+    "telegram_message_id": 13990,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2pmrwq7wieh9BwrW7AdlA-mWUTncTAALKJAAC5vmIVwMBO4vUzfPEHgQ",
+    "telegram_message_ids": [
+      13990
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.29,
+    "original_url": "https://media.vidivo.me/video/20250331/0c1f8d4b0c334aa9af99c4aa46792644/cloudv-transfer/555555558388724q55560465213snsor_e758bdd1a0be43f2bd8e0cfb9e8f1032_0_4.mp4?wsSecret=73a1c17dce9f030d5649e32587077699&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:05:02Z"
+  },
+  "dramaora_52022194900_64": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 64,
+    "telegram_message_id": 13991,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2p2rwq9FEmLJ2pVKshzPHiDex7nMhAALMJAAC5vmIV1dyfux3iR1LHgQ",
+    "telegram_message_ids": [
+      13991
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.27,
+    "original_url": "https://media.vidivo.me/video/20250331/32c296fcf588417b9a68ce1f64d291ad/cloudv-transfer/55555555o71pp88q55560465n597osor_9c97570669eb4902b5589c5b5167d585_0_4.mp4?wsSecret=4fa5164db023eb7159b0766d3ed4ca7a&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:05:23Z"
+  },
+  "dramaora_52022194900_65": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 65,
+    "telegram_message_id": 13992,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2qGrwq-XxTjoTO8DnKGHJ2KD4JSW5AALNJAAC5vmIV8y5dZQx6CpMHgQ",
+    "telegram_message_ids": [
+      13992
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.07,
+    "original_url": "https://media.vidivo.me/video/20250331/ae64e4ed7ba440c38f2564e130454831/cloudv-transfer/5555555528p5q0nr55560465noo9osor_14e6139cc9814da889ce53b97bede2f2_0_4.mp4?wsSecret=ba97ad4ec43714ce6db2b7f704387f55&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:05:44Z"
+  },
+  "dramaora_52022194900_66": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 66,
+    "telegram_message_id": 13993,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2qWrwq_kGhjgvDfVEoC5BxTQ4nRm2AALOJAAC5vmIVzbFNEvDFq0XHgQ",
+    "telegram_message_ids": [
+      13993
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.83,
+    "original_url": "https://media.vidivo.me/video/20250331/0852cb5b5a1e48b78c464c8db705c39e/cloudv-transfer/5555555551p60303555604658p02osor_0322dd5901b64c7ab1eb991f8833b416_0_4.mp4?wsSecret=f8fc83521939d4ebbc04307767ab5d03&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:06:03Z"
+  },
+  "dramaora_52022194900_67": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 67,
+    "telegram_message_id": 13994,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2qmrwrApNqZOZUTP4Hot1Kor6oc-0AALPJAAC5vmIV-seefekAweNHgQ",
+    "telegram_message_ids": [
+      13994
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.23,
+    "original_url": "https://media.vidivo.me/video/20250331/d88a37d4a68c49df8ef9a0ee889d9f70/cloudv-transfer/55555555694q594r55560465747nosor_ce853a42badc4950911849e3fb1d9060_0_4.mp4?wsSecret=87aca05738056613b8ebf1664d44388a&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:06:20Z"
+  },
+  "dramaora_52022194900_68": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 68,
+    "telegram_message_id": 13995,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2q2rwrB8o2Ykrl8KNC7NqCSaVGZp0AALQJAAC5vmIV6JK783tvtWEHgQ",
+    "telegram_message_ids": [
+      13995
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.07,
+    "original_url": "https://media.vidivo.me/video/20250331/c0c5b9a32d334ca18512caefbe00ce61/cloudv-transfer/555555558on5618q55560465o61qosor_e8b486911e724956bbaf12e06004bbd1_0_4.mp4?wsSecret=6f60409db4a69c0e3b185f037d7d1642&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:06:41Z"
+  },
+  "dramaora_52022194900_69": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 69,
+    "telegram_message_id": 13996,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2rGrwrC-TmoSL8YxMdao5M6EhXk64AALRJAAC5vmIV57rLn-FyIcKHgQ",
+    "telegram_message_ids": [
+      13996
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.13,
+    "original_url": "https://media.vidivo.me/video/20250331/c12735847ccd44a98671758a3a5bac4f/cloudv-transfer/55555555pn9p50o455560465qn55psor_8115e0bee83d46bc98e33f1c13227b03_0_4.mp4?wsSecret=91893b970efd684b59b499d030352ee8&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:06:57Z"
+  },
+  "dramaora_52022194900_70": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 70,
+    "telegram_message_id": 13997,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2rWrwrEElWl5BzGEZjweJ3m_WkK0KAALSJAAC5vmIV0vm0cL4rSdcHgQ",
+    "telegram_message_ids": [
+      13997
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.23,
+    "original_url": "https://media.vidivo.me/video/20250331/92fc032492ec4cfabea8b6e8f4776746/cloudv-transfer/555555559p2802n5555604657947psor_4cef6472ccd242b4baa5fa9704401dd3_0_4.mp4?wsSecret=48647c7d5b778203783282418fd77fcc&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:07:15Z"
+  },
+  "dramaora_52022194900_71": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 71,
+    "telegram_message_id": 13998,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2rmrwrFTKlrHz7GdThyCd2IXPII-cAALTJAAC5vmIV2VAFHbyHT4aHgQ",
+    "telegram_message_ids": [
+      13998
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.28,
+    "original_url": "https://media.vidivo.me/video/20250331/5c02393132dc416a919df496249cf359/cloudv-transfer/55555555p4ss4450555604658630psor_f50f10e72359401cbfbc0a00d0ba847d_0_4.mp4?wsSecret=32c9bda4fbbbdfe5c44f99a236f064f7&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:07:34Z"
+  },
+  "dramaora_52022194900_72": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 72,
+    "telegram_message_id": 13999,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2r2rwrGQb0AyPbddpCeRNRHAv4LaYAALUJAAC5vmIV557_2OSLhT0HgQ",
+    "telegram_message_ids": [
+      13999
+    ],
+    "total_parts": 1,
+    "file_size_mb": 13.54,
+    "original_url": "https://media.vidivo.me/video/20250331/017045c282714af1a48e831787c405fb/cloudv-transfer/555555556qr67rn455560465sn93psor_430fa859ab5047afaac23a208f21dfef_0_4.mp4?wsSecret=8ea9214ec11675d13c5083a7d1d0c55d&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:07:50Z"
+  },
+  "dramaora_52022194900_73": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 73,
+    "telegram_message_id": 14000,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2sGrwrKbnPNlXeP-TQdK_TVFGflmCAALWJAAC5vmIV-zB0LUbwz1sHgQ",
+    "telegram_message_ids": [
+      14000
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.59,
+    "original_url": "https://media.vidivo.me/video/20250331/f99a4ef0d3c74a98901eb1eaf92b362e/cloudv-transfer/555555554op33s1655560465015opsor_90fb1d9b7ad843cb926b3e7d0a1ce8e5_0_4.mp4?wsSecret=d9d83e42ffd37a558c8c09a717d0cd26&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:08:56Z"
+  },
+  "dramaora_52022194900_74": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 74,
+    "telegram_message_id": 14001,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2sWrwrLuWdewd9eGa-MeOkI6vGiFZAALYJAAC5vmIV6MjvpwunINnHgQ",
+    "telegram_message_ids": [
+      14001
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.91,
+    "original_url": "https://media.vidivo.me/video/20250331/02bd6559ac8f4d61b9486b296df81f5e/cloudv-transfer/55555555p4681nns55560465n2sqpsor_12653f787a0244eca40c1b21fdbce562_0_4.mp4?wsSecret=406c02c7393ff2393cd1896f2ff4175d&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:09:17Z"
+  },
+  "dramaora_52022194900_75": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 75,
+    "telegram_message_id": 14002,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2smrwrM0pjAnXIIZBHUqijskpQqAzAALbJAAC5vmIVxb6Yhw21HjSHgQ",
+    "telegram_message_ids": [
+      14002
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.7,
+    "original_url": "https://media.vidivo.me/video/20250331/d78f64f1955b43769766d8a2b1482304/cloudv-transfer/55555555113q7993555604652r35qsor_efcf0a8197cd442b9668d563cf9566fb_0_4.mp4?wsSecret=3ed4492c79483cc4de7762ff48fd668e&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:09:35Z"
+  },
+  "dramaora_52022194900_76": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 76,
+    "telegram_message_id": 14003,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2s2rwrN8Pzut1jqUaDtaPx_-cMzTsAALdJAAC5vmIV8uPXdG67eUNHgQ",
+    "telegram_message_ids": [
+      14003
+    ],
+    "total_parts": 1,
+    "file_size_mb": 14.9,
+    "original_url": "https://media.vidivo.me/video/20250331/f904ceec96324645823ae10f772bc809/cloudv-transfer/55555555856o644855560465o978qsor_605568ede308463baff190a455c51305_0_4.mp4?wsSecret=747f354dfb43c861c67ee2b9aa084540&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:09:53Z"
+  },
+  "dramaora_52022194900_77": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 77,
+    "telegram_message_id": 14004,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2tGrwrPHeZi3kpIXPRH7wSlyNNrjbAALfJAAC5vmIV0FD_NGV0ouqHgQ",
+    "telegram_message_ids": [
+      14004
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.55,
+    "original_url": "https://media.vidivo.me/video/20250331/2a4d143e6f2c45a7a92e55470052a976/cloudv-transfer/55555555p99ooq8o555604653pq0qsor_fb8880f9131f4e6ebf8e57c5843ccb64_0_4.mp4?wsSecret=ec8b17d05caaa6ef507bd64352fcb8d3&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:10:11Z"
+  },
+  "dramaora_52022194900_78": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 78,
+    "telegram_message_id": 14005,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2tWrwrQRsFrxc5g3eAk0Uxa89VYboAALgJAAC5vmIV3RhvzzKzwABeh4E",
+    "telegram_message_ids": [
+      14005
+    ],
+    "total_parts": 1,
+    "file_size_mb": 10.5,
+    "original_url": "https://media.vidivo.me/video/20250331/a764a531a2b64d80bc90d83b3ab77894/cloudv-transfer/555555556o32n7q3555604656743qsor_f94b4b448c604a2986e066822f33d469_0_4.mp4?wsSecret=8fc758f2de6ba71b75e4318b625dd969&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:10:30Z"
+  },
+  "dramaora_52022194900_79": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 79,
+    "telegram_message_id": 14006,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2tmrwrRltfdroJLFIWv-B9QSXrHnFAALhJAAC5vmIVyIJjRb0tLh_HgQ",
+    "telegram_message_ids": [
+      14006
+    ],
+    "total_parts": 1,
+    "file_size_mb": 11.97,
+    "original_url": "https://media.vidivo.me/video/20250331/ecbb177123f44afdb337f963a99b5fa9/cloudv-transfer/55555555nsr457s755560465s49oqsor_80bc7423dd134980ab60c83b9e240a48_0_4.mp4?wsSecret=a915930599831e32e949ad6acd3794ab&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:10:51Z"
+  },
+  "dramaora_52022194900_80": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 80,
+    "telegram_message_id": 14007,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2t2rwrS06X6h_IhNJlzbjk_E17Cj0AALiJAAC5vmIVx5bNTeW9I9CHgQ",
+    "telegram_message_ids": [
+      14007
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.88,
+    "original_url": "https://media.vidivo.me/video/20250331/131abcda6461436485e1744621f3ccc2/cloudv-transfer/55555555prr2982q55560465618rqsor_22db1868e07f45dcaa875300371185c2_0_4.mp4?wsSecret=33b8193bd58d8db9b25ae2e50daf172b&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:11:12Z"
+  },
+  "dramaora_52022194900_81": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 81,
+    "telegram_message_id": 14008,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2uGrwrUIyFJ0PZ7xs5_Svcedj-w1JAALjJAAC5vmIV_kCq6rrU9UuHgQ",
+    "telegram_message_ids": [
+      14008
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.78,
+    "original_url": "https://media.vidivo.me/video/20250331/8ace9fcf48974bf89b26885b4598d6df/cloudv-transfer/55555555225021p455560465o3o6rsor_f56ed5874e5f4a1caa0c0f264d1be062_0_4.mp4?wsSecret=8424e70c0d7131e3e6244e41e85f740a&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:11:32Z"
+  },
+  "dramaora_52022194900_82": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 82,
+    "telegram_message_id": 14009,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2uWrwrVKdoVKu6HjKjyruHuW-HKmYAALkJAAC5vmIV39MdGGpjpZBHgQ",
+    "telegram_message_ids": [
+      14009
+    ],
+    "total_parts": 1,
+    "file_size_mb": 12.11,
+    "original_url": "https://media.vidivo.me/video/20250331/b68c5c41fa2e400fb2e2c87fde1a6c8b/cloudv-transfer/55555555q444sqr255560465o759rsor_9c1ec370e38746918ac6f186aa524273_0_4.mp4?wsSecret=b9091496a4120510dd61a2a3ea52b8bc&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:11:49Z"
+  },
+  "dramaora_52022194900_83": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 83,
+    "telegram_message_id": 14010,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2umrwrWUS4wU3C5z9ioo4yNXEf69RAALlJAAC5vmIVyQf58ZFZoM8HgQ",
+    "telegram_message_ids": [
+      14010
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.85,
+    "original_url": "https://media.vidivo.me/video/20250331/c9a67973eb3f4f2eb71befdaf2eb3e8c/cloudv-transfer/55555555sqos3rs255560465n431rsor_f3a6b849d6ed4700b975b1c591a43b14_0_4.mp4?wsSecret=a0901fc1a41e1f9c7d06c31163129b2e&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:12:08Z"
+  },
+  "dramaora_52022194900_84": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 84,
+    "telegram_message_id": 14011,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2u2rwrXiLZv_J8CDdeDc-wUGVNv0xAALmJAAC5vmIV89U6VPsFzhMHgQ",
+    "telegram_message_ids": [
+      14011
+    ],
+    "total_parts": 1,
+    "file_size_mb": 7.17,
+    "original_url": "https://media.vidivo.me/video/20250331/5f6c6e1314ad473bbf7a4f6f70f98f1f/cloudv-transfer/55555555nn44op34555604650ss3rsor_119ce76de8b34e11a1b01769664a933d_0_4.mp4?wsSecret=51b1506d8c196ca8731e2a4c49302cf6&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:12:27Z"
+  },
+  "dramaora_52022194900_85": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 85,
+    "telegram_message_id": 14012,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2vGrwrY-je9-087chq2ahF1iX60lmAALnJAAC5vmIV5rdAAE5pbBxpB4E",
+    "telegram_message_ids": [
+      14012
+    ],
+    "total_parts": 1,
+    "file_size_mb": 16.2,
+    "original_url": "https://media.vidivo.me/video/20250331/565af2b0922e4c8f9ae2a17797ba173f/cloudv-transfer/555555557op7n2475556046505pprsor_ff4397e13a594552b6779ce07d234bde_0_4.mp4?wsSecret=7a589a18bd59419c79e2e4edc836b085&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:12:49Z"
+  },
+  "dramaora_52022194900_86": {
+    "show_id": "dramaora_52022194900",
+    "show_title": "The King Lord's Back",
+    "episode_number": 86,
+    "telegram_message_id": 14013,
+    "telegram_file_id": "BAACAgUAAyEGAATrCaSwAAI2vWrwraE2dUA3fIRO1iBThAdba_i9AALoJAAC5vmIV9Qis4gYRM-VHgQ",
+    "telegram_message_ids": [
+      14013
+    ],
+    "total_parts": 1,
+    "file_size_mb": 9.59,
+    "original_url": "https://media.vidivo.me/video/20250331/4e2943dbb5254e828af279a308d39cd4/cloudv-transfer/55555555431n1n3q55560465522srsor_f59c5dd58dba4612b843b9d8d864cb2c_0_4.mp4?wsSecret=5da10a679d7c63743e59a4ee99dcf3da&wsTime=1794163781",
+    "poster_url": "https://media.vidivo.me/cloudv-material/20250401/f04aafac01951000d446ef1e00000000.jpg",
+    "synopsis": "Three years ago, Ethan Ye, the King Lord, suffered a devastating loss when his wife, Regina Ning, sacrificed herself to protect her patent from the Kingdom of Gods, who hunted her relentlessly. In his grief, Ethan wiped out all underground forces. Now, three years later, the Lord of Gods resurfaces, this time targeting Regina’s twin sister, Rena Ning. With a renewed sense of purpose, Ethan returns to the city to protect her and face his enemies once again...",
+    "source": "dramaora",
+    "backed_up_at": "2026-11-08T17:13:08Z"
   }
 };
